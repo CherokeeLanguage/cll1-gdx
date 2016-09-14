@@ -7,9 +7,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.libgdx.ScreenPoweredBy;
 
 public class CLL2EV1 extends Game {
-	SpriteBatch batch;
-	Texture img;
-	
 	@Override
 	public void create () {
 		ScreenPoweredBy by = new ScreenPoweredBy(new Runnable() {
