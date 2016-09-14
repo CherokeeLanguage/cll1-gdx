@@ -1,9 +1,7 @@
 package com.libgdx;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.math.Rectangle;
@@ -15,20 +13,24 @@ import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.views.AbstractView;
 
 
-public class ScreenPoweredBy extends ScreenAdapter {
-	
-	protected Stage gameStage;
-
+public class ViewScreenPoweredBy extends AbstractView {
+    	
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
 
 	private Music music;
 	private Runnable onDone;
 
-	public ScreenPoweredBy(Runnable onDone) {
+	public ViewScreenPoweredBy(Stage stage) {
+		super(stage);
+	}
+	
+	public ViewScreenPoweredBy(Stage stage, Runnable onDone) {
+		this(stage);
 		this.onDone=onDone;
 	}
 
@@ -39,22 +41,19 @@ public class ScreenPoweredBy extends ScreenAdapter {
 		for (Texture t: textures) {
 			t.dispose();
 		}
-		gameStage.dispose();
 	}
 
 	@Override
 	public void hide() {
 		super.hide();
-		gameStage.clear();
+		getStage().clear();
 		music.stop();
 	}
 	
 	private final float tvSafePercent=.05f;
 	private final Rectangle tvSafe = new Rectangle((int)(1280f*tvSafePercent), (int)(720f*tvSafePercent), (int)(1280f*(1f-2f*tvSafePercent)), (int)(720f*(1f-2f*tvSafePercent)));
-	private final Rectangle screenSize=new Rectangle(0, 0, 1280, 720);
 	private Rectangle logoBox;
 	private void init() {
-		gameStage = new Stage(new FitViewport(screenSize.width, screenSize.height));
 		music = Gdx.audio.newMusic(Gdx.files.internal("libgdx/atmoseerie03.mp3"));
 		music.setVolume(0f);
 		for (int i = 0; i < 25; i++) {
@@ -101,32 +100,15 @@ public class ScreenPoweredBy extends ScreenAdapter {
 		
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
 		
-		gameStage.addActor(logoGroup);
+		getStage().addActor(logoGroup);
 		music.play();
 	}
 	
-	@Override
-	public void render(float delta) {
-		super.render(delta);
-		
-		gameStage.act(delta);
-		
-		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		gameStage.draw();
-	}
-
 	@Override
 	public void show() {
 		super.show();
 		init();
 		music.play();
-	}
-	
-	@Override
-	public void resize(int width, int height) {
-		super.resize(width, height);
-		gameStage.getViewport().update(width, height, true);
 	}
 	
 	private Action getAlphaAction(){
