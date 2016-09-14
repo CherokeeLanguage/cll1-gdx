@@ -2,8 +2,6 @@ package com.cherokeelessons.cll2ev1;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.libgdx.ScreenPoweredBy;
 
 public class CLL2EV1 extends Game {
