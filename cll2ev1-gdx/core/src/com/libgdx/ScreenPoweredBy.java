@@ -39,6 +39,7 @@ public class ScreenPoweredBy extends ScreenAdapter {
 		for (Texture t: textures) {
 			t.dispose();
 		}
+		gameStage.dispose();
 	}
 
 	@Override
