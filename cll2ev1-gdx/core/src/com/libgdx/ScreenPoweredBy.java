@@ -15,8 +15,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.cherokeelessons.cll2ev1.views.AbstractView;
 
-
-public class ViewScreenPoweredBy extends AbstractView {
+public class ScreenPoweredBy extends AbstractView {
     	
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
@@ -24,29 +23,31 @@ public class ViewScreenPoweredBy extends AbstractView {
 	private Music music;
 	private Runnable onDone;
 
-	public ViewScreenPoweredBy(Stage stage) {
+	public ScreenPoweredBy(Stage stage) {
 		super(stage);
 	}
 	
-	public ViewScreenPoweredBy(Stage stage, Runnable onDone) {
+	public ScreenPoweredBy(Stage stage, Runnable onDone) {
 		this(stage);
 		this.onDone=onDone;
 	}
 
 	@Override
 	public void dispose() {
-		super.dispose();
+		log("dispose");
 		music.dispose();
-		for (Texture t: textures) {
-			t.dispose();
+		for (Texture texture: textures) {
+			texture.dispose();
 		}
+		super.dispose();
 	}
 
 	@Override
 	public void hide() {
-		super.hide();
-		getStage().clear();
+		log("hide");
+		stage.clear();
 		music.stop();
+		super.hide();
 	}
 	
 	private final float tvSafePercent=.05f;
@@ -99,12 +100,13 @@ public class ViewScreenPoweredBy extends AbstractView {
 		
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
 		
-		getStage().addActor(logoGroup);
+		stage.addActor(logoGroup);
 		music.play();
 	}
 	
 	@Override
 	public void show() {
+		log("show");
 		super.show();
 		init();
 		music.play();

@@ -25,7 +25,6 @@ allprojects {
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
-        lmlVersion = '1.7.1.9.3'
     }
 
     repositories {
@@ -84,9 +83,6 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile "com.github.czyzby:gdx-lml:$lmlVersion"
-        compile "com.kotcrab.vis:vis-ui:1.1.1"
-        compile "com.github.czyzby:gdx-lml-vis:$lmlVersion"
     }
 }
 
@@ -100,13 +96,6 @@ project(":html") {
         compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
         compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
-        compile "com.github.czyzby:gdx-kiwi:$lmlVersion:sources"
-        compile "com.github.czyzby:gdx-lml:$lmlVersion:sources"
-        compile "com.kotcrab.vis:vis-ui:1.1.1:sources"
-        compile "com.github.czyzby:gdx-kiwi:$lmlVersion:sources"
-        compile "com.github.czyzby:gdx-lml:$lmlVersion:sources"
-        compile "com.github.czyzby:gdx-lml-vis:$lmlVersion:sources"
-        compile "com.kotcrab.vis:vis-ui:1.1.1:sources"
     }
 }
 

@@ -1,32 +1,33 @@
 package com.cherokeelessons.cll2ev1;
 
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import com.github.czyzby.kiwi.util.gdx.asset.Disposables;
-import com.github.czyzby.lml.parser.LmlParser;
-import com.github.czyzby.lml.util.LmlApplicationListener;
-import com.github.czyzby.lml.vis.util.VisLml;
-import com.kotcrab.vis.ui.VisUI;
-import com.libgdx.ViewScreenPoweredBy;
+import com.cherokeelessons.cll2ev1.views.MainMenu;
+import com.libgdx.ScreenPoweredBy;
 
-public class CLL2EV1 extends LmlApplicationListener {
+public class CLL2EV1 extends Game {
 
 	public static final Rectangle ScreenSize = new Rectangle(0, 0, 1280, 720);
 	private Batch batch;
 
+	private ScreenPoweredBy poweredBy = null;
+	private Runnable onPoweredByDone = new Runnable() {
+		public void run() {
+			setScreen(new MainMenu(newStage()));
+			poweredBy.dispose();
+		}
+	};
+
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
-		super.create();
-		setView(new ViewScreenPoweredBy(newStage(), new Runnable() {
-			public void run() {
-				Gdx.app.exit();
-			}
-		}));
+		poweredBy = new ScreenPoweredBy(newStage(), onPoweredByDone);
+		setScreen(poweredBy);
 	}
 
 	/** @return application's only {@link Batch}. */
@@ -46,12 +47,6 @@ public class CLL2EV1 extends LmlApplicationListener {
 	@Override
 	public void dispose() {
 		super.dispose();
-		Disposables.gracefullyDisposeOf(batch);
-		VisUI.dispose(); // Disposing of default VisUI skin.
-	}
-
-	@Override
-	protected LmlParser createParser() {
-		return VisLml.parser().build();
+		batch.dispose();
 	}
 }
