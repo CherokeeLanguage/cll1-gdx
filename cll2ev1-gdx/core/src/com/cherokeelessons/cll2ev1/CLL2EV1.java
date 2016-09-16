@@ -10,7 +10,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.views.MainMenu;
 import com.libgdx.ScreenPoweredBy;
 
-public class CLL2EV1 extends Game {
+public class CLL2EV1 extends AbstractGame {
 
 	public static final Rectangle ScreenSize = new Rectangle(0, 0, 1280, 720);
 	private Batch batch;
