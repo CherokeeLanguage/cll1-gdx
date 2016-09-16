@@ -24,7 +24,6 @@ allprojects {
         box2DLightsVersion = '1.4'
         ashleyVersion = '1.7.0'
         aiVersion = '1.8.0'
-        sbVersion = 'v3.15.0'
     }
 
     repositories {
@@ -81,12 +80,6 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile ("com.github.peakgames.libgdx-stagebuilder:stagebuilder-core:$sbVersion") {
-        	exclude group: 'com.badlogicgames.gdx', module: 'gdx'
-        	exclude group: 'com.badlogicgames.gdx', module: 'gdx-platform'
-        	exclude group: 'com.badlogicgames.gdx', module: 'gdx-backend-android'
-        	exclude group: 'com.binarytweed', module: 'quarantining-test-runner'
-        }
     }
 }
 
