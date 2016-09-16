@@ -1,4 +1,4 @@
-package com.cherokeelessons.cll2ev1.views;
+package com.cherokeelessons.cll2ev1.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;

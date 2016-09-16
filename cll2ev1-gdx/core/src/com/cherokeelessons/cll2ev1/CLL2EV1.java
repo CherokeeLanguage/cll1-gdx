@@ -2,8 +2,8 @@ package com.cherokeelessons.cll2ev1;
 
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.math.Vector2;
-import com.cherokeelessons.cll2ev1.views.MainMenu;
-import com.cherokeelessons.cll2ev1.views.ScreenPoweredBy;
+import com.cherokeelessons.cll2ev1.screens.MainMenu;
+import com.cherokeelessons.cll2ev1.screens.ScreenPoweredBy;
 
 public class CLL2EV1 extends AbstractGame {
 	public AssetManager assets;

@@ -1,4 +1,4 @@
-package com.cherokeelessons.cll2ev1.views;
+package com.cherokeelessons.cll2ev1.screens;
 
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 
