@@ -16,7 +16,7 @@ import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 import com.cherokeelessons.cll2ev1.actions.MusicVolumeAction;
 
-public class ScreenPoweredBy extends CllScreen {
+public class ScreenPoweredBy extends AbstractScreen {
     	
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();

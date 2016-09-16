@@ -12,7 +12,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 
-public abstract class CllScreen implements Screen, InputProcessor {
+public abstract class AbstractScreen implements Screen, InputProcessor {
 	protected final String TAG = this.getClass().getSimpleName();
 	protected Music music;
 	protected void log(String message) {
@@ -26,7 +26,7 @@ public abstract class CllScreen implements Screen, InputProcessor {
 	protected AbstractGame game;
 	protected final AssetManager assets;
 	
-	public CllScreen(AbstractGame game) {
+	public AbstractScreen(AbstractGame game) {
 		super();
 		this.game = game;
 		this.assets = new AssetManager();
