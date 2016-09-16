@@ -6,7 +6,7 @@ import java.util.List;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.cherokeelessons.cll2ev1.views.MainMenu;
-import com.libgdx.ScreenPoweredBy;
+import com.cherokeelessons.cll2ev1.views.ScreenPoweredBy;
 
 import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
 import net.peakgames.libgdx.stagebuilder.core.assets.ResolutionHelper;

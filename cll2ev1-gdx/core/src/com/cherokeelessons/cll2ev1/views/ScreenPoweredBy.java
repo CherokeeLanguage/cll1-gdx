@@ -1,4 +1,4 @@
-package com.libgdx;
+package com.cherokeelessons.cll2ev1.views;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
@@ -14,7 +14,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
-import com.cherokeelessons.cll2ev1.views.CllScreen;
+import com.cherokeelessons.cll2ev1.MusicVolumeAction;
 
 import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
 

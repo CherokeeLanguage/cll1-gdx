@@ -1,4 +1,4 @@
-package com.libgdx;
+package com.cherokeelessons.cll2ev1;
 
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.math.Interpolation;
