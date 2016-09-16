@@ -2,6 +2,7 @@ package com.cherokeelessons.cll2ev1.views;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
@@ -11,7 +12,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 
-public abstract class CllScreen implements Screen {
+public abstract class CllScreen implements Screen, InputProcessor {
 	protected final String TAG = this.getClass().getSimpleName();
 	protected Music music;
 	protected void log(String message) {
@@ -21,7 +22,7 @@ public abstract class CllScreen implements Screen {
 	protected final Stage backStage;
 	protected final Stage stage;
 	protected final Stage frontStage;
-	protected final InputMultiplexer inputPlexer;
+	protected final InputMultiplexer inputMultiplexer;
 	protected AbstractGame game;
 	protected final AssetManager assets;
 	
@@ -34,7 +35,7 @@ public abstract class CllScreen implements Screen {
 		stage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
 		frontStage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
 		
-		inputPlexer = new InputMultiplexer(frontStage, stage, backStage);
+		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}
 
 	@Override
@@ -46,7 +47,7 @@ public abstract class CllScreen implements Screen {
 	@Override
 	public void show() {
 		log("Show");
-		Gdx.input.setInputProcessor(inputPlexer);
+		Gdx.input.setInputProcessor(inputMultiplexer);
 		if (wasMusicPlaying && music!=null) {
 			music.play();
 		}
@@ -91,7 +92,7 @@ public abstract class CllScreen implements Screen {
 	public void resume() {
 		systemPaused=false;
 		log("Resume");
-		Gdx.input.setInputProcessor(inputPlexer);
+		Gdx.input.setInputProcessor(inputMultiplexer);
 		if (wasMusicPlaying && music!=null) {
 			music.play();
 		}
@@ -115,4 +116,43 @@ public abstract class CllScreen implements Screen {
 		assets.dispose();
 	}
 
+	@Override
+	public boolean keyDown (int keycode){
+		return false;
+	}
+
+	@Override
+	public boolean keyUp (int keycode) {
+		return false;
+	}
+
+	@Override
+	public boolean keyTyped (char character){
+		return false;
+	}
+
+	@Override
+	public boolean touchDown (int screenX, int screenY, int pointer, int button){
+		return false;
+	}
+
+	@Override
+	public boolean touchUp (int screenX, int screenY, int pointer, int button) {
+		return false;
+	}
+
+	@Override
+	public boolean touchDragged (int screenX, int screenY, int pointer){
+		return false;
+	}
+
+	@Override
+	public boolean mouseMoved (int screenX, int screenY){
+		return false;
+	}
+
+	@Override
+	public boolean scrolled (int amount){
+		return false;
+	}
 }
