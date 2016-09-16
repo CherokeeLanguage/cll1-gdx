@@ -31,9 +31,9 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		this.game = game;
 		this.assets = new AssetManager();
 		
-		backStage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
-		stage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
-		frontStage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
+		backStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
+		stage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
+		frontStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		
 		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}

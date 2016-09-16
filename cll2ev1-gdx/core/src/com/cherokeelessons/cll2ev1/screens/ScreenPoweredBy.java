@@ -5,6 +5,7 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
@@ -18,6 +19,7 @@ import com.cherokeelessons.cll2ev1.actions.MusicVolumeAction;
 
 public class ScreenPoweredBy extends AbstractScreen {
     	
+	private static final Vector2 WORLDSIZE = CLL2EV1.WORLDSIZE;
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
 
@@ -46,7 +48,7 @@ public class ScreenPoweredBy extends AbstractScreen {
 	}
 	
 	private final float tvSafePercent=.05f;
-	private final Rectangle tvSafe = new Rectangle((int)(CLL2EV1.worldSize.x*tvSafePercent), (int)(CLL2EV1.worldSize.y*tvSafePercent), (int)(CLL2EV1.worldSize.x*(1f-2f*tvSafePercent)), (int)(CLL2EV1.worldSize.y*(1f-2f*tvSafePercent)));
+	private final Rectangle tvSafe = new Rectangle((WORLDSIZE.x*tvSafePercent), (WORLDSIZE.y*tvSafePercent), (WORLDSIZE.x*(1f-2f*tvSafePercent)), (WORLDSIZE.y*(1f-2f*tvSafePercent)));
 	private Rectangle logoBox;
 	private void init() {
 		music = Gdx.audio.newMusic(Gdx.files.internal("libgdx/atmoseerie03.mp3"));
