@@ -6,8 +6,13 @@ import java.util.List;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.assets.AssetManager;
 
 public abstract class AbstractGame extends Game {
+	protected final String TAG = this.getClass().getSimpleName();
+	protected void log(String message) {
+		Gdx.app.log(TAG, message);
+	}
 	protected List<Screen> screens = new ArrayList<Screen>();
 
 	@Override
@@ -29,5 +34,21 @@ public abstract class AbstractGame extends Game {
 	public void addScreen(Screen screen) {
 		screens.add(screen);
 		super.setScreen(screen);
+	}
+	
+	public AssetManager assets;
+	@Override
+	public void create() {
+		assets = new AssetManager();		
+	}
+	
+	@Override
+	public void dispose() {
+		log("Dispose");
+		super.dispose();
+		for (Screen screen: screens) {
+			screen.dispose();
+		}
+		assets.dispose();
 	}
 }
