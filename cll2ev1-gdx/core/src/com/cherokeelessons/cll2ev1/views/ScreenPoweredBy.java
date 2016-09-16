@@ -14,7 +14,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
-import com.cherokeelessons.cll2ev1.MusicVolumeAction;
+import com.cherokeelessons.cll2ev1.actions.MusicVolumeAction;
 
 public class ScreenPoweredBy extends CllScreen {
     	
