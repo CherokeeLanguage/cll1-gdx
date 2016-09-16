@@ -21,12 +21,14 @@ public class ScreenPoweredBy extends CllScreen {
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
 
-	private Music music;
 	private final Runnable onDone;
 
 	public ScreenPoweredBy(AbstractGame game, Runnable onDone) {
 		super(game);
 		this.onDone=onDone;
+		stage.setDebugAll(true);
+		init();
+		music.play();
 	}
 	
 	@Override
@@ -40,8 +42,6 @@ public class ScreenPoweredBy extends CllScreen {
 
 	@Override
 	public void hide() {
-		stage.clear();
-		music.stop();
 		super.hide();
 	}
 	
@@ -101,9 +101,6 @@ public class ScreenPoweredBy extends CllScreen {
 	@Override
 	public void show() {
 		super.show();
-		init();
-		stage.setDebugAll(true);
-		music.play();
 	}
 	
 	private Action getAlphaAction(){
