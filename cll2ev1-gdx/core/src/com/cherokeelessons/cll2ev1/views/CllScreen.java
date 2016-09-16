@@ -2,6 +2,7 @@ package com.cherokeelessons.cll2ev1.views;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.cherokeelessons.cll2ev1.CLL2EV1;
 
 import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
 import net.peakgames.libgdx.stagebuilder.core.AbstractScreen;
@@ -28,9 +29,9 @@ public abstract class CllScreen extends AbstractScreen {
 	}
 	
 	@Override
-	public void show() {
+	public final void show() {
 		super.show();
-		stage.setViewport(new FitViewport(1280, 720));
+		stage.setViewport(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
 		game.resize(1, 1);
 		Gdx.app.postRunnable(new Runnable() {
 			public void run() {
