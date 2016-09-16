@@ -3,7 +3,6 @@ package com.cherokeelessons.cll2ev1;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -15,9 +14,15 @@ import com.cherokeelessons.cll2ev1.views.MainMenu;
 import com.libgdx.ScreenPoweredBy;
 
 import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
+import net.peakgames.libgdx.stagebuilder.core.assets.ResolutionHelper;
 import net.peakgames.libgdx.stagebuilder.core.services.LocalizationService;
 
 public class CLL2EV1 extends AbstractGame {
+	
+	@Override
+	public ResolutionHelper getResolutionHelper() {
+		return super.getResolutionHelper();
+	}
 
 	public static final Rectangle ScreenSize = new Rectangle(0, 0, 1280, 720);
 	private Batch batch;
@@ -48,16 +53,17 @@ public class CLL2EV1 extends AbstractGame {
 	private ScreenPoweredBy poweredBy = null;
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {
-			setScreen(new MainMenu(newStage()));
-			poweredBy.dispose();
+			log("onPoweredByDone");
+			replaceTopScreen(new MainMenu(CLL2EV1.this));
 		}
 	};
 
 	@Override
 	public void create() {
+		initialize(1280, 720, 1280, 720);
 		batch = new SpriteBatch();
-		poweredBy = new ScreenPoweredBy(newStage(), onPoweredByDone);
-		setScreen(poweredBy);
+		poweredBy = new ScreenPoweredBy(CLL2EV1.this, onPoweredByDone);
+		addScreen(poweredBy);
 	}
 
 	/** @return application's only {@link Batch}. */
@@ -65,12 +71,13 @@ public class CLL2EV1 extends AbstractGame {
 		return batch;
 	}
 
-	public static CLL2EV1 get() {
+	private static CLL2EV1 get() {
 		return (CLL2EV1) Gdx.app.getApplicationListener();
 	}
 
 	/** @return a new customized {@link Stage} instance. */
-	public static Stage newStage() {
+	@SuppressWarnings("unused")
+	private static Stage newStage() {
 		return new Stage(new FitViewport(ScreenSize.width, ScreenSize.height), CLL2EV1.get().getBatch());
 	}
 
@@ -78,5 +85,10 @@ public class CLL2EV1 extends AbstractGame {
 	public void dispose() {
 		super.dispose();
 		batch.dispose();
+	}
+	
+	protected final String TAG = this.getClass().getSimpleName();
+	protected void log(String message) {
+		Gdx.app.log(TAG, message);
 	}
 }

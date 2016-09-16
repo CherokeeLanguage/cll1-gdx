@@ -7,34 +7,30 @@ import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Group;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
-import com.cherokeelessons.cll2ev1.views.AbstractView;
+import com.cherokeelessons.cll2ev1.views.CllScreen;
 
-public class ScreenPoweredBy extends AbstractView {
+import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
+
+public class ScreenPoweredBy extends CllScreen {
     	
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
 
 	private Music music;
-	private Runnable onDone;
+	private final Runnable onDone;
 
-	public ScreenPoweredBy(Stage stage) {
-		super(stage);
-	}
-	
-	public ScreenPoweredBy(Stage stage, Runnable onDone) {
-		this(stage);
+	public ScreenPoweredBy(AbstractGame game, Runnable onDone) {
+		super(game);
 		this.onDone=onDone;
 	}
-
+	
 	@Override
 	public void dispose() {
-		log("dispose");
 		music.dispose();
 		for (Texture texture: textures) {
 			texture.dispose();
@@ -44,7 +40,6 @@ public class ScreenPoweredBy extends AbstractView {
 
 	@Override
 	public void hide() {
-		log("hide");
 		stage.clear();
 		music.stop();
 		super.hide();
@@ -101,13 +96,12 @@ public class ScreenPoweredBy extends AbstractView {
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
 		
 		stage.addActor(logoGroup);
+		stage.setDebugAll(true);
 		music.play();
 	}
 	
 	@Override
-	public void show() {
-		log("show");
-		super.show();
+	public void postShow() {
 		init();
 		music.play();
 	}
@@ -134,5 +128,12 @@ public class ScreenPoweredBy extends AbstractView {
 		}
 		return sa;
 	}
-	
+
+	@Override
+	public void unloadAssets() {
+	}
+
+	@Override
+	public void onStageReloaded() {
+	}
 }

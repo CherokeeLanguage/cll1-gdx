@@ -1,9 +1,21 @@
 package com.cherokeelessons.cll2ev1.views;
 
-import com.badlogic.gdx.scenes.scene2d.Stage;
+import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
 
-public class MainMenu extends AbstractView {
-	public MainMenu(Stage stage) {
-		super(stage);
+public class MainMenu extends CllScreen {
+	public MainMenu(AbstractGame game) {
+		super(game);
+	}
+
+	@Override
+	public void unloadAssets() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onStageReloaded() {
+		// TODO Auto-generated method stub
+		
 	}
 }
