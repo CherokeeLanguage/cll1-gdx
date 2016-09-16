@@ -9,16 +9,18 @@ import com.cherokeelessons.cll2ev1.CLL2EV1;
 public class DesktopLauncher {
 	public static void main(String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		
+		config.width = 940;
+		config.height = 720;
+		
 		config.allowSoftwareMode = true;
 		config.backgroundFPS = 15;
 		config.foregroundFPS = 30;
-		config.height = 720;
 		config.initialBackgroundColor = Color.BLACK;
 		config.resizable = true;
 		config.title = "CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1";
 		config.useHDPI = true;
 		config.vSyncEnabled = false;
-		config.width = 1280;
 		config.x = -1;
 		config.y = -1;
 		/**

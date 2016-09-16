@@ -12,6 +12,8 @@ import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.cherokeelessons.cll2ev1.CLL2EV1;
 import com.cherokeelessons.cll2ev1.views.CllScreen;
 
 import net.peakgames.libgdx.stagebuilder.core.AbstractGame;
@@ -46,7 +48,7 @@ public class ScreenPoweredBy extends CllScreen {
 	}
 	
 	private final float tvSafePercent=.05f;
-	private final Rectangle tvSafe = new Rectangle((int)(1280f*tvSafePercent), (int)(720f*tvSafePercent), (int)(1280f*(1f-2f*tvSafePercent)), (int)(720f*(1f-2f*tvSafePercent)));
+	private final Rectangle tvSafe = new Rectangle((int)(CLL2EV1.worldSize.x*tvSafePercent), (int)(CLL2EV1.worldSize.y*tvSafePercent), (int)(CLL2EV1.worldSize.x*(1f-2f*tvSafePercent)), (int)(CLL2EV1.worldSize.y*(1f-2f*tvSafePercent)));
 	private Rectangle logoBox;
 	private void init() {
 		music = Gdx.audio.newMusic(Gdx.files.internal("libgdx/atmoseerie03.mp3"));
@@ -96,13 +98,12 @@ public class ScreenPoweredBy extends CllScreen {
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
 		
 		stage.addActor(logoGroup);
-		stage.setDebugAll(true);
-		music.play();
 	}
 	
 	@Override
 	public void postShow() {
 		init();
+		stage.setDebugAll(true);
 		music.play();
 	}
 	
