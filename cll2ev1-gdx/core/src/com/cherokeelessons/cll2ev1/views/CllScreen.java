@@ -23,7 +23,7 @@ public abstract class CllScreen implements Screen {
 	public CllScreen(AbstractGame game) {
 		super();
 		this.game = game;
-		this.assets = game.assets;
+		this.assets = new AssetManager();
 		stage = new Stage(new FitViewport(CLL2EV1.worldSize.x, CLL2EV1.worldSize.y));
 	}
 
@@ -70,6 +70,7 @@ public abstract class CllScreen implements Screen {
 	@Override
 	public void dispose() {
 		log("Dispose");
+		assets.dispose();
 	}
 
 }

@@ -6,7 +6,6 @@ import java.util.List;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.assets.AssetManager;
 
 public abstract class AbstractGame extends Game {
 	protected final String TAG = this.getClass().getSimpleName();
@@ -36,10 +35,8 @@ public abstract class AbstractGame extends Game {
 		super.setScreen(screen);
 	}
 	
-	public AssetManager assets;
 	@Override
 	public void create() {
-		assets = new AssetManager();		
 	}
 	
 	@Override
@@ -49,6 +46,5 @@ public abstract class AbstractGame extends Game {
 		for (Screen screen: screens) {
 			screen.dispose();
 		}
-		assets.dispose();
 	}
 }
