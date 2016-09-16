@@ -8,13 +8,14 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 
 public abstract class AbstractGame extends Game {
-	protected List<Screen> screens=new ArrayList<Screen>();
+	protected List<Screen> screens = new ArrayList<Screen>();
 
-	public void replaceScreen(Screen screen){
-		int activeScreen = screens.size()-1;
+	@Override
+	public void setScreen(Screen screen) {
+		int activeScreen = screens.size() - 1;
 		screens.add(screen);
-		setScreen(screen);
-		if (activeScreen>-1) {
+		super.setScreen(screen);
+		if (activeScreen > -1) {
 			final Screen forDisposal = screens.remove(activeScreen);
 			Gdx.app.postRunnable(new Runnable() {
 				@Override
@@ -24,11 +25,9 @@ public abstract class AbstractGame extends Game {
 			});
 		}
 	}
-	
+
 	public void addScreen(Screen screen) {
 		screens.add(screen);
-		setScreen(screen);
+		super.setScreen(screen);
 	}
-	
-	
 }

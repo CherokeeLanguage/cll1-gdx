@@ -13,7 +13,7 @@ public class CLL2EV1 extends AbstractGame {
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {
 			log("onPoweredByDone");
-			replaceScreen(new MainMenu(CLL2EV1.this));
+			setScreen(new MainMenu(CLL2EV1.this));
 		}
 	};
 	
