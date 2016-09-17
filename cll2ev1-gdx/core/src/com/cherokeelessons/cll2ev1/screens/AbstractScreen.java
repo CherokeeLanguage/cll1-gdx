@@ -17,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable;
+import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
@@ -51,7 +52,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		this.game = game;
 		this.assets = new AssetManager();
 
-		backStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
+		backStage = new Stage(new FillViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		stage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		frontStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 
@@ -81,9 +82,9 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	@Override
 	public void resize(int newWidth, int newHeight) {
 		log("Resize: " + newWidth + "x" + newHeight);
-//		backStage.getViewport().update(newWidth, newHeight);
-		stage.getViewport().update(newWidth, newHeight);
-//		frontStage.getViewport().update(newWidth, newWidth);
+		backStage.getViewport().update(newWidth, newHeight, false);
+		stage.getViewport().update(newWidth, newHeight, false);
+		frontStage.getViewport().update(newWidth, newWidth, false);
 	}
 
 	@Override
@@ -109,8 +110,11 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		Gdx.gl.glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
+		backStage.getViewport().apply();
 		backStage.draw();
+		stage.getViewport().apply();
 		stage.draw();
+		frontStage.getViewport().apply();
 		frontStage.draw();
 
 		isLoading = assets.update(30);
