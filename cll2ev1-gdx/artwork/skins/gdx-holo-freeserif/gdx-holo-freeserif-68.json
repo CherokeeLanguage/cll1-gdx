@@ -1,0 +1,313 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	free-serif-68: {
+		file: free-serif-68.fnt
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	green: {
+		r: 0
+		g: 1
+		b: 0
+		a: 1
+	}
+	white: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+	red: {
+		r: 1
+		g: 0
+		b: 0
+		a: 1
+	}
+	black: {
+		r: 0
+		g: 0
+		b: 0
+		a: 1
+	}
+	grey: {
+		r: 0.5
+		g: 0.5
+		b: 0.5
+		a: 1
+	}
+	default: {
+		r: 0
+		g: 0
+		b: 0
+		a: 1
+	}
+	inverse: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+	ui: {
+		r: 0.2
+		g: 0.71
+		b: 0.9
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	dialogDim: {
+		name: white
+		color: {
+			r: 0
+			g: 0
+			b: 0
+			a: 0.45
+		}
+	}
+	lightGrey: {
+		name: white
+		color: {
+			r: 0.9
+			g: 0.9
+			b: 0.9
+			a: 1
+		}
+	}
+	darkGrey: {
+		name: white
+		color: {
+			r: 0.8
+			g: 0.8
+			b: 0.8
+			a: 1
+		}
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: apptheme_btn_default_normal_holo_light
+		down: apptheme_btn_default_pressed_holo_light
+		disabled: apptheme_btn_default_disabled_holo_light
+	}
+	colored: {
+		up: apptheme_btn_colored_normal_holo_light
+		down: apptheme_btn_colored_pressed_holo_light
+		disabled: apptheme_btn_colored_disabled_holo_light
+	}
+	toggle: {
+		up: apptheme_btn_toggle_off_normal_holo_light
+		down: apptheme_btn_toggle_off_pressed_holo_light
+		over: apptheme_btn_toggle_off_focused_holo_light
+		checked: apptheme_btn_toggle_on_normal_holo_light
+		checkedOver: apptheme_btn_toggle_on_focused_holo_light
+		disabled: apptheme_btn_toggle_off_disabled_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: {
+		checkboxOn: apptheme_btn_check_on_holo_light
+		checkboxOff: apptheme_btn_check_off_holo_light
+		checkboxOnDisabled: apptheme_btn_check_on_disabled_holo_light
+		checkboxOffDisabled: apptheme_btn_check_off_disabled_holo_light
+		font: free-serif-68
+		fontColor: default
+	}
+	radio: {
+		checkboxOn: apptheme_btn_radio_on_holo_light
+		checkboxOff: apptheme_btn_radio_off_holo_light
+		checkboxOnDisabled: apptheme_btn_radio_on_disabled_holo_light
+		checkboxOffDisabled: apptheme_btn_radio_off_disabled_holo_light
+		font: free-serif-68
+		fontColor: default
+	}
+	switch: {
+		checkboxOn: apptheme_btn_radio_on_holo_light
+		checkboxOff: apptheme_btn_radio_off_holo_light
+		checkboxOnDisabled: apptheme_btn_radio_on_disabled_holo_light
+		checkboxOffDisabled: apptheme_btn_radio_off_disabled_holo_light
+		font: free-serif-68
+		fontColor: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: {
+		up: apptheme_btn_default_normal_holo_light
+		down: apptheme_btn_default_pressed_holo_light
+		disabled: apptheme_btn_default_disabled_holo_light
+	}
+	colored: {
+		up: apptheme_btn_colored_normal_holo_light
+		down: apptheme_btn_colored_pressed_holo_light
+		disabled: apptheme_btn_colored_disabled_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
+	default: {
+		font: free-serif-68
+		fontColor: default
+		downFontColor: inverse
+		disabledFontColor: grey
+		up: apptheme_btn_default_normal_holo_light
+		down: apptheme_btn_default_pressed_holo_light
+		disabled: apptheme_btn_default_disabled_holo_light
+	}
+	colored: {
+		font: free-serif-68
+		fontColor: default
+		downFontColor: inverse
+		disabledFontColor: grey
+		up: apptheme_btn_colored_normal_holo_light
+		down: apptheme_btn_colored_pressed_holo_light
+		disabled: apptheme_btn_colored_disabled_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: free-serif-68
+		fontColor: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
+	default: {
+		font: free-serif-68
+		fontColorSelected: inverse
+		fontColorUnselected: default
+		selection: apptheme_list_activated_holo
+		background: white
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle: {
+	default-horizontal: {
+		background: apptheme_progress_bg_holo_light
+		knobBefore: apptheme_progress_primary_holo_light
+	}
+	default-vertical: {
+		background: apptheme_progress_vertical_bg_holo_light
+		knobBefore: apptheme_progress_vertical_primary_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: {
+		hScrollKnob: apptheme_fastscroll_thumb_default_holo_h
+		vScrollKnob: apptheme_fastscroll_thumb_default_holo_v
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+	default: {
+		font: free-serif-68
+		fontColor: default
+		background: apptheme_spinner_default_holo_light
+		scrollStyle: default
+		listStyle: default
+		backgroundOver: apptheme_spinner_pressed_holo_light
+		backgroundOpen: apptheme_spinner_focused_holo_light
+		backgroundDisabled: apptheme_spinner_disabled_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: {
+		background: apptheme_progress_bg_holo_light
+		knob: apptheme_fastscroll_thumb_pressed_holo_h
+		knobBefore: apptheme_progress_primary_holo_light
+	}
+	default-vertical: {
+		background: apptheme_progress_vertical_bg_holo_light
+		knob: apptheme_fastscroll_thumb_pressed_holo_v
+		knobBefore: apptheme_progress_vertical_primary_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle: {
+	default-horizontal: {
+		handle: default-splitpane
+	}
+	default-vertical: {
+		handle: default-splitpane-vertical
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: {
+		font: free-serif-68
+		fontColor: default
+		downFontColor: inverse
+		disabledFontColor: grey
+		up: apptheme_btn_default_normal_holo_light
+		down: apptheme_btn_default_pressed_holo_light
+		disabled: apptheme_btn_default_disabled_holo_light
+	}
+	colored: {
+		font: free-serif-68
+		fontColor: default
+		downFontColor: inverse
+		disabledFontColor: grey
+		up: apptheme_btn_colored_normal_holo_light
+		down: apptheme_btn_colored_pressed_holo_light
+		disabled: apptheme_btn_colored_disabled_holo_light
+	}
+	toggle: {
+		font: free-serif-68
+		fontColor: default
+		downFontColor: inverse
+		disabledFontColor: grey
+		up: apptheme_btn_toggle_off_normal_holo_light
+		down: apptheme_btn_toggle_off_pressed_holo_light
+		over: apptheme_btn_toggle_off_focused_holo_light
+		checked: apptheme_btn_toggle_on_normal_holo_light
+		checkedOver: apptheme_btn_toggle_on_focused_holo_light
+		disabled: apptheme_btn_toggle_off_disabled_holo_light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: {
+		font: free-serif-68
+		fontColor: default
+		disabledFontColor: grey
+		background: apptheme_textfield_default_holo_light
+		focusedBackground: apptheme_textfield_focused_holo_light
+		disabledBackground: apptheme_textfield_disabled_holo_light
+		cursor: cursor
+		selection: apptheme_list_activated_holo
+	}
+	area: {
+		font: free-serif-68
+		fontColor: default
+		disabledFontColor: grey
+		background: apptheme_textarea_default_holo_light
+		focusedBackground: apptheme_textarea_focused_holo_light
+		disabledBackground: apptheme_textarea_disabled_holo_light
+		cursor: cursor
+		selection: apptheme_list_activated_holo
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+		background: tooltip
+		wrapWidth: 150
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle: {
+	default: {
+		knob: apptheme_scrubber_control_pressed_holo
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Tree$TreeStyle: {
+	default: {
+		plus: tree-plus
+		minus: tree-minus
+		selection: apptheme_list_activated_holo
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: dialog_holo_light
+		titleFont: free-serif-68
+		titleFontColor: ui
+	}
+	dialog: {
+		background: dialog_holo_light
+		titleFont: free-serif-68
+		titleFontColor: ui
+		stageBackground: dialogDim
+	}
+}
+}
