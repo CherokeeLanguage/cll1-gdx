@@ -11,7 +11,7 @@ public class MainMenu extends AbstractScreen {
 	private static final String ABOUT = "About - ᎢᎸᏢ";
 	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
 	private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
-	private static final String NEW_PRACTICE = "New Practice - ᎢᏤ ᎤᎪᏅᏗ";
+	private static final String NEW_PRACTICE = "New Practice - ᎢᏤ ᎠᎪᏅᏗ";
 	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
 
 	public MainMenu(CLL2EV1 game) {
