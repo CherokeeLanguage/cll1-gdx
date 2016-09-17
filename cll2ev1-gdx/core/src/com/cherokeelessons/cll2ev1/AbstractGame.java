@@ -14,6 +14,12 @@ public abstract class AbstractGame extends Game {
 	}
 	protected List<Screen> screens = new ArrayList<Screen>();
 
+	/**
+	 * Replaces the top of the "deck" of screens with this screen.<br/>
+	 * Current screen (if any) {@link Screen#hide()} is called.<br/>
+	 * New screen {@link Screen#show()} is called.<br/>
+	 * Previous screen (if any) {@link Screen#dispose()} is called.
+	 */
 	@Override
 	public void setScreen(Screen screen) {
 		int activeScreen = screens.size() - 1;
@@ -30,6 +36,12 @@ public abstract class AbstractGame extends Game {
 		}
 	}
 
+	/**
+	 * Adds this screen to the top of the "deck" of screens.<br/>
+	 * Replaces current screen (if any) with a new screen.<br/>
+	 * Current screen (if any) {@link Screen#hide()} is called.<br/>
+	 * New screen {@link Screen#show()} is called.<br/>
+	 */
 	public void addScreen(Screen screen) {
 		screens.add(screen);
 		super.setScreen(screen);
