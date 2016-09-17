@@ -126,4 +126,14 @@ public class ScreenPoweredBy extends AbstractScreen {
 		}
 		return sa;
 	}
+
+	@Override
+	protected boolean onBack() {
+		return false;
+	}
+
+	@Override
+	protected boolean onMenu() {
+		return false;
+	}
 }

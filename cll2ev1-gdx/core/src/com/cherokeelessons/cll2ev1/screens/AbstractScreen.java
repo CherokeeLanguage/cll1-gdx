@@ -2,6 +2,7 @@ package com.cherokeelessons.cll2ev1.screens;
 
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
@@ -168,8 +169,21 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		assets.dispose();
 	}
 
+	protected abstract boolean onBack();
+	protected abstract boolean onMenu();
+	
 	@Override
 	public boolean keyDown(int keycode) {
+		switch (keycode) {
+		case Keys.BACK:
+			return onBack();
+		case Keys.ESCAPE:
+			return onBack();
+		case Keys.MENU:
+			return onMenu();
+		case Keys.F1:
+			return onMenu();
+		}
 		return false;
 	}
 

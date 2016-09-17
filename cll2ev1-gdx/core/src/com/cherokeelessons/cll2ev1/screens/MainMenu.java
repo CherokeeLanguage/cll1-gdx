@@ -8,6 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 
 public class MainMenu extends AbstractScreen {
+	private static final String SKIN = CLL2EV1.SKIN;
 	private static final String QUIT = "Quit - ᎠᏑᎶᎪᏍᏗ";
 	private static final String ABOUT = "About - ᎢᎸᏢ";
 	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
@@ -17,7 +18,12 @@ public class MainMenu extends AbstractScreen {
 
 	private ClickListener onNewGame = new ClickListener();
 	private ClickListener onOptions = new ClickListener();
-	private ClickListener onAbout = new ClickListener();
+	private ClickListener onAbout = new ClickListener(){
+		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+			game.addScreen(new About(game));
+			return true;
+		};
+	};
 	private ClickListener onQuit = new ClickListener() {
 		public boolean touchDown(InputEvent event, float x, float y, int pointer,
 				int button) {
@@ -28,7 +34,7 @@ public class MainMenu extends AbstractScreen {
 
 	public MainMenu(CLL2EV1 game) {
 		super(game);
-		setSkin("skin/68/gdx-holo-freeserif-68.json");
+		setSkin(SKIN);
 
 		Label titleLabel = new Label(TITLE, skin);
 		TextButton btnNewGame = new TextButton(PRACTICE, skin);
@@ -59,5 +65,15 @@ public class MainMenu extends AbstractScreen {
 		setBackdrop(CLL2EV1.BACKDROP);
 
 		stage.addActor(menu);
+	}
+
+	@Override
+	protected boolean onBack() {
+		return false;
+	}
+
+	@Override
+	protected boolean onMenu() {
+		return false;
 	}
 }

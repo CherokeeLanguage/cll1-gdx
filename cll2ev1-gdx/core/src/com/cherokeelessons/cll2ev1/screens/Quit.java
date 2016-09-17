@@ -20,4 +20,14 @@ public class Quit extends AbstractScreen {
 		});
 	}
 
+	@Override
+	protected boolean onBack() {
+		return false;
+	}
+
+	@Override
+	protected boolean onMenu() {
+		return false;
+	}
+
 }

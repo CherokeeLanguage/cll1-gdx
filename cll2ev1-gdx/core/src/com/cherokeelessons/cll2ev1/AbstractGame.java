@@ -59,4 +59,27 @@ public abstract class AbstractGame extends Game {
 			screen.dispose();
 		}
 	}
+
+	/**
+	 * Discards current screen and displays previous screen.<br/>
+	 * Has no effect if there is no previous screen to go back to.
+	 */
+	public void previousScreen() {
+		if (screens.size()<2) {
+			return;
+		}
+		//remove current screen from "deck"
+		final Screen forRemoval = screens.remove(screens.size()-1);
+		//hide it
+		forRemoval.hide();
+		//show new "top" screen
+		screens.get(screens.size()-1).show();
+		//schedule for dispose the no longer shown screen
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				forRemoval.dispose();
+			}
+		});
+	}
 }
