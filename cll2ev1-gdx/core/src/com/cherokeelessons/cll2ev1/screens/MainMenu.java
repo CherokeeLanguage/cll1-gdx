@@ -7,25 +7,39 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 
 public class MainMenu extends AbstractScreen {
+	private static final String QUIT = "Quit - ᎠᏑᎶᎪᏍᏗ";
+	private static final String ABOUT = "About - ᎢᎸᏢ";
+	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
+	private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
+	private static final String NEW_GAME = "New Game - ᎢᏤ ᏗᏁᎶᏗᎢ";
+	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
+
 	public MainMenu(CLL2EV1 game) {
 		super(game);
 		setSkin("skin/68/gdx-holo-freeserif-68.json");
 		setClearColor(Color.WHITE);
 		
+		Label titleLabel = new Label(TITLE, skin);
+		TextButton btnNewGame = new TextButton(NEW_GAME, skin);
+		TextButton btnHighScores = new TextButton(HIGH_SCORES, skin);
+		TextButton btnOptions = new TextButton(OPTIONS, skin);
+		TextButton btnAbout = new TextButton(ABOUT, skin);
+		TextButton btnQuit = new TextButton(QUIT, skin);
+		
 		Table menu = new Table(skin);
 		menu.setFillParent(true);
 		menu.row();
-		menu.add(new Label("Cherokee Language Lessons Vol. 1", skin));
+		menu.add(titleLabel);
 		menu.row();
-		menu.add(new TextButton("New Game - ᎢᏤ ᏗᏁᎶᏗᎢ", skin));
+		menu.add(btnNewGame);
 		menu.row();
-		menu.add(new TextButton("High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ", skin));
+		menu.add(btnHighScores);
 		menu.row();
-		menu.add(new TextButton("Options - ᎠᏑᏰᏍᏗᎢ", skin));
+		menu.add(btnOptions);
 		menu.row();
-		menu.add(new TextButton("About - ᎢᎸᏢ", skin));
+		menu.add(btnAbout);
 		menu.row();
-		menu.add(new TextButton("Quit - ᎠᏑᎶᎪᏍᏗ", skin));
+		menu.add(btnQuit);
 		menu.pack();
 		
 		stage.addActor(menu);
