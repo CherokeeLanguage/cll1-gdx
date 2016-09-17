@@ -6,6 +6,7 @@ import com.cherokeelessons.cll2ev1.screens.ScreenPoweredBy;
 
 public class CLL2EV1 extends AbstractGame {
 	public static final Vector2 WORLDSIZE = new Vector2(1280, 720);
+	public static final String BACKDROP = "textures/parchment-seemless.png";
 	private ScreenPoweredBy poweredBy = null;
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {
