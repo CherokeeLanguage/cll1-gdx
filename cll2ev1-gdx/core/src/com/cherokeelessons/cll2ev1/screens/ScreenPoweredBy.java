@@ -28,7 +28,6 @@ public class ScreenPoweredBy extends AbstractScreen {
 	public ScreenPoweredBy(AbstractGame game, Runnable onDone) {
 		super(game);
 		this.onDone=onDone;
-		stage.setDebugAll(true);
 		init();
 		music.play();
 	}
