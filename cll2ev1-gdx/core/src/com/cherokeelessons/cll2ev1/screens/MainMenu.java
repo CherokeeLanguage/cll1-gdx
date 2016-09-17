@@ -11,7 +11,7 @@ public class MainMenu extends AbstractScreen {
 	private static final String ABOUT = "About - ᎢᎸᏢ";
 	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
 	private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
-	private static final String NEW_GAME = "New Game - ᎢᏤ ᏗᏁᎶᏗᎢ";
+	private static final String NEW_PRACTICE = "New Practice - ᎢᏤ ᎤᎪᏅᏗ";
 	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
 
 	public MainMenu(CLL2EV1 game) {
@@ -20,7 +20,7 @@ public class MainMenu extends AbstractScreen {
 		setClearColor(Color.WHITE);
 		
 		Label titleLabel = new Label(TITLE, skin);
-		TextButton btnNewGame = new TextButton(NEW_GAME, skin);
+		TextButton btnNewGame = new TextButton(NEW_PRACTICE, skin);
 		TextButton btnHighScores = new TextButton(HIGH_SCORES, skin);
 		TextButton btnOptions = new TextButton(OPTIONS, skin);
 		TextButton btnAbout = new TextButton(ABOUT, skin);
