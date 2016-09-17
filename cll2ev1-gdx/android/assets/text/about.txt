@@ -1,0 +1,10 @@
+This app is designed to help you learn Cherokee though associations. The app is inspired by the TPR and TPRS teaching methodoligies.
+
+Please forgive my voice.
+
+Author: Michael Joyner
+Font: FreeSerif []
+Toolkit: libGDX
+Voice: Michael Joyner
+Artwork: https://www.openclipart.org/
+Artwork: Michael Joyner

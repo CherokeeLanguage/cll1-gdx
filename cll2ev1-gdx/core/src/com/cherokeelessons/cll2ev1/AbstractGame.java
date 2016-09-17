@@ -73,7 +73,7 @@ public abstract class AbstractGame extends Game {
 		//hide it
 		forRemoval.hide();
 		//show new "top" screen
-		screens.get(screens.size()-1).show();
+		super.setScreen(screens.get(screens.size()-1));
 		//schedule for dispose the no longer shown screen
 		Gdx.app.postRunnable(new Runnable() {
 			@Override

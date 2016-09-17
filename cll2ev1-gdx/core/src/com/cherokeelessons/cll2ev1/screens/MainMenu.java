@@ -19,19 +19,17 @@ public class MainMenu extends AbstractScreen {
 	private ClickListener onNewGame = new ClickListener();
 	private ClickListener onOptions = new ClickListener();
 	private ClickListener onAbout = new ClickListener(){
-		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
 			game.addScreen(new About(game));
-			return true;
-		};
+		}
 	};
 	private ClickListener onQuit = new ClickListener() {
-		public boolean touchDown(InputEvent event, float x, float y, int pointer,
-				int button) {
+		public void clicked(InputEvent event, float x, float y) {
 			game.setScreen(new Quit(game));
-			return true;
 		};
 	};
-
+	
 	public MainMenu(CLL2EV1 game) {
 		super(game);
 		setSkin(SKIN);
@@ -46,6 +44,11 @@ public class MainMenu extends AbstractScreen {
 		btnOptions.addListener(onOptions);
 		btnAbout.addListener(onAbout);
 		btnQuit.addListener(onQuit);
+		
+		btnNewGame.setProgrammaticChangeEvents(false);
+		btnOptions.setProgrammaticChangeEvents(false);
+		btnAbout.setProgrammaticChangeEvents(false);
+		btnQuit.setProgrammaticChangeEvents(false);
 
 		Table menu = new Table(skin);
 		menu.setFillParent(true);
