@@ -9,8 +9,14 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
@@ -28,6 +34,9 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		this.assets.load(skinJson, Skin.class);
 		this.assets.finishLoadingAsset(skinJson);
 		this.skin = this.assets.get(skinJson, Skin.class);
+		for (BitmapFont bf: this.skin.getAll(BitmapFont.class).values()) {
+			bf.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		}
 	}
 
 	protected final Stage backStage;
@@ -49,6 +58,21 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}
 	
+	private String backdropTextureFile=null;
+	public void setBackdrop(String textureFile) {
+		if (backdropTextureFile!=null) {
+			assets.unload(backdropTextureFile);
+		}
+		backdropTextureFile=textureFile;
+		assets.load(textureFile, Texture.class);
+		assets.finishLoadingAsset(textureFile);
+		Texture texture=assets.get(textureFile, Texture.class);
+		TiledDrawable tiled = new TiledDrawable(new TextureRegion(texture));
+		Image img=new Image(tiled);
+		img.setFillParent(true);
+		backStage.addActor(img);
+	}
+	
 	protected final Color clearColor=new Color(Color.BLACK);
 	protected void setClearColor(Color color) {
 		clearColor.set(color);
@@ -57,7 +81,9 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	@Override
 	public void resize(int newWidth, int newHeight) {
 		log("Resize: " + newWidth + "x" + newHeight);
+//		backStage.getViewport().update(newWidth, newHeight);
 		stage.getViewport().update(newWidth, newHeight);
+//		frontStage.getViewport().update(newWidth, newWidth);
 	}
 
 	@Override

@@ -17,7 +17,6 @@ public class MainMenu extends AbstractScreen {
 	public MainMenu(CLL2EV1 game) {
 		super(game);
 		setSkin("skin/68/gdx-holo-freeserif-68.json");
-		setClearColor(Color.WHITE);
 		
 		Label titleLabel = new Label(TITLE, skin);
 		TextButton btnNewGame = new TextButton(PRACTICE, skin);
@@ -28,6 +27,7 @@ public class MainMenu extends AbstractScreen {
 		
 		Table menu = new Table(skin);
 		menu.setFillParent(true);
+		menu.defaults().expand();
 		menu.row();
 		menu.add(titleLabel);
 		menu.row();
@@ -41,6 +41,8 @@ public class MainMenu extends AbstractScreen {
 		menu.row();
 		menu.add(btnQuit);
 		menu.pack();
+		
+		setBackdrop("textures/parchment-seemless.png");
 		
 		stage.addActor(menu);
 	}
