@@ -12,17 +12,19 @@ public class MainMenu extends AbstractScreen {
 	private static final String QUIT = "Quit - ᎠᏑᎶᎪᏍᏗ";
 	private static final String ABOUT = "About - ᎢᎸᏢ";
 	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
-	//private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
+	// private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
 	private static final String PRACTICE = "Practice - ᏣᎪᏅᏗ";
 	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
 
-	private ClickListener onNewGame = new ClickListener(){
+	private ClickListener onNewGame = new ClickListener() {
 		@Override
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			return true;};
+			game.addScreen(new SelectSession(game));
+			return true;
+		};
 	};
 	private ClickListener onOptions = new ClickListener();
-	private ClickListener onAbout = new ClickListener(){
+	private ClickListener onAbout = new ClickListener() {
 		@Override
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
 			game.addScreen(new About(game));
@@ -35,7 +37,7 @@ public class MainMenu extends AbstractScreen {
 			return true;
 		};
 	};
-	
+
 	public MainMenu(CLL2EV1 game) {
 		super(game);
 		setSkin(SKIN);
@@ -50,7 +52,7 @@ public class MainMenu extends AbstractScreen {
 		btnOptions.addListener(onOptions);
 		btnAbout.addListener(onAbout);
 		btnQuit.addListener(onQuit);
-		
+
 		btnNewGame.setProgrammaticChangeEvents(false);
 		btnOptions.setProgrammaticChangeEvents(false);
 		btnAbout.setProgrammaticChangeEvents(false);
