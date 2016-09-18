@@ -1,0 +1,7 @@
+
+
+There is a white backdrop placed behind each image by the app.
+A black border is placed over each image by the app. The border is 16 px in size.
+
+
+widthXheight: 600x450 [ratio: 4:3] (images will be fit to this size)
