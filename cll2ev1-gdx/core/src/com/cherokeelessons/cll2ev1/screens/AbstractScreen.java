@@ -38,6 +38,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		this.skin = this.assets.get(skinJson, Skin.class);
 		for (BitmapFont bf: this.skin.getAll(BitmapFont.class).values()) {
 			bf.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+			bf.setUseIntegerPositions(false);
 		}
 	}
 

@@ -16,17 +16,23 @@ public class MainMenu extends AbstractScreen {
 	private static final String PRACTICE = "Practice - ᏣᎪᏅᏗ";
 	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
 
-	private ClickListener onNewGame = new ClickListener();
+	private ClickListener onNewGame = new ClickListener(){
+		@Override
+		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+			return true;};
+	};
 	private ClickListener onOptions = new ClickListener();
 	private ClickListener onAbout = new ClickListener(){
 		@Override
-		public void clicked(InputEvent event, float x, float y) {
+		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
 			game.addScreen(new About(game));
+			return true;
 		}
 	};
 	private ClickListener onQuit = new ClickListener() {
-		public void clicked(InputEvent event, float x, float y) {
+		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
 			game.setScreen(new Quit(game));
+			return true;
 		};
 	};
 	
