@@ -1,6 +1,7 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -36,8 +37,9 @@ public class About extends AbstractScreen {
 			container.add(btnBack).left().fill(false).expand(false, false);
 			
 			btnBack.addListener(new ClickListener(){
-				public boolean touchDown(com.badlogic.gdx.scenes.scene2d.InputEvent event, float x, float y, int pointer, int button) {
-					return onBack();
+				@Override
+				public void clicked(InputEvent event, float x, float y) {
+					onBack();
 				}
 			});
 			

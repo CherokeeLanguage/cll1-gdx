@@ -25,30 +25,46 @@ public class SelectSession extends AbstractScreen {
 		@Override
 		public void run() {
 			Label titleLabel = new Label(TITLE, skin);
+			titleLabel.setFontScale(.75f);
 			
 			Table menu = new Table(skin);
 			menu.setFillParent(true);
 			menu.defaults().expand();
+			TextButton btnBack = new TextButton(BACK, skin);
+			btnBack.getLabel().setFontScale(.7f);
+			btnBack.pack();
+			btnBack.addListener(onBack);
+			menu.row();
+			menu.add(btnBack).left().fill(false).expand(false, false);
+			
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix=0; ix<4; ix++) {
 				String text = "["+(1+ix)+"] Completed 0%, Accuracy 0%" ;
 				TextButton btnSession = new TextButton(text, skin);
+				btnSession.getLabel().setFontScale(.75f);
 				menu.row();
 				menu.add(btnSession);
+				btnSession.addListener(chooseSession(ix));
 			}
-			TextButton btnBack = new TextButton(BACK, skin);
-			btnBack.addListener(onQuit);
-			menu.row();
-			menu.add(btnBack);
 			
 			stage.addActor(menu);
 		}
 	};
 	
-	private ClickListener onQuit = new ClickListener() {
-		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			return onBack();
+	protected ClickListener chooseSession(final int session) {
+		return new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//TODO
+			}
+		};
+	}
+	
+	private ClickListener onBack = new ClickListener() {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			onBack();
 		};
 	};
 
