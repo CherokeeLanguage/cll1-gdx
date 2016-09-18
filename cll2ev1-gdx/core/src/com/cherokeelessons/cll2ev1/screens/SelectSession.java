@@ -32,7 +32,8 @@ public class SelectSession extends AbstractScreen {
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix=0; ix<4; ix++) {
-				TextButton btnSession = new TextButton("SESSION: "+(1+ix), skin);
+				String text = "["+(1+ix)+"] Completed 0%, Accuracy 0%" ;
+				TextButton btnSession = new TextButton(text, skin);
 				menu.row();
 				menu.add(btnSession);
 			}
