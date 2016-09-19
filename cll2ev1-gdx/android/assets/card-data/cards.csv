@@ -1,15 +1,16 @@
-CHAPTER	CHALLENGE	AUDIO	ANSWER-PIC	ANSWER-TEXT
-4	ᎠᏲ!	ayo	cactus.png; fire.png	
-	ᎣᏍᏓ	osda	gift-offered.png	
-	ᎤᏲᎢ	uyoi	broken.png	
-	ᎥᎥ	vv	nodding-head.png	
-	ᎥᏍᎩᎩ?	vsgigi	really.png	
-	Ꮭ	hla	shaking-head.png	
-	ᎰᏩ	howa	thumbs-up.png	
-	Ꮒ!	ni	eye-pointing.png	
+CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC
+4	ᎠᏲ!	ayo	ayo	
+	ᎣᏍᏓ	osda	osda	vv, howa
+	ᎤᏲᎢ	uyoi	uyoi	
+	ᎥᎥ	vv	vv	osda, howa
+	ᎥᏍᎩᎩ?	vsgigi	vsgigi	
+	Ꮭ	hla	hla	
+	ᎰᏩ	howa	howa	vv, osda
+	Ꮒ!	ni	ni	
 	ᏣᎳᎩ	jalagi	cherokee-writing.png	
 	ᏩᏙ	wado	gift-received.png	
 	ᏲᏁᎦ; ᏴᏭᏁᎦ	yonega; yvwunega	english-writing.png	
+	ᎣᏏᏲ		osiyo	
 5	ᎦᏙ ᎤᏍᏗ?	gado-usdi	which-one.png	
 	ᎯᎳ ᎢᎦ?	hila-iga	how-many-in.png	
 	ᎯᎳ ᎢᏯᏂ?	hila-iyani	how-many-an.png	
