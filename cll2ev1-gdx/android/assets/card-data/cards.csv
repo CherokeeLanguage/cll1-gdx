@@ -1,4 +1,4 @@
-CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC
+#CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC
 4	ᎠᏲ!	ayo	ayo	
 	ᎣᏍᏓ	osda	osda	vv, howa
 	ᎤᏲᎢ	uyoi	uyoi	
@@ -7,9 +7,9 @@ CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC
 	Ꮭ	hla	hla	
 	ᎰᏩ	howa	howa	vv, osda
 	Ꮒ!	ni	ni	
-	ᏣᎳᎩ	jalagi	cherokee-writing.png	
-	ᏩᏙ	wado	gift-received.png	
-	ᏲᏁᎦ; ᏴᏭᏁᎦ	yonega; yvwunega	english-writing.png	
+	ᏣᎳᎩ	jalagi	jalagi	
+	ᏩᏙ	wado	wado	
+	ᏲᏁᎦ; ᏴᏭᏁᎦ	yonega; yvwunega	yonega	
 	ᎣᏏᏲ		osiyo	
 5	ᎦᏙ ᎤᏍᏗ?	gado-usdi	which-one.png	
 	ᎯᎳ ᎢᎦ?	hila-iga	how-many-in.png	

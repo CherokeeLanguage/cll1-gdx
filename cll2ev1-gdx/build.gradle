@@ -77,11 +77,15 @@ project(":ios") {
 project(":core") {
     apply plugin: "java"
 
-
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        compile 'com.github.CherokeeLanguage:LeitnerCards:4b3d5fcba6'
     }
+	configurations.all {
+	    resolutionStrategy.cacheChangingModulesFor 30, 'seconds'
+	}
 }
+
 
 project(":html") {
     apply plugin: "gwt"
@@ -97,7 +101,7 @@ project(":html") {
 }
 
  tasks.eclipse.doLast {
-            delete ".project"
-            delete ".classpath"
-            delete ".settings/"
+            //delete ".project"
+            //delete ".classpath"
+            //delete ".settings/"
         }
