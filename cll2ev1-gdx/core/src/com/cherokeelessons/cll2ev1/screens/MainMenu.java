@@ -26,7 +26,6 @@ public class MainMenu extends AbstractScreen {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
 			game.addScreen(new SelectSession(game));
-			Collections.shuffle(null);
 		};
 	};
 	private ClickListener onOptions = new ClickListener();
