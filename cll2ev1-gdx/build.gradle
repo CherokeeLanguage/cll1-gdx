@@ -79,7 +79,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile 'com.github.CherokeeLanguage:LeitnerCards:4b3d5fcba6'
+        compile 'com.github.CherokeeLanguage:LeitnerCards:94138038f3'
     }
 	configurations.all {
 	    resolutionStrategy.cacheChangingModulesFor 30, 'seconds'

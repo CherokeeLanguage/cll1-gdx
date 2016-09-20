@@ -1,6 +1,7 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -25,6 +26,7 @@ public class MainMenu extends AbstractScreen {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
 			game.addScreen(new SelectSession(game));
+			Collections.shuffle(null);
 		};
 	};
 	private ClickListener onOptions = new ClickListener();
