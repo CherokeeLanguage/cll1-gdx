@@ -1,8 +1,5 @@
 package com.cherokeelessons.cll2ev1.screens;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -10,8 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
-import com.cherokeelessons.cll2ev1.models.CardData;
-import com.cherokeelessons.deck.Card;
+import com.cherokeelessons.cll2ev1.LoadCards;
 
 public class MainMenu extends AbstractScreen {
 	private static final String SKIN = CLL2EV1.SKIN;
@@ -46,58 +42,14 @@ public class MainMenu extends AbstractScreen {
 		super(game);
 		setSkin(SKIN);
 		setBackdrop(CLL2EV1.BACKDROP);
-		Gdx.app.postRunnable(loadDeck);
+		Gdx.app.postRunnable(new LoadCards(game));
+		Gdx.app.postRunnable(init);
 	}
-	
-	protected Runnable loadDeck = new Runnable() {
-		@Override
-		public void run() {
-			Gdx.app.postRunnable(init);
-			log("Loading deck from "+CLL2EV1.CARDS_CSV);
-			String tmpCards = Gdx.files.internal(CLL2EV1.CARDS_CSV).readString(StandardCharsets.UTF_8.name());
-			String[] tmpLines = tmpCards.split("\n");
-			log("Loaded "+tmpLines.length+" records.");
-			int activeChapter=0;
-			for (String tmpLine: tmpLines) {
-				String[] tmpCard = tmpLine.split("\t", -1);
-				if (tmpCard.length<5){
-					continue;
-				}
-				if (tmpCard[0].startsWith("#")){
-					continue;
-				}
-				if (!tmpCard[0].trim().isEmpty()) {
-					try {
-						activeChapter=Integer.valueOf(tmpCard[0]);
-					} catch (NumberFormatException e) {
-					}
-				}
-				if (tmpCard[1].trim().isEmpty()) {
-					continue;
-				}
-				CardData data = new CardData();
-				data.chapter=activeChapter;
-				data.text=tmpCard[1].trim();
-				data.audio=tmpCard[2].trim();
-				data.answerPic=tmpCard[3].trim();
-				data.blacklistPic=tmpCard[4].trim();
-				Card<CardData> card = new Card<CardData>();
-				card.setData(data);
-				CLL2EV1.deck.add(card);
-			}
-			log("Deck built. Have "+CLL2EV1.deck.size()+" cards.");
-			CLL2EV1.deck.shuffle();
-			CLL2EV1.deck.sort(3);
-			while (CLL2EV1.deck.hasNext()){
-				CardData data = CLL2EV1.deck.next().getData();
-				System.out.println(data.chapter+"] "+data.text);
-			}
-		}
-	};
 	
 	protected Runnable init = new Runnable() {
 		@Override
 		public void run() {
+			log("init");
 			Label titleLabel = new Label(TITLE, skin);
 			TextButton btnNewGame = new TextButton(PRACTICE, skin);
 			TextButton btnOptions = new TextButton(OPTIONS, skin);
