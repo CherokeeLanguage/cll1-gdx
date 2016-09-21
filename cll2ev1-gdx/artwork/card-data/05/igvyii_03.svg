@@ -426,6 +426,24 @@
        id="radialGradient4538-2"
        xlink:href="#linearGradient4530"
        inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient7084"
+       y2="541.27002"
+       gradientUnits="userSpaceOnUse"
+       x2="-171.94"
+       gradientTransform="matrix(0,-1.6732,1.1476,0,-269.01,-183.5)"
+       y1="558.79999"
+       x1="-155.74001"
+       inkscape:collect="always">
+      <stop
+         id="stop7092"
+         style="stop-color:#ff2a26"
+         offset="0" />
+      <stop
+         id="stop7094"
+         style="stop-color:#96000d"
+         offset="1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -4353,6 +4371,17 @@
          id="use5615-9"
          d="m 388.63057,950.06307 a 39.376332,39.376332 0 0 0 24.24243,18.78606 39.376332,39.376332 0 0 0 48.15649,-27.95147 l 5.25605,1.39538 -9.31715,-16.05215 -16.05214,9.31714 6.44745,1.71166 a 25.225463,25.225463 0 0 1 -30.86273,17.91365 25.225463,25.225463 0 0 1 -18.72933,-23.58664 l -8.20346,4.76153 a 1.1692979,1.1692979 0 0 1 -1.53643,-0.32349 1.1692979,1.1692979 0 0 1 -0.0579,-0.0998 l -4.29824,-7.40528 a 39.376332,39.376332 0 0 0 4.95497,21.53338 z"
          style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(-248.68476,680.05428)"
+       inkscape:label="Layer 1"
+       id="layer1-6">
+      <path
+         d="m 348.77,87.839 5.34,0 0,20.901 15.3,0 0,-20.901 5.38,0 -13.03,-13.868 -12.99,13.868 z"
+         style="color:#000000;fill:url(#linearGradient7084);stroke:#6b1a11;stroke-width:1.75;stroke-linejoin:round"
+         sodipodi:nodetypes="cccccccc"
+         id="path10093"
          inkscape:connector-curvature="0" />
     </g>
   </g>
