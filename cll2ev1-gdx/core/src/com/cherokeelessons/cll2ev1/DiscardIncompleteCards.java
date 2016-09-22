@@ -1,16 +1,15 @@
-package com.cherokeelessons.cll2ev1.screens;
+package com.cherokeelessons.cll2ev1;
 
 import com.badlogic.gdx.Gdx;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
 
-public class ValidateCards implements Runnable {
+public class DiscardIncompleteCards implements Runnable {
 	private CLL2EV1 game;
 
 	private void log(String message) {
 		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
-	public ValidateCards(CLL2EV1 game) {
+	public DiscardIncompleteCards(CLL2EV1 game) {
 		this.game=game;
 	}
 

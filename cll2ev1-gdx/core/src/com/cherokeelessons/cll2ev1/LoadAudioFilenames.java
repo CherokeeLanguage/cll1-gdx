@@ -1,6 +1,4 @@
-package com.cherokeelessons.cll2ev1.screens;
-
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+package com.cherokeelessons.cll2ev1;
 
 public class LoadAudioFilenames implements Runnable {
 

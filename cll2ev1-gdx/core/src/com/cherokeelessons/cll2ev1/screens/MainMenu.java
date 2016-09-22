@@ -7,7 +7,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.LoadAudioFilenames;
 import com.cherokeelessons.cll2ev1.LoadCards;
+import com.cherokeelessons.cll2ev1.LoadPictureFilenames;
 
 public class MainMenu extends AbstractScreen {
 	private static final String SKIN = CLL2EV1.SKIN;
