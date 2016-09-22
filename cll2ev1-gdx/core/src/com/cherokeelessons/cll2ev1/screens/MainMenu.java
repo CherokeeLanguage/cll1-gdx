@@ -43,6 +43,8 @@ public class MainMenu extends AbstractScreen {
 		setSkin(SKIN);
 		setBackdrop(CLL2EV1.BACKDROP);
 		Gdx.app.postRunnable(new LoadCards(game));
+		Gdx.app.postRunnable(new LoadAudioFilenames(game));
+		Gdx.app.postRunnable(new LoadPictureFilenames(game));
 		Gdx.app.postRunnable(init);
 	}
 	

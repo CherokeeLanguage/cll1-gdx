@@ -8,6 +8,13 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 
 public abstract class AbstractGame extends Game {
+	
+	protected final Runnable audioRunner = new Runnable() {
+		@Override
+		public void run() {
+			
+		}
+	}; 
 	protected final String TAG = this.getClass().getSimpleName();
 	protected void log(String message) {
 		Gdx.app.log(TAG, message);
