@@ -15,6 +15,9 @@ fi
 cd "$1"
 cwd="$(pwd)"
 
+if [ ! -f .gitignore ]; then touch .gitignore; fi
+grep "/0_files.txt" .gitignore > /dev/null 2>&1 || echo "/0_files.txt" >> .gitignore  
+
 echo "... $cwd"
 
 cp /dev/null 0_files.txt
