@@ -25,7 +25,7 @@ public class SelectSession extends AbstractScreen {
 		@Override
 		public void run() {
 			Label titleLabel = new Label(TITLE, skin);
-			titleLabel.setFontScale(.75f);
+//			titleLabel.setFontScale(.75f);
 			
 			Table menu = new Table(skin);
 			menu.setFillParent(true);
@@ -45,7 +45,7 @@ public class SelectSession extends AbstractScreen {
 				int t = game.getPrefs().getInteger("level-"+ix+"-card-count", 0);
 				String text = "Completed: "+c+"%, Accuracy: "+a+"%, Total cards: "+t ;
 				TextButton btnSession = new TextButton(text, skin);
-				btnSession.getLabel().setFontScale(.75f);
+				btnSession.getLabel().setFontScale(.9f);
 				menu.row();
 				menu.add(btnSession);
 				btnSession.addListener(chooseSession(ix));
