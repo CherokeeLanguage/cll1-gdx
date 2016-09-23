@@ -11,7 +11,7 @@ import com.cherokeelessons.cll2ev1.screens.ScreenPoweredBy;
 import com.cherokeelessons.deck.Card;
 
 public class CLL2EV1 extends AbstractGame {
-	public static final List<Card<CardData>> cards=new ArrayList<Card<CardData>>();
+	public final List<Card<CardData>> cards=new ArrayList<Card<CardData>>();
 	public static final Vector2 WORLDSIZE = new Vector2(1280, 720);
 	public static final String BACKDROP = "textures/parchment-seemless.png";
 	public static final String SKIN = "skin/serif-68/gdx-holo-freeserif-68.json";

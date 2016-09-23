@@ -46,14 +46,14 @@ public class LoadCards implements Runnable {
 			data.chapter = activeChapter;
 			data.text = tmpCard[1].trim();
 			data.audio = tmpCard[2].trim();
-			data.answerPic = tmpCard[3].trim();
+			data.images = tmpCard[3].trim();
 			data.blacklistPic = tmpCard[4].trim();
 			Card<CardData> card = new Card<CardData>();
 			card.setData(data);
-			CLL2EV1.cards.add(card);
+			game.cards.add(card);
 		}
-		log("Have " + CLL2EV1.cards.size() + " cards.");
-		Iterator<Card<CardData>> icards = CLL2EV1.cards.iterator();
+		log("Have " + game.cards.size() + " cards.");
+		Iterator<Card<CardData>> icards = game.cards.iterator();
 		while (icards.hasNext()) {
 			CardData data = icards.next().getData();
 			System.out.println(data.chapter + "] " + data.text);

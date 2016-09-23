@@ -7,9 +7,10 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.DiscardIncompleteCards;
 import com.cherokeelessons.cll2ev1.LoadAudioFilenames;
 import com.cherokeelessons.cll2ev1.LoadCards;
-import com.cherokeelessons.cll2ev1.LoadPictureFilenames;
+import com.cherokeelessons.cll2ev1.LoadImageFilenames;
 
 public class MainMenu extends AbstractScreen {
 	private static final String SKIN = CLL2EV1.SKIN;
@@ -46,7 +47,8 @@ public class MainMenu extends AbstractScreen {
 		setBackdrop(CLL2EV1.BACKDROP);
 		Gdx.app.postRunnable(new LoadCards(game));
 		Gdx.app.postRunnable(new LoadAudioFilenames(game));
-		Gdx.app.postRunnable(new LoadPictureFilenames(game));
+		Gdx.app.postRunnable(new LoadImageFilenames(game));
+		Gdx.app.postRunnable(new DiscardIncompleteCards(game));
 		Gdx.app.postRunnable(init);
 	}
 	

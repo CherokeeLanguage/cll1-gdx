@@ -1,15 +1,17 @@
 #CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC
 4	ᎠᏲ!	ayo	ayo	
-	ᎣᏍᏓ	osda	osda	vv, howa
+	ᎣᏍᏓ	osda	osda	vv; howa
+	ᎣᏍᏛ		osdv	vv; howa
 	ᎤᏲᎢ	uyoi	uyoi	
-	ᎥᎥ	vv	vv	osda, howa
+	ᎥᎥ	vv	vv	osda; howa
 	ᎥᏍᎩᎩ?	vsgigi	vsgigi	
 	Ꮭ	hla	hla	
-	ᎰᏩ	howa	howa	vv, osda
+	ᎰᏩ	howa	howa	vv; osda
 	Ꮒ!	ni	ni	
 	ᏣᎳᎩ	jalagi	jalagi	
 	ᏩᏙ	wado	wado	
-	ᏲᏁᎦ; ᏴᏭᏁᎦ	yonega; yvwunega	yonega	
+	ᏲᏁᎦ	yonega	yonega	
+	ᏴᏭᏁᎦ	yvwunega	yonega	
 	ᎣᏏᏲ		osiyo	
 5	ᎦᏙ ᎤᏍᏗ?		gado-usdi	
 	ᎯᎳ ᎢᎦ?		hila-iga	
@@ -23,11 +25,13 @@
 	ᎯᏍᎩ		hisgi	
 	ᏑᏓᎵ		sudali	
 	ᎦᎵᏉᎩ		galgwogi	
-	ᎢᎬᏱᎢ	igvyii	ord-01.png	
-	ᏔᎵᏁᎢ	talinei	ord-02.png	
-	ᏦᎢᏁᎢ	joinei	ord-03.png	
-	ᏅᎩᏁᎢ	nvginei	ord-04.png	
-	ᎯᏍᎩᏁᎢ	hisginei	ord-05.png	
-	ᏑᏓᎵᏁᎢ	sudalinei	ord-06.png	
-	ᎦᎵᏉᎩᏁᎢ	galigwoginei	ord-07.png	
+	ᎢᎬᏱᎢ		igvyii	
+	ᎠᏂᏔᎵᏁᎢ		anitalinei	
+	ᏔᎵᏁᎢ		talinei	
+	ᎠᏂᏦᎢᏁᎢ		anijoinei	
+	ᏦᎢᏁᎢ		joinei	
+	ᏅᎩᏁᎢ		nvginei	
+	ᎯᏍᎩᏁᎢ		hisginei	
+	ᏑᏓᎵᏁᎢ		sudalinei	
+	ᎦᎵᏉᎩᏁᎢ		galgwoginei	
 6				
