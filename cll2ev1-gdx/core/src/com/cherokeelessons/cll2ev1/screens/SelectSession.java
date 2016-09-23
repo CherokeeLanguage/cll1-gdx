@@ -40,7 +40,10 @@ public class SelectSession extends AbstractScreen {
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix=0; ix<4; ix++) {
-				String text = "["+(1+ix)+"] Completed 0%, Accuracy 0%" ;
+				int c = game.getPrefs().getInteger("level-"+ix+"-completed", 0);
+				int a = game.getPrefs().getInteger("level-"+ix+"-accuracy", 0);
+				int t = game.getPrefs().getInteger("level-"+ix+"-card-count", 0);
+				String text = "Completed: "+c+"%, Accuracy: "+a+"%, Total cards: "+t ;
 				TextButton btnSession = new TextButton(text, skin);
 				btnSession.getLabel().setFontScale(.75f);
 				menu.row();

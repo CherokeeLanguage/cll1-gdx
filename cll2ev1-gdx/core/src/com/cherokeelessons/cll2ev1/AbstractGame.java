@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 
 public abstract class AbstractGame extends Game {
@@ -54,8 +55,19 @@ public abstract class AbstractGame extends Game {
 		super.setScreen(screen);
 	}
 	
+	protected Preferences prefs;
+	public Preferences getPrefs() {
+		return prefs;
+	}
+
+	public void setPrefs(Preferences prefs) {
+		this.prefs = prefs;
+	}
+
+	
 	@Override
 	public void create() {
+		prefs=Gdx.app.getPreferences(this.getClass().getName());
 	}
 	
 	@Override
