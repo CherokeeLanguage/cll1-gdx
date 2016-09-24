@@ -15,6 +15,8 @@ public class CLL2EV1 extends AbstractGame {
 	public static final String BACKDROP = "textures/parchment-seemless.png";
 	public static final String SKIN = "skin/serif-68/gdx-holo-freeserif-68.json";
 	public static final String CARDS_CSV = "card-data/cards.csv";
+	public static final String CARDS_IN_PLAY = "CardsInPlay.txt";
+	public static final String BACKTEXT = "[BACK]";
 	private ScreenPoweredBy poweredBy = null;
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {

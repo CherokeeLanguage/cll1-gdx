@@ -13,12 +13,8 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
-import com.cherokeelessons.cll2ev1.models.CardData;
-import com.cherokeelessons.cll2ev1.models.GameCard;
-import com.cherokeelessons.deck.CardStats;
-import com.cherokeelessons.deck.Deck;
+import com.cherokeelessons.cll2ev1.StartSession;
 import com.cherokeelessons.deck.DeckStats;
-import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.deck.SkillLevel;
 import com.cherokeelessons.util.SlotFolder;
 
@@ -27,7 +23,6 @@ public class SelectSession extends AbstractScreen {
 	private Json json = new Json();
 
 	protected static final String TITLE = "Please choose session:";
-	private static final String BACK = "[BACK]";
 
 	public SelectSession(AbstractGame game) {
 		super(game);
@@ -46,13 +41,6 @@ public class SelectSession extends AbstractScreen {
 			Table menu = new Table(skin);
 			menu.setFillParent(true);
 			menu.defaults().expand();
-			TextButton btnBack = new TextButton(BACK, skin);
-			btnBack.getLabel().setFontScale(.7f);
-			btnBack.pack();
-			btnBack.addListener(onBack);
-			menu.row();
-			menu.add(btnBack).left().fill(false).expand(false, false);
-
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix = 0; ix < 4; ix++) {
@@ -81,7 +69,12 @@ public class SelectSession extends AbstractScreen {
 				menu.add(btnSession).fillX();
 				btnSession.addListener(chooseSession(ix));
 			}
-
+			TextButton btnBack = new TextButton(CLL2EV1.BACKTEXT, skin);
+			btnBack.getLabel().setFontScale(.7f);
+			btnBack.pack();
+			btnBack.addListener(onBack);
+			menu.row();
+			menu.add(btnBack).left().fill(false).expand(false, false);
 			stage.addActor(menu);
 		}
 	};
@@ -90,67 +83,7 @@ public class SelectSession extends AbstractScreen {
 		return new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// json.setOutputType(OutputType.json);
-				// json.setTypeName(null);
-				FileHandle statsFile = SlotFolder.getSlotFolder(session).child("ActiveDeck.txt");
-				String tmp;
-				try {
-					tmp = statsFile.readString(StandardCharsets.UTF_8.name());
-				} catch (Exception e) {
-					tmp = "";
-				}
-				String[] jsonCardsStats = tmp.split("(?s)\n");
-				/*
-				 * Always create a fresh deck by copying (cloning) cards from
-				 * the CSV master deck. If we have stats that don't match a card
-				 * in the fresh deck they will be ignored and lost at next save.
-				 * The match up is done by "card id" which is the minimal amount
-				 * of uniqueness to match up.
-				 */
-				Deck<CardData> deck = new Deck<CardData>();
-				for (GameCard card : ((CLL2EV1) game).cards) {
-					deck.add(card.copy());
-				}
-				/*
-				 * The json card stats data isn't stored directly as a single
-				 * json object in a list to reduce memory requirements for
-				 * serialization and deserialization
-				 */
-				for (String jsonCardStats : jsonCardsStats) {
-					if (jsonCardStats.trim().isEmpty()) {
-						continue;
-					}
-					if (!jsonCardStats.contains("\t")) {
-						continue;
-					}
-					String[] txtStats = jsonCardStats.split("\t");
-					if (txtStats[0].trim().isEmpty()) {
-						continue;
-					}
-					if (txtStats[1].trim().isEmpty()) {
-						continue;
-					}
-					String id = txtStats[0];
-					copyStatsLoop: for (ICard<CardData> card : deck.getCards()) {
-						if (!id.equals(card.id())) {
-							continue;
-						}
-						CardStats stats = json.fromJson(CardStats.class, txtStats[1]);
-						card.setCardStats(stats);
-						break copyStatsLoop;
-					}
-				}
-				if (tmp.trim().isEmpty()) {
-					// we didn't have a valid stats file, create a new one
-					StringBuilder sb = new StringBuilder();
-					for (ICard<CardData> card : deck.getCards()) {
-						sb.append(card.id());
-						sb.append("\t");
-						sb.append(json.toJson(card.getCardStats()));
-						sb.append("\n");
-					}
-					statsFile.writeString(sb.toString(), false, StandardCharsets.UTF_8.name());
-				}
+				Gdx.app.postRunnable(new StartSession(game, session));
 			}
 		};
 	}

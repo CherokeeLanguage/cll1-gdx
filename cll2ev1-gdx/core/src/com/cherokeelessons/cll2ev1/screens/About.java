@@ -29,20 +29,6 @@ public class About extends AbstractScreen {
 			container.setFillParent(true);
 			container.defaults().expand();
 			
-			container.row();
-			TextButton btnBack = new TextButton("[BACK]", skin);
-			btnBack.getLabel().setFontScale(.65f);
-			btnBack.pack();
-			
-			container.add(btnBack).left().fill(false).expand(false, false);
-			
-			btnBack.addListener(new ClickListener(){
-				@Override
-				public void clicked(InputEvent event, float x, float y) {
-					onBack();
-				}
-			});
-			
 			Table scrollTable = new Table(skin);
 			ScrollPane scroller = new ScrollPane(scrollTable, skin);
 			scroller.setFadeScrollBars(false);
@@ -65,6 +51,19 @@ public class About extends AbstractScreen {
 			
 			container.row();
 			container.add(scroller).expand().fill();
+			
+			container.row();
+			TextButton btnBack = new TextButton("[BACK]", skin);
+			btnBack.getLabel().setFontScale(.65f);
+			btnBack.pack();
+			container.add(btnBack).left().fill(false).expand(false, false);
+			btnBack.addListener(new ClickListener(){
+				@Override
+				public void clicked(InputEvent event, float x, float y) {
+					onBack();
+				}
+			});
+
 			
 			stage.addActor(container);
 			stage.setKeyboardFocus(scroller);

@@ -6,13 +6,19 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.assets.loaders.TextureLoader;
+import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -45,19 +51,54 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	protected final Stage backStage;
 	protected final Stage stage;
 	protected final Stage frontStage;
+	protected final Stage pausedStage;
 	protected final InputMultiplexer inputMultiplexer;
 	protected AbstractGame game;
 	protected final AssetManager assets;
 
+	public static class SyncAssetManager extends AssetManager {
+		public synchronized <T> T loadAndGet(String fileName, Class<T> type) {
+			if (!isLoaded(fileName)) {
+				load(fileName, type);
+				finishLoadingAsset(fileName);
+			}
+			return super.get(fileName, type);
+		}
+		public synchronized <T> T loadAndGet(String fileName, Class<T> type, AssetLoaderParameters<T> parameter) {
+			if (!isLoaded(fileName)) {
+				load(fileName, type, parameter);
+				finishLoadingAsset(fileName);
+			}
+			return super.get(fileName, type);
+		}
+	}
+	
 	public AbstractScreen(AbstractGame game) {
 		super();
 		this.game = game;
 		this.assets = new AssetManager();
-
+		TextureLoader textureLoader = new TextureLoader(new InternalFileHandleResolver()){
+			TextureParameter param = new TextureParameter();
+			{
+				param.magFilter=TextureFilter.Linear;
+			}
+			
+			@Override
+			public void loadAsync(AssetManager manager, String fileName, FileHandle file, TextureParameter parameter) {
+				super.loadAsync(manager, fileName, file, parameter==null?param:parameter);
+			}
+			@Override
+			public Texture loadSync(AssetManager manager, String fileName, FileHandle file,
+					TextureParameter parameter) {
+				return super.loadSync(manager, fileName, file, parameter==null?param:parameter);
+			}
+		};
+		this.assets.setLoader(Texture.class, textureLoader);
+		
 		backStage = new Stage(new FillViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		stage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		frontStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
-
+		pausedStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}
 	
@@ -84,9 +125,10 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	@Override
 	public void resize(int newWidth, int newHeight) {
 		log("Resize: " + newWidth + "x" + newHeight);
-		backStage.getViewport().update(newWidth, newHeight, false);
-		stage.getViewport().update(newWidth, newHeight, false);
-		frontStage.getViewport().update(newWidth, newWidth, false);
+		backStage.getViewport().update(newWidth, newHeight);
+		stage.getViewport().update(newWidth, newHeight);
+		frontStage.getViewport().update(newWidth, newWidth);
+		pausedStage.getViewport().update(newWidth, newHeight);
 	}
 
 	@Override
@@ -99,14 +141,20 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	}
 
 	protected boolean isLoading = false;
-
+	protected float totalElapsed=0f;
+	protected float currentElapsed=0f;
 	@Override
 	public void render(float delta) {
 
-		if (!systemPaused) {
+		if (!systemPaused && !userPaused) {
+			totalElapsed+=delta;
+			currentElapsed+=delta;
 			backStage.act(delta);
 			stage.act(delta);
 			frontStage.act(delta);
+		}
+		if (userPaused) {
+			pausedStage.act(delta);
 		}
 
 		Gdx.gl.glClearColor(clearColor.r, clearColor.g, clearColor.b, clearColor.a);
@@ -118,13 +166,38 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		stage.draw();
 		frontStage.getViewport().apply();
 		frontStage.draw();
-
+		if (userPaused) {
+			pausedStage.getViewport().apply();
+			pausedStage.draw();
+		}
 		isLoading = assets.update(30);
 	}
 
-	boolean systemPaused = false;
-	boolean wasMusicPlaying = false;
+	private boolean userPaused = false;
+	public boolean isUserPaused() {
+		return userPaused;
+	}
 
+	private boolean systemPaused = false;
+	private boolean wasMusicPlaying = false;
+
+	public void userPauseToggle(){
+		if (userPaused) {
+			userResume();
+		} else {
+			userPause();
+		}
+	}
+	public void userPause(){
+		userPaused=true;
+		inputMultiplexer.removeProcessor(pausedStage);
+		inputMultiplexer.addProcessor(0, pausedStage);
+	}
+	public void userResume(){
+		userPaused=false;
+		inputMultiplexer.removeProcessor(pausedStage);
+	}
+	
 	@Override
 	public void pause() {
 		if (!Gdx.app.getType().equals(ApplicationType.Desktop)) {
