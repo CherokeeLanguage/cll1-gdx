@@ -1,6 +1,7 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -50,8 +51,17 @@ public class MainMenu extends AbstractScreen {
 		Gdx.app.postRunnable(new LoadImageFilenames(game));
 		Gdx.app.postRunnable(new DiscardIncompleteCards(game));
 		Gdx.app.postRunnable(init);
+		Gdx.app.postRunnable(howa);
 	}
 	
+	protected Runnable howa = new Runnable() {
+		@Override
+		public void run() {
+			assets.load("audio/howa.mp3", Sound.class);
+			assets.finishLoadingAsset("audio/howa.mp3");
+			assets.get("audio/howa.mp3", Sound.class).play(1f);
+		}
+	};
 	protected Runnable init = new Runnable() {
 		@Override
 		public void run() {
@@ -74,8 +84,8 @@ public class MainMenu extends AbstractScreen {
 			menu.add(titleLabel);
 			menu.row();
 			menu.add(btnNewGame);
-			menu.row();
-			menu.add(btnOptions);
+//			menu.row();
+//			menu.add(btnOptions);
 			menu.row();
 			menu.add(btnAbout);
 			menu.row();
