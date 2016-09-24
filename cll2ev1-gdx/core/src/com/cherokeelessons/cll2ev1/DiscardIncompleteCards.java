@@ -1,10 +1,10 @@
 package com.cherokeelessons.cll2ev1;
 
 import java.util.Iterator;
-import java.util.List;
 
 import com.badlogic.gdx.Gdx;
 import com.cherokeelessons.cll2ev1.models.CardData;
+import com.cherokeelessons.cll2ev1.models.GameCard;
 import com.cherokeelessons.deck.Card;
 
 public class DiscardIncompleteCards implements Runnable {
@@ -22,9 +22,9 @@ public class DiscardIncompleteCards implements Runnable {
 	@Override
 	public void run() {
 		int beforeSize = this.game.cards.size();
-		Iterator<Card<CardData>> icards = this.game.cards.iterator();
+		Iterator<GameCard> icards = this.game.cards.iterator();
 		while (icards.hasNext()) {
-			Card<CardData> card = icards.next();
+			GameCard card = icards.next();
 			if (!card.getData().hasAudioFiles()) {
 				icards.remove();
 				continue;
@@ -38,7 +38,7 @@ public class DiscardIncompleteCards implements Runnable {
 		log("Have "+this.game.cards.size()+" valid cards.");
 		if (debug) {
 			log("=== DEBUG VALID CARDS:");
-			for (Card<CardData> card: this.game.cards) {
+			for (GameCard card: this.game.cards) {
 				log(card.getData().sortKey());
 			}
 		}

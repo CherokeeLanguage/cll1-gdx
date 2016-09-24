@@ -5,13 +5,12 @@ import java.util.List;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
-import com.cherokeelessons.cll2ev1.models.CardData;
+import com.cherokeelessons.cll2ev1.models.GameCard;
 import com.cherokeelessons.cll2ev1.screens.MainMenu;
 import com.cherokeelessons.cll2ev1.screens.ScreenPoweredBy;
-import com.cherokeelessons.deck.Card;
 
 public class CLL2EV1 extends AbstractGame {
-	public final List<Card<CardData>> cards=new ArrayList<Card<CardData>>();
+	public final List<GameCard> cards=new ArrayList<GameCard>();
 	public static final Vector2 WORLDSIZE = new Vector2(1280, 720);
 	public static final String BACKDROP = "textures/parchment-seemless.png";
 	public static final String SKIN = "skin/serif-68/gdx-holo-freeserif-68.json";

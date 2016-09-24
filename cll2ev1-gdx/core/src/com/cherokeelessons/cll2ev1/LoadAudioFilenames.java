@@ -6,7 +6,7 @@ import java.util.List;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.cherokeelessons.cll2ev1.models.CardData;
-import com.cherokeelessons.deck.Card;
+import com.cherokeelessons.cll2ev1.models.GameCard;
 
 /**
  * Build up master list of audio files used by the cards with directory names.
@@ -24,7 +24,7 @@ public class LoadAudioFilenames implements Runnable {
 		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
-	private List<Card<CardData>> cards;
+	private List<GameCard> cards;
 
 	public LoadAudioFilenames(CLL2EV1 game) {
 		cards = game.cards;
@@ -39,7 +39,7 @@ public class LoadAudioFilenames implements Runnable {
 		for (String dir: dirs) {
 			FileHandle subDir = cardAudioDir.child(dir);
 			String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8).split("\n");
-			for (Card<CardData> card: cards) {
+			for (GameCard card: cards) {
 				CardData cd = card.getData();
 				if (cd==null || cd.audio==null) {
 					continue;
@@ -68,7 +68,7 @@ public class LoadAudioFilenames implements Runnable {
 		}
 		if (debug) {
 			log("=== DEBUG - CARD DATA AUDIO FILE ASSIGNMENTS:");
-			for (Card<CardData> card: cards) {
+			for (GameCard card: cards) {
 				CardData data = card.getData();
 				if (data.hasAudioFiles()){
 					log("CARD: "+data.chapter+" - "+data.audio+" - "+ data.nextRandomAudioFile().path());

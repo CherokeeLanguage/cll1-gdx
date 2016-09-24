@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 import com.badlogic.gdx.Gdx;
 import com.cherokeelessons.cll2ev1.models.CardData;
-import com.cherokeelessons.deck.Card;
+import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadCards implements Runnable {
 	private CLL2EV1 game;
@@ -48,12 +48,12 @@ public class LoadCards implements Runnable {
 			data.audio = tmpCard[2].trim();
 			data.images = tmpCard[3].trim();
 			data.blacklistPic = tmpCard[4].trim();
-			Card<CardData> card = new Card<CardData>();
+			GameCard card = new GameCard();
 			card.setData(data);
 			game.cards.add(card);
 		}
 		log("Have " + game.cards.size() + " cards.");
-		Iterator<Card<CardData>> icards = game.cards.iterator();
+		Iterator<GameCard> icards = game.cards.iterator();
 		while (icards.hasNext()) {
 			CardData data = icards.next().getData();
 			System.out.println(data.chapter + "] " + data.text);

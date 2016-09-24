@@ -6,7 +6,7 @@ import java.util.List;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.cherokeelessons.cll2ev1.models.CardData;
-import com.cherokeelessons.deck.Card;
+import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadImageFilenames implements Runnable {
 
@@ -18,7 +18,7 @@ public class LoadImageFilenames implements Runnable {
 		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
-	private List<Card<CardData>> cards;
+	private List<GameCard> cards;
 
 	public LoadImageFilenames(CLL2EV1 game) {
 		cards = game.cards;
@@ -32,7 +32,7 @@ public class LoadImageFilenames implements Runnable {
 		for (String dir : dirs) {
 			FileHandle subDir = cardImageDir.child(dir);
 			String[] imageFiles = subDir.child("0_files.txt").readString(UTF_8).split("\n");
-			for (Card<CardData> card : cards) {
+			for (GameCard card : cards) {
 				CardData cd = card.getData();
 				if (cd == null || cd.images == null) {
 					continue;
@@ -62,7 +62,7 @@ public class LoadImageFilenames implements Runnable {
 		}
 		if (debug) {
 			log("=== DEBUG - CARD DATA IMAGE FILE ASSIGNMENTS:");
-			for (Card<CardData> card : cards) {
+			for (GameCard card : cards) {
 				CardData data = card.getData();
 				if (data.hasImageFiles()) {
 					log("CARD: " + data.chapter + " - " + data.images + " - " + data.nextRandomImageFile().path());
