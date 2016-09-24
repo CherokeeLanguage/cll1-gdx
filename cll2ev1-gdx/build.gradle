@@ -78,7 +78,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile 'com.github.CherokeeLanguage:LeitnerCards:cba1293dc1'
+        compile 'com.github.CherokeeLanguage:LeitnerCards:4230016504'
     }
 }
 

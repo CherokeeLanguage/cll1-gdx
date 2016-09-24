@@ -93,6 +93,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 					continue;
 				}
 			}
+			//shuffle the remaining active cards
+			activeDeck.shuffleAndSortForPlay(3);
 			uiTable = new Table(skin);
 			uiTable.setTouchable(Touchable.childrenOnly);
 			uiTable.defaults().expandX();
@@ -123,13 +125,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 			for (Image img : getImageFor("card-data/images/04/osda_01.png")) {
 				choice1.addActor(img);
 			}
-			;
 
 			choice2.clearChildren();
 			for (Image img : getImageFor("card-data/images/04/uyoi_03.png")) {
 				choice2.addActor(img);
 			}
-			;
 
 			stage.addAction(Actions.sequence(Actions.delay(5), Actions.run(new Runnable() {
 				@Override
