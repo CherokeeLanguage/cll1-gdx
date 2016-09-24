@@ -92,26 +92,30 @@ public class SelectSession extends AbstractScreen {
 			public void clicked(InputEvent event, float x, float y) {
 				// json.setOutputType(OutputType.json);
 				// json.setTypeName(null);
-				FileHandle fh = SlotFolder.getSlotFolder(session).child("ActiveDeck.txt");
+				FileHandle statsFile = SlotFolder.getSlotFolder(session).child("ActiveDeck.txt");
 				String tmp;
 				try {
-					tmp = fh.readString(StandardCharsets.UTF_8.name());
+					tmp = statsFile.readString(StandardCharsets.UTF_8.name());
 				} catch (Exception e) {
 					tmp = "";
 				}
-				String[] jsonCardsStats = tmp.split("(?s)\\s*\n\\s*");
+				String[] jsonCardsStats = tmp.split("(?s)\n");
 				/*
-				 * always create a fresh deck using cards generated from CSV as
-				 * master deck. if we have a stats that don't match a card in
-				 * the master deck they will be ignored and lost at next save.
-				 * the match up is done by "card id" which is the minimal amount
-				 * of uniqueness to match up, ignoring filenames and other data
-				 * that doesn't count toward a cards uniqueness
+				 * Always create a fresh deck by copying (cloning) cards from
+				 * the CSV master deck. If we have stats that don't match a card
+				 * in the fresh deck they will be ignored and lost at next save.
+				 * The match up is done by "card id" which is the minimal amount
+				 * of uniqueness to match up.
 				 */
 				Deck<CardData> deck = new Deck<CardData>();
 				for (GameCard card : ((CLL2EV1) game).cards) {
 					deck.add(card.copy());
 				}
+				/*
+				 * The json card stats data isn't stored directly as a single
+				 * json object in a list to reduce memory requirements for
+				 * serialization and deserialization
+				 */
 				for (String jsonCardStats : jsonCardsStats) {
 					if (jsonCardStats.trim().isEmpty()) {
 						continue;
@@ -137,7 +141,7 @@ public class SelectSession extends AbstractScreen {
 					}
 				}
 				if (tmp.trim().isEmpty()) {
-					//we didn't have a valid stats file, create a new one
+					// we didn't have a valid stats file, create a new one
 					StringBuilder sb = new StringBuilder();
 					for (ICard<CardData> card : deck.getCards()) {
 						sb.append(card.id());
@@ -145,7 +149,7 @@ public class SelectSession extends AbstractScreen {
 						sb.append(json.toJson(card.getCardStats()));
 						sb.append("\n");
 					}
-					fh.writeString(sb.toString(), false, StandardCharsets.UTF_8.name());
+					statsFile.writeString(sb.toString(), false, StandardCharsets.UTF_8.name());
 				}
 			}
 		};
