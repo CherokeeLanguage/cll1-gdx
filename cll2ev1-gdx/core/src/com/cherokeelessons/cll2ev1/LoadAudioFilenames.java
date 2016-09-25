@@ -55,11 +55,11 @@ public class LoadAudioFilenames implements Runnable {
 							continue;
 						}
 						if (audioFile.startsWith(audioPrefix+".")){
-							cd.addAudioFile(subDir.child(audioFile));
+							cd.addAudioFile(subDir.child(audioFile).path());
 							continue;
 						}
 						if (audioFile.startsWith(audioPrefix+"_")){
-							cd.addAudioFile(subDir.child(audioFile));
+							cd.addAudioFile(subDir.child(audioFile).path());
 							continue;
 						}
 					}
@@ -71,7 +71,7 @@ public class LoadAudioFilenames implements Runnable {
 			for (GameCard card: cards) {
 				CardData data = card.getData();
 				if (data.hasAudioFiles()){
-					log("CARD: "+data.chapter+" - "+data.audio+" - "+ data.nextRandomAudioFile().path());
+					log("CARD: "+data.chapter+" - "+data.audio+" - "+ data.nextRandomAudioFile());
 				}
 			}
 		}

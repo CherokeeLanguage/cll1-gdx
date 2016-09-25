@@ -49,11 +49,11 @@ public class LoadImageFilenames implements Runnable {
 							continue;
 						}
 						if (imageFile.startsWith(imagePrefix + ".")) {
-							cd.addImageFile(subDir.child(imageFile));
+							cd.addImageFile(subDir.child(imageFile).path());
 							continue;
 						}
 						if (imageFile.startsWith(imagePrefix + "_")) {
-							cd.addImageFile(subDir.child(imageFile));
+							cd.addImageFile(subDir.child(imageFile).path());
 							continue;
 						}
 					}
@@ -65,7 +65,7 @@ public class LoadImageFilenames implements Runnable {
 			for (GameCard card : cards) {
 				CardData data = card.getData();
 				if (data.hasImageFiles()) {
-					log("CARD: " + data.chapter + " - " + data.images + " - " + data.nextRandomImageFile().path());
+					log("CARD: " + data.chapter + " - " + data.images + " - " + data.nextRandomImageFile());
 				}
 			}
 		}
