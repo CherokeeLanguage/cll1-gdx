@@ -106,4 +106,10 @@ public class SelectSession extends AbstractScreen {
 		return false;
 	}
 
+	@Override
+	protected void act(float delta) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

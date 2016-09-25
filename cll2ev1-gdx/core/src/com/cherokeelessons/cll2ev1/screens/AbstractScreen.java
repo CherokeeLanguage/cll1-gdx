@@ -16,9 +16,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -140,6 +138,8 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		}
 	}
 
+	protected abstract void act(float delta);
+	
 	protected boolean isLoading = false;
 	protected float totalElapsed=0f;
 	protected float currentElapsed=0f;
@@ -149,6 +149,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		if (!systemPaused && !userPaused) {
 			totalElapsed+=delta;
 			currentElapsed+=delta;
+			act(delta);
 			backStage.act(delta);
 			stage.act(delta);
 			frontStage.act(delta);

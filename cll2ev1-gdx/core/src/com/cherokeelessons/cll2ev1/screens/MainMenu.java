@@ -105,4 +105,8 @@ public class MainMenu extends AbstractScreen {
 	protected boolean onMenu() {
 		return false;
 	}
+
+	@Override
+	protected void act(float delta) {
+	}
 }
