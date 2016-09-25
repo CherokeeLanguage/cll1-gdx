@@ -1,7 +1,6 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.ListIterator;
 import java.util.Random;
@@ -609,7 +608,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("SHOWING FIRST TIME DIALOG");
 		userPause();
 		pausedStage.getRoot().clearChildren();
-		Dialog firstTimeNotice = new Dialog("HOW THIS WORKS.", skin) {
+		Dialog firstTimeNotice = new Dialog("HOW THIS WORKS", skin) {
 			@Override
 			protected void result(Object object) {
 				userResume();

@@ -3,9 +3,7 @@ package com.cherokeelessons.cll2ev1;
 import java.util.Iterator;
 
 import com.badlogic.gdx.Gdx;
-import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
-import com.cherokeelessons.deck.Card;
 
 public class DiscardIncompleteCards implements Runnable {
 	private boolean debug=true;
