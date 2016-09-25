@@ -34,7 +34,13 @@ public class About extends AbstractScreen {
 			ScrollPane scroller = new ScrollPane(scrollTable, skin);
 			scroller.setFadeScrollBars(false);
 			
-			String text = Gdx.files.internal(ABOUT_TXT).readString("UTF-8");		
+			String text = "";
+			text+="=====\n";
+			text+="ABOUT\n";
+			text+="=====\n";
+			text+="\n\n";
+			
+			text += Gdx.files.internal(ABOUT_TXT).readString("UTF-8");		
 			text+="\n\n";
 			text+="=========\n";
 			text+="CHANGELOG\n";

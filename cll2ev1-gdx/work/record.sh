@@ -8,7 +8,7 @@ wmctrl -c "CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1"
 id="$(wmctrl -l | grep Cherokee | grep Session | cut -f 1 -d ' ' | head -n 1)"
 if [ "$id"x != x ]; then wmctrl -i -c "$id"; fi
 
-OUT="CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1-2016-09-24.mkv"
+OUT="CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1-2016-09-25-00.mkv"
 if [ -f "$OUT" ]; then rm "$OUT"; fi
 
 (
@@ -28,7 +28,7 @@ while [ "$(wmctrl -l | grep 'CLL2EV1 - Cherokee Language Lessons 2nd Edition Vol
 	fi
 done
 id="$(wmctrl -l | grep 'CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1' | cut -f 1 -d ' ' | head -n 1)"
-wmctrl -i -r "$id" -e 0,2560,0,1278,718
+wmctrl -i -r "$id" -e 0,2540,20,1280,720
 
 #pactl list sources|less
 AUDIO1="alsa_input.pci-0000_00_1b.0.analog-stereo"
@@ -38,12 +38,10 @@ RESYNC2="aresample=async=10000"
 pacmd set-default-source "${AUDIO2}"
 
 #https://launchpad.net/~jon-severinsson/+archive/ffmpeg
-
-ffmpeg -f alsa -ac 2 -i pulse -f x11grab -acodec pcm_s16le -r 30 -s 1280x720 -i "${DISPLAY}+2560x0" -vcodec libx264 -preset ultrafast -threads 0 -af "$RESYNC2" -t "$length" "$OUT"
+ffmpeg -f alsa -ac 2 -i pulse -f x11grab -acodec pcm_s16le -r 30 -s 1280x720 \
+	-i "${DISPLAY}+2545,47" -vcodec libx264 -preset ultrafast -threads 0 -af "$RESYNC2" -t "$length" "$OUT"
 
 wmctrl -i -c "$id"
 id="$(wmctrl -l | grep 'CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1' | cut -f 1 -d ' ' | head -n 1)"
 if [ "$id"x != x ]; then wmctrl -i -c "$id"; fi
-
-done; done
 
