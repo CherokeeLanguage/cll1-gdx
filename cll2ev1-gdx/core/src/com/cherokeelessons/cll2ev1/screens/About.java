@@ -14,6 +14,7 @@ public class About extends AbstractScreen {
 
 	private static final String CHANGELOG_TXT = "text/changelog.txt";
 	private static final String ABOUT_TXT = "text/about.txt";
+	protected static final String ALSO_TXT = "text/also.txt";
 
 	public About(AbstractGame game) {
 		super(game);
@@ -35,12 +36,20 @@ public class About extends AbstractScreen {
 			
 			String text = Gdx.files.internal(ABOUT_TXT).readString("UTF-8");		
 			text+="\n\n";
-			text+="===========\n";
+			text+="=========\n";
 			text+="CHANGELOG\n";
-			text+="===========\n";
+			text+="=========\n";
 			text+="\n\n";
 			
 			text += Gdx.files.internal(CHANGELOG_TXT).readString("UTF-8");
+			
+			text+="\n\n";
+			text+="==================\n";
+			text+="ALSO BY THE AUTHOR\n";
+			text+="==================\n";
+			text+="\n\n";
+			
+			text += Gdx.files.internal(ALSO_TXT).readString("UTF-8");
 
 			Label label = new Label(text, skin);
 			label.setWrap(true);

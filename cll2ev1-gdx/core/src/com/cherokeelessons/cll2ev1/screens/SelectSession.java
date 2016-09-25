@@ -22,7 +22,7 @@ public class SelectSession extends AbstractScreen {
 
 	private Json json = new Json();
 
-	protected static final String TITLE = "Please choose session:";
+	protected static final String TITLE = "ᎦᏙ ᎤᏍᏗ ᏣᏚᎵᎭ?";
 
 	public SelectSession(AbstractGame game) {
 		super(game);
@@ -44,7 +44,7 @@ public class SelectSession extends AbstractScreen {
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix = 0; ix < 4; ix++) {
-				FileHandle fh = SlotFolder.getSlotFolder(ix).child("DeckStats.json");
+				FileHandle fh = SlotFolder.getSlotFolder(ix).child(CLL2EV1.DECKSTATS);
 				DeckStats di;
 				try {
 					String strJson;

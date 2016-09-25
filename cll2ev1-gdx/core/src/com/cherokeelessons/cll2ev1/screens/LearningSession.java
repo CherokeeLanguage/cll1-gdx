@@ -1,6 +1,7 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.ListIterator;
 import java.util.Random;
@@ -10,12 +11,14 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -24,6 +27,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Scaling;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
@@ -31,7 +35,9 @@ import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.deck.CardStats;
 import com.cherokeelessons.deck.CardUtils;
 import com.cherokeelessons.deck.Deck;
+import com.cherokeelessons.deck.DeckStats;
 import com.cherokeelessons.deck.ICard;
+import com.cherokeelessons.util.SlotFolder;
 
 public class LearningSession extends AbstractScreen implements Screen {
 	private static final String DING = "audio/ding.mp3";
@@ -152,7 +158,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 	};
 
-	private float sinceLastDeckShuffle_elapsed = 0f;
+//	private float sinceLastDeckShuffle_elapsed = 0f;
 	private String previousCardId = null;
 	private String activeAudioFile;
 	private String activeImageFile1;
@@ -164,13 +170,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	@Override
 	protected void act(float delta) {
-		sinceLastDeckShuffle_elapsed += delta;
-
-		// 5-minute check
-		if (totalElapsed > maxTime_secs) {
-
-		}
-
+//		sinceLastDeckShuffle_elapsed += delta;
 	}
 
 	private void loadNextChallenge() {
@@ -186,9 +186,122 @@ public class LearningSession extends AbstractScreen implements Screen {
 		currentElapsed = 0f;
 	}
 
+	private void showFinalStats(){
+		log("SHOWING FINAL STATS");
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		Dialog finalStats = new Dialog("FINAL STATS", skin) {
+			@Override
+			protected void result(Object object) {
+				userResume();
+				game.previousScreen();
+			}
+		};
+		finalStats.setModal(true);
+		finalStats.setFillParent(true);
+		finalStats.getTitleLabel().setAlignment(Align.center);
+		TextButton howa = new TextButton("ᎰᏩ", skin);
+		howa.setDisabled(true);
+		finalStats.button(howa);
+		
+		DeckStats stats = DeckStats.calculateStats(activeDeck);
+		StringBuilder txt = new StringBuilder();
+		txt.append("LEVEL: ");
+		txt.append(stats.level.getEnglish());
+		txt.append("\n");
+		txt.append("Active cards: ");
+		txt.append(stats.activeCards);
+		txt.append("\n");
+		txt.append("Score: ");
+		txt.append(stats.lastScore);
+		txt.append("\n");
+		txt.append("Proficiency: ");
+		txt.append(stats.proficiency);
+		txt.append("%");
+
+		Table contentTable = finalStats.getContentTable();
+		contentTable.row();
+		Table noticeTable = new Table(skin);
+		noticeTable.defaults().expand().fill();
+		contentTable.add(noticeTable).expand().fill();
+		Label message = new Label(txt.toString(), skin);
+		message.setAlignment(Align.center);
+		message.setWrap(true);
+		message.setFontScale(1.2f);
+		noticeTable.add(message);
+		finalStats.show(pausedStage);
+		
+		pausedStage.addAction(actionSaveActiveDeck(howa));
+	}
+	
+	private void endSessionCleanup(){
+		/*
+		 * Fist combine completed, discards, and active into a single deck
+		 * before doing stats and also for saving to storage.
+		 */
+		while (completedDeck.hasCards()) {
+			activeDeck.add(completedDeck.topCard());
+		}
+		while (discardsDeck.hasCards()) {
+			activeDeck.add(discardsDeck.topCard());
+		}
+	}
+	
+	private Action actionShowCompletedDialog(){
+		return Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				endSessionCleanup();
+				showFinalStats();
+			}
+		});
+	}
+	
+	private Action actionSaveActiveDeck(final Button howa){
+		return Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				saveActiveDeck();
+				howa.setDisabled(false);
+			}
+		});
+	}
+	
+	private void saveActiveDeck(){
+		Json json = new Json();
+		json.setUsePrototypes(false);
+		FileHandle slot = SlotFolder.getSlotFolder(session);
+		slot.mkdirs();
+		
+		FileHandle fh_activeCards_tmp = slot.child(CLL2EV1.ACTIVE_CARDS+".tmp");
+		FileHandle fh_activeCards = slot.child(CLL2EV1.ACTIVE_CARDS);
+		activeDeck.shuffleThenSortByNextSession();
+		StringBuilder sbActiveCards=new StringBuilder();
+		for (ICard<CardData> card: activeDeck.getCards()) {
+			sbActiveCards.append(card.id());
+			sbActiveCards.append("\t");
+			sbActiveCards.append(json.toJson(card.getCardStats()));
+			sbActiveCards.append("\n");
+		}
+		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, StandardCharsets.UTF_8.name());
+		fh_activeCards_tmp.moveTo(fh_activeCards);
+		
+		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS+".tmp");
+		FileHandle fh_deckstats = slot.child(CLL2EV1.DECKSTATS);
+		json.toJson(DeckStats.calculateStats(activeDeck), fh_deckstats_tmp);
+		fh_deckstats_tmp.moveTo(fh_deckstats);
+	}
+
 	private Action actionLoadNextChallenge() {
 		return Actions.sequence(Actions.delay(1.5f), Actions.run(new Runnable() {
 			public void run() {
+				// 5-minute check
+				if (totalElapsed > maxTime_secs) {
+					log("=== SESSION TIME UP!");
+					pausedStage.addAction(actionShowCompletedDialog());
+					userPause();
+					return;
+				}
 				loadNextChallenge();
 			}
 		}));
@@ -273,10 +386,10 @@ public class LearningSession extends AbstractScreen implements Screen {
 	}
 
 	protected ICard<CardData> getNextCard() {
+		log("getNextCard");
 		/**
 		 * Time marches on... for all cards in play
 		 */
-		log("Updating deck timers by: " + ((long) (currentElapsed * 1000f)));
 		activeDeck.updateTimeBy((long) (currentElapsed * 1000f));
 		discardsDeck.updateTimeBy((long) (currentElapsed * 1000f));
 
@@ -286,40 +399,29 @@ public class LearningSession extends AbstractScreen implements Screen {
 			activeDeck.shuffleThenSortByShowAgainDelay();
 
 			ICard<CardData> card = activeDeck.topCard();
+			CardStats cs = card.getCardStats();
 			// check to try and avoid repeating same card sequentially
 			if (card.id().equals(previousCardId)) {
-				log("Not repeating same card again...");
+				log("Maybe not repeating same card twice in a row...");
 				// infinite loop prevention
 				previousCardId = "" + System.currentTimeMillis();
+				cs.setShowAgainDelay_ms(CardUtils.getNextInterval(cs.getPimsleurSlot()));
+				cs.pimsleurSlotInc();
 				discardsDeck.add(card);
-				// ok, if we have active cards, do getNextCard
-				log("Now have " + activeDeck.size() + " cards in play ...");
-				if (activeDeck.hasCards()) {
-					return getNextCard();
-				}
-				addCardFromMasterDeck();
-				// ok, if we have active cards, do getNextCard
-				log("Now have " + activeDeck.size() + " cards in play ...");
-				if (activeDeck.hasCards()) {
-					return getNextCard();
-				}
+				return getNextCard();
 			}
 			previousCardId = card.id();
 			// go ahead and assign it to the discards deck
 			discardsDeck.add(card);
-			CardStats cs = card.getCardStats();
 			// reduce tries left count
 			log("For card: " + card.getData().text);
 			log("- Tries remaining: " + cs.getTriesRemaining());
 			cs.triesRemainingDec();
 			// update next show time delay based on current Pimsleur slot #
-			log("- Pimsleur slot: " + cs.getPimsleurSlot());
-			log("- Next show interval calculation: " + CardUtils.getNextInterval(cs.getPimsleurSlot()));
 			cs.setShowAgainDelay_ms(CardUtils.getNextInterval(cs.getPimsleurSlot()));
 			// move to next Pimsleur slot
 			cs.pimsleurSlotInc();
 			// inc count of how many times card has been displayed.
-			log("- Previously shown count: " + cs.getShown());
 			cs.setShown(cs.getShown() + 1);
 			// return this now "active" card for challenging with
 			return card;
@@ -341,7 +443,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			return getNextCard();
 		}
 
-		addCardFromCompletedDeck();
+		addCardsFromCompletedDeck();
 		// ok, if we have active cards, do getNextCard
 		log("Now have " + activeDeck.size() + " cards in play ...");
 		if (activeDeck.hasCards()) {
@@ -369,18 +471,22 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 	}
 
-	private void addCardFromCompletedDeck() {
+	private void addCardsFromCompletedDeck() {
 		/**
 		 * We still don't have any active cards, grab some from the completed
-		 * deck. Being sure to set all stats to "never shown/correct".
+		 * deck. Being sure to set all stats to "never shown/correct". This is
+		 * like an emergency don't crash me measure.
 		 */
 		log("Retrieving old cards from completed deck...");
-		completedDeck.shuffleThenSortByShowAgainDelay();
-		if (completedDeck.size() != 0) {
-			ICard<CardData> topCard = completedDeck.topCard();
-			topCard.resetStats();
-			topCard.resetTriesRemaining();
-			activeDeck.add(topCard);
+		completedDeck.shuffleThenSortByNextSession();
+		for (int count=0; count<3; count++) {
+			if (completedDeck.size() != 0) {
+				ICard<CardData> topCard = completedDeck.topCard();
+				topCard.resetStats();
+				topCard.resetTriesRemaining();
+				topCard.getCardStats().setPimsleurSlot(0);
+				activeDeck.add(topCard);
+			}
 		}
 	}
 
@@ -395,6 +501,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			ICard<CardData> topCard = masterDeck.topCard();
 			topCard.resetStats();
 			topCard.resetTriesRemaining();
+			topCard.getCardStats().setPimsleurSlot(0);
 			activeDeck.add(topCard);
 		}
 	}
@@ -427,7 +534,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			if (cardStats.getTriesRemaining() > 0) {
 				continue;
 			}
-			log("Finished with card: " + card.id());
+			log("=== Completed card: " + card.id());
 			// if correct, the card should get moved to the next
 			// leitner box
 			if (cardStats.isCorrect()) {
@@ -465,7 +572,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	@Override
 	protected boolean onBack() {
 		userPause();
-		pausedStage.clear();
+		pausedStage.getRoot().clearChildren();
 		Dialog cancelSession = new Dialog("CANCEL SESSION?", skin) {
 			@Override
 			protected void result(Object object) {
@@ -475,7 +582,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 				userResume();
 			}
 		};
-		pausedStage.addActor(cancelSession);
+		cancelSession.setModal(true);
 		cancelSession.getTitleLabel().setAlignment(Align.center);
 		cancelSession.button("ᎥᎥ - YES", "YES");
 		cancelSession.button("ᎥᏝ - NO", "NO");
@@ -501,7 +608,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	protected void firstTime() {
 		log("SHOWING FIRST TIME DIALOG");
 		userPause();
-		pausedStage.clear();
+		pausedStage.getRoot().clearChildren();
 		Dialog firstTimeNotice = new Dialog("HOW THIS WORKS.", skin) {
 			@Override
 			protected void result(Object object) {
@@ -509,7 +616,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 				stage.addAction(actionLoadNextChallenge());
 			}
 		};
-		pausedStage.addActor(firstTimeNotice);
+		firstTimeNotice.setModal(true);
 		firstTimeNotice.setFillParent(true);
 		firstTimeNotice.getTitleLabel().setAlignment(Align.center);
 		firstTimeNotice.button("ᎰᏩ");
@@ -581,6 +688,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			CardStats cardStats = card.getCardStats();
 			card.resetStats();
 			card.resetTriesRemaining();
+			card.getCardStats().setPimsleurSlot(0);
 		}
 		// dec next session counter for active cards
 		for (ICard<CardData> card : activeDeck.getCards()) {

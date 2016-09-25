@@ -13,7 +13,7 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class StartSession implements Runnable {
-	private static final String CARDS_IN_PLAY = CLL2EV1.CARDS_IN_PLAY;
+	private static final String ACTIVE_CARDS = CLL2EV1.ACTIVE_CARDS;
 	private final AbstractGame game;
 	private final int session;
 	private final Json json = new Json();
@@ -25,10 +25,10 @@ public class StartSession implements Runnable {
 
 	@Override
 	public void run() {
-		FileHandle statsFile = SlotFolder.getSlotFolder(session).child(CARDS_IN_PLAY);
+		FileHandle activeCardsJson = SlotFolder.getSlotFolder(session).child(ACTIVE_CARDS);
 		String tmp;
 		try {
-			tmp = statsFile.readString(StandardCharsets.UTF_8.name());
+			tmp = activeCardsJson.readString(StandardCharsets.UTF_8.name());
 		} catch (Exception e) {
 			tmp = "";
 		}
@@ -45,6 +45,8 @@ public class StartSession implements Runnable {
 		for (GameCard card : ((CLL2EV1) game).cards) {
 			ICard<CardData> copy = card.copy();
 			copy.resetStats();
+			copy.resetTriesRemaining();
+			copy.getCardStats().setPimsleurSlot(0);
 			masterDeck.add(copy);
 		}
 		Deck<CardData> activeDeck = new Deck<CardData>();
