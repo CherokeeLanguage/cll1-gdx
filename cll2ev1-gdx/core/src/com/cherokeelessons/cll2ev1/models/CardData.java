@@ -4,39 +4,38 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.badlogic.gdx.files.FileHandle;
 import com.cherokeelessons.deck.ICardData;
 
 public class CardData implements ICardData {
 	
 	public String audio;
-	private List<FileHandle> audioFiles=new ArrayList<FileHandle>();
+	private List<String> audioFiles=new ArrayList<String>();
 	public String blacklistPic;
 	public int chapter;
-	private List<FileHandle> imageFiles=new ArrayList<FileHandle>();
+	private List<String> imageFiles=new ArrayList<String>();
 	public String images;
-	private List<FileHandle> randomAudioFiles=new ArrayList<FileHandle>();
-	private List<FileHandle> randomImageFiles=new ArrayList<FileHandle>();
+	private List<String> randomAudioFiles=new ArrayList<String>();
+	private List<String> randomImageFiles=new ArrayList<String>();
 	public String text;
 	
-	public void addAudioFile(FileHandle file){
+	public void addAudioFile(String file){
 		audioFiles.add(file);
 	}
 	
-	public void addImageFile(FileHandle file){
+	public void addImageFile(String file){
 		imageFiles.add(file);
 	}
 	@Override
 	public CardData copy() {
 		CardData copy = new CardData();
 		copy.audio=audio;
-		copy.audioFiles=new ArrayList<FileHandle>(audioFiles);
+		copy.audioFiles=new ArrayList<String>(audioFiles);
 		copy.blacklistPic=blacklistPic;
 		copy.chapter=chapter;
-		copy.imageFiles=new ArrayList<FileHandle>(imageFiles);
+		copy.imageFiles=new ArrayList<String>(imageFiles);
 		copy.images=images;
-		copy.randomAudioFiles=new ArrayList<FileHandle>(randomAudioFiles);
-		copy.randomImageFiles=new ArrayList<FileHandle>(randomImageFiles);
+		copy.randomAudioFiles=new ArrayList<String>(randomAudioFiles);
+		copy.randomImageFiles=new ArrayList<String>(randomImageFiles);
 		copy.text=text;
 		return copy;
 	}
@@ -64,7 +63,7 @@ public class CardData implements ICardData {
 		return sb.toString();
 	}
 	
-	public FileHandle nextRandomAudioFile(){
+	public String nextRandomAudioFile(){
 		if (!hasAudioFiles()) {
 			return null;
 		}
@@ -75,7 +74,7 @@ public class CardData implements ICardData {
 		return randomAudioFiles.remove(0);
 	}
 
-	public FileHandle nextRandomImageFile(){
+	public String nextRandomImageFile(){
 		if (!hasImageFiles()) {
 			return null;
 		}
