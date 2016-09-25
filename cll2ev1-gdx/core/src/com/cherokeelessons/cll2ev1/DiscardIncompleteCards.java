@@ -25,21 +25,28 @@ public class DiscardIncompleteCards implements Runnable {
 			GameCard card = icards.next();
 			if (!card.getData().hasAudioFiles()) {
 				icards.remove();
+				if (debug) {
+					log("- Missing Audio: "+card.id());
+				}
 				continue;
 			}
 			if (!card.getData().hasImageFiles()) {
 				icards.remove();
+				if (debug) {
+					log("- Missing Correct Images: "+card.id());
+				}
+				continue;
+			}
+			if (!card.getData().hasWrongImageFiles()) {
+				icards.remove();
+				if (debug) {
+					log("- Missing Wrong Images: "+card.id());
+				}
 				continue;
 			}
 		}
 		log("Removed "+(beforeSize-this.game.cards.size())+" cards.");
 		log("Have "+this.game.cards.size()+" valid cards.");
-		if (debug) {
-			log("=== DEBUG VALID CARDS:");
-			for (GameCard card: this.game.cards) {
-				log(card.getData().sortKey());
-			}
-		}
 	}
 
 }

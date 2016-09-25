@@ -4,6 +4,8 @@ howa.mp3
 jalagi.mp3
 ni.mp3
 osda.mp3
+osdv.mp3
+osiyo.mp3
 uyoi.mp3
 uyo.mp3
 vsgigi.mp3
