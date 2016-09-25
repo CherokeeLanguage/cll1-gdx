@@ -772,7 +772,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 				ding();
 			} else {
 				choice1.addActor(imgXmark);
-				activeCardStats.setCorrect(false);
+				if (activeCardStats.isCorrect()) {
+					activeCardStats.pimsleurSlotDec();
+					activeCardStats.triesRemainingInc();
+					activeCardStats.setCorrect(false);
+				}
 				buzz();
 			}
 			choice1.setTouchable(Touchable.disabled);
@@ -790,7 +794,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 				ding();
 			} else {
 				choice2.addActor(imgXmark);
-				activeCardStats.setCorrect(false);
+				if (activeCardStats.isCorrect()) {
+					activeCardStats.pimsleurSlotDec();
+					activeCardStats.triesRemainingInc();
+					activeCardStats.setCorrect(false);
+				}
 				buzz();
 			}
 			choice1.setTouchable(Touchable.disabled);
