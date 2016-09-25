@@ -10,7 +10,7 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadImageFilenames implements Runnable {
 
-	private boolean debug = true;
+	private boolean debug = false;
 	private static final String UTF_8 = StandardCharsets.UTF_8.name();
 	private FileHandle cardImageDir = Gdx.files.internal("card-data/images/");
 
@@ -42,20 +42,34 @@ public class LoadImageFilenames implements Runnable {
 					continue;
 				}
 				String[] imagePrefixes = cd.images.split(";\\s*");
+				String[] imageBlacklistPrefixes = cd.blacklistPic.split(";\\s*");
 				for (String imagePrefix : imagePrefixes) {
-					for (String imageFile : imageFiles) {
+					nextImage: for (String imageFile : imageFiles) {
+						//skip not recogized image files
 						if (!imageFile.endsWith(".png") && !imageFile.endsWith(".jpg")
 								&& !imageFile.endsWith(".jpeg")) {
-							continue;
+							continue nextImage;
 						}
+						//matches as correct, add it to the correct side of things
 						if (imageFile.startsWith(imagePrefix + ".")) {
 							cd.addImageFile(subDir.child(imageFile).path());
-							continue;
+							continue nextImage;
 						}
+						//matches as correct, add it to the correct side of things
 						if (imageFile.startsWith(imagePrefix + "_")) {
 							cd.addImageFile(subDir.child(imageFile).path());
-							continue;
+							continue nextImage;
 						}
+						//see if it is ok to add to the wrong pics list
+						for (String prefix: imageBlacklistPrefixes) {
+							if (imageFile.startsWith(prefix+".")){
+								continue nextImage;
+							}
+							if (imageFile.startsWith(prefix+"_")){
+								continue nextImage;
+							}
+						}
+						cd.addWrongImageFile(subDir.child(imageFile).path());
 					}
 				}
 			}
@@ -64,8 +78,10 @@ public class LoadImageFilenames implements Runnable {
 			log("=== DEBUG - CARD DATA IMAGE FILE ASSIGNMENTS:");
 			for (GameCard card : cards) {
 				CardData data = card.getData();
-				if (data.hasImageFiles()) {
-					log("CARD: " + data.chapter + " - " + data.images + " - " + data.nextRandomImageFile());
+				if (data.hasImageFiles() && data.hasWrongImageFiles()) {
+					log("");
+					log("CARD [c]: " + data.chapter + " - " + data.nextRandomImageFile() + " - " + data.getImageFiles().size());
+					log("CARD [w]: " + data.chapter + " - " + data.nextRandomWrongImageFile() + " - " + data.getWrongImageFiles().size());
 				}
 			}
 		}
