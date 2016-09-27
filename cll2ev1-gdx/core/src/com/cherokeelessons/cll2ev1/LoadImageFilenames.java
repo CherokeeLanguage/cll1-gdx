@@ -68,6 +68,9 @@ public class LoadImageFilenames implements Runnable {
 						}
 						//see if it is ok to add to the wrong pics list
 						for (String substring: imageBlacklistSubstrings) {
+							if (substring==null||substring.trim().isEmpty()){
+								break;
+							}
 							if (imageFile.contains(substring)){
 								continue nextImage;
 							}
