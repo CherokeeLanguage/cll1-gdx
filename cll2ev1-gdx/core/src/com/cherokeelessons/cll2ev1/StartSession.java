@@ -1,9 +1,14 @@
 package com.cherokeelessons.cll2ev1;
 
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
+import com.badlogic.gdx.utils.JsonWriter.OutputType;
 import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 import com.cherokeelessons.cll2ev1.screens.LearningSession;
@@ -49,6 +54,19 @@ public class StartSession implements Runnable {
 			copy.getCardStats().setPimsleurSlot(0);
 			masterDeck.add(copy);
 		}
+		if (Gdx.app.getType().equals(ApplicationType.Desktop)){
+			masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
+			SlotFolder.getDeckSlot().mkdirs();
+			List<String[]> sortedCardIds = new ArrayList<String[]>();
+			for (ICard<CardData> card: masterDeck.getCards()) {
+				sortedCardIds.add(new String[]{card.id(), card.sortKey()});
+			}
+			Json jsonx = new Json(OutputType.json);
+			jsonx.setTypeName(null);
+			jsonx.setUsePrototypes(false);
+			SlotFolder.getDeckSlot().child("master-deck-card-ids.json").writeString(jsonx.prettyPrint(sortedCardIds), false, StandardCharsets.UTF_8.name());
+		}
+
 		Deck<CardData> activeDeck = new Deck<CardData>();
 		/*
 		 * The json card stats data aren't stored directly as a single json

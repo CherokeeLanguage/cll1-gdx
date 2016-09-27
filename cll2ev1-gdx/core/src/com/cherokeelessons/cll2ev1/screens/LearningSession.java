@@ -8,6 +8,7 @@ import java.util.Set;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
@@ -28,6 +29,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Scaling;
+import com.badlogic.gdx.utils.JsonWriter.OutputType;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 import com.cherokeelessons.cll2ev1.models.CardData;
@@ -495,7 +497,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		 * sure to set all stats to "never shown/correct".
 		 */
 		log("Getting new card from master deck ...");
-		masterDeck.shuffleThenSortIntoGroups(3);
+		masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
 		if (masterDeck.size() != 0) {
 			ICard<CardData> topCard = masterDeck.topCard();
 			topCard.resetStats();

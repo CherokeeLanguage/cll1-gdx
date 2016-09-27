@@ -37,7 +37,13 @@ public class LoadImageFilenames implements Runnable {
 				if (cd == null || cd.images == null) {
 					continue;
 				}
-				String c = cd.chapter < 10 ? "0" + cd.chapter : "" + cd.chapter;
+				String c = ""+cd.chapter;
+				if (cd.chapter<100) {
+					c = "0"+c;
+				}
+				if (cd.chapter<10) {
+					c = "0"+c;
+				}
 				if (!c.equals(dir)) {
 					continue;
 				}
