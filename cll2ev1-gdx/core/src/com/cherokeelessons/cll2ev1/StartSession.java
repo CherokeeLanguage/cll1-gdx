@@ -50,7 +50,7 @@ public class StartSession implements Runnable {
 		for (GameCard card : ((CLL2EV1) game).cards) {
 			ICard<CardData> copy = card.copy();
 			copy.resetStats();
-			copy.resetTriesRemaining();
+			copy.resetTriesRemaining(CardData.MAX_TRIES);
 			copy.getCardStats().setPimsleurSlot(0);
 			masterDeck.add(copy);
 		}
@@ -99,7 +99,7 @@ public class StartSession implements Runnable {
 				// move this "in play" card into the active deck. Being sure to
 				// set all stats to "never shown/correct".
 				card.resetStats();
-				card.resetTriesRemaining();
+				card.resetTriesRemaining(CardData.MAX_TRIES);
 				card.getCardStats().setPimsleurSlot(0);
 				activeDeck.add(card);
 				break copyStatsLoop;

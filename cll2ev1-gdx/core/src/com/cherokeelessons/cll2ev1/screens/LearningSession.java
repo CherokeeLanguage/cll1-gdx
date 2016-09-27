@@ -484,7 +484,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			if (completedDeck.size() != 0) {
 				ICard<CardData> topCard = completedDeck.topCard();
 				topCard.resetStats();
-				topCard.resetTriesRemaining();
+				topCard.resetTriesRemaining(CardData.MAX_TRIES);
 				topCard.getCardStats().setPimsleurSlot(0);
 				activeDeck.add(topCard);
 			}
@@ -501,7 +501,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		if (masterDeck.size() != 0) {
 			ICard<CardData> topCard = masterDeck.topCard();
 			topCard.resetStats();
-			topCard.resetTriesRemaining();
+			topCard.resetTriesRemaining(CardData.MAX_TRIES);
 			topCard.getCardStats().setPimsleurSlot(0);
 			activeDeck.add(topCard);
 		}
@@ -688,7 +688,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		for (ICard<CardData> card : activeDeck.getCards()) {
 			CardStats cardStats = card.getCardStats();
 			card.resetStats();
-			card.resetTriesRemaining();
+			card.resetTriesRemaining(CardData.MAX_TRIES);
 			card.getCardStats().setPimsleurSlot(0);
 		}
 		// dec next session counter for active cards

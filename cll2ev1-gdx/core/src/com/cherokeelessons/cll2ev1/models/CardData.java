@@ -7,6 +7,7 @@ import java.util.List;
 import com.cherokeelessons.deck.ICardData;
 
 public class CardData implements ICardData {
+	public static final int MAX_TRIES = 5;
 	public static final int SORT_KEY_LENGTH = 7;
 	public String audio;
 	private List<String> audioFiles = new ArrayList<String>();
