@@ -48,7 +48,7 @@ public class LoadImageFilenames implements Runnable {
 					continue;
 				}
 				String[] imagePrefixes = cd.images.split(";\\s*");
-				String[] imageBlacklistPrefixes = cd.blacklistPic.split(";\\s*");
+				String[] imageBlacklistSubstrings = cd.blacklistPic.split(";\\s*");
 				for (String imagePrefix : imagePrefixes) {
 					nextImage: for (String imageFile : imageFiles) {
 						//skip not recogized image files
@@ -67,11 +67,8 @@ public class LoadImageFilenames implements Runnable {
 							continue nextImage;
 						}
 						//see if it is ok to add to the wrong pics list
-						for (String prefix: imageBlacklistPrefixes) {
-							if (imageFile.startsWith(prefix+".")){
-								continue nextImage;
-							}
-							if (imageFile.startsWith(prefix+"_")){
+						for (String substring: imageBlacklistSubstrings) {
+							if (imageFile.contains(substring)){
 								continue nextImage;
 							}
 						}
