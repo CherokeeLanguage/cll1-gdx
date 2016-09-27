@@ -8,7 +8,7 @@ trap 'echo ERROR; read a' ERR
 cd "$(dirname "$0")"
 cwd="$(pwd)"
 
-for x in ??; do
+for x in ???; do
 	echo "--- $x"
 	cd "$cwd"
 	cd "$x"
