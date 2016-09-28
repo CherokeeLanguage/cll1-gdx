@@ -8,8 +8,9 @@ cd "$(dirname "$0")"
 
 cwd="$(pwd)"
 
+cd "images"
 for dir in *; do
-	cd "$cwd"
+	cd "$cwd"/images
 	if [ ! -d "$dir" ]; then continue; fi
 	if [ "openclipart.org" = "$dir" ]; then continue; fi
 	cd "$dir"
@@ -26,5 +27,11 @@ for dir in *; do
 	done
 done
 
+cd "$cwd"
+cd audio
+bash fix-audio.sh
+
+echo "DONE"
+sleep 3
 exit 0
 

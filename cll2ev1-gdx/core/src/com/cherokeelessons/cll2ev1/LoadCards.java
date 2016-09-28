@@ -47,6 +47,9 @@ public class LoadCards implements Runnable {
 			data.text = tmpCard[1].trim();
 			data.audio = tmpCard[2].trim();
 			data.images = tmpCard[3].trim();
+			if (data.images.trim().isEmpty()) {
+				data.images=data.audio;
+			}
 			data.blacklistPic = tmpCard[4].trim();
 			GameCard card = new GameCard();
 			card.setData(data);
