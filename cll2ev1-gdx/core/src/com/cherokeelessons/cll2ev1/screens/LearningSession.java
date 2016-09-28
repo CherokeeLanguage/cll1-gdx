@@ -768,13 +768,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	private ClickListener maybe1 = new ClickListener() {
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+			stage.addAction(actionLoadNextChallenge());
 			choice1.setTouchable(Touchable.disabled);
 			choice2.setTouchable(Touchable.disabled);
 			// update card with total time it has been on display
 			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
 			if (correct == 1) {
 				choice1.addActor(imgCheckmark);
-				stage.addAction(actionLoadNextChallenge());
 				ding();
 			} else {
 				choice1.addActor(imgXmark);
@@ -790,13 +790,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 	};
 	private ClickListener maybe2 = new ClickListener() {
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+			stage.addAction(actionLoadNextChallenge());
 			choice1.setTouchable(Touchable.disabled);
 			choice2.setTouchable(Touchable.disabled);
 			// update card with total time it has been on display
 			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
 			if (correct == 2) {
 				choice2.addActor(imgCheckmark);
-				stage.addAction(actionLoadNextChallenge());
 				ding();
 			} else {
 				choice2.addActor(imgXmark);
