@@ -38,20 +38,20 @@
 	ᎠᏂᎪᏩᏘᎭ	anigowhtiha		anigowhtiha		
 	ᏓᎪᏩᏘᎭ	dagowhtiha		dagowhtiha		
 	ᏓᏂᎪᏩᏘᎭ	danigowhtiha		danigowhtiha		
-	ᏪᏌ ᎠᎴ ᎩᏟ	wesa-ale-gihli		nole		
-	ᏄᎾ ᎠᎴ ᏅᏯ	nuna-ale-nvya		nole		
-	ᏪᏌ ᎠᎴ ᏅᏯ	wesa-ale-nvya		nole		
-	ᏪᏌ ᏃᎴ ᎩᏟ	wesa-nole-gihli	wesa-ale-gihli	ale		
-	ᏄᎾ ᏃᎴ ᏅᏯ	nuna-nole-nvya	nuna-ale-nvya	ale		
-	ᏪᏌ ᏃᎴ ᏅᏯ	wesa-nole-nvya	wesa-ale-nvya	ale		
-	ᎠᎨᏯ	agehya				
-	ᎠᏂᎨᏯ	anigehya				
-	ᎠᏍᎦᏯ	asgaya				
-	ᎠᏂᏍᎦᏯ	anisgaya				
-	ᎩᏟ	gihli				
-	ᏄᎾ	nuna				
-	ᏅᏯ	nvya				
-	ᏪᏌ	wesa				
+	ᏪᏌ ᎠᎴ ᎩᏟ	wesa-ale-gihli		wesa		
+	ᏄᎾ ᎠᎴ ᏅᏯ	nuna-ale-nvya		nuna		
+	ᏪᏌ ᎠᎴ ᏅᏯ	wesa-ale-nvya		wesa		
+	ᏪᏌ ᏃᎴ ᎩᏟ	wesa-nole-gihli	wesa-ale-gihli	wesa		
+	ᏄᎾ ᏃᎴ ᏅᏯ	nuna-nole-nvya	nuna-ale-nvya	nuna		
+	ᏪᏌ ᏃᎴ ᏅᏯ	wesa-nole-nvya	wesa-ale-nvya	wesa		
+	ᎠᎨᏯ	agehya		agehya		
+	ᎠᏂᎨᏯ	anigehya		anigehya		
+	ᎠᏍᎦᏯ	asgaya		asgaya		
+	ᎠᏂᏍᎦᏯ	anisgaya		anisgaya		
+	ᎩᏟ	gihli		gihli		
+	ᏄᎾ	nuna		nuna		
+	ᏅᏯ	nvya		nvya		
+	ᏪᏌ	wesa		wesa		
 	ᎦᏙ ᎤᎾᏍᏗ?	gado-unsdi				
 	ᏘᎪᎵᏯ	tigoliya				
 	ᏂᏔᏛᎦ	nitadvga				
@@ -71,33 +71,33 @@
 	ᏪᏌ ᎠᏂᎪᏩᏘᎭ	wesa-anigowhtiha		anigowhtiha		
 	ᏪᏌ ᏓᎪᏩᏘᎭ	wesa-dagowhtiha		dagowhtiha		
 	ᏪᏌ ᏓᏂᎪᏩᏘᎭ	wesa-danigowhtiha		danigowhtiha		
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ	anitali-anigehya				
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᎠᎴ ᏔᎵ ᏄᎾ	anitali-anigehya-ale-tali-nuna				
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᏃᎴ ᏦᎢ ᏄᎾ	anitali-anigehya-nole-joi-nuna				
-	ᎠᏂᏔᎵ ᎠᏂᏍᎦᏯ	anitali-anisgaya				
-	ᎠᏂᏔᎵ ᎩᏟ	anitali-gihli				
-	ᎠᏂᏔᎵ ᏪᏌ	anitali-wesa				
-	ᎠᏂᏦᎢ ᎠᏂᎨᏯ	anijoi-anigehya				
-	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ	anijoi-anisgaya				
-	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ ᏃᎴ ᏔᎵ ᏄᎾ	anijoi-anisgaya-nole-tali-nuna				
-	ᏌᏊ ᎠᎨᏯ	sagwu-agehya				
-	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏅᏯ	sagwu-agehya-ale-sagwu-nvya				
-	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏪᏌ	sagwu-agehya-ale-sagwu-wesa				
-	ᏌᏊ ᎠᎨᏯ ᏃᎴ ᏌᏊ ᏄᎾ	sagwu-agehya-nole-sagwu-nuna				
-	ᏌᏊ ᎠᏍᎦᏯ	sagwu-asgaya				
-	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᎩᏟ	sagwu-asgaya-nole-sagwu-gihli				
-	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᏄᎾ	sagwu-asgaya-nole-sagwu-nuna				
-	ᏌᏊ ᎩᏟ	sagwu-gihli				
-	ᏌᏊ ᏄᎾ	sagwu-nuna				
-	ᏌᏊ ᏅᏯ	sagwu-nvya				
-	ᏌᏊ ᏪᏌ	sagwu-wesa				
-	ᏔᎵ ᏄᎾ	tali-nuna				
-	ᏦᎢ ᏄᎾ	joi-nuna				
-	ᏦᎢ ᏅᏯ	joi-nvya				
-	ᎦᏙ ᎤᏍᏗ ᎠᎪᏩᏘᎭ?	gado-usdi-agowhtiha				
-	ᎦᏙ ᎤᏍᏗ ᎠᏂᎪᏩᏘᎭ?	gado-usdi-anigowhtiha				
-	ᎦᏙ ᎤᎾᏍᏗ ᏓᎪᏩᏘᎭ?	gado-unsdi-dagowhtiha				
-	ᎦᏙ ᎤᎾᏍᏗ ᏓᏂᎪᏩᏘᎭ?	gado-unsdi-danigowhtiha				
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ	anitali-anigehya		anigehya		
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᎠᎴ ᏔᎵ ᏄᎾ	anitali-anigehya-ale-tali-nuna		anigehya		
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᏃᎴ ᏦᎢ ᏄᎾ	anitali-anigehya-nole-joi-nuna		anigehya		
+	ᎠᏂᏔᎵ ᎠᏂᏍᎦᏯ	anitali-anisgaya		anisgaya		
+	ᎠᏂᏔᎵ ᎩᏟ	anitali-gihli		gihli		
+	ᎠᏂᏔᎵ ᏪᏌ	anitali-wesa		wesa		
+	ᎠᏂᏦᎢ ᎠᏂᎨᏯ	anijoi-anigehya		anigehya		
+	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ	anijoi-anisgaya		anisgaya		
+	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ ᏃᎴ ᏔᎵ ᏄᎾ	anijoi-anisgaya-nole-tali-nuna		anisgaya		
+	ᏌᏊ ᎠᎨᏯ	sagwu-agehya		agehya		
+	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏅᏯ	sagwu-agehya-ale-sagwu-nvya		agehya		
+	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏪᏌ	sagwu-agehya-ale-sagwu-wesa		agehya		
+	ᏌᏊ ᎠᎨᏯ ᏃᎴ ᏌᏊ ᏄᎾ	sagwu-agehya-nole-sagwu-nuna		agehya		
+	ᏌᏊ ᎠᏍᎦᏯ	sagwu-asgaya		asgaya		
+	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᎩᏟ	sagwu-asgaya-nole-sagwu-gihli		asgaya		
+	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᏄᎾ	sagwu-asgaya-nole-sagwu-nuna		asgaya		
+	ᏌᏊ ᎩᏟ	sagwu-gihli		gihli		
+	ᏌᏊ ᏄᎾ	sagwu-nuna		nuna		
+	ᏌᏊ ᏅᏯ	sagwu-nvya		nvya		
+	ᏌᏊ ᏪᏌ	sagwu-wesa		wesa		
+	ᏔᎵ ᏄᎾ	tali-nuna		nuna		
+	ᏦᎢ ᏄᎾ	joi-nuna		nuna		
+	ᏦᎢ ᏅᏯ	joi-nvya		nvya		
+	ᎦᏙ ᎤᏍᏗ ᎠᎪᏩᏘᎭ?	gado-usdi-agowhtiha		agowhtiha		
+	ᎦᏙ ᎤᏍᏗ ᎠᏂᎪᏩᏘᎭ?	gado-usdi-anigowhtiha		anigowhtiha		
+	ᎦᏙ ᎤᎾᏍᏗ ᏓᎪᏩᏘᎭ?	gado-unsdi-dagowhtiha		dagowhtiha		
+	ᎦᏙ ᎤᎾᏍᏗ ᏓᏂᎪᏩᏘᎭ?	gado-unsdi-danigowhtiha		danigowhtiha		
 70	ᏥᎪᏩᏘᎭ					
 	Ꮵ̣ᎪᏩᏘᎭ					
 	ᎦᏥᎪᏩᏘᎭ					

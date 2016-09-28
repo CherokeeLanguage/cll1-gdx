@@ -16,7 +16,7 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
  */
 
 public class LoadAudioFilenames implements Runnable {
-	private boolean debug=true;
+	private boolean debug=false;
 	private static final String UTF_8 = StandardCharsets.UTF_8.name();
 	private FileHandle cardAudioDir = Gdx.files.internal("card-data/audio/");
 	

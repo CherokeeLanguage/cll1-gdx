@@ -56,11 +56,11 @@ public class LoadCards implements Runnable {
 			game.cards.add(card);
 		}
 		log("Have " + game.cards.size() + " cards.");
-		Iterator<GameCard> icards = game.cards.iterator();
-		while (icards.hasNext()) {
-			CardData data = icards.next().getData();
-			System.out.println(data.chapter + "] " + data.text);
-		}
+//		Iterator<GameCard> icards = game.cards.iterator();
+//		while (icards.hasNext()) {
+//			CardData data = icards.next().getData();
+//			System.out.println(data.chapter + "] " + data.text);
+//		}
 		game.deckReady=true;
 	}
 }

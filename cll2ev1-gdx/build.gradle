@@ -12,11 +12,15 @@ buildscript {
     }
 }
 
+task files_txt(type: Exec) {
+	commandLine "./android/assets/make-files-txt.sh"
+}
+
 allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
 
-    version = '1.02'
+    version = '1.03'
     ext {
         appName = "cll2ev1-gdx"
         gdxVersion = '1.9.4'
@@ -80,6 +84,8 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile 'com.github.CherokeeLanguage:LeitnerCards:5b820f0afd'
     }
+    
+    compileJava.dependsOn files_txt
 }
 
 configurations.all {
