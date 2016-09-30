@@ -23,8 +23,9 @@ for dir in *; do
 	for svg in *.svg; do
 		if [ ! -f "$svg" ]; then continue; fi
 		png="$(echo "$svg"|sed 's/.svg$/.png/')"
-		inkscape -z -b=white -y=1.0 -C -d=45 -e="pngs/$png" "$svg"
+		inkscape -z -b=white -y=1.0 -C -d=45 -e="pngs/$png" "$svg" &
 	done
+	wait
 done
 
 cd "$cwd"
