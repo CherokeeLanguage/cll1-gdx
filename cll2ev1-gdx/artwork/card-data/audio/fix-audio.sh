@@ -14,7 +14,7 @@ for x in ???; do
 	cd "$x"
 	for mp3 in *.mp3; do
 		if [ ! -f "$mp3" ]; then continue; fi
-		normalize-mp3 --bitrate "$BR" "$mp3"
+		normalize-mp3 -T .45 --bitrate "$BR" "$mp3"
 	done
 done
 echo "DONE"

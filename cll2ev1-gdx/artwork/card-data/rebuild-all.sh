@@ -26,6 +26,7 @@ for dir in *; do
 		if [ "$png" -ot "$svg" ]; then rm "$png"; fi
 	done
 	for svg in *.svg; do
+		if [ ! -f "$svg" ]; then continue; fi
 		png="pngs/$(echo "$svg"|sed 's/.svg$/.png/')"
 		if [ -f "$png" ]; then continue; fi
 		echo "=== $png"
@@ -37,6 +38,53 @@ done
 cd "$cwd"
 cd audio
 bash fix-audio.sh
+
+echo "SYNCING IMAGE ASSETS"
+ASSETS_IMAGES="../../../android/assets/card-data/images"
+cd "$cwd"/images
+for dir in *; do
+	if [ "openclipart.org" = "$dir" ]; then continue; fi
+	cd "$cwd"/images
+	if [ ! -d "$dir" ]; then continue; fi
+	if [ ! -d "${ASSETS_IMAGES}/${dir}" ]; then mkdir "${ASSETS_IMAGES}/${dir}"; fi
+	cd "${ASSETS_IMAGES}/${dir}"
+	adir="$(pwd)"
+	cd "$cwd"/images/"$dir"
+	for png in "${adir}"/*.png; do
+		if [ ! -f "$png" ]; then continue; fi
+		bpng="$(basename $png)"
+		if [ ! -f "pngs/$bpng" ]; then rm -v "$png"; fi
+	done
+	for png in "pngs/"*.png; do
+		if [ ! -f "$png" ]; then continue; fi
+		bpng="$(basename $png)"
+		if [ ! -f "${adir}/$bpng" ]; then cp -v "$png" "${adir}/$bpng"; fi
+		if [ "${adir}/$bpng" -ot "$png" ]; then cp -v "$png" "${adir}/$bpng"; fi
+	done
+done
+
+echo "SYNCING AUDIO ASSETS"
+ASSETS_AUDIO="../../../android/assets/card-data/audio"
+cd "$cwd"/audio
+for dir in *; do
+	if [ "original" = "$dir" ]; then continue; fi
+	cd "$cwd"/audio
+	if [ ! -d "$dir" ]; then continue; fi
+	if [ ! -d "${ASSETS_AUDIO}/${dir}" ]; then mkdir "${ASSETS_AUDIO}/${dir}"; fi
+	cd "${ASSETS_AUDIO}/${dir}"
+	adir="$(pwd)"
+	cd "$cwd"/audio/"$dir"
+	for mp3 in "${adir}"/*.mp3; do
+		if [ ! -f "$mp3" ]; then continue; fi
+		bmp3="$(basename $mp3)"
+		if [ ! -f "$bmp3" ]; then rm -v "$mp3"; fi
+	done
+	for mp3 in *.mp3; do
+		if [ ! -f "$mp3" ]; then continue; fi
+		if [ ! -f "${adir}/$mp3" ]; then cp -v "$mp3" "${adir}/$mp3"; fi
+		if [ "${adir}/$mp3" -ot "$mp3" ]; then cp -v "$mp3" "${adir}/$mp3"; fi
+	done
+done
 
 printf "NEW/MODIFIED PIX: ${PNGS}\n"
 
