@@ -18,6 +18,7 @@ public class CLL2EV1 extends AbstractGame {
 	public static final String ACTIVE_CARDS = "CardsInPlay.txt";
 	public static final String BACKTEXT = "[BACK]";
 	public static final String DECKSTATS = "DeckStats.json";
+	public static final String QUIT = "[QUIT]";
 	private ScreenPoweredBy poweredBy = null;
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {

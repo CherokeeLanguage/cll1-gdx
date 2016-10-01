@@ -151,7 +151,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			initUi();
 		}
 	};
-	
+
 	protected Runnable firstPlay = new Runnable() {
 		@Override
 		public void run() {
@@ -159,7 +159,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 				stage.addAction(actionFirstTime());
 			} else {
 				stage.addAction(actionLoadNextChallengeQuick());
-			}			
+			}
 		}
 	};
 
@@ -169,7 +169,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	private String activeImageFile1;
 	private String activeImageFile2;
 	private int correct = 1;
-	private ICard<CardData> activeCard;
+	// private ICard<CardData> activeCard;
 	private CardData activeCardData;
 	private CardStats activeCardStats;
 
@@ -181,13 +181,71 @@ public class LearningSession extends AbstractScreen implements Screen {
 	private void loadNextChallenge() {
 		ICard<CardData> card;
 		card = getNextCard();
-		activeCard = card;
+		// activeCard = card;
 		activeCardData = card.getData();
 		activeCardStats = card.getCardStats();
 		loadNewChallengeImages(activeCardData);
 		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
 		// reset for each card being displayed
 		currentElapsed = 0f;
+		if (activeCardStats.isNewCard()) {
+			activeCardStats.setNewCard(false);
+			showNewCardWithAudio();
+		}
+	}
+
+	private void showNewCardWithAudio() {
+		log("SHOWING NEW CARD");
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
+		final String[] newCardImageFiles = new String[] { //
+				activeCardData.nextRandomImageFile(), //
+				activeCardData.nextRandomImageFile(), //
+				activeCardData.nextRandomImageFile() //
+		};
+		Dialog newCard = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
+			@Override
+			protected void result(Object object) {
+				if ("[AUDIO]".equals(object)) {
+					Gdx.app.postRunnable(replayAudio);
+					cancel();
+					return;
+				}
+				for (String newCardImageFile: newCardImageFiles) {
+					discardImageFor(newCardImageFile);
+				}
+				userResume();
+				Gdx.app.postRunnable(replayAudio);
+			}
+		};
+		newCard.setModal(true);
+		newCard.setFillParent(true);
+		newCard.setKeepWithinStage(true);
+
+		TextButton howa = new TextButton("ᎰᏩ", skin);
+		newCard.button(howa, "ᎰᏩ");
+
+		TextButton audio = new TextButton("[AUDIO]", skin);
+		newCard.button(audio, "[AUDIO]");
+
+		Table contentTable = newCard.getContentTable();
+		contentTable.row();
+		Label text = new Label(activeCardData.text, skin);
+		text.setFontScale(1.5f);
+		text.setWrap(true);
+		contentTable.add(text).center().colspan(newCardImageFiles.length);
+		
+		contentTable.row();
+		Stack[] pictures = new Stack[newCardImageFiles.length];
+		for (int i=0; i<newCardImageFiles.length; i++) {
+			pictures[i]=new Stack();
+			for (Image img : getImageFor(newCardImageFiles[i])) {
+				pictures[i].add(img);
+			}
+			contentTable.add(pictures[i]).expand().fill();
+		}
+		newCard.show(pausedStage);
 	}
 
 	private void showFinalStats() {
@@ -240,9 +298,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	private void endSessionCleanup() {
 		log("End Session Cleanup");
-		log("- Active Deck: "+activeDeck.size());
-		log("- Discards Deck: "+discardsDeck.size());
-		log("- Completed Deck: "+completedDeck.size());
+		log("- Active Deck: " + activeDeck.size());
+		log("- Discards Deck: " + discardsDeck.size());
+		log("- Completed Deck: " + completedDeck.size());
 		/*
 		 * Check and see how many discards can be marked as "completed". <br>
 		 * Those that can be marked are those with shown >= triesRemaining
@@ -278,9 +336,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 		while (discardsDeck.hasCards()) {
 			activeDeck.add(discardsDeck.topCard());
 		}
-		log("- Active Deck: "+activeDeck.size());
-		log("- Discards Deck: "+discardsDeck.size());
-		log("- Completed Deck: "+completedDeck.size());
+		log("- Active Deck: " + activeDeck.size());
+		log("- Discards Deck: " + discardsDeck.size());
+		log("- Completed Deck: " + completedDeck.size());
 		/*
 		 * Add in completed so all cards are now in the activedeck.
 		 */
@@ -288,9 +346,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 		while (completedDeck.hasCards()) {
 			activeDeck.add(completedDeck.topCard());
 		}
-		log("- Active Deck: "+activeDeck.size());
-		log("- Discards Deck: "+discardsDeck.size());
-		log("- Completed Deck: "+completedDeck.size());
+		log("- Active Deck: " + activeDeck.size());
+		log("- Discards Deck: " + discardsDeck.size());
+		log("- Completed Deck: " + completedDeck.size());
 	}
 
 	private Action actionShowCompletedDialog() {
@@ -416,12 +474,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 		});
 	}
 
-	private boolean audioFirstPlay = false;
-
 	private void loadNewChallengeAudio(final String newActiveAudioFile) {
 		Gdx.app.postRunnable(new Runnable() {
 			public void run() {
-				audioFirstPlay = true;
 				if (challengeAudio != null) {
 					challengeAudio.stop();
 				}
@@ -592,6 +647,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			topCard.resetStats();
 			topCard.resetTriesRemaining(CardData.MAX_TRIES);
 			topCard.getCardStats().setPimsleurSlot(0);
+			topCard.getCardStats().setNewCard(true);
 			activeDeck.add(topCard);
 		}
 	}
@@ -721,18 +777,30 @@ public class LearningSession extends AbstractScreen implements Screen {
 	}
 
 	protected void discardImageFor(String imageFile) {
-		if (assets.isLoaded(IMAGES_BACKDROP)) {
+		if (imageFile == null) {
+			return;
+		}
+		log("discardImageFor: " + imageFile);
+		refCounts.dec(IMAGES_BACKDROP);
+		if (assets.isLoaded(IMAGES_BACKDROP) && refCounts.get(IMAGES_BACKDROP) < 1) {
 			assets.unload(IMAGES_BACKDROP);
 		}
-		if (assets.isLoaded(IMAGES_OVERLAY)) {
+		refCounts.dec(IMAGES_OVERLAY);
+		if (assets.isLoaded(IMAGES_OVERLAY) && refCounts.get(IMAGES_OVERLAY) < 1) {
 			assets.unload(IMAGES_OVERLAY);
 		}
-		if (assets.isLoaded(imageFile)) {
-			assets.unload(imageFile);
+		if (imageFile != null) {
+			refCounts.dec(imageFile);
+			if (assets.isLoaded(imageFile) && refCounts.get(imageFile) < 1) {
+				assets.unload(imageFile);
+			}
 		}
 	}
 
+	private RefCounts refCounts = new RefCounts();
+
 	protected Image[] getImageFor(String imageFile) {
+		log("getImageFor: " + imageFile);
 		if (!assets.isLoaded(IMAGES_BACKDROP)) {
 			assets.load(IMAGES_BACKDROP, Texture.class);
 			assets.finishLoadingAsset(IMAGES_BACKDROP);
@@ -747,19 +815,22 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 		assets.finishLoading();
 		Image backdrop = new Image(assets.get(IMAGES_BACKDROP, Texture.class));
+		refCounts.inc(IMAGES_BACKDROP);
 		Image image = new Image(assets.get(imageFile, Texture.class));
+		refCounts.inc(imageFile);
 		Image overlay = new Image(assets.get(IMAGES_OVERLAY, Texture.class));
+		refCounts.inc(IMAGES_OVERLAY);
 		backdrop.setScaling(Scaling.fit);
 		image.setScaling(Scaling.fit);
 		overlay.setScaling(Scaling.fit);
-		Stack choice1 = new Stack();
-		choice1.addActor(backdrop);
-		choice1.addActor(image);
-		choice1.addActor(overlay);
 		return new Image[] { backdrop, image, overlay };// choice1;
 	}
 
 	private void prepDecks() {
+		// ensure no previously in-play shows up as new
+		for (ICard<CardData> card : activeDeck.getCards()) {
+			card.getCardStats().setNewCard(false);
+		}
 		// clamp leitner box values
 		for (ICard<CardData> card : activeDeck.getCards()) {
 			CardStats cardStats = card.getCardStats();
@@ -798,11 +869,17 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 	}
 
-	private ClickListener playAudioChallenge = new ClickListener() {
-		public void clicked(InputEvent event, float x, float y) {
+	private final Runnable replayAudio = new Runnable() {
+		@Override
+		public void run() {
 			if (challengeAudio != null && !challengeAudio.isPlaying()) {
 				challengeAudio.play();
 			}
+		}
+	};
+	private ClickListener playAudioChallenge = new ClickListener() {
+		public void clicked(InputEvent event, float x, float y) {
+			Gdx.app.postRunnable(replayAudio);
 		}
 	};
 
@@ -813,15 +890,15 @@ public class LearningSession extends AbstractScreen implements Screen {
 		uiTable = new Table(skin);
 		uiTable.setTouchable(Touchable.childrenOnly);
 		uiTable.defaults().expandX().top();
-		TextButton btnBack = new TextButton(CLL2EV1.BACKTEXT, skin);
-		btnBack.getLabel().setFontScale(.7f);
+		TextButton btnQuit = new TextButton(CLL2EV1.QUIT, skin);
+		btnQuit.getLabel().setFontScale(.7f);
 		btnReplay = new TextButton("[AUDIO]", skin);
 		btnReplay.getLabel().setFontScale(.7f);
 		btnReplay.addListener(playAudioChallenge);
-		btnBack.pack();
-		btnBack.addListener(onBack);
+		btnQuit.pack();
+		btnQuit.addListener(onBack);
 		uiTable.row();
-		uiTable.add(btnBack).left();
+		uiTable.add(btnQuit).left();
 		uiTable.add(lblCountdown).center();
 		uiTable.add(btnReplay).right();
 

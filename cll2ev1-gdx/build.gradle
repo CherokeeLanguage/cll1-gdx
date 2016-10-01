@@ -82,7 +82,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile 'com.github.CherokeeLanguage:LeitnerCards:5b820f0afd'
+        compile 'com.github.CherokeeLanguage:LeitnerCards:9cae2fe0'
     }
     
     compileJava.dependsOn files_txt
