@@ -2,7 +2,11 @@
 
 Bug fix with challenges getting stuck into "next session" mode.
 
-1.07 - 1.01
+1.07
+
+Added remainder of Chapter 7 audio and pix. Now have 155 challenges.
+
+1.06 - 1.01
 
 Adding challenges.
 
