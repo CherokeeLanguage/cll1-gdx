@@ -7,7 +7,7 @@ trap 'echo ERROR; read a' ERR
 cd "$(dirname "$0")"
 
 cwd="$(pwd)"
-
+PNGS=""
 cd "images"
 for dir in *; do
 	cd "$cwd"/images
@@ -18,21 +18,29 @@ for dir in *; do
 	mv .gitignore .gitignore.tmp
 	cat .gitignore.tmp | sort | uniq > .gitignore
 	rm .gitignore.tmp
-	rm -rf pngs 2> /dev/null || true
-	mkdir pngs || true
-	for svg in *.svg; do
-		if [ ! -f "$svg" ]; then continue; fi
-		png="$(echo "$svg"|sed 's/.svg$/.png/')"
-		inkscape -z -b=white -y=1.0 -C -d=45 -e="pngs/$png" "$svg" &
+	if [ ! -d "pngs" ]; then mkdir "pngs"; fi
+	for png in pngs/*.png; do
+		if [ ! -f "$png" ]; then continue; fi
+		svg="$(basename "$png"|sed 's/.png$/.svg/')"
+		if [ ! -f "$svg" ]; then rm "$png"; fi
+		if [ "$png" -ot "$svg" ]; then rm "$png"; fi
 	done
-	wait
+	for svg in *.svg; do
+		png="pngs/$(echo "$svg"|sed 's/.svg$/.png/')"
+		if [ -f "$png" ]; then continue; fi
+		echo "=== $png"
+		PNGS="${PNGS}\t${png}, "
+		inkscape -z -b=white -y=1.0 -C -d=45 -e="$png" "$svg"
+	done
 done
 
 cd "$cwd"
 cd audio
 bash fix-audio.sh
 
-echo "DONE"
-sleep 3
+printf "NEW/MODIFIED PIX: ${PNGS}\n"
+
+printf "DONE: "
+read a
 exit 0
 

@@ -8,7 +8,6 @@ import java.util.Set;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
@@ -18,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -29,7 +29,6 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Scaling;
-import com.badlogic.gdx.utils.JsonWriter.OutputType;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
 import com.cherokeelessons.cll2ev1.models.CardData;
@@ -69,7 +68,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		if (activeDeck.size() == 0) {
 			stage.addAction(actionFirstTime());
 		} else {
-			stage.addAction(actionLoadNextChallenge());
+			stage.addAction(actionLoadNextChallengeQuick());
 		}
 
 		stage.addAction(actionUpdateTimeLeft());
@@ -293,19 +292,28 @@ public class LearningSession extends AbstractScreen implements Screen {
 		fh_deckstats_tmp.moveTo(fh_deckstats);
 	}
 
-	private Action actionLoadNextChallenge() {
-		return Actions.sequence(Actions.delay(1.5f), Actions.run(new Runnable() {
-			public void run() {
-				// 5-minute check
-				if (totalElapsed > maxTime_secs) {
-					log("=== SESSION TIME UP!");
-					pausedStage.addAction(actionShowCompletedDialog());
-					userPause();
-					return;
-				}
-				loadNextChallenge();
+	private final Runnable runLoadNextChallenge = new Runnable() {
+		public void run() {
+			if (challengeAudio!=null && challengeAudio.isPlaying()) {
+				stage.addAction(actionLoadNextChallengeQuick());
+				return;
 			}
-		}));
+			// 5-minute check
+			if (totalElapsed > maxTime_secs) {
+				log("=== SESSION TIME UP!");
+				pausedStage.addAction(actionShowCompletedDialog());
+				userPause();
+				return;
+			}
+			loadNextChallenge();
+		}
+
+	};
+	private Action actionLoadNextChallengeQuick() {
+		return Actions.sequence(Actions.delay(.1f), Actions.run(runLoadNextChallenge));
+	}
+	private Action actionLoadNextChallengeDelayed() {
+		return Actions.sequence(Actions.delay(1.5f), Actions.run(runLoadNextChallenge));
 	}
 
 	private void loadNewChallengeImages(final CardData cdata) {
@@ -360,9 +368,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		});
 	}
 
+	private boolean audioFirstPlay=false;
 	private void loadNewChallengeAudio(final String newActiveAudioFile) {
 		Gdx.app.postRunnable(new Runnable() {
 			public void run() {
+				audioFirstPlay=true;
 				if (challengeAudio != null) {
 					challengeAudio.stop();
 				}
@@ -614,7 +624,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			@Override
 			protected void result(Object object) {
 				userResume();
-				stage.addAction(actionLoadNextChallenge());
+				stage.addAction(actionLoadNextChallengeQuick());
 			}
 		};
 		firstTimeNotice.setModal(true);
@@ -768,7 +778,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	private ClickListener maybe1 = new ClickListener() {
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			stage.addAction(actionLoadNextChallenge());
+			stage.addAction(actionLoadNextChallengeDelayed());
 			choice1.setTouchable(Touchable.disabled);
 			choice2.setTouchable(Touchable.disabled);
 			// update card with total time it has been on display
@@ -790,7 +800,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	};
 	private ClickListener maybe2 = new ClickListener() {
 		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			stage.addAction(actionLoadNextChallenge());
+			stage.addAction(actionLoadNextChallengeDelayed());
 			choice1.setTouchable(Touchable.disabled);
 			choice2.setTouchable(Touchable.disabled);
 			// update card with total time it has been on display
