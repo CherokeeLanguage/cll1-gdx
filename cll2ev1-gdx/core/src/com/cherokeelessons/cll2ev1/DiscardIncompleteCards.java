@@ -6,7 +6,7 @@ import com.badlogic.gdx.Gdx;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class DiscardIncompleteCards implements Runnable {
-	private boolean debug=true;
+	private boolean debug = true;
 	private CLL2EV1 game;
 
 	private void log(String message) {
@@ -14,7 +14,7 @@ public class DiscardIncompleteCards implements Runnable {
 	}
 
 	public DiscardIncompleteCards(CLL2EV1 game) {
-		this.game=game;
+		this.game = game;
 	}
 
 	@Override
@@ -26,27 +26,27 @@ public class DiscardIncompleteCards implements Runnable {
 			if (!card.getData().hasAudioFiles()) {
 				icards.remove();
 				if (debug) {
-					log("- Missing Audio: "+card.id());
+					log("- Missing Audio: " + card.id());
 				}
 				continue;
 			}
 			if (!card.getData().hasImageFiles()) {
 				icards.remove();
 				if (debug) {
-					log("- Missing Correct Images: "+card.id());
+					log("- Missing Correct Images: " + card.id());
 				}
 				continue;
 			}
 			if (!card.getData().hasWrongImageFiles()) {
 				icards.remove();
 				if (debug) {
-					log("- Missing Wrong Images: "+card.id());
+					log("- Missing Wrong Images: " + card.id());
 				}
 				continue;
 			}
 		}
-		log("Removed "+(beforeSize-this.game.cards.size())+" cards.");
-		log("Have "+this.game.cards.size()+" valid cards.");
+		log("Removed " + (beforeSize - this.game.cards.size()) + " cards.");
+		log("Have " + this.game.cards.size() + " valid cards.");
 	}
 
 }

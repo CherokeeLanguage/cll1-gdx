@@ -18,7 +18,7 @@ import com.cherokeelessons.cll2ev1.CLL2EV1;
 import com.cherokeelessons.cll2ev1.actions.MusicVolumeAction;
 
 public class ScreenPoweredBy extends AbstractScreen {
-    	
+
 	private static final Vector2 WORLDSIZE = CLL2EV1.WORLDSIZE;
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
@@ -27,15 +27,15 @@ public class ScreenPoweredBy extends AbstractScreen {
 
 	public ScreenPoweredBy(AbstractGame game, Runnable onDone) {
 		super(game);
-		this.onDone=onDone;
+		this.onDone = onDone;
 		init();
 		music.play();
 	}
-	
+
 	@Override
 	public void dispose() {
 		music.dispose();
-		for (Texture texture: textures) {
+		for (Texture texture : textures) {
 			texture.dispose();
 		}
 		super.dispose();
@@ -45,10 +45,12 @@ public class ScreenPoweredBy extends AbstractScreen {
 	public void hide() {
 		super.hide();
 	}
-	
-	private final float tvSafePercent=.05f;
-	private final Rectangle tvSafe = new Rectangle((WORLDSIZE.x*tvSafePercent), (WORLDSIZE.y*tvSafePercent), (WORLDSIZE.x*(1f-2f*tvSafePercent)), (WORLDSIZE.y*(1f-2f*tvSafePercent)));
+
+	private final float tvSafePercent = .05f;
+	private final Rectangle tvSafe = new Rectangle((WORLDSIZE.x * tvSafePercent), (WORLDSIZE.y * tvSafePercent),
+			(WORLDSIZE.x * (1f - 2f * tvSafePercent)), (WORLDSIZE.y * (1f - 2f * tvSafePercent)));
 	private Rectangle logoBox;
+
 	private void init() {
 		music = Gdx.audio.newMusic(Gdx.files.internal("libgdx/atmoseerie03.mp3"));
 		music.setVolume(0f);
@@ -65,37 +67,38 @@ public class ScreenPoweredBy extends AbstractScreen {
 		int height = 0;
 		for (int x = 0; x < 5; x++) {
 			height = 0;
-			Image img=null;
+			Image img = null;
 			for (int y = 0; y < 5; y++) {
 				int z = 4 - y;
 				int p = z * 5 + x;
 				img = logo.get(p);
 				img.setOrigin(0, 0);
 				img.setPosition(width, height);
-				height += img.getHeight();				
+				height += img.getHeight();
 			}
 			width += img.getWidth();
 		}
-		
-		logoBox = new Rectangle(0, 0, width, height);		
+
+		logoBox = new Rectangle(0, 0, width, height);
 		logoBox.fitInside(tvSafe);
-		float scaleXY=logoBox.height/height;
-		if (scaleXY>logoBox.width/width) scaleXY=logoBox.width/width;
-		
-		Group logoGroup=new Group();
-		for (Image img: logo) {
+		float scaleXY = logoBox.height / height;
+		if (scaleXY > logoBox.width / width)
+			scaleXY = logoBox.width / width;
+
+		Group logoGroup = new Group();
+		for (Image img : logo) {
 			logoGroup.addActor(img);
 		}
-		
-		logoGroup.getColor().a=0f;
+
+		logoGroup.getColor().a = 0f;
 		logoGroup.setOrigin(Align.center);
 		logoGroup.setScale(scaleXY);
 		logoGroup.setTransform(true);
-		
+
 		logoGroup.setPosition(logoBox.x, logoBox.y);
-		
+
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
-		
+
 		stage.addActor(logoGroup);
 	}
 
@@ -103,8 +106,8 @@ public class ScreenPoweredBy extends AbstractScreen {
 	public void show() {
 		super.show();
 	}
-	
-	private Action getAlphaAction(){
+
+	private Action getAlphaAction() {
 		SequenceAction sa = Actions.sequence();
 		sa.addAction(Actions.delay(1f));
 		sa.addAction(Actions.alpha(1f, 4f));
@@ -113,15 +116,15 @@ public class ScreenPoweredBy extends AbstractScreen {
 		sa.addAction(Actions.delay(1f));
 		return sa;
 	}
-	
-	private Action getVolumeAction(Music music){
+
+	private Action getVolumeAction(Music music) {
 		SequenceAction sa = Actions.sequence();
 		sa.addAction(Actions.delay(1f));
 		sa.addAction(new MusicVolumeAction(music, .7f, 4f));
 		sa.addAction(Actions.delay(4f));
 		sa.addAction(new MusicVolumeAction(music, 0f, 2f));
 		sa.addAction(Actions.delay(1f));
-		if (onDone!=null) {
+		if (onDone != null) {
 			sa.addAction(Actions.run(onDone));
 		}
 		return sa;
@@ -140,6 +143,6 @@ public class ScreenPoweredBy extends AbstractScreen {
 	@Override
 	protected void act(float delta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

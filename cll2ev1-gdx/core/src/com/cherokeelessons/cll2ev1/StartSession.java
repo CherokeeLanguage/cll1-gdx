@@ -54,17 +54,18 @@ public class StartSession implements Runnable {
 			copy.getCardStats().setPimsleurSlot(0);
 			masterDeck.add(copy);
 		}
-		if (Gdx.app.getType().equals(ApplicationType.Desktop)){
+		if (Gdx.app.getType().equals(ApplicationType.Desktop)) {
 			masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
 			SlotFolder.getDeckSlot().mkdirs();
 			List<String[]> sortedCardIds = new ArrayList<String[]>();
-			for (ICard<CardData> card: masterDeck.getCards()) {
-				sortedCardIds.add(new String[]{card.id(), card.sortKey()});
+			for (ICard<CardData> card : masterDeck.getCards()) {
+				sortedCardIds.add(new String[] { card.id(), card.sortKey() });
 			}
 			Json jsonx = new Json(OutputType.json);
 			jsonx.setTypeName(null);
 			jsonx.setUsePrototypes(false);
-			SlotFolder.getDeckSlot().child("master-deck-card-ids.json").writeString(jsonx.prettyPrint(sortedCardIds), false, StandardCharsets.UTF_8.name());
+			SlotFolder.getDeckSlot().child("master-deck-card-ids.json").writeString(jsonx.prettyPrint(sortedCardIds),
+					false, StandardCharsets.UTF_8.name());
 		}
 
 		Deck<CardData> activeDeck = new Deck<CardData>();

@@ -9,7 +9,7 @@ public class Quit extends AbstractScreen {
 		super(game);
 		setBackdrop(CLL2EV1.BACKDROP);
 	}
-	
+
 	@Override
 	public void show() {
 		super.show();
@@ -33,7 +33,7 @@ public class Quit extends AbstractScreen {
 	@Override
 	protected void act(float delta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

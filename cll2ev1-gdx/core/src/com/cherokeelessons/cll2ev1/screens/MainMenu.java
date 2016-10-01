@@ -53,7 +53,7 @@ public class MainMenu extends AbstractScreen {
 		Gdx.app.postRunnable(init);
 		Gdx.app.postRunnable(howa);
 	}
-	
+
 	protected Runnable howa = new Runnable() {
 		@Override
 		public void run() {
@@ -71,12 +71,12 @@ public class MainMenu extends AbstractScreen {
 			TextButton btnOptions = new TextButton(OPTIONS, skin);
 			TextButton btnAbout = new TextButton(ABOUT, skin);
 			TextButton btnQuit = new TextButton(QUIT, skin);
-			
+
 			btnNewGame.addListener(onNewGame);
 			btnOptions.addListener(onOptions);
 			btnAbout.addListener(onAbout);
 			btnQuit.addListener(onQuit);
-			
+
 			Table menu = new Table(skin);
 			menu.setFillParent(true);
 			menu.defaults().expand();
@@ -84,15 +84,15 @@ public class MainMenu extends AbstractScreen {
 			menu.add(titleLabel);
 			menu.row();
 			menu.add(btnNewGame);
-//			menu.row();
-//			menu.add(btnOptions);
+			// menu.row();
+			// menu.add(btnOptions);
 			menu.row();
 			menu.add(btnAbout);
 			menu.row();
 			menu.add(btnQuit);
 			menu.pack();
-			
-			stage.addActor(menu);				
+
+			stage.addActor(menu);
 		}
 	};
 

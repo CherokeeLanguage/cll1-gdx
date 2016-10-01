@@ -23,6 +23,6 @@ public class Practice extends AbstractScreen {
 	@Override
 	protected void act(float delta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

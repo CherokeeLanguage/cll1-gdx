@@ -47,7 +47,7 @@ public class SelectSession extends AbstractScreen {
 			assets.load(TRASH, Texture.class);
 			assets.finishLoadingAsset(TRASH);
 			Texture trash = assets.get(TRASH, Texture.class);
-			
+
 			Label titleLabel = new Label(TITLE, skin);
 			// titleLabel.setFontScale(.75f);
 
@@ -78,7 +78,7 @@ public class SelectSession extends AbstractScreen {
 				Image btnDeleteSession = new Image(trash);
 				btnDeleteSession.setScaling(Scaling.fit);
 				btnDeleteSession.setColor(Color.DARK_GRAY);
-				if (t == 0){
+				if (t == 0) {
 					btnDeleteSession.setColor(Color.LIGHT_GRAY);
 				}
 				TextButton btnSession = new TextButton(text, skin);
@@ -100,7 +100,8 @@ public class SelectSession extends AbstractScreen {
 		}
 	};
 
-	protected ClickListener deleteSessionConfirm(final int session, final Image btnTrashcan, final TextButton btnSession) {
+	protected ClickListener deleteSessionConfirm(final int session, final Image btnTrashcan,
+			final TextButton btnSession) {
 		return new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
@@ -115,16 +116,14 @@ public class SelectSession extends AbstractScreen {
 				};
 				confirmDelete.button("ᎥᎥ - YES", "YES");
 				confirmDelete.button("ᎥᏝ - NO", "NO");
-				confirmDelete.text("Are you sure you want\n"
-						+ "to delete this session?\n"
-						+ "This cannot be undone!");
+				confirmDelete.text("Are you sure you want\n" + "to delete this session?\n" + "This cannot be undone!");
 				confirmDelete.setModal(true);
 				confirmDelete.pack();
 				confirmDelete.show(stage);
 			}
 		};
 	}
-	
+
 	protected ClickListener chooseSession(final int session) {
 		return new ClickListener() {
 			@Override
@@ -155,7 +154,7 @@ public class SelectSession extends AbstractScreen {
 	@Override
 	protected void act(float delta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

@@ -16,10 +16,10 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
  */
 
 public class LoadAudioFilenames implements Runnable {
-	private boolean debug=false;
+	private boolean debug = false;
 	private static final String UTF_8 = StandardCharsets.UTF_8.name();
 	private FileHandle cardAudioDir = Gdx.files.internal("card-data/audio/");
-	
+
 	private void log(String message) {
 		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
@@ -29,42 +29,41 @@ public class LoadAudioFilenames implements Runnable {
 	public LoadAudioFilenames(CLL2EV1 game) {
 		cards = game.cards;
 	}
-	
+
 	@Override
 	public void run() {
 		// each top level directory is a two-digit number that is the chapter
 		// number in the csv file
-		String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8)
-				.split("\n");
-		for (String dir: dirs) {
+		String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8).split("\n");
+		for (String dir : dirs) {
 			FileHandle subDir = cardAudioDir.child(dir);
 			String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8).split("\n");
-			for (GameCard card: cards) {
+			for (GameCard card : cards) {
 				CardData cd = card.getData();
-				if (cd==null || cd.audio==null) {
+				if (cd == null || cd.audio == null) {
 					continue;
 				}
-				String c = ""+cd.chapter;
-				if (cd.chapter<100) {
-					c = "0"+c;
+				String c = "" + cd.chapter;
+				if (cd.chapter < 100) {
+					c = "0" + c;
 				}
-				if (cd.chapter<10) {
-					c = "0"+c;
+				if (cd.chapter < 10) {
+					c = "0" + c;
 				}
-				if (!c.equals(dir)){
+				if (!c.equals(dir)) {
 					continue;
 				}
 				String[] audioPrefixes = cd.audio.split(";\\s*");
-				for (String audioPrefix: audioPrefixes) {
-					for (String audioFile: audioFiles) {
-						if (!audioFile.endsWith(".mp3")){
+				for (String audioPrefix : audioPrefixes) {
+					for (String audioFile : audioFiles) {
+						if (!audioFile.endsWith(".mp3")) {
 							continue;
 						}
-						if (audioFile.startsWith(audioPrefix+".")){
+						if (audioFile.startsWith(audioPrefix + ".")) {
 							cd.addAudioFile(subDir.child(audioFile).path());
 							continue;
 						}
-						if (audioFile.startsWith(audioPrefix+"_")){
+						if (audioFile.startsWith(audioPrefix + "_")) {
 							cd.addAudioFile(subDir.child(audioFile).path());
 							continue;
 						}
@@ -74,10 +73,10 @@ public class LoadAudioFilenames implements Runnable {
 		}
 		if (debug) {
 			log("=== DEBUG - CARD DATA AUDIO FILE ASSIGNMENTS:");
-			for (GameCard card: cards) {
+			for (GameCard card : cards) {
 				CardData data = card.getData();
-				if (data.hasAudioFiles()){
-					log("CARD: "+data.chapter+" - "+data.audio+" - "+ data.nextRandomAudioFile());
+				if (data.hasAudioFiles()) {
+					log("CARD: " + data.chapter + " - " + data.audio + " - " + data.nextRandomAudioFile());
 				}
 			}
 		}

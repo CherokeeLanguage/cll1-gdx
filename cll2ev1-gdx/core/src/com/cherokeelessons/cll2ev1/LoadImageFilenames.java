@@ -37,12 +37,12 @@ public class LoadImageFilenames implements Runnable {
 				if (cd == null || cd.images == null) {
 					continue;
 				}
-				String c = ""+cd.chapter;
-				if (cd.chapter<100) {
-					c = "0"+c;
+				String c = "" + cd.chapter;
+				if (cd.chapter < 100) {
+					c = "0" + c;
 				}
-				if (cd.chapter<10) {
-					c = "0"+c;
+				if (cd.chapter < 10) {
+					c = "0" + c;
 				}
 				if (!c.equals(dir)) {
 					continue;
@@ -51,27 +51,29 @@ public class LoadImageFilenames implements Runnable {
 				String[] imageBlacklistSubstrings = cd.blacklistPic.split(";\\s*");
 				for (String imagePrefix : imagePrefixes) {
 					nextImage: for (String imageFile : imageFiles) {
-						//skip not recogized image files
+						// skip not recogized image files
 						if (!imageFile.endsWith(".png") && !imageFile.endsWith(".jpg")
 								&& !imageFile.endsWith(".jpeg")) {
 							continue nextImage;
 						}
-						//matches as correct, add it to the correct side of things
+						// matches as correct, add it to the correct side of
+						// things
 						if (imageFile.startsWith(imagePrefix + ".")) {
 							cd.addImageFile(subDir.child(imageFile).path());
 							continue nextImage;
 						}
-						//matches as correct, add it to the correct side of things
+						// matches as correct, add it to the correct side of
+						// things
 						if (imageFile.startsWith(imagePrefix + "_")) {
 							cd.addImageFile(subDir.child(imageFile).path());
 							continue nextImage;
 						}
-						//see if it is ok to add to the wrong pics list
-						for (String substring: imageBlacklistSubstrings) {
-							if (substring==null||substring.trim().isEmpty()){
+						// see if it is ok to add to the wrong pics list
+						for (String substring : imageBlacklistSubstrings) {
+							if (substring == null || substring.trim().isEmpty()) {
 								break;
 							}
-							if (imageFile.contains(substring)){
+							if (imageFile.contains(substring)) {
 								continue nextImage;
 							}
 						}
@@ -86,8 +88,10 @@ public class LoadImageFilenames implements Runnable {
 				CardData data = card.getData();
 				if (data.hasImageFiles() && data.hasWrongImageFiles()) {
 					log("");
-					log("CARD [c]: " + data.chapter + " - " + data.nextRandomImageFile() + " - " + data.getImageFiles().size());
-					log("CARD [w]: " + data.chapter + " - " + data.nextRandomWrongImageFile() + " - " + data.getWrongImageFiles().size());
+					log("CARD [c]: " + data.chapter + " - " + data.nextRandomImageFile() + " - "
+							+ data.getImageFiles().size());
+					log("CARD [w]: " + data.chapter + " - " + data.nextRandomWrongImageFile() + " - "
+							+ data.getWrongImageFiles().size());
 				}
 			}
 		}

@@ -40,7 +40,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		this.assets.load(skinJson, Skin.class);
 		this.assets.finishLoadingAsset(skinJson);
 		this.skin = this.assets.get(skinJson, Skin.class);
-		for (BitmapFont bf: this.skin.getAll(BitmapFont.class).values()) {
+		for (BitmapFont bf : this.skin.getAll(BitmapFont.class).values()) {
 			bf.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			bf.setUseIntegerPositions(false);
 		}
@@ -62,6 +62,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 			}
 			return super.get(fileName, type);
 		}
+
 		public synchronized <T> T loadAndGet(String fileName, Class<T> type, AssetLoaderParameters<T> parameter) {
 			if (!isLoaded(fileName)) {
 				load(fileName, type, parameter);
@@ -70,52 +71,55 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 			return super.get(fileName, type);
 		}
 	}
-	
+
 	public AbstractScreen(AbstractGame game) {
 		super();
 		this.game = game;
 		this.assets = new AssetManager();
-		TextureLoader textureLoader = new TextureLoader(new InternalFileHandleResolver()){
+		TextureLoader textureLoader = new TextureLoader(new InternalFileHandleResolver()) {
 			TextureParameter param = new TextureParameter();
 			{
-				param.magFilter=TextureFilter.Linear;
+				param.magFilter = TextureFilter.Linear;
 			}
-			
+
 			@Override
 			public void loadAsync(AssetManager manager, String fileName, FileHandle file, TextureParameter parameter) {
-				super.loadAsync(manager, fileName, file, parameter==null?param:parameter);
+				super.loadAsync(manager, fileName, file, parameter == null ? param : parameter);
 			}
+
 			@Override
 			public Texture loadSync(AssetManager manager, String fileName, FileHandle file,
 					TextureParameter parameter) {
-				return super.loadSync(manager, fileName, file, parameter==null?param:parameter);
+				return super.loadSync(manager, fileName, file, parameter == null ? param : parameter);
 			}
 		};
 		this.assets.setLoader(Texture.class, textureLoader);
-		
+
 		backStage = new Stage(new FillViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		stage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		frontStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		pausedStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
 		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}
-	
-	private String backdropTextureFile=null;
+
+	private String backdropTextureFile = null;
+
 	public void setBackdrop(String textureFile) {
-		if (backdropTextureFile!=null) {
+		if (backdropTextureFile != null) {
 			assets.unload(backdropTextureFile);
 		}
-		backdropTextureFile=textureFile;
+		backdropTextureFile = textureFile;
 		assets.load(textureFile, Texture.class);
 		assets.finishLoadingAsset(textureFile);
-		Texture texture=assets.get(textureFile, Texture.class);
+		Texture texture = assets.get(textureFile, Texture.class);
 		TiledDrawable tiled = new TiledDrawable(new TextureRegion(texture));
-		Image img=new Image(tiled);
+		Image img = new Image(tiled);
 		img.setFillParent(true);
 		backStage.addActor(img);
 	}
-	
-	protected final Color clearColor=new Color(Color.BLACK);
+
+	protected final Color clearColor = new Color(Color.BLACK);
+
 	protected void setClearColor(Color color) {
 		clearColor.set(color);
 	}
@@ -139,16 +143,17 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	}
 
 	protected abstract void act(float delta);
-	
+
 	protected boolean isLoading = false;
-	protected float totalElapsed=0f;
-	protected float currentElapsed=0f;
+	protected float totalElapsed = 0f;
+	protected float currentElapsed = 0f;
+
 	@Override
 	public void render(float delta) {
 
 		if (!systemPaused && !userPaused) {
-			totalElapsed+=delta;
-			currentElapsed+=delta;
+			totalElapsed += delta;
+			currentElapsed += delta;
 			act(delta);
 			backStage.act(delta);
 			stage.act(delta);
@@ -175,6 +180,7 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	}
 
 	private boolean userPaused = false;
+
 	public boolean isUserPaused() {
 		return userPaused;
 	}
@@ -182,23 +188,25 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	private boolean systemPaused = false;
 	private boolean wasMusicPlaying = false;
 
-	public void userPauseToggle(){
+	public void userPauseToggle() {
 		if (userPaused) {
 			userResume();
 		} else {
 			userPause();
 		}
 	}
-	public void userPause(){
-		userPaused=true;
+
+	public void userPause() {
+		userPaused = true;
 		inputMultiplexer.removeProcessor(pausedStage);
 		inputMultiplexer.addProcessor(0, pausedStage);
 	}
-	public void userResume(){
-		userPaused=false;
+
+	public void userResume() {
+		userPaused = false;
 		inputMultiplexer.removeProcessor(pausedStage);
 	}
-	
+
 	@Override
 	public void pause() {
 		if (!Gdx.app.getType().equals(ApplicationType.Desktop)) {
@@ -245,8 +253,9 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 	}
 
 	protected abstract boolean onBack();
+
 	protected abstract boolean onMenu();
-	
+
 	@Override
 	public boolean keyDown(int keycode) {
 		switch (keycode) {

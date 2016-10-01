@@ -4,13 +4,13 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 
 public class SlotFolder {
-	
+
 	public static final String base = "CLL2EV1";
-	
-	public static FileHandle getSlotFolder(int slot){
-		return getFolder("/slots/"+slot);
+
+	public static FileHandle getSlotFolder(int slot) {
+		return getFolder("/slots/" + slot);
 	}
-	
+
 	public static FileHandle getFolder(String child) {
 		final FileHandle p0;
 		String path0 = base;
@@ -39,7 +39,7 @@ public class SlotFolder {
 		p0.child(child).mkdirs();
 		return p0.child(child);
 	}
-	
+
 	public static FileHandle getDeckSlot() {
 		return getFolder("deck");
 	}

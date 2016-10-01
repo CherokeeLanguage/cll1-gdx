@@ -174,7 +174,8 @@ public class CardData implements ICardData {
 
 	/**
 	 * Only uses {@link #chapter}, {@link #text}, and {@link #audio} for
-	 * hashCode generation. <br> {@inheritDoc}
+	 * hashCode generation. <br>
+	 * {@inheritDoc}
 	 */
 	@Override
 	public int hashCode() {

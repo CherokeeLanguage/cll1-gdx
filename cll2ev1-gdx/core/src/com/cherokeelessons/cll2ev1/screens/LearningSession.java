@@ -162,7 +162,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	protected Runnable firstPlay = new Runnable() {
 		@Override
 		public void run() {
-			if (activeDeck.size() == 0 && completedDeck.size()==0 && discardsDeck.size()==0) {
+			if (activeDeck.size() == 0 && completedDeck.size() == 0 && discardsDeck.size() == 0) {
 				stage.addAction(actionFirstTime());
 			} else {
 				stage.addAction(actionLoadNextChallengeQuick());
@@ -229,7 +229,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 						Gdx.app.postRunnable(replayAudio);
 					}
 				}
-				for (String newCardImageFile: newCardImageFiles) {
+				for (String newCardImageFile : newCardImageFiles) {
 					discardImageFor(newCardImageFile);
 				}
 				userResume();
@@ -239,37 +239,37 @@ public class LearningSession extends AbstractScreen implements Screen {
 		newCardDialog.setFillParent(true);
 		newCardDialog.setKeepWithinStage(true);
 		newCardDialog.getTitleLabel().setAlignment(Align.center);
-		
+
 		Table contentTable = newCardDialog.getContentTable();
-		
-		//TEXT above pix
-		Table tblText = new Table(skin); 
+
+		// TEXT above pix
+		Table tblText = new Table(skin);
 		tblText.defaults().expand().fill();
 		Label text = new Label(activeCardData.text, skin);
 		text.setFontScale(1.5f);
 		text.setWrap(true);
 		text.setAlignment(Align.center);
 		tblText.add(text);
-		
+
 		contentTable.row();
 		contentTable.add(tblText).expandX().fill().center();
-		
-		//PIX below text
+
+		// PIX below text
 		Table tblPix = new Table(skin);
 		tblPix.defaults().space(4).fill().expand().uniform();
-		
-		float picMaxWidth = pausedStage.getWidth()*PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT;
-		
+
+		float picMaxWidth = pausedStage.getWidth() * PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT;
+
 		Stack[] pictures = new Stack[newCardImageFiles.size()];
-		for (int i=0; i<newCardImageFiles.size(); i++) {
-			pictures[i]=new Stack();
+		for (int i = 0; i < newCardImageFiles.size(); i++) {
+			pictures[i] = new Stack();
 			for (Image img : getImageFor(newCardImageFiles.get(i))) {
 				pictures[i].add(img);
 			}
 			Cell<Stack> cell = tblPix.add(pictures[i]);
 			cell.width(picMaxWidth);
 		}
-		
+
 		final ScrollPane scroller = new ScrollPane(tblPix, skin);
 		scroller.setFadeScrollBars(false);
 		scroller.setForceScroll(true, false);
@@ -280,12 +280,12 @@ public class LearningSession extends AbstractScreen implements Screen {
 				scroller.setScrollPercentX(.5f);
 			}
 		})));
-		
+
 		contentTable.row();
 		contentTable.add(scroller).fill().expand();
-		
-		//Ꮎ buttons
-		
+
+		// Ꮎ buttons
+
 		TextButton howa = new TextButton("ᎰᏩ", skin);
 		newCardDialog.button(howa, "ᎰᏩ");
 
