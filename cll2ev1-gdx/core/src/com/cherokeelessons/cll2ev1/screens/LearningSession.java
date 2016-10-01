@@ -64,12 +64,6 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("Active Deck Size: " + activeDeck.size());
 		log("First Time: " + (activeDeck.size() == 0));
 
-		if (activeDeck.size() == 0) {
-			stage.addAction(actionFirstTime());
-		} else {
-			stage.addAction(actionLoadNextChallengeQuick());
-		}
-
 		stage.addAction(actionUpdateTimeLeft());
 
 		lblCountdown = new Label("0:00", skin);
@@ -84,6 +78,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 		Gdx.app.postRunnable(init1);
 		Gdx.app.postRunnable(init2);
+		Gdx.app.postRunnable(firstPlay);
 
 		assets.load(CHECKMARK, Texture.class);
 		assets.load(XMARK, Texture.class);
@@ -154,6 +149,17 @@ public class LearningSession extends AbstractScreen implements Screen {
 		@Override
 		public void run() {
 			initUi();
+		}
+	};
+	
+	protected Runnable firstPlay = new Runnable() {
+		@Override
+		public void run() {
+			if (activeDeck.size() == 0) {
+				stage.addAction(actionFirstTime());
+			} else {
+				stage.addAction(actionLoadNextChallengeQuick());
+			}			
 		}
 	};
 
@@ -233,6 +239,10 @@ public class LearningSession extends AbstractScreen implements Screen {
 	}
 
 	private void endSessionCleanup() {
+		log("End Session Cleanup");
+		log("- Active Deck: "+activeDeck.size());
+		log("- Discards Deck: "+discardsDeck.size());
+		log("- Completed Deck: "+completedDeck.size());
 		/*
 		 * Check and see how many discards can be marked as "completed". <br>
 		 * Those that can be marked are those with shown >= triesRemaining
@@ -264,15 +274,23 @@ public class LearningSession extends AbstractScreen implements Screen {
 		 * Combine discards and active together. These were in play at session
 		 * end.
 		 */
+		log("  combining discards and active deck");
 		while (discardsDeck.hasCards()) {
 			activeDeck.add(discardsDeck.topCard());
 		}
+		log("- Active Deck: "+activeDeck.size());
+		log("- Discards Deck: "+discardsDeck.size());
+		log("- Completed Deck: "+completedDeck.size());
 		/*
 		 * Add in completed so all cards are now in the activedeck.
 		 */
+		log("  combining completed and active deck");
 		while (completedDeck.hasCards()) {
 			activeDeck.add(completedDeck.topCard());
 		}
+		log("- Active Deck: "+activeDeck.size());
+		log("- Discards Deck: "+discardsDeck.size());
+		log("- Completed Deck: "+completedDeck.size());
 	}
 
 	private Action actionShowCompletedDialog() {
