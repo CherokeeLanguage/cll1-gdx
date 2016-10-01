@@ -1,23 +1,7 @@
-1.10
-
-Added "new card" dialog.
-
-1.09
-
-Try and fix issue with cards getting "lost" between sessions.
-
-1.08
-
-Bug fix with challenges getting stuck into "next session" mode.
-
-1.07
-
-Added remainder of Chapter 7 audio and pix. Now have 155 challenges.
-
-1.06 - 1.01
-
-Adding challenges.
-
-1.00
-
-Initial version.
+1.11 - Fixed up the "new card" dialog to show all matching pix in a horizontal scroller.
+1.10 - Added "new card" dialog.
+1.09 - Try and fix issue with cards getting "lost" between sessions.
+1.08 - Bug fix with challenges getting stuck into "next session" mode.
+1.07 - Added remainder of Chapter 7 audio and pix. Now have 155 challenges.
+1.06 - 1.01 Adding challenges.
+1.00 - Initial version.
