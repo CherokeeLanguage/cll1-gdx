@@ -245,21 +245,20 @@ public class LearningSession extends AbstractScreen implements Screen {
 				continue;
 			}
 			log("Marking " + card.getData().text + " as completed this session.");
-			idiscard.remove(); // remove before add
 			if (cardStats.isCorrect()) {
+				// if correct, the card should get moved to the next
+				// leitner box
 				cardStats.leitnerBoxInc();
-				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
-				log("- Sessions to show again: " + cardStats.getNextSessionShow());
-				continue;
 			} else {
-				// if wrong, it should get moved to the previous box
+				// if wrong, it should get moved to the previous
+				// leitner box
 				cardStats.leitnerBoxDec();
-				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
-				log("- Sessions to show again: " + cardStats.getNextSessionShow());
 			}
+			cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
+			idiscard.remove(); // remove before add
 			completedDeck.add(card);
+			log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
+			log("- Sessions to show again: " + cardStats.getNextSessionShow());
 		}
 		/*
 		 * Combine discards and active together. These were in play at session
@@ -605,20 +604,15 @@ public class LearningSession extends AbstractScreen implements Screen {
 				continue;
 			}
 			log("=== Completed card: " + card.id());
-			// if correct, the card should get moved to the next
-			// leitner box
 			if (cardStats.isCorrect()) {
+				// if correct, the card should get moved to the next
+				// leitner box
 				cardStats.leitnerBoxInc();
-				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-				iDiscards.remove(); // remove then add
-				completedDeck.add(card);
-				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
-				log("- Sessions to show again: " + cardStats.getNextSessionShow());
-				continue;
+			} else {
+				// if wrong, it should get moved to the previous
+				// leitner box
+				cardStats.leitnerBoxDec();
 			}
-			// if wrong, it should get moved to the previous
-			// leitner box
-			cardStats.leitnerBoxDec();
 			cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
 			iDiscards.remove(); // remove then add
 			completedDeck.add(card);
