@@ -8,7 +8,7 @@ import com.badlogic.gdx.utils.Logger;
 public class RefCounts extends HashMap<String, Integer>{
 	private final Logger log = new Logger(this.getClass().getSimpleName());
 	public RefCounts() {
-		log.setLevel(Logger.DEBUG);
+		log.setLevel(Logger.NONE);
 	}
 	public void inc(String key) {
 		synchronized (this) {

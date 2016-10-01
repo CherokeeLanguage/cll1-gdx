@@ -1,7 +1,10 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Random;
 import java.util.Set;
@@ -9,6 +12,7 @@ import java.util.Set;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Music.OnCompletionListener;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -18,12 +22,15 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
@@ -39,6 +46,7 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class LearningSession extends AbstractScreen implements Screen {
+	private static final float PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT = .375f;
 	private static final String DING = "audio/ding.mp3";
 	private static final String BUZZER = "audio/buzzer2.mp3";
 	private static final String XMARK = "images/2716_white.png";
@@ -199,12 +207,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 		userPause();
 		pausedStage.getRoot().clearChildren();
 		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
-		final String[] newCardImageFiles = new String[] { //
-				activeCardData.nextRandomImageFile(), //
-				activeCardData.nextRandomImageFile(), //
-				activeCardData.nextRandomImageFile() //
-		};
-		Dialog newCard = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
+		final List<String> newCardImageFiles = new ArrayList<String>(activeCardData.getImageFiles());
+		Collections.shuffle(newCardImageFiles);
+		Dialog newCardDialog = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
 			@Override
 			protected void result(Object object) {
 				if ("[AUDIO]".equals(object)) {
@@ -212,40 +217,84 @@ public class LearningSession extends AbstractScreen implements Screen {
 					cancel();
 					return;
 				}
+				if (challengeAudio != null) {
+					if (challengeAudio.isPlaying()) {
+						challengeAudio.setOnCompletionListener(new OnCompletionListener() {
+							@Override
+							public void onCompletion(Music music) {
+								challengeAudio.setOnCompletionListener(null);
+								Gdx.app.postRunnable(replayAudio);
+							}
+						});
+					} else {
+						Gdx.app.postRunnable(replayAudio);
+					}
+				}
 				for (String newCardImageFile: newCardImageFiles) {
 					discardImageFor(newCardImageFile);
 				}
 				userResume();
-				Gdx.app.postRunnable(replayAudio);
 			}
 		};
-		newCard.setModal(true);
-		newCard.setFillParent(true);
-		newCard.setKeepWithinStage(true);
-
-		TextButton howa = new TextButton("ᎰᏩ", skin);
-		newCard.button(howa, "ᎰᏩ");
-
-		TextButton audio = new TextButton("[AUDIO]", skin);
-		newCard.button(audio, "[AUDIO]");
-
-		Table contentTable = newCard.getContentTable();
-		contentTable.row();
+		newCardDialog.setModal(true);
+		newCardDialog.setFillParent(true);
+		newCardDialog.setKeepWithinStage(true);
+		newCardDialog.getTitleLabel().setAlignment(Align.center);
+		
+		Table contentTable = newCardDialog.getContentTable();
+		
+		//TEXT above pix
+		Table tblText = new Table(skin); 
+		tblText.defaults().expand().fill();
 		Label text = new Label(activeCardData.text, skin);
 		text.setFontScale(1.5f);
 		text.setWrap(true);
-		contentTable.add(text).center().colspan(newCardImageFiles.length);
+		text.setAlignment(Align.center);
+		tblText.add(text);
 		
 		contentTable.row();
-		Stack[] pictures = new Stack[newCardImageFiles.length];
-		for (int i=0; i<newCardImageFiles.length; i++) {
+		contentTable.add(tblText).expandX().fill().center();
+		
+		//PIX below text
+		Table tblPix = new Table(skin);
+		tblPix.defaults().space(4).fill().expand().uniform();
+		
+		float picMaxWidth = pausedStage.getWidth()*PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT;
+		
+		Stack[] pictures = new Stack[newCardImageFiles.size()];
+		for (int i=0; i<newCardImageFiles.size(); i++) {
 			pictures[i]=new Stack();
-			for (Image img : getImageFor(newCardImageFiles[i])) {
+			for (Image img : getImageFor(newCardImageFiles.get(i))) {
 				pictures[i].add(img);
 			}
-			contentTable.add(pictures[i]).expand().fill();
+			Cell<Stack> cell = tblPix.add(pictures[i]);
+			cell.width(picMaxWidth);
 		}
-		newCard.show(pausedStage);
+		
+		final ScrollPane scroller = new ScrollPane(tblPix, skin);
+		scroller.setFadeScrollBars(false);
+		scroller.setForceScroll(true, false);
+		scroller.setOverscroll(true, false);
+		scroller.addAction(Actions.sequence(Actions.delay(.2f), Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				scroller.setScrollPercentX(.5f);
+			}
+		})));
+		
+		contentTable.row();
+		contentTable.add(scroller).fill().expand();
+		
+		//Ꮎ buttons
+		
+		TextButton howa = new TextButton("ᎰᏩ", skin);
+		newCardDialog.button(howa, "ᎰᏩ");
+
+		TextButton audio = new TextButton("[AUDIO]", skin);
+		newCardDialog.button(audio, "[AUDIO]");
+
+		newCardDialog.pack();
+		newCardDialog.show(pausedStage);
 	}
 
 	private void showFinalStats() {
@@ -759,10 +808,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		firstTimeNotice.getTitleLabel().setAlignment(Align.center);
 		firstTimeNotice.button("ᎰᏩ");
 
-		firstTimeNotice.getContentTable().row();
+		Table contentTable = firstTimeNotice.getContentTable();
+		contentTable.row();
 		Table noticeTable = new Table(skin);
 		noticeTable.defaults().expand().fill();
-		firstTimeNotice.getContentTable().add(noticeTable).expand().fill();
+		contentTable.add(noticeTable).expand().fill();
 		String txt = Gdx.files.internal("text/how-this-works.txt").readString(StandardCharsets.UTF_8.name());
 		Label message = new Label(txt, skin);
 		message.setFontScale(.85f);
@@ -780,7 +830,6 @@ public class LearningSession extends AbstractScreen implements Screen {
 		if (imageFile == null) {
 			return;
 		}
-		log("discardImageFor: " + imageFile);
 		refCounts.dec(IMAGES_BACKDROP);
 		if (assets.isLoaded(IMAGES_BACKDROP) && refCounts.get(IMAGES_BACKDROP) < 1) {
 			assets.unload(IMAGES_BACKDROP);
@@ -800,7 +849,6 @@ public class LearningSession extends AbstractScreen implements Screen {
 	private RefCounts refCounts = new RefCounts();
 
 	protected Image[] getImageFor(String imageFile) {
-		log("getImageFor: " + imageFile);
 		if (!assets.isLoaded(IMAGES_BACKDROP)) {
 			assets.load(IMAGES_BACKDROP, Texture.class);
 			assets.finishLoadingAsset(IMAGES_BACKDROP);
