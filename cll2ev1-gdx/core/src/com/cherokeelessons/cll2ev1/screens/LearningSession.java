@@ -17,7 +17,6 @@ import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
-import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -158,7 +157,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 	};
 
-//	private float sinceLastDeckShuffle_elapsed = 0f;
+	// private float sinceLastDeckShuffle_elapsed = 0f;
 	private String previousCardId = null;
 	private String activeAudioFile;
 	private String activeImageFile1;
@@ -170,13 +169,12 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	@Override
 	protected void act(float delta) {
-//		sinceLastDeckShuffle_elapsed += delta;
+		// sinceLastDeckShuffle_elapsed += delta;
 	}
 
 	private void loadNextChallenge() {
 		ICard<CardData> card;
 		card = getNextCard();
-		CardStats cardStats = card.getCardStats();
 		activeCard = card;
 		activeCardData = card.getData();
 		activeCardStats = card.getCardStats();
@@ -186,7 +184,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		currentElapsed = 0f;
 	}
 
-	private void showFinalStats(){
+	private void showFinalStats() {
 		log("SHOWING FINAL STATS");
 		userPause();
 		pausedStage.getRoot().clearChildren();
@@ -203,7 +201,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		TextButton howa = new TextButton("ᎰᏩ", skin);
 		howa.setDisabled(true);
 		finalStats.button(howa);
-		
+
 		DeckStats stats = DeckStats.calculateStats(activeDeck);
 		StringBuilder txt = new StringBuilder();
 		txt.append("LEVEL: ");
@@ -230,24 +228,55 @@ public class LearningSession extends AbstractScreen implements Screen {
 		message.setFontScale(1.2f);
 		noticeTable.add(message);
 		finalStats.show(pausedStage);
-		
+
 		pausedStage.addAction(actionSaveActiveDeck(howa));
 	}
-	
-	private void endSessionCleanup(){
+
+	private void endSessionCleanup() {
 		/*
-		 * Fist combine completed, discards, and active into a single deck
-		 * before doing stats and also for saving to storage.
+		 * Check and see how many discards can be marked as "completed". <br>
+		 * Those that can be marked are those with shown >= triesRemaining
+		 */
+		ListIterator<ICard<CardData>> idiscard = discardsDeck.cardsIterator();
+		while (idiscard.hasNext()) {
+			ICard<CardData> card = idiscard.next();
+			CardStats cardStats = card.getCardStats();
+			if (cardStats.getShown() < cardStats.getTriesRemaining()) {
+				continue;
+			}
+			log("Marking " + card.getData().text + " as completed this session.");
+			idiscard.remove(); // remove before add
+			if (cardStats.isCorrect()) {
+				cardStats.leitnerBoxInc();
+				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
+				log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
+				log("- Sessions to show again: " + cardStats.getNextSessionShow());
+				continue;
+			} else {
+				// if wrong, it should get moved to the previous box
+				cardStats.leitnerBoxDec();
+				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
+				log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
+				log("- Sessions to show again: " + cardStats.getNextSessionShow());
+			}
+			completedDeck.add(card);
+		}
+		/*
+		 * Combine discards and active together. These were in play at session
+		 * end.
+		 */
+		while (discardsDeck.hasCards()) {
+			activeDeck.add(discardsDeck.topCard());
+		}
+		/*
+		 * Add in completed so all cards are now in the activedeck.
 		 */
 		while (completedDeck.hasCards()) {
 			activeDeck.add(completedDeck.topCard());
 		}
-		while (discardsDeck.hasCards()) {
-			activeDeck.add(discardsDeck.topCard());
-		}
 	}
-	
-	private Action actionShowCompletedDialog(){
+
+	private Action actionShowCompletedDialog() {
 		return Actions.run(new Runnable() {
 			@Override
 			public void run() {
@@ -256,8 +285,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 			}
 		});
 	}
-	
-	private Action actionSaveActiveDeck(final Button howa){
+
+	private Action actionSaveActiveDeck(final Button howa) {
 		return Actions.run(new Runnable() {
 			@Override
 			public void run() {
@@ -266,18 +295,18 @@ public class LearningSession extends AbstractScreen implements Screen {
 			}
 		});
 	}
-	
-	private void saveActiveDeck(){
+
+	private void saveActiveDeck() {
 		Json json = new Json();
 		json.setUsePrototypes(false);
 		FileHandle slot = SlotFolder.getSlotFolder(session);
 		slot.mkdirs();
-		
-		FileHandle fh_activeCards_tmp = slot.child(CLL2EV1.ACTIVE_CARDS+".tmp");
+
+		FileHandle fh_activeCards_tmp = slot.child(CLL2EV1.ACTIVE_CARDS + ".tmp");
 		FileHandle fh_activeCards = slot.child(CLL2EV1.ACTIVE_CARDS);
 		activeDeck.shuffleThenSortByNextSession();
-		StringBuilder sbActiveCards=new StringBuilder();
-		for (ICard<CardData> card: activeDeck.getCards()) {
+		StringBuilder sbActiveCards = new StringBuilder();
+		for (ICard<CardData> card : activeDeck.getCards()) {
 			sbActiveCards.append(card.id());
 			sbActiveCards.append("\t");
 			sbActiveCards.append(json.toJson(card.getCardStats()));
@@ -285,8 +314,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, StandardCharsets.UTF_8.name());
 		fh_activeCards_tmp.moveTo(fh_activeCards);
-		
-		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS+".tmp");
+
+		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS + ".tmp");
 		FileHandle fh_deckstats = slot.child(CLL2EV1.DECKSTATS);
 		json.toJson(DeckStats.calculateStats(activeDeck), fh_deckstats_tmp);
 		fh_deckstats_tmp.moveTo(fh_deckstats);
@@ -294,7 +323,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	private final Runnable runLoadNextChallenge = new Runnable() {
 		public void run() {
-			if (challengeAudio!=null && challengeAudio.isPlaying()) {
+			if (challengeAudio != null && challengeAudio.isPlaying()) {
 				stage.addAction(actionLoadNextChallengeQuick());
 				return;
 			}
@@ -309,9 +338,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 
 	};
+
 	private Action actionLoadNextChallengeQuick() {
 		return Actions.sequence(Actions.delay(.1f), Actions.run(runLoadNextChallenge));
 	}
+
 	private Action actionLoadNextChallengeDelayed() {
 		return Actions.sequence(Actions.delay(1.5f), Actions.run(runLoadNextChallenge));
 	}
@@ -368,11 +399,12 @@ public class LearningSession extends AbstractScreen implements Screen {
 		});
 	}
 
-	private boolean audioFirstPlay=false;
+	private boolean audioFirstPlay = false;
+
 	private void loadNewChallengeAudio(final String newActiveAudioFile) {
 		Gdx.app.postRunnable(new Runnable() {
 			public void run() {
-				audioFirstPlay=true;
+				audioFirstPlay = true;
 				if (challengeAudio != null) {
 					challengeAudio.stop();
 				}
@@ -447,6 +479,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 			return getNextCard();
 		}
 
+		// see if any other cards were scheduled for this session
+		addThisSessionCardsFromCompletedDeck();
+		log("Now have " + activeDeck.size() + " cards in play ...");
+		if (activeDeck.hasCards()) {
+			return getNextCard();
+		}
+
 		addCardFromMasterDeck();
 		// ok, if we have active cards, do getNextCard
 		log("Now have " + activeDeck.size() + " cards in play ...");
@@ -461,7 +500,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			return getNextCard();
 		}
 
-		addAllFromDiscards();
+		addFromDiscards(3);
 
 		// ok, if we have active cards, do getNextCard
 		log("Now have " + activeDeck.size() + " cards in play ...");
@@ -473,11 +512,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		return null;
 	}
 
-	private void addAllFromDiscards() {
+	private void addFromDiscards(int maxCount) {
 		// put all discards into the active deck w/o looking at show next times
 		log("Moving ALL discards into active deck ...");
 		discardsDeck.shuffleThenSortByShowAgainDelay();
-		while (discardsDeck.hasCards()) {
+		while (discardsDeck.hasCards() && --maxCount > 0) {
 			activeDeck.add(discardsDeck.topCard());
 		}
 	}
@@ -488,11 +527,34 @@ public class LearningSession extends AbstractScreen implements Screen {
 		 * deck. Being sure to set all stats to "never shown/correct". This is
 		 * like an emergency don't crash me measure.
 		 */
-		log("Retrieving old cards from completed deck...");
+		log("Retrieving old cards from completed deck ignoring next session time...");
 		completedDeck.shuffleThenSortByNextSession();
-		for (int count=0; count<3; count++) {
+		for (int count = 0; count < 3; count++) {
 			if (completedDeck.size() != 0) {
 				ICard<CardData> topCard = completedDeck.topCard();
+				topCard.resetStats();
+				topCard.resetTriesRemaining(CardData.MAX_TRIES);
+				topCard.getCardStats().setPimsleurSlot(0);
+				activeDeck.add(topCard);
+			}
+		}
+	}
+
+	private void addThisSessionCardsFromCompletedDeck() {
+		/**
+		 * We still don't have any active cards, grab some from the completed
+		 * deck. Being sure to set all stats to "never shown/correct". This is
+		 * like an emergency don't crash me measure.
+		 */
+		log("Retrieving cards from completed deck that should be shown this session...");
+		completedDeck.shuffleThenSortByNextSession();
+		for (int count = 0; count < 3; count++) {
+			if (completedDeck.size() != 0) {
+				ICard<CardData> topCard = completedDeck.topCard();
+				if (topCard.getCardStats().getNextSessionShow() > 0) {
+					// no cards ready for showing
+					break;
+				}
 				topCard.resetStats();
 				topCard.resetTriesRemaining(CardData.MAX_TRIES);
 				topCard.getCardStats().setPimsleurSlot(0);
@@ -519,16 +581,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 	private void discardsReadyForShowCheck() {
 		/**
-		 * If top card is ready for display, go ahead and recycle all of the
-		 * discards.
+		 * Go ahead and recycle all of the close to next show time discards.
 		 */
 		log("Scanning discards for cards to put back into immediate play... ");
 		discardsDeck.shuffleThenSortByShowAgainDelay();
 		log("Next show time for discards is: " + discardsDeck.getNextShowTime());
-		if (discardsDeck.getNextShowTime() < 15000l) {
-			while (discardsDeck.hasCards()) {
-				activeDeck.add(discardsDeck.topCard());
-			}
+		while (discardsDeck.hasCards() && discardsDeck.getNextShowTime() < 5000l) {
+			activeDeck.add(discardsDeck.topCard());
 		}
 	}
 
@@ -720,6 +779,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 		// shuffle the remaining active cards
 		activeDeck.shuffleThenSortByShowAgainDelay();
+		// move more than three starting cards into the completed deck to
+		// prevent overload
+		while (activeDeck.size() > 3) {
+			completedDeck.add(activeDeck.getCards().get(activeDeck.size() - 1));
+		}
 	}
 
 	private ClickListener playAudioChallenge = new ClickListener() {
