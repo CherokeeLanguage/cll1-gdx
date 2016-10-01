@@ -249,14 +249,14 @@ public class LearningSession extends AbstractScreen implements Screen {
 			if (cardStats.isCorrect()) {
 				cardStats.leitnerBoxInc();
 				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-				log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
+				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
 				log("- Sessions to show again: " + cardStats.getNextSessionShow());
 				continue;
 			} else {
 				// if wrong, it should get moved to the previous box
 				cardStats.leitnerBoxDec();
 				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-				log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
+				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
 				log("- Sessions to show again: " + cardStats.getNextSessionShow());
 			}
 			completedDeck.add(card);
@@ -612,8 +612,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 				cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
 				iDiscards.remove(); // remove then add
 				completedDeck.add(card);
-				log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
-				log("- Days to show again: " + cardStats.getNextSessionShow());
+				log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
+				log("- Sessions to show again: " + cardStats.getNextSessionShow());
 				continue;
 			}
 			// if wrong, it should get moved to the previous
@@ -622,8 +622,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 			cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
 			iDiscards.remove(); // remove then add
 			completedDeck.add(card);
-			log("- Moved to Leitner box: " + card.id() + " [" + cardStats.getLeitnerBox() + "]");
-			log("- Days to show again: " + cardStats.getNextSessionShow());
+			log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
+			log("- Sessions to show again: " + cardStats.getNextSessionShow());
 		}
 	}
 
