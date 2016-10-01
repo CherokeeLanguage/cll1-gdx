@@ -1,3 +1,7 @@
+1.09
+
+Try and fix issue with cards getting "lost" between sessions.
+
 1.08
 
 Bug fix with challenges getting stuck into "next session" mode.
