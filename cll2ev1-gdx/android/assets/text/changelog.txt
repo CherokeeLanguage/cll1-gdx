@@ -1,3 +1,7 @@
+1.10
+
+Added "new card" dialog.
+
 1.09
 
 Try and fix issue with cards getting "lost" between sessions.
