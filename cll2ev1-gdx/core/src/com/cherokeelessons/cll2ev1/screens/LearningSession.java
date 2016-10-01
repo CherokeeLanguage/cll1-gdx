@@ -30,7 +30,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.ui.Value;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
@@ -163,7 +162,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	protected Runnable firstPlay = new Runnable() {
 		@Override
 		public void run() {
-			if (activeDeck.size() == 0) {
+			if (activeDeck.size() == 0 && completedDeck.size()==0 && discardsDeck.size()==0) {
 				stage.addAction(actionFirstTime());
 			} else {
 				stage.addAction(actionLoadNextChallengeQuick());
