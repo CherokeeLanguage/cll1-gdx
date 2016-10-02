@@ -1,3 +1,4 @@
+1.14 - It's getting too large too fast. Use PNGCRUSH on pictures. Reduce audio from 192 bits to 128 bits.
 1.13 - Fix issue with wrong cards vs correct cards and Chapter 8's variations for ᎥᏍᎩᎾ vs ᎾᏍᎩ
 1.12 - Added selected entries from Chapter 8 exercises. Fixed ᏘᎪᎵᏯ vs ᏙᏪᎸᎦ mixup. Now have 200 challenges.
 1.11 - Fixed up the "new card" dialog to show all matching pix in a horizontal scroller.

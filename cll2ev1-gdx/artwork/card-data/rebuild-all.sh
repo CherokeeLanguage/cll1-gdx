@@ -32,6 +32,12 @@ for dir in *; do
 		echo "=== $png"
 		PNGS="${PNGS}\t${png}, "
 		inkscape -z -b=white -y=1.0 -C -d=45 -e="$png" "$svg"
+		mv "$png" "$png".crush
+		pngcrush -s "$png".crush "$png"
+		if [ ! -f "$png" ]; then
+			cp -v "$png".crush "$png"
+		fi
+		rm "$png".crush
 	done
 done
 

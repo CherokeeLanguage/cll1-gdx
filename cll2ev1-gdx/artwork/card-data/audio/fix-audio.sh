@@ -1,5 +1,5 @@
 #!/bin/bash
-BR=192
+BR=128
 
 set -e
 set -o pipefail

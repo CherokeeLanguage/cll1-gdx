@@ -121,12 +121,12 @@
 	ᎤᎿ.	uhna				
 	ᎾᎥ.	nav				
 	ᎠᎭᏂ.	ahani	ahni			
-	ᎯᎪᏩᏘᎭ.	hiigowhtiha				
-	ᏥᎪᏩᏘᎭ.	jiigowhtiha				
+	ᎯᎪᏩᏘᎭ.	hiigowhtiha	higowhtiha			
+	ᏥᎪᏩᏘᎭ.	jiigowhtiha	jigowhtiha			
 	ᎦᎯᎪᏩᏘᎭ.	gahiigowhtiha				
 	ᎦᏥᎪᏩᏘᎭ.	gajiigowhtiha				
-	Ꭿ̣ᎪᏩᏘᎭ.	higowhtiha				
-	Ꮵ̣ᎪᏩᏘᎭ.	jigowhtiha				
+	Ꭿ̣ᎪᏩᏘᎭ.	higowhtiha	hiigowhtiha			
+	Ꮵ̣ᎪᏩᏘᎭ.	jigowhtiha	jiigowhtiha			
 	ᏕᎯ̣ᎪᏩᏘᎭ.	dehigowhtiha				
 	ᏕᏥ̣ᎪᏩᏘᎭ.	dejigowhtiha				
 						
@@ -173,7 +173,7 @@
 	ᏍᎩᎾ.	sgina	vsgi			sgị²na
 						
 81	ᎠᎨᏯ ᎠᏂ ᏥᎪᏩᏘᎭ.	agehya-ahni				x
-	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.	agehya-uhna				x
+	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.	agehya-uhna		agehya-uhna; na-agehya		x
 	ᎠᏴ.	ayv	ayv1	ayv		x
 	ᎠᏴ.	ayv	ayv2	ayv		x
 	ᎠᏴ.	ayv	ayv3	ayv		x
@@ -197,13 +197,13 @@
 	ᎾᏍᎩ ᎢᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	nasgi-ina-dehigowhtiha				
 						
 	ᎦᏙ ᎤᎾᏍᏗ ᎠᏂ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-ahni				
-	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-uhna				
+	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
 	ᎦᏙ ᎤᏍᏗ ᎠᏂ ᏥᎪᏩᏘᎭ?	gado-usdi-ahni				
-	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?	gado-usdi-uhna				
+	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?	gado-usdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
 	ᎦᏙ ᏧᏍᏗ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-uhna				
 						
 	ᎩᏟ ᎠᏂ ᏥᎪᏩᏘᎭ.	gihli-ahni				
-	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.	gihli-uhna				
+	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.	gihli-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
 						
 	ᎭᏢ ᎠᎨᏯ?	hadlv-agehya				
 	ᎭᏢ ᎩᏟ?	hadlv-gihli				
@@ -212,8 +212,8 @@
 	ᎯᎠ ᎠᏍᎦᏯ ᎠᏂ.	hia-asgaya				
 	ᎯᎠ ᏄᎾ ᎠᏂ.	hia-nuna				
 						
-	Ꮎ ᎠᎨᏯ ᎤᎿ.	agehya-uhna				
-	Ꮎ ᎩᏟ ᎤᎿ.	na-gihli				
+	Ꮎ ᎠᎨᏯ ᎤᎿ.	na-agehya		agehya-uhna; na-agehya		
+	Ꮎ ᎩᏟ ᎤᎿ.	na-gihli		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
 						
 	ᏂᎯ.	nihi	nihi1	nihi		
 	ᏂᎯ.	nihi	nihi2	nihi		
