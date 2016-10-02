@@ -5,7 +5,6 @@ import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override
