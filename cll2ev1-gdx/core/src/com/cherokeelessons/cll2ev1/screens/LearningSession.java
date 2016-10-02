@@ -890,7 +890,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 		// reset basic statistics and scoring and tries remaining
 		for (ICard<CardData> card : activeDeck.getCards()) {
-			CardStats cardStats = card.getCardStats();
+//			CardStats cardStats = card.getCardStats();
 			card.resetStats();
 			card.resetTriesRemaining(CardData.MAX_TRIES);
 			card.getCardStats().setPimsleurSlot(0);
