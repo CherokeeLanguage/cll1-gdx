@@ -205,7 +205,6 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("SHOWING NEW CARD");
 		userPause();
 		pausedStage.getRoot().clearChildren();
-		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
 		final List<String> newCardImageFiles = new ArrayList<String>(activeCardData.getImageFiles());
 		Collections.shuffle(newCardImageFiles);
 		Dialog newCardDialog = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
@@ -221,7 +220,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 						challengeAudio.setOnCompletionListener(new OnCompletionListener() {
 							@Override
 							public void onCompletion(Music music) {
-								challengeAudio.setOnCompletionListener(null);
+								music.setOnCompletionListener(null);
 								Gdx.app.postRunnable(replayAudio);
 							}
 						});
@@ -447,7 +446,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 	private final Runnable runLoadNextChallenge = new Runnable() {
 		public void run() {
 			if (challengeAudio != null && challengeAudio.isPlaying()) {
-				stage.addAction(actionLoadNextChallengeQuick());
+				challengeAudio.setOnCompletionListener(new OnCompletionListener() {
+					@Override
+					public void onCompletion(Music music) {
+						music.setOnCompletionListener(null);
+						stage.addAction(actionLoadNextChallengeQuick());
+					}
+				});
 				return;
 			}
 			// 5-minute check
