@@ -1,10 +1,9 @@
 package com.cherokeelessons.cll2ev1;
 
-import android.os.Bundle;
-
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+
+import android.os.Bundle;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
