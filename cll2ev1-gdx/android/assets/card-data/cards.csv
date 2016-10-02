@@ -81,6 +81,7 @@
 	ᏪᏌ ᎠᎴ ᏅᏯ.	wesa-ale-nvya		wesa		
 	ᏪᏌ ᏃᎴ ᎩᏟ.	wesa-nole-gihli	wesa-ale-gihli	wesa		
 	ᏪᏌ ᏃᎴ ᏅᏯ.	wesa-nole-nvya	wesa-ale-nvya	wesa		
+						
 61	ᎠᎪᏩᏘᎭ.	agowhtiha		agowhtiha		
 	ᎠᏂᎪᏩᏘᎭ.	anigowhtiha		anigowhtiha		
 	ᎩᏟ ᎠᎪᏩᏘᎭ.	gihli-agowhtiha		agowhtiha		
@@ -101,6 +102,7 @@
 	ᏪᏌ ᎠᏂᎪᏩᏘᎭ.	wesa-anigowhtiha		anigowhtiha		
 	ᏪᏌ ᏓᎪᏩᏘᎭ.	wesa-dagowhtiha		dagowhtiha		
 	ᏪᏌ ᏓᏂᎪᏩᏘᎭ.	wesa-danigowhtiha		danigowhtiha		
+						
 62	ᎠᎨᏯ ᎠᎴ ᏪᏌ ᏅᏯ ᎠᏂᏩᏘᎭ.	agehya-ale-wesa				
 	ᎠᎨᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	agehya-anigehya				
 	ᎠᎨᏯ ᏅᏯ ᎠᎪᏩᏘᎭ.	agehya-nvya				
@@ -162,51 +164,51 @@
 	ᎦᏙ ᎤᏍᏗ Ꮵ̣ᎪᏩᏘᎭ?	gado-usdi-jigowhtiha				
 	ᎦᏙ ᏧᏍᏗ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-dejigowhtiha				
 						
-80	ᎥᏍᎩ.	vsgi	vsgi			
-	ᎥᏍᎩᎾ.	vsgina	vsgi			
-	ᎯᎠ.	hia	hia			
-	ᎯᎢ.	hii	hia			
-	Ꮎ.	na	vsgi			
-	ᎾᏍᎩ.	nasgi	vsgi			
-	ᏍᎩᎾ.	sgina	vsgi			
+80	ᎥᏍᎩ.	vsgi	vsgi			v¹sgị
+	ᎥᏍᎩᎾ.	vsgina	vsgi			v¹sgị²na
+	ᎯᎠ.	hia	hia			hị²ɂa
+	ᎯᎢ.	hii	hia			hị²ɂi
+	Ꮎ.	na	vsgi			na
+	ᎾᏍᎩ.	nasgi	vsgi			na¹sgi
+	ᏍᎩᎾ.	sgina	vsgi			sgị²na
 						
-81	ᎠᎨᏯ ᎠᏂ ᏥᎪᏩᏘᎭ.					
-	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.					
-	ᎠᏴ.	ayv1		ayv		
-	ᎠᏴ.	ayv2		ayv		
-	ᎠᏴ.	ayv3		ayv		
-	ᎥᏍᎩ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.					
-	ᎥᏍᎩ ᎢᎾ ᎯᎪᏩᏘᎭ.					
-	ᎥᏍᎩ ᎾᎥ ᎦᎯᎪᏩᏘᎭ.					
-	ᎥᏍᎩ ᎾᎥ ᎯᎪᏩᏘᎭ.					
-	ᎥᏍᎩᎾ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.					
-	ᎥᏍᎩᎾ ᎾᎥ ᎯᎪᏩᏘᎭ.					
-	ᎦᏙ ᎤᎾᏍᏗ ᎠᏂ ᎦᏥᎪᏩᏘᎭ?					
-	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?					
-	ᎦᏙ ᎤᏍᏗ ᎠᏂ ᏥᎪᏩᏘᎭ?					
-	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?					
-	ᎦᏙ ᏧᏍᏗ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ?					
-	ᎩᏟ ᎠᏂ ᏥᎪᏩᏘᎭ.					
-	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.					
-	ᎭᏢ ᎠᎨᏯ?					
-	ᎭᏢ ᎩᏟ?					
-	ᎭᏢ ᏅᏯ?					
-	ᎯᎠ ᎠᏍᎦᏯ ᎠᏂ.					
-	ᎯᎠ ᏄᎾ ᎠᏂ.					
-	Ꮎ ᎠᎨᏯ ᎤᎿ.					
-	Ꮎ ᎩᏟ ᎤᎿ.					
-	ᎾᏍᎩ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.					
-	ᎾᏍᎩ ᎢᎾ ᏕᎯ̣ᎪᏩᏘᎭ.					
-	ᎾᏍᎩ ᎾᎥ ᎯᎪᏩᏘᎭ.					
-	ᏂᎯ.	nihi1		nihi		
-	ᏂᎯ.	nihi2		nihi		
-	ᏂᎯ.	nihi3		nihi		
-	ᏅᏯ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ.					
-	ᏍᎩᎾ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.					
-	ᏍᎩᎾ ᎢᎾ ᎯᎪᏩᏘᎭ.					
-	ᏍᎩᎾ ᎾᎥ ᎦᎯᎪᏩᏘᎭ.					
-	ᏪᏌ ᎠᏂ ᏥᎪᏩᏘᎭ.					
-	ᏪᏌ ᎤᎿ ᏥᎪᏩᏘᎭ.					
+81	ᎠᎨᏯ ᎠᏂ ᏥᎪᏩᏘᎭ.	agehya-ahni				
+	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.	agehya-uhna				
+	ᎠᏴ.	ayv	ayv1	ayv		
+	ᎠᏴ.	ayv	ayv2	ayv		
+	ᎠᏴ.	ayv	ayv3	ayv		
+	ᎥᏍᎩ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	vsgi-ina-gahiigowhtiha				
+	ᎥᏍᎩ ᎢᎾ ᎯᎪᏩᏘᎭ.	vsgi-ina-higowhtiha				
+	ᎥᏍᎩ ᎾᎥ ᎦᎯᎪᏩᏘᎭ.	vsgi-nav-gahigowhtiha				
+	ᎥᏍᎩ ᎾᎥ ᎯᎪᏩᏘᎭ.	vsgi-nav-hiigowhtiha				
+	ᎥᏍᎩᎾ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	vsgina-ina-higowhtiha				
+	ᎥᏍᎩᎾ ᎾᎥ ᎯᎪᏩᏘᎭ.	vsgina-nav-hiigowhtiha				
+	ᎦᏙ ᎤᎾᏍᏗ ᎠᏂ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-ahni				
+	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-uhna				
+	ᎦᏙ ᎤᏍᏗ ᎠᏂ ᏥᎪᏩᏘᎭ?	gado-usdi-ahni				
+	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?	gado-usdi-uhna				
+	ᎦᏙ ᏧᏍᏗ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-uhna				
+	ᎩᏟ ᎠᏂ ᏥᎪᏩᏘᎭ.	gihli-ahni				
+	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.	gihli-uhna				
+	ᎭᏢ ᎠᎨᏯ?	hadlv-agehya				
+	ᎭᏢ ᎩᏟ?	hadlv-gihli				
+	ᎭᏢ ᏅᏯ?	hadlv-nvya				
+	ᎯᎠ ᎠᏍᎦᏯ ᎠᏂ.	hia-asgaya				
+	ᎯᎠ ᏄᎾ ᎠᏂ.	hia-nuna				
+	Ꮎ ᎠᎨᏯ ᎤᎿ.	agehya-uhna				
+	Ꮎ ᎩᏟ ᎤᎿ.	na-gihli; gihli-uhna				
+	ᎾᏍᎩ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	nasgi-ina-higowhtiha				
+	ᎾᏍᎩ ᎢᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	nasgi-ina-dehigowhtiha				
+	ᎾᏍᎩ ᎾᎥ ᎯᎪᏩᏘᎭ.	nasgi-nav-hiigowhtiha				
+	ᏂᎯ.	nihi	nihi1	nihi		
+	ᏂᎯ.	nihi	nihi2	nihi		
+	ᏂᎯ.	nihi	nihi3	nihi		
+	ᏅᏯ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ.	nvya-uhna				
+	ᏍᎩᎾ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	sgina-ina-gahiigowhtiha				
+	ᏍᎩᎾ ᎢᎾ ᎯᎪᏩᏘᎭ.	sgina-ina-hiigowhtiha				
+	ᏍᎩᎾ ᎾᎥ ᎦᎯᎪᏩᏘᎭ.	sgina-nav				
+	ᏪᏌ ᎠᏂ ᏥᎪᏩᏘᎭ.	wesa-ahni				
+	ᏪᏌ ᎤᎿ ᏥᎪᏩᏘᎭ.	wesa-uhna				
 						
 90	ᎠᎭᏫ.					
 	ᎠᏫ.					
@@ -218,7 +220,8 @@
 	ᏥᏍᏚ.					
 	ᏩᎭᏯ.					
 	ᏩᏯ.					
-	Ꮭ $1 ᏱᎩ.	hla-$1-yigi	hla-$1-yigi		$1=	
+	ᏩᏯ ᎤᏍᏗ.					
+						
 						
 100	ᎠᏂᏴᏫ.					
 	ᎠᏂᎩᏟ.					
