@@ -1,3 +1,4 @@
+1.17 - Adjust chapter 5 artwork.
 1.16 - Ꮎ ᎠᎨᏯ ᎤᎿ should only show one woman on far shore.
 1.15 - Fix wrong audio file for Ꮎ ᎠᎨᏯ ᎤᎿ. Add picture blacklist entries to several challenges.
 1.14 - It's getting too large too fast. Use PNGCRUSH on pictures. Reduce audio from 192 bits to 128 bits.

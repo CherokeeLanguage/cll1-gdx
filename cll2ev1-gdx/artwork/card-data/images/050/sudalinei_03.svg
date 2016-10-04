@@ -452,7 +452,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6815478"
+     inkscape:zoom="1.68"
      inkscape:cx="300"
      inkscape:cy="225"
      inkscape:document-units="px"
@@ -472,7 +472,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -4019,65 +4019,62 @@
        cx="-741.54279"
        id="ellipse5559"
        style="color:#000000;fill:#ff0000;stroke:#000000;stroke-width:2.73463058;stroke-opacity:0.98438003" />
-    <g
-       id="g8043">
-      <ellipse
-         ry="31.741507"
-         rx="43.125683"
-         cy="700.51788"
-         cx="407.98581"
-         id="path2858-1-0-6-1-5-9-4-9-0-9-1-7-7-1-1-5-9-7-7-6-7-3-6-5-6-3-9-4-8-1-2-9"
-         style="color:#000000;fill:#ff0000;stroke:#000000;stroke-width:6.51698637;stroke-opacity:0.98438003" />
-      <ellipse
-         style="color:#000000;fill:#00ff66;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5525"
-         cx="213.95512"
-         cy="904.00659"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#ff0066;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5529"
-         cx="69.622375"
-         cy="909.05511"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#008000;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5537"
-         cx="361.42657"
-         cy="903.40234"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#abc837;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5539"
-         cx="117.5493"
-         cy="700.90674"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#87cdde;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5541"
-         cx="493.71283"
-         cy="899.66174"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#552200;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5543"
-         cx="260.80466"
-         cy="698.22064"
-         rx="46.040649"
-         ry="31.638643" />
-      <ellipse
-         style="color:#000000;fill:#0000ff;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003"
-         id="ellipse5561"
-         cx="539.29041"
-         cy="697.56152"
-         rx="46.040649"
-         ry="31.638643" />
-    </g>
+    <ellipse
+       style="color:#000000;fill:#ff0000;stroke:#000000;stroke-width:6.51698637;stroke-opacity:0.98438003"
+       id="path2858-1-0-6-1-5-9-4-9-0-9-1-7-7-1-1-5-9-7-7-6-7-3-6-5-6-3-9-4-8-1-2-9"
+       cx="407.98581"
+       cy="699.23413"
+       rx="43.125683"
+       ry="31.741507" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="904.00659"
+       cx="213.95512"
+       id="ellipse5525"
+       style="color:#000000;fill:#00ff66;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="909.05511"
+       cx="69.622375"
+       id="ellipse5529"
+       style="color:#000000;fill:#ff0066;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="903.40234"
+       cx="361.42657"
+       id="ellipse5537"
+       style="color:#000000;fill:#008000;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="699.23413"
+       cx="117.5493"
+       id="ellipse5539"
+       style="color:#000000;fill:#abc837;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="899.66174"
+       cx="493.71283"
+       id="ellipse5541"
+       style="color:#000000;fill:#87cdde;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="699.23413"
+       cx="260.80466"
+       id="ellipse5543"
+       style="color:#000000;fill:#552200;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
+    <ellipse
+       ry="31.638643"
+       rx="46.040649"
+       cy="699.23413"
+       cx="539.29041"
+       id="ellipse5561"
+       style="color:#000000;fill:#0000ff;stroke:#000000;stroke-width:6.72271538;stroke-opacity:0.98438003" />
     <ellipse
        ry="12.8698"
        rx="18.728172"
@@ -4374,7 +4371,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(-144.05818,895.53048)"
+       transform="matrix(2.7383036,0,0,2.7383036,-777.88717,749.35281)"
        inkscape:label="Layer 1"
        id="layer1-6">
       <path
