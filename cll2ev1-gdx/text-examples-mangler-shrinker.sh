@@ -26,6 +26,7 @@ cp "$1" "$m1"
 
 #no English
 perl -i -p -e 's/[A-Za-z][\/A-Za-z\s]*[.?!,:]//g' "$m1"
+perl -i -p -e 's/\(.*?\)\s*/\n$1\n/g' "$m1"
 #break apart into sentences
 perl -i -p -e 's/\t\s*/\n/g' "$m1"
 #remove speaker indicators
@@ -44,16 +45,21 @@ perl -i -p -e 's/^\s*//g' "$m1"
 perl -i -p -e 's/\n+/\n/g' "$m1"
 #remove digit marks
 perl -i -p -e 's/^\d+\n//g' "$m1"
+#remove bare '.'
+perl -i -p -e 's/^\.\n//g' "$m1"
 
-#random removals based on 4 lead uniq
+#random removals based on uniq
 for x in $(seq 1 100); do
-	shuf "$m1" | uniq -w 4 > "$m2"
+	shuf "$m1" | uniq -w 12 > "$m2"
 	mv "$m2" "$m1"
 done
 
 #do a final full uniq then a final shuffling
-sort -k1.1,1.3 "$m1" | uniq -w 3 > "$m2"
-mv "$m2" "$m1"
+sort -k1.1,1.12 "$m1" | uniq -w 12 > "$m2"
+c="$(wc -l "$m2" | cut -f 1 -d ' ')"
+if [ $c -gt 10 ]; then
+	mv "$m2" "$m1"
+fi
 
 shuf "$m1" | head -n 10 > "$m2"
 mv "$m2" "$m1"
