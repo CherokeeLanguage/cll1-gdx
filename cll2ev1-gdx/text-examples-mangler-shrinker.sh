@@ -55,7 +55,7 @@ done
 sort -k1.1,1.3 "$m1" | uniq -w 3 > "$m2"
 mv "$m2" "$m1"
 
-shuf "$m1" | head -n 15 > "$m2"
+shuf "$m1" | head -n 10 > "$m2"
 mv "$m2" "$m1"
 
 mv "$m1" "$1".mangle
