@@ -19,4 +19,7 @@ perl -i -p -e "s/^app.version=.*$/app.version==$vb/g" ios/robovm.properties
 perl -i -p -e "s/android:versionCode=\".*?\"/android:versionCode=\"$vc\"/g" android/AndroidManifest.xml
 perl -i -p -e "s/android:versionName=\".*?\"/android:versionName=\"$vb\"/g" android/AndroidManifest.xml
 
+echo "---"
+echo "$vb"
+echo "---"
 
