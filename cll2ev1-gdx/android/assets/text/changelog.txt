@@ -1,7 +1,8 @@
+1.22 - Chapter 9 - Additional vocabulary
 1.21 - Chapter 8 fixes.
 1.20 - Blacklist fix.
 1.19 - Audio filename fix.
-1.18 - Chapter 9 - Core Vocabulary
+1.18 - Chapter 9 - Core vocabulary
 1.17 - Adjust chapter 5 artwork.
 1.16 - Ꮎ ᎠᎨᏯ ᎤᎿ should only show one woman on far shore.
 1.15 - Fix wrong audio file for Ꮎ ᎠᎨᏯ ᎤᎿ. Add picture blacklist entries to several challenges.
