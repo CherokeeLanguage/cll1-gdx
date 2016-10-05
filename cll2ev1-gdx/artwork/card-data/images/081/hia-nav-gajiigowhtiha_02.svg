@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sgina-nav.svg"
+   sodipodi:docname="hia-nav-gajiigowhtiha_02.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
    inkscape:export-xdpi="45"
@@ -4841,9 +4841,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2319371"
-     inkscape:cx="507.27386"
-     inkscape:cy="139.82536"
+     inkscape:zoom="1.7422222"
+     inkscape:cx="300"
+     inkscape:cy="225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -8026,7 +8026,7 @@
          style="fill:none;stroke:#a63b2f;stroke-width:1.57130003;stroke-linecap:round;stroke-linejoin:round" />
     </g>
     <g
-       transform="matrix(-0.8414318,0,0,0.8414318,453.80283,387.44214)"
+       transform="matrix(0.8414318,0,0,0.8414318,-84.582386,436.80438)"
        inkscape:label="Calque 1"
        id="layer1-9">
       <path
@@ -17103,7 +17103,7 @@
     <g
        style="overflow:visible;fill-rule:evenodd;stroke-width:0.50099999;stroke-linejoin:bevel"
        id="g9548"
-       transform="matrix(-0.1026005,0,0,0.1026005,213.60241,765.87222)">
+       transform="matrix(0.1026005,0,0,0.1026005,154.10834,815.80844)">
       <g
          transform="scale(1,-1)"
          font-size="16"
@@ -17322,7 +17322,7 @@
     </g>
     <g
        id="g7804"
-       transform="translate(-20.238098,-88.09524)">
+       transform="translate(126.70068,18.090984)">
       <path
          style="fill:#322b2a;stroke:#000000;stroke-width:1.3267715"
          inkscape:connector-curvature="0"
