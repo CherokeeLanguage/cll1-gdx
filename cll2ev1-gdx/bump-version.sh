@@ -13,15 +13,9 @@ va="$(grep '^VERSION=' gradle.properties | cut -f 2 -d '=' | head -n 1)"
 vb="$(echo "$va + .01" | bc -l)"
 vc="$(echo "$vb * 100" | bc -l | cut -f 1 -d '.')"
 
-echo $va
-echo $vb
-
 perl -i -p -e "s/^VERSION=.*$/VERSION=$vb/g" gradle.properties
 perl -i -p -e "s/^app.version=.*$/app.version==$vb/g" ios/robovm.properties
 
-android:versionCode="118"
-    android:versionName="1.18"
-    
 perl -i -p -e "s/android:versionCode=\".*?\"/android:versionCode=\"$vc\"/g" android/AndroidManifest.xml
 perl -i -p -e "s/android:versionName=\".*?\"/android:versionName=\"$vb\"/g" android/AndroidManifest.xml
 
