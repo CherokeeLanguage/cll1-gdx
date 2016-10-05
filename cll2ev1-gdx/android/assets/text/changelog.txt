@@ -1,4 +1,4 @@
-1.22 - Chapter 9 - Additional vocabulary
+1.22 - Chapter 9 - Additional vocabulary - Now have 228 challenges.
 1.21 - Chapter 8 fixes.
 1.20 - Blacklist fix.
 1.19 - Audio filename fix.
