@@ -43,7 +43,9 @@ done
 
 cd "$cwd"
 cd audio
-bash fix-audio.sh
+for x in 1 2; do 
+	bash fix-audio.sh
+done
 
 echo "SYNCING IMAGE ASSETS"
 ASSETS_IMAGES="../../../android/assets/card-data/images"
@@ -88,7 +90,7 @@ for dir in *; do
 	for mp3 in *.mp3; do
 		if [ ! -f "$mp3" ]; then continue; fi
 		if [ ! -f "${adir}/$mp3" ]; then cp -v "$mp3" "${adir}/$mp3"; fi
-		if [ "${adir}/$mp3" -ot "$mp3" ]; then cp -v "$mp3" "${adir}/$mp3"; fi
+		if [ "$mp3" -nt "${adir}/$mp3" ]; then cp -pv "$mp3" "${adir}/$mp3"; fi
 	done
 done
 
