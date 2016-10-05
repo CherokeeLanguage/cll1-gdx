@@ -1,0 +1,23 @@
+<svg width="351" height="406" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="imagebot_15" y2="0.21591" x2="0.09717" y1="0.14096" x1="0.0652">
+   <stop id="imagebot_7" offset="0" stop-color="#efeded" stop-opacity="0.99609"/>
+   <stop id="imagebot_6" offset="1" stop-color="#ffffff" stop-opacity="0.99609"/>
+  </linearGradient>
+  <linearGradient id="imagebot_16" y2="0.21591" x2="0.09717" y1="0.14096" x1="0.0652">
+   <stop id="imagebot_13" offset="0" stop-color="#edeaea" stop-opacity="0.99609"/>
+   <stop id="imagebot_12" offset="1" stop-color="#ffffff" stop-opacity="0.99609"/>
+  </linearGradient>
+  <linearGradient id="imagebot_17" y2="0.21591" x2="0.09717" y1="0.14096" x1="0.0652">
+   <stop id="imagebot_7" offset="0" stop-color="#efefef" stop-opacity="0.99609"/>
+   <stop id="imagebot_6" offset="1" stop-color="#ffffff" stop-opacity="0.99609"/>
+  </linearGradient>
+ </defs>
+ <g id="imagebot_1">
+  <path id="imagebot_10" d="M 2.29173 71.2952 C 25.0411 55.3957 57.1629 42.197 57.1629 42.197 L 154.481 2 L 189.907 128.166 S 203.263 177.752 224.217 210.81 C 206.974 266.346 146.131 287.051 146.131 287.051 L 66.9279 319.768 L 6.32452 103.941 S 0.672119 83.1581 2.29173 71.2952 Z" fill="url(#imagebot_15)" stroke-width="4" stroke="#000000"/>
+  <title/>
+  <path d="M234.34399,156.52499C259.67599,145.18401 293.70599,138.257 293.70599,138.257L396.84399,117.065L407.92899,247.64101S411.728,298.853 426.09698,335.26001C398.724,386.56601 335.07401,395.46799 335.07401,395.46799L251.134,412.71799L232.17,189.347S230.524,167.87199 234.34399,156.52499z" fill="url(#imagebot_16)" stroke-width="4" stroke="#000000" id="imagebot_5" transform="rotate(186.106 159.334 246.201) matrix(1 0 0 1 -169.623 -18.6909)"/>
+  <path d="M 154.215 58.0705 C 180.512 49.1922 215.046 45.5357 215.046 45.5357 L 319.733 34.2568 L 318.339 165.295 S 317.247 216.636 328.085 254.246 C 295.953 302.713 231.744 305.516 231.744 305.516 L 146.544 314.698 L 148.927 90.5366 S 149.332 69.0024 154.215 58.0705 Z" fill="url(#imagebot_17)" stroke-width="4" stroke="#000000" id="imagebot_2"/>
+ </g>
+ <metadata>image/svg+xmlOpenclipartBlank sticky note 12006-12-26T00:00:00https://openclipart.org/detail/17621/-by--17621lemmling</metadata>
+</svg>

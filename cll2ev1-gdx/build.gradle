@@ -20,7 +20,7 @@ allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
 
-    version = '1.17'
+    version = '1.18'
     ext {
         appName = "cll2ev1-gdx"
         gdxVersion = '1.9.4'
@@ -84,7 +84,7 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile 'com.github.CherokeeLanguage:LeitnerCards:9cae2fe0'
     }
-    
+
     compileJava.dependsOn files_txt
 }
 
