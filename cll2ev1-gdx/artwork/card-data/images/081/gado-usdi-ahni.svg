@@ -4843,7 +4843,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.7422222"
      inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:cy="270.91837"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4873,7 +4873,7 @@
      transform="translate(0,-602.36218)">
     <g
        id="g6780"
-       sodipodi:insensitive="true">
+       transform="matrix(1.1418557,0,0,1.1418557,-45.497807,-60.921059)">
       <path
          inkscape:connector-curvature="0"
          style="color:#000000;fill:#00ffff;stroke-width:0"
@@ -4942,17 +4942,17 @@
       </g>
     </g>
     <ellipse
-       ry="24.968111"
-       rx="120.07653"
-       cy="999.84308"
-       cx="156.35207"
+       ry="22.385202"
+       rx="154.5153"
+       cy="993.81635"
+       cx="190.21687"
        id="ellipse132579"
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
     <ellipse
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1"
        id="path131705"
-       cx="342.95282"
-       cy="713.1402"
+       cx="366.48599"
+       cy="791.77539"
        rx="85.695152"
        ry="28.125" />
     <g
@@ -5408,7 +5408,7 @@
     </g>
     <g
        id="g5714"
-       transform="matrix(1.2242528,0,0,1.2242528,-1298.8171,250.79878)">
+       transform="matrix(1.613972,0,0,1.613972,-1726.4812,8.1797083)">
       <path
          d="m 1164.6772,582.97374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-30"
@@ -9233,7 +9233,7 @@
     </g>
     <g
        id="g3369"
-       transform="matrix(0.23645201,0,0,0.23645576,276.13711,522.53924)">
+       transform="matrix(0.32243456,0,0,0.32243968,275.66005,525.2347)">
       <path
          id="path105"
          style="color:#000000;fill:#e99c6a"
@@ -16823,7 +16823,7 @@
     </g>
     <g
        id="g4834"
-       transform="matrix(-1.2186932,0,0,1.2186932,673.71412,454.13752)">
+       transform="matrix(-1.6066426,0,0,1.6066426,888.89398,272.80386)">
       <ellipse
          id="path6201"
          style="opacity:0.37295;fill:url(#radialGradient9487)"
@@ -17107,15 +17107,15 @@
       </g>
     </g>
     <path
-       inkscape:transform-center-y="18.337858"
-       inkscape:transform-center-x="-22.391765"
+       inkscape:transform-center-y="24.175392"
+       inkscape:transform-center-x="-29.519789"
        inkscape:connector-curvature="0"
        id="path8884"
-       d="m 110.84787,891.32798 46.01703,34.90923"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
+       d="m 131.92574,852.61006 60.66574,46.02197"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.63666463;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:10.54665864, 10.54665864;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
     <g
        id="g8258"
-       transform="translate(-72.394266,-65.659915)">
+       transform="matrix(1.7875495,0,0,1.7875495,-180.79819,-839.8341)">
       <g
          transform="matrix(0.85571219,0,0,0.85571219,9.6637572,147.87729)"
          id="g6799">

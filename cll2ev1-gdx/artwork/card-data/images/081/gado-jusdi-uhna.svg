@@ -4841,9 +4841,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:zoom="0.87111111"
+     inkscape:cx="215.3535"
+     inkscape:cy="220.01905"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -5401,7 +5401,7 @@
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
     <g
        id="g5714"
-       transform="matrix(1.2242528,0,0,1.2242528,-1298.8171,250.79878)">
+       transform="matrix(1.6323371,0,0,1.6323371,-1746.6343,-0.15603377)">
       <path
          d="m 1164.6772,582.97374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-30"
@@ -8015,15 +8015,15 @@
     <ellipse
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1"
        id="path131705"
-       cx="332.9082"
-       cy="702.23462"
+       cx="397.19391"
+       cy="683.86725"
        rx="75.07653"
        ry="26.403061" />
     <ellipse
        ry="12.8698"
        rx="18.728172"
-       cy="694.68896"
-       cx="341.98795"
+       cy="676.32159"
+       cx="406.27365"
        id="ellipse5551"
        style="color:#000000;fill:#ff00ff;stroke:#000000;stroke-width:2.73463058;stroke-opacity:0.98438003" />
     <ellipse
@@ -8050,8 +8050,8 @@
     <ellipse
        ry="12.8698"
        rx="18.728172"
-       cy="705.85406"
-       cx="316.15677"
+       cy="687.48669"
+       cx="380.44247"
        id="ellipse5561"
        style="color:#000000;fill:#0000ff;stroke:#000000;stroke-width:2.73463058;stroke-opacity:0.98438003" />
     <ellipse
@@ -17100,15 +17100,15 @@
       </g>
     </g>
     <path
-       inkscape:transform-center-y="-77.000983"
-       inkscape:transform-center-x="-90.920871"
+       inkscape:transform-center-y="-61.033943"
+       inkscape:transform-center-x="-102.32602"
        inkscape:connector-curvature="0"
        id="path8884"
-       d="M 114.32298,888.90933 289.93138,728.59768"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
+       d="M 145.90577,844.60767 345.4446,715.2926"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
     <g
        id="g8258"
-       transform="translate(-72.394266,-65.659915)">
+       transform="matrix(1.8686785,0,0,1.8686785,-186.89327,-919.40497)">
       <g
          transform="matrix(0.85571219,0,0,0.85571219,9.6637572,147.87729)"
          id="g6799">
@@ -17486,8 +17486,8 @@
     <ellipse
        ry="12.8698"
        rx="18.728172"
-       cy="711.08081"
-       cx="336.59741"
+       cy="692.71344"
+       cx="400.88312"
        id="ellipse5549"
        style="color:#000000;fill:#00ff00;stroke:#000000;stroke-width:2.73463058;stroke-opacity:0.98438003" />
   </g>

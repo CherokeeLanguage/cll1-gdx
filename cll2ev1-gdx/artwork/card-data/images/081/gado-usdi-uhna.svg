@@ -4841,9 +4841,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:zoom="0.61596857"
+     inkscape:cx="686.38255"
+     inkscape:cy="138.07183"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4873,7 +4873,7 @@
      transform="translate(0,-602.36218)">
     <g
        id="g6780"
-       sodipodi:insensitive="true">
+       transform="matrix(1.2766793,0,0,1.2766793,-132.00144,-161.23404)">
       <path
          inkscape:connector-curvature="0"
          style="color:#000000;fill:#00ffff;stroke-width:0"
@@ -5401,7 +5401,7 @@
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
     <g
        id="g5714"
-       transform="matrix(1.2242528,0,0,1.2242528,-1298.8171,250.79878)">
+       transform="matrix(1.6323371,0,0,1.6323371,-1746.6343,-0.15603377)">
       <path
          d="m 1164.6772,582.97374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-30"
@@ -9227,13 +9227,13 @@
     <ellipse
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1"
        id="path131705"
-       cx="339.50891"
-       cy="716.01013"
-       rx="75.363518"
-       ry="21.237244" />
+       cx="338.36093"
+       cy="795.79327"
+       rx="90.286987"
+       ry="29.272959" />
     <g
        id="g3369"
-       transform="matrix(0.23645201,0,0,0.23645576,276.13711,522.53924)">
+       transform="matrix(0.37617366,0,0,0.37617962,234.60932,482.57944)">
       <path
          id="path105"
          style="color:#000000;fill:#e99c6a"
@@ -17115,7 +17115,7 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
     <g
        id="g8258"
-       transform="translate(-72.394266,-65.659915)">
+       transform="matrix(1.8591449,0,0,1.8591449,-212.98611,-909.3787)">
       <g
          transform="matrix(0.85571219,0,0,0.85571219,9.6637572,147.87729)"
          id="g6799">

@@ -5394,14 +5394,14 @@
     </g>
     <ellipse
        ry="37.595661"
-       rx="133.27806"
-       cy="1010.7487"
-       cx="155.2041"
+       rx="172.88266"
+       cy="965.97833"
+       cx="225.22963"
        id="ellipse132579"
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
     <g
        id="g5714"
-       transform="matrix(1.2242528,0,0,1.2242528,-1298.8171,250.79878)">
+       transform="matrix(1.6323371,0,0,1.6323371,-1719.0833,-31.724911)">
       <path
          d="m 1164.6772,582.97374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-30"
@@ -9226,7 +9226,7 @@
     </g>
     <g
        id="g3369"
-       transform="matrix(0.23645201,0,0,0.23645576,137.27949,801.4785)">
+       transform="matrix(0.32476105,0,0,0.3247662,212.99031,660.23054)">
       <path
          id="path105"
          style="color:#000000;fill:#e99c6a"
@@ -9945,7 +9945,7 @@
     </g>
     <g
        id="g4834"
-       transform="matrix(-1.2186932,0,0,1.2186932,673.44631,488.68941)">
+       transform="matrix(-1.6738453,0,0,1.6738453,949.40232,230.62238)">
       <ellipse
          id="path6201"
          style="opacity:0.37295;fill:url(#radialGradient9487)"
@@ -17100,14 +17100,15 @@
       </g>
     </g>
     <path
-       inkscape:transform-center-y="34.045025"
-       inkscape:transform-center-x="-37.104004"
+       inkscape:transform-center-y="17.71593"
+       inkscape:transform-center-x="-47.137209"
        inkscape:connector-curvature="0"
        id="path8884"
-       d="m 112.88781,892.0974 76.52353,65.14207"
+       d="m 145.09128,828.71149 95.32076,31.83222"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
     <g
-       id="g8258">
+       id="g8258"
+       transform="matrix(1.6898329,0,0,1.6898329,-145.57702,-780.86484)">
       <g
          transform="matrix(0.85571219,0,0,0.85571219,7.9801696,147.0355)"
          id="g6799">
@@ -17485,8 +17486,8 @@
     <ellipse
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1"
        id="path131705"
-       cx="318.55865"
-       cy="698.21674"
+       cx="407.52548"
+       cy="699.36469"
        rx="56.709183"
        ry="14.923469" />
   </g>

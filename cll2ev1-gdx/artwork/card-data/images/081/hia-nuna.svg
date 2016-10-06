@@ -4841,9 +4841,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:zoom="0.61596857"
+     inkscape:cx="-80.123875"
+     inkscape:cy="171.40437"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4873,7 +4873,7 @@
      transform="translate(0,-602.36218)">
     <g
        id="g6780"
-       sodipodi:insensitive="true">
+       transform="matrix(1.4113606,0,0,1.4113606,-50.034193,-390.22078)">
       <path
          inkscape:connector-curvature="0"
          style="color:#000000;fill:#00ffff;stroke-width:0"
@@ -6551,15 +6551,15 @@
          d="m -1331.6,387.59 -55.105,-5" />
     </g>
     <ellipse
-       ry="20.950254"
-       rx="94.534439"
-       cy="978.03192"
-       cx="179.02425"
+       ry="34.377438"
+       rx="155.12231"
+       cy="964.60474"
+       cx="273.43283"
        id="ellipse132579"
        style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
     <g
        id="g10295"
-       transform="matrix(0.75000013,0,0,0.75000013,41.97532,232.95439)">
+       transform="matrix(1.2306811,0,0,1.2306811,48.548156,-257.99893)">
       <path
          d="m 208.68888,831.22291 c 0,0 24.3136,33.46049 14.13604,71.71189 -4.87503,18.32413 -45.87774,22.86386 -45.87774,22.86386 l 3.51614,-83.94877"
          id="path4745-4-5-3"
@@ -15444,7 +15444,7 @@
        inkscape:transform-center-x="-136.93153"
        inkscape:transform-center-y="-32.484796" />
     <g
-       transform="matrix(1.8764509,0,0,-1.8764509,238.80596,932.59869)"
+       transform="matrix(3.0790833,0,0,-3.0790833,371.52912,890.05299)"
        id="g10">
       <g
          id="g12">
@@ -17124,7 +17124,7 @@
     <g
        id="g21182"
        inkscape:label="Calque 1"
-       transform="matrix(-0.93683011,0,0,0.93683011,400.42027,381.75889)">
+       transform="matrix(-1.537252,0,0,1.537252,636.72333,-13.824444)">
       <path
          d="m 360.88,531.88 c -1.4496,3.5554 -4.0544,5.8735 -6.11,8.6826 2.9085,-2.0738 6.2093,-4.0858 9.0488,-7.3023 m -2.9459,-1.3798 c -3.4178,-2.0992 -5.6521,-5.239 -5.6521,-8.5986 0,-6.3396 7.6357,-11.479 17.055,-11.479 9.4191,0 17.055,5.1393 17.055,11.479 0,6.3396 -7.6357,11.479 -17.055,11.479 -3.0779,0 -5.9653,-0.54876 -8.4581,-1.5088"
          style="fill:#7a7a7a;filter:url(#filter3721)"
@@ -17139,17 +17139,6 @@
          id="path21186"
          inkscape:connector-curvature="0" />
     </g>
-    <text
-       sodipodi:linespacing="100%"
-       id="text21188"
-       y="835.60419"
-       x="52.710205"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:74.64055634px;line-height:100%;font-family:CherokeeHandone;-inkscape-font-specification:'CherokeeHandone Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="835.60419"
-         x="52.710205"
-         id="tspan21190"
-         sodipodi:role="line">. . .</tspan></text>
     <g
        style="overflow:visible;fill-rule:evenodd;stroke-width:0.50099999;stroke-linejoin:bevel"
        id="g9548"

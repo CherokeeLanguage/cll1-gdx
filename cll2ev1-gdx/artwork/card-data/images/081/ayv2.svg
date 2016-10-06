@@ -4842,8 +4842,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.87111111"
-     inkscape:cx="714.06316"
-     inkscape:cy="179.38701"
+     inkscape:cx="577.1364"
+     inkscape:cy="102.67497"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -4862,7 +4862,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5281,7 +5281,7 @@
     </g>
     <g
        id="g17552"
-       transform="matrix(1.5463606,0,0,1.5463606,-1613.7347,-311.20906)">
+       transform="matrix(2.1958321,0,0,2.1958321,-2397.0972,-755.68594)">
       <path
          d="m 1165.6472,737.22374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-3-2"
@@ -5442,7 +5442,8 @@
       </g>
     </g>
     <g
-       id="g17582">
+       id="g17582"
+       transform="matrix(1.4199999,0,0,1.4199999,-107.77705,-365.44497)">
       <g
          transform="matrix(1.3322685,-0.05328513,0.05328513,1.3322685,-73.175984,-320.34746)"
          inkscape:transform-center-y="30.314793"
@@ -6008,7 +6009,7 @@
     </g>
     <g
        id="g9659"
-       transform="matrix(1.4539387,0,0,1.4539387,-878.84189,439.22567)">
+       transform="matrix(-2.3595347,0,0,2.3595347,3381.3614,-144.5111)">
       <path
          style="fill:#cfc0a1;fill-rule:evenodd;stroke:#000000;stroke-width:1.79012513;stroke-linecap:round;stroke-linejoin:round"
          inkscape:connector-curvature="0"
@@ -7878,7 +7879,7 @@
          style="fill:none;stroke:#a63b2f;stroke-width:1.57130003;stroke-linecap:round;stroke-linejoin:round" />
     </g>
     <g
-       transform="matrix(1.0885835,0,0,1.0885835,-74.293208,271.22493)"
+       transform="matrix(1.5611704,0,0,1.5611704,-229.57214,30.360348)"
        inkscape:label="Calque 1"
        id="layer1-9">
       <path
@@ -16338,7 +16339,7 @@
     </g>
     <g
        id="g9595"
-       transform="matrix(0.48924063,0.00572446,-0.00572446,0.48924063,386.0797,33.298559)">
+       transform="matrix(0.69775944,0.00816428,-0.00816428,0.69775944,428.63278,-302.22803)">
       <g
          transform="matrix(-0.61811,0,0,0.61811,-80.598098,1111.3455)"
          style="stroke:#000004;filter:url(#filter3485)"
@@ -16434,7 +16435,7 @@
       </g>
     </g>
     <g
-       transform="matrix(-1.6328698,0,0,1.6328698,2322,-714.00873)"
+       transform="matrix(-2.3186751,0,0,2.3186751,3881.9048,-1147.2901)"
        id="g21132">
       <path
          style="fill:#ab926c;fill-rule:evenodd;stroke:#000000;stroke-width:1.79010785;stroke-linecap:round;stroke-linejoin:round"
