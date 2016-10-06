@@ -264,12 +264,29 @@
 	ᎫᎴᏍ ᏕᎯ̣ᎪᏩᏘᎭ?	gules-dehigowhtiha				
 	ᎠᏴᏊ ᎩᏟ ᏥᎪᏩᏘᎭ.	ayvgwu-gihli-jigowhtiha				
 						
-100	ᎠᏂᏴᏫ.					
-	ᎠᏂᎩᏟ.					
-	ᎠᏂᏥᏍᏚ.					
-	ᎠᏂᏩᎭᏯ.					
-	ᎠᏂᏪᏌ.					
-	ᏙᎯ.					
+100	ᎠᏂᏴᏫ.	aniyvwi				
+	ᎠᏂᎩᏟ.	anigihli				
+	ᎠᏂᏥᏍᏚ.	anijisdu				
+	ᎠᏂᏩᎭᏯ.	aniwahaya				
+	ᎠᏂᏪᏌ.	aniwesa				
+	ᎠᏴᏫ	ayvwi				
+	ᎠᎩᏟ	agihli				
+	ᎠᏥᏍᏚ	ajisdu				
+	ᎠᏩᎭᏯ	awahaya				
+	ᎠᏪᏌ	awesa				
+						
+101	ᎯᏴᏫ	hiyvwi				
+	ᎯᎩᏟ	higihli				
+	ᎯᏥᏍᏚ	hijisdu				
+	ᎯᏩᎭᏯ	hiwahaya				
+	ᎯᏪᏌ	hiwesa				
+	ᏥᏴᏫ	jiyvwi				
+	ᏥᎩᏟ	jigihli				
+	ᏥᏥᏍᏚ	jijisdu				
+	ᏥᏩᎭᏯ	jiwahaya				
+	ᏥᏪᏌ	jiwesa				
+						
+102	ᏙᎯ.					
 	ᏙᎯᏧ?					
 	ᏙᎯᏊ.					
 	ᏛᎬᎪᎯ.					
@@ -281,7 +298,7 @@
 	ᏙᎾᏓᎪᎲᎢ.					
 	ᏙᏓᏓᎪᎲᎢ.					
 						
-101	ᎠᏂᏔᎵ↺ ᎠᎴ ᎠᏂᏔᎵ→.					
+103	ᎠᏂᏔᎵ↺ ᎠᎴ ᎠᏂᏔᎵ→.					
 	ᏙᏓᏓᎪᎲ²Ꭲ.					
 	ᏂᎯᎾᎲ?					
 	ᎥᎥ, ᏛᏍᎩᏂᎪᎯ.					
