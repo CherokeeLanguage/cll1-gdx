@@ -1,3 +1,4 @@
+1.24 - Fix incorrect ᏲᏁᎦᎾ picture. Switch to using mp3gain instead of normalize-mp3 for automatic audio volume adjustment.
 1.23 - Chapter 9 - Additional vocabulary - Now have 238 challenges.
 1.22 - Chapter 9 - Additional vocabulary - Now have 228 challenges.
 1.21 - Chapter 8 fixes.

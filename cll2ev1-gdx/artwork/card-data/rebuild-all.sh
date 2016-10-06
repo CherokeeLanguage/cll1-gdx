@@ -43,9 +43,7 @@ done
 
 cd "$cwd"
 cd audio
-for x in 1 2; do 
-	bash fix-audio.sh
-done
+bash fix-audio.sh
 
 echo "SYNCING IMAGE ASSETS"
 ASSETS_IMAGES="../../../android/assets/card-data/images"
@@ -94,9 +92,7 @@ for dir in *; do
 	done
 done
 
-printf "NEW/MODIFIED PIX: ${PNGS}\n"
-
-printf "DONE: "
+printf "\nDONE: "
 read a
 exit 0
 
