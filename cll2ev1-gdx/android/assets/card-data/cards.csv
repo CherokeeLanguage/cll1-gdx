@@ -1,4 +1,4 @@
-#CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC	SUBS	NOTES
+#CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC	XXX	NOTES
 40	ᎠᏲ!	ayo		hla; uyoi		
 	ᎣᏍᏓ.	osda		vv; howa		
 	ᎣᏍᏛ.	osdv	osda	vv; howa		
@@ -299,43 +299,78 @@
 	ᏙᎾᏓᎪᎲᎢ.	donadagohvi				
 	ᏙᏓᏓᎪᎲᎢ.	dodadagohvi				
 						
-110	ᎠᎨᏳᏣ.					
-	ᎠᏂᎨᏳᏣ.					
-	ᎠᏧᏣ.					
-	ᎠᏂᏧᏣ.					
-	ᎦᏙ ᎠᏛᏁᎭ?					
-	ᎦᏙ ᎠᎾᏛᏁᎭ?					
-	ᏌᎶᎵ.					
-	ᏌᏛᏗ.					
-	ᏗᏌᏛᏗ.					
-	ᏐᏈᎵ.					
-	ᏡᎬᎢ.					
-	ᏕᏡᎬᏗ.					
-	ᏲᎾ.					
-	ᏃᏘ.					
-	ᎧᏂᎩᏓ.					
-	ᏣᏁᎳ.					
-	ᏧᏁᎳ.					
-	ᏐᏁᎳ.					
-	ᏍᎪᎯ.					
-	ᏌᏚ.					
-	ᏔᎵᏚ.					
-	ᏦᎦᏚ.					
-	ᏂᎦᏚ.					
-	ᏍᎩᎦᏚ.					
-	ᏓᎳᏚ.					
-	ᎦᎵᏆᏚ.					
-	ᏁᎳᏚ.					
-	ᏐᏁᎳᏚ.					
-	ᏔᎵᏍᎪᎯ.					
-	ᏦᏍᎪᎯ.					
-	ᏅᎩᏍᎪᎯ.					
-	ᎯᏍᎪᎪᎯ.					
-	ᏑᏓᎵᏍᎪᎯ.					
-	ᎦᎵᏆᏍᎪᎯ.					
-	ᏁᎳᏍᎪᎯ.					
-	ᏐᏁᎳᏍᎪᎯ.					
-	ᏍᎪᎯᏥᏆ.					
+110	ᎠᎨᏳᏣ.	agehyuja				
+	ᎠᏂᎨᏳᏣ.	anigehyuja				
+	ᎠᏧᏣ.	achuja				
+	ᎠᏂᏧᏣ.	anichuja				
+	ᎦᏙ ᎠᏛᏁᎭ?	gado-advneha				
+	ᎦᏙ ᎠᎾᏛᏁᎭ?	gado-anadvneha				
+	ᏌᎶᎵ.	saloli				
+	ᏌᏛᏗ.	sadvdi				
+	ᏗᏌᏛᏗ.	disadvdi				
+	ᏐᏈᎵ.	soquili				
+	ᏲᎾ.	yona				
+						
+111	ᏌᏊ ᏅᏯ.	sagwu-nvya				
+	ᏔᎵ ᏅᏯ.	tali-nvya				
+	ᏦᎢ ᏅᏯ.	joi-nvya				
+	ᏃᏘ ᏅᏯ.	not-nvya				
+	ᎧᏂᎩᏓ ᏅᏯ.	not-nvya				
+						
+112	ᏃᏘ.	not				
+	ᎧᏂᎩᏓ.	not				
+	ᏌᏊ.	sagwu				
+	ᏔᎵ.	tali				
+	ᏔᎵ ᏪᏌ.	tali-wesa	anitali-wesa			
+	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa	tali-wesa			
+	ᏦᎢ.	joi				
+	ᏦᎢ ᏪᏌ.	joi-wesa	anijoi-wesa			
+	ᎠᏂᏦᎢ ᏪᏌ.	anijoi-wesa	joi-wesa			
+	ᏅᎩ.	nvgi				
+	ᎯᏍᎩ.	hisgi				
+	ᏑᏓᎵ.	sudali				
+	ᎦᎵᏉᎩ.	galgwogi				
+	ᏣᏁᎳ.	chanela				
+	ᏧᏁᎳ.	chunela				
+	ᏐᏁᎳ.	sonela				
+	ᏍᎪᎯ.	sgohi				
+						
+113	ᏌᏚ.	sadu				
+	ᏔᎵᏚ.	taldu				
+	ᏦᎦᏚ.	jogadu				
+	ᏂᎦᏚ.	nigadu				
+	ᏍᎩᎦᏚ.	sgigadu				
+	ᏓᎳᏚ.	daladu				
+	ᎦᎵᏆᏚ.	galgwadu				
+	ᏁᎳᏚ.	neladu				
+	ᏐᏁᎳᏚ.	sonehladu				
+						
+114	ᏔᎵᏍᎪᎯ.	20				
+	ᏔᎵᏍᎪ ᏅᎩ.	24				
+	ᏦᏍᎪᎯ.	30				
+	ᏦᏍᎪ ᏣᏁᎳ.	38				
+	ᏅᎩᏍᎪᎯ.	40				
+	ᏅᎩᏍᎪ ᏐᏁᎳ.	49				
+	ᎯᏍᎪᎯ.	50				
+	ᎯᏍᎪ ᏐᏁᎳ.	59				
+	ᏑᏓᎵᏍᎪᎯ.	60				
+	ᏑᏓᎵᏍᎪ ᎯᏍᎩ.	65				
+	ᎦᎵᏆᏍᎪᎯ.	70				
+	ᎦᎵᏆᏍᎪ ᎦᎵᏉᎩ.	77				
+	ᏁᎳᏍᎪᎯ.	80				
+	ᏁᎳᏍᎪ ᏑᏓᎵ.	86				
+	ᏐᏁᎳᏍᎪᎯ.	90				
+	ᏐᏁᎳᏍᎪ ᏑᏓᎵ.	96				
+						
+115	ᏍᎪᎯᏥᏆ.	100				
+	ᏔᎵᏥᏆ.	200				
+	ᏦᎢᏥᏆ.	300				
+	ᏅᎩᏥᏆ.	400				
+	ᎯᏍᎩᏥᏆ.	500				
+	ᏑᏓᎵᏥᏆ.	600				
+	ᎦᎵᏉᎩᏥᏆ.	700				
+	ᏁᎳᏥᏆ.	800				
+	ᏐᏁᎳᏥᏆ.	900				
 						
 120	ᎭᏢ?					
 	ᎯᎳᏴᎢ?					
@@ -416,6 +451,10 @@
 	ᎬᎿᎨ ᎤᏍᎪᎸᎢ.					
 	ᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.					
 	ᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.					
+	ᎠᎩᎦᎨ ᎤᏍᎪᎸᎢ.					
+	ᎠᎬᎿᎨ ᎤᏍᎪᎸᎢ.					
+	ᎠᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.					
+	ᎠᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.					
 						
 142	ᎦᏙ ᎤᏍᏗ ᏓᎶᏂᎨ ᎩᏟ?					
 	ᎯᎠ ᏓᎶᏂᎨ ᎩᏟ.					
