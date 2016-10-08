@@ -314,11 +314,11 @@
 111	ᏌᏊ ᏅᏯ.	sagwu-nvya				
 	ᏔᎵ ᏅᏯ.	tali-nvya				
 	ᏦᎢ ᏅᏯ.	joi-nvya				
-	ᏃᏘ ᏅᏯ.	not-nvya				
-	ᎧᏂᎩᏓ ᏅᏯ.	kanigida-nvya	not-nvya			
+	ᏃᏘ ᏅᏯ.	not-nvya		kanigida-nvya		
+	ᎧᏂᎩᏓ ᏅᏯ.	kanigida-nvya	not-nvya	not-nvya		
 						
-112	ᏃᏘ.	not				
-	ᎧᏂᎩᏓ.	kanigida	not			
+112	ᏃᏘ.	not		kanigida		
+	ᎧᏂᎩᏓ.	kanigida	not	not		
 	ᏌᏊ.	sagwu				
 	ᏔᎵ.	tali		tali-wesa; anitali-wesa		
 	ᏔᎵ ᏪᏌ.	tali-wesa		anitali-wesa		
@@ -330,8 +330,8 @@
 	ᎯᏍᎩ.	hisgi				
 	ᏑᏓᎵ.	sudali				
 	ᎦᎵᏉᎩ.	galgwogi				
-	ᏣᏁᎳ.	chanela				
-	ᏧᏁᎳ.	chunela				
+	ᏣᏁᎳ.	chanela		chunela		
+	ᏧᏁᎳ.	chunela	chanela	chanela		
 	ᏐᏁᎳ.	sonela				
 	ᏍᎪᎯ.	sgohi				
 						
