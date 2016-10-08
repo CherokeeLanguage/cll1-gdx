@@ -315,17 +315,17 @@
 	ᏔᎵ ᏅᏯ.	tali-nvya				
 	ᏦᎢ ᏅᏯ.	joi-nvya				
 	ᏃᏘ ᏅᏯ.	not-nvya				
-	ᎧᏂᎩᏓ ᏅᏯ.	not-nvya				
+	ᎧᏂᎩᏓ ᏅᏯ.	kanigida-nvya	not-nvya			
 						
 112	ᏃᏘ.	not				
-	ᎧᏂᎩᏓ.	not				
+	ᎧᏂᎩᏓ.	kanigida	not			
 	ᏌᏊ.	sagwu				
 	ᏔᎵ.	tali				
-	ᏔᎵ ᏪᏌ.	tali-wesa	anitali-wesa			
-	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa	tali-wesa			
+	ᏔᎵ ᏪᏌ.	tali-wesa		anitali-wesa		
+	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa		tali-wesa		
 	ᏦᎢ.	joi				
-	ᏦᎢ ᏪᏌ.	joi-wesa	anijoi-wesa			
-	ᎠᏂᏦᎢ ᏪᏌ.	anijoi-wesa	joi-wesa			
+	ᏦᎢ ᏪᏌ.	joi-wesa		anijoi-wesa		
+	ᎠᏂᏦᎢ ᏪᏌ.	anijoi-wesa		joi-wesa		
 	ᏅᎩ.	nvgi				
 	ᎯᏍᎩ.	hisgi				
 	ᏑᏓᎵ.	sudali				
@@ -379,19 +379,33 @@
 	ᎦᏙ?					
 	ᎦᏙᎲ?					
 	$1 ᏓᏆᏙᎠ.				$1=	
+						
+						
 	$1 ᏙᎩᎾᏙᎠ.					
+						
+						
 	$1 ᏙᎦᏙᎠ.					
+						
+						
 	$1 ᏕᏣᏙᎠ.					
+						
+						
 	$1 ᏕᏍᏓᏙᎠ.					
+						
+						
 	$1 Ꮥ¹ᏣᏙᎠ.					
+						
+						
 	$1 ᏚᏙᎠ.					
+						
+						
 	$1 ᏚᎾᏙᎠ.					
+						
+						
 	ᎢᎮᏙᎸᎢ.					
 	ᎢᏍᏕᏙᎸᎢ.					
 	ᎢᎢᏤᏙᎸᎢ.					
-	ᎣᏍᏓ.					
 	ᎠᏃᏍᏓ.					
-	ᎤᏲᎢ.					
 	ᎤᏂᏲᎢ.					
 	ᎩᎵᏏ.					
 	ᏴᏫ.					
@@ -401,21 +415,8 @@
 	ᎠᏂᏣᎳᎩ.					
 	ᎠᏲᏁᎦ.					
 	ᎠᏂᏲᏁᎦ.					
-	ᎠᏴᏫ.					
-	ᎠᏂᏴᏫ.					
 	ᎠᏴᏫᏯᎢ.					
 	ᎠᏂᏴᏫᏯ.					
-						
-121	ᎫᎴ.					
-	ᏌᎶᎵ ᏚᎾᏙᎠ.					
-	☺☺ ᎠᏂᏦᎢ ᎠᏂᏴᏫᏯᎢ.					
-	ᎩᏟ.					
-	ᎩᏟ ᏚᎾᏙᎠ.					
-	ᎫᎴ ᏚᏙᎠ.					
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᎪᏩᏘᎭ?					
-	☺☺ ᏅᎩ ᎠᏂᏴᏫ.					
-	ᏚᏯ.					
-	ᎠᏴᏫᏯᎢ ᏥᎪᏩᏘᎭ.					
 						
 130	Ꮟ.					
 	ᏝᏏ.					
