@@ -1,3 +1,4 @@
+1.29 - Audio fix. (ᏃᏘ -> ᎧᏂᎩᏓ).
 1.28 - Chapter 11 vocabulary. Now have 337 challenges.
 1.27 - Chapter 10 core vocabulary part 2. Now have 270 challenges.
 1.26 - Chapter 10 core vocabulary part 1. Now have 258 challenges.
