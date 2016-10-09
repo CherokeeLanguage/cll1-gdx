@@ -116,7 +116,7 @@ public class StartSession implements Runnable {
 			 * stats refers to a card that no longer exists...
 			 */
 			if (card==null) {
-				log.info("No matching card found for: '"+id+"'");
+				log.error("No matching card found for: '"+id+"'");
 				continue;
 			}
 			CardStats stats = json.fromJson(CardStats.class, txtStats[1]);
