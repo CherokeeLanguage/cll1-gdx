@@ -372,51 +372,46 @@
 	ᏁᎳᏥᏆ.	800				
 	ᏐᏁᎳᏥᏆ.	900				
 						
-120	ᎭᏢ?					
-	ᎯᎳᏴᎢ?					
-	ᎦᎪ?					
-	ᎦᎩ?					
-	ᎦᏙ?					
-	ᎦᏙᎲ?					
-	$1 ᏓᏆᏙᎠ.				$1=	
+120	ᎭᏢ?	hadlv				ha²dlv
+	ᎯᎳᏴᎢ?	hila-yvi	hila-iyvi			hị²la³²yv⁴ɂi
+	ᎯᎳ ᎢᏴᎢ?	hila-iyvi	hila-iyvi			hị²la⁴ i²yv⁴ɂi
+	ᎦᎪ?	gago		gagi		ga³go²
+	ᎦᎩ?	gagi		gago		ga³²gi³
+	ᎦᏙ?	gado				gạ²do¹
+	ᎦᏙᎲ?	gadohv				gạ²do¹hv³
 						
+121	ᏑᏌᏃ ᏓᏆᏙᎠ.	susano-dagwadoa		susano		
+	ᏩᏯ ᎤᏍᏗ ᏓᏆᏙᎠ.	wahya-usdi-dagwadoa		wahya-usdi; wahaya		
+	ᏣᎵ ᎠᎴ ᎺᎵ ᏙᎩᎾᏙᎠ.	chali-ale-meli-doginadoa		chali; meli		
+	ᏩᎭᏯ ᏙᎩᎾᏙᎠ.	wahaya-doginadoa		wahya-usdi; wahaya		
+	ᏕᏫᏗ, ᎹᎦᏰᏘ, ᎠᎴ ᎹᎦᎵ ᏙᎦᏙᎠ.	dewidi-magayeti-ale-magali-dogadoa		dewidi; magayeti; magali		
+	ᏌᎶᎵ ᏙᎦᏙᎠ	saloli-dogadoa		saloli		
+	ᎵᏂᏓ ᏕᏣᏙᎠ.	linida-dejadoa		linida		
+	ᏲᎾ ᏕᏣᏙᎠ.	yona-dejadoa		yona		
+	ᏣᎵ ᎠᎴ ᎹᎦᎵ ᏕᏍᏓᏙᎠ.	chali-ale-magali-desdadoa		jali; magali		
+	ᏐᏈᎵ ᏕᏍᏓᏙᎠ.	sogwili-desdadoa		sogwili		
+	ᏣᎵ, ᎹᎦᎵ, ᎠᎴ ᏣᏂ Ꮥ¹ᏣᏙᎠ.	chali-magali-ale-jani-de1jadoa		chali; magali; jani		
+	ᏥᏍᏚ Ꮥ¹ᏣᏙᎠ.	jisdu-de1jadoa		jisdu		
+	ᎵᏂᏓ ᏚᏙᎠ.	linida-dudoa		linida		
+	ᏪᏌ ᏚᏙᎠ.	wesa-dudoa		wesa		
+	ᎹᎦᏰᏘ ᎠᎴ ᎹᎦᎵ ᏚᎾᏙᎠ.	magayeti-ale-magali-dunadoa		magayeti; magali		
+	ᎩᏟ ᏚᎾᏙᎠ.	gihli-dunadoa		gihli		
 						
-	$1 ᏙᎩᎾᏙᎠ.					
-						
-						
-	$1 ᏙᎦᏙᎠ.					
-						
-						
-	$1 ᏕᏣᏙᎠ.					
-						
-						
-	$1 ᏕᏍᏓᏙᎠ.					
-						
-						
-	$1 Ꮥ¹ᏣᏙᎠ.					
-						
-						
-	$1 ᏚᏙᎠ.					
-						
-						
-	$1 ᏚᎾᏙᎠ.					
-						
-						
-	ᎢᎮᏙᎸᎢ.					
-	ᎢᏍᏕᏙᎸᎢ.					
-	ᎢᎢᏤᏙᎸᎢ.					
-	ᎠᏃᏍᏓ.					
-	ᎤᏂᏲᎢ.					
-	ᎩᎵᏏ.					
-	ᏴᏫ.					
-	ᎠᎩᎵᏏ.					
-	ᎠᏂᎩᎵᏏ.					
-	ᎠᏣᎳᎩ.					
-	ᎠᏂᏣᎳᎩ.					
-	ᎠᏲᏁᎦ.					
-	ᎠᏂᏲᏁᎦ.					
-	ᎠᏴᏫᏯᎢ.					
-	ᎠᏂᏴᏫᏯ.					
+122	ᎢᎮᏙᎸᎢ.	ihedolvi				
+	ᎢᏍᏕᏙᎸᎢ.	isdedolvi				
+	ᎢᎢᏤᏙᎸᎢ.	iijedolvi				
+	ᎠᏃᏍᏓ.	anosda				
+	ᎤᏂᏲᎢ.	uniyoi				
+	ᎩᎵᏏ.	gilisi		agilisi; anigilisi		
+	ᏴᏫ.	yvwi				
+	ᎠᎩᎵᏏ.	agilisi		gilisi		
+	ᎠᏂᎩᎵᏏ.	anigilisi		gilisi		
+	ᎠᏣᎳᎩ.	ajalagi				
+	ᎠᏂᏣᎳᎩ.	anijalagi				
+	ᎠᏲᏁᎦ.	ayonega				
+	ᎠᏂᏲᏁᎦ.	aniyonega				
+	ᎠᏴᏫᏯᎢ.	ayvwiyai				
+	ᎠᏂᏴᏫᏯᎢ.	aniyvwiyai				
 						
 130	Ꮟ.					
 	ᏝᏏ.					
