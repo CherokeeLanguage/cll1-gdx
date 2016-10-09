@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="277.99997"
+   height="278"
+   viewBox="0 0 277.99999 277.99999"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow-circle.svg"
+   inkscape:export-filename="/home/algot/Documents/runeman.org/clipart/arrow-circle.png"
+   inkscape:export-xdpi="48.561157"
+   inkscape:export-ydpi="48.561157">
+  <title
+     id="title3399">Arrow Circle</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="-92.268541"
+     inkscape:cy="96.999115"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="14"
+     fit-margin-left="0"
+     fit-margin-right="14"
+     fit-margin-bottom="14"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3341"
+       originx="-10.125685"
+       originy="-423.00087" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Arrow Circle</dc:title>
+        <dc:date>2015-12-01</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Algot Runeman</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Algot Runeman</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>runeman.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>arrow-circle.svg</dc:identifier>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.125683,-351.36136)">
+    <path
+       style="display:none;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.87078154;stroke-linecap:round"
+       id="path3358"
+       sodipodi:type="arc"
+       sodipodi:cx="395.30399"
+       sodipodi:cy="309.836"
+       sodipodi:rx="121.6008"
+       sodipodi:ry="121.6008"
+       sodipodi:start="0"
+       sodipodi:end="3.1415927"
+       d="m 516.90479,309.836 a 121.6008,121.6008 0 0 1 -60.80041,105.30938 121.6008,121.6008 0 0 1 -121.6008,0 121.6008,121.6008 0 0 1 -60.80039,-105.30939 l 121.6008,1e-5 z"
+       transform="matrix(-0.80281359,0.59623011,0.59623011,0.80281359,0,0)" />
+    <g
+       style="fill:#000080"
+       id="g3379"
+       transform="matrix(1.0004762,0,0,1,282.12948,0)">
+      <path
+         inkscape:connector-curvature="0"
+         style="opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round"
+         d="m -133,365.36133 a 125,125 0 0 0 -115.91406,78.38281 l 45.39062,-26.35156 7.86914,31.85156 A 75,75 0 0 1 -133,415.36133 a 75,75 0 0 1 75,75 75,75 0 0 1 -75,75 75,75 0 0 1 -74.9707,-74.16406 l -48.39844,-20.53711 A 125,125 0 0 0 -258,490.36133 a 125,125 0 0 0 125,125 125,125 0 0 0 125,-125 125,125 0 0 0 -125,-125 z"
+         id="path3381" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3383"
+         d="m -207.42996,427.07126 -64.44437,37.41382 82.3172,34.92863 z"
+         style="fill:#000080;fill-rule:evenodd;stroke:none;stroke-width:6.27689838;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
