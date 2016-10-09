@@ -1,3 +1,4 @@
+1.30 - Chapter 12 pt 1 of 3. Now have 344 challenges.
 1.29 - Audio fix. (ᏃᏘ -> ᎧᏂᎩᏓ). Blacklist fixes.
 1.28 - Chapter 11 vocabulary. Now have 337 challenges.
 1.27 - Chapter 10 core vocabulary part 2. Now have 270 challenges.
