@@ -1,17 +1,18 @@
 package com.cherokeelessons.cll2ev1;
 
 import java.nio.charset.StandardCharsets;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.Logger;
 import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadCards implements Runnable {
 	private CLL2EV1 game;
 
-	private void log(String message) {
-		Gdx.app.log(this.getClass().getSimpleName(), message);
-	}
+	private Logger log = new Logger(this.getClass().getSimpleName(), Logger.INFO);
 
 	public LoadCards(CLL2EV1 game) {
 		this.game = game;
@@ -19,10 +20,10 @@ public class LoadCards implements Runnable {
 
 	@Override
 	public void run() {
-		log("Loading cards from " + CLL2EV1.CARDS_CSV);
+		log.info("Loading cards from " + CLL2EV1.CARDS_CSV);
 		String tmpCards = Gdx.files.internal(CLL2EV1.CARDS_CSV).readString(StandardCharsets.UTF_8.name());
 		String[] tmpLines = tmpCards.split("\n");
-		log("Loaded " + tmpLines.length + " records.");
+		log.info("Loaded " + tmpLines.length + " records.");
 		int activeChapter = 0;
 		for (String tmpLine : tmpLines) {
 			String[] tmpCard = tmpLine.split("\t", -1);
@@ -54,12 +55,17 @@ public class LoadCards implements Runnable {
 			card.setData(data);
 			game.cards.add(card);
 		}
-		log("Have " + game.cards.size() + " cards.");
-		// Iterator<GameCard> icards = game.cards.iterator();
-		// while (icards.hasNext()) {
-		// CardData data = icards.next().getData();
-		// System.out.println(data.chapter + "] " + data.text);
-		// }
+		log.info("Have " + game.cards.size() + " cards.");
+		/**
+		 * Scan for and report duplicate ids.
+		 */
+		Set<String> already = new HashSet<String>();
+		for (GameCard card: game.cards) {
+			if (already.contains(card.id())){
+				log.error("DUPLICATE CARD ID: '"+card.id()+"' (Removing from deck...)");
+				card.getMyDeck().remove(card);
+			}
+		}
 		game.deckReady = true;
 	}
 }
