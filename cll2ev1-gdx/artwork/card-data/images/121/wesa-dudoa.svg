@@ -13918,7 +13918,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.7422222"
      inkscape:cx="300"
-     inkscape:cy="110.20408"
+     inkscape:cy="225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -13937,7 +13937,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -14394,7 +14394,7 @@
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
        id="g16259"
-       transform="translate(356.93233,609.18075)">
+       transform="translate(183.59049,621.23432)">
       <g
          transform="matrix(1.2109,0,0,1.2109,-21.752,-15.733)"
          id="Слой_x0020_1">
@@ -14794,7 +14794,7 @@
       </g>
     </g>
     <g
-       transform="matrix(2.9166667,0,0,2.9166667,178.11225,678.35282)"
+       transform="matrix(2.9166667,0,0,2.9166667,358.34184,689.25843)"
        id="g2871">
       <path
          d="m 11,11 0,23 23,-23 -23,0 z m 2,2 4,0 0,4 -4,0 0,-4 z"
