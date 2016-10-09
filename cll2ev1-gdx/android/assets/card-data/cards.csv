@@ -418,50 +418,42 @@
 	ᎤᏬᎵᏗ ᎪᏪᎵ.	uwoldi-gohweli				
 	ᏧᏬᎵᏗ ᏗᎪᏪᎵ.	juwoldi-digohweli				
 						
-140	ᏙᎹᏟ.					
-	ᎧᎦᎹ.					
-	ᎢᏤᎢ ᏙᎹᏟ.					
-	ᎢᏤᎢ ᎧᎦᎹ.					
-	ᎢᏤᎢᏳᏍᏗ.					
-	ᎤᏁᎦ.					
-	ᎤᏍᎪᎸᎢ.					
-	ᎤᏬᏗᎨᎢ.					
-	ᎩᎦᎨᎢ.					
-	ᎩᎨᎢ.					
-	ᎬᎿᎨᎢ.					
-	ᎬᏂᎨᎢ.					
-	ᏌᎪᏂᎨᎢ.					
-	ᏓᎭᎵᎨᎢ.					
-	ᏓᎶᏂᎨᎢ.					
-	ᎠᎩᎦᎨᎢ.					
-	ᎠᎩᎨᎢ.					
-	ᎠᎬᎿᎨᎢ.					
-	ᎠᎬᏂᎨᎢ.					
-	ᎠᏌᎪᏂᎨᎢ.					
-	ᎠᏓᎭᎵᎨᎢ.					
-	ᎠᏓᎶᏂᎨᎢ.					
-	ᎩᎦᎨ ᎤᏍᎪᎸᎢ.					
-	ᎬᎿᎨ ᎤᏍᎪᎸᎢ.					
-	ᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.					
-	ᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.					
-	ᎠᎩᎦᎨ ᎤᏍᎪᎸᎢ.					
-	ᎠᎬᎿᎨ ᎤᏍᎪᎸᎢ.					
-	ᎠᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.					
-	ᎠᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.					
+140	ᏔᎹᏟ.	tamahli		ije-tamahli; anije-tamahli		tạ²ma²hli
+	ᎦᎦᎹ.	gagama		ije-gagama; anije-gagama		ga²³gạ³ma
+	ᎢᏤ ᏔᎹᏟ.	ije-tamahli		tamahli		
+	ᎠᏂᏤ ᏔᎹᏟ.	anije-tamahli		tamahli		
+	ᎢᏤ ᎦᎦᎹ.	ije-gagama		gagama		
+	ᎠᏂᏤ ᎦᎦᎹ.	anije-gagama		gagama		
+	ᎤᏍᎪᎸᎢ.	usgolvi				
 						
-142	ᎦᏙ ᎤᏍᏗ ᏓᎶᏂᎨ ᎩᏟ?					
-	ᎯᎠ ᏓᎶᏂᎨ ᎩᏟ.					
-	ᎯᎠ ᎢᏤᎢᏳᏍᏗ ᎩᏟ.					
-	ᎯᎠ ᎩᎦᎨᎢ ᏪᏌ.					
-	ᎯᎠ ᎬᎿᎨᎢ ᏅᏯ.					
-	ᎯᎠ ᎠᎩᎦᎨᎢ ᎩᏟ.					
-	ᎯᎠ ᎠᏓᎶᏂᎨ ᎩᏟ.					
-	ᎠᎴ ᎯᎠ ᎤᏬᏗᎨ ᏪᏌ 					
-	ᎯᎠ ᎤᏁᎦ ᏅᏯ.					
-	ᎯᎠ ᏌᎪᏂᎨ ᎩᏟ.					
+141	ᎢᏤᎢᏳᏍᏗ.	ijeiyusdi				
+	ᎤᏁᎦ.	unega				
+	ᎤᏬᏗᎨᎢ.	uwodigei				
+	ᎩᎦᎨᎢ.	gigagei				
+	ᎩᎨᎢ.	gigei	gigagei			
+	ᎬᎿᎨᎢ.	gvhnagei				
+	ᎬᏂᎨᎢ.	gvnigei	gvhnagei			
+	ᏌᎪᏂᎨᎢ.	sagonigei				
+	ᏓᎭᎵᎨᎢ.	dahaligei				
+	ᏓᎶᏂᎨᎢ.	dalonigei				
+	ᎩᎦᎨ ᎤᏍᎪᎸᎢ.	gigage-usgolvi				
+	ᎬᎿᎨ ᎤᏍᎪᎸᎢ.	gvhnage-usgolvi				
+	ᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	sagonige-usgolvi				
+	ᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	dalonige-usgolvi				
+	ᎠᎩᎦᎨᎢ.	agigagei				
+	ᎠᎩᎨᎢ.	agigei	agigagei			
+	ᎠᎬᎿᎨᎢ.	agvhnagei				
+	ᎠᎬᏂᎨᎢ.	agvnigei	agvhnagei			
+	ᎠᏌᎪᏂᎨᎢ.	asagonigei				
+	ᎠᏓᎭᎵᎨᎢ.	adahaligei				
+	ᎠᏓᎶᏂᎨᎢ.	adalonigei				
+	ᎠᎩᎦᎨ ᎤᏍᎪᎸᎢ.	agigage-usgolvi				
+	ᎠᎬᎿᎨ ᎤᏍᎪᎸᎢ.	agvhnage-usgolvi				
+	ᎠᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	asagonige-usgolvi				
+	ᎠᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	adalonige-usgolvi				
 						
 150	ᎠᏂᏤᎢ.					
-	ᎠᏂᏥᏳᏍᏗ.					
+	ᎠᏂᏤᏳᏍᏗ.					
 	ᎠᏂᎩᎦᎨᎢ.					
 	ᎠᏂᏓᎭᎵᎨᎢ.					
 	ᎠᏂᎬᎿᎨᎢ.					
