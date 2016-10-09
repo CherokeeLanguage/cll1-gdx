@@ -1,3 +1,4 @@
+1.33 - Debug logging for when a card's stats no longer match any existing cards.
 1.32 - Chapter 12 parts 2 and 3 of 3. Now have 375 challenges.
 1.31 - Speed up session load when there are > 200 challenges saved as part of session.
 1.30 - Chapter 12 part 1 of 3. Now have 344 challenges. Misc other audio fixes.

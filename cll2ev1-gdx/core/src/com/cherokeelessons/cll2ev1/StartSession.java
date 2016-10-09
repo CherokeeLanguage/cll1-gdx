@@ -112,14 +112,19 @@ public class StartSession implements Runnable {
 			}
 			String id = txtStats[0];
 			ICard<CardData> card = cardLookupMap.get(id);
+			/*
+			 * stats refers to a card that no longer exists...
+			 */
 			if (card==null) {
-				//stats refers to a card that no longer exists...
+				log.info("No matching card found for: '"+id+"'");
 				continue;
 			}
 			CardStats stats = json.fromJson(CardStats.class, txtStats[1]);
 			card.setCardStats(stats);
-			// move this "in play" card into the active deck. Being sure to
-			// set all stats to "never shown/correct".
+			/*
+			 * move this "in play" card into the active deck. Being sure to set
+			 * all stats to "never shown/correct".
+			 */
 			card.resetStats();
 			card.resetTriesRemaining(CardData.MAX_TRIES);
 			card.getCardStats().setPimsleurSlot(0);
