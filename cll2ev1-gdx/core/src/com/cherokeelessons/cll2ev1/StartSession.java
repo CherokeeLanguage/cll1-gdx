@@ -2,13 +2,16 @@ package com.cherokeelessons.cll2ev1;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonWriter.OutputType;
+import com.badlogic.gdx.utils.Logger;
 import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 import com.cherokeelessons.cll2ev1.screens.LearningSession;
@@ -18,6 +21,9 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class StartSession implements Runnable {
+
+	private final Logger log = new Logger(this.getClass().getSimpleName());
+
 	private static final String ACTIVE_CARDS = CLL2EV1.ACTIVE_CARDS;
 	private final AbstractGame game;
 	private final int session;
@@ -30,6 +36,7 @@ public class StartSession implements Runnable {
 
 	@Override
 	public void run() {
+		log.info("StartSession#run");
 		FileHandle activeCardsJson = SlotFolder.getSlotFolder(session).child(ACTIVE_CARDS);
 		String tmp;
 		try {
@@ -37,6 +44,7 @@ public class StartSession implements Runnable {
 		} catch (Exception e) {
 			tmp = "";
 		}
+		log.info("StartSession#file loaded");
 		String[] jsonCardsStats = tmp.split("\n");
 		/*
 		 * Always create a fresh deck by copying (cloning) cards from the CSV
@@ -54,6 +62,7 @@ public class StartSession implements Runnable {
 			copy.getCardStats().setPimsleurSlot(0);
 			masterDeck.add(copy);
 		}
+		log.info("StartSession#master deck created");
 		if (Gdx.app.getType().equals(ApplicationType.Desktop)) {
 			masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
 			SlotFolder.getDeckSlot().mkdirs();
@@ -66,6 +75,16 @@ public class StartSession implements Runnable {
 			jsonx.setUsePrototypes(false);
 			SlotFolder.getDeckSlot().child("master-deck-card-ids.json").writeString(jsonx.prettyPrint(sortedCardIds),
 					false, StandardCharsets.UTF_8.name());
+			log.info("StartSession#master deck debug file created");
+		}
+
+		/*
+		 * Shove master deck cards into a Map<> for fast lookup by id.
+		 */
+
+		Map<String, ICard<CardData>> cardLookupMap = new HashMap<String, ICard<CardData>>();
+		for (ICard<CardData> card : masterDeck.getCards()) {
+			cardLookupMap.put(card.id(), card);
 		}
 
 		Deck<CardData> activeDeck = new Deck<CardData>();
@@ -91,21 +110,21 @@ public class StartSession implements Runnable {
 				continue;
 			}
 			String id = txtStats[0];
-			copyStatsLoop: for (ICard<CardData> card : masterDeck.getCards()) {
-				if (!id.equals(card.id())) {
-					continue;
-				}
-				CardStats stats = json.fromJson(CardStats.class, txtStats[1]);
-				card.setCardStats(stats);
-				// move this "in play" card into the active deck. Being sure to
-				// set all stats to "never shown/correct".
-				card.resetStats();
-				card.resetTriesRemaining(CardData.MAX_TRIES);
-				card.getCardStats().setPimsleurSlot(0);
-				activeDeck.add(card);
-				break copyStatsLoop;
+			ICard<CardData> card = cardLookupMap.get(id);
+			if (card==null) {
+				//stats refers to a card that no longer exists...
+				continue;
 			}
+			CardStats stats = json.fromJson(CardStats.class, txtStats[1]);
+			card.setCardStats(stats);
+			// move this "in play" card into the active deck. Being sure to
+			// set all stats to "never shown/correct".
+			card.resetStats();
+			card.resetTriesRemaining(CardData.MAX_TRIES);
+			card.getCardStats().setPimsleurSlot(0);
+			activeDeck.add(card);
 		}
+		log.info("StartSession#active deck created");
 		game.setScreen(new LearningSession(game, session, masterDeck, activeDeck));
 	}
 }
