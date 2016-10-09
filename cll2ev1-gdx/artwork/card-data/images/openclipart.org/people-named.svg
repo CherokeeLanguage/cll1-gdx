@@ -14,7 +14,10 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="people-named.svg"
    width="635.54449"
-   height="1009.5336">
+   height="1009.5336"
+   inkscape:export-filename="people-named.png"
+   inkscape:export-xdpi="143.97737"
+   inkscape:export-ydpi="143.97737">
   <defs
      id="defs482">
     <linearGradient
@@ -3679,9 +3682,9 @@
      inkscape:window-height="480"
      id="namedview480"
      showgrid="false"
-     inkscape:zoom="0.8777633"
-     inkscape:cx="273.32905"
-     inkscape:cy="290.30865"
+     inkscape:zoom="0.74886064"
+     inkscape:cx="317.77225"
+     inkscape:cy="504.76682"
      inkscape:current-layer="svg4539"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -6467,7 +6470,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2013-10-06T11:59:19</dc:date>
         <dc:description>character set</dc:description>
         <dc:source>https://openclipart.org/detail/184601/mix-and-match-comic-characters-by-anarres-184601</dc:source>
