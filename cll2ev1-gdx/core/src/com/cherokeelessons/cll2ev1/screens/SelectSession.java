@@ -128,6 +128,13 @@ public class SelectSession extends AbstractScreen {
 		return new ClickListener() {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
+				Gdx.app.postRunnable(new Runnable() {
+					@Override
+					public void run() {
+						log("SelectSession#clear");
+						stage.clear();
+					}
+				});
 				Gdx.app.postRunnable(new StartSession(game, session));
 			}
 		};
