@@ -14111,9 +14111,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.87111111"
-     inkscape:cx="887.89611"
-     inkscape:cy="130.59021"
+     inkscape:zoom="1.7422222"
+     inkscape:cx="300"
+     inkscape:cy="225"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -14132,7 +14132,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -14285,5 +14285,12 @@
          id="Layer_1-9"
          transform="translate(-244.49951,955.86218)" />
     </g>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:7.2024684;stroke-miterlimit:4;stroke-dasharray:none"
+       y="635.42767"
+       x="328.70615"
+       width="237.99588"
+       height="142.79753"
+       id="rect3725" />
   </g>
 </svg>
