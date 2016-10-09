@@ -32,6 +32,7 @@ public class StartSession implements Runnable {
 	public StartSession(AbstractGame game, int session) {
 		this.game = game;
 		this.session = session;
+		log.setLevel(Logger.INFO);
 	}
 
 	@Override
