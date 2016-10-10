@@ -1,3 +1,4 @@
+1.43 - Chapter 17 part 1. Now have 474 challenges!
 1.42 - Picture and audio fixes.
 1.41 - Chapter 16 - Basic sentence forms practice. Now have 466 challenges! 
 1.40 - Blacklist certain color combinations.
