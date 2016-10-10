@@ -6,6 +6,10 @@ trap 'echo ERROR; read a' ERR
 
 cd "$(dirname "$0")"
 
+DPI=90
+DPI=45
+DPI=35
+
 cwd="$(pwd)"
 PNGS=""
 cd "images"
@@ -31,7 +35,7 @@ for dir in *; do
 		if [ -f "$png" ]; then continue; fi
 		echo "=== $png"
 		PNGS="${PNGS}\t${png}, "
-		inkscape -z -b=white -y=1.0 -C -d=45 -e="$png" "$svg"
+		inkscape -z -b=white -y=1.0 -C -d="$DPI" -e="$png" "$svg"
 		mv "$png" "$png".crush
 		pngcrush -s "$png".crush "$png"
 		if [ ! -f "$png" ]; then
