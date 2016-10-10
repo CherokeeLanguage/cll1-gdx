@@ -6,9 +6,10 @@ trap 'echo ERROR; read a' ERR
 
 cd "$(dirname "$0")"
 
-DPI=90
+DPI=77 # ? 512 or 513 width ?
+DPI=76 # ? 512 or 513 width ?
 DPI=45
-DPI=35
+#DPI=35
 
 cwd="$(pwd)"
 PNGS=""
