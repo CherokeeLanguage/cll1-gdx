@@ -520,45 +520,74 @@
 	ᏥᏯᎧᎭ.	jiyakaha				
 	ᎯᏯᎧᎭ.	hiyakaha				
 						
-180	ᎾᏍᎩ ᎠᎩᎪᏩᏘᎭ.					
-	Ꮭ ᎾᏍᎩ ᏯᎩᎪᏩᏘᎭ.					
-	ᎥᏍᎩᎾ ᏣᎪᏩᏘᎭ.					
-	Ꮭ ᎥᏍᎩᎾ ᏱᏣᎪᏩᏘᎭ.					
-	ᎥᏍᎩ ᎤᎭ.					
-	Ꮭ ᎥᏍᎩ ᏳᎭ.					
-	Ꮎ ᎤᏂᎭ.					
-	Ꮭ Ꮎ ᏳᏂᎭ.					
-	ᎯᎠ ᎠᎩᎭ.					
-	Ꮭ ᎾᏍᎩ ᏯᎩᎭ.					
-	ᎥᏍᎩᎾ ᏣᎭ.					
-	Ꮭ ᎥᏍᎩ ᏱᏣᎭ.					
-	Ꮎ ᎤᏩᎧᎭ.					
-	Ꮭ ᎾᏍᎩ ᏳᏩᎧᎭ.					
-	ᎥᏍᎩᎾ ᎤᏂᎧᎭ.					
-	Ꮭ ᎥᏍᎩ ᏳᏂᎧᎭ.					
-	ᎯᎠ ᏥᏯᎧᎭ.					
-	Ꮭ Ꮎ ᏱᏥᏯᎧᎭ.					
-	ᎾᏍᎩ ᎯᏯᎧᎭ.					
-	Ꮭ ᎥᏍᎩᎾ ᏱᏯᎧᎭ.					
+180	ᎾᏍᎩ ᎠᎩᎪᏩᏘᎭ.	asgaya-agigowhtiha				
+	Ꮭ ᎾᏍᎩ ᏯᎩᎪᏩᏘᎭ.	hla-asgaya-yigigowhtiha				
+	ᎠᏍᎦᏯ ᎠᎩᎪᏩᏘᎭ.	asgaya-agigowhtiha				
+	Ꮭ ᎠᏍᎦᏯ ᏯᎩᎪᏩᏘᎭ.	hla-asgaya-yigigowhtiha				
+						
+	ᎥᏍᎩᎾ ᏣᎪᏩᏘᎭ.	agehya-jagowhtiha				
+	Ꮭ ᎥᏍᎩᎾ ᏱᏣᎪᏩᏘᎭ.	hla-agehya-yijagowhtiha				
+	ᎠᎨᏯ ᏣᎪᏩᏘᎭ.	agehya-jagowhtiha				
+	Ꮭ ᎠᎨᏯ ᏱᏣᎪᏩᏘᎭ.	hla-agehya-yijagowhtiha				
+						
+	ᎠᏍᎦᏯ ᎥᏍᎩ ᎤᎭ.	asgaya-nuna-uha				
+	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏳᎭ.	hla-agehya-nuna-yuha				
+	ᎠᏍᎦᏯ ᏄᎾ ᎤᎭ.	asgaya-nuna-uha				
+	Ꮭ ᎠᎨᏯ ᏄᎾ ᏳᎭ.	hla-agehya-nuna-yuha				
+						
+	ᎾᏍᎩ ᏄᎾ ᎤᏂᎭ.	anisgaya-nuna-uniha				
+	Ꮭ ᎾᏍᎩ ᏅᏯ ᏳᏂᎭ.	hla-anisgaya-nvya-yuniha				
+	ᎠᏂᏍᎦᏯ ᏄᎾ ᎤᏂᎭ.	anisgaya-nuna-uniha				
+	Ꮭ ᎠᏂᏍᎦᏯ ᏅᏯ ᏳᏂᎭ.	hla-anisgaya-nvya-yuniha				
+						
+	ᎯᎠ ᎠᎩᎭ.	nvya-agiha				
+	Ꮭ ᎾᏍᎩ ᏯᎩᎭ.	hla-nvya-yagiha				
+	ᏅᏯ ᎠᎩᎭ.	nvya-agiha				
+	Ꮭ ᏅᏯ ᏯᎩᎭ.	hla-nvya-yagiha				
+						
+	ᎥᏍᎩᎾ ᏣᎭ.	nuna-jaha				
+	Ꮭ ᎥᏍᎩ ᏱᏣᎭ.	hla-nuna-yijaha				
+	ᏄᎾ ᏣᎭ.	nuna-jaha				
+	Ꮭ ᏄᎾ ᏱᏣᎭ.	hla-nuna-yijaha				
+						
+	ᎠᏍᎦᏯ Ꮎ ᎤᏩᎧᎭ.	asgaya-gihli-uwakaha				
+	Ꮭ ᎠᏂᎨᏯ ᎾᏍᎩ ᏳᏩᎧᎭ.	hla-anigehya-gihli-yuwakaha				
+	ᎠᏍᎦᏯ ᎩᏟ ᎤᏩᎧᎭ.	asgaya-gihli-uwakaha				
+	Ꮭ ᎠᏂᎨᏯ ᎩᏟ ᏳᏩᎧᎭ.	hla-anigehya-gihli-yuwakaha				
+						
+	ᎥᏍᎩᎾ ᎩᏟ ᎤᏂᎧᎭ.	anisgaya-gihli-unikaha				
+	Ꮭ ᎥᏍᎩ ᏪᏌ ᏳᏂᎧᎭ.	hla-anisgaya-wesa-yunikaha				
+	ᎠᏂᏍᎦᏯ ᎩᏟ ᎤᏂᎧᎭ.	anisgaya-gihli-unikaha				
+	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏳᏂᎧᎭ.	hla-anisgaya-wesa-yunikaha				
+						
+	ᎯᎠ ᏥᏯᎧᎭ.	gihli-jiyakaha				
+	Ꮭ Ꮎ ᏱᏥᏯᎧᎭ.	hla-gihli-yijiyakaha				
+	ᎩᏟ ᏥᏯᎧᎭ.	gihli-jiyakaha				
+	Ꮭ ᎩᏟ ᏱᏥᏯᎧᎭ.	hla-gihli-yijiyakaha				
+						
+	ᎾᏍᎩ ᎯᏯᎧᎭ.	wesa-hiyakaha				
+	Ꮭ ᎥᏍᎩᎾ ᏱᏯᎧᎭ.	hla-wesa-hyiyakaha				
+	ᏪᏌ ᎯᏯᎧᎭ.	wesa-hiyakaha				
+	Ꮭ ᏪᏌ ᏱᏯᎧᎭ.	hla-wesa-hyiyakaha				
 						
 190	ᎬᎩᎪᏩᏘᎭ.					
 	Ꮭ ᏱᎬᎩᎪᏩᏘᎭ.					
 	ᎨᏣᎪᏩᏘᎭ.					
 	Ꮭ ᏱᎨᏣᎪᏩᏘᎭ.					
-	ᏚᎭ.					
-	ᏚᏂᎭ.					
-	ᏓᎩᎭ.					
-	ᏕᏣᎭ.					
-	ᏚᏩᎧᎭ.					
-	ᎦᏥᏯᎧᎭ.					
-	ᎦᎯᏯᎧᎭ.					
-	Ꮭ ᏱᏚᎭ.					
-	Ꮭ ᏱᏚᏂᎭ.					
-	Ꮭ ᏱᏓᎩᎭ.					
-	Ꮭ ᏱᏕᏣᎭ.					
-	Ꮭ ᏱᏚᏩᎧᎭ.					
-	Ꮭ ᏱᎦᏥᏯᎧᎭ.					
-	Ꮭ ᏱᎦᎯᏯᎧᎭ.					
+	ᎠᏍᎦᏯ ᎾᏍᎩ ᏚᎭ.					
+	ᎠᏂᎨᏯ ᎥᏍᎩᎾ ᏚᏂᎭ.					
+	ᎥᏍᎩ ᏓᎩᎭ.					
+	Ꮎ ᏕᏣᎭ.					
+	ᎾᏍᎩ ᎩᏟ ᏚᏩᎧᎭ.					
+	ᎯᎠ ᎦᏥᏯᎧᎭ.					
+	ᎥᏍᎩᎾ ᎦᎯᏯᎧᎭ.					
+	Ꮭ ᎥᏍᎩ ᏪᏌ ᏱᏚᎭ.					
+	Ꮭ ᎠᏂᏍᎦᏯ Ꮎ ᏱᏚᏂᎭ.					
+	Ꮭ ᎾᏍᎩ ᏱᏓᎩᎭ.					
+	Ꮭ ᎥᏍᎩᎾ ᏱᏕᏣᎭ.					
+	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏱᏚᏩᎧᎭ.					
+	Ꮭ ᎯᎠ ᏱᎦᏥᏯᎧᎭ.					
+	Ꮭ Ꮎ ᏱᎦᎯᏯᎧᎭ.					
 						
 191	ᎠᏂᏴᏫ ᏧᏃᏗᎨ ᎩᏟ ᏚᏂᎧᎭ.					
 	Ꮭ ᎾᏍᎩ ᏧᏃᏗᎨ ᎩᏟ ᏱᏚᏂᎧᎭ.					
