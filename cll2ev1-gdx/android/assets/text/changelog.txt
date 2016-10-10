@@ -1,3 +1,4 @@
+1.38 - Chapter 15 - plural colors. Now have 436 challenges!
 1.37 - Chapter 14 - singular colors. Now have 411 challenges!
 1.36 - Chapter 13. Now have 379 challenges.
 1.35 - Fix ᎠᏂᏲᏁᎦ card missing its flag. Fix ᏚᏙᎠ and ᏚᎾᏙᎠ symbol ordering. Change -Ꮎ? symbol. Change ᎫᎴᏍ... card. Other misc adjustments.
