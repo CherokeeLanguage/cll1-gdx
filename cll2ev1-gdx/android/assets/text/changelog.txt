@@ -1,4 +1,4 @@
-1.44 - 
+1.44 - Chapter 18. Now have 512 challenges!
 1.43 - Chapter 17 core vocabulary. Now have 474 challenges!
 1.42 - Picture and audio fixes.
 1.41 - Chapter 16 - Basic sentence forms practice. Now have 466 challenges! 
