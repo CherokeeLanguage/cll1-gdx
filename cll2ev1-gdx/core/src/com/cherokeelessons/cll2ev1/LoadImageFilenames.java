@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import com.badlogic.gdx.Gdx;
@@ -9,9 +9,13 @@ import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadImageFilenames implements Runnable {
+	
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
 
 	private boolean debug = false;
-	private static final String UTF_8 = StandardCharsets.UTF_8.name();
 	private FileHandle cardImageDir = Gdx.files.internal("card-data/images/");
 
 	private void log(String message) {
@@ -28,10 +32,10 @@ public class LoadImageFilenames implements Runnable {
 	public void run() {
 		// each top level directory is a two-digit number that is the chapter
 		// number in the csv file
-		String[] dirs = cardImageDir.child("0_dirs.txt").readString(UTF_8).split("\n");
+		String[] dirs = cardImageDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
 		for (String dir : dirs) {
 			FileHandle subDir = cardImageDir.child(dir);
-			String[] imageFiles = subDir.child("0_files.txt").readString(UTF_8).split("\n");
+			String[] imageFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
 			for (GameCard card : cards) {
 				CardData cd = card.getData();
 				if (cd == null || cd.images == null) {

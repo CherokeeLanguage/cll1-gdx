@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1.screens;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -45,6 +45,12 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class LearningSession extends AbstractScreen implements Screen {
+	
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
+    
 	private static final float PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT = .375f;
 	private static final String DING = "audio/ding.mp3";
 	private static final String BUZZER = "audio/buzzer2.mp3";
@@ -434,7 +440,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			sbActiveCards.append(json.toJson(card.getCardStats()));
 			sbActiveCards.append("\n");
 		}
-		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, StandardCharsets.UTF_8.name());
+		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, UTF_8.name());
 		fh_activeCards_tmp.moveTo(fh_activeCards);
 
 		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS + ".tmp");
@@ -817,7 +823,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		Table noticeTable = new Table(skin);
 		noticeTable.defaults().expand().fill();
 		contentTable.add(noticeTable).expand().fill();
-		String txt = Gdx.files.internal("text/how-this-works.txt").readString(StandardCharsets.UTF_8.name());
+		String txt = Gdx.files.internal("text/how-this-works.txt").readString(UTF_8.name());
 		Label message = new Label(txt, skin);
 		message.setFontScale(.85f);
 		message.setWrap(true);

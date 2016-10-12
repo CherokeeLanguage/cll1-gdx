@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import com.badlogic.gdx.Gdx;
@@ -16,8 +16,13 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
  */
 
 public class LoadAudioFilenames implements Runnable {
+	
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
+	
 	private boolean debug = false;
-	private static final String UTF_8 = StandardCharsets.UTF_8.name();
 	private FileHandle cardAudioDir = Gdx.files.internal("card-data/audio/");
 
 	private void log(String message) {
@@ -34,10 +39,10 @@ public class LoadAudioFilenames implements Runnable {
 	public void run() {
 		// each top level directory is a two-digit number that is the chapter
 		// number in the csv file
-		String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8).split("\n");
+		String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
 		for (String dir : dirs) {
 			FileHandle subDir = cardAudioDir.child(dir);
-			String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8).split("\n");
+			String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
 			for (GameCard card : cards) {
 				CardData cd = card.getData();
 				if (cd == null || cd.audio == null) {

@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,6 +10,11 @@ import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class LoadCards implements Runnable {
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
+	
 	private CLL2EV1 game;
 
 	private Logger log = new Logger(this.getClass().getSimpleName(), Logger.INFO);
@@ -21,7 +26,7 @@ public class LoadCards implements Runnable {
 	@Override
 	public void run() {
 		log.info("Loading cards from " + CLL2EV1.CARDS_CSV);
-		String tmpCards = Gdx.files.internal(CLL2EV1.CARDS_CSV).readString(StandardCharsets.UTF_8.name());
+		String tmpCards = Gdx.files.internal(CLL2EV1.CARDS_CSV).readString(UTF_8.name());
 		String[] tmpLines = tmpCards.split("\n");
 		log.info("Loaded " + tmpLines.length + " records.");
 		int activeChapter = 0;

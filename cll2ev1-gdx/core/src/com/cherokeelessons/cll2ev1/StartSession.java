@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +21,11 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class StartSession implements Runnable {
+	
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
 
 	private final Logger log = new Logger(this.getClass().getSimpleName());
 
@@ -41,7 +46,7 @@ public class StartSession implements Runnable {
 		FileHandle activeCardsJson = SlotFolder.getSlotFolder(session).child(ACTIVE_CARDS);
 		String tmp;
 		try {
-			tmp = activeCardsJson.readString(StandardCharsets.UTF_8.name());
+			tmp = activeCardsJson.readString(UTF_8.name());
 		} catch (Exception e) {
 			tmp = "";
 		}
@@ -75,7 +80,7 @@ public class StartSession implements Runnable {
 			jsonx.setTypeName(null);
 			jsonx.setUsePrototypes(false);
 			SlotFolder.getDeckSlot().child("master-deck-card-ids.json").writeString(jsonx.prettyPrint(sortedCardIds),
-					false, StandardCharsets.UTF_8.name());
+					false, UTF_8.name());
 			log.info("StartSession#master deck debug file created");
 		}
 

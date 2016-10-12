@@ -1,6 +1,6 @@
 package com.cherokeelessons.cll2ev1.screens;
 
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.Charset;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -24,6 +24,11 @@ import com.cherokeelessons.deck.SkillLevel;
 import com.cherokeelessons.util.SlotFolder;
 
 public class SelectSession extends AbstractScreen {
+	
+	/**
+     * Eight-bit UCS Transformation Format
+     */
+    public static final Charset UTF_8 = Charset.forName("UTF-8");
 
 	private static final String EMPTY_SLOT = "--- EMPTY SLOT ---";
 
@@ -61,7 +66,7 @@ public class SelectSession extends AbstractScreen {
 				DeckStats di;
 				try {
 					String strJson;
-					strJson = fh.readString(StandardCharsets.UTF_8.name());
+					strJson = fh.readString(UTF_8.name());
 					di = json.fromJson(DeckStats.class, strJson);
 				} catch (Exception e) {
 					di = new DeckStats();
