@@ -1,3 +1,4 @@
+1.45 - Picture adjustments.
 1.44 - Chapter 18. Now have 512 challenges!
 1.43 - Chapter 17 core vocabulary. Now have 474 challenges!
 1.42 - Picture and audio fixes.
