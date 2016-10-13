@@ -1,3 +1,4 @@
+1.48 - 
 1.47 - Chapter 19. Now have 568 challenges!
 1.46 - Fix for older Androids. (Removed references to "StandardCharsets").
 1.45 - Picture adjustments.
