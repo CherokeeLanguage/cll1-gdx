@@ -1,4 +1,4 @@
-1.48 - 
+1.48 - Added ᎦᎪ ᎠᎴ ᎦᏙ ᎤᏍᏗ/ᏧᏍᏗ/ᎤᎾᏍᏗ challenge forms to chapters 18 and 19. 588 challenges.
 1.47 - Chapter 19. Now have 568 challenges!
 1.46 - Fix for older Androids. (Removed references to "StandardCharsets").
 1.45 - Picture adjustments.
