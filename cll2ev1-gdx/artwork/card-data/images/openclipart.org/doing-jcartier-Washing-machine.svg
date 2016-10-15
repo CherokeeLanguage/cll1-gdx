@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg3750"
+    sodipodi:docname="washing_machine.svg"
+    viewBox="0 0 21 31"
+    sodipodi:version="0.32"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    inkscape:version="0.45.1"
+    sodipodi:docbase="/home/jean/Desktop"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="24"
+      pagecolor="#ffffff"
+      inkscape:window-height="629"
+      inkscape:zoom="0.35"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="375"
+      inkscape:cy="520"
+      inkscape:window-width="910"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Calque 1"
+      inkscape:groupmode="layer"
+      transform="translate(-72.357 -248.29)"
+    >
+    <g
+        id="g27569"
+        transform="translate(-186.14 -204.57)"
+      >
+      <path
+          id="path24592"
+          d="m259 458.36v20c0 1 10 6 10 5v-20c0-1-10-6-10-5z"
+          style="fill-rule:evenodd;fill:#edd400"
+          sodipodi:nodetypes="czzzz"
+      />
+      <path
+          id="path24594"
+          d="m269 463.36c0-1 10-6 10-5v20c0 1-10 6-10 5v-20z"
+          style="fill-rule:evenodd;fill:#fce94f"
+          sodipodi:nodetypes="czzzz"
+      />
+      <path
+          id="path24596"
+          d="m259 458.36c0-1 9-5 10-5s10 4 10 5-9 5-10 5-10-4-10-5z"
+          style="fill-rule:evenodd;fill:#c4a000"
+          sodipodi:nodetypes="czzzz"
+      />
+      <path
+          id="path24598"
+          sodipodi:rx="5"
+          sodipodi:ry="5"
+          style="stroke:#000000;stroke-width:1.1385;fill:#c4a000"
+          sodipodi:type="arc"
+          d="m95 267.36a5 5 0 1 1 -10 0 5 5 0 1 1 10 0z"
+          transform="matrix(.76217 0 -.10311 1.0122 232.97 200.75)"
+          sodipodi:cy="267.36218"
+          sodipodi:cx="90"
+      />
+      <path
+          id="path24600"
+          sodipodi:rx="5"
+          sodipodi:ry="5"
+          style="stroke:#000000;stroke-width:1.1385;fill:#c4a000"
+          sodipodi:type="arc"
+          d="m95 267.36a5 5 0 1 1 -10 0 5 5 0 1 1 10 0z"
+          transform="matrix(.62258 0 -.084228 .90240 240.02 229.78)"
+          sodipodi:cy="267.36218"
+          sodipodi:cx="90"
+      />
+      <path
+          id="path24602"
+          sodipodi:rx="1.5"
+          sodipodi:ry="1.5"
+          style="stroke:#000000;stroke-width:.53543;fill:#d3d7cf"
+          sodipodi:type="arc"
+          d="m78 263.86a1.5 1.5 0 1 1 -3 0 1.5 1.5 0 1 1 3 0z"
+          transform="matrix(.85320 0 0 1.0221 206.73 194.68)"
+          sodipodi:cy="263.86218"
+          sodipodi:cx="76.5"
+      />
+      <path
+          id="path24604"
+          sodipodi:rx="1.5"
+          sodipodi:ry="1.5"
+          style="stroke:#000000;stroke-width:.88562;fill:#d3d7cf"
+          sodipodi:type="arc"
+          d="m78 263.86a1.5 1.5 0 1 1 -3 0 1.5 1.5 0 1 1 3 0z"
+          transform="matrix(.51584 0 0 .61793 235.15 300.34)"
+          sodipodi:cy="263.86218"
+          sodipodi:cx="76.5"
+      />
+      <path
+          id="path24606"
+          sodipodi:rx="1.5"
+          sodipodi:ry="1.5"
+          style="stroke:#000000;stroke-width:.88562;fill:#d3d7cf"
+          sodipodi:type="arc"
+          d="m78 263.86a1.5 1.5 0 1 1 -3 0 1.5 1.5 0 1 1 3 0z"
+          transform="matrix(.51584 0 0 .61793 237.26 299.03)"
+          sodipodi:cy="263.86218"
+          sodipodi:cx="76.5"
+      />
+      <path
+          id="path26580"
+          style="color:#000000;stroke:#000000;stroke-width:1px;fill:none"
+          d="m259 458.36v20c0 1 9 5 10 5s10-4 10-5v-20c0-1-9-5-10-5s-10 4-10 5z"
+          sodipodi:nodetypes="czzzzzz"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Washing machine</dc:title
+        >
+        <dc:date
+          >2008-05-12T20:49:20</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/16719/washing-machine-by-jcartier</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >jcartier</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >appliance</rdf:li
+            >
+            <rdf:li
+              >lave linge</rdf:li
+            >
+            <rdf:li
+              >washing machine</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
