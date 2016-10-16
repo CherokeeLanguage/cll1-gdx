@@ -1,3 +1,4 @@
+1.53 - 
 1.52 - 625 challenges. Added remainder of Chapter 20 challenges.
 1.51 - 606 challenges. Added: Ꮭ ᏱᎩ, Ᏹ ᏱᎨᏐᎢ, Ꮭ ᏱᎨᏒᎩ, Ꮭ ᏱᎨᏎᎢ, Ꮭ ᏱᎨᎲᎩ, Ꮭ ᏱᎨᎮᎢ, Ꮭ ᏱᎨᏎᏍᏗ.
 1.50 - 599 challenges. Added: ᎨᎲᎩ, ᎨᎨᎢ, ᎨᏒᎩ, ᎨᏎᎢ, ᎢᎩ, ᎢᎦ, ᎨᏎᏍᏗ, ᎨᏐᎢ.
