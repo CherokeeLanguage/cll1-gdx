@@ -8,6 +8,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Logger;
 import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.cll2ev1.models.GameCard;
+import com.cherokeelessons.deck.CardUtils;
+import com.cherokeelessons.deck.DeckStats;
 
 public class LoadCards implements Runnable {
 	/**
@@ -72,5 +74,12 @@ public class LoadCards implements Runnable {
 			}
 		}
 		game.deckReady = true;
+		
+		/**
+		 * debug dumps
+		 */
+		for (int session =0; session<DeckStats.FULLY_LEARNED_BOX; session++) {
+			log.info("LEITNER BOX "+session+" IS "+CardUtils.getNextSessionIntervalDays(session)+" DAYS DELAY.");
+		}
 	}
 }
