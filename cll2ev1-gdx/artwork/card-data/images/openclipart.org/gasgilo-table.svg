@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    version="1.1"
+    id="Layer_1"
+    x="0px"
+    y="0px"
+    viewBox="0 0 612 792"
+    enable-background="new 0 0 612 792"
+    xml:space="preserve"
+  >
+<linearGradient
+      id="SVGID_1_"
+      gradientUnits="userSpaceOnUse"
+      x1="247.041"
+      y1="498.3887"
+      x2="121.3265"
+      y2="372.6742"
+    >
+	<stop
+        offset="0"
+        style="stop-color:#C49A6C"
+    />
+	<stop
+        offset="1"
+        style="stop-color:#A97C50"
+    />
+</linearGradient
+  >
+<path
+      fill="url(#SVGID_1_)"
+      d="M110,384c0,0,59.704,40.986,145.953,21.965C283,400,252.43,493,252.43,493s-56.786-37.91-139.001-24  C95.905,471.965,110,384,110,384z"
+  />
+<linearGradient
+      id="SVGID_2_"
+      gradientUnits="userSpaceOnUse"
+      x1="503.4014"
+      y1="416.626"
+      x2="387.8695"
+      y2="301.0941"
+    >
+	<stop
+        offset="0"
+        style="stop-color:#C49A6C"
+    />
+	<stop
+        offset="1"
+        style="stop-color:#A97C50"
+    />
+</linearGradient
+  >
+<path
+      fill="url(#SVGID_2_)"
+      d="M381.999,306.965c0,0,51.166,40.986,125.083,21.965c23.179-5.965-3.02,87.035-3.02,87.035  s-48.666-37.91-119.125-24C369.919,394.93,381.999,306.965,381.999,306.965z"
+  />
+<g
+    >
+	<polyline
+        fill="#151B0E"
+        points="122.952,339.191 122,503.607 114.905,508 101.905,337.314  "
+    />
+	<polyline
+        fill="#6A4C1E"
+        points="115.952,338.093 115,508 94.905,508 94.905,336.216  "
+    />
+</g
+  >
+<g
+    >
+	<polyline
+        fill="#151B0E"
+        points="272.477,359.975 271.525,537.705 264.429,541.705 251.43,358.266  "
+    />
+	<polyline
+        fill="#6A4C1E"
+        points="265.477,366.975 264.525,541.705 244.43,541.705 244.43,365.266  "
+    />
+</g
+  >
+<g
+    >
+	<polyline
+        fill="#151B0E"
+        points="388.322,301.6 387.786,413.963 383.791,416.965 376.471,300.318  "
+    />
+	<polyline
+        fill="#6A4C1E"
+        points="384.381,300.85 383.844,416.965 372.528,416.965 372.528,299.566  "
+    />
+</g
+  >
+<g
+    >
+	<polyline
+        fill="#151B0E"
+        points="519.056,293.102 518.341,433.222 513.017,436.965 503.262,291.504  "
+    />
+	<polyline
+        fill="#6A4C1E"
+        points="513.803,292.167 513.088,436.965 498.008,436.965 498.008,290.566  "
+    />
+</g
+  >
+<path
+      fill="#7E5422"
+      d="M541.156,294c0,0,8-10,0-17s-66-24-160-21s-299,45-307,61s0,26,0,26s176,30,178,30S541.156,294,541.156,294z  "
+  />
+<linearGradient
+      id="SVGID_3_"
+      gradientUnits="userSpaceOnUse"
+      x1="420.248"
+      y1="406.3691"
+      x2="204.0978"
+      y2="190.2189"
+    >
+	<stop
+        offset="0"
+        style="stop-color:#C49A6C"
+    />
+	<stop
+        offset="1"
+        style="stop-color:#A97C50"
+    />
+</linearGradient
+  >
+<path
+      fill="url(#SVGID_3_)"
+      d="M528.056,283.383c0,0,25.444,0,17.444-7s-66-24-160-21s-301.498,43.979-307,61  c-3.556,11,32.929,12,32.929,12s145.524,25.266,147.524,25.266S528.056,283.383,528.056,283.383z"
+  />
+<metadata
+    ><rdf:RDF
+      ><cc:Work
+        ><dc:format
+          >image/svg+xml</dc:format
+        ><dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        /><cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        /><dc:publisher
+          ><cc:Agent
+              rdf:about="http://openclipart.org/"
+            ><dc:title
+              >Openclipart</dc:title
+            ></cc:Agent
+          ></dc:publisher
+        ></cc:Work
+      ><cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        ><cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        /><cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        /><cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        /></cc:License
+      ></rdf:RDF
+    ></metadata
+  ></svg
+>
