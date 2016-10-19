@@ -1,5 +1,5 @@
-1.56 - 
-1.55 - Various pictures fixes for Chapters 21 & 22.
+1.56 - Various picture adjustments for Chapter 19.
+1.55 - Various picture fixes for Chapters 21 & 22.
 1.54 - 653 challenges. Chapter 22. All core vocabulary from the book now covered.
 1.53 - 647 challenges. Chapter 21.
 1.52 - 625 challenges. Added remainder of Chapter 20 challenges.
