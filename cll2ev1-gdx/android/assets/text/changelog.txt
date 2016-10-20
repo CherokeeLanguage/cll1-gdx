@@ -1,4 +1,4 @@
-1.58 - 
+1.58 - Add core forms practice for Chapter 17.
 1.57 - Various picture adjustments for Chapter 18.
 1.56 - Various picture adjustments for Chapter 19.
 1.55 - Various picture fixes for Chapters 21 & 22.
