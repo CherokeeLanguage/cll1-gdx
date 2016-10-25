@@ -1,764 +1,766 @@
-#CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC	XXX	NOTES
-40	ᎠᏲ!	ayo		hla; uyoi		
-	ᎣᏍᏓ.	osda		vv; howa		
-	ᎣᏍᏛ.	osdv	osda	vv; howa		
-	ᎤᏲᎢ.	uyoi		hla; ayo		
-	ᎥᎥ.	vv		osda; howa		
-	ᎥᏍᎩᎩ?	vsgigi				
-	Ꮭ.	hla		uyoi; ayo		
-	ᎰᏩ.	howa		vv; osda		
-	Ꮒ!	ni				
-	ᏣᎳᎩ.	jalagi				
-	ᏩᏙ.	wado				
-	ᏲᏁᎦ.	yonega				
-	ᎣᏏᏲ.	osiyo				
-	ᏴᏭᏁᎦ.	yvwunega	yonega			
-						
-50	ᎦᏙ ᎤᏍᏗ?	gado-usdi				
-	ᎯᎳ ᎢᎦ?	hila-iga				
-	ᎯᎳ ᎢᏯᏂ?	hila-iyani				
-	ᏌᏊ.	sagwu				
-	ᏔᎵ.	tali				
-	ᎠᏂᏔᎵ.	anitali				
-	ᏦᎢ.	joi				
-	ᎠᏂᏦᎢ.	anijoi				
-	ᏅᎩ.	nvgi				
-	ᎯᏍᎩ.	hisgi				
-	ᏑᏓᎵ.	sudali				
-	ᎦᎵᏉᎩ.	galgwogi				
-	ᎢᎬᏱᎢ.	igvyii				
-	ᎠᏂᏔᎵᏁᎢ.	anitalinei				
-	ᏔᎵᏁᎢ.	talinei				
-	ᎠᏂᏦᎢᏁᎢ.	anijoinei				
-	ᏦᎢᏁᎢ.	joinei				
-	ᏅᎩᏁᎢ.	nvginei				
-	ᎯᏍᎩᏁᎢ.	hisginei				
-	ᏑᏓᎵᏁᎢ.	sudalinei				
-	ᎦᎵᏉᎩᏁᎢ.	galgwoginei				
-						
-60	ᎿᏛᎦ.	hnadvga				
-	ᏂᏔᏛᎦ.	nitadvga				
-	ᏘᎪᎵᏯ.	tigoliya				
-	ᎰᏪᎸᎦ.	hohwelvga				
-	ᏙᏪᎸᎦ.	tohwelvga				
-						
-	ᎠᎨᏯ.	agehya		agehya		
-	ᎠᏂᎨᏯ.	anigehya		anigehya		
-	ᎠᏂᏍᎦᏯ.	anisgaya		anisgaya		
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ.	anitali-anigehya		anigehya		
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᎠᎴ ᏔᎵ ᏄᎾ.	anitali-anigehya-ale-tali-nuna		anigehya		
-	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᏃᎴ ᏦᎢ ᏄᎾ.	anitali-anigehya-nole-joi-nuna		anigehya		
-	ᎠᏂᏔᎵ ᎠᏂᏍᎦᏯ.	anitali-anisgaya		anisgaya		
-	ᎠᏂᏔᎵ ᎩᏟ.	anitali-gihli		gihli		
-	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa		wesa		
-	ᎠᏂᏦᎢ ᎠᏂᎨᏯ.	anijoi-anigehya		anigehya		
-	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ.	anijoi-anisgaya		anisgaya		
-	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ ᏃᎴ ᏔᎵ ᏄᎾ.	anijoi-anisgaya-nole-tali-nuna		anisgaya		
-	ᎠᏍᎦᏯ.	asgaya		asgaya		
-	ᎦᏙ ᎤᎾᏍᏗ ᏓᎪᏩᏘᎭ?	gado-unsdi-dagowhtiha		dagowhtiha		
-	ᎦᏙ ᎤᎾᏍᏗ ᏓᏂᎪᏩᏘᎭ?	gado-unsdi-danigowhtiha		danigowhtiha		
-	ᎦᏙ ᎤᎾᏍᏗ?	gado-unsdi				
-	ᎦᏙ ᎤᏍᏗ ᎠᎪᏩᏘᎭ?	gado-usdi-agowhtiha		agowhtiha		
-	ᎦᏙ ᎤᏍᏗ ᎠᏂᎪᏩᏘᎭ?	gado-usdi-anigowhtiha		anigowhtiha		
-	ᎩᏟ.	gihli		gihli		
-	ᏄᎾ.	nuna		nuna		
-	ᏄᎾ ᎠᎴ ᏅᏯ.	nuna-ale-nvya		nuna		
-	ᏄᎾ ᏃᎴ ᏅᏯ.	nuna-nole-nvya	nuna-ale-nvya	nuna		
-	ᏅᏯ.	nvya		nvya		
-	ᏌᏊ ᎠᎨᏯ.	sagwu-agehya		agehya		
-	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏅᏯ.	sagwu-agehya-ale-sagwu-nvya		agehya		
-	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏪᏌ.	sagwu-agehya-ale-sagwu-wesa		agehya		
-	ᏌᏊ ᎠᎨᏯ ᏃᎴ ᏌᏊ ᏄᎾ.	sagwu-agehya-nole-sagwu-nuna		agehya		
-	ᏌᏊ ᎠᏍᎦᏯ.	sagwu-asgaya		asgaya		
-	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᎩᏟ.	sagwu-asgaya-nole-sagwu-gihli		asgaya		
-	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᏄᎾ.	sagwu-asgaya-nole-sagwu-nuna		asgaya		
-	ᏌᏊ ᎩᏟ.	sagwu-gihli		gihli		
-	ᏌᏊ ᏄᎾ.	sagwu-nuna		nuna		
-	ᏌᏊ ᏅᏯ.	sagwu-nvya		nvya		
-	ᏌᏊ ᏪᏌ.	sagwu-wesa		wesa		
-	ᏔᎵ ᏄᎾ.	tali-nuna		nuna		
-	ᏦᎢ ᏄᎾ.	joi-nuna		nuna		
-	ᏦᎢ ᏅᏯ.	joi-nvya		nvya		
-	ᏪᏌ.	wesa		wesa		
-	ᏪᏌ ᎠᎴ ᎩᏟ.	wesa-ale-gihli		wesa		
-	ᏪᏌ ᎠᎴ ᏅᏯ.	wesa-ale-nvya		wesa		
-	ᏪᏌ ᏃᎴ ᎩᏟ.	wesa-nole-gihli	wesa-ale-gihli	wesa		
-	ᏪᏌ ᏃᎴ ᏅᏯ.	wesa-nole-nvya	wesa-ale-nvya	wesa		
-						
-61	ᎠᎪᏩᏘᎭ.	agowhtiha		agowhtiha		
-	ᎠᏂᎪᏩᏘᎭ.	anigowhtiha		anigowhtiha		
-	ᎩᏟ ᎠᎪᏩᏘᎭ.	gihli-agowhtiha		agowhtiha		
-	ᎩᏟ ᎠᏂᎪᏩᏘᎭ.	gihli-anigowhtiha		anigowhtiha		
-	ᎩᏟ ᏓᎪᏩᏘᎭ.	gihli-dagowhtiha		dagowhtiha		
-	ᎩᏟ ᏓᏂᎪᏩᏘᎭ.	gihli-danigowhtiha		danigowhtiha		
-	ᏄᎾ ᎠᎪᏩᏘᎭ.	nuna-agowhtiha		agowhtiha		
-	ᏄᎾ ᎠᏂᎪᏩᏘᎭ.	nuna-anigowhtiha		anigowhtiha		
-	ᏄᎾ ᏓᎪᏩᏘᎭ.	nuna-dagowhtiha		dagowhtiha		
-	ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	nuna-danigowhtiha		danigowhtiha		
-	ᏅᏯ ᎠᎪᏩᏘᎭ.	nvya-agowhtiha		agowhtiha		
-	ᏅᏯ ᎠᏂᎪᏩᏘᎭ.	nvya-anigowhtiha		anigowhtiha		
-	ᏅᏯ ᏓᎪᏩᏘᎭ.	nvya-dagowhtiha		dagowhtiha		
-	ᏅᏯ ᏓᏂᎪᏩᏘᎭ.	nvya-danigowhtiha		danigowhtiha		
-	ᏓᎪᏩᏘᎭ.	dagowhtiha		dagowhtiha		
-	ᏓᏂᎪᏩᏘᎭ.	danigowhtiha		danigowhtiha		
-	ᏪᏌ ᎠᎪᏩᏘᎭ.	wesa-agowhtiha		agowhtiha		
-	ᏪᏌ ᎠᏂᎪᏩᏘᎭ.	wesa-anigowhtiha		anigowhtiha		
-	ᏪᏌ ᏓᎪᏩᏘᎭ.	wesa-dagowhtiha		dagowhtiha		
-	ᏪᏌ ᏓᏂᎪᏩᏘᎭ.	wesa-danigowhtiha		danigowhtiha		
-						
-62	ᎠᎨᏯ ᎠᎴ ᏪᏌ ᏅᏯ ᎠᏂᏩᏘᎭ.	agehya-ale-wesa				
-	ᎠᎨᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	agehya-anigehya				
-	ᎠᎨᏯ ᏅᏯ ᎠᎪᏩᏘᎭ.	agehya-nvya				
-	ᎠᏂᎨᏯ ᎠᎨᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anigehya-agehya				
-	ᎠᏂᎨᏯ ᏄᎾ ᎠᏂᎪᏩᏘᎭ.	anigehya-nuna				
-	ᎠᏂᏍᎦᏯ ᎠᎨᏯ ᎠᎴ ᏅᏯ ᏓᏂᎪᏩᏘᎭ.	anisgaya-agehya				
-	ᎠᏂᏍᎦᏯ ᎠᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anisgaya-asgaya				
-	ᎠᏂᏍᎦᏯ ᏅᏯ ᎠᏂᎪᏩᏘᎭ.	anisgaya-nvya				
-	ᎠᏍᎦᏯ ᎠᎴ ᎩᏟ ᏅᏯ ᎠᏂᏩᏘᎭ.	asgaya-ale-gihli				
-	ᎠᏍᎦᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anigehya				
-	ᎠᏍᎦᏯ ᎠᏂᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anisgaya				
-	ᎠᏍᎦᏯ ᎩᏟ ᎠᎪᏩᏘᎭ.	asgaya-gihli				
-						
-70	ᎠᏂ.	ahni	ahni			
-	ᎢᎾ.	ina				
-	ᎤᎿ.	uhna				
-	ᎾᎥ.	nav				
-	ᎠᎭᏂ.	ahani	ahni			
-	ᎯᎪᏩᏘᎭ.	hiigowhtiha		higowhtiha		
-	ᏥᎪᏩᏘᎭ.	jiigowhtiha		jigowhtiha		
-	ᎦᎯᎪᏩᏘᎭ.	gahiigowhtiha				
-	ᎦᏥᎪᏩᏘᎭ.	gajiigowhtiha				
-	Ꭿ̣ᎪᏩᏘᎭ.	higowhtiha		hiigowhtiha		
-	Ꮵ̣ᎪᏩᏘᎭ.	jigowhtiha		jiigowhtiha		
-	ᏕᎯ̣ᎪᏩᏘᎭ.	dehigowhtiha				
-	ᏕᏥ̣ᎪᏩᏘᎭ.	dejigowhtiha				
-						
-71	ᎤᏪᏴᎢ	uweyvi				u¹we³yv⁴ɂi
-	ᎠᎹᏳᏟᏗ	amayuhldi				ạ²ma²yuhl⁴di
-	ᏡᎬᎢ	hlgvi				hlgv⁴ɂi
-	ᏕᏡᎬᎢ	dehlgvi				dehl²³gv⁴ɂi
-						
-72	ᎠᎭᏂ ᎠᎨᏯ ᏥᎪᏩᏘᎭ.	ahani-agehya				
-	ᎠᎭᏂ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ.	ahani-anigehya				
-	ᎠᎭᏂ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	ahani-anisgaya				
-	ᎠᎭᏂ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ.	ahani-asgaya				
-	ᎠᎭᏂ ᎩᏟ ᏥᎪᏩᏘᎭ.	ahani-gihli				
-	ᎠᎭᏂ ᏄᎾ Ꮵ̣ᎪᏩᏘᎭ.	ahani-nuna				
-	ᎠᎭᏂ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	ahani-wesa				
-	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-agehya-nvya				
-	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ.	uhna-agehya				
-	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anigehya-nuna				
-	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anigehya				
-	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anisgaya-nuna				
-	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anisgaya				
-	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-asgaya-nvya				
-	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ.	uhna-asgaya				
-	ᎤᎿ ᎩᏟ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-gihli-nvya				
-	ᎤᎿ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-nvya-dejigowhtiha				
-	ᎤᎿ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-nvya-jigowhtiha				
-	ᎤᎿ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	uhna-wesa-gajigowhtiha				
-	ᎤᎿ ᏪᏌ ᏥᎪᏩᏘᎭ.	uhna-wesa-jigowhtiha				
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᎪᏩᏘᎭ?	gado-unsdi-gahiigowhtiha				
-	ᎦᏙ ᎤᏍᏗ ᎯᎪᏩᏘᎭ?	gado-usdi-hiigowhtiha				
-	ᎦᏙ ᎤᏍᏗ Ꭿ̣ᎪᏩᏘᎭ?	gado-usdi-higowhtiha				
-	ᎦᏙ ᏧᏍᏗ ᏕᎯ̣ᎪᏩᏘᎭ?	gado-jusdi-dehigowhtiha				
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-gajiigowhtiha				
-	ᎦᏙ ᎤᏍᏗ ᏥᎪᏩᏘᎭ?	gado-usdi-jiigowhtiha				
-	ᎦᏙ ᎤᏍᏗ Ꮵ̣ᎪᏩᏘᎭ?	gado-usdi-jigowhtiha				
-	ᎦᏙ ᏧᏍᏗ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-dejigowhtiha				
-						
-80	ᎥᏍᎩ.	vsgi	vsgi			v¹sgị
-	ᎥᏍᎩᎾ.	vsgina	vsgi			v¹sgị²na
-	ᎯᎠ.	hia	hia			hị²ɂa
-	ᎯᎢ.	hii	hia			hị²ɂi
-	Ꮎ.	na	vsgi			na
-	ᎾᏍᎩ.	nasgi	vsgi			na¹sgi
-	ᏍᎩᎾ.	sgina	vsgi			sgị²na
-						
-81	ᎠᎨᏯ ᎠᏂ ᏥᎪᏩᏘᎭ.	agehya-ahni				x
-	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.	agehya-uhna		agehya-uhna; na-agehya		x
-	ᎠᏴ.	ayv	ayv1; ayv2; ayv3	ayv		x
-						
-	ᎯᎠ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	hia-nav-gajiigowhtiha	hia-nav-gajiigowhtiha			
-	ᎯᎢ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	hii-nav-gajiigowhtiha	hia-nav-gajiigowhtiha			
-	ᎯᎠ ᎾᎥ ᏥᎪᏩᏘᎭ.	hia-nav-jiigowhtiha	hia-nav-jiigowhtiha	hia-nav-jigowhtiha		
-	ᎯᎢ ᎾᎥ ᏥᎪᏩᏘᎭ.	hii-nav-jiigowhtiha	hia-nav-jiigowhtiha	hia-nav-jigowhtiha		
-	ᎯᎠ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	hia-nav-jigowhtiha		hia-nav-jiigowhtiha		
-						
-	ᏪᏌ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-hlgv-nav-gajiigowhtiha				
-	ᎩᏟ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-hlgv-nav-gajiigowhtiha				
-	ᏪᏌ ᎠᎨᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-agehya-nav-gajiigowhtiha				
-	ᎩᏟ ᏅᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-nvya-nav-gajiigowhtiha				
-	ᏄᎾ ᏅᏯ ᎾᎥ ᏕᏥ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-dejigowhtiha				
-	ᏄᎾ ᏅᏯ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-jigowhtiha				
-						
-	ᎥᏍᎩ ᎢᎾ ᎯᎪᏩᏘᎭ.	vsgi-ina-hiigowhtiha				x
-	ᏍᎩᎾ ᎢᎾ ᎯᎪᏩᏘᎭ.	sgina-ina-hiigowhtiha	vsgi-ina-hiigowhtiha			
-						
-	ᎥᏍᎩ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	vsgi-ina-gahiigowhtiha				
-	ᏍᎩᎾ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	sgina-ina-gahiigowhtiha	vsgi-ina-gahiigowhtiha			
-						
-	ᎥᏍᎩᎾ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	vsgina-ina-higowhtiha				
-	ᎾᏍᎩ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	nasgi-ina-higowhtiha	vsgina-ina-higowhtiha			
-						
-	ᎾᏍᎩ ᎢᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	nasgi-ina-dehigowhtiha				
-						
-	ᎦᏙ ᎤᎾᏍᏗ ᎠᏂ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-ahni				
-	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
-	ᎦᏙ ᎤᏍᏗ ᎠᏂ ᏥᎪᏩᏘᎭ?	gado-usdi-ahni				
-	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?	gado-usdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
-	ᎦᏙ ᏧᏍᏗ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-uhna				
-						
-	ᎩᏟ ᎠᏂ ᏥᎪᏩᏘᎭ.	gihli-ahni				
-	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.	gihli-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
-						
-	ᎭᏢ ᎠᎨᏯ?	hadlv-agehya				
-	ᎭᏢ ᎩᏟ?	hadlv-gihli				
-	ᎭᏢ ᏅᏯ?	hadlv-nvya				
-						
-	ᎯᎠ ᎠᏍᎦᏯ ᎠᏂ.	hia-asgaya				
-	ᎯᎠ ᏄᎾ ᎠᏂ.	hia-nuna				
-						
-	Ꮎ ᎠᎨᏯ ᎤᎿ.	na-agehya		agehya-uhna; na-agehya		
-	Ꮎ ᎩᏟ ᎤᎿ.	na-gihli		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna		
-						
-	ᏂᎯ.	nihi	nihi1; nihi2; nihi3	nihi		
-						
-	ᏅᏯ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ.	nvya-uhna				
-	ᏪᏌ ᎠᏂ ᏥᎪᏩᏘᎭ.	wesa-ahni				
-	ᏪᏌ ᎤᎿ ᏥᎪᏩᏘᎭ.	wesa-uhna				
-						
-90	ᎠᎭᏫ.	ahawi	ahawi			
-	ᎠᏫ.	ahwi	ahawi			
-	ᎪᏪᎵ.	gohweli				
-	ᏗᎪᏪᎵ.	digohweli				
-	ᎫᎴ.	gule				
-	ᏙᏯ.	doya				
-	ᏚᏯ.	tuya				
-	ᏥᏍᏚ.	jisdu				
-	ᏩᎭᏯ.	wahaya	wahaya	wahya-usdi; wahya-unsdi		
-	ᏩᏯ.	wahya	wahaya	wahya-usdi; wahya-unsdi		
-	ᏩᏯ ᎤᏍᏗ.	wahya-usdi		wahaya		
-	ᏩᏯ ᎤᎾᏍᏗ.	wahya-unsdi		wahaya		
-						
-91	ᎠᎨᏯᎾ?	agehyana				
-	ᏥᏍᏚᏍ ᎣᏍᏓ?	jisdus-osda				
-	ᏙᏯ ᎣᏍᏓ.	doya-osda				
-	ᏅᏯᎾ?	nvyana				
-	ᎠᎨᏯ ᎤᏲᎢ.	agehya-uyoi				
-	ᏩᏯᏍᎪ ᎤᏲᎢ?	wahyasgo-uyoi				
-	ᎠᎭᏫᎾ?	ahawina				
-	ᏩᏯᏧ ᎤᏲᎢ?	wahyaju-uyoi				
-	ᏙᏯᏊᏍ ᎣᏍᏓ?	doyagwus-osda				
-	ᎠᎭᏫᏍᎪ ᎤᏲᎢ?	ahawisgo-uyoi				
-						
-92	ᏣᎳᎩᏧ?	jalagiju				
-	ᏗᎪᏪᎵ ᏓᏂᎪᏩᏘᎭ.	digohweli-danigowhtiha				
-	ᏲᏁᎦᎾ?	yonegana				
-	ᎦᎵᏉᎩᏍ?	galgwogis				
-	ᎪᏪᎵᏍᎪ ᎠᏂᎪᏩᏘᎭ?	gohwelisgo-anigowhtiha				
-	ᎯᎳ ᎢᏯᏂ ᎠᎭᏫ?	hila-iyani-ahawi				
-	ᎫᎴ Ꮵ̣ᎪᏩᏘᎭ.	gule-jigowhtiha				
-	ᏚᏯᏍᎪ ᏓᎪᏩᏘᎭ?	tuyasgo-dagowhtiha				
-	ᎫᎴᏍ ᏕᎯ̣ᎪᏩᏘᎭ?	gules-dehigowhtiha				
-	ᎠᏴᏊ ᎩᏟ ᏥᎪᏩᏘᎭ.	ayvgwu-gihli-jigowhtiha				
-						
-100	ᎠᏂᏴᏫ.	aniyvwi				
-	ᎠᏂᎩᏟ.	anigihli				
-	ᎠᏂᏥᏍᏚ.	anijisdu				
-	ᎠᏂᏩᎭᏯ.	aniwahaya				
-	ᎠᏂᏪᏌ.	aniwesa				
-	ᎠᏴᏫ	ayvwi				
-	ᎠᎩᏟ	agihli				
-	ᎠᏥᏍᏚ	ajisdu				
-	ᎠᏩᎭᏯ	awahaya				
-	ᎠᏪᏌ	awesa				
-						
-101	ᎯᏴᏫ	hiyvwi				
-	ᎯᎩᏟ	higihli				
-	ᎯᏥᏍᏚ	hijisdu				
-	ᎯᏩᎭᏯ	hiwahaya				
-	ᎯᏪᏌ	hiwesa				
-	ᏥᏴᏫ	jiyvwi				
-	ᏥᎩᏟ	jigihli				
-	ᏥᏥᏍᏚ	jijisdu				
-	ᏥᏩᎭᏯ	jiwahaya				
-	ᏥᏪᏌ	jiwesa				
-						
-102	ᏙᎯ.	tohi				
-	ᏙᎯᏧ?	tohiju				
-	ᏙᎯᏍ?	tohis				
-	ᏙᎯᏊ.	tohigwu				
-	ᏛᎬᎪᎯ.	dvgvgohi				
-	ᏛᏍᎩᎪᎯ.	dvsgigohi				
-	ᏛᏍᏛᎪᎯ.	dvsdvgohi				
-	ᏛᏍᎩᏂᎪᎯ.	dvsginigohi				
-	ᏛᎢᏨᎪᎯ.	dvijvgohi				
-	ᏛᎢᏍᎩᎪᎯ.	dvisgigohi				
-	ᏙᎾᏓᎪᎲᎢ.	donadagohvi				
-	ᏙᏓᏓᎪᎲᎢ.	dodadagohvi				
-						
-110	ᎠᎨᏳᏣ.	agehyuja				
-	ᎠᏂᎨᏳᏣ.	anigehyuja				
-	ᎠᏧᏣ.	achuja				
-	ᎠᏂᏧᏣ.	anichuja				
-	ᎦᏙ ᎠᏛᏁᎭ?	gado-advneha				
-	ᎦᏙ ᎠᎾᏛᏁᎭ?	gado-anadvneha				
-	ᏌᎶᎵ.	saloli				
-	ᏌᏛᏗ.	sadvdi				
-	ᏗᏌᏛᏗ.	disadvdi				
-	ᏐᏈᎵ.	soquili				
-	ᏲᎾ.	yona				
-						
-111	ᏌᏊ ᏅᏯ.	sagwu-nvya				
-	ᏔᎵ ᏅᏯ.	tali-nvya				
-	ᏦᎢ ᏅᏯ.	joi-nvya				
-	ᏃᏘ ᏅᏯ.	not-nvya		kanigida-nvya		
-	ᎧᏂᎩᏓ ᏅᏯ.	kanigida-nvya	not-nvya	not-nvya		
-						
-112	ᏃᏘ.	not		kanigida		
-	ᎧᏂᎩᏓ.	kanigida	not	not		
-	ᏌᏊ.	sagwu				
-	ᏔᎵ.	tali		tali-wesa; anitali-wesa		
-	ᏔᎵ ᏪᏌ.	tali-wesa		anitali-wesa		
-	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa		tali-wesa		
-	ᏦᎢ.	joi		joi-wesa; anijoi-wesa		
-	ᏦᎢ ᏪᏌ.	joi-wesa		anijoi-wesa		
-	ᎠᏂᏦᎢ ᏪᏌ.	anijoi-wesa		joi-wesa		
-	ᏅᎩ.	nvgi				
-	ᎯᏍᎩ.	hisgi				
-	ᏑᏓᎵ.	sudali				
-	ᎦᎵᏉᎩ.	galgwogi				
-	ᏣᏁᎳ.	chanela		chunela		
-	ᏧᏁᎳ.	chunela	chanela	chanela		
-	ᏐᏁᎳ.	sonela				
-	ᏍᎪᎯ.	sgohi				
-						
-113	ᏌᏚ.	sadu				
-	ᏔᎵᏚ.	taldu				
-	ᏦᎦᏚ.	jogadu				
-	ᏂᎦᏚ.	nigadu				
-	ᏍᎩᎦᏚ.	sgigadu				
-	ᏓᎳᏚ.	daladu				
-	ᎦᎵᏆᏚ.	galgwadu				
-	ᏁᎳᏚ.	neladu				
-	ᏐᏁᎳᏚ.	sonehladu				
-						
-114	ᏔᎵᏍᎪᎯ.	20				
-	ᏔᎵᏍᎪ ᏅᎩ.	24				
-	ᏦᏍᎪᎯ.	30				
-	ᏦᏍᎪ ᏣᏁᎳ.	38				
-	ᏅᎩᏍᎪᎯ.	40				
-	ᏅᎩᏍᎪ ᏐᏁᎳ.	49				
-	ᎯᏍᎪᎯ.	50				
-	ᎯᏍᎪ ᏐᏁᎳ.	59				
-	ᏑᏓᎵᏍᎪᎯ.	60				
-	ᏑᏓᎵᏍᎪ ᎯᏍᎩ.	65				
-	ᎦᎵᏆᏍᎪᎯ.	70				
-	ᎦᎵᏆᏍᎪ ᎦᎵᏉᎩ.	77				
-	ᏁᎳᏍᎪᎯ.	80				
-	ᏁᎳᏍᎪ ᏑᏓᎵ.	86				
-	ᏐᏁᎳᏍᎪᎯ.	90				
-	ᏐᏁᎳᏍᎪ ᏑᏓᎵ.	96				
-						
-115	ᏍᎪᎯᏥᏆ.	100				
-	ᏔᎵᏥᏆ.	200				
-	ᏦᎢᏥᏆ.	300				
-	ᏅᎩᏥᏆ.	400				
-	ᎯᏍᎩᏥᏆ.	500				
-	ᏑᏓᎵᏥᏆ.	600				
-	ᎦᎵᏉᎩᏥᏆ.	700				
-	ᏁᎳᏥᏆ.	800				
-	ᏐᏁᎳᏥᏆ.	900				
-						
-120	ᎭᏢ?	hadlv				ha²dlv
-	ᎯᎳᏴᎢ?	hila-yvi	hila-iyvi			hị²la³²yv⁴ɂi
-	ᎯᎳ ᎢᏴᎢ?	hila-iyvi	hila-iyvi			hị²la⁴ i²yv⁴ɂi
-	ᎦᎪ?	gago		gagi		ga³go²
-	ᎦᎩ?	gagi		gago		ga³²gi³
-	ᎦᏙ?	gado				gạ²do¹
-	ᎦᏙᎲ?	gadohv				gạ²do¹hv³
-						
-121	ᏑᏌᏃ ᏓᏆᏙᎠ.	susano-dagwadoa		susano		
-	ᏩᏯ ᎤᏍᏗ ᏓᏆᏙᎠ.	wahya-usdi-dagwadoa		wahya-usdi; wahaya		
-	ᏣᎵ ᎠᎴ ᎺᎵ ᏙᎩᎾᏙᎠ.	chali-ale-meli-doginadoa		chali; meli		
-	ᏩᎭᏯ ᏙᎩᎾᏙᎠ.	wahaya-doginadoa		wahya-usdi; wahaya		
-	ᏕᏫᏗ, ᎹᎦᏰᏘ, ᎠᎴ ᎹᎦᎵ ᏙᎦᏙᎠ.	dewidi-magayeti-ale-magali-dogadoa		dewidi; magayeti; magali		
-	ᏌᎶᎵ ᏙᎦᏙᎠ	saloli-dogadoa		saloli		
-	ᎵᏂᏓ ᏕᏣᏙᎠ.	linida-dejadoa		linida		
-	ᏲᎾ ᏕᏣᏙᎠ.	yona-dejadoa		yona		
-	ᏣᎵ ᎠᎴ ᎹᎦᎵ ᏕᏍᏓᏙᎠ.	chali-ale-magali-desdadoa		jali; magali		
-	ᏐᏈᎵ ᏕᏍᏓᏙᎠ.	sogwili-desdadoa		sogwili		
-	ᏣᎵ, ᎹᎦᎵ, ᎠᎴ ᏣᏂ Ꮥ¹ᏣᏙᎠ.	chali-magali-ale-jani-de1jadoa		chali; magali; jani		
-	ᏥᏍᏚ Ꮥ¹ᏣᏙᎠ.	jisdu-de1jadoa		jisdu		
-	ᎵᏂᏓ ᏚᏙᎠ.	linida-dudoa		linida		
-	ᏪᏌ ᏚᏙᎠ.	wesa-dudoa		wesa		
-	ᎹᎦᏰᏘ ᎠᎴ ᎹᎦᎵ ᏚᎾᏙᎠ.	magayeti-ale-magali-dunadoa		magayeti; magali		
-	ᎩᏟ ᏚᎾᏙᎠ.	gihli-dunadoa		gihli		
-						
-122	ᎢᎮᏙᎸᎢ.	ihedolvi				ị³he²³do³²lv²ɂi
-	ᎢᏍᏕᏙᎸᎢ.	isdedolvi				ị³sde²³do³²lv²ɂi
-	ᎢᎢᏤᏙᎸᎢ.	iijedolvi				ị³ɂi¹je²³do³²lv²ɂi
-	ᎠᏃᏍᏓ.	anosda				a¹no⁴sda
-	ᎤᏂᏲᎢ.	uniyoi				u²nị²yo⁴ɂi
-	ᎩᎵᏏ.	gilisi		agilisi; anigilisi		gị²li²si
-	ᏴᏫ.	yvwi				yv²wi
-	ᎠᎩᎵᏏ.	agilisi		gilisi		ạ²gị²li²si
-	ᎠᏂᎩᎵᏏ.	anigilisi		gilisi		ạ²ni²gị²li²si
-	ᎠᏣᎳᎩ.	ajalagi				ạ²jạ²lạ²gi
-	ᎠᏂᏣᎳᎩ.	anijalagi				ạ²ni²jạ²lạ²gi
-	ᎠᏲᏁᎦ.	ayonega				ạ²yo³ne²ga
-	ᎠᏂᏲᏁᎦ.	aniyonega				ạ²ni²yo³ne²ga
-	ᎠᏴᏫᏯᎢ.	ayvwiyai				ạ²yv²wi²ya⁴ɂi
-	ᎠᏂᏴᏫᏯᎢ.	aniyvwiyai				ạ²ni²yv²wi²ya⁴ɂi
-						
-130	Ꮟ.	si				
-	ᏝᏏ.	hlasi				
-	ᎥᏝᏏ.	vhlasi	hlasi			
-	ᎪᎱᏍᏗ.	gohusdi				
-	ᎪᏍᏗ.	gosdi	gohusdi			
-	Ꮭ ᎪᎱᏍᏗ.	hla-gohusdi				
-	ᎤᏬᎵᏗ ᎪᏪᎵ.	uwoldi-gohweli				
-	ᏧᏬᎵᏗ ᏗᎪᏪᎵ.	juwoldi-digohweli				
-						
-140	ᏔᎹᏟ.	tamahli		ije-tamahli; anije-tamahli		tạ²ma²hli
-	ᎦᎦᎹ.	gagama		ije-gagama; anije-gagama		ga²³gạ³ma
-	ᎢᏤ ᏔᎹᏟ.	ije-tamahli		tamahli		
-	ᎠᏂᏤ ᏔᎹᏟ.	anije-tamahli		tamahli		
-	ᎢᏤ ᎦᎦᎹ.	ije-gagama		gagama		
-	ᎠᏂᏤ ᎦᎦᎹ.	anije-gagama		gagama		
-	ᎤᏍᎪᎸᎢ.	usgolvi				
-						
-141	ᎢᏤᎢᏳᏍᏗ.	ijeiyusdi				
-	ᎤᏁᎦ.	unega				
-	ᎤᏬᏗᎨᎢ.	uwodigei		gigagei		
-	ᎩᎦᎨᎢ.	gigagei		uwodigei		
-	ᎩᎨᎢ.	gigei	gigagei	uwodigei		
-	ᎬᎿᎨᎢ.	gvhnagei				
-	ᎬᏂᎨᎢ.	gvnigei	gvhnagei			
-	ᏌᎪᏂᎨᎢ.	sagonigei		dahaligei		
-	ᏓᎭᎵᎨᎢ.	dahaligei		sagonigei		
-	ᏓᎶᏂᎨᎢ.	dalonigei				
-	ᎩᎦᎨ ᎤᏍᎪᎸᎢ.	gigage-usgolvi		usgolvi		
-	ᎬᎿᎨ ᎤᏍᎪᎸᎢ.	gvhnage-usgolvi		usgolvi		
-	ᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	sagonige-usgolvi		usgolvi		
-	ᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	dalonige-usgolvi		usgolvi		
-	ᎠᎩᎦᎨᎢ.	agigagei				
-	ᎠᎩᎨᎢ.	agigei	agigagei			
-	ᎠᎬᎿᎨᎢ.	agvhnagei				
-	ᎠᎬᏂᎨᎢ.	agvnigei	agvhnagei			
-	ᎠᏌᎪᏂᎨᎢ.	asagonigei		adahaligei		
-	ᎠᏓᎭᎵᎨᎢ.	adahaligei		asagonigei		
-	ᎠᏓᎶᏂᎨᎢ.	adalonigei				
-	ᎠᎩᎦᎨ ᎤᏍᎪᎸᎢ.	agigage-usgolvi		usgolvi		
-	ᎠᎬᎿᎨ ᎤᏍᎪᎸᎢ.	agvhnage-usgolvi		usgolvi		
-	ᎠᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	asagonige-usgolvi		usgolvi		
-	ᎠᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	adalonige-usgolvi		usgolvi		
-						
-150	ᎠᏂᏓᎭᎵᎨᎢ.	anidahaligei		anisagonigei		
-	ᎠᏂᏓᎶᏂᎨᎢ.	anidalonigei				
-	ᎠᏂᏓᎶᏂᎨ ᎤᏂᏍᎪᎸᎢ.	anidalonige-unisgolvi		unisgolvi		
-	ᎠᏂᎩᎦᎨᎢ.	anigigagei		junodigei		
-	ᎠᏂᎩᎦᎨ ᎤᏂᏍᎪᎸᎢ.	anigigage-unisgolvi		unisgolvi		
-	ᎠᏂᎬᎿᎨᎢ.	anigvhnagei				
-	ᎠᏂᎬᎿᎨ ᎤᏂᏍᎪᎸᎢ.	anigvhnage-unisgolvi		unisgolvi		
-	ᎠᏂᏤᎢ.	anijei				
-	ᎠᏂᏤᎢᏳᏍᏗ.	anijeiyusdi				
-	ᎠᏂᏌᎪᏂᎨᎢ.	anisagonigei		anidahaligei		
-	ᎠᏂᏌᎪᏂᎨ ᎤᏂᏍᎪᎸᎢ.	anisagonige-unisgolvi		unisgolvi		
-	ᏗᏓᎭᎵᎨᎢ.	didahaligei		disagonigei		
-	ᏗᏓᎶᏂᎨᎢ.	didalonigei				
-	ᏗᏓᎶᏂᎨ ᏧᏍᎪᎸᎢ.	didalonige-jusgolvi		jusgolvi		
-	ᏗᎩᎦᎨᎢ.	digigagei		juwodigei		
-	ᏗᎩᎦᎨ ᏧᏍᎪᎸᎢ.	digigage-jusgolvi		jusgolvi		
-	ᏗᎬᎿᎨᎢ.	digvhnagei				
-	ᏗᎬᎿᎨ ᏧᏍᎪᎸᎢ.	digvhnage-jusgolvi		jusgolvi		
-	ᏗᏤᎢᏳᏍᏗ.	dijeiyusdi				
-	ᏗᏌᎪᏂᎨᎢ.	disagonigei		didahaligei		
-	ᏗᏌᎪᏂᎨ ᏧᏍᎪᎸᎢ.	disagonige-jusgolvi		jusgolvi		
-	ᏧᏁᎦ.	junega				
-	ᏧᏃᏗᎨᎢ.	junodigei		anigigagei		
-	ᏧᏬᏗᎨᎢ.	juwodigei		digigagei		
-	ᎤᏂᏁᎦ.	uninega				
-						
-160	ᎤᏬᏗᎨ ᏄᎾᏊ Ꭿ̣ᎪᏩᏘᎭ.	uwodige-nunagwu-higowhtiha				
-	ᎩᎦᎨ ᎪᏪᎵ Ꮵ̣ᎪᏩᏘᎭ.	gigage-gohweli-jigowhtiha				
-	ᎠᏴᏫᏍ ᎯᎪᏩᏘᎭ?	ayvwis-hiigowhtiha				
-	ᎯᎪᏩᏘᎭᏍ ᎠᏴᏫ?	hiigowhtihas-ayvwi				
-	ᎤᏁᎦ ᏌᎶᎵ ᎯᎪᏩᏘᎭ.	unega-saloli-hiigowhtiha				
-	ᎠᏌᎪᏂᎨᎾ ᏩᎭᏯ ᎯᎪᏩᏘᎭ?	asagonigena-wahaya-hiigowhtiha				
-	ᎯᎪᏩᏘᎭᎾ ᎠᏌᎪᏂᎨ ᏩᎭᏯ?	hiigowhtihana-asagonige-wahaya				
-	ᏗᎩᎦᎨ ᏗᎪᏪᎵ ᏕᏥ̣ᎪᏩᏘᎭ.	digigage-digohweli-dejigowhtiha				
-	ᎪᏍᏗ ᏓᎭᎵᎨ Ꮵ̣ᎪᏩᏘᎭ.	gosdi-dahalige-jigowhtiha				
-	ᏥᎪᏩᏘᎭ ᎤᏲ ᎠᎨᏯ.	jiigowhtiha-uyo-agehya				
-	ᎠᏣᎳᎩ ᎯᎪᏩᏘᎭ.	ajalagi-hiigowhtiha				
-						
-	ᎣᏍᏓ ᏥᏍᏚ ᎠᎪᏩᏘᎭ ᎠᏧᏣ.	osda-jisdu-agowhtiha-achuja				
-	ᎠᏂᏴᏫᏯᎢ ᎤᏲ ᏩᎭᏯ ᎠᏂᎪᏩᏘᎭ.	aniyvwiyai-uyo-wahaya-anigowhtiha				
-	Ꮵ̣ᎪᏩᏘᎭ ᎪᏍᏗ ᎤᏁᎦ.	jigowhtiha-gosdi-unega				
-	ᎠᏂᎨᏳᏣ ᎠᏂᎩᎦᎨ ᏥᏍᏚ ᏓᏂᎪᏩᏘᎭ.	anigehyuja-anigigage-jisdu-danigowhtiha				
-	ᎠᏂᏓᎶᏂᎨ ᏲᎾ ᎦᏥᎪᏩᏘᎭ.	anidalonige-yona-gajiigowhtiha		anidalonige-unisgolv-yona-gajiigowhtiha		
-	ᏥᎪᏩᏘᎭᏍ ᎤᏲ ᎠᏧᏣ?	jiigowhtihas-uyo-achuja				
-	ᏧᏁᎦ ᏗᎪᏪᎵ ᏕᎯ̣ᎪᏩᏘᎭ.	junega-digohweli-dehigowhtiha				
-	ᎠᎨᏳᏣᏍ ᎯᎪᏩᏘᎭ?	agehyujas-hiigowhtiha				
-	ᏥᎪᏩᏘᎭᎾ ᎠᏓᎶᏂᎨ ᏲᎾ?	jiigowhtihana-adalonige-yona				
-	ᎠᏂᎩᎵᏏ ᏗᏌᎪᏂᎨ ᎫᎴ ᏓᏂᎪᏩᏘᎭ.	anigilisi-disagonige-gule-danigowhtiha				
-						
-	ᎤᏬᏗᎨ ᏥᏍᏚ ᏥᎪᏩᏘᎭ.	uwodige-jisdu-jiigowhtiha				
-	ᎠᏂᏓᎶᏂᎨ ᎤᏂᏍᎪᎸ ᏲᎾ ᎦᏥᎪᏩᏘᎭ.	anidalonige-unisgolv-yona-gajiigowhtiha		anidalonige-yona-gajiigowhtiha		
-	ᎯᎪᏩᏘᎭ ᎢᏤᎢᏳᏍᏗ ᏌᎶᎵ.	hiigowhtiha-ijeiyusdi-saloli				
-	ᎠᏂᎨᏳᏣ ᏗᏓᎶᏂᎨ ᎤᏂᏍᎪᎸ ᎫᎴ ᏓᏂᎪᏩᏘᎭ.	anigehyuja-didalonige-unisgolv-gule-danigowhtiha				
-	 ᏗᎩᎨ ᏄᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	digige-nuna-dehigowhtiha				
-	ᎤᏂᏲ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	uniyo-anisgaya-gajiigowhtiha				
-	ᎠᎩᎨ ᏐᏈᎵ ᏥᎪᏩᏘᎭ.	agige-sogwili-jiigowhtiha				
-	ᏕᎯ̣ᎪᏩᏘᎭ ᏗᎩᎨ ᏄᎾ.	dehigowhtiha-digige-nuna				
-	ᎠᏧᏣ ᏧᏃᏗᎨ ᏩᏯ ᏓᎪᏩᏘᎭ.	achuja-junodige-wahya-dagowhtiha				
-						
-170	ᎤᎭ.	uha				
-	ᎤᏂᎭ.	uniha				
-	ᎠᎩᎭ.	agiha				
-	ᏣᎭ.	jaha				
-	ᎤᏩᎧᎭ.	uwakaha				
-	ᎤᏂᎧᎭ.	unikaha				
-	ᏥᏯᎧᎭ.	jiyakaha				
-	ᎯᏯᎧᎭ.	hiyakaha				
-						
-171	ᎪᏍᏓ	gosda				
-	ᎰᏍᏓ	hosda				
-	ᏦᏍᏓ	josda				
-	ᎠᏃᏍᏓ	anosda				
-						
-	ᎠᎩᏲᎢ	agiyoi				
-	ᏣᏲᎢ	jayoi				
-	ᏧᏲᎢ	juyoi				
-	ᎤᏂᏲᎢ	uniyoi				
-						
-	ᏥᎩᎦᎨᎢ	jigigagei				
-	ᎯᎩᎦᎨᎢ	higigagei				
-	ᏗᎩᎦᎨᎢ	digigagei				
-	ᎠᏂᎩᎦᎨᎢ	anigigagei				
-						
-	ᏣᏁᎦ	janega				
-	ᏧᏁᎦ	junega				
-	ᎤᏂᏁᎦ	uninega				
-						
-	ᎠᏉᏗᎨᎢ	agwodigei				
-	ᏦᏗᎨᎢ	jodigei				
-	ᏧᏬᏗᎨᎢ	juwodigei				
-	ᏧᏃᎩᎨᎢ	junodigei				
-						
-	ᏥᏓᎶᏂᎨᎢ	jidalonigei				
-	ᎯᏓᎶᏂᎨᎢ	hidalonigei				
-	ᏗᏓᎶᏂᎨᎢ	didalonigei				
-	ᎠᏂᏓᎶᏂᎨᎢ	anidalonigei				
-						
-180	ᎦᎪ ᎠᎩᎪᏘᎭ?	gago-agigowhtiha				
-	ᎦᎪ ᏣᎪᏘᎭ?	gago-jagowhtiha				
-						
-	ᎦᏙ ᎤᏍᏗ ᎤᎭ?	gado-usdi-uha				
-	ᎦᏙ ᎤᏍᏗ ᎤᏂᎭ?	gado-usdi-uniha				
-	ᎦᏙ ᎤᏍᎩ ᎠᎩᎭ?	gado-usdi-agiha				
-	ᎦᏙ ᎤᏍᏗ ᏣᎭ?	gado-usdi-jaha				
-	ᎦᏙ ᎤᏍᏗ ᎤᏩᎧᎭ?	gado-usdi-uwakaha				
-	ᎦᏙ ᎤᏍᏗ ᎤᏂᎧᎭ?	gado-usdi-unikaha				
-	ᎦᏙ ᎤᏍᏗ ᏥᏯᎧᎭ?	gado-usdi-jiyakaha				
-	ᎦᏙ ᎤᏍᏗ ᎯᏯᎧᎭ?	gado-usdi-hiyakaha				
-						
-	ᎾᏍᎩ ᎠᎩᎪᏩᏘᎭ.	nasgi-agigowhtiha	asgaya-agigowhtiha			
- 	Ꮭ ᎾᏍᎩ ᏯᎩᎪᏩᏘᎭ.	hla-nasgi-yagigowhtiha	hla-asgaya-yagigowhtiha			
-	ᎠᏍᎦᏯ ᎠᎩᎪᏩᏘᎭ.	asgaya-agigowhtiha				
-	Ꮭ ᎠᏍᎦᏯ ᏯᎩᎪᏩᏘᎭ.	hla-asgaya-yagigowhtiha	hla-asgaya-yagigowhtiha			
-						
-	ᎥᏍᎩᎾ ᏣᎪᏩᏘᎭ.	vsgina-jagowhtiha	agehya-jagowhtiha			
-	Ꮭ ᎥᏍᎩᎾ ᏱᏣᎪᏩᏘᎭ.	hla-vsgina-yijagowhtiha	hla-agehya-yijagowhtiha			
-	ᎠᎨᏯ ᏣᎪᏩᏘᎭ.	agehya-jagowhtiha				
-	Ꮭ ᎠᎨᏯ ᏱᏣᎪᏩᏘᎭ.	hla-agehya-yijagowhtiha	hla-agehya-yijagowhtiha			
-						
-	ᎠᏍᎦᏯ ᎥᏍᎩ ᎤᎭ.	asgaya-vsgi-uha	asgaya-nuna-uha			
-	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏳᎭ.	hla-agehya-vsgi-yuha	hla-agehya-nuna-yuha			
-	ᎠᏍᎦᏯ ᏄᎾ ᎤᎭ.	asgaya-nuna-uha				
-	Ꮭ ᎠᎨᏯ ᏄᎾ ᏳᎭ.	hla-agehya-nuna-yuha				
-						
-	ᎾᏍᎩ ᏄᎾ ᎤᏂᎭ.	nasgi-nuna-uniha	anisgaya-nuna-uniha			
-	Ꮭ ᎾᏍᎩ ᏅᏯ ᏳᏂᎭ.	hla-nasgi-nvya-yuniha	hla-anisgaya-nvya-yuniha			
-	ᎠᏂᏍᎦᏯ ᏄᎾ ᎤᏂᎭ.	anisgaya-nuna-uniha				
-	Ꮭ ᎠᏂᏍᎦᏯ ᏅᏯ ᏳᏂᎭ.	hla-anisgaya-nvya-yuniha				
-						
-	ᎯᎠ ᎠᎩᎭ.	hia-agiha	nvya-agiha			
-	Ꮭ ᎾᏍᎩ ᏯᎩᎭ.	hla-nasgi-yagiha	hla-nvya-yagiha			
-	ᏅᏯ ᎠᎩᎭ.	nvya-agiha				
-	Ꮭ ᏅᏯ ᏯᎩᎭ.	hla-nvya-yagiha				
-						
-	ᎥᏍᎩᎾ ᏣᎭ.	vsgina-jaha	nuna-jaha			
-	Ꮭ ᎥᏍᎩ ᏱᏣᎭ.	hla-vsgi-yijaha	hla-nuna-yijaha			
-	ᏄᎾ ᏣᎭ.	nuna-jaha				
-	Ꮭ ᏄᎾ ᏱᏣᎭ.	hla-nuna-yijaha				
-						
-	ᎠᏍᎦᏯ Ꮎ ᎤᏩᎧᎭ.	asgaya-na-uwakaha	asgaya-gihli-uwakaha			
-	ᎠᏍᎦᏯ ᎩᏟ ᎤᏩᎧᎭ.	asgaya-gihli-uwakaha				
-						
-	ᎥᏍᎩᎾ ᎩᏟ ᎤᏂᎧᎭ.	vsgina-gihli-unikaha	anisgaya-gihli-unikaha			
-	Ꮭ ᎥᏍᎩ ᏪᏌ ᏳᏂᎧᎭ.	hla-vsgi-wesa-yunikaha	hla-anisgaya-wesa-yunikaha			
-	ᎠᏂᏍᎦᏯ ᎩᏟ ᎤᏂᎧᎭ.	anisgaya-gihli-unikaha				
-	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏳᏂᎧᎭ.	hla-anisgaya-wesa-yunikaha				
-						
-	ᎯᎠ ᏥᏯᎧᎭ.	hia-jiyakaha	gihli-jiyakaha			
-	Ꮭ Ꮎ ᏱᏥᏯᎧᎭ.	hla-na-yijiyakaha	hla-gihli-yijiyakaha			
-	ᎩᏟ ᏥᏯᎧᎭ.	gihli-jiyakaha				
-	Ꮭ ᎩᏟ ᏱᏥᏯᎧᎭ.	hla-gihli-yijiyakaha				
-						
-	ᎾᏍᎩ ᎯᏯᎧᎭ.	nasgi-hiyakaha	wesa-hiyakaha			
-	Ꮭ ᎥᏍᎩᎾ ᏱᏯᎧᎭ.	hla-vsgina-hyiyakaha	hla-wesa-hyiyakaha			
-	ᏪᏌ ᎯᏯᎧᎭ.	wesa-hiyakaha				
-	Ꮭ ᏪᏌ ᏱᏯᎧᎭ.	hla-wesa-hyiyakaha				
-						
-190	ᏚᎭ.	duha	asgaya-nuna-duha			
-	ᏚᏂᎭ.	duniha	anisgaya-nuna-duniha			
-	ᏓᎩᎭ.	dagiha	nvya-dagiha			
-	ᏕᏣᎭ.	dejaha	nuna-dejaha			
-	ᏚᏩᎧᎭ.	duwakaha	asgaya-gihli-duwakaha			
-	ᏚᏂᎧᎭ.	dunikaha	anisgaya-gihli-dunikaha			
-	ᎦᏥᏯᎧᎭ.	gajiyakaha	gihli-gajiyakaha			
-	ᎦᎯᏯᎧᎭ.	gahiyakaha	wesa-gahiyakaha			
-						
-	ᎦᎪ ᎬᎩᎪᏩᏘᎭ?	gago-gvgigowhtiha				
-	ᎦᎪ ᎨᏣᎪᏩᏘᎭ?	gago-gejagowhtiha				
-						
-	ᎦᏙ ᏧᏍᏗ ᏚᎭ?	gado-jusdi-duha				
-	ᎦᏙ ᏧᏍᏗ ᏚᏂᎭ?	gado-jusdi-duniha				
-	ᎦᏙ ᏧᏍᏗ ᏓᎩᎭ?	gado-jusdi-dagiha				
-	ᎦᏙ ᏧᏍᏗ ᏕᏣᎭ?	gado-jusdi-dejaha				
-	ᎦᏙ ᎤᎾᏍᏗ ᏚᏩᎧᎭ?	gado-unsdi-duwakaha				
-	ᎦᏙ ᎤᎾᏍᏗ ᏚᏂᎧᎭ?	gado-unsdi-dunikaha				
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᏥᏯᎧᎭ?	gado-unsdi-gajiyakaha				
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᏯᎧᎭ?	gado-unsdi-gahiyakaha				
-						
-	Ꮭ ᏱᏚᎭ.	hla-yiduha	hla-agehya-nuna-yiduha			
-	Ꮭ ᏱᏚᏂᎭ.	hla-yiduniha	hla-anisgaya-nvya-yiduniha			
-	Ꮭ ᏱᏓᎩᎭ.	hla-yidagiha	hla-nvya-yidagiha			
-	Ꮭ ᏱᏕᏣᎭ.	hla-yidejaha	hla-nuna-yidejaha			
-	Ꮭ ᏱᏚᏩᎧᎭ.	hla-yiduwakaha	hla-asgaya-gihli-yiduwakaha			
-	Ꮭ ᏱᏚᏂᎧᎭ.	hla-yidunikaha	hla-anisgaya-wesa-yidunikaha			
-	Ꮭ ᏱᎦᏥᏯᎧᎭ.	hla-yigajiyakaha	hla-gihli-yigajiyakaha			
-	Ꮭ ᏱᎦᎯᏯᎧᎭ.	hla-yigahiyakaha	hla-wesa-yigahiyakaha			
-						
-	ᎬᎩᎪᏩᏘᎭ.	gvgigowhtiha	nasgi-gvgigowhtiha			
-	Ꮭ ᏱᎬᎩᎪᏩᏘᎭ.	hla-yigvgigowhtiha	hla-nasgi-yigvgigowhtiha			
-	ᎨᏣᎪᏩᏘᎭ.	gejagowhtiha	vsgina-gejagowhtiha			
-	Ꮭ ᏱᎨᏣᎪᏩᏘᎭ.	hla-yigejagowhtiha	hla-vsgina-yigejagowhtiha			
-						
-	ᎾᏍᎩ ᎬᎩᎪᏩᏘᎭ.	nasgi-gvgigowhtiha	nasgi-gvgigowhtiha			
-	Ꮭ ᎾᏍᎩ ᏱᎬᎩᎪᏩᏘᎭ.	hla-nasgi-yigvgigowhtiha	hla-nasgi-yigvgigowhtiha			
-	ᎥᏍᎩᎾ ᎨᏣᎪᏩᏘᎭ.	vsgina-gejagowhtiha	vsgina-gejagowhtiha			
-	Ꮭ ᎥᏍᎩᎾ ᏱᎨᏣᎪᏩᏘᎭ.	hla-vsgina-yigejagowhtiha	hla-vsgina-yigejagowhtiha			
-						
-	ᎠᏍᎦᏯ ᎥᏍᎩ ᏚᎭ.	asgaya-vsgi-duha	asgaya-nuna-duha			
-	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏱᏚᎭ.	hla-agehya-vsgi-yiduha	hla-agehya-nuna-yiduha			
-	ᎠᏍᎦᏯ ᏄᎾ ᏚᎭ.	asgaya-nuna-duha				
-	Ꮭ ᎠᎨᏯ ᏄᎾ ᏱᏚᎭ.	hla-agehya-nuna-yiduha				
-						
-	ᎾᏍᎩ ᏄᎾ ᏚᏂᎭ.	nasgi-nuna-duniha	anisgaya-nuna-duniha			
-	Ꮭ ᎾᏍᎩ ᏅᏯ ᏱᏚᏂᎭ.	hla-nasgi-nvya-yiduniha	hla-anisgaya-nvya-yiduniha			
-	ᎠᏂᏍᎦᏯ ᏄᎾ ᏚᏂᎭ.	anisgaya-nuna-duniha				
-	Ꮭ ᎠᏂᏍᎦᏯ ᏅᏯ ᏱᏚᏂᎭ.	hla-anisgaya-nvya-yiduniha				
-						
-	ᎯᎠ ᏓᎩᎭ.	hia-dagiha	nvya-dagiha			
-	Ꮭ ᎾᏍᎩ ᏱᏓᎩᎭ.	hla-nasgi-yidagiha	hla-nvya-yidagiha			
-	ᏅᏯ ᏓᎩᎭ.	nvya-dagiha				
-	Ꮭ ᏅᏯ ᏱᏓᎩᎭ.	hla-nvya-yidagiha				
-						
-	ᎥᏍᎩᎾ ᏕᏣᎭ.	vsgina-dejaha	nuna-dejaha			
-	Ꮭ ᎥᏍᎩ ᏱᏕᏣᎭ.	hla-vsgi-yidejaha	hla-nuna-yidejaha			
-	ᏄᎾ ᏕᏣᎭ.	nuna-dejaha				
-	Ꮭ ᏄᎾ ᏱᏕᏣᎭ.	hla-nuna-yidejaha				
-						
-	ᎠᏍᎦᏯ Ꮎ ᏚᏩᎧᎭ.	asgaya-na-duwakaha	asgaya-gihli-duwakaha			
-	Ꮭ ᎠᏍᎦᏯ Ꮎ ᏱᏚᏩᎧᎭ.	hla-asgaya-na-yiduwakaha	hla-asgaya-gihli-yiduwakaha			
-	ᎠᏍᎦᏯ ᎩᏟ ᏚᏩᎧᎭ.	asgaya-gihli-duwakaha				
-	Ꮭ ᎠᏍᎦᏯ ᎩᏟ ᏱᏚᏩᎧᎭ.	hla-asgaya-gihli-yiduwakaha				
-						
-	ᎥᏍᎩᎾ ᎩᏟ ᏚᏂᎧᎭ.	vsgina-gihli-dunikaha	anisgaya-gihli-dunikaha			
-	Ꮭ ᎥᏍᎩ ᏪᏌ ᏱᏚᏂᎧᎭ.	hla-vsgi-wesa-yidunikaha	hla-anisgaya-wesa-yidunikaha			
-	ᎠᏂᏍᎦᏯ ᎩᏟ ᏚᏂᎧᎭ.	anisgaya-gihli-dunikaha				
-	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏱᏚᏂᎧᎭ.	hla-anisgaya-wesa-yidunikaha				
-						
-	ᎯᎠ ᎦᏥᏯᎧᎭ.	hia-gajiyakaha	gihli-gajiyakaha			
-	Ꮭ Ꮎ ᏱᎦᏥᏯᎧᎭ.	hla-na-yigajiyakaha	hla-gihli-yigajiyakaha			
-	ᎩᏟ ᎦᏥᏯᎧᎭ.	gihli-gajiyakaha				
-	Ꮭ ᎩᏟ ᏱᎦᏥᏯᎧᎭ.	hla-gihli-yigajiyakaha				
-						
-	ᎾᏍᎩ ᎦᎯᏯᎧᎭ.	nasgi-gahiyakaha	wesa-gahiyakaha			
-	Ꮭ ᎥᏍᎩᎾ ᏱᎦᎯᏯᎧᎭ.	hla-vsgina-yigahiyakaha	hla-wesa-yigahiyakaha			
-	ᏪᏌ ᎦᎯᏯᎧᎭ.	wesa-gahiyakaha				
-	Ꮭ ᏪᏌ ᏱᎦᎯᏯᎧᎭ.	hla-wesa-yigahiyakaha				
-						
-200	ᎢᎩ.	igi				
-	ᎢᎦ.	iga				
-	ᎨᏐᎢ.	gesoi				
+#CHAPTER	TEXT	AUDIO	ANSWER-PIC	BLACKLIST-PIC	ENGLISH GLOSS	NOTES
+40	ᎠᏲ!	ayo		hla; uyoi	Ouch!	
+	ᎣᏍᏓ.	osda		vv; howa	Good. Well.	
+	ᎣᏍᏛ.	osdv	osda	vv; howa	Good. Well.	
+	ᎤᏲᎢ.	uyoi		hla; ayo	Bad. Poor. Evil.	
+	ᎥᎥ.	vv		osda; howa	Yes.	
+	ᎥᏍᎩᎩ?	vsgigi			Really?	
+	Ꮭ.	hla		uyoi; ayo	No.	
+	ᎰᏩ.	howa		vv; osda	Okay. Alright. Fine. You’re welcome.	
+	Ꮒ!	ni			Look!	
+	ᏣᎳᎩ.	jalagi			Cherokee.	
+	ᏩᏙ.	wado			Thanks!	
+	ᏲᏁᎦ.	yonega			English.	
+	ᎣᏏᏲ.	osiyo			Hello.	
+	ᏴᏭᏁᎦ.	yvwunega	yonega		English.	
+						
+50	ᎦᏙ ᎤᏍᏗ?	gado-usdi			Which one?	
+	ᎯᎳ ᎢᎦ?	hila-iga			How many (inanimate)?	
+	ᎯᎳ ᎢᏯᏂ?	hila-iyani			How many (animate)?	
+	ᏌᏊ.	sagwu			One.	
+	ᏔᎵ.	tali			Two (inanimate).	
+	ᎠᏂᏔᎵ.	anitali			Two (animate).	
+	ᏦᎢ.	joi			Three (inanimate).	
+	ᎠᏂᏦᎢ.	anijoi			Three (animate).	
+	ᏅᎩ.	nvgi			Four.	
+	ᎯᏍᎩ.	hisgi			Five.	
+	ᏑᏓᎵ.	sudali			Six.	
+	ᎦᎵᏉᎩ.	galgwogi			Seven.	
+	ᎢᎬᏱᎢ.	igvyii			First. The front-most place.	
+	ᎠᏂᏔᎵᏁᎢ.	anitalinei			Second (animate).	
+	ᏔᎵᏁᎢ.	talinei			Second (inanimate).	
+	ᎠᏂᏦᎢᏁᎢ.	anijoinei			Third (animate).	
+	ᏦᎢᏁᎢ.	joinei			Third (inanimate).	
+	ᏅᎩᏁᎢ.	nvginei			Fourth.	
+	ᎯᏍᎩᏁᎢ.	hisginei			Fifth.	
+	ᏑᏓᎵᏁᎢ.	sudalinei			Sixth.	
+	ᎦᎵᏉᎩᏁᎢ.	galgwoginei			Seventh.	
+						
+60	ᎿᏛᎦ.	hnadvga			You one, do it.	
+	ᏂᏔᏛᎦ.	nitadvga			You one, do them.	
+	ᏘᎪᎵᏯ.	tigoliya			You one, read them.	
+	ᎰᏪᎸᎦ.	hohwelvga			You one, write it.	
+	ᏙᏪᎸᎦ.	tohwelvga			You one, write them.	
+						
+	ᎠᎨᏯ.	agehya		agehya	A woman.	
+	ᎠᏂᎨᏯ.	anigehya		anigehya	Women.	
+	ᎠᏂᏍᎦᏯ.	anisgaya		anisgaya	Men.	
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ.	anitali-anigehya		anigehya	Two women.	
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᎠᎴ ᏔᎵ ᏄᎾ.	anitali-anigehya-ale-tali-nuna		anigehya	Two women and two potatoes.	
+	ᎠᏂᏔᎵ ᎠᏂᎨᏯ ᏃᎴ ᏦᎢ ᏄᎾ.	anitali-anigehya-nole-joi-nuna		anigehya	Two women and three potatoes.	
+	ᎠᏂᏔᎵ ᎠᏂᏍᎦᏯ.	anitali-anisgaya		anisgaya	Two men.	
+	ᎠᏂᏔᎵ ᎩᏟ.	anitali-gihli		gihli	Two dogs.	
+	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa		wesa	Two cats.	
+	ᎠᏂᏦᎢ ᎠᏂᎨᏯ.	anijoi-anigehya		anigehya	Three women.	
+	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ.	anijoi-anisgaya		anisgaya	Three men.	
+	ᎠᏂᏦᎢ ᎠᏂᏍᎦᏯ ᏃᎴ ᏔᎵ ᏄᎾ.	anijoi-anisgaya-nole-tali-nuna		anisgaya	Three men and two potatoes.	
+	ᎠᏍᎦᏯ.	asgaya		asgaya	A man.	
+	ᎦᏙ ᎤᎾᏍᏗ ᏓᎪᏩᏘᎭ?	gado-unsdi-dagowhtiha		dagowhtiha	What all (animate) does he/she see?	
+	ᎦᏙ ᎤᎾᏍᏗ ᏓᏂᎪᏩᏘᎭ?	gado-unsdi-danigowhtiha		danigowhtiha	What all (animate) do they see?	
+	ᎦᏙ ᏧᏍᏗ ᏓᎪᏩᏘᎭ?				What all (inanimate) does he/she see?	skipped by accident
+	ᎦᏙ ᏧᏍᏗ ᏓᏂᎪᏩᏘᎭ?				What all (inanimate) do they see?	skipped by accident
+	ᎦᏙ ᎤᎾᏍᏗ?	gado-unsdi			What all (animate)?	
+	ᎦᏙ ᎤᏍᏗ ᎠᎪᏩᏘᎭ?	gado-usdi-agowhtiha		agowhtiha	What does he/she see?	
+	ᎦᏙ ᎤᏍᏗ ᎠᏂᎪᏩᏘᎭ?	gado-usdi-anigowhtiha		anigowhtiha	What does he/she see?	
+	ᎩᏟ.	gihli		gihli	A dog. Dogs.	
+	ᏄᎾ.	nuna		nuna	A potato. Potatoes.	
+	ᏄᎾ ᎠᎴ ᏅᏯ.	nuna-ale-nvya		nuna	A potato or potatoes and a rock or rocks.	
+	ᏄᎾ ᏃᎴ ᏅᏯ.	nuna-nole-nvya	nuna-ale-nvya	nuna	A potato or potatoes and a rock or rocks.	
+	ᏅᏯ.	nvya		nvya	A rock. Rocks.	
+	ᏌᏊ ᎠᎨᏯ.	sagwu-agehya		agehya	One woman.	
+	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏅᏯ.	sagwu-agehya-ale-sagwu-nvya		agehya	One woman and one rock.	
+	ᏌᏊ ᎠᎨᏯ ᎠᎴ ᏌᏊ ᏪᏌ.	sagwu-agehya-ale-sagwu-wesa		agehya	One woman and one cat.	
+	ᏌᏊ ᎠᎨᏯ ᏃᎴ ᏌᏊ ᏄᎾ.	sagwu-agehya-nole-sagwu-nuna		agehya	One woman and one potato.	
+	ᏌᏊ ᎠᏍᎦᏯ.	sagwu-asgaya		asgaya	One man.	
+	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᎩᏟ.	sagwu-asgaya-nole-sagwu-gihli		asgaya	One man and one dog.	
+	ᏌᏊ ᎠᏍᎦᏯ ᏃᎴ ᏌᏊ ᏄᎾ.	sagwu-asgaya-nole-sagwu-nuna		asgaya	One man and one potato.	
+	ᏌᏊ ᎩᏟ.	sagwu-gihli		gihli	One dog.	
+	ᏌᏊ ᏄᎾ.	sagwu-nuna		nuna	One potato.	
+	ᏌᏊ ᏅᏯ.	sagwu-nvya		nvya	One rock.	
+	ᏌᏊ ᏪᏌ.	sagwu-wesa		wesa	One cat.	
+	ᏔᎵ ᏄᎾ.	tali-nuna		nuna	Two potatoes.	
+	ᏦᎢ ᏄᎾ.	joi-nuna		nuna	Three potatoes.	
+	ᏦᎢ ᏅᏯ.	joi-nvya		nvya	Three rocks.	
+	ᏪᏌ.	wesa		wesa	A cat. Cats.	
+	ᏪᏌ ᎠᎴ ᎩᏟ.	wesa-ale-gihli		wesa	A cat or cats and a dog or dogs.	
+	ᏪᏌ ᎠᎴ ᏅᏯ.	wesa-ale-nvya		wesa	A cat or cats and a rock or rocks.	
+	ᏪᏌ ᏃᎴ ᎩᏟ.	wesa-nole-gihli	wesa-ale-gihli	wesa	A cat or cats and a dog or dogs.	
+	ᏪᏌ ᏃᎴ ᏅᏯ.	wesa-nole-nvya	wesa-ale-nvya	wesa	A cat or cats and a rock or rocks.	
+						
+61	ᎠᎪᏩᏘᎭ.	agowhtiha		agowhtiha	He, she sees him, it.	
+	ᎠᏂᎪᏩᏘᎭ.	anigowhtiha		anigowhtiha	They see him, it.	
+	ᎩᏟ ᎠᎪᏩᏘᎭ.	gihli-agowhtiha		agowhtiha	A dog, he or she sees it.	
+	ᎩᏟ ᎠᏂᎪᏩᏘᎭ.	gihli-anigowhtiha		anigowhtiha	A dog, they see it.	
+	ᎩᏟ ᏓᎪᏩᏘᎭ.	gihli-dagowhtiha		dagowhtiha	Dogs, he or she sees them.	
+	ᎩᏟ ᏓᏂᎪᏩᏘᎭ.	gihli-danigowhtiha		danigowhtiha	Dogs, they see them.	
+	ᏄᎾ ᎠᎪᏩᏘᎭ.	nuna-agowhtiha		agowhtiha	A potato, he or she sees it.	
+	ᏄᎾ ᎠᏂᎪᏩᏘᎭ.	nuna-anigowhtiha		anigowhtiha	A potato, they see it.	
+	ᏄᎾ ᏓᎪᏩᏘᎭ.	nuna-dagowhtiha		dagowhtiha	Potatoes, he or she sees them.	
+	ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	nuna-danigowhtiha		danigowhtiha	Potatoes, they see them.	
+	ᏅᏯ ᎠᎪᏩᏘᎭ.	nvya-agowhtiha		agowhtiha	A rock, he or she sees it.	
+	ᏅᏯ ᎠᏂᎪᏩᏘᎭ.	nvya-anigowhtiha		anigowhtiha	A rock, they see it.	
+	ᏅᏯ ᏓᎪᏩᏘᎭ.	nvya-dagowhtiha		dagowhtiha	Rocks, he or see sees them.	
+	ᏅᏯ ᏓᏂᎪᏩᏘᎭ.	nvya-danigowhtiha		danigowhtiha	Rocks, they see them.	
+	ᏓᎪᏩᏘᎭ.	dagowhtiha		dagowhtiha	He, she sees them.	
+	ᏓᏂᎪᏩᏘᎭ.	danigowhtiha		danigowhtiha	They see them.	
+	ᏪᏌ ᎠᎪᏩᏘᎭ.	wesa-agowhtiha		agowhtiha	A cat, he or see sees it.	
+	ᏪᏌ ᎠᏂᎪᏩᏘᎭ.	wesa-anigowhtiha		anigowhtiha	A cat, they see it.	
+	ᏪᏌ ᏓᎪᏩᏘᎭ.	wesa-dagowhtiha		dagowhtiha	Cats, he or she sees them.	
+	ᏪᏌ ᏓᏂᎪᏩᏘᎭ.	wesa-danigowhtiha		danigowhtiha	Cats, they see them.	
+						
+62	ᎠᎨᏯ ᎠᎴ ᏪᏌ ᏅᏯ ᎠᏂᏩᏘᎭ.	agehya-ale-wesa			A woman and a cat, a rock, they see it.	
+	ᎠᎨᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	agehya-anigehya			A woman, the women and a rock or rocks, she sees them.	
+	ᎠᎨᏯ ᏅᏯ ᎠᎪᏩᏘᎭ.	agehya-nvya			A woman, a rock, she sees it.	
+	ᎠᏂᎨᏯ ᎠᎨᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anigehya-agehya			The women, a woman and a rock or rocks, they see them.	
+	ᎠᏂᎨᏯ ᏄᎾ ᎠᏂᎪᏩᏘᎭ.	anigehya-nuna			The woman, a rock, they see it.	
+	ᎠᏂᏍᎦᏯ ᎠᎨᏯ ᎠᎴ ᏅᏯ ᏓᏂᎪᏩᏘᎭ.	anisgaya-agehya			The men, a woman and a rock or rocks, they see them.	
+	ᎠᏂᏍᎦᏯ ᎠᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anisgaya-asgaya			The men, a man and a potato or potatoes, they see them.	
+	ᎠᏂᏍᎦᏯ ᏅᏯ ᎠᏂᎪᏩᏘᎭ.	anisgaya-nvya			The men, a rock, they see it.	
+	ᎠᏍᎦᏯ ᎠᎴ ᎩᏟ ᏅᏯ ᎠᏂᏩᏘᎭ.	asgaya-ale-gihli			A man and a dog or dogs, a rock, they see it.	
+	ᎠᏍᎦᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anigehya			A man, the women and a potato or potatoes, he sees them.	
+	ᎠᏍᎦᏯ ᎠᏂᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anisgaya			A man, the men and a potato or potatoes, he sees them.	
+	ᎠᏍᎦᏯ ᎩᏟ ᎠᎪᏩᏘᎭ.	asgaya-gihli			A man, a dog, he sees it.	
+						
+70	ᎠᏂ.	ahni	ahni		Here.	
+	ᎢᎾ.	ina			Far.	
+	ᎤᎿ.	uhna			There.	
+	ᎾᎥ.	nav			Near.	
+	ᎠᎭᏂ.	ahani	ahni		Here.	
+	ᎯᎪᏩᏘᎭ.	hiigowhtiha		higowhtiha	You see him, her.	
+	ᏥᎪᏩᏘᎭ.	jiigowhtiha		jigowhtiha	I see him, her.	
+	ᎦᎯᎪᏩᏘᎭ.	gahiigowhtiha			You see them (animate).	
+	ᎦᏥᎪᏩᏘᎭ.	gajiigowhtiha			I see them (animiate).	
+	Ꭿ̣ᎪᏩᏘᎭ.	higowhtiha		hiigowhtiha	You see it.	
+	Ꮵ̣ᎪᏩᏘᎭ.	jigowhtiha		jiigowhtiha	I see it.	
+	ᏕᎯ̣ᎪᏩᏘᎭ.	dehigowhtiha			You see them (inanimate).	
+	ᏕᏥ̣ᎪᏩᏘᎭ.	dejigowhtiha			I see them (inanimate).	
+						
+71	ᎤᏪᏴᎢ	uweyvi			A river.	u¹we³yv⁴ɂi
+	ᎠᎹᏳᏟᏗ	amayuhldi			A river bank.	ạ²ma²yuhl⁴di
+	ᏡᎬᎢ	hlgvi			A tree.	hlgv⁴ɂi
+	ᏕᏡᎬᎢ	dehlgvi			Trees.	dehl²³gv⁴ɂi
+						
+72	ᎠᎭᏂ ᎠᎨᏯ ᏥᎪᏩᏘᎭ.	ahani-agehya			Here a woman, her I see.	
+	ᎠᎭᏂ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ.	ahani-anigehya			Here women, them I see.	
+	ᎠᎭᏂ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	ahani-anisgaya			Here men, them I see.	
+	ᎠᎭᏂ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ.	ahani-asgaya			Here a man, him I see.	
+	ᎠᎭᏂ ᎩᏟ ᏥᎪᏩᏘᎭ.	ahani-gihli			Here a dog, it I see.	
+	ᎠᎭᏂ ᏄᎾ Ꮵ̣ᎪᏩᏘᎭ.	ahani-nuna			Here a potato, it I see.	
+	ᎠᎭᏂ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	ahani-wesa			Here cats, them I see.	
+	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-agehya-nvya			There a woman, her I see and a rock, it I see.	
+	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ.	uhna-agehya			There a woman, her I see.	
+	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anigehya-nuna			There women, them I see and potatoes, them I see.	
+	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anigehya			There women, them I see.	
+	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anisgaya-nuna			There men, them I see and potatoes, them I see.	
+	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anisgaya			There men, them I see.	
+	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-asgaya-nvya			There a man, him I see and a rock, it I see.	
+	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ.	uhna-asgaya			There a man, him I see.	
+	ᎤᎿ ᎩᏟ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-gihli-nvya			There dogs, them I see and rocks, them I see.	
+	ᎤᎿ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-nvya-dejigowhtiha			There rocks, them I see.	
+	ᎤᎿ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-nvya-jigowhtiha			There a rock, it I see.	
+	ᎤᎿ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	uhna-wesa-gajigowhtiha			There cats, them I see.	
+	ᎤᎿ ᏪᏌ ᏥᎪᏩᏘᎭ.	uhna-wesa-jigowhtiha			There a cat, it I see.	
+	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᎪᏩᏘᎭ?	gado-unsdi-gahiigowhtiha			What all (animate) do you see?	
+	ᎦᏙ ᎤᏍᏗ ᎯᎪᏩᏘᎭ?	gado-usdi-hiigowhtiha			What (animate) do you see?	
+	ᎦᏙ ᎤᏍᏗ Ꭿ̣ᎪᏩᏘᎭ?	gado-usdi-higowhtiha			What (inanimate) do you see?	
+	ᎦᏙ ᏧᏍᏗ ᏕᎯ̣ᎪᏩᏘᎭ?	gado-jusdi-dehigowhtiha			What all (inanimate) do you see?	
+	ᎦᏙ ᎤᎾᏍᏗ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-gajiigowhtiha			What all (animate) do I see?	
+	ᎦᏙ ᎤᏍᏗ ᏥᎪᏩᏘᎭ?	gado-usdi-jiigowhtiha			What (animate) do I see?	
+	ᎦᏙ ᎤᏍᏗ Ꮵ̣ᎪᏩᏘᎭ?	gado-usdi-jigowhtiha			What (inanimate) do I see?	
+	ᎦᏙ ᏧᏍᏗ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-dejigowhtiha			What all (inanimate) do I see?	
+						
+80	ᎥᏍᎩ.	vsgi	vsgi		Him. Her. Them. That. Those.	v¹sgị
+	ᎥᏍᎩᎾ.	vsgina	vsgi		Him. Her. Them. That. Those.	v¹sgị²na
+	ᎯᎠ.	hia	hia		Him. Her. Them. This. These.	hị²ɂa
+	ᎯᎢ.	hii	hia		Him. Her. Them. This. These.	hị²ɂi
+	Ꮎ.	na	vsgi		Him. Her. Them. That. Those.	na
+	ᎾᏍᎩ.	nasgi	vsgi		Him. Her. Them. That. Those.	na¹sgi
+	ᏍᎩᎾ.	sgina	vsgi		Him. Her. Them. That. Those.	sgị²na
+						
+81	ᎠᎨᏯ ᎠᏂ ᏥᎪᏩᏘᎭ.	agehya-ahni			A woman here, her I see.	x
+	ᎠᎨᏯ ᎤᎿ ᏥᎪᏩᏘᎭ.	agehya-uhna		agehya-uhna; na-agehya	A woman there, her I see.	x
+	ᎠᏴ.	ayv	ayv1; ayv2; ayv3	ayv	I. We. Me. Us.	x
+						
+	ᎯᎠ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	hia-nav-gajiigowhtiha	hia-nav-gajiigowhtiha		These near, them I see.	
+	ᎯᎢ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	hii-nav-gajiigowhtiha	hia-nav-gajiigowhtiha		These near, them I see.	
+	ᎯᎠ ᎾᎥ ᏥᎪᏩᏘᎭ.	hia-nav-jiigowhtiha	hia-nav-jiigowhtiha	hia-nav-jigowhtiha	This near, him or her I see.	
+	ᎯᎢ ᎾᎥ ᏥᎪᏩᏘᎭ.	hii-nav-jiigowhtiha	hia-nav-jiigowhtiha	hia-nav-jigowhtiha	This near, him or her I see.	
+	ᎯᎠ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	hia-nav-jigowhtiha		hia-nav-jiigowhtiha	This near, it I see.	
+						
+	ᏪᏌ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-hlgv-nav-gajiigowhtiha			Cats, a tree near, them I see.	
+	ᎩᏟ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-hlgv-nav-gajiigowhtiha			Dogs, a tree near, them I see.	
+	ᏪᏌ ᎠᎨᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-agehya-nav-gajiigowhtiha			Cats, a woman near, them I see.	
+	ᎩᏟ ᏅᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-nvya-nav-gajiigowhtiha			Dogs, a rock near, them I see.	
+	ᏄᎾ ᏅᏯ ᎾᎥ ᏕᏥ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-dejigowhtiha			Potatoes, a rock or rocks near, them I see.	
+	ᏄᎾ ᏅᏯ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-jigowhtiha			A potato, a rock near, it I see.	
+						
+	ᎥᏍᎩ ᎢᎾ ᎯᎪᏩᏘᎭ.	vsgi-ina-hiigowhtiha			That far, he or she you see.	
+	ᏍᎩᎾ ᎢᎾ ᎯᎪᏩᏘᎭ.	sgina-ina-hiigowhtiha	vsgi-ina-hiigowhtiha		That far, he or she you see.	
+						
+	ᎥᏍᎩ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	vsgi-ina-gahiigowhtiha			Those far, them (animate) you see.	
+	ᏍᎩᎾ ᎢᎾ ᎦᎯᎪᏩᏘᎭ.	sgina-ina-gahiigowhtiha	vsgi-ina-gahiigowhtiha		Those far, them (animate) you see.	
+						
+	ᎥᏍᎩᎾ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	vsgina-ina-higowhtiha			That far, it you see.	
+	ᎾᏍᎩ ᎢᎾ Ꭿ̣ᎪᏩᏘᎭ.	nasgi-ina-higowhtiha	vsgina-ina-higowhtiha		That far, it you see.	
+						
+	ᎾᏍᎩ ᎢᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	nasgi-ina-dehigowhtiha			Those far, them (inanimate) you see.	
+						
+	ᎦᏙ ᎤᎾᏍᏗ ᎠᏂ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-ahni			What all (animate) here do I see?	
+	ᎦᏙ ᎤᎾᏍᏗ ᎤᎿ ᎦᏥᎪᏩᏘᎭ?	gado-unsdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna	What all (animate) there do I see?	
+	ᎦᏙ ᎤᏍᏗ ᎠᏂ ᏥᎪᏩᏘᎭ?	gado-usdi-ahni			What (animate) here do I see?	
+	ᎦᏙ ᎤᏍᏗ ᎤᎿ ᏥᎪᏩᏘᎭ?	gado-usdi-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna	What (animate) there do I see?	
+	ᎦᏙ ᏧᏍᏗ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ?	gado-jusdi-uhna			What all (inanimate) there do I see?	
+						
+	ᎩᏟ ᎠᏂ ᏥᎪᏩᏘᎭ.	gihli-ahni			A dog here, it I see.	
+	ᎩᏟ ᎤᎿ ᎦᏥᎪᏩᏘᎭ.	gihli-uhna		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna	Dogs there, them I see.	
+						
+	ᎭᏢ ᎠᎨᏯ?	hadlv-agehya			Where is the woman?	
+	ᎭᏢ ᎩᏟ?	hadlv-gihli			Where is the dog? Where are the dogs?	
+	ᎭᏢ ᏅᏯ?	hadlv-nvya			Where is the rock? Where are the rocks?	
+						
+	ᎯᎠ ᎠᏍᎦᏯ ᎠᏂ.	hia-asgaya			This man is here.	
+	ᎯᎠ ᏄᎾ ᎠᏂ.	hia-nuna			This potato is here. These potatoes are here.	
+						
+	Ꮎ ᎠᎨᏯ ᎤᎿ.	na-agehya		agehya-uhna; na-agehya	That woman is there.	
+	Ꮎ ᎩᏟ ᎤᎿ.	na-gihli		gado-unsdi-uhna; gado-usdi-uhna; vsgi-ina-gahiigowhtiha; vsgi-ina-hiigowhtiha; na-gihli; gihli-uhna	That dog is there. Those dogs are there.	
+						
+	ᏂᎯ.	nihi	nihi1; nihi2; nihi3	nihi	You one. You two. You all.	
+						
+	ᏅᏯ ᎤᎿ ᏕᏥ̣ᎪᏩᏘᎭ.	nvya-uhna			Rocks there, them I see.	
+	ᏪᏌ ᎠᏂ ᏥᎪᏩᏘᎭ.	wesa-ahni			A cat here, it I see.	
+	ᏪᏌ ᎤᎿ ᏥᎪᏩᏘᎭ.	wesa-uhna			A cat there, it I see.	
+						
+90	ᎠᎭᏫ.	ahawi	ahawi		A deer. Deer.	
+	ᎠᏫ.	ahwi	ahawi		A deer. Deer.	
+	ᎪᏪᎵ.	gohweli			A piece of paper.	
+	ᏗᎪᏪᎵ.	digohweli			Pieces of paper. A book. Books.	
+	ᎫᎴ.	gule			An acorn. Acorns.	
+	ᏙᏯ.	doya			A beaver. Beaver.	
+	ᏚᏯ.	tuya			A bean. Beans.	
+	ᏥᏍᏚ.	jisdu			A rabbit. Rabbits.	
+	ᏩᎭᏯ.	wahaya	wahaya	wahya-usdi; wahya-unsdi	A wolf. Wolves.	
+	ᏩᏯ.	wahya	wahaya	wahya-usdi; wahya-unsdi	A wolf. Wolves.	
+	ᏩᏯ ᎤᏍᏗ.	wahya-usdi		wahaya	A coyote. A little wolf.	
+	ᏩᏯ ᎤᎾᏍᏗ.	wahya-unsdi		wahaya	Coyotes. Little wolves.	
+						
+91	ᎠᎨᏯᎾ?	agehyana			What about the woman?	
+	ᏥᏍᏚᏍ ᎣᏍᏓ?	jisdus-osda			Is the rabbit good?	
+	ᏙᏯ ᎣᏍᏓ.	doya-osda			A good beaver.	
+	ᏅᏯᎾ?	nvyana			What about the rock?	
+	ᎠᎨᏯ ᎤᏲᎢ.	agehya-uyoi			The woman is bad.	
+	ᏩᏯᏍᎪ ᎤᏲᎢ?	wahyasgo-uyoi			Is the wolf bad?	
+	ᎠᎭᏫᎾ?	ahawina			What about the deer?	
+	ᏩᏯᏧ ᎤᏲᎢ?	wahyaju-uyoi			The wolf is bad, right?	
+	ᏙᏯᏊᏍ ᎣᏍᏓ?	doyagwus-osda			Is just the beaver good?	
+	ᎠᎭᏫᏍᎪ ᎤᏲᎢ?	ahawisgo-uyoi			Is the deer bad?	
+						
+92	ᏣᎳᎩᏧ?	jalagiju			It is Cherokee, right?	
+	ᏗᎪᏪᎵ ᏓᏂᎪᏩᏘᎭ.	digohweli-danigowhtiha			Papers or a book or books, them see them.	
+	ᏲᏁᎦᎾ?	yonegana			What about English?	
+	ᎦᎵᏉᎩᏍ?	galgwogis			Is it seven?	
+	ᎪᏪᎵᏍᎪ ᎠᏂᎪᏩᏘᎭ?	gohwelisgo-anigowhtiha			Is it a paper they see?	
+	ᎯᎳ ᎢᏯᏂ ᎠᎭᏫ?	hila-iyani-ahawi			How many (animate) deer?	
+	ᎫᎴ Ꮵ̣ᎪᏩᏘᎭ.	gule-jigowhtiha			An acorn, it I see.	
+	ᏚᏯᏍᎪ ᏓᎪᏩᏘᎭ?	tuyasgo-dagowhtiha			Beans, does he or she see them? Is it beans he or she sees?	
+	ᎫᎴᏍ ᏕᎯ̣ᎪᏩᏘᎭ?	gules-dehigowhtiha			Acorns, you see them, right?	
+	ᎠᏴᏊ ᎩᏟ ᏥᎪᏩᏘᎭ.	ayvgwu-gihli-jigowhtiha			Just I, a dog, I see it.	
+						
+100	ᎠᏂᏴᏫ.	aniyvwi			People.	
+	ᎠᏂᎩᏟ.	anigihli			The Dog people.	
+	ᎠᏂᏥᏍᏚ.	anijisdu			The Rabbit people.	
+	ᎠᏂᏩᎭᏯ.	aniwahaya			The Wolf people.	
+	ᎠᏂᏪᏌ.	aniwesa			The Cat people.	
+	ᎠᏴᏫ	ayvwi			A person.	
+	ᎠᎩᏟ	agihli			A person of the Dog people.	
+	ᎠᏥᏍᏚ	ajisdu			A person of the Rabbit people.	
+	ᎠᏩᎭᏯ	awahaya			A person of the Wolf people.	
+	ᎠᏪᏌ	awesa			A person of the Cat people.	
+						
+101	ᎯᏴᏫ	hiyvwi			What time? When?	
+	ᎯᎩᏟ	higihli			You, a Dog person.	
+	ᎯᏥᏍᏚ	hijisdu			You, a Rabbit person.	
+	ᎯᏩᎭᏯ	hiwahaya			You, a Wolf person.	
+	ᎯᏪᏌ	hiwesa			You, a Cat person.	
+	ᏥᏴᏫ	jiyvwi			Me, a person.	
+	ᏥᎩᏟ	jigihli			Me, a Dog person.	
+	ᏥᏥᏍᏚ	jijisdu			Me, a Rabbit person.	
+	ᏥᏩᎭᏯ	jiwahaya			Me, a Wolf person.	
+	ᏥᏪᏌ	jiwesa			Me, a Cat person.	
+						
+102	ᏙᎯ.	tohi			Peaceful. Still.	
+	ᏙᎯᏧ?	tohiju			Peaceful, right?	
+	ᏙᎯᏍ?	tohis			Is it peaceful?	
+	ᏙᎯᏊ.	tohigwu			Just peaceful.	
+	ᏛᎬᎪᎯ.	dvgvgohi			You, I will see.	
+	ᏛᏍᎩᎪᎯ.	dvsgigohi			Me, you will see.	
+	ᏛᏍᏛᎪᎯ.	dvsdvgohi			You two, I will see.	
+	ᏛᏍᎩᏂᎪᎯ.	dvsginigohi			Me, you two will see.	
+	ᏛᎢᏨᎪᎯ.	dvijvgohi			You all, I will see.	
+	ᏛᎢᏍᎩᎪᎯ.	dvisgigohi			Me, you all will see.	
+	ᏙᎾᏓᎪᎲᎢ.	donadagohvi			You one and myself, let us see each other later.	
+	ᏙᏓᏓᎪᎲᎢ.	dodadagohvi			All of us, let us see each other later.	
+						
+110	ᎠᎨᏳᏣ.	agehyuja			A girl.	
+	ᎠᏂᎨᏳᏣ.	anigehyuja			Girls.	
+	ᎠᏧᏣ.	achuja			A boy.	
+	ᎠᏂᏧᏣ.	anichuja			boys.	
+	ᎦᏙ ᎠᏛᏁᎭ?	gado-advneha			What is he or she doing?	
+	ᎦᏙ ᎠᎾᏛᏁᎭ?	gado-anadvneha			What are they doing?	
+	ᏌᎶᎵ.	saloli			A squirrel. Squirrels.	
+	ᏌᏛᏗ.	sadvdi			A trap.	
+	ᏗᏌᏛᏗ.	disadvdi			Traps.	
+	ᏐᏈᎵ.	soquili			A horse. Horses.	
+	ᏲᎾ.	yona			A bear. Bears.	
+						
+111	ᏌᏊ ᏅᏯ.	sagwu-nvya			One rock.	
+	ᏔᎵ ᏅᏯ.	tali-nvya			Two rocks.	
+	ᏦᎢ ᏅᏯ.	joi-nvya			Three rocks.	
+	ᏃᏘ ᏅᏯ.	not-nvya		kanigida-nvya	No rocks. Zero rocks.	
+	ᎧᏂᎩᏓ ᏅᏯ.	kanigida-nvya	not-nvya	not-nvya	No rocks. Zero rocks.	
+						
+112	ᏃᏘ.	not		kanigida	Zero.	
+	ᎧᏂᎩᏓ.	kanigida	not	not	Nothing.	
+	ᏌᏊ.	sagwu			One.	
+	ᏔᎵ.	tali		tali-wesa; anitali-wesa	Two (inanimate).	
+	ᏔᎵ ᏪᏌ.	tali-wesa		anitali-wesa	Two (inanimate) cats.	
+	ᎠᏂᏔᎵ ᏪᏌ.	anitali-wesa		tali-wesa	Two (animate) cats.	
+	ᏦᎢ.	joi		joi-wesa; anijoi-wesa	Three (inanimate).	
+	ᏦᎢ ᏪᏌ.	joi-wesa		anijoi-wesa	Three (inanimate) cats.	
+	ᎠᏂᏦᎢ ᏪᏌ.	anijoi-wesa		joi-wesa	Three (animate) cats.	
+	ᏅᎩ.	nvgi			Four.	
+	ᎯᏍᎩ.	hisgi			Five.	
+	ᏑᏓᎵ.	sudali			Six.	
+	ᎦᎵᏉᎩ.	galgwogi			Seven.	
+	ᏣᏁᎳ.	chanela		chunela	Eight.	
+	ᏧᏁᎳ.	chunela	chanela	chanela	Eight.	
+	ᏐᏁᎳ.	sonela			Nine.	
+	ᏍᎪᎯ.	sgohi			Ten.	
+						
+113	ᏌᏚ.	sadu			Eleven.	
+	ᏔᎵᏚ.	taldu			Twelve.	
+	ᏦᎦᏚ.	jogadu			Thirteen.	
+	ᏂᎦᏚ.	nigadu			Fourteen.	
+	ᏍᎩᎦᏚ.	sgigadu			Fifteen.	
+	ᏓᎳᏚ.	daladu			Sixteen.	
+	ᎦᎵᏆᏚ.	galgwadu			Seventeen.	
+	ᏁᎳᏚ.	neladu			Eighteen.	
+	ᏐᏁᎳᏚ.	sonehladu			Nineteen.	
+						
+114	ᏔᎵᏍᎪᎯ.	20			Twenty.	
+	ᏔᎵᏍᎪ ᏅᎩ.	24			Twenty-four.	
+	ᏦᏍᎪᎯ.	30			Thirty.	
+	ᏦᏍᎪ ᏣᏁᎳ.	38			Thirty-eight.	
+	ᏅᎩᏍᎪᎯ.	40			Forty.	
+	ᏅᎩᏍᎪ ᏐᏁᎳ.	49			Forty-nine.	
+	ᎯᏍᎪᎯ.	50			Fifty.	
+	ᎯᏍᎪ ᏐᏁᎳ.	59			Fifty-nine.	
+	ᏑᏓᎵᏍᎪᎯ.	60			Sixty.	
+	ᏑᏓᎵᏍᎪ ᎯᏍᎩ.	65			Sixty-five.	
+	ᎦᎵᏆᏍᎪᎯ.	70			Seventy.	
+	ᎦᎵᏆᏍᎪ ᎦᎵᏉᎩ.	77			Seventy-seven.	
+	ᏁᎳᏍᎪᎯ.	80			Eighty.	
+	ᏁᎳᏍᎪ ᏑᏓᎵ.	86			Eight-six.	
+	ᏐᏁᎳᏍᎪᎯ.	90			Ninety.	
+	ᏐᏁᎳᏍᎪ ᏑᏓᎵ.	96			Ninety-six.	
+						
+115	ᏍᎪᎯᏥᏆ.	100			One hundred.	
+	ᏔᎵᏥᏆ.	200			Two hundred.	
+	ᏦᎢᏥᏆ.	300			Three hundred.	
+	ᏅᎩᏥᏆ.	400			Four hundred.	
+	ᎯᏍᎩᏥᏆ.	500			Five hundred.	
+	ᏑᏓᎵᏥᏆ.	600			Six hundred.	
+	ᎦᎵᏉᎩᏥᏆ.	700			Seven hundred.	
+	ᏁᎳᏥᏆ.	800			Eight hundred.	
+	ᏐᏁᎳᏥᏆ.	900			Nine hundred.	
+						
+120	ᎭᏢ?	hadlv			Where?	ha²dlv
+	ᎯᎳᏴᎢ?	hila-yvi	hila-iyvi		When? What time?	hị²la³²yv⁴ɂi
+	ᎯᎳ ᎢᏴᎢ?	hila-iyvi	hila-iyvi		When? What time?	hị²la⁴ i²yv⁴ɂi
+	ᎦᎪ?	gago		gagi	Who again?	ga³go²
+	ᎦᎩ?	gagi		gago	Who?	ga³²gi³
+	ᎦᏙ?	gado			What (action, event)?	gạ²do¹
+	ᎦᏙᎲ?	gadohv			Why? But for what?	gạ²do¹hv³
+						
+121	ᏑᏌᏃ ᏓᏆᏙᎠ.	susano-dagwadoa		susano	Susan I am called.	
+	ᏩᏯ ᎤᏍᏗ ᏓᏆᏙᎠ.	wahya-usdi-dagwadoa		wahya-usdi; wahaya	Coyote I am called.	
+	ᏣᎵ ᎠᎴ ᎺᎵ ᏙᎩᎾᏙᎠ.	chali-ale-meli-doginadoa		chali; meli	Charles and Mary, we two are called.	
+	ᏩᎭᏯ ᏙᎩᎾᏙᎠ.	wahaya-doginadoa		wahya-usdi; wahaya	Wolves, we two are called.	
+	ᏕᏫᏗ, ᎹᎦᏰᏘ, ᎠᎴ ᎹᎦᎵ ᏙᎦᏙᎠ.	dewidi-magayeti-ale-magali-dogadoa		dewidi; magayeti; magali	David, Margaret, and Mike, we are called.	
+	ᏌᎶᎵ ᏙᎦᏙᎠ	saloli-dogadoa		saloli	Squirrels, we all are called.	
+	ᎵᏂᏓ ᏕᏣᏙᎠ.	linida-dejadoa		linida	Linda, you are called.	
+	ᏲᎾ ᏕᏣᏙᎠ.	yona-dejadoa		yona	A bear, you are called.	
+	ᏣᎵ ᎠᎴ ᎹᎦᎵ ᏕᏍᏓᏙᎠ.	chali-ale-magali-desdadoa		jali; magali	Charles and Mike, you two are called.	
+	ᏐᏈᎵ ᏕᏍᏓᏙᎠ.	sogwili-desdadoa		sogwili	Horses, you two are called.	
+	ᏣᎵ, ᎹᎦᎵ, ᎠᎴ ᏣᏂ Ꮥ¹ᏣᏙᎠ.	chali-magali-ale-jani-de1jadoa		chali; magali; jani	Charles, Mike, and John, you all are called.	
+	ᏥᏍᏚ Ꮥ¹ᏣᏙᎠ.	jisdu-de1jadoa		jisdu	Rabbits, you all are called.	
+	ᎵᏂᏓ ᏚᏙᎠ.	linida-dudoa		linida	Linda, she is called.	
+	ᏪᏌ ᏚᏙᎠ.	wesa-dudoa		wesa	A cat, it is called.	
+	ᎹᎦᏰᏘ ᎠᎴ ᎹᎦᎵ ᏚᎾᏙᎠ.	magayeti-ale-magali-dunadoa		magayeti; magali	Margaret and mike, they are called.	
+	ᎩᏟ ᏚᎾᏙᎠ.	gihli-dunadoa		gihli	Dogs, they are called.	
+						
+122	ᎢᎮᏙᎸᎢ.	ihedolvi			Let you one return later.	ị³he²³do³²lv²ɂi
+	ᎢᏍᏕᏙᎸᎢ.	isdedolvi			Let you two return later.	ị³sde²³do³²lv²ɂi
+	ᎢᎢᏤᏙᎸᎢ.	iijedolvi			Let you all return later.	ị³ɂi¹je²³do³²lv²ɂi
+	ᎠᏃᏍᏓ.	anosda			They good.	a¹no⁴sda
+	ᎤᏂᏲᎢ.	uniyoi			They bad.	u²nị²yo⁴ɂi
+	ᎩᎵᏏ.	gilisi		agilisi; anigilisi	English.	gị²li²si
+	ᏴᏫ.	yvwi			People. A person.	yv²wi
+	ᎠᎩᎵᏏ.	agilisi		gilisi	An English person.	ạ²gị²li²si
+	ᎠᏂᎩᎵᏏ.	anigilisi		gilisi	English people.	ạ²ni²gị²li²si
+	ᎠᏣᎳᎩ.	ajalagi			A Cherokee person.	ạ²jạ²lạ²gi
+	ᎠᏂᏣᎳᎩ.	anijalagi			Cherokee people.	ạ²ni²jạ²lạ²gi
+	ᎠᏲᏁᎦ.	ayonega			A white person.	ạ²yo³ne²ga
+	ᎠᏂᏲᏁᎦ.	aniyonega			White people.	ạ²ni²yo³ne²ga
+	ᎠᏴᏫᏯᎢ.	ayvwiyai			An aboriginal person. A native american.	ạ²yv²wi²ya⁴ɂi
+	ᎠᏂᏴᏫᏯᎢ.	aniyvwiyai			Aboriginal people. Native americans.	ạ²ni²yv²wi²ya⁴ɂi
+						
+130	Ꮟ.	si			Wait. Yet still.	
+	ᏝᏏ.	hlasi			Don’t wait. Not yet still.	
+	ᎥᏝᏏ.	vhlasi	hlasi		Don’t wait. Not yet still.	
+	ᎪᎱᏍᏗ.	gohusdi			Something. A thing. Things.	
+	ᎪᏍᏗ.	gosdi	gohusdi		Something. A thing. Things.	
+	Ꮭ ᎪᎱᏍᏗ.	hla-gohusdi			Not anything. No things.	
+	ᎤᏬᎵᏗ ᎪᏪᎵ.	uwoldi-gohweli			A funny paper.	
+	ᏧᏬᎵᏗ ᏗᎪᏪᎵ.	juwoldi-digohweli			Funny papers.	
+						
+140	ᏔᎹᏟ.	tamahli		ije-tamahli; anije-tamahli	A tomato. Tomatoes	tạ²ma²hli
+	ᎦᎦᎹ.	gagama		ije-gagama; anije-gagama	A cucumber. Cucumbers.	ga²³gạ³ma
+	ᎢᏤ ᏔᎹᏟ.	ije-tamahli		tamahli	A green tomato. An unripe tomato.	
+	ᎠᏂᏤ ᏔᎹᏟ.	anije-tamahli		tamahli	Green tomatoes.	
+	ᎢᏤ ᎦᎦᎹ.	ije-gagama		gagama	A green cucumber. An unripe cucumber.	
+	ᎠᏂᏤ ᎦᎦᎹ.	anije-gagama		gagama	Green cucumbers.	
+	ᎤᏍᎪᎸᎢ.	usgolvi			Faded. Dim. Pale.	
+						
+141	ᎢᏤᎢᏳᏍᏗ.	ijeiyusdi			Green. Unripe like.	
+	ᎤᏁᎦ.	unega			White.	
+	ᎤᏬᏗᎨᎢ.	uwodigei		gigagei	Brown.	
+	ᎩᎦᎨᎢ.	gigagei		uwodigei	Red (inanimate).	
+	ᎩᎨᎢ.	gigei	gigagei	uwodigei	Red (inanimate).	
+	ᎬᎿᎨᎢ.	gvhnagei			Black (inanimate).	
+	ᎬᏂᎨᎢ.	gvnigei	gvhnagei		Black (inanimate).	
+	ᏌᎪᏂᎨᎢ.	sagonigei		dahaligei	Blue (inanimate).	
+	ᏓᎭᎵᎨᎢ.	dahaligei		sagonigei	Purple (inanimate).	
+	ᏓᎶᏂᎨᎢ.	dalonigei			Yellow (inanimate).	
+	ᎩᎦᎨ ᎤᏍᎪᎸᎢ.	gigage-usgolvi		usgolvi	Pink. Faded red (inanimate).	
+	ᎬᎿᎨ ᎤᏍᎪᎸᎢ.	gvhnage-usgolvi		usgolvi	Grey. Faded black (inanimate).	
+	ᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	sagonige-usgolvi		usgolvi	Grey. Faded blue (inanimate).	
+	ᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	dalonige-usgolvi		usgolvi	Orange. Dim yellow (inanimate).	
+	ᎠᎩᎦᎨᎢ.	agigagei			Red (animate).	
+	ᎠᎩᎨᎢ.	agigei	agigagei		Red (animate).	
+	ᎠᎬᎿᎨᎢ.	agvhnagei			Black (animate).	
+	ᎠᎬᏂᎨᎢ.	agvnigei	agvhnagei		Black (animate).	
+	ᎠᏌᎪᏂᎨᎢ.	asagonigei		adahaligei	Blue (animate).	
+	ᎠᏓᎭᎵᎨᎢ.	adahaligei		asagonigei	Purple (animate).	
+	ᎠᏓᎶᏂᎨᎢ.	adalonigei			Yellow (animate).	
+	ᎠᎩᎦᎨ ᎤᏍᎪᎸᎢ.	agigage-usgolvi		usgolvi	Pink. Faded red (animate).	
+	ᎠᎬᎿᎨ ᎤᏍᎪᎸᎢ.	agvhnage-usgolvi		usgolvi	Grey. Faded black (animate).	
+	ᎠᏌᎪᏂᎨ ᎤᏍᎪᎸᎢ.	asagonige-usgolvi		usgolvi	Grey. Faded blue (animate).	
+	ᎠᏓᎶᏂᎨ ᎤᏍᎪᎸᎢ.	adalonige-usgolvi		usgolvi	Orange. Dim yellow (animate).	
+						
+150	ᎠᏂᏓᎭᎵᎨᎢ.	anidahaligei		anisagonigei	Purple (them-animate).	
+	ᎠᏂᏓᎶᏂᎨᎢ.	anidalonigei			Yellow (them-animate).	
+	ᎠᏂᏓᎶᏂᎨ ᎤᏂᏍᎪᎸᎢ.	anidalonige-unisgolvi		unisgolvi	Orange (them-animate).	
+	ᎠᏂᎩᎦᎨᎢ.	anigigagei		junodigei	Red (them-animate).	
+	ᎠᏂᎩᎦᎨ ᎤᏂᏍᎪᎸᎢ.	anigigage-unisgolvi		unisgolvi	Pink (them-animate).	
+	ᎠᏂᎬᎿᎨᎢ.	anigvhnagei			Black (them-animate).	
+	ᎠᏂᎬᎿᎨ ᎤᏂᏍᎪᎸᎢ.	anigvhnage-unisgolvi		unisgolvi	Grey (them-animate).	
+	ᎠᏂᏤᎢ.	anijei			Green. Unripe (them-vegetables).	
+	ᎠᏂᏤᎢᏳᏍᏗ.	anijeiyusdi			Green (them-animate).	
+	ᎠᏂᏌᎪᏂᎨᎢ.	anisagonigei		anidahaligei	Blue (them-animate).	
+	ᎠᏂᏌᎪᏂᎨ ᎤᏂᏍᎪᎸᎢ.	anisagonige-unisgolvi		unisgolvi	Grey (them-animate).	
+	ᏗᏓᎭᎵᎨᎢ.	didahaligei		disagonigei	Purple (them-inanimate).	
+	ᏗᏓᎶᏂᎨᎢ.	didalonigei			Yellow (them-inanimate).	
+	ᏗᏓᎶᏂᎨ ᏧᏍᎪᎸᎢ.	didalonige-jusgolvi		jusgolvi	Orange (them-inanimate).	
+	ᏗᎩᎦᎨᎢ.	digigagei		juwodigei	Red (them-inanimate).	
+	ᏗᎩᎦᎨ ᏧᏍᎪᎸᎢ.	digigage-jusgolvi		jusgolvi	Pink (them-inanimate).	
+	ᏗᎬᎿᎨᎢ.	digvhnagei			Black (them-inanimate).	
+	ᏗᎬᎿᎨ ᏧᏍᎪᎸᎢ.	digvhnage-jusgolvi		jusgolvi	Grey (them-inanimate).	
+	ᏗᏤᎢᏳᏍᏗ.	dijeiyusdi			Green (them-inanimate).	
+	ᏗᏌᎪᏂᎨᎢ.	disagonigei		didahaligei	Blue (them-inanimate).	
+	ᏗᏌᎪᏂᎨ ᏧᏍᎪᎸᎢ.	disagonige-jusgolvi		jusgolvi	Grey (them-inanimate).	
+	ᏧᏁᎦ.	junega			White (them-inanimate).	
+	ᏧᏃᏗᎨᎢ.	junodigei		anigigagei	Brown (them-animate).	
+	ᏧᏬᏗᎨᎢ.	juwodigei		digigagei	Brown (them-inanimate).	
+	ᎤᏂᏁᎦ.	uninega			White (them).	
+						
+160	ᎤᏬᏗᎨ ᏄᎾᏊ Ꭿ̣ᎪᏩᏘᎭ.	uwodige-nunagwu-higowhtiha			Just a brown potato, it you see.	
+	ᎩᎦᎨ ᎪᏪᎵ Ꮵ̣ᎪᏩᏘᎭ.	gigage-gohweli-jigowhtiha			A red paper, it I see.	
+	ᎠᏴᏫᏍ ᎯᎪᏩᏘᎭ?	ayvwis-hiigowhtiha			A deer, are you seeing it?	
+	ᎯᎪᏩᏘᎭᏍ ᎠᏴᏫ?	hiigowhtihas-ayvwi			Are you seeing it? A deer?	
+	ᎤᏁᎦ ᏌᎶᎵ ᎯᎪᏩᏘᎭ.	unega-saloli-hiigowhtiha			A white squirrel, it you see.	
+	ᎠᏌᎪᏂᎨᎾ ᏩᎭᏯ ᎯᎪᏩᏘᎭ?	asagonigena-wahaya-hiigowhtiha			What about the blue wolf that you are seeing?	
+	ᎯᎪᏩᏘᎭᎾ ᎠᏌᎪᏂᎨ ᏩᎭᏯ?	hiigowhtihana-asagonige-wahaya			What about you seeing it? The blue wolf.	
+	ᏗᎩᎦᎨ ᏗᎪᏪᎵ ᏕᏥ̣ᎪᏩᏘᎭ.	digigage-digohweli-dejigowhtiha			Red papers, I see them.	
+	ᎪᏍᏗ ᏓᎭᎵᎨ Ꮵ̣ᎪᏩᏘᎭ.	gosdi-dahalige-jigowhtiha			Something purple (inanimate), it I see.	
+	ᏥᎪᏩᏘᎭ ᎤᏲ ᎠᎨᏯ.	jiigowhtiha-uyo-agehya			I see her, a bad woman.	
+	ᎠᏣᎳᎩ ᎯᎪᏩᏘᎭ.	ajalagi-hiigowhtiha			A Cherokee person, him or her you are seeing.	
+						
+	ᎣᏍᏓ ᏥᏍᏚ ᎠᎪᏩᏘᎭ ᎠᏧᏣ.	osda-jisdu-agowhtiha-achuja			A good rabbit, he sees it, the boy.	
+	ᎠᏂᏴᏫᏯᎢ ᎤᏲ ᏩᎭᏯ ᎠᏂᎪᏩᏘᎭ.	aniyvwiyai-uyo-wahaya-anigowhtiha			Native americans, a bad wolf, they see it.	
+	Ꮵ̣ᎪᏩᏘᎭ ᎪᏍᏗ ᎤᏁᎦ.	jigowhtiha-gosdi-unega			I see it, something white.	
+	ᎠᏂᎨᏳᏣ ᎠᏂᎩᎦᎨ ᏥᏍᏚ ᏓᏂᎪᏩᏘᎭ.	anigehyuja-anigigage-jisdu-danigowhtiha			Girls, red rabbits, they (the girls) see them.	
+	ᎠᏂᏓᎶᏂᎨ ᏲᎾ ᎦᏥᎪᏩᏘᎭ.	anidalonige-yona-gajiigowhtiha		anidalonige-unisgolv-yona-gajiigowhtiha	Yellow bears, I see them.	
+	ᏥᎪᏩᏘᎭᏍ ᎤᏲ ᎠᏧᏣ?	jiigowhtihas-uyo-achuja			Am I seeing him? A bad boy.	
+	ᏧᏁᎦ ᏗᎪᏪᎵ ᏕᎯ̣ᎪᏩᏘᎭ.	junega-digohweli-dehigowhtiha			White papers, you see them.	
+	ᎠᎨᏳᏣᏍ ᎯᎪᏩᏘᎭ?	agehyujas-hiigowhtiha			Is it a girl? That you are seeing.	
+	ᏥᎪᏩᏘᎭᎾ ᎠᏓᎶᏂᎨ ᏲᎾ?	jiigowhtihana-adalonige-yona			What about me seeing it? A yellow bear.	
+	ᎠᏂᎩᎵᏏ ᏗᏌᎪᏂᎨ ᎫᎴ ᏓᏂᎪᏩᏘᎭ.	anigilisi-disagonige-gule-danigowhtiha			English people, blue acorns, they see them.	
+						
+	ᎤᏬᏗᎨ ᏥᏍᏚ ᏥᎪᏩᏘᎭ.	uwodige-jisdu-jiigowhtiha			A brown rabbit, it I see.	
+	ᎠᏂᏓᎶᏂᎨ ᎤᏂᏍᎪᎸ ᏲᎾ ᎦᏥᎪᏩᏘᎭ.	anidalonige-unisgolv-yona-gajiigowhtiha		anidalonige-yona-gajiigowhtiha	Orange bears, them I see.	
+	ᎯᎪᏩᏘᎭ ᎢᏤᎢᏳᏍᏗ ᏌᎶᎵ.	hiigowhtiha-ijeiyusdi-saloli			You see it, a green squirrel.	
+	ᎠᏂᎨᏳᏣ ᏗᏓᎶᏂᎨ ᎤᏂᏍᎪᎸ ᎫᎴ ᏓᏂᎪᏩᏘᎭ.	anigehyuja-didalonige-unisgolv-gule-danigowhtiha			Girls, orange acorns, them they see.	
+	 ᏗᎩᎨ ᏄᎾ ᏕᎯ̣ᎪᏩᏘᎭ.	digige-nuna-dehigowhtiha			Red potatoes, them you see.	
+	ᎤᏂᏲ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	uniyo-anisgaya-gajiigowhtiha			Bad men, them I see.	
+	ᎠᎩᎨ ᏐᏈᎵ ᏥᎪᏩᏘᎭ.	agige-sogwili-jiigowhtiha			A red horse, it I see.	
+	ᏕᎯ̣ᎪᏩᏘᎭ ᏗᎩᎨ ᏄᎾ.	dehigowhtiha-digige-nuna			Them you see, red potatoes.	
+	ᎠᏧᏣ ᏧᏃᏗᎨ ᏩᏯ ᏓᎪᏩᏘᎭ.	achuja-junodige-wahya-dagowhtiha			A boy, brown wolves, them he sees.	
+						
+170	ᎤᎭ.	uha			He or she has it.	
+	ᎤᏂᎭ.	uniha			They have it.	
+	ᎠᎩᎭ.	agiha			I have it.	
+	ᏣᎭ.	jaha			You one have it.	
+	ᎤᏩᎧᎭ.	uwakaha			He or she has him or her.	
+	ᎤᏂᎧᎭ.	unikaha			They have him or her.	
+	ᏥᏯᎧᎭ.	jiyakaha			I have him or her.	
+	ᎯᏯᎧᎭ.	hiyakaha			You have him or her.	
+						
+171	ᎪᏍᏓ	gosda			I-good.	
+	ᎰᏍᏓ	hosda			You one-good.	
+	ᏦᏍᏓ	josda			They (inanimate)-good.	
+	ᎠᏃᏍᏓ	anosda			They (animate)-good.	
+						
+	ᎠᎩᏲᎢ	agiyoi			I-bad.	
+	ᏣᏲᎢ	jayoi			You one-bad.	
+	ᏧᏲᎢ	juyoi			They (inanimate)-bad.	
+	ᎤᏂᏲᎢ	uniyoi			They (animate)-bad.	
+						
+	ᏥᎩᎦᎨᎢ	jigigagei			I-red.	
+	ᎯᎩᎦᎨᎢ	higigagei			You one-red.	
+	ᏗᎩᎦᎨᎢ	digigagei			They (inanimate)-red.	
+	ᎠᏂᎩᎦᎨᎢ	anigigagei			They (animate)-red.	
+						
+	ᏣᏁᎦ	janega			You one-white.	
+	ᏧᏁᎦ	junega			They (inanimate)-white.	
+	ᎤᏂᏁᎦ	uninega			They (animate)-white.	
+						
+	ᎠᏉᏗᎨᎢ	agwodigei			I-brown.	
+	ᏦᏗᎨᎢ	jodigei			You one-brown.	
+	ᏧᏬᏗᎨᎢ	juwodigei			They (inanimate)-brown.	
+	ᏧᏃᎩᎨᎢ	junodigei			They (animate)-brown.	
+						
+	ᏥᏓᎶᏂᎨᎢ	jidalonigei			I-yellow.	
+	ᎯᏓᎶᏂᎨᎢ	hidalonigei			You one-yellow.	
+	ᏗᏓᎶᏂᎨᎢ	didalonigei			They (inanimate)-yellow.	
+	ᎠᏂᏓᎶᏂᎨᎢ	anidalonigei			they (animate)-yellow.	
+						
+180	ᎦᎪ ᎠᎩᎪᏘᎭ?	gago-agigowhtiha			Who (he or she) sees me?	
+	ᎦᎪ ᏣᎪᏘᎭ?	gago-jagowhtiha			Who (he or she) sees you one?	
+						
+	ᎦᏙ ᎤᏍᏗ ᎤᎭ?	gado-usdi-uha			What (inanimate) does he or she have?	
+	ᎦᏙ ᎤᏍᏗ ᎤᏂᎭ?	gado-usdi-uniha			What (inanimate) do they have?	
+	ᎦᏙ ᎤᏍᎩ ᎠᎩᎭ?	gado-usdi-agiha			What (inanimate) do I have?	
+	ᎦᏙ ᎤᏍᏗ ᏣᎭ?	gado-usdi-jaha			What (inanimate) do you one have?	
+	ᎦᏙ ᎤᏍᏗ ᎤᏩᎧᎭ?	gado-usdi-uwakaha			What (animate) does he or she have?	
+	ᎦᏙ ᎤᏍᏗ ᎤᏂᎧᎭ?	gado-usdi-unikaha			What (animate) do they have?	
+	ᎦᏙ ᎤᏍᏗ ᏥᏯᎧᎭ?	gado-usdi-jiyakaha			What (animate) do I have?	
+	ᎦᏙ ᎤᏍᏗ ᎯᏯᎧᎭ?	gado-usdi-hiyakaha			What (animate) do you one have?	
+						
+	ᎾᏍᎩ ᎠᎩᎪᏩᏘᎭ.	nasgi-agigowhtiha	asgaya-agigowhtiha		He sees me.	
+ 	Ꮭ ᎾᏍᎩ ᏯᎩᎪᏩᏘᎭ.	hla-nasgi-yagigowhtiha	hla-asgaya-yagigowhtiha		He is not seeing me.	
+	ᎠᏍᎦᏯ ᎠᎩᎪᏩᏘᎭ.	asgaya-agigowhtiha			A man sees me.	
+	Ꮭ ᎠᏍᎦᏯ ᏯᎩᎪᏩᏘᎭ.	hla-asgaya-yagigowhtiha	hla-asgaya-yagigowhtiha		The man is not seeing me.	
+						
+	ᎥᏍᎩᎾ ᏣᎪᏩᏘᎭ.	vsgina-jagowhtiha	agehya-jagowhtiha		She sees you.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᏣᎪᏩᏘᎭ.	hla-vsgina-yijagowhtiha	hla-agehya-yijagowhtiha		She is not seeing you.	
+	ᎠᎨᏯ ᏣᎪᏩᏘᎭ.	agehya-jagowhtiha			A woman sees you.	
+	Ꮭ ᎠᎨᏯ ᏱᏣᎪᏩᏘᎭ.	hla-agehya-yijagowhtiha	hla-agehya-yijagowhtiha		The woman is not seeing you.	
+						
+	ᎠᏍᎦᏯ ᎥᏍᎩ ᎤᎭ.	asgaya-vsgi-uha	asgaya-nuna-uha		A man, that, he has it.	
+	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏳᎭ.	hla-agehya-vsgi-yuha	hla-agehya-nuna-yuha		The woman, that, she does not have it.	
+	ᎠᏍᎦᏯ ᏄᎾ ᎤᎭ.	asgaya-nuna-uha			The man, a potato, he has it.	
+	Ꮭ ᎠᎨᏯ ᏄᎾ ᏳᎭ.	hla-agehya-nuna-yuha			The woman, a potato, she does not have it.	
+						
+	ᎾᏍᎩ ᏄᎾ ᎤᏂᎭ.	nasgi-nuna-uniha	anisgaya-nuna-uniha		They, a potato, they have.	
+	Ꮭ ᎾᏍᎩ ᏅᏯ ᏳᏂᎭ.	hla-nasgi-nvya-yuniha	hla-anisgaya-nvya-yuniha		They, a rock, they do not have.	
+	ᎠᏂᏍᎦᏯ ᏄᎾ ᎤᏂᎭ.	anisgaya-nuna-uniha			Men, a potato, they have.	
+	Ꮭ ᎠᏂᏍᎦᏯ ᏅᏯ ᏳᏂᎭ.	hla-anisgaya-nvya-yuniha			Men, a rock, they do not have.	
+						
+	ᎯᎠ ᎠᎩᎭ.	hia-agiha	nvya-agiha		This I have.	
+	Ꮭ ᎾᏍᎩ ᏯᎩᎭ.	hla-nasgi-yagiha	hla-nvya-yagiha		This I do not have.	
+	ᏅᏯ ᎠᎩᎭ.	nvya-agiha			A rock I have.	
+	Ꮭ ᏅᏯ ᏯᎩᎭ.	hla-nvya-yagiha			A rock I do not have.	
+						
+	ᎥᏍᎩᎾ ᏣᎭ.	vsgina-jaha	nuna-jaha		That you have.	
+	Ꮭ ᎥᏍᎩ ᏱᏣᎭ.	hla-vsgi-yijaha	hla-nuna-yijaha		That you do not have.	
+	ᏄᎾ ᏣᎭ.	nuna-jaha			A potato you have.	
+	Ꮭ ᏄᎾ ᏱᏣᎭ.	hla-nuna-yijaha			A potato you do not have.	
+						
+	ᎠᏍᎦᏯ Ꮎ ᎤᏩᎧᎭ.	asgaya-na-uwakaha	asgaya-gihli-uwakaha		A man, that (animate), he has.	
+	ᎠᏍᎦᏯ ᎩᏟ ᎤᏩᎧᎭ.	asgaya-gihli-uwakaha			A man, a dog, he has.	
+						
+	ᎥᏍᎩᎾ ᎩᏟ ᎤᏂᎧᎭ.	vsgina-gihli-unikaha	anisgaya-gihli-unikaha		They, a dog, they have.	
+	Ꮭ ᎥᏍᎩ ᏪᏌ ᏳᏂᎧᎭ.	hla-vsgi-wesa-yunikaha	hla-anisgaya-wesa-yunikaha		They, a cat, they do not have.	
+	ᎠᏂᏍᎦᏯ ᎩᏟ ᎤᏂᎧᎭ.	anisgaya-gihli-unikaha			Men, a dog, they have.	
+	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏳᏂᎧᎭ.	hla-anisgaya-wesa-yunikaha			Men, a cat, they do not have.	
+						
+	ᎯᎠ ᏥᏯᎧᎭ.	hia-jiyakaha	gihli-jiyakaha		Him or her, I have.	
+	Ꮭ Ꮎ ᏱᏥᏯᎧᎭ.	hla-na-yijiyakaha	hla-gihli-yijiyakaha		Him or her, I do not have.	
+	ᎩᏟ ᏥᏯᎧᎭ.	gihli-jiyakaha			A dog I have.	
+	Ꮭ ᎩᏟ ᏱᏥᏯᎧᎭ.	hla-gihli-yijiyakaha			A dog I do not have.	
+						
+	ᎾᏍᎩ ᎯᏯᎧᎭ.	nasgi-hiyakaha	wesa-hiyakaha		Him or her, you have.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᏯᎧᎭ.	hla-vsgina-hyiyakaha	hla-wesa-hyiyakaha		Him or her, you do not have.	
+	ᏪᏌ ᎯᏯᎧᎭ.	wesa-hiyakaha			A cat, you have.	
+	Ꮭ ᏪᏌ ᏱᏯᎧᎭ.	hla-wesa-hyiyakaha			A cat, you do not have.	
+						
+190	ᏚᎭ.	duha	asgaya-nuna-duha		He or she has them.	
+	ᏚᏂᎭ.	duniha	anisgaya-nuna-duniha		They have them.	
+	ᏓᎩᎭ.	dagiha	nvya-dagiha		I have them.	
+	ᏕᏣᎭ.	dejaha	nuna-dejaha		You one have them.	
+	ᏚᏩᎧᎭ.	duwakaha	asgaya-gihli-duwakaha		He or she has them (animate).	
+	ᏚᏂᎧᎭ.	dunikaha	anisgaya-gihli-dunikaha		They have them (animate).	
+	ᎦᏥᏯᎧᎭ.	gajiyakaha	gihli-gajiyakaha		I have them (animate).	
+	ᎦᎯᏯᎧᎭ.	gahiyakaha	wesa-gahiyakaha		You one have them (animate).	
+						
+	ᎦᎪ ᎬᎩᎪᏩᏘᎭ?	gago-gvgigowhtiha			Who are they who see me?	
+	ᎦᎪ ᎨᏣᎪᏩᏘᎭ?	gago-gejagowhtiha			Who are they who see you?	
+						
+	ᎦᏙ ᏧᏍᏗ ᏚᎭ?	gado-jusdi-duha			What all (inanimate) does he or she have?	
+	ᎦᏙ ᏧᏍᏗ ᏚᏂᎭ?	gado-jusdi-duniha			What all (inanimate) do they have?	
+	ᎦᏙ ᏧᏍᏗ ᏓᎩᎭ?	gado-jusdi-dagiha			What all (inanimate) do I have?	
+	ᎦᏙ ᏧᏍᏗ ᏕᏣᎭ?	gado-jusdi-dejaha			What all (inanimate) do you have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᏚᏩᎧᎭ?	gado-unsdi-duwakaha			What all (animate) does he or she have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᏚᏂᎧᎭ?	gado-unsdi-dunikaha			What all (animate) do they have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᎦᏥᏯᎧᎭ?	gado-unsdi-gajiyakaha			What all (animate) do I have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᏯᎧᎭ?	gado-unsdi-gahiyakaha			What all (animate) do you have?	
+						
+	Ꮭ ᏱᏚᎭ.	hla-yiduha	hla-agehya-nuna-yiduha		Them he or she does not have.	
+	Ꮭ ᏱᏚᏂᎭ.	hla-yiduniha	hla-anisgaya-nvya-yiduniha		Them they do not have.	
+	Ꮭ ᏱᏓᎩᎭ.	hla-yidagiha	hla-nvya-yidagiha		Them I do not have.	
+	Ꮭ ᏱᏕᏣᎭ.	hla-yidejaha	hla-nuna-yidejaha		Them you one do not have.	
+	Ꮭ ᏱᏚᏩᎧᎭ.	hla-yiduwakaha	hla-asgaya-gihli-yiduwakaha		Them (animate) he or she does not have.	
+	Ꮭ ᏱᏚᏂᎧᎭ.	hla-yidunikaha	hla-anisgaya-wesa-yidunikaha		Them (animate) they do not have.	
+	Ꮭ ᏱᎦᏥᏯᎧᎭ.	hla-yigajiyakaha	hla-gihli-yigajiyakaha		Them (animate) I do not have.	
+	Ꮭ ᏱᎦᎯᏯᎧᎭ.	hla-yigahiyakaha	hla-wesa-yigahiyakaha		Them (animate) you one do not have.	
+						
+	ᎬᎩᎪᏩᏘᎭ.	gvgigowhtiha	nasgi-gvgigowhtiha		They see me.	
+	Ꮭ ᏱᎬᎩᎪᏩᏘᎭ.	hla-yigvgigowhtiha	hla-nasgi-yigvgigowhtiha		They are not seeing me.	
+	ᎨᏣᎪᏩᏘᎭ.	gejagowhtiha	vsgina-gejagowhtiha		They see you.	
+	Ꮭ ᏱᎨᏣᎪᏩᏘᎭ.	hla-yigejagowhtiha	hla-vsgina-yigejagowhtiha		They are not seeing you.	
+						
+	ᎾᏍᎩ ᎬᎩᎪᏩᏘᎭ.	nasgi-gvgigowhtiha	nasgi-gvgigowhtiha		They see me.	
+	Ꮭ ᎾᏍᎩ ᏱᎬᎩᎪᏩᏘᎭ.	hla-nasgi-yigvgigowhtiha	hla-nasgi-yigvgigowhtiha		They are not seeing me.	
+	ᎥᏍᎩᎾ ᎨᏣᎪᏩᏘᎭ.	vsgina-gejagowhtiha	vsgina-gejagowhtiha		They see you.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᎨᏣᎪᏩᏘᎭ.	hla-vsgina-yigejagowhtiha	hla-vsgina-yigejagowhtiha		They are not seeing you.	
+						
+	ᎠᏍᎦᏯ ᎥᏍᎩ ᏚᎭ.	asgaya-vsgi-duha	asgaya-nuna-duha		A man, them, he has.	
+	Ꮭ ᎠᎨᏯ ᎥᏍᎩ ᏱᏚᎭ.	hla-agehya-vsgi-yiduha	hla-agehya-nuna-yiduha		A woman, them, she does not have.	
+	ᎠᏍᎦᏯ ᏄᎾ ᏚᎭ.	asgaya-nuna-duha			A man, potatoes, he has.	
+	Ꮭ ᎠᎨᏯ ᏄᎾ ᏱᏚᎭ.	hla-agehya-nuna-yiduha			A woman, potatoes, she does not have.	
+						
+	ᎾᏍᎩ ᏄᎾ ᏚᏂᎭ.	nasgi-nuna-duniha	anisgaya-nuna-duniha		They, potatoes, they have.	
+	Ꮭ ᎾᏍᎩ ᏅᏯ ᏱᏚᏂᎭ.	hla-nasgi-nvya-yiduniha	hla-anisgaya-nvya-yiduniha		They, rocks, they do not have.	
+	ᎠᏂᏍᎦᏯ ᏄᎾ ᏚᏂᎭ.	anisgaya-nuna-duniha			Men, potatoes, they have.	
+	Ꮭ ᎠᏂᏍᎦᏯ ᏅᏯ ᏱᏚᏂᎭ.	hla-anisgaya-nvya-yiduniha			Men, rocks, they do not have.	
+						
+	ᎯᎠ ᏓᎩᎭ.	hia-dagiha	nvya-dagiha		These I have.	
+	Ꮭ ᎾᏍᎩ ᏱᏓᎩᎭ.	hla-nasgi-yidagiha	hla-nvya-yidagiha		Those I do not have.	
+	ᏅᏯ ᏓᎩᎭ.	nvya-dagiha			Rocks I have.	
+	Ꮭ ᏅᏯ ᏱᏓᎩᎭ.	hla-nvya-yidagiha			Rocks I do not have.	
+						
+	ᎥᏍᎩᎾ ᏕᏣᎭ.	vsgina-dejaha	nuna-dejaha		Those you have.	
+	Ꮭ ᎥᏍᎩ ᏱᏕᏣᎭ.	hla-vsgi-yidejaha	hla-nuna-yidejaha		Thos you do not have.	
+	ᏄᎾ ᏕᏣᎭ.	nuna-dejaha			Potatoes you have.	
+	Ꮭ ᏄᎾ ᏱᏕᏣᎭ.	hla-nuna-yidejaha			Potatoes you do not have.	
+						
+	ᎠᏍᎦᏯ Ꮎ ᏚᏩᎧᎭ.	asgaya-na-duwakaha	asgaya-gihli-duwakaha		A man, that (animate), he has.	
+	Ꮭ ᎠᏍᎦᏯ Ꮎ ᏱᏚᏩᎧᎭ.	hla-asgaya-na-yiduwakaha	hla-asgaya-gihli-yiduwakaha		A man, that (animate), he does not have.	
+	ᎠᏍᎦᏯ ᎩᏟ ᏚᏩᎧᎭ.	asgaya-gihli-duwakaha			A man, a dog, he has.	
+	Ꮭ ᎠᏍᎦᏯ ᎩᏟ ᏱᏚᏩᎧᎭ.	hla-asgaya-gihli-yiduwakaha			A man, a dog, he does not have.	
+						
+	ᎥᏍᎩᎾ ᎩᏟ ᏚᏂᎧᎭ.	vsgina-gihli-dunikaha	anisgaya-gihli-dunikaha		They, dogs, they have them.	
+	Ꮭ ᎥᏍᎩ ᏪᏌ ᏱᏚᏂᎧᎭ.	hla-vsgi-wesa-yidunikaha	hla-anisgaya-wesa-yidunikaha		They, cats, they do not have them.	
+	ᎠᏂᏍᎦᏯ ᎩᏟ ᏚᏂᎧᎭ.	anisgaya-gihli-dunikaha			Men, dogs, they have them.	
+	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏱᏚᏂᎧᎭ.	hla-anisgaya-wesa-yidunikaha			Men, cats, they do not have them.	
+						
+	ᎯᎠ ᎦᏥᏯᎧᎭ.	hia-gajiyakaha	gihli-gajiyakaha		These (animate) I have.	
+	Ꮭ Ꮎ ᏱᎦᏥᏯᎧᎭ.	hla-na-yigajiyakaha	hla-gihli-yigajiyakaha		Those (animate) I do not have.	
+	ᎩᏟ ᎦᏥᏯᎧᎭ.	gihli-gajiyakaha			Dogs I have.	
+	Ꮭ ᎩᏟ ᏱᎦᏥᏯᎧᎭ.	hla-gihli-yigajiyakaha			Dogs I do not have.	
+						
+	ᎾᏍᎩ ᎦᎯᏯᎧᎭ.	nasgi-gahiyakaha	wesa-gahiyakaha		Those (animate) you have.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᎦᎯᏯᎧᎭ.	hla-vsgina-yigahiyakaha	hla-wesa-yigahiyakaha		Those (animate) you do not have.	
+	ᏪᏌ ᎦᎯᏯᎧᎭ.	wesa-gahiyakaha			Cats you have.	
+	Ꮭ ᏪᏌ ᏱᎦᎯᏯᎧᎭ.	hla-wesa-yigahiyakaha			Cats you do not have.	
+						
+200	ᎢᎩ.	igi			Is now.	
+	ᎢᎦ.	iga			Is now and ongoing.	
+	ᎨᏐᎢ.	gesoi			Usually is.	
 	ᎨᏒᎢ.	gesvi				not doing
-	ᎨᏒᎩ.	gesvgi				
-	ᎨᏎᎢ.	gesei	gesvgi			
+	ᎨᏒᎩ.	gesvgi			Was being (I know for a fact).	
+	ᎨᏎᎢ.	gesei	gesvgi		Was being (I know second hand).	
 	ᎨᎲᎢ.	gehvi				not doing
-	ᎨᎲᎩ.	gehvgi				
-	ᎨᎮᎢ.	gehei	gehvgi			
-	ᎨᏎᏍᏗ.	gesesdi				
+	ᎨᎲᎩ.	gehvgi			Was a while ago (I know for a fact).	
+	ᎨᎮᎢ.	gehei	gehvgi		Was a while ago (I know second hand).	
+	ᎨᏎᏍᏗ.	gesesdi			Will be.	
 						
-	Ꮭ ᏱᎩ.	hla-yigi				
-	Ꮭ ᏱᎨᏐᎢ.	hla-yigesoi				
-	Ꮭ ᏱᎨᏒᎩ.	hla-yigesvgi				
-	Ꮭ ᏱᎨᏎᎢ.	hla-yigesei	hla-yigesvgi			
-	Ꮭ ᏱᎨᎲᎩ.	hla-yigehvgi				
-	Ꮭ ᏱᎨᎮᎢ.	hla-yigehei	hla-yigehvgi			
-	Ꮭ ᏱᎨᏎᏍᏗ.	hla-yigesesdi				
+	Ꮭ ᏱᎩ.	hla-yigi			Isn’t now.	
+	Ꮭ ᏱᎨᏐᎢ.	hla-yigesoi			Isn’t usually.	
+	Ꮭ ᏱᎨᏒᎩ.	hla-yigesvgi			Wasn’t (I know for a fact).	
+	Ꮭ ᏱᎨᏎᎢ.	hla-yigesei	hla-yigesvgi		Wasn’t (I know second hand).	
+	Ꮭ ᏱᎨᎲᎩ.	hla-yigehvgi			Wasn’t a while ago (I know for a fact).	
+	Ꮭ ᏱᎨᎮᎢ.	hla-yigehei	hla-yigehvgi		Wasn’t a while ago (I know second hand).	
+	Ꮭ ᏱᎨᏎᏍᏗ.	hla-yigesesdi			Won’t be.	
 						
-201	ᎠᎬᎿᎨ ᏪᏌ.	agvhnage-wesa	agvhnage-wesa			
-	ᎠᎬᎿᎨ ᏪᏌ ᎢᎩ.	agvhnage-wesa-igi	agvhnage-wesa			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᏐᎢ.	agvhnage-wesa-gesoi	agvhnage-wesa-gesoi			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᏒᎩ.	agvhnage-wesa-gesvgi	agvhnage-wesa-gesvgi			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᏎᎢ.	agvhnage-wesa-gesei	agvhnage-wesa-gesei			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᎲᎩ.	agvhnage-wesa-gehvgi	agvhnage-wesa-gehvgi			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᎮᎢ.	agvhnage-wesa-gehei	agvhnage-wesa-gehei			
-	ᎠᎬᎿᎨ ᏪᏌ ᎨᏎᏍᏗ.	agvhnage-wesa-gesesdi	agvhnage-wesa-gesesdi			
-	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎩ.	wesa-hla-agvhnage-yigi	wesa-hla-agvhnage-yigi			
-	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᏎᎢ.	wesa-hla-agvhnage-yigesei	wesa-hla-agvhnage-yigesei			
-	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᎮᎢ.	wesa-hla-agvhnage-yigehei	wesa-hla-agvhnage-yigehei			
-	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᏎᏍᏗ.	wesa-hla-agvhnage-yigesesdi	wesa-hla-agvhnage-yigesesdi			
-	Ꮭ ᏪᏌ ᏱᎩ.	hla-wesa-yigi	hla-wesa-yigi			
-	Ꮭ ᏪᏌ ᏱᎨᏐᎢ.	hla-wesa-yigesoi	hla-wesa-yigesoi			
-	Ꮭ ᏪᏌ ᏱᎨᏒᎩ.	hla-wesa-yigesvgi	hla-wesa-yigesvgi			
-	Ꮭ ᏪᏌ ᏱᎨᏎᎢ.	hla-wesa-yigesei	hla-wesa-yigesei			
-	Ꮭ ᏪᏌ ᏱᎨᎲᎩ.	hla-wesa-yigehvgi	hla-wesa-yigehvgi			
-	Ꮭ ᏪᏌ ᏱᎨᎮᎢ.	hla-wesa-yigehei	hla-wesa-yigehei			
-	Ꮭ ᏪᏌ ᏱᎨᏎᏍᏗ.	hla-wesa-yigesesdi	hla-wesa-yigesesdi			
+201	ᎠᎬᎿᎨ ᏪᏌ.	agvhnage-wesa	agvhnage-wesa		A black cat it is.	
+	ᎠᎬᎿᎨ ᏪᏌ ᎢᎩ.	agvhnage-wesa-igi	agvhnage-wesa		A black cat it is.	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᏐᎢ.	agvhnage-wesa-gesoi	agvhnage-wesa-gesoi		A black cat it usually is.	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᏒᎩ.	agvhnage-wesa-gesvgi	agvhnage-wesa-gesvgi		A black cat it was (for a fact).	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᏎᎢ.	agvhnage-wesa-gesei	agvhnage-wesa-gesei		A black cat it was (I know second hand).	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᎲᎩ.	agvhnage-wesa-gehvgi	agvhnage-wesa-gehvgi		A black cat it was a while ago (for a fact).	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᎮᎢ.	agvhnage-wesa-gehei	agvhnage-wesa-gehei		A black cat it was a wile ago (I know second hand).	
+	ᎠᎬᎿᎨ ᏪᏌ ᎨᏎᏍᏗ.	agvhnage-wesa-gesesdi	agvhnage-wesa-gesesdi		A black cat, it will be.	
+	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎩ.	wesa-hla-agvhnage-yigi	wesa-hla-agvhnage-yigi		A cat, it isn’t black.	
+	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᏎᎢ.	wesa-hla-agvhnage-yigesei	wesa-hla-agvhnage-yigesei		A cat, it wasn’t black.	
+	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᎮᎢ.	wesa-hla-agvhnage-yigehei	wesa-hla-agvhnage-yigehei		A cat, it wasn’t black a while ago.	
+	ᏪᏌ Ꮭ ᎠᎬᎿᎨ ᏱᎨᏎᏍᏗ.	wesa-hla-agvhnage-yigesesdi	wesa-hla-agvhnage-yigesesdi		A cat, it won’t be a black.	
+	Ꮭ ᏪᏌ ᏱᎩ.	hla-wesa-yigi	hla-wesa-yigi		It isn’t a cat.	
+	Ꮭ ᏪᏌ ᏱᎨᏐᎢ.	hla-wesa-yigesoi	hla-wesa-yigesoi		It isn’t usually a cat.	
+	Ꮭ ᏪᏌ ᏱᎨᏒᎩ.	hla-wesa-yigesvgi	hla-wesa-yigesvgi		It wasn’t a cat (for a fact).	
+	Ꮭ ᏪᏌ ᏱᎨᏎᎢ.	hla-wesa-yigesei	hla-wesa-yigesei		It wasn’t a cat (I know second hand).	
+	Ꮭ ᏪᏌ ᏱᎨᎲᎩ.	hla-wesa-yigehvgi	hla-wesa-yigehvgi		It wasn’t a cat a while ago (for a fact).	
+	Ꮭ ᏪᏌ ᏱᎨᎮᎢ.	hla-wesa-yigehei	hla-wesa-yigehei		It wasn’t a cat a while ago (I know second hand).	
+	Ꮭ ᏪᏌ ᏱᎨᏎᏍᏗ.	hla-wesa-yigesesdi	hla-wesa-yigesesdi		It won’t be a cat.	
 						
-210	ᏥᏯᏚᎵᎭ.	jiiyaduliha	jiiyaduliha			
-	ᎠᏆᏚᎵᎭ.	agwaduliha	ayv-nasgi-agwaduliha; nasgi-ayv-agwaduliha			
-	ᎠᏴ ᎾᏍᎩ ᎠᏆᏚᎵᎭ.	ayv-nasgi-agwaduliha	ayv-nasgi-agwaduliha			
-	ᎾᏍᎩ ᎠᏴ ᎠᏆᏚᎵᎭ.	nasgi-ayv-agwaduliha	nasgi-ayv-agwaduliha			
-	ᎦᏥᏯᏚᎵᎭ.	gajiiyaduliha	gajiiyaduliha			
-	ᏓᏆᏚᎵᎭ.	dagwaduliha	dagwaduliha			
-	ᎬᏆᏚᎵᎭ.	gvgwaduliha	gvgwaduliha			
-	ᎤᏚᎵᎭ.	uduliha	uduliha			
-	ᏚᏚᎵᎭ.	duduliha	duduliha			
-	ᎯᏯᏚᎵᎭ.	hiiyaduliha	hiiyaduliha			
-	ᏣᏚᎵᎭ.	jaduliha	nihi-nasgi-jaduliha; nasgi-nihi-jaduliha			
-	ᏂᎯ ᎾᏍᎩ ᏣᏚᎵᎭ.	nihi-nasgi-jaduliha	nihi-nasgi-jaduliha			
-	ᎾᏍᎩ ᏂᎯ ᏣᏚᎵᎭ.	nasgi-nihi-jaduliha	nasgi-nihi-jaduliha			
-	ᎦᎯᏯᏚᎵᎭ.	gahiiyaduliha	gahiiyaduliha			
-	ᏕᏣᏚᎵᎭ.	dejaduliha	dejaduliha			
-	ᎨᏣᏚᎵᎭ.	gejaduliha	gejaduliha			
-	ᎤᎾᏚᎵᎭ.	unaduliha	unaduliha			
-	ᏚᎾᏚᎵᎭ.	dunaduliha	dunaduliha			
-	ᏥᏯᏚᎵᎭ ᎠᏎᏃ ᎯᏯᎧᎭ.	jiiyaduliha-asehno-hiiyawaka	jiiyaduliha-asehno-hiiyawaka			
-	ᏚᏚᎵᎭ ᎠᏎᏃ ᏓᎩᎭ.	duduliha-asehno-dagiha	duduliha-asehno-dagiha			
-	ᎦᏍᎩᎶ.	gasgilo	gasgilo			
-	ᏗᎦᏍᎩᎶ.	digasgilo	digasgilo			
+210	ᏥᏯᏚᎵᎭ.	jiiyaduliha	jiiyaduliha		I want him or her.	
+	ᎠᏆᏚᎵᎭ.	agwaduliha	ayv-nasgi-agwaduliha; nasgi-ayv-agwaduliha		I want it. He or she wants me.	
+	ᎠᏴ ᎾᏍᎩ ᎠᏆᏚᎵᎭ.	ayv-nasgi-agwaduliha	ayv-nasgi-agwaduliha		I, it, I want.	
+	ᎾᏍᎩ ᎠᏴ ᎠᏆᏚᎵᎭ.	nasgi-ayv-agwaduliha	nasgi-ayv-agwaduliha		He or she, me, wants.	
+	ᎦᏥᏯᏚᎵᎭ.	gajiiyaduliha	gajiiyaduliha		I want them (animate).	
+	ᏓᏆᏚᎵᎭ.	dagwaduliha	dagwaduliha		I want them (inanimate).	
+	ᎬᏆᏚᎵᎭ.	gvgwaduliha	gvgwaduliha		They want me.	
+	ᎤᏚᎵᎭ.	uduliha	uduliha		He or she wants him, her, or it.	
+	ᏚᏚᎵᎭ.	duduliha	duduliha		He or she wants them.	
+	ᎯᏯᏚᎵᎭ.	hiiyaduliha	hiiyaduliha		You one want him or her.	
+	ᏣᏚᎵᎭ.	jaduliha	nihi-nasgi-jaduliha; nasgi-nihi-jaduliha		You one want it. He or she wants you one.	
+	ᏂᎯ ᎾᏍᎩ ᏣᏚᎵᎭ.	nihi-nasgi-jaduliha	nihi-nasgi-jaduliha		You one, it, you want.	
+	ᎾᏍᎩ ᏂᎯ ᏣᏚᎵᎭ.	nasgi-nihi-jaduliha	nasgi-nihi-jaduliha		He or she, you one, wants.	
+	ᎦᎯᏯᏚᎵᎭ.	gahiiyaduliha	gahiiyaduliha		You want them (animate).	
+	ᏕᏣᏚᎵᎭ.	dejaduliha	dejaduliha		You want them (inanimate).	
+	ᎨᏣᏚᎵᎭ.	gejaduliha	gejaduliha		They want you one.	
+	ᎤᎾᏚᎵᎭ.	unaduliha	unaduliha		Him, her, or it, they want.	
+	ᏚᎾᏚᎵᎭ.	dunaduliha	dunaduliha		They want them.	
+	ᏥᏯᏚᎵᎭ ᎠᏎᏃ ᎯᏯᎧᎭ.	jiiyaduliha-asehno-hiiyawaka	jiiyaduliha-asehno-hiiyawaka		I want him or her but you have him or her.	
+	ᏚᏚᎵᎭ ᎠᏎᏃ ᏓᎩᎭ.	duduliha-asehno-dagiha	duduliha-asehno-dagiha		He or she wants them but I have them.	
+	ᎦᏍᎩᎶ.	gasgilo	gasgilo		A table. A chair.	
+	ᏗᎦᏍᎩᎶ.	digasgilo	digasgilo		Tables. Chairs.	
 						
-220	Ꭷ.	ka	ka			
-	ᏄᎳ.	nula	nula			
-	ᏂᎦᏓ.	nigada				not doing
-	ᏂᎦᏛ.	nigadv				not doing
-	ᎦᏙ ᎤᎵᏑᏫᏓ?	gado-ulsuhwida	gado-ulsuhwida			ul²su²³hwi²da
-	ᎦᏙ ᎤᎾᎵᏑᏫᏓ?	gado-unalsuhwida	gado-unalsuhwida			u²nal²su²hwị²da
-	ᎦᏙ ᏧᎵᏑᏫᏓ?	gado-julsuhwida	gado-julsuhwida			jul²su²³hwị²da
-	ᎦᏍᎩᎸᎢ.	gasgilvi	gasgilvi			
+220	Ꭷ!	ka	ka		Hey now!	
+	ᏄᎳ!	nula	nula		Hurry!	
+	ᏂᎦᏓ.	nigada			All.	not doing
+	ᏂᎦᏛ.	nigadv			All.	not doing
+	ᎦᏙ ᎤᎵᏑᏫᏓ?	gado-ulsuhwida	gado-ulsuhwida		What is the color?	ul²su²³hwi²da
+	ᎦᏙ ᎤᎾᎵᏑᏫᏓ?	gado-unalsuhwida	gado-unalsuhwida		What is their (animate) color?	u²nal²su²hwị²da
+	ᎦᏙ ᏧᎵᏑᏫᏓ?	gado-julsuhwida	gado-julsuhwida		What is their (inanimate) color?	jul²su²³hwị²da
+	ᎦᏍᎩᎸᎢ.	gasgilvi	gasgilvi		On a table. In a chair.	

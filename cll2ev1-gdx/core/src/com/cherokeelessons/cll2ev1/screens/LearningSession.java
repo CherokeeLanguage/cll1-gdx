@@ -45,12 +45,12 @@ import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
 public class LearningSession extends AbstractScreen implements Screen {
-	
+
 	/**
-     * Eight-bit UCS Transformation Format
-     */
-    public static final Charset UTF_8 = Charset.forName("UTF-8");
-    
+	 * Eight-bit UCS Transformation Format
+	 */
+	public static final Charset UTF_8 = Charset.forName("UTF-8");
+
 	private static final float PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT = .375f;
 	private static final String DING = "audio/ding.mp3";
 	private static final String BUZZER = "audio/buzzer2.mp3";
@@ -255,9 +255,23 @@ public class LearningSession extends AbstractScreen implements Screen {
 		text.setWrap(true);
 		text.setAlignment(Align.center);
 		tblText.add(text);
-
 		contentTable.row();
 		contentTable.add(tblText).expandX().fill().center();
+
+		// English gloss below Syllabary.
+		if (!activeCardData.getEnglishGloss().isEmpty()) {
+			Table tblGloss = new Table(skin);
+			tblGloss.defaults().expand().fill();
+			Label gloss = new Label(activeCardData.getEnglishGloss(), skin);
+			gloss.setFontScale(.85f);
+			gloss.setColor(Color.FIREBRICK);
+			gloss.setWrap(true);
+			gloss.setAlignment(Align.center);
+			tblGloss.add(gloss);
+			contentTable.row();
+			contentTable.add(tblGloss).expandX().fill().center();
+		}
+
 
 		// PIX below text
 		Table tblPix = new Table(skin);
@@ -277,9 +291,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 		final ScrollPane scroller = new ScrollPane(tblPix, skin);
 		scroller.setFadeScrollBars(false);
-		scroller.setForceScroll(true, false);
+		scroller.setForceScroll(false, false);
 		scroller.setOverscroll(true, false);
-		scroller.addAction(Actions.sequence(Actions.delay(.2f), Actions.run(new Runnable() {
+		scroller.addAction(Actions.sequence(Actions.delay(.25f), Actions.run(new Runnable() {
 			@Override
 			public void run() {
 				scroller.setScrollPercentX(.5f);
@@ -896,7 +910,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}
 		// reset basic statistics and scoring and tries remaining
 		for (ICard<CardData> card : activeDeck.getCards()) {
-//			CardStats cardStats = card.getCardStats();
+			// CardStats cardStats = card.getCardStats();
 			card.resetStats();
 			card.resetTriesRemaining(CardData.MAX_TRIES);
 			card.getCardStats().setPimsleurSlot(0);
@@ -940,25 +954,42 @@ public class LearningSession extends AbstractScreen implements Screen {
 			Gdx.app.postRunnable(replayAudio);
 		}
 	};
+	
+	private ClickListener showEnglish = new ClickListener() {
+		public void clicked(InputEvent event, float x, float y) {
+			activeCardStats.setCorrect(false);
+			showNewCardWithAudio();
+		}
+	};
 
-	protected TextButton btnReplay;
+	protected TextButton btnHelp;
+	protected TextButton btnAudio;
 	protected final Label lblCountdown;
 
 	private void initUi() {
-		uiTable = new Table(skin);
-		uiTable.setTouchable(Touchable.childrenOnly);
-		uiTable.defaults().expandX().top();
 		TextButton btnQuit = new TextButton(CLL2EV1.QUIT, skin);
 		btnQuit.getLabel().setFontScale(.7f);
-		btnReplay = new TextButton("[AUDIO]", skin);
-		btnReplay.getLabel().setFontScale(.7f);
-		btnReplay.addListener(playAudioChallenge);
-		btnQuit.pack();
 		btnQuit.addListener(onBack);
+		
+		btnHelp = new TextButton("[?]", skin);
+		btnHelp.getLabel().setFontScale(.7f);
+		btnHelp.addListener(showEnglish);
+		
+		btnAudio = new TextButton("[AUDIO]", skin);
+		btnAudio.getLabel().setFontScale(.7f);
+		btnAudio.addListener(playAudioChallenge);
+		
+		Table uiRight = new Table(skin);
+		uiRight.add(btnAudio);
+		uiRight.add(btnHelp);
+		
+		uiTable = new Table(skin);
+		uiTable.setTouchable(Touchable.childrenOnly);
+		uiTable.defaults().top();
 		uiTable.row();
 		uiTable.add(btnQuit).left();
-		uiTable.add(lblCountdown).center();
-		uiTable.add(btnReplay).right();
+		uiTable.add(lblCountdown).expandX().center();
+		uiTable.add(uiRight).right();
 
 		gameTable = new Table(skin);
 		gameTable.setFillParent(true);

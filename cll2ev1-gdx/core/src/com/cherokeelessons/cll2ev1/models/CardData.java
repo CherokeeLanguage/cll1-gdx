@@ -20,6 +20,15 @@ public class CardData implements ICardData {
 	private List<String> randomImageFiles = new ArrayList<String>();
 	private List<String> randomWrongImageFiles = new ArrayList<String>();
 	public String text;
+	protected String englishGloss;
+
+	public String getEnglishGloss() {
+		return englishGloss;
+	}
+
+	public void setEnglishGloss(String englishGloss) {
+		this.englishGloss = englishGloss;
+	}
 
 	public void addAudioFile(String file) {
 		audioFiles.add(file);
@@ -47,6 +56,7 @@ public class CardData implements ICardData {
 		copy.randomImageFiles = new ArrayList<String>(randomImageFiles);
 		copy.randomWrongImageFiles = new ArrayList<String>(randomWrongImageFiles);
 		copy.text = text;
+		copy.setEnglishGloss(getEnglishGloss());
 		return copy;
 	}
 

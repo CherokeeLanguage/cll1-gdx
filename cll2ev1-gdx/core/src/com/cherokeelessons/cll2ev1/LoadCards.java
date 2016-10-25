@@ -12,6 +12,15 @@ import com.cherokeelessons.deck.CardUtils;
 import com.cherokeelessons.deck.DeckStats;
 
 public class LoadCards implements Runnable {
+	private static final int CHAPTER = 0;
+	private static final int SYLLABARY = 1;
+	private static final int AUDIO = 2;
+	private static final int ANSWER_PICS = 3;
+	private static final int EXCLUDE_PICS = 4;
+	private static final int ENGLISH_GLOSS = 5;
+	@SuppressWarnings("unused")
+	private static final int NOTES = 6;
+
 	/**
      * Eight-bit UCS Transformation Format
      */
@@ -34,30 +43,31 @@ public class LoadCards implements Runnable {
 		int activeChapter = 0;
 		for (String tmpLine : tmpLines) {
 			String[] tmpCard = tmpLine.split("\t", -1);
-			if (tmpCard.length < 5) {
+			if (tmpCard.length < 6) {
 				continue;
 			}
-			if (tmpCard[0].startsWith("#")) {
+			if (tmpCard[CHAPTER].startsWith("#")) {
 				continue;
 			}
-			if (!tmpCard[0].trim().isEmpty()) {
+			if (!tmpCard[CHAPTER].trim().isEmpty()) {
 				try {
-					activeChapter = Integer.valueOf(tmpCard[0]);
+					activeChapter = Integer.valueOf(tmpCard[CHAPTER]);
 				} catch (NumberFormatException e) {
 				}
 			}
-			if (tmpCard[1].trim().isEmpty()) {
+			if (tmpCard[SYLLABARY].trim().isEmpty()) {
 				continue;
 			}
 			CardData data = new CardData();
 			data.chapter = activeChapter;
-			data.text = tmpCard[1].trim();
-			data.audio = tmpCard[2].trim();
-			data.images = tmpCard[3].trim();
+			data.text = tmpCard[SYLLABARY].trim();
+			data.audio = tmpCard[AUDIO].trim();
+			data.images = tmpCard[ANSWER_PICS].trim();
 			if (data.images.trim().isEmpty()) {
 				data.images = data.audio;
 			}
-			data.blacklistPic = tmpCard[4].trim();
+			data.blacklistPic = tmpCard[EXCLUDE_PICS].trim();
+			data.setEnglishGloss(tmpCard[ENGLISH_GLOSS].trim());
 			GameCard card = new GameCard();
 			card.setData(data);
 			game.cards.add(card);
