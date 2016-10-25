@@ -1,3 +1,4 @@
+1.61 - 
 1.60 - Add English gloss to new card display. Add [?] during play to show answer.
 1.59 - ᎠᏉᏗᎨᎢ audio re-record.
 1.58 - 676 challenges. Add core forms practice for Chapter 17.
