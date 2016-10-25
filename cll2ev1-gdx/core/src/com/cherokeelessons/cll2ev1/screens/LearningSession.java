@@ -46,6 +46,8 @@ import com.cherokeelessons.util.SlotFolder;
 
 public class LearningSession extends AbstractScreen implements Screen {
 
+	private static final long DAY_ms = 24l * 60l * 60l * 1000l;
+
 	/**
 	 * Eight-bit UCS Transformation Format
 	 */
@@ -272,7 +274,6 @@ public class LearningSession extends AbstractScreen implements Screen {
 			contentTable.add(tblGloss).expandX().fill().center();
 		}
 
-
 		// PIX below text
 		Table tblPix = new Table(skin);
 		tblPix.defaults().space(4).fill().expand().uniform();
@@ -459,7 +460,18 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS + ".tmp");
 		FileHandle fh_deckstats = slot.child(CLL2EV1.DECKSTATS);
-		json.toJson(DeckStats.calculateStats(activeDeck), fh_deckstats_tmp);
+		DeckStats deckStats = DeckStats.calculateStats(activeDeck);
+		deckStats.lastrun = System.currentTimeMillis();
+		if (masterDeck.size() > 0) {
+			deckStats.nextrun = System.currentTimeMillis() + DAY_ms/4;
+		} else {
+			int nextSession = 7; // no more than a week out
+			for (ICard<CardData> card : activeDeck.getCards()) {
+				nextSession = Math.min(card.getCardStats().getNextSessionShow(), nextSession);
+			}
+			deckStats.nextrun = System.currentTimeMillis() + DAY_ms * nextSession;
+		}
+		json.toJson(deckStats, fh_deckstats_tmp);
 		fh_deckstats_tmp.moveTo(fh_deckstats);
 	}
 
@@ -954,7 +966,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			Gdx.app.postRunnable(replayAudio);
 		}
 	};
-	
+
 	private ClickListener showEnglish = new ClickListener() {
 		public void clicked(InputEvent event, float x, float y) {
 			activeCardStats.setCorrect(false);
@@ -970,19 +982,19 @@ public class LearningSession extends AbstractScreen implements Screen {
 		TextButton btnQuit = new TextButton(CLL2EV1.QUIT, skin);
 		btnQuit.getLabel().setFontScale(.7f);
 		btnQuit.addListener(onBack);
-		
+
 		btnHelp = new TextButton("[?]", skin);
 		btnHelp.getLabel().setFontScale(.7f);
 		btnHelp.addListener(showEnglish);
-		
+
 		btnAudio = new TextButton("[AUDIO]", skin);
 		btnAudio.getLabel().setFontScale(.7f);
 		btnAudio.addListener(playAudioChallenge);
-		
+
 		Table uiRight = new Table(skin);
 		uiRight.add(btnAudio);
 		uiRight.add(btnHelp);
-		
+
 		uiTable = new Table(skin);
 		uiTable.setTouchable(Touchable.childrenOnly);
 		uiTable.defaults().top();
