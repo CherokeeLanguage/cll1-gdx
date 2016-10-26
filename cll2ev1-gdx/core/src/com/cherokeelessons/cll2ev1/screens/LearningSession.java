@@ -465,7 +465,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		if (masterDeck.size() > 0) {
 			deckStats.nextrun = System.currentTimeMillis() + DAY_ms/4;
 		} else {
-			int nextSession = 7; // no more than a week out
+			int nextSession = 365; // no more than a year out
 			for (ICard<CardData> card : activeDeck.getCards()) {
 				nextSession = Math.min(card.getCardStats().getNextSessionShow(), nextSession);
 			}

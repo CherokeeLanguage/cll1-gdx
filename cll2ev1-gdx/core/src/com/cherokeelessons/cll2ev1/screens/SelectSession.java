@@ -15,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
+import com.badlogic.gdx.utils.Logger;
 import com.badlogic.gdx.utils.Scaling;
 import com.cherokeelessons.cll2ev1.AbstractGame;
 import com.cherokeelessons.cll2ev1.CLL2EV1;
@@ -24,6 +25,8 @@ import com.cherokeelessons.deck.SkillLevel;
 import com.cherokeelessons.util.SlotFolder;
 
 public class SelectSession extends AbstractScreen {
+	private static final Logger log = new Logger(SelectSession.class.getSimpleName(), Logger.INFO);
+	private static final long HOUR_ms = 60l*60l*1000l;
 	
 	/**
      * Eight-bit UCS Transformation Format
@@ -54,7 +57,7 @@ public class SelectSession extends AbstractScreen {
 			Texture trash = assets.get(TRASH, Texture.class);
 
 			Label titleLabel = new Label(TITLE, skin);
-			// titleLabel.setFontScale(.75f);
+			 titleLabel.setFontScale(.85f);
 
 			Table menu = new Table(skin);
 			menu.setFillParent(true);
@@ -80,20 +83,25 @@ public class SelectSession extends AbstractScreen {
 				if (t == 0) {
 					text = EMPTY_SLOT;
 				}
+				int masterDeckSize = ((CLL2EV1)game).cards.size();
+				int percentInUse = 100*t/masterDeckSize;
+				text += "\n" + nextSessionIndicationText(di.nextrun, percentInUse);
+				
 				Image btnDeleteSession = new Image(trash);
 				btnDeleteSession.setScaling(Scaling.fit);
 				btnDeleteSession.setColor(Color.DARK_GRAY);
-				if (t == 0) {
-					btnDeleteSession.setColor(Color.LIGHT_GRAY);
-				}
 				TextButton btnSession = new TextButton(text, skin);
-				btnSession.getLabel().setFontScale(.8f);
+				btnSession.getLabel().setFontScale(.7f);
 				btnSession.getLabel().setAlignment(Align.center);
 				menu.row();
 				menu.add(btnSession).fillX().expand();
 				menu.add(btnDeleteSession).expand(false, false);
 				btnSession.addListener(chooseSession(ix));
-				btnDeleteSession.addListener(deleteSessionConfirm(ix, btnDeleteSession, btnSession));
+				if (t!=0) {
+					btnDeleteSession.addListener(deleteSessionConfirm(ix, btnDeleteSession, btnSession));
+				} else {
+					btnDeleteSession.setColor(Color.LIGHT_GRAY);
+				}
 			}
 			TextButton btnBack = new TextButton(CLL2EV1.BACKTEXT, skin);
 			btnBack.getLabel().setFontScale(.7f);
@@ -114,8 +122,9 @@ public class SelectSession extends AbstractScreen {
 					protected void result(Object object) {
 						if ("YES".equals(object)) {
 							SlotFolder.getSlotFolder(session).deleteDirectory();
-							btnSession.setText(EMPTY_SLOT);
+							btnSession.setText(EMPTY_SLOT+"\n"+nextSessionIndicationText(0l, 0));
 							btnTrashcan.setColor(Color.LIGHT_GRAY);
+							btnTrashcan.clearListeners();
 						}
 					};
 				};
@@ -165,8 +174,35 @@ public class SelectSession extends AbstractScreen {
 
 	@Override
 	protected void act(float delta) {
-		// TODO Auto-generated method stub
-
 	}
 
+	private static String nextSessionIndicationText(long nextRun, int percentInUse) {
+		String text = percentInUse+"% cards in play.";
+		nextRunNotice: if (nextRun!=0l) {
+			nextRun-=System.currentTimeMillis();
+			log.info("nextRun ms: "+nextRun);
+			if (nextRun<0) {
+				text += " Your practice is PAST DUE!";
+				break nextRunNotice;
+			}
+			double hours = (double)nextRun/(double)HOUR_ms;
+			log.info("nextRun hours: "+hours);
+			if (hours<4d) {
+				text += " Practice again now.";
+				break nextRunNotice;
+			}
+			if (hours<12d) {
+				text += " Practice again later today.";
+				break nextRunNotice;
+			}
+			if (hours<36d) {
+				text += " Practice again tomorrow.";
+				break nextRunNotice;
+			}
+			int days = (int) Math.ceil(hours/24d);
+			log.info("nextRun days: "+days);
+			text += " Practice again in "+days+" days.";
+		}
+		return text;
+	}
 }

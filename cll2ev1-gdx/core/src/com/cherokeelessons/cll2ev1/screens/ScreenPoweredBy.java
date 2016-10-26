@@ -102,11 +102,6 @@ public class ScreenPoweredBy extends AbstractScreen {
 		stage.addActor(logoGroup);
 	}
 
-	@Override
-	public void show() {
-		super.show();
-	}
-
 	private Action getAlphaAction() {
 		SequenceAction sa = Actions.sequence();
 		sa.addAction(Actions.delay(1f));
@@ -132,17 +127,26 @@ public class ScreenPoweredBy extends AbstractScreen {
 
 	@Override
 	protected boolean onBack() {
-		return false;
+		if (onDone != null) {
+			Gdx.app.postRunnable(onDone);
+		}
+		return true;
 	}
 
 	@Override
 	protected boolean onMenu() {
-		return false;
+		if (onDone != null) {
+			Gdx.app.postRunnable(onDone);
+		}
+		return true;
 	}
 
 	@Override
 	protected void act(float delta) {
-		// TODO Auto-generated method stub
-
+		if (Gdx.input.justTouched()) {
+			if (onDone != null) {
+				Gdx.app.postRunnable(onDone);
+			}
+		}
 	}
 }
