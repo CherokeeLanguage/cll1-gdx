@@ -1,4 +1,4 @@
-1.63 - Fix incorrect ᏱᏗᏣᎭ. (Ꮥ vs Ꮧ).
+1.63 - Fix incorrect ᏱᏗᏣᎭ. (Ꮥ vs Ꮧ after Ᏹ).
 1.62 - Add missing "maybe" forms for Chapter 20. Now have 681 challenges.
 1.61 - Add new indicator for % how many cards are in play. Add "practice again" time indicator.
 1.60 - Add English gloss to new card display. Add [?] during play to show answer.
