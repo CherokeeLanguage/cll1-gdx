@@ -1,4 +1,0 @@
-Magic regex to delete duplicate lines - leaving only one line left.
-
-Search for: ^(.*)(\r?\n\1)+$
-Replace with: $1
