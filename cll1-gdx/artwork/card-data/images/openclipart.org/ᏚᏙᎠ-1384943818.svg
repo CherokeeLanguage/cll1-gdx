@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    viewBox="0 0 64 64"
+    version="1.1"
+  >
+  <g
+      id="g2871"
+      transform="translate(-1)"
+    >
+    <path
+        id="path2822"
+        d="m11 11v23l23-23h-23zm2 2h4v4h-4v-4z"
+        fill="#666"
+    />
+    <path
+        id="path2820"
+        d="m11 34 23-23 28 28-23 23-28-28z"
+        fill="#d9bb7a"
+    />
+    <g
+        id="g2840"
+        transform="translate(-2,-1)"
+        fill="#333"
+      >
+      <path
+          id="path2830"
+          d="m37 22-1 1 17 17 1-1-17-17z"
+      />
+      <path
+          id="path2832"
+          d="m25 34-1 1 17 17 1-1-17-17z"
+      />
+      <path
+          id="path2834"
+          d="m31 28-1 1 17 17 1-1-17-17z"
+      />
+    </g
+    >
+    <path
+        id="path2838"
+        d="m16 13v-2c0-0.949-1.054-2-2-2h-7s-1-0.0508-1-1v-3c0-1 1-1 1-1h3s1 0 1 1v5h2v-6c0-1-1-2-2-2h-5.0225c-0.9775 0-1.9775 0.9492-1.9775 1.8983v5.1017c0 0.94915 0.88994 2 2 2h7c0.96272 0 1 1 1 1v1h-1v2h1c1 0 2-1 2-2z"
+        fill="#333"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >name tag</dc:title
+        >
+        <dc:date
+          >2013-11-20T05:36:58</dc:date
+        >
+        <dc:description
+          >name tag</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/188919/price-tag-by-crisg-188919</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >crisg</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >label</rdf:li
+            >
+            <rdf:li
+              >name tag</rdf:li
+            >
+            <rdf:li
+              >price</rdf:li
+            >
+            <rdf:li
+              >price tag</rdf:li
+            >
+            <rdf:li
+              >sale</rdf:li
+            >
+            <rdf:li
+              >tag</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

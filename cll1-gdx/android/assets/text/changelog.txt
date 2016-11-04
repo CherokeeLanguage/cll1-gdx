@@ -1,0 +1,61 @@
+1.65 -
+1.64 - Fix incorrect English gloss for ᎯᏴᏫ.
+1.63 - Fix incorrect ᏱᏗᏣᎭ. (Ꮥ vs Ꮧ after Ᏹ).
+1.62 - Add missing "maybe" forms for Chapter 20. Now have 681 challenges.
+1.61 - Add new indicator for % how many cards are in play. Add "practice again" time indicator.
+1.60 - Add English gloss to new card display. Add [?] during play to show answer.
+1.59 - ᎠᏉᏗᎨᎢ audio re-record.
+1.58 - 676 challenges. Add core forms practice for Chapter 17.
+1.57 - Various picture adjustments for Chapter 18.
+1.56 - Various picture adjustments for Chapter 19.
+1.55 - Various picture fixes for Chapters 21 & 22.
+1.54 - 653 challenges. Chapter 22. All core vocabulary from the book now covered.
+1.53 - 647 challenges. Chapter 21.
+1.52 - 625 challenges. Added remainder of Chapter 20 challenges.
+1.51 - 606 challenges. Added: Ꮭ ᏱᎩ, Ᏹ ᏱᎨᏐᎢ, Ꮭ ᏱᎨᏒᎩ, Ꮭ ᏱᎨᏎᎢ, Ꮭ ᏱᎨᎲᎩ, Ꮭ ᏱᎨᎮᎢ, Ꮭ ᏱᎨᏎᏍᏗ.
+1.50 - 599 challenges. Added: ᎨᎲᎩ, ᎨᎨᎢ, ᎨᏒᎩ, ᎨᏎᎢ, ᎢᎩ, ᎢᎦ, ᎨᏎᏍᏗ, ᎨᏐᎢ.
+1.49 - Chapter 6 ᏂᏔᏛᎦ, ᎿᏛᎦ, ᎠᎴ ᎰᏪᎵᎦ added. 591 challenges.
+1.48 - Added ᎦᎪ ᎠᎴ ᎦᏙ ᎤᏍᏗ/ᏧᏍᏗ/ᎤᎾᏍᏗ challenge forms to chapters 18 and 19. 588 challenges.
+1.47 - Chapter 19. Now have 568 challenges!
+1.46 - Fix for older Androids. (Removed references to "StandardCharsets").
+1.45 - Picture adjustments.
+1.44 - Chapter 18. Now have 512 challenges!
+1.43 - Chapter 17 core vocabulary. Now have 474 challenges!
+1.42 - Picture and audio fixes.
+1.41 - Chapter 16 - Basic sentence forms practice. Now have 466 challenges! 
+1.40 - Blacklist certain color combinations.
+1.39 - Switch back to 45 DPI. 35 DPI is too low of a resolution to be very useful.
+1.38 - Chapter 15 - plural colors. Now have 436 challenges!
+1.37 - Chapter 14 - singular colors. Now have 411 challenges!
+1.36 - Chapter 13. Now have 379 challenges.
+1.35 - Fix ᎠᏂᏲᏁᎦ card missing its flag. Fix ᏚᏙᎠ and ᏚᎾᏙᎠ symbol ordering. Change -Ꮎ? symbol. Change ᎫᎴᏍ... card. Other misc adjustments.
+1.34 - Fix duplicate card ids FUBAR for ᏂᎯ ᎠᎴ ᎠᏴ. Add code to log and discard any future duplicate ids. Now have 371 challenges.
+1.33 - Debug logging for when a card's stats no longer match any existing cards.
+1.32 - Chapter 12 parts 2 and 3 of 3. Now have 375 challenges.
+1.31 - Speed up session load when there are > 200 challenges saved as part of session.
+1.30 - Chapter 12 part 1 of 3. Now have 344 challenges. Misc other audio fixes.
+1.29 - Audio fix. (ᏃᏘ -> ᎧᏂᎩᏓ). Blacklist fixes.
+1.28 - Chapter 11 vocabulary. Now have 337 challenges.
+1.27 - Chapter 10 core vocabulary part 2. Now have 270 challenges.
+1.26 - Chapter 10 core vocabulary part 1. Now have 258 challenges.
+1.25 - Various Chapter 8 picture adjustments.
+1.24 - Fix incorrect ᏲᏁᎦᎾ picture. Switch to using mp3gain instead of normalize-mp3 for automatic audio volume adjustment.
+1.23 - Chapter 9 - Additional vocabulary - Now have 238 challenges.
+1.22 - Chapter 9 - Additional vocabulary - Now have 228 challenges.
+1.21 - Chapter 8 fixes.
+1.20 - Blacklist fix.
+1.19 - Audio filename fix.
+1.18 - Chapter 9 - Core vocabulary
+1.17 - Adjust chapter 5 artwork.
+1.16 - Ꮎ ᎠᎨᏯ ᎤᎿ should only show one woman on far shore.
+1.15 - Fix wrong audio file for Ꮎ ᎠᎨᏯ ᎤᎿ. Add picture blacklist entries to several challenges.
+1.14 - It's getting too large too fast. Use PNGCRUSH on pictures. Reduce audio from 192 bits to 128 bits.
+1.13 - Fix issue with wrong cards vs correct cards and Chapter 8's variations for ᎥᏍᎩᎾ vs ᎾᏍᎩ
+1.12 - Added selected entries from Chapter 8 exercises. Fixed ᏘᎪᎵᏯ vs ᏙᏪᎸᎦ mixup. Now have 200 challenges.
+1.11 - Fixed up the "new card" dialog to show all matching pix in a horizontal scroller.
+1.10 - Added "new card" dialog.
+1.09 - Try and fix issue with cards getting "lost" between sessions.
+1.08 - Bug fix with challenges getting stuck into "next session" mode.
+1.07 - Added remainder of Chapter 7 audio and pix. Now have 155 challenges.
+1.06 - 1.01 Adding challenges.
+1.00 - Initial version.

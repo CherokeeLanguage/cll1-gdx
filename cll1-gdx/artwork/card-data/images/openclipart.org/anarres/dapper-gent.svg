@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg4019"
+    viewBox="0 0 231.33 460.27"
+    version="1.1"
+  >
+  <defs
+      id="defs4021"
+    >
+    <linearGradient
+        id="linearGradient4001"
+        x1="200.96"
+        gradientUnits="userSpaceOnUse"
+        y1="596.16"
+        gradientTransform="translate(0,-2)"
+        x2="223.55"
+        y2="673.71"
+      >
+      <stop
+          id="stop6351"
+          stop-color="#8f1908"
+          offset="0"
+      />
+      <stop
+          id="stop6353"
+          stop-color="#780b41"
+          offset="1"
+      />
+    </linearGradient
+    >
+  </defs
+  >
+  <g
+      id="layer1"
+      transform="translate(-55.62 -373.51)"
+    >
+    <g
+        id="g3973"
+      >
+      <path
+          id="path3954-8-5-3-0-1-4-1-0-3-2-8"
+          stroke-linejoin="round"
+          d="m-1064 429.36c0 65.722-60.889 119-136 119s-136-53.278-136-119 60.889-119 136-119 136 53.278 136 119z"
+          fill-rule="evenodd"
+          transform="matrix(.11545 .028799 -.060151 .126 423.87 674.3)"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="42.641"
+          fill="#e5d5b3"
+      />
+      <path
+          id="path4553-8-2-8-8-9-0-6-20-3"
+          stroke="#000"
+          stroke-width="4.3368"
+          fill="#323232"
+          d="m227.56 655.96c0.81983 48.39 49.269 37.212 47.708 29.03-11.656-103.4-31.343-139.61-40.3-138.67-14.227 8.5533-14.425 43.755-7.4082 109.64z"
+      />
+      <rect
+          id="rect3252-6-7-2-7-1-6-3-5-6-3-0"
+          stroke-linejoin="round"
+          stroke-width="5.2007"
+          fill-rule="evenodd"
+          rx="73.384"
+          transform="matrix(1 -.000076208 .0014447 1 0 0)"
+          ry="26.871"
+          width="151.33"
+          stroke="#000"
+          stroke-linecap="round"
+          y="679.66"
+          x="104.66"
+          height="140.98"
+          fill="#323232"
+      />
+      <path
+          id="path3928-9-81-8-0-49-3-5-5-4-3"
+          stroke-linejoin="round"
+          d="m212.67 815.36-0.22586-145.99"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="4.0111"
+          fill="#fff"
+      />
+      <path
+          id="path3932-5-3-3-6-1-5-5-0-2-6-5"
+          stroke-linejoin="round"
+          d="m183.12 526.75c-0.25708-0.002-0.51541 0.003-0.77218 0-0.14566 0-0.29159-0.0299-0.43728-0.0299-0.2247 0-0.45433 0-0.67967-0.0299v0.0687c-17.247 0.69651-51.76 12.314-62.847 28.2-23.758 33.82-15.363 79.712-17.204 123.23 0.32768 11.183-1.7605 24.54 1.7961 34.327 13.53 10.868 37.799 13.29 54.312 16.196 4.3925 0.36469 11.377 0.62394 18.96 0.88469v0.0299c0.79621 0.0299 1.5535 0.0328 2.3385 0.0507h0.23014c7.5862 0.15532 14.574 0.27778 18.978 0.15532 16.634-1.9967 40.989-3.0854 55.034-13.196 4.0323-9.5787 2.6027-23.032 3.4789-34.182 0.29804-43.558-7.3257-89.169-29.392-124.25-10.292-16.472-25.928-29.725-43.118-31.367v-0.0986c-0.22521 0-0.45449-0.0299-0.67949-0.0299z"
+          fill-rule="evenodd"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="5.3381"
+          fill="#323232"
+      />
+      <path
+          id="path3928-9-81-8-0-49-3-5-5-4-3-6"
+          stroke-linejoin="round"
+          d="m236.54 722.57-11.14-44.31"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="5"
+          fill="#fff"
+      />
+      <path
+          id="path4010-7-3-7-4-8-5-4-5-9-2-4"
+          stroke="#000"
+          stroke-width="5.4406"
+          d="m284.23 812.92s-4.2023-19.881-30.36-17.549c-35.188 3.1374-36.195 23.174-36.195 23.174-2.0626 6.2067 68.31 2.5002 66.555-5.6248z"
+      />
+      <path
+          id="path3954-8-5-7-3-4-8-9-1-3-6"
+          stroke-linejoin="round"
+          d="m-1064 429.36c0 65.722-60.889 119-136 119s-136-53.278-136-119 60.889-119 136-119 136 53.278 136 119z"
+          fill-rule="evenodd"
+          transform="matrix(-.10896 .047813 .080493 .11409 -57.261 726.91)"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="42.641"
+          fill="#fff"
+      />
+      <path
+          id="path4553-7-9-8-3-7-1-5-7"
+          stroke="#000"
+          stroke-width="4.7467"
+          fill="#323232"
+          d="m123.25 711.41c-2.1608 7.5734-46.05-11.57-45.653-24.775 11.568-91.68 18.45-127.04 38.472-130.6 16.383 3.5457 16.326 85.773 7.1808 155.38z"
+      />
+      <path
+          id="path5445"
+          stroke-linejoin="round"
+          d="m239.44 535.44-15.719 12.156 3.8438-11.094-87.75 14.844 6.9062 6.6562-9.125-6.2812 2.2188-0.375-0.3125-0.28125-2.1875 0.46875l-20.32-13.99-32.501 5.9071 61.805 23.219c18.482 14.77 80.817 145.72 78.255 104.38l-0.30016-110.7 34.493-10.136z"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="5"
+          fill="#fff"
+      />
+      <path
+          id="path4010-1-9-2-6-6-6-8-1-7-3-93-6"
+          stroke="#000"
+          stroke-width="5.4406"
+          d="m104.77 819.46s2.9522-24.925 40.495-23.24c50.503 2.2674 54.98 27.143 54.98 27.143 3.8756 7.6245-96.736 6.2842-95.475-3.9037z"
+      />
+      <path
+          id="path5530-1"
+          d="m63.129 826.29 44.891-90.11c20.98-32.62-20.335-52.56-32.965-12.15"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="15"
+          fill="none"
+      />
+      <path
+          id="path5530"
+          d="m63.026 826.07 44.884-90.11c20.99-32.62-20.328-52.55-32.958-12.14"
+          stroke="#b27116"
+          stroke-linecap="round"
+          stroke-width="12"
+          fill="none"
+      />
+      <path
+          id="path5528"
+          fill-rule="evenodd"
+          fill="#141414"
+          transform="matrix(-.25462 .0080099 -.037927 -.43080 169.4 701.13)"
+          d="m-150.54 297.36c-9.0867 0.65845-55.109-67.202-51.136-75.401 3.9731-8.1985 85.753-14.125 90.867-6.5846 5.1136 7.5401-30.644 81.327-39.731 81.985z"
+      />
+      <path
+          id="path5445-3"
+          stroke-linejoin="round"
+          d="m226.81 586.95-57.562 8c25.204 41.13 59.732 106.92 57.812 75.938l-0.25-83.938z"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
+          fill="url(#linearGradient4001)"
+      />
+      <path
+          id="path5526"
+          stroke-linejoin="round"
+          d="m151.3 570.8 41.818 3.0413 30.413-12.925"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="6"
+          fill="none"
+      />
+      <rect
+          id="rect4240-8-4-1-9-2-8"
+          stroke-linejoin="bevel"
+          fill-rule="evenodd"
+          rx="80.629"
+          ry="69.798"
+          height="144.41"
+          width="168.48"
+          stroke="#000"
+          stroke-linecap="round"
+          y="418.52"
+          x="87.362"
+          stroke-width="4.8137"
+          fill="#a58958"
+      />
+      <path
+          id="path458-3-6-1-3-2"
+          fill="#231f20"
+          d="m169.21 511.23c0 3.1861-2.4417 5.7679-5.4571 5.7679-3.0144 0-5.4581-2.5818-5.4581-5.7679 0-3.185 2.4437-5.769 5.4581-5.769 3.0154 0 5.4571 2.584 5.4571 5.769"
+      />
+      <path
+          id="path458-9-9-8-4-3"
+          fill="#231f20"
+          d="m231.13 510.02c0 3.1861-2.4417 5.7679-5.4571 5.7679-3.0144 0-5.4581-2.5818-5.4581-5.7679 0-3.185 2.4437-5.769 5.4581-5.769 3.0154 0 5.4571 2.584 5.4571 5.769"
+      />
+      <path
+          id="path3831-18-3-9"
+          stroke-linejoin="round"
+          d="m186.23 540.84h14.853"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="4.0572"
+          fill="none"
+      />
+      <path
+          id="path4494-63-0-5-8-1-1-6"
+          stroke-linejoin="round"
+          d="m-5164.5-923.98c-9.149-127.3 100.81-228.71 222.82-236.84 168.09-11.202 301.63 134.18 311.59 295.47 5.7999 93.991-27.52 187.5-87.774 259.37"
+          transform="matrix(-.019168 -.021898 .019543 -.014867 27.195 390.22)"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="139.79"
+          fill="none"
+      />
+      <path
+          id="path13392-2"
+          d="m82.03 517.49 21.851-7.2666c22.698-15.946 31.438-31.338 48.275-44.205 17.907-7.4111 49.63 6.2575 55.39 3.0278 8.8395-0.58494 25.408-14.13 38.112-21.194-12.355-19.526-21.956-22.917-42.177-30.883-39.339-8.261-72.116 1.2002-101.12 30.278-15.79 16.736-22.547 48.626-20.326 70.244z"
+          stroke-opacity=".76712"
+          stroke="#060606"
+          stroke-width="2.7736px"
+          fill="#191919"
+      />
+      <g
+          id="g6442-8"
+          transform="matrix(-.89891 -.074214 -.041307 .80317 711.32 228.91)"
+        >
+        <path
+            id="path3174-7-8"
+            fill-rule="evenodd"
+            fill="#2c111f"
+            d="m582.89 311.37c33.443-2.2608 116.75-15.468 115.9 25.021-0.89345 42.404-112.02 48.183-130.99 49.909-47.859 4.3553-98.401 2.1727-94.124-33.952 3.1479-26.588 79.515-37.184 109.22-40.979"
+        />
+        <path
+            id="path3310-3-9"
+            opacity=".99"
+            d="m582.23 309.77c33.443-2.2608 116.75-15.468 115.9 25.021-0.89345 42.404-112.02 48.183-130.99 49.909-47.859 4.3553-98.401 2.1727-94.124-33.952 3.1479-26.588 79.515-37.184 109.22-40.979"
+            stroke="#000"
+            stroke-width="5"
+            fill="#323232"
+        />
+        <path
+            id="path3194-4-6"
+            stroke="#000"
+            stroke-width="5"
+            fill="#323232"
+            d="m564.53 238.7c-41.909 9.5523-82.15 26.421-69.489 81.968 4.7762 20.954 8.7987 30.761 12.821 40.568 2.6817 6.5379 35.346 10.224 67.639 6.626 51.128-5.6961 87.087-20.448 87.674-28.324 0.58724-7.8787-2.0474-29.893-8.3778-57.666-9.5523-41.909-58.165-48.701-90.267-43.171"
+        />
+      </g
+      >
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Dapper Gentleman</dc:title
+        >
+        <dc:date
+          >2013-10-13T16:57:46</dc:date
+        >
+        <dc:description
+          >A gentleman comic character with a bowler hat, fancy suit and cane / walking stick. Vaguely based on Charlie Chaplin. </dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/184839/dapper-gentleman-by-anarres-184839</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >anarres</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >Chaplin</rdf:li
+            >
+            <rdf:li
+              >bowler</rdf:li
+            >
+            <rdf:li
+              >cane</rdf:li
+            >
+            <rdf:li
+              >dapper</rdf:li
+            >
+            <rdf:li
+              >gentleman</rdf:li
+            >
+            <rdf:li
+              >hat</rdf:li
+            >
+            <rdf:li
+              >walking stick</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
