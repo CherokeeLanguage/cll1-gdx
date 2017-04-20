@@ -26,6 +26,7 @@ for dir in *; do
 	if [ ! -d "pngs" ]; then mkdir "pngs"; fi
 	for png in pngs/*.png; do
 		if [ ! -f "$png" ]; then continue; fi
+		if [[ "$png" == *_backup.png ]]; then rm "$png"; fi
 		svg="$(basename "$png"|sed 's/.png$/.svg/')"
 		if [ ! -f "$svg" ]; then rm "$png"; fi
 		if [ "$png" -ot "$svg" ]; then rm "$png"; fi
@@ -34,6 +35,7 @@ for dir in *; do
 		if [ ! -f "$svg" ]; then continue; fi
 		png="pngs/$(echo "$svg"|sed 's/.svg$/.png/')"
 		if [ -f "$png" ]; then continue; fi
+		if [[ "$svg" == *_backup.svg ]]; then continue; fi
 		echo "=== $png"
 		PNGS="${PNGS}\t${png}, "
 		inkscape -z -b=white -y=1.0 -C -d="$DPI" -e="$png" "$svg"
