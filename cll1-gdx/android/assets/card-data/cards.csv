@@ -522,8 +522,8 @@
 	ᏣᎭ.	jaha			You one have it.	
 	ᎤᏩᎧᎭ.	uwakaha			He or she has him or her.	
 	ᎤᏂᎧᎭ.	unikaha			They have him or her.	
-	ᏥᏯᎧᎭ.	jiyakaha			I have him or her.	
-	ᎯᏯᎧᎭ.	hiyakaha			You have him or her.	
+	ᎠᎩᎧᎭ.	agikaha			I have him or her.	
+	ᏣᎧᎭ.	jakaha			You have him or her.	
 						
 171	ᎪᏍᏓ	gosda			I-good.	
 	ᎰᏍᏓ	hosda			You one-good.	
@@ -563,8 +563,8 @@
 	ᎦᏙ ᎤᏍᏗ ᏣᎭ?	gado-usdi-jaha			What (inanimate) do you one have?	
 	ᎦᏙ ᎤᏍᏗ ᎤᏩᎧᎭ?	gado-usdi-uwakaha			What (animate) does he or she have?	
 	ᎦᏙ ᎤᏍᏗ ᎤᏂᎧᎭ?	gado-usdi-unikaha			What (animate) do they have?	
-	ᎦᏙ ᎤᏍᏗ ᏥᏯᎧᎭ?	gado-usdi-jiyakaha			What (animate) do I have?	
-	ᎦᏙ ᎤᏍᏗ ᎯᏯᎧᎭ?	gado-usdi-hiyakaha			What (animate) do you one have?	
+	ᎦᏙ ᎤᏍᏗ ᎠᎩᎧᎭ?	gado-usdi-agikaha			What (animate) do I have?	
+	ᎦᏙ ᎤᏍᏗ ᏣᎧᎭ?	gado-usdi-jakaha			What (animate) do you one have?	
 						
 	ᎾᏍᎩ ᎠᎩᎪᏩᏘᎭ.	nasgi-agigowhtiha	asgaya-agigowhtiha		He sees me.	
  	Ꮭ ᎾᏍᎩ ᏯᎩᎪᏩᏘᎭ.	hla-nasgi-yagigowhtiha	hla-asgaya-yagigowhtiha		He is not seeing me.	
@@ -604,15 +604,15 @@
 	ᎠᏂᏍᎦᏯ ᎩᏟ ᎤᏂᎧᎭ.	anisgaya-gihli-unikaha			Men, a dog, they have.	
 	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏳᏂᎧᎭ.	hla-anisgaya-wesa-yunikaha			Men, a cat, they do not have.	
 						
-	ᎯᎠ ᏥᏯᎧᎭ.	hia-jiyakaha	gihli-jiyakaha		Him or her, I have.	
-	Ꮭ Ꮎ ᏱᏥᏯᎧᎭ.	hla-na-yijiyakaha	hla-gihli-yijiyakaha		Him or her, I do not have.	
-	ᎩᏟ ᏥᏯᎧᎭ.	gihli-jiyakaha			A dog I have.	
-	Ꮭ ᎩᏟ ᏱᏥᏯᎧᎭ.	hla-gihli-yijiyakaha			A dog I do not have.	
+	ᎯᎠ ᎠᎩᎧᎭ.	hia-agikaha	gihli-agikaha		Him or her, I have.	
+	Ꮭ Ꮎ ᏯᎩᎧᎭ.	hla-na-yagikaha	hla-gihli-yagikaha		Him or her, I do not have.	
+	ᎩᏟ ᎠᎩᎧᎭ.	gihli-agikaha			A dog I have.	
+	Ꮭ ᎩᏟ ᏯᎩᎧᎭ.	hla-gihli-yagikaha			A dog I do not have.	
 						
-	ᎾᏍᎩ ᎯᏯᎧᎭ.	nasgi-hiyakaha	wesa-hiyakaha		Him or her, you have.	
-	Ꮭ ᎥᏍᎩᎾ ᏱᏯᎧᎭ.	hla-vsgina-hyiyakaha	hla-wesa-hyiyakaha		Him or her, you do not have.	
-	ᏪᏌ ᎯᏯᎧᎭ.	wesa-hiyakaha			A cat, you have.	
-	Ꮭ ᏪᏌ ᏱᏯᎧᎭ.	hla-wesa-hyiyakaha			A cat, you do not have.	
+	ᎾᏍᎩ ᏣᎧᎭ.	nasgi-jakaha	wesa-jakaha		Him or her, you have.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᏣᎧᎭ.	hla-vsgina-yijakaha	hla-wesa-yijakaha		Him or her, you do not have.	
+	ᏪᏌ ᏣᎧᎭ.	wesa-jakaha			A cat, you have.	
+	Ꮭ ᏪᏌ ᏱᏣᎧᎭ.	hla-wesa-yijakaha			A cat, you do not have.	
 						
 190	ᏚᎭ.	duha	asgaya-nuna-duha		He or she has them.	
 	ᏚᏂᎭ.	duniha	anisgaya-nuna-duniha		They have them.	
@@ -620,8 +620,8 @@
 	ᏕᏣᎭ.	dejaha	nuna-dejaha		You one have them.	
 	ᏚᏩᎧᎭ.	duwakaha	asgaya-gihli-duwakaha		He or she has them (animate).	
 	ᏚᏂᎧᎭ.	dunikaha	anisgaya-gihli-dunikaha		They have them (animate).	
-	ᎦᏥᏯᎧᎭ.	gajiyakaha	gihli-gajiyakaha		I have them (animate).	
-	ᎦᎯᏯᎧᎭ.	gahiyakaha	wesa-gahiyakaha		You one have them (animate).	
+	ᏓᎩᎧᎭ.	dagikaha	gihli-dagikaha		I have them (animate).	
+	ᏕᏣᎧᎭ.	dejakaha	wesa-dejakaha		You one have them (animate).	
 						
 	ᎦᎪ ᎬᎩᎪᏩᏘᎭ?	gago-gvgigowhtiha			Who are they who see me?	
 	ᎦᎪ ᎨᏣᎪᏩᏘᎭ?	gago-gejagowhtiha			Who are they who see you?	
@@ -632,8 +632,8 @@
 	ᎦᏙ ᏧᏍᏗ ᏕᏣᎭ?	gado-jusdi-dejaha			What all (inanimate) do you have?	
 	ᎦᏙ ᎤᎾᏍᏗ ᏚᏩᎧᎭ?	gado-unsdi-duwakaha			What all (animate) does he or she have?	
 	ᎦᏙ ᎤᎾᏍᏗ ᏚᏂᎧᎭ?	gado-unsdi-dunikaha			What all (animate) do they have?	
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᏥᏯᎧᎭ?	gado-unsdi-gajiyakaha			What all (animate) do I have?	
-	ᎦᏙ ᎤᎾᏍᏗ ᎦᎯᏯᎧᎭ?	gado-unsdi-gahiyakaha			What all (animate) do you have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᏓᎩᎧᎭ?	gado-unsdi-dagikaha			What all (animate) do I have?	
+	ᎦᏙ ᎤᎾᏍᏗ ᏕᏣᎧᎭ?	gado-unsdi-dejakaha			What all (animate) do you have?	
 						
 	Ꮭ ᏱᏚᎭ.	hla-yiduha	hla-agehya-nuna-yiduha		Them he or she does not have.	
 	Ꮭ ᏱᏚᏂᎭ.	hla-yiduniha	hla-anisgaya-nvya-yiduniha		Them they do not have.	
@@ -641,8 +641,8 @@
 	Ꮭ ᏱᏗᏣᎭ.	hla-yidijaha	hla-nuna-yidijaha		Them you one do not have.	
 	Ꮭ ᏱᏚᏩᎧᎭ.	hla-yiduwakaha	hla-asgaya-gihli-yiduwakaha		Them (animate) he or she does not have.	
 	Ꮭ ᏱᏚᏂᎧᎭ.	hla-yidunikaha	hla-anisgaya-wesa-yidunikaha		Them (animate) they do not have.	
-	Ꮭ ᏱᎦᏥᏯᎧᎭ.	hla-yigajiyakaha	hla-gihli-yigajiyakaha		Them (animate) I do not have.	
-	Ꮭ ᏱᎦᎯᏯᎧᎭ.	hla-yigahiyakaha	hla-wesa-yigahiyakaha		Them (animate) you one do not have.	
+	Ꮭ ᏱᏓᎩᎧᎭ.	hla-yidagikaha	hla-gihli-yidagikaha		Them (animate) I do not have.	
+	Ꮭ ᏱᏗᏣᎧᎭ.	hla-yidijakaha	hla-wesa-yidijakaha		Them (animate) you one do not have.	
 						
 	ᎬᎩᎪᏩᏘᎭ.	gvgigowhtiha	nasgi-gvgigowhtiha		They see me.	
 	Ꮭ ᏱᎬᎩᎪᏩᏘᎭ.	hla-yigvgigowhtiha	hla-nasgi-yigvgigowhtiha		They are not seeing me.	
@@ -684,15 +684,15 @@
 	ᎠᏂᏍᎦᏯ ᎩᏟ ᏚᏂᎧᎭ.	anisgaya-gihli-dunikaha			Men, dogs, they have them.	
 	Ꮭ ᎠᏂᏍᎦᏯ ᏪᏌ ᏱᏚᏂᎧᎭ.	hla-anisgaya-wesa-yidunikaha			Men, cats, they do not have them.	
 						
-	ᎯᎠ ᎦᏥᏯᎧᎭ.	hia-gajiyakaha	gihli-gajiyakaha		These (animate) I have.	
-	Ꮭ Ꮎ ᏱᎦᏥᏯᎧᎭ.	hla-na-yigajiyakaha	hla-gihli-yigajiyakaha		Those (animate) I do not have.	
-	ᎩᏟ ᎦᏥᏯᎧᎭ.	gihli-gajiyakaha			Dogs I have.	
-	Ꮭ ᎩᏟ ᏱᎦᏥᏯᎧᎭ.	hla-gihli-yigajiyakaha			Dogs I do not have.	
+	ᎯᎠ ᏓᎩᎧᎭ.	hia-dagikaha	gihli-dagikaha		These (animate) I have.	
+	Ꮭ Ꮎ ᏱᏓᎩᎧᎭ.	hla-na-yidagikaha	hla-gihli-yidagikaha		Those (animate) I do not have.	
+	ᎩᏟ ᏓᎩᎧᎭ.	gihli-dagikaha			Dogs I have.	
+	Ꮭ ᎩᏟ ᏱᏓᎩᎧᎭ.	hla-gihli-yidagikaha			Dogs I do not have.	
 						
-	ᎾᏍᎩ ᎦᎯᏯᎧᎭ.	nasgi-gahiyakaha	wesa-gahiyakaha		Those (animate) you have.	
-	Ꮭ ᎥᏍᎩᎾ ᏱᎦᎯᏯᎧᎭ.	hla-vsgina-yigahiyakaha	hla-wesa-yigahiyakaha		Those (animate) you do not have.	
-	ᏪᏌ ᎦᎯᏯᎧᎭ.	wesa-gahiyakaha			Cats you have.	
-	Ꮭ ᏪᏌ ᏱᎦᎯᏯᎧᎭ.	hla-wesa-yigahiyakaha			Cats you do not have.	
+	ᎾᏍᎩ ᏕᏣᎧᎭ.	nasgi-dejakaha	wesa-dejakaha		Those (animate) you have.	
+	Ꮭ ᎥᏍᎩᎾ ᏱᏗᏣᎧᎭ.	hla-vsgina-yidijakaha	hla-wesa-yidijakaha		Those (animate) you do not have.	
+	ᏪᏌ ᏕᏣᎧᎭ.	wesa-dejakaha			Cats you have.	
+	Ꮭ ᏪᏌ ᏱᏗᏣᎧᎭ.	hla-wesa-yidijakaha			Cats you do not have.	
 						
 200	ᎢᎩ.	igi			Is now.	
 	ᎢᎦ.	iga			Is now and ongoing.	
@@ -757,7 +757,7 @@
 	ᎨᏣᏚᎵᎭ.	gejaduliha	gejaduliha		They want you one.	
 	ᎤᎾᏚᎵᎭ.	unaduliha	unaduliha		Him, her, or it, they want.	
 	ᏚᎾᏚᎵᎭ.	dunaduliha	dunaduliha		They want them.	
-	ᏥᏯᏚᎵᎭ ᎠᏎᏃ ᎯᏯᎧᎭ.	jiiyaduliha-asehno-hiiyawaka	jiiyaduliha-asehno-hiiyawaka		I want him or her but you have him or her.	
+	ᏥᏯᏚᎵᎭ ᎠᏎᏃ ᏣᎧᎭ.	jiiyaduliha-asehno-jakaha	jiiyaduliha-asehno-jakaha		I want him or her but you have him or her.	
 	ᏚᏚᎵᎭ ᎠᏎᏃ ᏓᎩᎭ.	duduliha-asehno-dagiha	duduliha-asehno-dagiha		He or she wants them but I have them.	
 	ᎦᏍᎩᎶ.	gasgilo	gasgilo		A table. A chair.	
 	ᏗᎦᏍᎩᎶ.	digasgilo	digasgilo		Tables. Chairs.	
