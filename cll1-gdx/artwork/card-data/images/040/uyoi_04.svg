@@ -11,11 +11,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="uyoi_04.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
@@ -90,7 +90,7 @@
     </linearGradient>
     <inkscape:perspective
        id="perspective2993"
-       inkscape:persp3d-origin="55.612728 : 36.528159 : 1"
+       inkscape:persp3d-origin="55.612729 : 36.528159 : 1"
        inkscape:vp_z="108.89234 : 40.780423 : 1"
        inkscape:vp_y="0 : 199.32489 : 0"
        inkscape:vp_x="2.3331212 : 40.780423 : 1"
@@ -118,7 +118,7 @@
     <radialGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.2651814,0.30605522,-0.11003732,0.454876,234.21899,545.4194)"
-       r="7.3002194"
+       r="7.3002195"
        fy="1030.8566"
        fx="-46.736294"
        cy="1030.8566"
@@ -389,7 +389,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -501,7 +501,7 @@
            sodipodi:nodetypes="ccccc" />
         <path
            style="fill:#141414;fill-opacity:1;stroke:url(#linearGradient7638);stroke-width:2.83412194;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 61.745574,985.18731 4.24886,0"
+           d="m 61.745574,985.18731 h 4.24886"
            id="path7614"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cc" />

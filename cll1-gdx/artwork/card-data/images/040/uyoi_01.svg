@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="uyoi_01.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,7 +76,7 @@
          transform="matrix(10.209,0,0,-10.209,-3310,5423.8)"
          id="g3871">
         <path
-           d="m 358.34,463.49 c -1.5517,0.13437 -2.8862,1.5173 -3.1442,3.3728 l -0.28583,2.1152 c -0.0574,0.10167 -0.12104,0.19679 -0.1715,0.30489 l -5.5261,11.853 c -0.22363,0.47909 -0.35442,0.98155 -0.40017,1.4673 l -2.9917,0 c -1.9589,0 -3.5443,1.5663 -3.5443,3.5253 l 0,11.186 c 0,1.9589 1.5854,3.5443 3.5443,3.5443 l 5.2022,0 c 1.1908,1.0775 2.7573,1.734 4.4971,1.734 l 7.0887,0 c 3.7219,0 6.7075,-2.9857 6.7075,-6.7076 l 0,-11.529 c 0,-3.7219 -2.9857,-6.7076 -6.7075,-6.7076 l -2.1914,0 1.3529,-9.8326 c 0.29477,-2.1206 -0.92096,-4.0379 -2.744,-4.3066 -0.22788,-0.0336 -0.46434,-0.0382 -0.686,-0.019 z"
+           d="m 358.34,463.49 c -1.5517,0.13437 -2.8862,1.5173 -3.1442,3.3728 l -0.28583,2.1152 c -0.0574,0.10167 -0.12104,0.19679 -0.1715,0.30489 l -5.5261,11.853 c -0.22363,0.47909 -0.35442,0.98155 -0.40017,1.4673 h -2.9917 c -1.9589,0 -3.5443,1.5663 -3.5443,3.5253 v 11.186 c 0,1.9589 1.5854,3.5443 3.5443,3.5443 h 5.2022 c 1.1908,1.0775 2.7573,1.734 4.4971,1.734 h 7.0887 c 3.7219,0 6.7075,-2.9857 6.7075,-6.7076 v -11.529 c 0,-3.7219 -2.9857,-6.7076 -6.7075,-6.7076 h -2.1914 l 1.3529,-9.8326 c 0.29477,-2.1206 -0.92096,-4.0379 -2.744,-4.3066 -0.22788,-0.0336 -0.46434,-0.0382 -0.686,-0.019 z"
            inkscape:connector-curvature="0"
            style="color:#000000;fill:#c1022d;stroke-opacity:0"
            id="rect9675" />
@@ -85,7 +85,7 @@
            y="-376.28"
            width="6.0861001"
            height="15.217"
-           transform="matrix(0,1,-1,0,0,0)"
+           transform="rotate(90)"
            style="color:#000000;fill:#c1022d;stroke:#ffffff;stroke-width:1.08029997"
            ry="2.8259001"
            id="rect9623-6" />
@@ -95,7 +95,7 @@
            y="-378.63"
            width="6.0861001"
            ry="3.0431001"
-           transform="matrix(0,1,-1,0,0,0)"
+           transform="rotate(90)"
            inkscape:transform-center-y="-6.844065"
            inkscape:transform-center-x="-2.9954163"
            style="color:#000000;fill:#c1022d;stroke:#ffffff;stroke-width:1.08029997"
@@ -106,7 +106,7 @@
            y="-376.69"
            width="6.0861001"
            ry="3.0431001"
-           transform="matrix(0,1,-1,0,0,0)"
+           transform="rotate(90)"
            inkscape:transform-center-y="-6.844065"
            inkscape:transform-center-x="-2.6638674"
            style="color:#000000;fill:#c1022d;stroke:#ffffff;stroke-width:1.08029997"
@@ -117,7 +117,7 @@
            y="-374.60999"
            width="6.0861001"
            ry="3.0431001"
-           transform="matrix(0,1,-1,0,0,0)"
+           transform="rotate(90)"
            inkscape:transform-center-y="-6.844065"
            inkscape:transform-center-x="-2.3094439"
            style="color:#000000;fill:#c1022d;stroke:#ffffff;stroke-width:1.08029997"

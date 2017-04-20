@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="wahaya_05.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
@@ -24,87 +24,93 @@
      id="defs4">
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker8886"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path8888" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path8888"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker11709"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path11711" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path11711"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker11529"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path11531" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path11531"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker9853"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path9855"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker8843"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path8845"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker10739"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path10741"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <linearGradient
        id="linearGradient4302">
@@ -479,7 +485,7 @@
        id="clipPath20">
       <path
          id="path22"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -491,8 +497,8 @@
            clip-path="url(#clipPath20)">
           <path
              id="path30"
-             style="fill:#000000;fill-opacity:.14840"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.14839998"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -501,21 +507,21 @@
        id="clipPath36">
       <path
          id="path38"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath40">
       <path
          id="path42"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath64">
       <path
          id="path66"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -527,8 +533,8 @@
            clip-path="url(#clipPath64)">
           <path
              id="path74"
-             style="fill:#000000;fill-opacity:.19140"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.19140003"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -537,21 +543,21 @@
        id="clipPath80">
       <path
          id="path82"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath84">
       <path
          id="path86"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath108">
       <path
          id="path110"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -563,8 +569,8 @@
            clip-path="url(#clipPath108)">
           <path
              id="path118"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m2 7.44h4v4h-4v-4z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 2,7.44 h 4 v 4 H 2 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -573,21 +579,21 @@
        id="clipPath124">
       <path
          id="path126"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath128">
       <path
          id="path130"
-         d="m2 8h4v4h-4v-4z"
+         d="m 2,8 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath152">
       <path
          id="path154"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -599,8 +605,8 @@
            clip-path="url(#clipPath152)">
           <path
              id="path162"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m6 6.44h7v5h-7v-5z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 6,6.44 h 7 v 5 H 6 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -609,21 +615,21 @@
        id="clipPath168">
       <path
          id="path170"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath172">
       <path
          id="path174"
-         d="m6 7h7v5h-7v-5z"
+         d="m 6,7 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath20-1">
       <path
          id="path22-2"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -635,8 +641,8 @@
            clip-path="url(#clipPath20-1)">
           <path
              id="path30-3"
-             style="fill:#000000;fill-opacity:.14840"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.14839998"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -645,21 +651,21 @@
        id="clipPath36-6">
       <path
          id="path38-0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath40-6">
       <path
          id="path42-2"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath64-6">
       <path
          id="path66-1"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -671,8 +677,8 @@
            clip-path="url(#clipPath64-6)">
           <path
              id="path74-2"
-             style="fill:#000000;fill-opacity:.19140"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.19140003"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -681,21 +687,21 @@
        id="clipPath80-0">
       <path
          id="path82-2"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath84-3">
       <path
          id="path86-7"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath108-5">
       <path
          id="path110-9"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -707,8 +713,8 @@
            clip-path="url(#clipPath108-5)">
           <path
              id="path118-9"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m2 7.44h4v4h-4v-4z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 2,7.44 h 4 v 4 H 2 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -717,21 +723,21 @@
        id="clipPath124-7">
       <path
          id="path126-3"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath128-6">
       <path
          id="path130-1"
-         d="m2 8h4v4h-4v-4z"
+         d="m 2,8 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath152-2">
       <path
          id="path154-9"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -743,8 +749,8 @@
            clip-path="url(#clipPath152-2)">
           <path
              id="path162-4"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m6 6.44h7v5h-7v-5z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 6,6.44 h 7 v 5 H 6 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -753,21 +759,21 @@
        id="clipPath168-7">
       <path
          id="path170-8"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath172-4">
       <path
          id="path174-5"
-         d="m6 7h7v5h-7v-5z"
+         d="m 6,7 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <linearGradient
        x1="10.747"
        y1="-14.75"
        gradientTransform="matrix(0.18888,-0.61152,-0.61152,-0.18888,0.0392,15.382)"
-       x2="28.199"
+       x2="28.198999"
        gradientUnits="userSpaceOnUse"
        y2="-14.75"
        id="linearGradient24">
@@ -781,12 +787,12 @@
          id="stop28" />
     </linearGradient>
     <linearGradient
-       x1="7.8071"
-       y1="-17.502"
+       x1="7.8070998"
+       y1="-17.502001"
        gradientTransform="matrix(0.18872,-0.61152,-0.61152,-0.18872,0.0392,15.382)"
        x2="12.386"
        gradientUnits="userSpaceOnUse"
-       y2="-17.502"
+       y2="-17.502001"
        id="linearGradient42">
       <stop
          offset="0"
@@ -801,7 +807,7 @@
        id="clipPath54">
       <path
          inkscape:connector-curvature="0"
-         d="m1-0.63606h24v16h-24v-16z"
+         d="m 1,-0.63606 h 24 v 16 H 1 Z"
          id="path56" />
     </clipPath>
     <mask
@@ -813,8 +819,8 @@
            id="g62">
           <path
              inkscape:connector-curvature="0"
-             d="m1-0.63606h24v16h-24v-16z"
-             style="fill:#000000;fill-opacity:.12110"
+             d="m 1,-0.63606 h 24 v 16 H 1 Z"
+             style="fill:#000000;fill-opacity:0.12110003"
              id="path64" />
         </g>
       </g>
@@ -823,21 +829,21 @@
        id="clipPath70">
       <path
          inkscape:connector-curvature="0"
-         d="m1-0.63606h24v16h-24v-16z"
+         d="m 1,-0.63606 h 24 v 16 H 1 Z"
          id="path72" />
     </clipPath>
     <clipPath
        id="clipPath74">
       <path
          inkscape:connector-curvature="0"
-         d="m1 0h24v16h-24v-16z"
+         d="M 1,0 H 25 V 16 H 1 Z"
          id="path76" />
     </clipPath>
     <clipPath
        id="clipPath98">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v4h-5v-4z"
+         d="m 12,11.364 h 5 v 4 h -5 z"
          id="path100" />
     </clipPath>
     <mask
@@ -849,8 +855,8 @@
            id="g106">
           <path
              inkscape:connector-curvature="0"
-             d="m12 11.364h5v4h-5v-4z"
-             style="fill:#000000;fill-opacity:0.0703"
+             d="m 12,11.364 h 5 v 4 h -5 z"
+             style="fill:#000000;fill-opacity:0.07029999"
              id="path108" />
         </g>
       </g>
@@ -859,21 +865,21 @@
        id="clipPath114">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v4h-5v-4z"
+         d="m 12,11.364 h 5 v 4 h -5 z"
          id="path116" />
     </clipPath>
     <clipPath
        id="clipPath118">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12h5v4h-5v-4z"
+         d="m 12,12 h 5 v 4 h -5 z"
          id="path120" />
     </clipPath>
     <clipPath
        id="clipPath142">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v3h-5v-3z"
+         d="m 12,11.364 h 5 v 3 h -5 z"
          id="path144" />
     </clipPath>
     <mask
@@ -885,8 +891,8 @@
            id="g150">
           <path
              inkscape:connector-curvature="0"
-             d="m12 11.364h5v3h-5v-3z"
-             style="fill:#000000;fill-opacity:.10160"
+             d="m 12,11.364 h 5 v 3 h -5 z"
+             style="fill:#000000;fill-opacity:0.10160002"
              id="path152" />
         </g>
       </g>
@@ -895,21 +901,21 @@
        id="clipPath158">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v3h-5v-3z"
+         d="m 12,11.364 h 5 v 3 h -5 z"
          id="path160" />
     </clipPath>
     <clipPath
        id="clipPath162">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12h5v3h-5v-3z"
+         d="m 12,12 h 5 v 3 h -5 z"
          id="path164" />
     </clipPath>
     <clipPath
        id="clipPath186">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12.364h4v1h-4v-1z"
+         d="m 12,12.364 h 4 v 1 h -4 z"
          id="path188" />
     </clipPath>
     <mask
@@ -921,8 +927,8 @@
            id="g194">
           <path
              inkscape:connector-curvature="0"
-             d="m12 12.364h4v1h-4v-1z"
-             style="fill:#000000;fill-opacity:.30080"
+             d="m 12,12.364 h 4 v 1 h -4 z"
+             style="fill:#000000;fill-opacity:0.30080004"
              id="path196" />
         </g>
       </g>
@@ -931,21 +937,21 @@
        id="clipPath202">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12.364h4v1h-4v-1z"
+         d="m 12,12.364 h 4 v 1 h -4 z"
          id="path204" />
     </clipPath>
     <clipPath
        id="clipPath206">
       <path
          inkscape:connector-curvature="0"
-         d="m12 13h4v1h-4v-1z"
+         d="m 12,13 h 4 v 1 h -4 z"
          id="path208" />
     </clipPath>
     <clipPath
        id="clipPath230">
       <path
          inkscape:connector-curvature="0"
-         d="m2-0.63606h23v14h-23v-14z"
+         d="m 2,-0.63606 h 23 v 14 H 2 Z"
          id="path232" />
     </clipPath>
     <mask
@@ -957,8 +963,8 @@
            id="g238">
           <path
              inkscape:connector-curvature="0"
-             d="m2-0.63606h23v14h-23v-14z"
-             style="fill:#000000;fill-opacity:.19140"
+             d="m 2,-0.63606 h 23 v 14 H 2 Z"
+             style="fill:#000000;fill-opacity:0.19140003"
              id="path240" />
         </g>
       </g>
@@ -967,21 +973,21 @@
        id="clipPath246">
       <path
          inkscape:connector-curvature="0"
-         d="m2-0.63606h23v14h-23v-14z"
+         d="m 2,-0.63606 h 23 v 14 H 2 Z"
          id="path248" />
     </clipPath>
     <clipPath
        id="clipPath250">
       <path
          inkscape:connector-curvature="0"
-         d="m2 0h23v14h-23v-14z"
+         d="M 2,0 H 25 V 14 H 2 Z"
          id="path252" />
     </clipPath>
     <linearGradient
-       x1="16.828"
+       x1="16.827999"
        y1="-10.054"
        gradientTransform="matrix(0.18672,-0.61216,-0.61216,-0.18672,0.0392,15.382)"
-       x2="18.37"
+       x2="18.370001"
        gradientUnits="userSpaceOnUse"
        y2="-10.054"
        id="linearGradient280">
@@ -999,7 +1005,7 @@
          id="stop286" />
     </linearGradient>
     <linearGradient
-       x1="9.5825"
+       x1="9.5825005"
        y1="-7.3936"
        gradientTransform="matrix(0.17584,-0.61536,-0.61536,-0.17584,0.0392,15.382)"
        x2="10.128"
@@ -1042,11 +1048,11 @@
     </linearGradient>
     <linearGradient
        x1="20.671"
-       y1="-.73050"
+       y1="-0.73049998"
        gradientTransform="matrix(0.18968,-0.6112,-0.6112,-0.18968,0.0392,15.382)"
        x2="21.43"
        gradientUnits="userSpaceOnUse"
-       y2="-.73050"
+       y2="-0.73049998"
        id="linearGradient340">
       <stop
          offset="0"
@@ -1084,11 +1090,11 @@
     </linearGradient>
     <linearGradient
        x1="12.678"
-       y1="-21.669"
+       y1="-21.669001"
        gradientTransform="matrix(0.1792,-0.6144,-0.6144,-0.1792,0.0384,15.382)"
        x2="13.303"
        gradientUnits="userSpaceOnUse"
-       y2="-21.669"
+       y2="-21.669001"
        id="linearGradient380">
       <stop
          offset="0"
@@ -1104,7 +1110,7 @@
          id="stop386" />
     </linearGradient>
     <linearGradient
-       x1="17.092"
+       x1="17.091999"
        y1="-24.666"
        gradientTransform="matrix(0.19704,-0.60888,-0.60888,-0.19704,0.0384,15.382)"
        x2="17.986"
@@ -1147,11 +1153,11 @@
     </linearGradient>
     <linearGradient
        x1="20.586"
-       y1="-23.537"
+       y1="-23.537001"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
        x2="21.108"
        gradientUnits="userSpaceOnUse"
-       y2="-23.537"
+       y2="-23.537001"
        id="linearGradient440">
       <stop
          offset="0"
@@ -1168,11 +1174,11 @@
     </linearGradient>
     <linearGradient
        x1="11.342"
-       y1="-28.876"
+       y1="-28.875999"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
        x2="12.125"
        gradientUnits="userSpaceOnUse"
-       y2="-28.876"
+       y2="-28.875999"
        id="linearGradient460">
       <stop
          offset="0"
@@ -1210,11 +1216,11 @@
     </linearGradient>
     <linearGradient
        x1="16.174"
-       y1="-29.13"
+       y1="-29.129999"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
-       x2="16.957"
+       x2="16.957001"
        gradientUnits="userSpaceOnUse"
-       y2="-29.13"
+       y2="-29.129999"
        id="linearGradient500">
       <stop
          offset="0"
@@ -1231,11 +1237,11 @@
     </linearGradient>
     <linearGradient
        x1="10.781"
-       y1="-31.505"
+       y1="-31.504999"
        gradientTransform="matrix(0.1784,-0.61464,-0.61464,-0.1784,0.0392,15.382)"
        x2="11.588"
        gradientUnits="userSpaceOnUse"
-       y2="-31.505"
+       y2="-31.504999"
        id="linearGradient520">
       <stop
          offset="0"
@@ -1251,12 +1257,12 @@
          id="stop526" />
     </linearGradient>
     <linearGradient
-       x1="9.7842"
-       y1="-24.206"
+       x1="9.7841997"
+       y1="-24.205999"
        gradientTransform="matrix(0.19408,-0.60984,-0.60984,-0.19408,0.0392,15.382)"
        x2="10.361"
        gradientUnits="userSpaceOnUse"
-       y2="-24.206"
+       y2="-24.205999"
        id="linearGradient540">
       <stop
          offset="0"
@@ -1272,12 +1278,12 @@
          id="stop546" />
     </linearGradient>
     <linearGradient
-       x1="17.88"
-       y1="2.7178"
+       x1="17.879999"
+       y1="2.7177999"
        gradientTransform="matrix(0.18968,-0.6112,-0.6112,-0.18968,0.0392,15.382)"
-       x2="18.64"
+       x2="18.639999"
        gradientUnits="userSpaceOnUse"
-       y2="2.7178"
+       y2="2.7177999"
        id="linearGradient560">
       <stop
          offset="0"
@@ -1293,10 +1299,10 @@
          id="stop566" />
     </linearGradient>
     <linearGradient
-       x1="23.119"
+       x1="23.118999"
        y1="-6.25"
        gradientTransform="matrix(0.1784,-0.61464,-0.61464,-0.1784,0.0392,15.382)"
-       x2="23.926"
+       x2="23.926001"
        gradientUnits="userSpaceOnUse"
        y2="-6.25"
        id="linearGradient580">
@@ -1317,7 +1323,7 @@
        id="clipPath594">
       <path
          inkscape:connector-curvature="0"
-         d="m0 1.3639h12v12h-12v-12z"
+         d="m 0,1.3639 h 12 v 12 H 0 Z"
          id="path596" />
     </clipPath>
     <mask
@@ -1329,8 +1335,8 @@
            id="g602">
           <path
              inkscape:connector-curvature="0"
-             d="m0 1.3639h12v12h-12v-12z"
-             style="fill:#000000;fill-opacity:0.0703"
+             d="m 0,1.3639 h 12 v 12 H 0 Z"
+             style="fill:#000000;fill-opacity:0.07029999"
              id="path604" />
         </g>
       </g>
@@ -1339,21 +1345,21 @@
        id="clipPath610">
       <path
          inkscape:connector-curvature="0"
-         d="m0 1.3639h12v12h-12v-12z"
+         d="m 0,1.3639 h 12 v 12 H 0 Z"
          id="path612" />
     </clipPath>
     <clipPath
        id="clipPath614">
       <path
          inkscape:connector-curvature="0"
-         d="m0 2h12v12h-12v-12z"
+         d="M 0,2 H 12 V 14 H 0 Z"
          id="path616" />
     </clipPath>
     <clipPath
        id="clipPath638">
       <path
          inkscape:connector-curvature="0"
-         d="m0 4.3639h8v8h-8v-8z"
+         d="m 0,4.3639 h 8 v 8 H 0 Z"
          id="path640" />
     </clipPath>
     <mask
@@ -1365,8 +1371,8 @@
            id="g646">
           <path
              inkscape:connector-curvature="0"
-             d="m0 4.3639h8v8h-8v-8z"
-             style="fill:#000000;fill-opacity:.10160"
+             d="m 0,4.3639 h 8 v 8 H 0 Z"
+             style="fill:#000000;fill-opacity:0.10160002"
              id="path648" />
         </g>
       </g>
@@ -1375,21 +1381,21 @@
        id="clipPath654">
       <path
          inkscape:connector-curvature="0"
-         d="m0 4.3639h8v8h-8v-8z"
+         d="m 0,4.3639 h 8 v 8 H 0 Z"
          id="path656" />
     </clipPath>
     <clipPath
        id="clipPath658">
       <path
          inkscape:connector-curvature="0"
-         d="m0 5h8v8h-8v-8z"
+         d="m 0,5 h 8 v 8 H 0 Z"
          id="path660" />
     </clipPath>
     <clipPath
        id="clipPath682">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.3639h3v4h-3v-4z"
+         d="m 2,7.3639 h 3 v 4 H 2 Z"
          id="path684" />
     </clipPath>
     <mask
@@ -1401,8 +1407,8 @@
            id="g690">
           <path
              inkscape:connector-curvature="0"
-             d="m2 7.3639h3v4h-3v-4z"
-             style="fill:#000000;fill-opacity:.30080"
+             d="m 2,7.3639 h 3 v 4 H 2 Z"
+             style="fill:#000000;fill-opacity:0.30080004"
              id="path692" />
         </g>
       </g>
@@ -1411,21 +1417,21 @@
        id="clipPath698">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.3639h3v4h-3v-4z"
+         d="m 2,7.3639 h 3 v 4 H 2 Z"
          id="path700" />
     </clipPath>
     <clipPath
        id="clipPath702">
       <path
          inkscape:connector-curvature="0"
-         d="m2 8h3v4h-3v-4z"
+         d="m 2,8 h 3 v 4 H 2 Z"
          id="path704" />
     </clipPath>
     <clipPath
        id="clipPath18">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path20" />
     </clipPath>
     <mask
@@ -1437,8 +1443,8 @@
            id="g26-06">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.93359h175v42h-175v-42z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="m 0,-0.93359 h 175 v 42 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28" />
         </g>
       </g>
@@ -1447,32 +1453,32 @@
        id="clipPath34">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path36" />
     </clipPath>
     <clipPath
        id="clipPath38">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h175v42h-175v-42z"
+         d="M 0,0 H 175 V 42 H 0 Z"
          id="path40" />
     </clipPath>
     <clipPath
        id="clipPath42">
       <path
          inkscape:connector-curvature="0"
-         d="m174.04 21.375c0-5.656-8.492-10.48-25.48-14.48-16.99-3.973-37.5-5.961-61.56-5.961-24.027 0-44.535 1.988-61.52 5.961-16.988 4-25.48 8.824-25.48 14.48 0 5.652 8.492 10.465 25.48 14.437 16.985 4 37.493 6 61.52 6s44.547-2 61.559-6c16.988-3.972 25.48-8.785 25.48-14.437z"
+         d="m 174.04,21.375 c 0,-5.656 -8.492,-10.48 -25.48,-14.48 C 131.57,2.922 111.06,0.934 87,0.934 62.973,0.934 42.465,2.922 25.48,6.895 8.492,10.895 0,15.719 0,21.375 c 0,5.652 8.492,10.465 25.48,14.437 16.985,4 37.493,6 61.52,6 24.027,0 44.547,-2 61.559,-6 16.988,-3.972 25.48,-8.785 25.48,-14.437 z"
          id="path44" />
     </clipPath>
     <clipPath
        id="clipPath46">
       <path
          inkscape:connector-curvature="0"
-         d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+         d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
          id="path48-8" />
     </clipPath>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1495,14 +1501,14 @@
            id="g60-9">
           <path
              inkscape:connector-curvature="0"
-             d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+             d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
              style="fill:url(#radialGradient50)"
              id="path62" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1520,7 +1526,7 @@
        id="clipPath100">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path102" />
     </clipPath>
     <mask
@@ -1532,8 +1538,8 @@
            id="g108">
           <path
              inkscape:connector-curvature="0"
-             d="m14 9.0664h138v23h-138v-23z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 14,9.0664 h 138 v 23 H 14 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-6" />
         </g>
       </g>
@@ -1542,21 +1548,21 @@
        id="clipPath116">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path118-6" />
     </clipPath>
     <clipPath
        id="clipPath120">
       <path
          inkscape:connector-curvature="0"
-         d="m14 10h138v23h-138v-23z"
+         d="M 14,10 H 152 V 33 H 14 Z"
          id="path122" />
     </clipPath>
     <radialGradient
-       r="83.328"
-       gradientTransform="matrix(-.0064 .8 .8 .0064 365.98 -12945)"
+       r="83.328003"
+       gradientTransform="matrix(-0.0064,0.8,0.8,0.0064,365.98,-12945)"
        cx="16199"
-       cy="-226.49"
+       cy="-226.49001"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150">
       <stop
@@ -1592,7 +1598,7 @@
        id="clipPath188">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path190" />
     </clipPath>
     <mask
@@ -1604,8 +1610,8 @@
            id="g196">
           <path
              inkscape:connector-curvature="0"
-             d="m93 12.066h52v52h-52v-52z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 93,12.066 h 52 v 52 H 93 Z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path198" />
         </g>
       </g>
@@ -1614,21 +1620,21 @@
        id="clipPath204">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path206" />
     </clipPath>
     <clipPath
        id="clipPath208">
       <path
          inkscape:connector-curvature="0"
-         d="m93 13h52v52h-52v-52z"
+         d="m 93,13 h 52 V 65 H 93 Z"
          id="path210" />
     </clipPath>
     <clipPath
        id="clipPath18-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path20-7" />
     </clipPath>
     <mask
@@ -1640,8 +1646,8 @@
            id="g26-5">
           <path
              inkscape:connector-curvature="0"
-             d="m0 0h164v36h-164v-36z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="M 0,0 H 164 V 36 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-9" />
         </g>
       </g>
@@ -1650,34 +1656,34 @@
        id="clipPath34-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path36-7" />
     </clipPath>
     <clipPath
        id="clipPath38-6">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path40-7" />
     </clipPath>
     <clipPath
        id="clipPath42-3">
       <path
          inkscape:connector-curvature="0"
-         d="m164 17.602c0-4.883-8-9.043-24-12.481-16-3.414-35.33-5.121-58-5.121-22.668 0-41.988 1.707-57.961 5.121-16.027 3.438-24.039 7.598-24.039 12.481 0 4.851 8.012 9 24.039 12.437 16 3.441 35.32 5.16 57.961 5.16s41.973-1.719 58-5.16c16-3.437 24-7.586 24-12.437z"
+         d="M 164,17.602 C 164,12.719 156,8.559 140,5.121 124,1.707 104.67,0 82,0 59.332,0 40.012,1.707 24.039,5.121 8.012,8.559 0,12.719 0,17.602 c 0,4.851 8.012,9 24.039,12.437 16,3.441 35.32,5.16 57.961,5.16 22.641,0 41.973,-1.719 58,-5.16 16,-3.437 24,-7.586 24,-12.437 z"
          id="path44-6" />
     </clipPath>
     <clipPath
        id="clipPath46-5">
       <path
          inkscape:connector-curvature="0"
-         d="m0-133.83h205v215.41h-205v-215.41z"
+         d="M 0,-133.83 H 205 V 81.58 H 0 Z"
          id="path48-6" />
     </clipPath>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-3">
       <stop
@@ -1698,16 +1704,16 @@
            id="g60-2">
           <path
              inkscape:connector-curvature="0"
-             d="m0-133.83h205v215.41h-205v-215.41z"
+             d="M 0,-133.83 H 205 V 81.58 H 0 Z"
              style="fill:url(#radialGradient50-3)"
              id="path62-9" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-3">
       <stop
@@ -1723,7 +1729,7 @@
        id="clipPath100-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path102-8" />
     </clipPath>
     <mask
@@ -1735,8 +1741,8 @@
            id="g108-9">
           <path
              inkscape:connector-curvature="0"
-             d="m12 4h136v28h-136v-28z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="M 12,4 H 148 V 32 H 12 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-63" />
         </g>
       </g>
@@ -1745,18 +1751,18 @@
        id="clipPath116-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path118-5" />
     </clipPath>
     <clipPath
        id="clipPath120-6">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path122-1" />
     </clipPath>
     <linearGradient
-       x1="-396.71"
+       x1="-396.70999"
        y1="-15762"
        gradientTransform="matrix(0.0392,-0.79904,0.79904,0.0392,12666,332.28)"
        x2="-391.16"
@@ -1773,10 +1779,10 @@
          id="stop216" />
     </linearGradient>
     <linearGradient
-       x1="-400.79"
+       x1="-400.79001"
        y1="-15760"
        gradientTransform="matrix(0.03848,-0.79904,0.79904,0.03848,12672,326.98)"
-       x2="-395.61"
+       x2="-395.60999"
        gradientUnits="userSpaceOnUse"
        y2="-15760"
        id="linearGradient230">
@@ -1807,10 +1813,10 @@
          id="stop252" />
     </linearGradient>
     <linearGradient
-       x1="565.33"
+       x1="565.33002"
        y1="-16681"
        gradientTransform="matrix(-0.05472,-0.79816,0.79816,-0.05472,13419,-440.54)"
-       x2="569.99"
+       x2="569.98999"
        gradientUnits="userSpaceOnUse"
        y2="-16681"
        id="linearGradient266">
@@ -1827,7 +1833,7 @@
        x1="-407"
        y1="-15726"
        gradientTransform="matrix(0.03992,-0.79904,0.79904,0.03992,12660,338.33)"
-       x2="-401.11"
+       x2="-401.10999"
        gradientUnits="userSpaceOnUse"
        y2="-15726"
        id="linearGradient284">
@@ -1861,7 +1867,7 @@
        x1="-742.19"
        y1="-15405"
        gradientTransform="matrix(0.07424,-0.79656,0.79656,0.07424,12362,598.07)"
-       x2="-737.42"
+       x2="-737.41998"
        gradientUnits="userSpaceOnUse"
        y2="-15405"
        id="linearGradient320-8">
@@ -1929,7 +1935,7 @@
        id="clipPath18-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path20-6" />
     </clipPath>
     <mask
@@ -1941,8 +1947,8 @@
            id="g26-1">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.93359h175v42h-175v-42z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="m 0,-0.93359 h 175 v 42 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-8" />
         </g>
       </g>
@@ -1951,32 +1957,32 @@
        id="clipPath34-79">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path36-2" />
     </clipPath>
     <clipPath
        id="clipPath38-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h175v42h-175v-42z"
+         d="M 0,0 H 175 V 42 H 0 Z"
          id="path40-2" />
     </clipPath>
     <clipPath
        id="clipPath42-37">
       <path
          inkscape:connector-curvature="0"
-         d="m174.04 21.375c0-5.656-8.492-10.48-25.48-14.48-16.99-3.973-37.5-5.961-61.56-5.961-24.027 0-44.535 1.988-61.52 5.961-16.988 4-25.48 8.824-25.48 14.48 0 5.652 8.492 10.465 25.48 14.437 16.985 4 37.493 6 61.52 6s44.547-2 61.559-6c16.988-3.972 25.48-8.785 25.48-14.437z"
+         d="m 174.04,21.375 c 0,-5.656 -8.492,-10.48 -25.48,-14.48 C 131.57,2.922 111.06,0.934 87,0.934 62.973,0.934 42.465,2.922 25.48,6.895 8.492,10.895 0,15.719 0,21.375 c 0,5.652 8.492,10.465 25.48,14.437 16.985,4 37.493,6 61.52,6 24.027,0 44.547,-2 61.559,-6 16.988,-3.972 25.48,-8.785 25.48,-14.437 z"
          id="path44-5" />
     </clipPath>
     <clipPath
        id="clipPath46-9">
       <path
          inkscape:connector-curvature="0"
-         d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+         d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
          id="path48-2" />
     </clipPath>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1999,14 +2005,14 @@
            id="g60-6">
           <path
              inkscape:connector-curvature="0"
-             d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+             d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
              style="fill:url(#radialGradient50-2)"
              id="path62-1" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -2024,7 +2030,7 @@
        id="clipPath100-9">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path102-4" />
     </clipPath>
     <mask
@@ -2036,8 +2042,8 @@
            id="g108-4">
           <path
              inkscape:connector-curvature="0"
-             d="m14 9.0664h138v23h-138v-23z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 14,9.0664 h 138 v 23 H 14 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-5" />
         </g>
       </g>
@@ -2046,21 +2052,21 @@
        id="clipPath116-0">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path118-3" />
     </clipPath>
     <clipPath
        id="clipPath120-61">
       <path
          inkscape:connector-curvature="0"
-         d="m14 10h138v23h-138v-23z"
+         d="M 14,10 H 152 V 33 H 14 Z"
          id="path122-0" />
     </clipPath>
     <radialGradient
-       r="83.328"
+       r="83.328003"
        gradientTransform="matrix(-0.0064,0.8,0.8,0.0064,365.98,-12945)"
        cx="16199"
-       cy="-226.49"
+       cy="-226.49001"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150-6">
       <stop
@@ -2096,7 +2102,7 @@
        id="clipPath188-4">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path190-7" />
     </clipPath>
     <mask
@@ -2108,8 +2114,8 @@
            id="g196-6">
           <path
              inkscape:connector-curvature="0"
-             d="m93 12.066h52v52h-52v-52z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 93,12.066 h 52 v 52 H 93 Z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path198-9" />
         </g>
       </g>
@@ -2118,21 +2124,21 @@
        id="clipPath204-3">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path206-7" />
     </clipPath>
     <clipPath
        id="clipPath208-4">
       <path
          inkscape:connector-curvature="0"
-         d="m93 13h52v52h-52v-52z"
+         d="m 93,13 h 52 V 65 H 93 Z"
          id="path210-5" />
     </clipPath>
     <clipPath
        id="clipPath18-6">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path20-1" />
     </clipPath>
     <mask
@@ -2144,8 +2150,8 @@
            id="g26-4">
           <path
              inkscape:connector-curvature="0"
-             d="m0 0h164v36h-164v-36z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="M 0,0 H 164 V 36 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-90" />
         </g>
       </g>
@@ -2154,34 +2160,34 @@
        id="clipPath34-9">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path36-1" />
     </clipPath>
     <clipPath
        id="clipPath38-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path40-71" />
     </clipPath>
     <clipPath
        id="clipPath42-1">
       <path
          inkscape:connector-curvature="0"
-         d="m164 17.602c0-4.883-8-9.043-24-12.481-16-3.414-35.33-5.121-58-5.121-22.668 0-41.988 1.707-57.961 5.121-16.027 3.438-24.039 7.598-24.039 12.481 0 4.851 8.012 9 24.039 12.437 16 3.441 35.32 5.16 57.961 5.16s41.973-1.719 58-5.16c16-3.437 24-7.586 24-12.437z"
+         d="M 164,17.602 C 164,12.719 156,8.559 140,5.121 124,1.707 104.67,0 82,0 59.332,0 40.012,1.707 24.039,5.121 8.012,8.559 0,12.719 0,17.602 c 0,4.851 8.012,9 24.039,12.437 16,3.441 35.32,5.16 57.961,5.16 22.641,0 41.973,-1.719 58,-5.16 16,-3.437 24,-7.586 24,-12.437 z"
          id="path44-59" />
     </clipPath>
     <clipPath
        id="clipPath46-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0-133.83h205v215.41h-205v-215.41z"
+         d="M 0,-133.83 H 205 V 81.58 H 0 Z"
          id="path48-7" />
     </clipPath>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-6">
       <stop
@@ -2202,16 +2208,16 @@
            id="g60-63">
           <path
              inkscape:connector-curvature="0"
-             d="m0-133.83h205v215.41h-205v-215.41z"
+             d="M 0,-133.83 H 205 V 81.58 H 0 Z"
              style="fill:url(#radialGradient50-6)"
              id="path62-94" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-8">
       <stop
@@ -2227,7 +2233,7 @@
        id="clipPath100-93">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path102-9" />
     </clipPath>
     <mask
@@ -2239,8 +2245,8 @@
            id="g108-5">
           <path
              inkscape:connector-curvature="0"
-             d="m12 4h136v28h-136v-28z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="M 12,4 H 148 V 32 H 12 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-0" />
         </g>
       </g>
@@ -2249,18 +2255,18 @@
        id="clipPath116-9">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path118-63" />
     </clipPath>
     <clipPath
        id="clipPath120-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path122-5" />
     </clipPath>
     <linearGradient
-       x1="-396.71"
+       x1="-396.70999"
        y1="-15762"
        gradientTransform="matrix(0.0392,-0.79904,0.79904,0.0392,12666,332.28)"
        x2="-391.16"
@@ -2277,10 +2283,10 @@
          id="stop216-1" />
     </linearGradient>
     <linearGradient
-       x1="-400.79"
+       x1="-400.79001"
        y1="-15760"
        gradientTransform="matrix(0.03848,-0.79904,0.79904,0.03848,12672,326.98)"
-       x2="-395.61"
+       x2="-395.60999"
        gradientUnits="userSpaceOnUse"
        y2="-15760"
        id="linearGradient230-5">
@@ -2311,10 +2317,10 @@
          id="stop252-1" />
     </linearGradient>
     <linearGradient
-       x1="565.33"
+       x1="565.33002"
        y1="-16681"
        gradientTransform="matrix(-0.05472,-0.79816,0.79816,-0.05472,13419,-440.54)"
-       x2="569.99"
+       x2="569.98999"
        gradientUnits="userSpaceOnUse"
        y2="-16681"
        id="linearGradient266-0">
@@ -2331,7 +2337,7 @@
        x1="-407"
        y1="-15726"
        gradientTransform="matrix(0.03992,-0.79904,0.79904,0.03992,12660,338.33)"
-       x2="-401.11"
+       x2="-401.10999"
        gradientUnits="userSpaceOnUse"
        y2="-15726"
        id="linearGradient284-4">
@@ -2365,7 +2371,7 @@
        x1="-742.19"
        y1="-15405"
        gradientTransform="matrix(0.07424,-0.79656,0.79656,0.07424,12362,598.07)"
-       x2="-737.42"
+       x2="-737.41998"
        gradientUnits="userSpaceOnUse"
        y2="-15405"
        id="linearGradient320-3">
@@ -2433,7 +2439,7 @@
        id="clipPath18-8">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.41264h154v33h-154v-33z"
+         d="m 0,-0.41264 h 154 v 33 H 0 Z"
          id="path20-72" />
     </clipPath>
     <mask
@@ -2445,8 +2451,8 @@
            id="g26-9">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.41264h154v33h-154v-33z"
-             style="fill:#000000;fill-opacity:.75"
+             d="m 0,-0.41264 h 154 v 33 H 0 Z"
+             style="fill:#000000;fill-opacity:0.75"
              id="path28-96" />
         </g>
       </g>
@@ -2455,34 +2461,34 @@
        id="clipPath34-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.41264h154v33h-154v-33z"
+         d="m 0,-0.41264 h 154 v 33 H 0 Z"
          id="path36-27" />
     </clipPath>
     <clipPath
        id="clipPath38-61">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h154v33h-154v-33z"
+         d="M 0,0 H 154 V 33 H 0 Z"
          id="path40-3" />
     </clipPath>
     <clipPath
        id="clipPath42-2">
       <path
          inkscape:connector-curvature="0"
-         d="m145.28 26.371c5.465-2.504 8.199-5.183 8.199-8.039 0-4.934-7.492-9.16-22.48-12.68-14.99-3.492-33.066-5.238-54.238-5.238-21.203 0-39.297 1.746-54.282 5.238-14.988 3.52-22.48 7.746-22.48 12.68 0 1.895 1.238 3.719 3.719 5.48 2.375 1.735 5.801 3.333 10.281 4.801 0.641-0.242 1.32-0.32 2.039-0.242 3.359 0.32 6.199 0.734 8.52 1.242-0.051-0.828 0.175-1.547 0.679-2.16 0.563-0.668 1.403-1.121 2.524-1.359 1.543-0.293 3.703-0.922 6.476-1.883 2.856-0.957 5-1.598 6.442-1.918 1.441-0.293 3.922-0.547 7.441-0.762 3.145-0.16 5.598-0.504 7.359-1.039 5.653-1.68 9.735-2.664 12.239-2.961 4.215-0.48 8.386 0 12.519 1.442 1.442 0.507 2.84 1.281 4.203 2.32 0.907 0.746 2.039 1.812 3.399 3.199 1.68 0.426 3.172 1.082 4.48 1.961 1.602 1.039 2.68 2.426 3.239 4.16 0.32 0.133 0.828 0.305 1.519 0.52 0.481 0.133 1.43-0.055 2.844-0.559 0.773-0.269 1.719-0.613 2.84-1.043 1.945-0.531 4.05-0.531 6.316 0 1.254 0.297 2.762 1.028 4.524 2.203l1.558 1.039c0.215 0.133 0.32 0.172 0.32 0.122 0.051-0.297 0.282-0.641 0.68-1.043 0.746-0.747 1.801-1.106 3.16-1.079 1.282 0.055 2.332 0.415 3.16 1.079l0.879 0.679c9.336-1.652 16.641-3.703 21.922-6.16z"
+         d="m 145.28,26.371 c 5.465,-2.504 8.199,-5.183 8.199,-8.039 0,-4.934 -7.492,-9.16 -22.48,-12.68 C 116.009,2.16 97.933,0.414 76.761,0.414 c -21.203,0 -39.297,1.746 -54.282,5.238 -14.988,3.52 -22.48,7.746 -22.48,12.68 0,1.895 1.238,3.719 3.719,5.48 2.375,1.735 5.801,3.333 10.281,4.801 0.641,-0.242 1.32,-0.32 2.039,-0.242 3.359,0.32 6.199,0.734 8.52,1.242 -0.051,-0.828 0.175,-1.547 0.679,-2.16 0.563,-0.668 1.403,-1.121 2.524,-1.359 1.543,-0.293 3.703,-0.922 6.476,-1.883 2.856,-0.957 5,-1.598 6.442,-1.918 1.441,-0.293 3.922,-0.547 7.441,-0.762 3.145,-0.16 5.598,-0.504 7.359,-1.039 5.653,-1.68 9.735,-2.664 12.239,-2.961 4.215,-0.48 8.386,0 12.519,1.442 1.442,0.507 2.84,1.281 4.203,2.32 0.907,0.746 2.039,1.812 3.399,3.199 1.68,0.426 3.172,1.082 4.48,1.961 1.602,1.039 2.68,2.426 3.239,4.16 0.32,0.133 0.828,0.305 1.519,0.52 0.481,0.133 1.43,-0.055 2.844,-0.559 0.773,-0.269 1.719,-0.613 2.84,-1.043 1.945,-0.531 4.05,-0.531 6.316,0 1.254,0.297 2.762,1.028 4.524,2.203 l 1.558,1.039 c 0.215,0.133 0.32,0.172 0.32,0.122 0.051,-0.297 0.282,-0.641 0.68,-1.043 0.746,-0.747 1.801,-1.106 3.16,-1.079 1.282,0.055 2.332,0.415 3.16,1.079 l 0.879,0.679 c 9.336,-1.652 16.641,-3.703 21.922,-6.16 z"
          id="path44-1" />
     </clipPath>
     <clipPath
        id="clipPath46-59">
       <path
          inkscape:connector-curvature="0"
-         d="m0.0000014677-100.42h192.5v181.72h-192.5v-181.72z"
+         d="M 1.4677e-6,-100.42 H 192.5 V 81.3 H 1.4677e-6 Z"
          id="path48-9" />
     </clipPath>
     <radialGradient
-       r="82.65"
-       cx="95.65"
-       cy="-18.55"
+       r="82.650002"
+       cx="95.650002"
+       cy="-18.549999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-1">
       <stop
@@ -2503,16 +2509,16 @@
            id="g60-5">
           <path
              inkscape:connector-curvature="0"
-             d="m0.0000014677-100.42h192.5v181.72h-192.5v-181.72z"
+             d="M 1.4677e-6,-100.42 H 192.5 V 81.3 H 1.4677e-6 Z"
              style="fill:url(#radialGradient50-1)"
              id="path62-8" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="82.65"
-       cx="95.65"
-       cy="-18.55"
+       r="82.650002"
+       cx="95.650002"
+       cy="-18.549999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-7">
       <stop
@@ -2528,7 +2534,7 @@
        id="clipPath100-80">
       <path
          inkscape:connector-curvature="0"
-         d="m8 2.5874h135v30h-135v-30z"
+         d="m 8,2.5874 h 135 v 30 H 8 Z"
          id="path102-42" />
     </clipPath>
     <mask
@@ -2540,8 +2546,8 @@
            id="g108-1">
           <path
              inkscape:connector-curvature="0"
-             d="m8 2.5874h135v30h-135v-30z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 8,2.5874 h 135 v 30 H 8 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-04" />
         </g>
       </g>
@@ -2550,21 +2556,21 @@
        id="clipPath116-2">
       <path
          inkscape:connector-curvature="0"
-         d="m8 2.5874h135v30h-135v-30z"
+         d="m 8,2.5874 h 135 v 30 H 8 Z"
          id="path118-2" />
     </clipPath>
     <clipPath
        id="clipPath120-2">
       <path
          inkscape:connector-curvature="0"
-         d="m8 3h135v30h-135v-30z"
+         d="M 8,3 H 143 V 33 H 8 Z"
          id="path122-05" />
     </clipPath>
     <radialGradient
        r="72.5"
        gradientTransform="matrix(0.8,0,0,-0.57272,-1.1742e-6,23.733)"
-       cx="83.6"
-       cy="-35.6"
+       cx="83.599998"
+       cy="-35.599998"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150-5">
       <stop
@@ -2580,7 +2586,7 @@
        id="clipPath1100">
       <path
          inkscape:connector-curvature="0"
-         d="m12 28.587h33v44h-33v-44z"
+         d="m 12,28.587 h 33 v 44 H 12 Z"
          id="path1102" />
     </clipPath>
     <mask
@@ -2592,8 +2598,8 @@
            id="g1108">
           <path
              inkscape:connector-curvature="0"
-             d="m12 28.587h33v44h-33v-44z"
-             style="fill:#000000;fill-opacity:.69140"
+             d="m 12,28.587 h 33 v 44 H 12 Z"
+             style="fill:#000000;fill-opacity:0.69139997"
              id="path1110" />
         </g>
       </g>
@@ -2602,32 +2608,32 @@
        id="clipPath1116">
       <path
          inkscape:connector-curvature="0"
-         d="m12 28.587h33v44h-33v-44z"
+         d="m 12,28.587 h 33 v 44 H 12 Z"
          id="path1118" />
     </clipPath>
     <clipPath
        id="clipPath1120">
       <path
          inkscape:connector-curvature="0"
-         d="m12 29h33v44h-33v-44z"
+         d="M 12,29 H 45 V 73 H 12 Z"
          id="path1122" />
     </clipPath>
     <clipPath
        id="clipPath1124">
       <path
          inkscape:connector-curvature="0"
-         d="m43.961 48.172c-1.149-5.973-3.629-10.801-7.441-14.481-3.813-3.652-7.852-5.066-12.122-4.238-4.265 0.801-7.492 3.598-9.679 8.399-2.211 4.828-2.746 10.226-1.598 16.199 1.145 5.976 3.625 10.789 7.438 14.441 3.816 3.68 7.855 5.106 12.121 4.281 4.265-0.8 7.492-3.601 9.679-8.402 2.215-4.824 2.746-10.226 1.602-16.199z"
+         d="M 43.961,48.172 C 42.812,42.199 40.332,37.371 36.52,33.691 32.707,30.039 28.668,28.625 24.398,29.453 c -4.265,0.801 -7.492,3.598 -9.679,8.399 -2.211,4.828 -2.746,10.226 -1.598,16.199 1.145,5.976 3.625,10.789 7.438,14.441 3.816,3.68 7.855,5.106 12.121,4.281 4.265,-0.8 7.492,-3.601 9.679,-8.402 2.215,-4.824 2.746,-10.226 1.602,-16.199 z"
          id="path1126" />
     </clipPath>
     <clipPath
        id="clipPath1128">
       <path
          inkscape:connector-curvature="0"
-         d="m-1387-1711.7h50.85v43.971h-50.85v-43.971z"
+         d="m -1387,-1711.7 h 50.85 v 43.971 H -1387 Z"
          id="path1130" />
     </clipPath>
     <radialGradient
-       r="19.619"
+       r="19.618999"
        cx="-1361.6"
        cy="-1689.8"
        gradientUnits="userSpaceOnUse"
@@ -2650,14 +2656,14 @@
            id="g1142">
           <path
              inkscape:connector-curvature="0"
-             d="m-1387-1711.7h50.85v43.971h-50.85v-43.971z"
+             d="m -1387,-1711.7 h 50.85 v 43.971 H -1387 Z"
              style="fill:url(#radialGradient1132)"
              id="path1144" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="19.619"
+       r="19.618999"
        cx="-1361.6"
        cy="-1689.8"
        gradientUnits="userSpaceOnUse"
@@ -2675,7 +2681,7 @@
        id="clipPath1182">
       <path
          inkscape:connector-curvature="0"
-         d="m57 28.587h43v42h-43v-42z"
+         d="m 57,28.587 h 43 v 42 H 57 Z"
          id="path1184" />
     </clipPath>
     <mask
@@ -2687,8 +2693,8 @@
            id="g1190">
           <path
              inkscape:connector-curvature="0"
-             d="m57 28.587h43v42h-43v-42z"
-             style="fill:#000000;fill-opacity:.69140"
+             d="m 57,28.587 h 43 v 42 H 57 Z"
+             style="fill:#000000;fill-opacity:0.69139997"
              id="path1192" />
         </g>
       </g>
@@ -2697,28 +2703,28 @@
        id="clipPath1198">
       <path
          inkscape:connector-curvature="0"
-         d="m57 28.587h43v42h-43v-42z"
+         d="m 57,28.587 h 43 v 42 H 57 Z"
          id="path1200" />
     </clipPath>
     <clipPath
        id="clipPath1202">
       <path
          inkscape:connector-curvature="0"
-         d="m57 29h43v42h-43v-42z"
+         d="m 57,29 h 43 V 71 H 57 Z"
          id="path1204" />
     </clipPath>
     <clipPath
        id="clipPath1206">
       <path
          inkscape:connector-curvature="0"
-         d="m98.68 46.094c-1.067-5.656-3.973-10.094-8.719-13.321-4.746-3.226-9.934-4.293-15.563-3.199-5.625 1.067-10.039 3.973-13.238 8.719s-4.265 9.945-3.199 15.598c1.094 5.656 4 10.093 8.719 13.32 4.746 3.227 9.933 4.309 15.558 3.242 5.629-1.094 10.043-4.015 13.242-8.762 3.227-4.746 4.293-9.945 3.2-15.597z"
+         d="M 98.68,46.094 C 97.613,40.438 94.707,36 89.961,32.773 85.215,29.547 80.027,28.48 74.398,29.574 c -5.625,1.067 -10.039,3.973 -13.238,8.719 -3.199,4.746 -4.265,9.945 -3.199,15.598 1.094,5.656 4,10.093 8.719,13.32 4.746,3.227 9.933,4.309 15.558,3.242 5.629,-1.094 10.043,-4.015 13.242,-8.762 3.227,-4.746 4.293,-9.945 3.2,-15.597 z"
          id="path1208" />
     </clipPath>
     <clipPath
        id="clipPath1210">
       <path
          inkscape:connector-curvature="0"
-         d="m-1386.1-1716.7h62.652v61.417h-62.652v-61.417z"
+         d="m -1386.1,-1716.7 h 62.652 v 61.417 h -62.652 z"
          id="path1212" />
     </clipPath>
     <radialGradient
@@ -2745,7 +2751,7 @@
            id="g1224">
           <path
              inkscape:connector-curvature="0"
-             d="m-1386.1-1716.7h62.652v61.417h-62.652v-61.417z"
+             d="m -1386.1,-1716.7 h 62.652 v 61.417 h -62.652 z"
              style="fill:url(#radialGradient1214)"
              id="path1226" />
         </g>
@@ -2770,7 +2776,7 @@
        id="clipPath1264">
       <path
          inkscape:connector-curvature="0"
-         d="m100 21.587h36v44h-36v-44z"
+         d="m 100,21.587 h 36 v 44 h -36 z"
          id="path1266" />
     </clipPath>
     <mask
@@ -2782,8 +2788,8 @@
            id="g1272">
           <path
              inkscape:connector-curvature="0"
-             d="m100 21.587h36v44h-36v-44z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 100,21.587 h 36 v 44 h -36 z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path1274" />
         </g>
       </g>
@@ -2792,33 +2798,33 @@
        id="clipPath1280">
       <path
          inkscape:connector-curvature="0"
-         d="m100 21.587h36v44h-36v-44z"
+         d="m 100,21.587 h 36 v 44 h -36 z"
          id="path1282" />
     </clipPath>
     <clipPath
        id="clipPath1284">
       <path
          inkscape:connector-curvature="0"
-         d="m100 22h36v44h-36v-44z"
+         d="m 100,22 h 36 v 44 h -36 z"
          id="path1286" />
     </clipPath>
     <clipPath
        id="clipPath1288">
       <path
          inkscape:connector-curvature="0"
-         d="m134.28 33.051c-2.027-5.094-5.347-8.332-9.961-9.719-4.613-1.387-9.172-0.531-13.679 2.559-4.508 3.093-7.641 7.535-9.403 13.32-1.73 5.789-1.586 11.215 0.442 16.281 2.027 5.067 5.347 8.309 9.961 9.719 4.613 1.387 9.171 0.535 13.679-2.559 4.508-3.093 7.641-7.535 9.399-13.32 1.734-5.785 1.586-11.215-0.438-16.281z"
+         d="m 134.28,33.051 c -2.027,-5.094 -5.347,-8.332 -9.961,-9.719 -4.613,-1.387 -9.172,-0.531 -13.679,2.559 -4.508,3.093 -7.641,7.535 -9.403,13.32 -1.73,5.789 -1.586,11.215 0.442,16.281 2.027,5.067 5.347,8.309 9.961,9.719 4.613,1.387 9.171,0.535 13.679,-2.559 4.508,-3.093 7.641,-7.535 9.399,-13.32 1.734,-5.785 1.586,-11.215 -0.438,-16.281 z"
          id="path1290" />
     </clipPath>
     <clipPath
        id="clipPath1292">
       <path
          inkscape:connector-curvature="0"
-         d="m2695.7 1940.9h59.023v52.505h-59.023v-52.505z"
+         d="m 2695.7,1940.9 h 59.023 v 52.505 H 2695.7 Z"
          id="path1294" />
     </clipPath>
     <radialGradient
-       r="21.856"
-       cx="2725.4"
+       r="21.856001"
+       cx="2725.3999"
        cy="1966.8"
        gradientUnits="userSpaceOnUse"
        id="radialGradient1296">
@@ -2840,15 +2846,15 @@
            id="g1306">
           <path
              inkscape:connector-curvature="0"
-             d="m2695.7 1940.9h59.023v52.505h-59.023v-52.505z"
+             d="m 2695.7,1940.9 h 59.023 v 52.505 H 2695.7 Z"
              style="fill:url(#radialGradient1296)"
              id="path1308" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="21.856"
-       cx="2725.4"
+       r="21.856001"
+       cx="2725.3999"
        cy="1966.8"
        gradientUnits="userSpaceOnUse"
        id="radialGradient1310">
@@ -2877,7 +2883,6 @@
          operator="in"
          id="feComposite4105" />
       <feGaussianBlur
-         in="composite"
          stdDeviation="9"
          result="blur"
          id="feGaussianBlur4107" />
@@ -2894,12 +2899,12 @@
          id="feComposite4111" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
-       x="-.25"
-       y="-.25"
+       x="-0.25"
+       y="-0.25"
        width="1.5"
        height="1.5"
-       id="filter3274">
+       id="filter3274"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          in="SourceAlpha"
          stdDeviation="0.5"
@@ -2930,22 +2935,19 @@
        clipPathUnits="userSpaceOnUse"
        id="clipPath3296">
       <rect
-         fill="#fdfdfd"
-         x="-4.4"
-         y="-4.9493"
-         stroke="#000"
-         width="777.6"
+         x="-4.4000001"
+         y="-4.9492998"
+         width="777.59998"
          height="962"
          ry="0"
-         style="color:#000000"
-         opacity=".5"
+         style="color:#000000;opacity:0.5;fill:#fdfdfd;stroke:#000000"
          id="rect3298" />
     </clipPath>
     <linearGradient
-       x1="17.626561"
-       y1="37.537635"
+       x1="17.62656"
+       y1="37.537636"
        x2="26.274548"
-       y2="57.811851"
+       y2="57.811852"
        id="imagebot_15"
        gradientTransform="scale(0.83699484,1.1947505)"
        gradientUnits="userSpaceOnUse">
@@ -2961,9 +2963,9 @@
          id="imagebot_6" />
     </linearGradient>
     <linearGradient
-       x1="298.69094"
+       x1="298.69095"
        y1="127.60687"
-       x2="306.49834"
+       x2="306.49835"
        y2="145.91042"
        id="imagebot_16"
        gradientTransform="scale(0.81274044,1.2304051)"
@@ -2980,8 +2982,8 @@
          id="imagebot_12" />
     </linearGradient>
     <linearGradient
-       x1="193.98469"
-       y1="58.286325"
+       x1="193.9847"
+       y1="58.286324"
        x2="201.33905"
        y2="75.527786"
        id="imagebot_17"
@@ -3023,7 +3025,7 @@
     <filter
        id="filter4588"
        inkscape:label="Cross Blur"
-       style="color-interpolation-filters:sRGB;">
+       style="color-interpolation-filters:sRGB">
       <feColorMatrix
          id="feColorMatrix4590"
          result="colormatrix"
@@ -3037,7 +3039,8 @@
          k2="1"
          operator="arithmetic"
          in2="colormatrix"
-         in="SourceGraphic" />
+         in="SourceGraphic"
+         k1="0" />
       <feGaussianBlur
          id="feGaussianBlur4594"
          result="blur1"
@@ -3055,13 +3058,13 @@
          in="blur2" />
     </filter>
     <linearGradient
-       y2="545.11"
+       y2="545.10999"
        x2="129.75"
        gradientTransform="matrix(0.070374,0,0,0.092845,25.171,126.6)"
-       y1="514.43"
+       y1="514.42999"
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient4560"
-       x1="62.182"
+       x1="62.181999"
        id="linearGradient11388" />
     <inkscape:perspective
        id="perspective3966"
@@ -3081,7 +3084,7 @@
        id="clipPath20-8">
       <path
          inkscape:connector-curvature="0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          id="path22-7" />
     </clipPath>
     <mask
@@ -3093,8 +3096,8 @@
            id="g28-2">
           <path
              inkscape:connector-curvature="0"
-             d="m1 3.44h15v9h-15v-9z"
-             style="fill:#000000;fill-opacity:.14840"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
+             style="fill:#000000;fill-opacity:0.14839998"
              id="path30-7" />
         </g>
       </g>
@@ -3103,21 +3106,21 @@
        id="clipPath36-2">
       <path
          inkscape:connector-curvature="0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          id="path38-2" />
     </clipPath>
     <clipPath
        id="clipPath40-61">
       <path
          inkscape:connector-curvature="0"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          id="path42-0" />
     </clipPath>
     <clipPath
        id="clipPath64-61">
       <path
          inkscape:connector-curvature="0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          id="path66-5" />
     </clipPath>
     <mask
@@ -3129,8 +3132,8 @@
            id="g72-90">
           <path
              inkscape:connector-curvature="0"
-             d="m1 3.44h15v9h-15v-9z"
-             style="fill:#000000;fill-opacity:.19140"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
+             style="fill:#000000;fill-opacity:0.19140003"
              id="path74-9" />
         </g>
       </g>
@@ -3139,21 +3142,21 @@
        id="clipPath80-1">
       <path
          inkscape:connector-curvature="0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          id="path82-7" />
     </clipPath>
     <clipPath
        id="clipPath84-7">
       <path
          inkscape:connector-curvature="0"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          id="path86-1" />
     </clipPath>
     <clipPath
        id="clipPath108-1">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          id="path110-59" />
     </clipPath>
     <mask
@@ -3165,8 +3168,8 @@
            id="g116-6">
           <path
              inkscape:connector-curvature="0"
-             d="m2 7.44h4v4h-4v-4z"
-             style="fill:#000000;fill-opacity:.19920"
+             d="m 2,7.44 h 4 v 4 H 2 Z"
+             style="fill:#000000;fill-opacity:0.19920002"
              id="path118-7" />
         </g>
       </g>
@@ -3175,21 +3178,21 @@
        id="clipPath124-3">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          id="path126-6" />
     </clipPath>
     <clipPath
        id="clipPath128-5">
       <path
          inkscape:connector-curvature="0"
-         d="m2 8h4v4h-4v-4z"
+         d="m 2,8 h 4 v 4 H 2 Z"
          id="path130-6" />
     </clipPath>
     <clipPath
        id="clipPath152-3">
       <path
          inkscape:connector-curvature="0"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          id="path154-94" />
     </clipPath>
     <mask
@@ -3201,8 +3204,8 @@
            id="g160-93">
           <path
              inkscape:connector-curvature="0"
-             d="m6 6.44h7v5h-7v-5z"
-             style="fill:#000000;fill-opacity:.19920"
+             d="m 6,6.44 h 7 v 5 H 6 Z"
+             style="fill:#000000;fill-opacity:0.19920002"
              id="path162-9" />
         </g>
       </g>
@@ -3211,14 +3214,14 @@
        id="clipPath168-0">
       <path
          inkscape:connector-curvature="0"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          id="path170-88" />
     </clipPath>
     <clipPath
        id="clipPath172-5">
       <path
          inkscape:connector-curvature="0"
-         d="m6 7h7v5h-7v-5z"
+         d="m 6,7 h 7 v 5 H 6 Z"
          id="path174-0" />
     </clipPath>
     <radialGradient
@@ -3465,7 +3468,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3497,7 +3500,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19401"
-           d="m 193.92,70.56 c 3.979,-0.779 2.675,3.725 2.88,6.72 -0.897,-0.383 -1.758,-0.802 -2.88,-0.96 l 0,-5.76 z"
+           d="m 193.92,70.56 c 3.979,-0.779 2.675,3.725 2.88,6.72 -0.897,-0.383 -1.758,-0.802 -2.88,-0.96 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19403"
@@ -3509,7 +3512,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19407"
-           d="m 155.04,78.24 1.92,0 c -1.968,4.042 2.114,5.34 5.28,5.76 0.715,11.748 -4.058,3.495 -7.2,0 l 0,-5.76 z"
+           d="m 155.04,78.24 h 1.92 c -1.968,4.042 2.114,5.34 5.28,5.76 0.715,11.748 -4.058,3.495 -7.2,0 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19409"
@@ -3529,7 +3532,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19417"
-           d="m 78.72,88.32 2.4,0 c 0.153,1.113 -0.077,1.843 -0.48,2.4 -1.509,0.069 -1.649,-1.231 -1.92,-2.4 z"
+           d="m 78.72,88.32 h 2.4 c 0.153,1.113 -0.077,1.843 -0.48,2.4 -1.509,0.069 -1.649,-1.231 -1.92,-2.4 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19419"
@@ -3537,7 +3540,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19421"
-           d="m 121.44,94.08 1.44,0 c 0.616,0.63 0.616,1.77 0,2.4 1.512,0.232 1.087,-1.473 2.88,-0.96 -0.216,1.824 1.244,3.415 0,4.8 -2.13,-1.39 -3.58,-3.456 -4.32,-6.24 z"
+           d="m 121.44,94.08 h 1.44 c 0.616,0.63 0.616,1.77 0,2.4 1.512,0.232 1.087,-1.473 2.88,-0.96 -0.216,1.824 1.244,3.415 0,4.8 -2.13,-1.39 -3.58,-3.456 -4.32,-6.24 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19423"
@@ -3549,7 +3552,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19427"
-           d="m 216,95.52 1.92,0 c 0.347,1.467 -0.491,1.749 -0.48,2.88 -1.16,-0.277 -1.07,-1.813 -1.44,-2.88 z"
+           d="m 216,95.52 h 1.92 c 0.347,1.467 -0.491,1.749 -0.48,2.88 -1.16,-0.277 -1.07,-1.813 -1.44,-2.88 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19429"
@@ -3569,11 +3572,11 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19437"
-           d="m 263.52,133.44 c 2.342,0.287 -0.04,2.8 0.48,4.32 -1.014,0.638 -1.419,-0.236 -2.881,0.48 0.852,0.908 0.35,3.17 0.48,4.8 -1.469,-0.348 -1.412,0.828 -2.88,0.48 l 0,-4.32 1.92,0 c 0.234,-1.515 -0.865,-1.695 -0.48,-3.36 1,-0.92 2.96,-0.88 3.36,-2.4 z"
+           d="m 263.52,133.44 c 2.342,0.287 -0.04,2.8 0.48,4.32 -1.014,0.638 -1.419,-0.236 -2.881,0.48 0.852,0.908 0.35,3.17 0.48,4.8 -1.469,-0.348 -1.412,0.828 -2.88,0.48 v -4.32 h 1.92 c 0.234,-1.515 -0.865,-1.695 -0.48,-3.36 1,-0.92 2.96,-0.88 3.36,-2.4 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19439"
-           d="m 273.6,141.12 0,2.88 c -2.062,-1.821 -2.041,1.513 -3.84,1.44 1.24,-1.48 0.73,-4.71 3.84,-4.32 z"
+           d="M 273.6,141.12 V 144 c -2.062,-1.821 -2.041,1.513 -3.84,1.44 1.24,-1.48 0.73,-4.71 3.84,-4.32 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19441"
@@ -3585,7 +3588,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19445"
-           d="m 266.88,149.28 1.92,0 c 0.451,2.692 -1.226,3.255 -1.44,5.28 -0.97,-1.22 -1.23,-3.68 -0.48,-5.28 z"
+           d="m 266.88,149.28 h 1.92 c 0.451,2.692 -1.226,3.255 -1.44,5.28 -0.97,-1.22 -1.23,-3.68 -0.48,-5.28 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19447"
@@ -3593,7 +3596,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19449"
-           d="m 54.24,152.16 1.44,0 c 0.403,1.196 0.628,2.571 0.48,4.32 -1.441,-0.64 -2.279,-1.88 -1.92,-4.32 z"
+           d="m 54.24,152.16 h 1.44 c 0.403,1.196 0.628,2.571 0.48,4.32 -1.441,-0.64 -2.279,-1.88 -1.92,-4.32 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19451"
@@ -3613,7 +3616,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19459"
-           d="m 143.52,190.56 c 0.906,0.694 2.128,1.072 1.92,2.88 l -2.88,0 c -0.12,-1.4 1.08,-1.48 0.96,-2.88 z"
+           d="m 143.52,190.56 c 0.906,0.694 2.128,1.072 1.92,2.88 h -2.88 c -0.12,-1.4 1.08,-1.48 0.96,-2.88 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19461"
@@ -3621,7 +3624,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19463"
-           d="m 81.12,193.44 1.92,0 c 0.063,1.184 0.073,2.313 -0.48,2.88 -1.719,0.28 -1.459,-1.42 -1.44,-2.88 z"
+           d="m 81.12,193.44 h 1.92 c 0.063,1.184 0.073,2.313 -0.48,2.88 -1.719,0.28 -1.459,-1.42 -1.44,-2.88 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19465"
@@ -3629,7 +3632,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19467"
-           d="m 280.32,198.24 c 0.842,0.438 1.668,0.893 1.44,2.399 l -1.92,0 c 0.4,-0.56 0.63,-1.29 0.48,-2.4 z"
+           d="m 280.32,198.24 c 0.842,0.438 1.668,0.893 1.44,2.399 h -1.92 c 0.4,-0.56 0.63,-1.29 0.48,-2.4 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19469"
@@ -3665,7 +3668,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19485"
-           d="m 173.28,258.24 1.92,0 c 0.276,0.844 -0.581,2.82 0.48,2.88 -0.407,1.407 -1.545,-0.287 -2.4,0 l 0,-2.88 z"
+           d="m 173.28,258.24 h 1.92 c 0.276,0.844 -0.581,2.82 0.48,2.88 -0.407,1.407 -1.545,-0.287 -2.4,0 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19487"
@@ -3681,7 +3684,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19493"
-           d="m 154.08,274.56 c 0.148,-0.651 1.202,-0.397 1.92,-0.479 l 0,1.439 c -1.51,0.55 -1.17,-0.75 -1.92,-0.96 z"
+           d="m 154.08,274.56 c 0.148,-0.651 1.202,-0.397 1.92,-0.479 v 1.439 c -1.51,0.55 -1.17,-0.75 -1.92,-0.96 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19495"
@@ -3689,7 +3692,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19497"
-           d="m 135.84,278.88 1.92,0 c 0.153,1.113 -0.077,1.843 -0.48,2.4 -0.95,-0.33 -1.28,-1.28 -1.44,-2.4 z"
+           d="m 135.84,278.88 h 1.92 c 0.153,1.113 -0.077,1.843 -0.48,2.4 -0.95,-0.33 -1.28,-1.28 -1.44,-2.4 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19499"
@@ -3697,7 +3700,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19501"
-           d="m 156,0 19.2,0 c 53.536,2.929 95.325,30.62 120.48,63.36 25.28,32.904 44.089,84.11 30.72,142.08 21.464,0.755 40.783,11.153 55.2,22.079 4.542,3.443 11.771,6.899 14.4,11.04 1.514,2.385 2.175,7.371 3.84,10.561 3.68,7.052 10.696,12.468 11.52,19.68 0.41,3.594 -1.01,7.547 -0.479,11.04 1.247,8.219 8.866,15.839 14.399,23.04 4.158,5.411 12.71,15.219 14.4,22.561 0.624,2.709 0.185,5.612 0.479,8.64 0.987,10.111 5.306,21.641 0,32.64 -4.437,-2.838 -10.369,-5.441 -15.84,-8.16 -1.432,-0.711 -2.815,-3.222 -4.319,-1.439 -1.585,4.016 -0.764,10.437 -0.961,15.84 -3.023,2.783 -6.575,5.222 -11.039,6.72 -3.681,1.235 -11.934,2.787 -13.44,-0.96 -2.69,-6.688 6.907,-7.844 8.16,-12 1.42,-4.711 -1.171,-18.869 -2.88,-21.6 -4.133,-6.604 -15.498,-10.533 -23.521,-15.36 -6.107,-3.675 -12.275,-6.964 -17.76,-8.64 1.648,5.854 2.28,9.407 4.32,13.439 2.495,4.935 8.033,7.656 8.64,13.921 0.428,4.413 -2.078,8.04 -4.32,12.479 -2.061,4.08 -2.863,7.943 -4.8,11.521 -1.478,2.729 -4.306,4.214 -6.72,8.159 -1.517,2.478 -2.104,6.741 -4.32,8.16 -2.001,1.282 -7.241,2.101 -11.52,2.4 -3.778,0.265 -10.307,0.291 -10.561,-3.36 -0.284,-4.084 10.202,-7.115 12.96,-10.08 4.692,-5.043 9.413,-18.296 5.28,-29.279 -2.345,-6.232 -11.64,-16.809 -16.8,-22.08 -7.035,-7.188 -14.491,-12.872 -19.681,-19.2 -2.366,-2.886 -4.383,-8.411 -7.68,-9.601 -6.611,-2.384 -14.687,0.854 -22.56,0.96 -7.583,0.103 -16.391,-2.303 -20.641,2.881 -0.003,14.557 -2.98,29.085 -1.92,44.64 0.2,2.93 1.341,6.046 0.96,9.12 -0.444,3.591 -3.103,6.231 -4.319,10.08 -2.813,8.893 -2.563,15.819 -8.641,17.76 -2.121,0.677 -7.413,0.055 -11.04,0.479 -5.162,0.605 -15.984,6.089 -17.28,-0.479 -1.206,-6.113 8.272,-9.153 10.081,-14.4 5.245,-15.216 -3.021,-32.99 -3.36,-48 -26.004,8.947 -57.134,13.521 -85.44,8.641 -54.292,-9.361 -92.249,-39.139 -116.16,-79.681 -12.19,-20.67 -21.623,-47.75 -23.04,-75.84 l 0,-18.72 c 2.248,-44.68 24.578,-82.178 49.44,-107.04 25.907,-25.907 60.72,-44.991 106.56,-48 z m 35.52,34.08 c 0.283,-1.723 -0.558,-2.322 -0.96,-3.36 l -2.88,0 c 0.96,1.437 1.7,3.094 3.84,3.36 z m -96.96,8.16 c 0.257,-3.104 6.657,-0.063 7.2,-2.88 -2.17,-3.09 -11.283,0.148 -7.2,2.88 z m 99.36,-0.48 c 0.02,-1.459 0.279,-3.159 -1.44,-2.88 -0.02,1.463 0.44,2.444 1.44,2.88 z M 163.68,40.8 c 0.294,1.306 1.318,1.881 2.88,1.92 0.421,-1.541 -1.245,-0.995 -1.44,-1.92 0.565,-0.075 1.362,0.083 1.44,-0.48 -1.47,-0.347 -1.75,0.491 -2.88,0.48 z m -55.2,1.92 c 0.448,0.513 1.771,0.149 1.44,1.44 2.535,-0.186 4.575,-0.866 5.28,-2.88 -2.32,-1.013 -5.8,-0.397 -6.72,1.44 z m 48,-0.48 c 0.045,-1.485 -1.45,-1.431 -2.88,-1.44 -0.12,1.614 1.78,2.48 2.88,1.44 z m -38.88,1.44 c 1.602,-10e-4 1.639,1.561 3.36,1.44 0.986,-1.91 -0.269,-3.683 -2.4,-3.84 -0.21,0.914 -1.03,1.206 -0.96,2.4 z m 69.6,2.88 c 1.194,-2.239 -1.794,-5.912 -3.84,-4.8 1.24,1.635 1.29,4.47 3.84,4.8 z m -23.04,0.96 c 1.277,-2.534 0.974,-5.259 -1.92,-5.76 -0.21,1.076 -0.4,5.68 1.92,5.76 z m -18.72,1.92 c 1.639,0.122 2.307,1.214 4.32,0.96 0.945,-2.733 -0.863,-4.646 -0.48,-8.16 -3.85,0.517 -2.31,3.988 -3.84,7.2 z M 114.72,43.2 c 0.09,1.35 0.835,2.045 2.4,1.92 -0.17,-1.33 -1.44,-2.826 -2.4,-1.92 z M 79.2,227.04 c -0.77,-1.951 -2.544,-2.896 -5.76,-2.4 0.107,-0.907 -0.541,-1.059 -0.48,-1.92 0.316,-1.604 1.493,-2.347 1.92,-3.84 -1.057,-0.383 -1.917,-0.964 -1.92,-2.399 1.551,-0.976 5.331,-2.613 5.76,0.479 -1.508,-0.228 -1.961,0.599 -2.4,1.44 1.231,0.049 0.771,1.788 1.44,2.399 1.665,-0.385 1.845,0.715 3.36,0.48 0.054,-0.586 0.144,-1.137 0.96,-0.96 0.398,-1.254 -1.452,-2.634 0,-3.36 0.936,1.624 2.576,2.544 4.32,3.36 -0.403,1.357 -0.557,2.963 -0.96,4.319 1.991,2.81 4.747,4.854 8.16,6.24 -1.528,0.803 1.481,1.023 0.48,2.88 2.003,-0.37 1.625,-3.498 0,-3.84 3.138,-0.062 5.082,-1.318 8.16,-1.439 -0.107,0.907 0.541,1.059 0.48,1.92 -3.489,-0.609 -3.504,2.256 -5.28,3.359 -0.56,-1.186 -1.255,-1.771 -1.92,-0.479 0.778,2.775 2.945,-1.085 4.32,0.96 -0.434,1.315 -1.767,-0.938 -1.92,0.96 3.503,1.107 5.491,-3.346 7.68,-0.48 -0.922,1.798 -1.794,3.646 -2.4,5.761 0.086,1.354 2.281,0.598 1.92,2.399 -2.995,-2.526 -6.877,0.996 -4.32,4.32 2.391,-0.169 3.514,-1.606 6.24,-1.44 0.206,0.914 1.034,1.206 0.96,2.4 -1.183,-0.063 -2.313,-0.073 -2.88,0.479 -0.421,1.541 1.245,0.995 1.44,1.92 3.204,-0.476 4.151,-3.209 3.84,-7.199 5.137,0.816 2.824,-5.816 7.2,-5.761 0.846,0.435 0.793,1.768 1.92,1.92 0.832,-0.607 1.258,-1.622 2.88,-1.439 0.35,2.43 -1.317,2.843 -1.44,4.8 2.887,0.167 3.833,-1.606 6.72,-1.439 0.779,-3.221 3.959,-4.041 4.8,-7.2 -2.208,-1.312 -7.658,0.618 -9.12,-1.44 1.708,-1.333 4.807,-1.272 5.28,-3.84 -1.195,-0.493 -3.578,-0.72 -1.44,-1.92 -1.198,-0.342 -1.973,2.112 -2.88,0.479 1.031,-1.401 1.435,-0.452 3.36,-0.96 1.354,0.087 0.599,2.282 2.4,1.921 5.522,-0.721 9.849,-5.188 10.08,-9.601 0.021,0.511 -0.226,1.219 -0.48,0.48 0.231,-2.169 3.62,-1.18 5.28,-1.92 0.806,-1.358 -1.274,-1.634 0.96,-2.4 -5.035,-3.182 -9.027,3.128 -13.44,1.92 -0.695,1.815 1.319,0.921 0.96,2.4 -2.955,1.067 -5.227,3.928 -6.24,4.319 -3.16,-2.41 -0.908,-9.583 3.36,-9.12 0.988,0.132 0.452,1.788 1.44,1.921 -0.206,-0.773 1.79,-1.611 1.92,-0.48 -0.373,0.107 -0.947,0.014 -0.96,0.48 3.103,1.223 0.562,-7.031 4.8,-6.24 0.153,1.113 -0.077,1.843 -0.48,2.399 2.58,0.34 4.101,-0.379 5.76,-0.96 0.347,-1.467 -0.491,-1.749 -0.48,-2.88 2.865,-0.495 1.878,-4.842 6.24,-3.84 0.25,3.187 3.269,4.098 1.92,9.6 -1.798,0.122 -3.087,0.754 -3.84,1.921 4.5,2.706 -1.536,7.726 -0.96,12.479 0.995,0.285 3.153,-0.593 3.36,0.48 0.1,1.379 -0.122,2.438 -0.96,2.88 -0.054,-0.586 -0.144,-1.137 -0.96,-0.96 -0.704,1.696 -2.132,2.667 -1.92,5.279 0.13,0.99 2.125,0.115 1.92,1.44 -1.173,0.907 -2.326,1.834 -3.84,2.4 l 0,3.359 c 0.918,0.202 2.066,0.174 1.92,1.44 -1.707,3.069 -7.614,1.951 -8.16,-1.44 1.064,-1.336 3.694,-1.105 4.32,-2.88 -0.877,-0.723 -1.129,-2.07 -1.92,-2.88 -1.156,-0.15 -2.324,2.095 -3.36,0.479 2.348,0.268 1.146,-3.014 1.44,-4.8 -3.123,0.007 -3.505,3.347 -2.88,5.76 -3.654,-0.293 -4.628,2.092 -7.2,2.881 0.027,1.732 1.196,2.323 1.44,3.84 -1.794,-0.034 -2.749,0.771 -3.36,1.92 2.825,1.538 4.764,-1.516 7.2,-1.92 -1.092,2.748 -3.005,4.675 -7.2,4.319 0.708,2.788 -0.959,3.201 -1.44,4.801 0.148,3.372 3.423,3.617 4.32,6.239 -0.56,1.561 -1.255,-0.015 -1.92,1.44 0.079,2.946 2.373,5.197 5.28,3.84 0.443,-2.203 -1.201,-2.319 -0.96,-4.32 1.919,-0.48 3.73,-1.069 5.28,-1.92 0.214,-2.133 -1.3,-2.539 -1.92,-3.84 2.226,-1.361 3.929,-0.781 5.76,0.48 -0.057,-2.297 1.782,-2.698 4.32,-2.4 1.354,-3.102 4.755,-5.709 3.36,-10.08 1.495,-0.585 3.043,-1.117 5.28,-0.96 -0.517,2.437 0.887,2.953 1.92,3.84 -1.073,2.287 -3.463,3.258 -3.36,6.721 -2.43,0.45 -3.622,2.138 -5.76,2.88 -0.063,1.183 -0.073,2.313 0.48,2.88 -2.047,0.513 -3.112,2.008 -3.84,3.84 -0.899,-2.142 -3.253,-2.826 -3.36,-5.76 -2.262,3.938 -4.819,8.854 -6.72,14.399 2.573,-0.108 -0.426,3.576 1.92,4.32 0.224,-0.918 -1.479,-2.066 0.48,-1.92 0.491,4.811 -4.062,4.578 -3.84,9.12 -0.94,-0.799 -2.834,0.357 -2.88,1.92 -0.108,0.907 0.541,1.059 0.48,1.92 4.866,0.387 8.081,-0.879 11.52,-1.92 0.292,-1.147 -0.603,-3.482 0.48,-3.84 0.899,0.701 3.181,0.019 3.84,0.96 -1.611,4.372 -5.311,6.436 -4.32,12 1.191,-0.729 1.954,-1.886 3.84,-1.92 -0.44,1.202 1.934,2.966 0,3.84 -0.075,-0.565 0.083,-1.362 -0.48,-1.44 -0.148,1.132 -1.667,0.894 -1.44,2.4 3.799,-0.721 2.64,2.529 3.84,3.36 1.207,-0.554 1.511,-2.01 2.4,-2.881 1.585,1.156 4.251,4.338 5.76,1.44 -1.241,-1.64 -4.867,-0.894 -5.76,-2.88 1.47,-1.041 -0.46,-2.702 0,-4.32 2.155,-0.404 3.795,-1.324 5.28,-2.399 -0.011,1.131 0.827,1.413 0.48,2.88 3.656,-0.184 4.838,-2.842 9.12,-2.4 0.262,-0.697 -0.561,-2.48 0.48,-2.399 1.719,-0.279 1.459,1.42 1.44,2.88 2.135,0.265 2.729,2.07 5.28,1.92 -0.989,-5.847 6.353,-6.931 9.12,-10.561 0.421,-1.541 -1.245,-0.995 -1.44,-1.92 1.553,0.594 0.367,-1.553 1.92,-0.96 2.744,4.991 5.205,8.163 10.08,3.84 -1.476,-2.665 1.652,-4.747 -0.96,-5.76 1.31,-0.35 0.966,0.954 1.92,0.96 0.714,-2.186 0.684,-3.566 0.96,-5.28 2.035,-0.427 3.399,1.261 4.8,0 -5.661,-8.101 -10.066,-20.388 -16.32,-24.96 -0.085,-1.685 1.621,-1.578 1.92,-2.88 -2.697,-5.484 -5.579,-12.33 -7.68,-20.16 -4.243,-15.813 -3.526,-35.936 -9.6,-48 -1.953,-3.879 -10.158,-13.246 -15.84,-13.92 -6.1,-3.461 -7.448,-13.273 -0.96,-17.28 3.339,-0.458 3.71,2.05 4.8,3.84 22.352,2.681 -2.368,-33.775 12.96,-39.36 9.859,9.661 17.074,21.967 33.6,24.96 8.425,9.284 18.051,20.518 26.88,30.24 3.346,3.684 8.014,6.74 8.16,12.48 -1.125,1.275 -2.032,2.768 -3.84,3.36 -2.593,20.078 21.904,21.905 36.96,20.16 -0.331,-1.931 0.46,-2.74 0.479,-4.32 -0.718,-0.082 -1.771,0.172 -1.92,-0.479 1.317,-1.823 0.727,-3.731 0,-5.76 -1.19,0.071 -2.329,0.089 -2.399,-0.96 1.226,0.367 2.206,0.707 2.88,-0.48 -1.819,-0.394 -0.738,-3.17 0.96,-2.88 0.011,1.13 -0.827,1.413 -0.48,2.88 1.915,-0.475 1.445,1.435 3.36,0.96 0.668,-2.097 0.014,-2.835 -0.48,-4.8 -1.131,-0.011 -1.413,0.827 -2.88,0.48 -1.331,-5.164 1.185,-10.225 4.8,-12 1.058,0.382 1.917,0.963 1.92,2.4 1.196,-0.404 2.572,-0.628 4.32,-0.48 -0.396,1.356 0.677,1.243 0.48,2.4 2.477,-1.523 4.675,-3.325 7.199,-4.8 -0.873,-1.518 -2.966,-0.387 -3.84,-0.96 0.106,-2.666 -1.82,-3.3 -3.84,-3.84 -0.459,0.894 1.438,1.604 0,1.92 -0.836,-0.036 -1.493,0.107 -1.92,0.48 -1.478,-1.563 -0.829,-5.251 -0.96,-8.16 -2.5,-0.26 -2.438,2.042 -2.4,4.32 -1.156,-0.196 -1.043,0.876 -2.399,0.48 -0.628,1.633 1.069,3.35 0,3.84 -0.415,-0.865 -1.056,-1.505 -1.92,-1.92 l 0,-2.88 c 3.073,-0.219 0.947,-5.912 0.479,-7.2 2.364,-2.436 2.496,-7.104 4.32,-10.08 1.215,4.62 4.042,8.602 5.28,14.4 3.745,-1.855 1.845,-9.355 3.84,-12.96 2.73,2.372 1.452,6.67 1.439,11.04 -3.014,-0.114 -2.456,7.083 -0.479,7.68 1.276,-0.963 2.396,-2.083 3.359,-3.36 0.152,-1.912 -2.22,-1.3 -2.399,-2.88 3.322,-0.198 4.393,-2.648 4.8,-5.76 -1.926,-2.714 -4.045,-5.235 -5.28,-8.64 1.94,-5.167 1.343,-14.314 -2.88,-16.32 -0.082,0.718 0.172,1.771 -0.479,1.92 -4.336,0.016 -6.565,-2.075 -7.2,-5.76 -5.198,-0.722 -8.935,-2.906 -12,-5.76 1.266,0.146 1.238,-1.002 1.439,-1.92 -1.768,-0.263 -1.355,-2.766 -1.92,-5.28 -0.511,-1.14 -2.211,1.029 -2.88,-0.48 0.373,-0.107 0.947,-0.013 0.96,-0.48 -1.632,0.144 -3.563,3.406 -4.8,0.96 0.3,-1.78 1.35,-2.811 1.92,-4.32 -1.997,-0.723 -5.235,-0.204 -6.24,-1.92 -0.229,-6.171 -2.757,-10.042 -4.319,-14.88 1.633,-0.627 3.35,1.069 3.84,0 -1.701,-2.069 -3.206,-1.682 -6.24,-1.92 -1.498,0.855 0.154,1.88 -0.96,2.88 -0.989,-2.21 -4.325,-2.075 -3.84,-5.76 1.092,-0.233 2.452,-0.953 3.36,0 0.665,-3.499 -1.101,-1.713 -1.44,-3.84 1.423,0.336 0.666,-3.114 3.36,-1.44 3.619,2.25 10.223,-4.866 12,-0.48 -0.611,-0.654 -2.352,-0.741 -2.4,0.48 0.991,2.217 4.422,5.448 2.4,7.68 3.762,-1.069 4.522,2.975 6.72,1.92 0.193,-1.487 -2.808,-3.902 -2.88,-6.72 -0.908,-0.107 -1.06,0.541 -1.92,0.48 0.183,-1.806 -2.28,-3.448 -0.96,-4.8 0.593,2.726 0.974,-1.489 2.88,-0.48 l 0,-3.36 c -1.35,-0.571 -2.76,-1.08 -4.32,-1.44 l 0,-1.92 c -4.071,-0.568 -3.597,-5.683 -6.72,-7.2 -0.3,0.359 -5.288,0.138 -6.24,1.44 -0.637,-7.686 -11.554,0.676 -13.92,-5.28 1.14,-0.3 2.234,-0.645 2.4,-1.92 -0.747,-0.125 -0.333,-1.053 0,-1.44 -3.019,0.299 -4.062,-1.379 -6.721,-1.44 -0.955,1.125 -1.105,3.054 -0.96,5.28 5.452,2.547 2.199,13.801 9.12,14.88 0.148,3.188 0.057,6.136 -1.92,7.2 -2.209,-0.363 -3.178,-4.486 -5.28,-3.36 0.539,0.102 0.748,0.533 0.96,0.96 -1.077,-1.623 -3.162,0.887 -3.359,0 1.061,-1.053 -0.475,-1.961 0,-3.84 -1.604,-1.07 -3.677,-1.07 -5.28,0 -0.107,5.013 -1.777,8.463 -3.36,12 -5.346,-2.341 -1.196,-10.269 -0.48,-14.88 1.512,-0.232 1.087,1.473 2.88,0.96 0.165,-3.227 3.777,-7.479 0.96,-10.56 -1.272,0.328 -0.537,2.663 -2.4,2.4 -1.837,-1.203 -2.526,-3.554 -3.84,-5.28 -2.179,-0.258 -1.282,2.559 -3.36,2.4 -8.146,-2.333 -5.092,-15.455 -13.44,-15.84 2.038,5.162 5.523,8.876 7.68,13.92 -3.472,-0.615 -3.256,0.161 -5.76,0.96 -1.734,-0.986 -2.56,-2.88 -3.36,-4.8 -1.604,0.713 -2.347,1.232 -3.84,0 -1.135,1.668 -1.306,4.342 -1.44,5.76 -1.857,0.417 -1.708,-1.172 -2.88,-1.44 0.725,1.579 0.531,4.103 -0.96,4.8 -1.791,-0.929 -4.329,-1.111 -5.76,-2.4 -1.478,1.722 -3.566,2.834 -5.28,4.32 1.505,-0.225 1.354,1.207 1.92,1.92 -2.491,-0.73 -1.327,2.193 -2.88,2.4 -1.618,-0.461 -1.839,-2.321 -2.4,-3.84 1.357,-0.396 1.244,0.677 2.4,0.48 -0.666,-1.414 -1.132,-3.028 -1.44,-4.8 -2.609,-0.049 -4.957,0.163 -6.24,1.44 1.124,3.676 4.381,5.219 5.76,8.64 -0.756,0.043 -0.375,1.224 -1.44,0.96 -0.659,-1.094 1.237,-1.805 0,-1.92 -1.3,1.58 -3.103,2.657 -5.28,3.36 -3.645,-3.484 -7.314,-8.407 -6.24,-13.92 -1.759,-0.159 -2.667,0.533 -3.84,0.96 -2.059,-2.261 -6.617,-2.023 -5.76,-7.2 -10.27,2.125 -3.554,-12.916 -7.68,-16.32 0.436,0.36 -1.938,2.27 -0.96,-0.48 -1.573,0.027 -1.835,1.365 -3.84,0.96 -0.005,-1.275 0.182,-2.741 -0.48,-3.36 -1.503,0.416 -2.651,1.189 -3.36,2.4 0.354,0.766 2.35,-0.109 1.92,1.44 -0.233,0.567 -0.512,1.088 -0.96,1.44 -1.478,0.357 -0.922,-1.317 -2.4,-0.96 0.369,2.289 -0.678,3.162 -1.92,3.84 -6.215,-1.145 -11.443,-3.277 -16.32,-5.76 0.186,1.734 2.634,1.206 1.92,3.84 -0.597,1.323 -2.451,1.389 -3.36,2.4 0.368,1.751 2.882,3.243 1.44,5.28 -1.559,-1.001 -3.922,-1.198 -3.84,-3.84 -1.79,-0.51 -0.76,1.8 -2.4,1.44 -1.301,-0.299 -1.195,-2.005 -2.88,-1.92 -1.431,1.94 -4.484,3.127 -3.84,5.76 l -2.88,0 c 0.158,2.078 -0.662,3.179 -1.92,3.84 -1.155,-1.584 -2.551,0.611 -3.36,0.96 0.837,2.875 2.872,4.776 5.28,4.8 -1.509,0.57 -2.54,1.62 -4.32,1.92 0.145,-3.505 -5.268,-1.452 -4.8,-5.28 -3.185,0.335 -3.463,3.577 -5.76,4.8 l -3.36,0 c -1.39,2.211 -6.005,3.483 -5.76,5.76 -1.234,-1.242 -2.035,0.402 -2.4,1.44 0.567,0.233 1.088,0.512 1.44,0.96 -1.763,0.157 -3.291,0.549 -4.32,1.44 l 0,2.88 c 1.695,0.225 4.625,-0.785 4.32,1.44 -0.107,1.493 -2.389,0.811 -3.84,0.96 -0.044,4.756 -3.36,6.24 -2.88,11.52 0.698,0.263 2.481,-0.561 2.4,0.48 -0.277,1.163 -1.813,1.067 -2.88,1.44 2.683,13.882 -10.98,11.42 -13.92,19.68 0.8,2.484 3.14,4.379 -0.48,5.76 1.536,-2.398 -0.957,-4.322 -0.96,-6.72 0.894,-0.066 1.604,-0.316 1.92,-0.96 -3.871,-0.289 -3.777,-4.542 -5.76,-6.72 -3.969,0.511 -7.479,1.481 -9.6,3.84 -2.139,0.059 -2.976,-1.184 -4.8,-1.44 -1.221,1.179 -1.715,3.085 -1.44,5.76 l -2.88,0 c -0.685,2.089 1.641,2.207 0.48,3.36 -1.156,0.196 -1.043,-0.876 -2.4,-0.48 -1.541,1.819 -2.627,4.093 -2.4,7.68 2.665,0.104 2.566,-2.554 5.76,-1.92 1.256,3.965 -0.396,7.911 0,12.48 1.613,0.013 2.539,-0.661 3.36,-1.44 -3.201,-4.125 2.941,-8.499 0.96,-12.96 3.075,-0.355 4.85,0.59 5.76,2.4 -0.852,0.908 -0.35,3.17 -0.48,4.8 l 4.8,0 c 1.193,0.567 0.482,3.038 1.92,3.36 0.463,-0.977 1.843,-1.037 3.36,-0.96 -1.166,1.892 -0.31,5.251 0.96,6.24 -0.961,0.958 -1.402,2.438 -2.88,2.88 -1.166,-2.354 -0.897,-6.143 -2.88,-7.68 -0.06,1.06 -2.036,0.204 -2.88,0.48 -0.479,3.682 -1.292,7.027 -0.96,11.52 3.209,2.5 6.857,-0.538 10.56,-0.48 0.361,4.919 4.515,6.045 3.84,12 2.019,0.099 2.016,-1.824 3.84,-1.92 -1.409,1.511 -0.673,3.048 0,4.8 -4.688,3.886 -8.231,11.161 -6.24,20.16 1.404,0.996 3.72,1.08 4.8,2.4 -0.326,1.754 -0.67,3.491 -0.48,5.76 -1.122,0.158 -1.983,0.577 -2.88,0.96 0.331,-1.931 -0.46,-2.74 -0.48,-4.32 -3.498,1.142 -2.059,7.221 -4.32,9.6 -2.457,0.377 -3.487,-0.674 -5.76,-0.48 -0.135,-1.625 -0.763,-2.756 -0.48,-4.8 -1.317,-0.763 -3.482,-0.678 -4.8,-1.44 1.467,4.095 -0.445,6.64 -2.4,8.64 1.146,4.642 9.039,4.461 6.72,11.04 1.452,0.309 2.77,0.75 2.88,2.399 -0.34,3.021 -4.25,2.471 -5.76,4.32 1.328,0.592 2.57,1.271 4.32,1.44 -0.448,2.688 1.604,2.876 2.88,3.84 0.026,2.214 -0.213,4.692 0.48,6.239 2.365,-0.813 4.437,-0.039 6.72,0.48 3.244,-1.193 3.875,-7.471 3.36,-8.64 -1.816,-0.057 -0.714,2.807 -2.4,2.88 -4.107,-0.372 -7.118,-1.843 -6.72,-6.721 4.716,-0.716 5.531,2.47 8.64,3.36 0.739,-1.021 1.732,-1.787 2.4,-2.88 -0.833,-0.768 -1.04,-2.16 -0.96,-3.84 1.336,-0.147 3.595,-2.125 4.32,0 -1.117,1.763 -0.644,5.116 -1.92,6.72 3.194,-2.396 8.183,0.3 6.24,4.32 1.222,0.059 1.861,0.698 1.92,1.92 -1.222,-0.248 -1.862,-0.818 -1.92,0.96 0.306,0.974 2.244,0.316 2.4,1.439 -0.606,7.531 9.288,6.951 12.48,3.36 -1,0.956 -0.016,2.05 0.96,2.4 0.117,-3.411 2.818,-6.772 2.88,-8.641 -1.177,0.9 -2.174,1.99 -3.84,2.4 z m 87.84,-175.2 c -0.887,-1.513 -1.182,-3.618 -3.36,-3.84 -1.52,2.247 1.06,5.322 3.36,3.84 z m -10.56,0.48 c 0.123,-1.883 -1.736,-1.784 -1.44,-3.84 l -1.92,0 c 0.2,2.309 1.05,5.052 3.36,3.84 z m 0.96,-2.88 0,1.44 c 1.833,0.393 1.858,-1.021 2.4,-1.92 -1.11,-0.153 -1.84,0.077 -2.4,0.48 z m 25.44,6.72 c 0,-2.24 -0.582,-3.898 -2.88,-3.84 -1.27,1.868 0.32,4.286 2.88,3.84 z m 51.36,4.8 c 2.344,-1.336 4.39,-2.971 4.8,-6.24 -0.372,-0.107 -0.946,-0.013 -0.96,-0.479 -2.508,0.052 -2.788,2.332 -5.279,2.4 l 0,2.4 c 1.272,0.007 2.826,-0.267 2.88,0.96 -0.83,-0.027 -1.23,0.369 -1.44,0.959 z m -72,-1.92 c 0.069,-1.693 -2.626,-3.102 -3.36,-2.4 1.27,0.648 1.31,2.53 3.36,2.4 z m 89.28,2.88 1.92,0 c 0.095,-1.375 0.06,-2.62 -1.439,-2.4 -0.4,0.557 -0.63,1.287 -0.48,2.4 z m -90.72,2.4 c -0.196,-1.156 0.877,-1.043 0.48,-2.4 -1.405,0.125 -1.475,-1.085 -2.88,-0.96 0.43,1.492 0.49,3.346 2.4,3.36 z m 11.04,-0.96 c 1.602,0.495 4.997,1.701 4.32,2.88 -2.02,-0.077 -2.301,-2.177 -4.32,-0.96 -0.665,-0.294 -0.072,-1.848 -0.96,-1.92 -0.373,2.066 -1.752,1.267 -2.4,0 -1.009,1.392 -2.932,1.869 -3.36,3.84 4.35,2.95 9.713,1.29 12.48,-0.48 0.011,-1.13 -0.827,-1.413 -0.48,-2.88 -2.96,0.874 -3.8,-2.68 -5.28,-0.48 z m 7.2,2.88 c 0.479,-0.642 1.297,-0.943 1.44,-1.92 -0.565,-0.075 -1.362,0.083 -1.44,-0.48 -0.027,-0.292 -0.072,-0.568 -0.48,-0.48 -0.34,1.198 -0.47,1.973 0.48,2.88 z m 40.8,5.28 c 0.619,1.942 2.221,2.898 3.36,4.32 0.17,-2.572 -1.01,-5.81 -3.36,-4.32 z m 33.6,1.44 c -0.114,1.875 1.783,1.737 2.88,2.4 -0.011,-1.13 0.827,-1.413 0.48,-2.88 -1.28,0.005 -2.74,-0.181 -3.36,0.48 z M 41.28,77.28 c 1.883,4.597 3.837,-1.806 6.72,-1.92 -3.108,-3.208 -3.655,2.142 -6.72,1.92 z m 17.76,-1.44 c 0.334,3.374 -2.406,3.674 -2.4,6.72 2.934,-1.226 4.93,-3.39 5.28,-7.2 -1.468,-0.348 -1.412,0.828 -2.88,0.48 z m 165.12,4.32 c 0.374,0.106 0.559,0.402 0.48,0.96 1.229,-0.051 2.288,-0.272 2.88,-0.96 -1.13,-0.47 -0.43,-2.77 -1.44,-3.36 -0.37,1.394 -2.28,1.245 -1.92,3.36 z m 53.76,6.24 c 2.12,3.365 3.03,-1.488 0,0 z m -7.68,2.4 c 1.265,0.145 1.575,-0.665 1.44,-1.92 -1.26,-0.145 -1.58,0.665 -1.44,1.92 z M 31.68,101.28 c 2.531,-2.941 2.056,-5.771 3.36,-8.16 -1.64,0.36 -0.61,-1.95 -2.4,-1.44 0.938,4.147 -2.747,6.202 -0.96,9.6 z m 10.56,-3.36 c 1.06,0.06 0.204,2.036 0.48,2.88 -2.602,1.238 -4.874,2.807 -6.24,5.28 -0.034,1.794 0.771,2.749 1.92,3.36 0.896,-4.65 4.631,-8.664 8.64,-8.64 0.725,-2.475 3.011,-3.389 4.8,-4.8 l 0,-1.44 c -4.59,-0.27 -5.638,3.002 -9.6,3.36 z m -6.24,4.8 c 1.157,-0.197 1.043,0.876 2.4,0.48 0.114,-0.886 1.556,-4.34 -0.48,-4.32 -0.62,1.3 -2.133,1.71 -1.92,3.84 z m 244.8,-0.96 c 0.206,-0.753 1.51,-0.41 0.96,-1.92 l -1.44,0 c 0.08,0.72 -0.17,1.77 0.48,1.92 z m -20.64,13.44 c 0.547,-1.053 1.239,-1.961 0.96,-3.84 3.595,-0.291 6.611,-3.932 4.801,-6.72 -3.562,-0.536 -2.937,4.635 -6.24,2.88 0.153,1.127 0.758,1.802 0.479,3.36 -1.188,0.731 -2.854,0.985 -3.359,2.4 0.989,0.291 3.334,-0.774 2.88,0.96 -0.131,1.683 -2.126,-0.867 -1.92,0.48 0.56,0.4 1.29,0.63 2.4,0.48 z m 45.12,-1.44 c 0.908,0.108 1.06,-0.541 1.92,-0.48 -0.598,-1.482 -0.395,-3.765 -2.399,-3.84 -0.33,1.93 0.46,2.74 0.48,4.32 z m -35.52,7.68 c 1.373,-1.706 2.641,-2.528 2.399,-4.8 -1.553,-0.593 -0.366,1.553 -1.92,0.96 -0.698,-1.862 -2.295,-2.825 -4.319,-3.36 0.77,2.91 1.89,5.47 3.84,7.2 z m -244.8,23.04 c 1.588,-0.492 2.831,-1.33 2.88,-3.36 -0.557,-0.403 -1.287,-0.633 -2.4,-0.48 0.009,1.51 -1.585,2.68 -0.48,3.84 z m 269.76,1.44 c 0.188,-1.949 -0.176,-3.344 -1.92,-3.36 -0.33,2.09 0.86,2.66 1.92,3.36 z m 4.8,0 c 1.536,-0.063 2.111,-1.088 1.92,-2.88 l -1.92,0 0,2.88 z M 26.4,150.24 c 1.518,0.708 2.308,-2.758 0.48,-2.4 0.397,1.36 -0.676,1.24 -0.48,2.4 z m 277.44,-0.48 0,-1.92 -1.44,0 c -0.14,1.26 0.18,2.06 1.44,1.92 z m -13.44,2.88 c 1.032,-0.408 1.113,-1.767 0.96,-3.36 -2.4,-0.91 -2.55,3.17 -0.96,3.36 z M 42.72,153.6 c 0.107,-1.708 -0.324,-2.876 -1.44,-3.36 0.138,1.46 -0.076,3.28 1.44,3.36 z m 259.68,2.88 c 0.393,-0.348 1.287,-3.322 -0.479,-2.88 -0.66,0.62 -0.84,2.87 0.48,2.88 z m 1.44,4.8 c 1.306,-1.414 2.198,-3.241 2.88,-5.28 l -0.96,0 c -0.04,2.05 -3.08,3.62 -1.92,5.28 z M 21.6,162.24 c 2.963,0.954 3.643,-4.097 1.92,-4.8 -0.591,1.65 -2.491,1.99 -1.92,4.8 z m 276,6.72 c 0.229,-1.532 0.945,-2.574 2.4,-2.88 -0.791,-2.41 -0.717,-5.684 -1.44,-8.16 -1.5,1.06 -4.602,0.518 -5.76,1.92 1.132,1.175 0.893,-0.717 2.399,-0.48 -0.151,3.352 2.072,4.328 1.92,7.68 -0.613,0.026 -0.664,0.615 -1.439,0.48 -3.48,-2.89 -0.36,0.96 1.92,1.44 z m -24.48,-6.72 c -0.513,-1.793 1.192,-1.368 0.96,-2.88 l -2.399,0 c 0.01,1.43 -0.04,2.92 1.44,2.88 z m 35.52,3.84 c -0.235,-2.156 0.243,-3.597 0.479,-5.28 l -1.92,0 c 0.46,1.78 -0.07,4.55 1.44,5.28 z M 26.88,162.72 c -0.153,1.113 0.077,1.843 0.48,2.4 2.48,0.561 2.5,-1.34 2.88,-2.88 -1.275,0 -2.741,-0.18 -3.36,0.48 z m 266.4,3.36 c -0.09,-1.83 -0.682,-3.158 -2.399,-3.36 l -0.96,0 c 0.13,1.99 1.73,4.4 3.36,3.36 z M 2.4,169.92 c -0.291,-0.989 0.775,-3.334 -0.96,-2.88 0.29,0.99 -0.774,3.34 0.96,2.88 z M 21.12,180 c 5.252,-1.325 0.507,-10.652 -0.96,-12.96 -0.327,5.88 4.038,8.22 0.96,12.96 z m 20.64,-8.64 c 1.357,-0.396 1.244,0.677 2.4,0.48 0.663,-1.466 0.824,-4.008 -0.96,-4.32 -0.317,1.44 -1.845,1.68 -1.44,3.84 z m 247.68,5.76 c 4.793,0.953 3.02,-4.66 3.36,-8.16 -1.354,-0.727 -3.001,-1.16 -5.28,-0.96 0.02,2.05 1.93,5.52 1.92,9.12 z m 18.72,-0.48 c -0.134,-2.054 1.467,-2.374 0.96,-4.8 -0.685,-0.115 -0.81,-0.79 -1.439,-0.96 -0.61,1.1 -2.27,5.67 0.48,5.76 z m -7.2,-1.92 c -0.291,-0.99 0.774,-3.335 -0.96,-2.88 -0.98,0.98 -0.46,2.89 0.96,2.88 z m -271.68,12 c 2.388,0.468 1.9,-1.94 3.36,-2.4 1.172,0.268 1.022,1.857 2.88,1.44 0.218,-2.298 -0.521,-3.639 -1.92,-4.32 -0.116,0.844 -0.826,1.094 -1.92,0.96 1.859,-2.19 0.784,-6.729 -2.88,-6.24 0.486,2.59 -0.161,7.13 0.48,10.56 z m 265.92,-6.24 c -0.206,-1.553 0.632,-4.151 -0.96,-4.32 -0.3,1.11 -0.46,3.65 0.96,4.32 z m -24,4.8 c 1.433,0.008 1.632,1.248 2.88,1.44 0.09,-2.661 -0.058,-7.606 -1.92,-6.72 1.31,0.19 -1.2,3.15 -0.96,5.28 z m 29.76,4.32 c 0.74,-2.522 5.443,-4.893 2.88,-7.68 0.01,3.22 -4.49,4.46 -2.88,7.68 z M 21.12,209.28 c -0.157,-1.763 -0.55,-3.291 -1.44,-4.32 -1.478,-0.357 -0.923,1.317 -2.4,0.96 -1.165,-1.123 -1.974,-3.343 -0.96,-5.28 -3.561,2.87 0.432,9.07 4.8,8.64 z M 11.04,191.04 c -0.222,5.022 0.254,9.346 3.84,10.56 0.316,-5.12 -1.546,-8.05 -3.84,-10.56 z m 280.8,13.44 3.84,0 c -0.079,-1.52 1.275,-1.604 0.96,-3.36 -1.131,-0.011 -1.413,0.827 -2.88,0.479 -0.304,-1.616 -1.379,-2.461 -0.96,-4.8 -0.702,-1.058 -3.802,0.282 -3.84,-1.44 -0.581,-1.478 2.095,-3.397 0,-3.36 -2.79,4.6 0.42,10.09 2.88,12.48 z m -18.24,-9.12 2.88,0 c 0.612,-2.372 -1.209,-2.312 -2.4,-2.88 -0.55,0.57 -0.54,1.7 -0.48,2.88 z m 4.32,2.88 c -0.287,4.446 5.122,3.197 8.159,4.319 0.479,-2.718 -1.438,-3.041 -0.96,-5.76 -2.71,0.63 -2.257,-1.903 -4.319,-1.92 0.24,2.31 -2.77,1.39 -2.88,3.36 z m -247.68,6.72 c 0.235,-3.755 -1.319,-5.722 -3.36,-7.2 -0.15,3.67 1.197,5.84 3.36,7.2 z m 242.4,-3.36 1.92,0 c 0.38,-1.85 -2.3,-1.85 -1.92,0 z m -236.16,6.72 c 1.651,-1.254 0.908,-5.201 -1.44,-5.28 -0.469,1.48 0.137,4.19 1.44,5.28 z m -6.24,11.04 c 1.628,-3.842 -2.937,-4.853 -2.88,-8.641 0.086,-1.354 2.282,-0.599 1.92,-2.399 -7.767,-8.9 -1.78,9.27 0.96,11.04 z m 0.96,4.8 c 0.429,-2.189 -1.579,-1.941 -2.88,-2.4 -0.24,2 1.216,2.3 2.88,2.4 z m 35.04,9.6 c -0.204,-2.196 -0.811,-3.989 -2.88,-4.319 -1.029,1.54 1.37,5.32 2.88,4.32 z M 84,231.84 c 0.886,0.114 4.34,1.556 4.32,-0.479 -0.958,-1.17 -3.532,-0.93 -4.32,0.48 z m -23.52,5.76 c 0.435,-0.846 1.767,-0.793 1.92,-1.92 -0.983,0.02 -3.578,0.84 -1.92,1.92 z m 6.72,13.44 c 1.192,0.624 1.992,-1.408 2.4,0 -1.53,5.428 4.309,9.553 9.12,8.64 0.19,1.15 -2.187,-0.266 -1.44,1.44 2.696,-0.185 2.424,-3.336 5.28,-3.36 -0.063,1.184 -0.073,2.313 0.48,2.88 2.262,0.161 4.691,-4.923 6.24,-0.96 -0.836,-0.036 -1.493,0.107 -1.92,0.48 0.288,2.432 1.594,3.846 1.44,6.72 4.163,1.442 4.879,4.837 5.76,8.64 5.235,-0.204 8.599,-2.28 11.04,-5.279 -1.211,-0.869 -2.514,-1.646 -4.8,-1.44 -0.665,0.295 -0.072,1.848 -0.96,1.92 -0.325,-1.115 -1.595,-1.284 -1.92,-2.399 0.724,-0.876 0.509,-2.691 1.44,-3.36 1.676,0.11 5.551,2.572 5.28,-0.96 l -4.8,0 c -0.692,-1.067 -1.205,-2.314 -0.96,-4.32 -1.512,0.232 -1.086,-1.473 -2.88,-0.96 -1.667,2.115 2.068,1.996 0.48,3.84 -2.616,-1.703 -4.362,-4.277 -6.24,-6.72 1.991,-1.657 4.31,-8.435 -0.96,-8.16 1.849,2.405 -0.57,5.217 -1.92,7.2 -2.167,-0.713 -5.118,-0.642 -6.72,-1.92 1.544,-0.938 3.396,-1.357 4.8,0 1.139,-1.66 2.449,-5.552 0,-6.72 1.796,-0.924 0.359,-5.081 1.44,-6.721 -3.328,0.662 -9.778,1.169 -10.56,4.801 -5.178,-0.583 -7.73,-3.79 -11.04,-6.24 1.344,3.62 -0.832,10.75 1.92,12.96 z M 50.88,242.4 c 1.427,0.571 2.062,-2.023 0.96,-2.4 -0.205,0.92 -1.371,0.87 -0.96,2.4 z m 68.64,4.8 c 1.75,-1.05 3.186,0.397 3.36,-2.4 -2.03,-0.11 -2.84,1 -3.36,2.4 z m 1.92,3.36 c -2.732,0.813 -1.875,-1.964 -2.88,-2.88 0.253,3.688 3.432,4.68 2.88,9.12 -3.723,-0.043 -4.667,2.693 -7.68,3.36 0.536,5.391 7.452,5.546 11.04,2.88 l 0,-2.4 c -0.568,-1.182 -1.813,0.983 -2.4,-0.479 0.254,-3.746 1.585,-6.415 1.44,-10.561 -3.091,1.075 -2.054,-1.975 -2.4,-2.399 -0.66,1.03 -1.59,2.7 0,3.36 z m -60.96,14.88 c 0.487,-2.073 0.73,-4.391 1.44,-6.24 -1.814,-0.105 -2.331,-1.509 -3.84,-1.92 -0.158,3.68 0.074,6.97 2.4,8.16 z m 49.92,-2.4 c 0.006,-1.728 1.302,-3.617 0,-4.32 0.17,1.32 -1.38,3.37 0,4.32 z m -24,4.32 1.92,0 c 0.378,-1.85 -2.298,-1.85 -1.92,0 z m 24.48,4.32 c -0.105,0.061 -1.428,-0.075 -1.44,0 -0.672,4.162 2.407,10.033 -6.24,8.16 -0.662,0.619 -0.475,2.085 -0.48,3.36 -2.439,-0.359 -3.682,0.479 -4.32,1.92 6.264,-0.119 11.419,-5.567 15.36,-2.4 1.066,-1.792 -2.591,-2.35 -1.92,-5.279 0.239,-1.682 2.677,-1.164 3.36,-2.4 -1.099,-1.941 -2.028,-4.053 -2.88,-6.24 l -2.4,0 c -0.38,1.66 0.53,2.03 0.96,2.88 z m 8.64,1.92 c -0.234,3.274 1.64,4.44 2.4,6.721 2.334,-0.706 3.436,-2.645 5.28,-3.84 -0.502,-1.099 -0.305,-2.896 -0.96,-3.841 -2.78,-0.22 -4.32,0.8 -6.72,0.96 z m 71.52,7.68 c 0.385,1.665 -0.715,1.845 -0.48,3.359 2.676,0.548 5.341,3.024 7.2,0.48 -0.98,-1.281 -0.873,-1.407 -2.88,-0.96 -0.24,-2.75 -1.13,-3.59 -3.84,-2.88 z m -68.16,3.36 c 0.499,0.507 3.428,0.991 3.84,0 -1.04,-0.36 -3.38,-1.89 -3.84,0 z m 84,6.24 c 1.813,0.212 2.253,-0.946 3.36,-1.439 -0.032,-1.408 -1.097,-1.783 -1.92,-2.4 -0.61,1.15 -1.75,1.77 -1.44,3.84 z m -12,-1.44 c -0.98,-1.025 -1.899,0.135 -2.88,0.479 0.107,-0.907 -0.541,-1.059 -0.48,-1.92 l -2.4,0 c -0.56,2.69 4.79,3.32 5.76,1.44 z m 13.92,2.4 c 0.675,0.125 0.547,1.053 0.96,1.44 2.574,0.174 4.722,-0.078 5.76,-1.44 -2.55,0.54 -5.17,-2.57 -6.72,0 z m -30.24,0.48 0,3.359 c -2.284,-0.523 -1.959,1.562 -1.92,3.36 -1.055,1.025 -3.781,0.379 -4.32,1.92 2.773,0.747 2.264,4.776 6.24,4.32 1.152,-0.607 -0.265,-3.785 0.96,-4.32 0.973,0.627 0.659,2.541 1.92,2.88 1.563,-0.677 2.973,-1.508 2.4,-4.32 2.46,0.061 2.362,-2.438 4.8,-2.399 0.172,-3.053 -2.347,-3.413 -3.36,-5.28 -1.31,-0.35 -0.966,0.954 -1.92,0.96 0.37,-2.85 -4.14,-1.08 -4.8,-0.48 z m -19.68,4.32 c 2.713,0.313 4.359,-0.44 5.28,-1.92 -1.184,0.063 -2.313,0.073 -2.88,-0.479 0.46,2.06 -2.36,0.84 -2.4,2.4 z m 58.56,3.36 -2.88,0 c -0.11,1.82 2.99,1.82 2.88,0 z m -57.12,3.84 c 0.834,1.264 3.333,0.172 3.36,-0.96 -1.09,0.35 -3.74,-0.86 -3.36,0.96 z m -11.52,4.8 c 1.284,0.477 2.531,0.989 4.32,0.96 -0.232,-1.512 1.473,-1.086 0.96,-2.88 -1.91,0.49 -4.58,0.22 -5.28,1.92 z m -7.2,6.72 c 1.846,-0.394 4.105,-0.375 4.32,-2.4 -2.13,0.11 -4.13,0.35 -4.32,2.4 z"
+           d="m 156,0 h 19.2 c 53.536,2.929 95.325,30.62 120.48,63.36 25.28,32.904 44.089,84.11 30.72,142.08 21.464,0.755 40.783,11.153 55.2,22.079 4.542,3.443 11.771,6.899 14.4,11.04 1.514,2.385 2.175,7.371 3.84,10.561 3.68,7.052 10.696,12.468 11.52,19.68 0.41,3.594 -1.01,7.547 -0.479,11.04 1.247,8.219 8.866,15.839 14.399,23.04 4.158,5.411 12.71,15.219 14.4,22.561 0.624,2.709 0.185,5.612 0.479,8.64 0.987,10.111 5.306,21.641 0,32.64 -4.437,-2.838 -10.369,-5.441 -15.84,-8.16 -1.432,-0.711 -2.815,-3.222 -4.319,-1.439 -1.585,4.016 -0.764,10.437 -0.961,15.84 -3.023,2.783 -6.575,5.222 -11.039,6.72 -3.681,1.235 -11.934,2.787 -13.44,-0.96 -2.69,-6.688 6.907,-7.844 8.16,-12 1.42,-4.711 -1.171,-18.869 -2.88,-21.6 -4.133,-6.604 -15.498,-10.533 -23.521,-15.36 -6.107,-3.675 -12.275,-6.964 -17.76,-8.64 1.648,5.854 2.28,9.407 4.32,13.439 2.495,4.935 8.033,7.656 8.64,13.921 0.428,4.413 -2.078,8.04 -4.32,12.479 -2.061,4.08 -2.863,7.943 -4.8,11.521 -1.478,2.729 -4.306,4.214 -6.72,8.159 -1.517,2.478 -2.104,6.741 -4.32,8.16 -2.001,1.282 -7.241,2.101 -11.52,2.4 -3.778,0.265 -10.307,0.291 -10.561,-3.36 -0.284,-4.084 10.202,-7.115 12.96,-10.08 4.692,-5.043 9.413,-18.296 5.28,-29.279 -2.345,-6.232 -11.64,-16.809 -16.8,-22.08 -7.035,-7.188 -14.491,-12.872 -19.681,-19.2 -2.366,-2.886 -4.383,-8.411 -7.68,-9.601 -6.611,-2.384 -14.687,0.854 -22.56,0.96 -7.583,0.103 -16.391,-2.303 -20.641,2.881 -0.003,14.557 -2.98,29.085 -1.92,44.64 0.2,2.93 1.341,6.046 0.96,9.12 -0.444,3.591 -3.103,6.231 -4.319,10.08 -2.813,8.893 -2.563,15.819 -8.641,17.76 -2.121,0.677 -7.413,0.055 -11.04,0.479 -5.162,0.605 -15.984,6.089 -17.28,-0.479 -1.206,-6.113 8.272,-9.153 10.081,-14.4 5.245,-15.216 -3.021,-32.99 -3.36,-48 -26.004,8.947 -57.134,13.521 -85.44,8.641 -54.292,-9.361 -92.249,-39.139 -116.16,-79.681 -12.19,-20.67 -21.623,-47.75 -23.04,-75.84 v -18.72 c 2.248,-44.68 24.578,-82.178 49.44,-107.04 25.907,-25.907 60.72,-44.991 106.56,-48 z m 35.52,34.08 c 0.283,-1.723 -0.558,-2.322 -0.96,-3.36 h -2.88 c 0.96,1.437 1.7,3.094 3.84,3.36 z m -96.96,8.16 c 0.257,-3.104 6.657,-0.063 7.2,-2.88 -2.17,-3.09 -11.283,0.148 -7.2,2.88 z m 99.36,-0.48 c 0.02,-1.459 0.279,-3.159 -1.44,-2.88 -0.02,1.463 0.44,2.444 1.44,2.88 z M 163.68,40.8 c 0.294,1.306 1.318,1.881 2.88,1.92 0.421,-1.541 -1.245,-0.995 -1.44,-1.92 0.565,-0.075 1.362,0.083 1.44,-0.48 -1.47,-0.347 -1.75,0.491 -2.88,0.48 z m -55.2,1.92 c 0.448,0.513 1.771,0.149 1.44,1.44 2.535,-0.186 4.575,-0.866 5.28,-2.88 -2.32,-1.013 -5.8,-0.397 -6.72,1.44 z m 48,-0.48 c 0.045,-1.485 -1.45,-1.431 -2.88,-1.44 -0.12,1.614 1.78,2.48 2.88,1.44 z m -38.88,1.44 c 1.602,-10e-4 1.639,1.561 3.36,1.44 0.986,-1.91 -0.269,-3.683 -2.4,-3.84 -0.21,0.914 -1.03,1.206 -0.96,2.4 z m 69.6,2.88 c 1.194,-2.239 -1.794,-5.912 -3.84,-4.8 1.24,1.635 1.29,4.47 3.84,4.8 z m -23.04,0.96 c 1.277,-2.534 0.974,-5.259 -1.92,-5.76 -0.21,1.076 -0.4,5.68 1.92,5.76 z m -18.72,1.92 c 1.639,0.122 2.307,1.214 4.32,0.96 0.945,-2.733 -0.863,-4.646 -0.48,-8.16 -3.85,0.517 -2.31,3.988 -3.84,7.2 z M 114.72,43.2 c 0.09,1.35 0.835,2.045 2.4,1.92 -0.17,-1.33 -1.44,-2.826 -2.4,-1.92 z M 79.2,227.04 c -0.77,-1.951 -2.544,-2.896 -5.76,-2.4 0.107,-0.907 -0.541,-1.059 -0.48,-1.92 0.316,-1.604 1.493,-2.347 1.92,-3.84 -1.057,-0.383 -1.917,-0.964 -1.92,-2.399 1.551,-0.976 5.331,-2.613 5.76,0.479 -1.508,-0.228 -1.961,0.599 -2.4,1.44 1.231,0.049 0.771,1.788 1.44,2.399 1.665,-0.385 1.845,0.715 3.36,0.48 0.054,-0.586 0.144,-1.137 0.96,-0.96 0.398,-1.254 -1.452,-2.634 0,-3.36 0.936,1.624 2.576,2.544 4.32,3.36 -0.403,1.357 -0.557,2.963 -0.96,4.319 1.991,2.81 4.747,4.854 8.16,6.24 -1.528,0.803 1.481,1.023 0.48,2.88 2.003,-0.37 1.625,-3.498 0,-3.84 3.138,-0.062 5.082,-1.318 8.16,-1.439 -0.107,0.907 0.541,1.059 0.48,1.92 -3.489,-0.609 -3.504,2.256 -5.28,3.359 -0.56,-1.186 -1.255,-1.771 -1.92,-0.479 0.778,2.775 2.945,-1.085 4.32,0.96 -0.434,1.315 -1.767,-0.938 -1.92,0.96 3.503,1.107 5.491,-3.346 7.68,-0.48 -0.922,1.798 -1.794,3.646 -2.4,5.761 0.086,1.354 2.281,0.598 1.92,2.399 -2.995,-2.526 -6.877,0.996 -4.32,4.32 2.391,-0.169 3.514,-1.606 6.24,-1.44 0.206,0.914 1.034,1.206 0.96,2.4 -1.183,-0.063 -2.313,-0.073 -2.88,0.479 -0.421,1.541 1.245,0.995 1.44,1.92 3.204,-0.476 4.151,-3.209 3.84,-7.199 5.137,0.816 2.824,-5.816 7.2,-5.761 0.846,0.435 0.793,1.768 1.92,1.92 0.832,-0.607 1.258,-1.622 2.88,-1.439 0.35,2.43 -1.317,2.843 -1.44,4.8 2.887,0.167 3.833,-1.606 6.72,-1.439 0.779,-3.221 3.959,-4.041 4.8,-7.2 -2.208,-1.312 -7.658,0.618 -9.12,-1.44 1.708,-1.333 4.807,-1.272 5.28,-3.84 -1.195,-0.493 -3.578,-0.72 -1.44,-1.92 -1.198,-0.342 -1.973,2.112 -2.88,0.479 1.031,-1.401 1.435,-0.452 3.36,-0.96 1.354,0.087 0.599,2.282 2.4,1.921 5.522,-0.721 9.849,-5.188 10.08,-9.601 0.021,0.511 -0.226,1.219 -0.48,0.48 0.231,-2.169 3.62,-1.18 5.28,-1.92 0.806,-1.358 -1.274,-1.634 0.96,-2.4 -5.035,-3.182 -9.027,3.128 -13.44,1.92 -0.695,1.815 1.319,0.921 0.96,2.4 -2.955,1.067 -5.227,3.928 -6.24,4.319 -3.16,-2.41 -0.908,-9.583 3.36,-9.12 0.988,0.132 0.452,1.788 1.44,1.921 -0.206,-0.773 1.79,-1.611 1.92,-0.48 -0.373,0.107 -0.947,0.014 -0.96,0.48 3.103,1.223 0.562,-7.031 4.8,-6.24 0.153,1.113 -0.077,1.843 -0.48,2.399 2.58,0.34 4.101,-0.379 5.76,-0.96 0.347,-1.467 -0.491,-1.749 -0.48,-2.88 2.865,-0.495 1.878,-4.842 6.24,-3.84 0.25,3.187 3.269,4.098 1.92,9.6 -1.798,0.122 -3.087,0.754 -3.84,1.921 4.5,2.706 -1.536,7.726 -0.96,12.479 0.995,0.285 3.153,-0.593 3.36,0.48 0.1,1.379 -0.122,2.438 -0.96,2.88 -0.054,-0.586 -0.144,-1.137 -0.96,-0.96 -0.704,1.696 -2.132,2.667 -1.92,5.279 0.13,0.99 2.125,0.115 1.92,1.44 -1.173,0.907 -2.326,1.834 -3.84,2.4 v 3.359 c 0.918,0.202 2.066,0.174 1.92,1.44 -1.707,3.069 -7.614,1.951 -8.16,-1.44 1.064,-1.336 3.694,-1.105 4.32,-2.88 -0.877,-0.723 -1.129,-2.07 -1.92,-2.88 -1.156,-0.15 -2.324,2.095 -3.36,0.479 2.348,0.268 1.146,-3.014 1.44,-4.8 -3.123,0.007 -3.505,3.347 -2.88,5.76 -3.654,-0.293 -4.628,2.092 -7.2,2.881 0.027,1.732 1.196,2.323 1.44,3.84 -1.794,-0.034 -2.749,0.771 -3.36,1.92 2.825,1.538 4.764,-1.516 7.2,-1.92 -1.092,2.748 -3.005,4.675 -7.2,4.319 0.708,2.788 -0.959,3.201 -1.44,4.801 0.148,3.372 3.423,3.617 4.32,6.239 -0.56,1.561 -1.255,-0.015 -1.92,1.44 0.079,2.946 2.373,5.197 5.28,3.84 0.443,-2.203 -1.201,-2.319 -0.96,-4.32 1.919,-0.48 3.73,-1.069 5.28,-1.92 0.214,-2.133 -1.3,-2.539 -1.92,-3.84 2.226,-1.361 3.929,-0.781 5.76,0.48 -0.057,-2.297 1.782,-2.698 4.32,-2.4 1.354,-3.102 4.755,-5.709 3.36,-10.08 1.495,-0.585 3.043,-1.117 5.28,-0.96 -0.517,2.437 0.887,2.953 1.92,3.84 -1.073,2.287 -3.463,3.258 -3.36,6.721 -2.43,0.45 -3.622,2.138 -5.76,2.88 -0.063,1.183 -0.073,2.313 0.48,2.88 -2.047,0.513 -3.112,2.008 -3.84,3.84 -0.899,-2.142 -3.253,-2.826 -3.36,-5.76 -2.262,3.938 -4.819,8.854 -6.72,14.399 2.573,-0.108 -0.426,3.576 1.92,4.32 0.224,-0.918 -1.479,-2.066 0.48,-1.92 0.491,4.811 -4.062,4.578 -3.84,9.12 -0.94,-0.799 -2.834,0.357 -2.88,1.92 -0.108,0.907 0.541,1.059 0.48,1.92 4.866,0.387 8.081,-0.879 11.52,-1.92 0.292,-1.147 -0.603,-3.482 0.48,-3.84 0.899,0.701 3.181,0.019 3.84,0.96 -1.611,4.372 -5.311,6.436 -4.32,12 1.191,-0.729 1.954,-1.886 3.84,-1.92 -0.44,1.202 1.934,2.966 0,3.84 -0.075,-0.565 0.083,-1.362 -0.48,-1.44 -0.148,1.132 -1.667,0.894 -1.44,2.4 3.799,-0.721 2.64,2.529 3.84,3.36 1.207,-0.554 1.511,-2.01 2.4,-2.881 1.585,1.156 4.251,4.338 5.76,1.44 -1.241,-1.64 -4.867,-0.894 -5.76,-2.88 1.47,-1.041 -0.46,-2.702 0,-4.32 2.155,-0.404 3.795,-1.324 5.28,-2.399 -0.011,1.131 0.827,1.413 0.48,2.88 3.656,-0.184 4.838,-2.842 9.12,-2.4 0.262,-0.697 -0.561,-2.48 0.48,-2.399 1.719,-0.279 1.459,1.42 1.44,2.88 2.135,0.265 2.729,2.07 5.28,1.92 -0.989,-5.847 6.353,-6.931 9.12,-10.561 0.421,-1.541 -1.245,-0.995 -1.44,-1.92 1.553,0.594 0.367,-1.553 1.92,-0.96 2.744,4.991 5.205,8.163 10.08,3.84 -1.476,-2.665 1.652,-4.747 -0.96,-5.76 1.31,-0.35 0.966,0.954 1.92,0.96 0.714,-2.186 0.684,-3.566 0.96,-5.28 2.035,-0.427 3.399,1.261 4.8,0 -5.661,-8.101 -10.066,-20.388 -16.32,-24.96 -0.085,-1.685 1.621,-1.578 1.92,-2.88 -2.697,-5.484 -5.579,-12.33 -7.68,-20.16 -4.243,-15.813 -3.526,-35.936 -9.6,-48 -1.953,-3.879 -10.158,-13.246 -15.84,-13.92 -6.1,-3.461 -7.448,-13.273 -0.96,-17.28 3.339,-0.458 3.71,2.05 4.8,3.84 22.352,2.681 -2.368,-33.775 12.96,-39.36 9.859,9.661 17.074,21.967 33.6,24.96 8.425,9.284 18.051,20.518 26.88,30.24 3.346,3.684 8.014,6.74 8.16,12.48 -1.125,1.275 -2.032,2.768 -3.84,3.36 -2.593,20.078 21.904,21.905 36.96,20.16 -0.331,-1.931 0.46,-2.74 0.479,-4.32 -0.718,-0.082 -1.771,0.172 -1.92,-0.479 1.317,-1.823 0.727,-3.731 0,-5.76 -1.19,0.071 -2.329,0.089 -2.399,-0.96 1.226,0.367 2.206,0.707 2.88,-0.48 -1.819,-0.394 -0.738,-3.17 0.96,-2.88 0.011,1.13 -0.827,1.413 -0.48,2.88 1.915,-0.475 1.445,1.435 3.36,0.96 0.668,-2.097 0.014,-2.835 -0.48,-4.8 -1.131,-0.011 -1.413,0.827 -2.88,0.48 -1.331,-5.164 1.185,-10.225 4.8,-12 1.058,0.382 1.917,0.963 1.92,2.4 1.196,-0.404 2.572,-0.628 4.32,-0.48 -0.396,1.356 0.677,1.243 0.48,2.4 2.477,-1.523 4.675,-3.325 7.199,-4.8 -0.873,-1.518 -2.966,-0.387 -3.84,-0.96 0.106,-2.666 -1.82,-3.3 -3.84,-3.84 -0.459,0.894 1.438,1.604 0,1.92 -0.836,-0.036 -1.493,0.107 -1.92,0.48 -1.478,-1.563 -0.829,-5.251 -0.96,-8.16 -2.5,-0.26 -2.438,2.042 -2.4,4.32 -1.156,-0.196 -1.043,0.876 -2.399,0.48 -0.628,1.633 1.069,3.35 0,3.84 -0.415,-0.865 -1.056,-1.505 -1.92,-1.92 v -2.88 c 3.073,-0.219 0.947,-5.912 0.479,-7.2 2.364,-2.436 2.496,-7.104 4.32,-10.08 1.215,4.62 4.042,8.602 5.28,14.4 3.745,-1.855 1.845,-9.355 3.84,-12.96 2.73,2.372 1.452,6.67 1.439,11.04 -3.014,-0.114 -2.456,7.083 -0.479,7.68 1.276,-0.963 2.396,-2.083 3.359,-3.36 0.152,-1.912 -2.22,-1.3 -2.399,-2.88 3.322,-0.198 4.393,-2.648 4.8,-5.76 -1.926,-2.714 -4.045,-5.235 -5.28,-8.64 1.94,-5.167 1.343,-14.314 -2.88,-16.32 -0.082,0.718 0.172,1.771 -0.479,1.92 -4.336,0.016 -6.565,-2.075 -7.2,-5.76 -5.198,-0.722 -8.935,-2.906 -12,-5.76 1.266,0.146 1.238,-1.002 1.439,-1.92 -1.768,-0.263 -1.355,-2.766 -1.92,-5.28 -0.511,-1.14 -2.211,1.029 -2.88,-0.48 0.373,-0.107 0.947,-0.013 0.96,-0.48 -1.632,0.144 -3.563,3.406 -4.8,0.96 0.3,-1.78 1.35,-2.811 1.92,-4.32 -1.997,-0.723 -5.235,-0.204 -6.24,-1.92 -0.229,-6.171 -2.757,-10.042 -4.319,-14.88 1.633,-0.627 3.35,1.069 3.84,0 -1.701,-2.069 -3.206,-1.682 -6.24,-1.92 -1.498,0.855 0.154,1.88 -0.96,2.88 -0.989,-2.21 -4.325,-2.075 -3.84,-5.76 1.092,-0.233 2.452,-0.953 3.36,0 0.665,-3.499 -1.101,-1.713 -1.44,-3.84 1.423,0.336 0.666,-3.114 3.36,-1.44 3.619,2.25 10.223,-4.866 12,-0.48 -0.611,-0.654 -2.352,-0.741 -2.4,0.48 0.991,2.217 4.422,5.448 2.4,7.68 3.762,-1.069 4.522,2.975 6.72,1.92 0.193,-1.487 -2.808,-3.902 -2.88,-6.72 -0.908,-0.107 -1.06,0.541 -1.92,0.48 0.183,-1.806 -2.28,-3.448 -0.96,-4.8 0.593,2.726 0.974,-1.489 2.88,-0.48 v -3.36 c -1.35,-0.571 -2.76,-1.08 -4.32,-1.44 v -1.92 c -4.071,-0.568 -3.597,-5.683 -6.72,-7.2 -0.3,0.359 -5.288,0.138 -6.24,1.44 -0.637,-7.686 -11.554,0.676 -13.92,-5.28 1.14,-0.3 2.234,-0.645 2.4,-1.92 -0.747,-0.125 -0.333,-1.053 0,-1.44 -3.019,0.299 -4.062,-1.379 -6.721,-1.44 -0.955,1.125 -1.105,3.054 -0.96,5.28 5.452,2.547 2.199,13.801 9.12,14.88 0.148,3.188 0.057,6.136 -1.92,7.2 -2.209,-0.363 -3.178,-4.486 -5.28,-3.36 0.539,0.102 0.748,0.533 0.96,0.96 -1.077,-1.623 -3.162,0.887 -3.359,0 1.061,-1.053 -0.475,-1.961 0,-3.84 -1.604,-1.07 -3.677,-1.07 -5.28,0 -0.107,5.013 -1.777,8.463 -3.36,12 -5.346,-2.341 -1.196,-10.269 -0.48,-14.88 1.512,-0.232 1.087,1.473 2.88,0.96 0.165,-3.227 3.777,-7.479 0.96,-10.56 -1.272,0.328 -0.537,2.663 -2.4,2.4 -1.837,-1.203 -2.526,-3.554 -3.84,-5.28 -2.179,-0.258 -1.282,2.559 -3.36,2.4 -8.146,-2.333 -5.092,-15.455 -13.44,-15.84 2.038,5.162 5.523,8.876 7.68,13.92 -3.472,-0.615 -3.256,0.161 -5.76,0.96 -1.734,-0.986 -2.56,-2.88 -3.36,-4.8 -1.604,0.713 -2.347,1.232 -3.84,0 -1.135,1.668 -1.306,4.342 -1.44,5.76 -1.857,0.417 -1.708,-1.172 -2.88,-1.44 0.725,1.579 0.531,4.103 -0.96,4.8 -1.791,-0.929 -4.329,-1.111 -5.76,-2.4 -1.478,1.722 -3.566,2.834 -5.28,4.32 1.505,-0.225 1.354,1.207 1.92,1.92 -2.491,-0.73 -1.327,2.193 -2.88,2.4 -1.618,-0.461 -1.839,-2.321 -2.4,-3.84 1.357,-0.396 1.244,0.677 2.4,0.48 -0.666,-1.414 -1.132,-3.028 -1.44,-4.8 -2.609,-0.049 -4.957,0.163 -6.24,1.44 1.124,3.676 4.381,5.219 5.76,8.64 -0.756,0.043 -0.375,1.224 -1.44,0.96 -0.659,-1.094 1.237,-1.805 0,-1.92 -1.3,1.58 -3.103,2.657 -5.28,3.36 -3.645,-3.484 -7.314,-8.407 -6.24,-13.92 -1.759,-0.159 -2.667,0.533 -3.84,0.96 -2.059,-2.261 -6.617,-2.023 -5.76,-7.2 -10.27,2.125 -3.554,-12.916 -7.68,-16.32 0.436,0.36 -1.938,2.27 -0.96,-0.48 -1.573,0.027 -1.835,1.365 -3.84,0.96 -0.005,-1.275 0.182,-2.741 -0.48,-3.36 -1.503,0.416 -2.651,1.189 -3.36,2.4 0.354,0.766 2.35,-0.109 1.92,1.44 -0.233,0.567 -0.512,1.088 -0.96,1.44 -1.478,0.357 -0.922,-1.317 -2.4,-0.96 0.369,2.289 -0.678,3.162 -1.92,3.84 -6.215,-1.145 -11.443,-3.277 -16.32,-5.76 0.186,1.734 2.634,1.206 1.92,3.84 -0.597,1.323 -2.451,1.389 -3.36,2.4 0.368,1.751 2.882,3.243 1.44,5.28 -1.559,-1.001 -3.922,-1.198 -3.84,-3.84 -1.79,-0.51 -0.76,1.8 -2.4,1.44 -1.301,-0.299 -1.195,-2.005 -2.88,-1.92 -1.431,1.94 -4.484,3.127 -3.84,5.76 h -2.88 c 0.158,2.078 -0.662,3.179 -1.92,3.84 -1.155,-1.584 -2.551,0.611 -3.36,0.96 0.837,2.875 2.872,4.776 5.28,4.8 -1.509,0.57 -2.54,1.62 -4.32,1.92 0.145,-3.505 -5.268,-1.452 -4.8,-5.28 -3.185,0.335 -3.463,3.577 -5.76,4.8 h -3.36 c -1.39,2.211 -6.005,3.483 -5.76,5.76 -1.234,-1.242 -2.035,0.402 -2.4,1.44 0.567,0.233 1.088,0.512 1.44,0.96 -1.763,0.157 -3.291,0.549 -4.32,1.44 v 2.88 c 1.695,0.225 4.625,-0.785 4.32,1.44 -0.107,1.493 -2.389,0.811 -3.84,0.96 -0.044,4.756 -3.36,6.24 -2.88,11.52 0.698,0.263 2.481,-0.561 2.4,0.48 -0.277,1.163 -1.813,1.067 -2.88,1.44 2.683,13.882 -10.98,11.42 -13.92,19.68 0.8,2.484 3.14,4.379 -0.48,5.76 1.536,-2.398 -0.957,-4.322 -0.96,-6.72 0.894,-0.066 1.604,-0.316 1.92,-0.96 -3.871,-0.289 -3.777,-4.542 -5.76,-6.72 -3.969,0.511 -7.479,1.481 -9.6,3.84 -2.139,0.059 -2.976,-1.184 -4.8,-1.44 -1.221,1.179 -1.715,3.085 -1.44,5.76 h -2.88 c -0.685,2.089 1.641,2.207 0.48,3.36 -1.156,0.196 -1.043,-0.876 -2.4,-0.48 -1.541,1.819 -2.627,4.093 -2.4,7.68 2.665,0.104 2.566,-2.554 5.76,-1.92 1.256,3.965 -0.396,7.911 0,12.48 1.613,0.013 2.539,-0.661 3.36,-1.44 -3.201,-4.125 2.941,-8.499 0.96,-12.96 3.075,-0.355 4.85,0.59 5.76,2.4 -0.852,0.908 -0.35,3.17 -0.48,4.8 h 4.8 c 1.193,0.567 0.482,3.038 1.92,3.36 0.463,-0.977 1.843,-1.037 3.36,-0.96 -1.166,1.892 -0.31,5.251 0.96,6.24 -0.961,0.958 -1.402,2.438 -2.88,2.88 -1.166,-2.354 -0.897,-6.143 -2.88,-7.68 -0.06,1.06 -2.036,0.204 -2.88,0.48 -0.479,3.682 -1.292,7.027 -0.96,11.52 3.209,2.5 6.857,-0.538 10.56,-0.48 0.361,4.919 4.515,6.045 3.84,12 2.019,0.099 2.016,-1.824 3.84,-1.92 -1.409,1.511 -0.673,3.048 0,4.8 -4.688,3.886 -8.231,11.161 -6.24,20.16 1.404,0.996 3.72,1.08 4.8,2.4 -0.326,1.754 -0.67,3.491 -0.48,5.76 -1.122,0.158 -1.983,0.577 -2.88,0.96 0.331,-1.931 -0.46,-2.74 -0.48,-4.32 -3.498,1.142 -2.059,7.221 -4.32,9.6 -2.457,0.377 -3.487,-0.674 -5.76,-0.48 -0.135,-1.625 -0.763,-2.756 -0.48,-4.8 -1.317,-0.763 -3.482,-0.678 -4.8,-1.44 1.467,4.095 -0.445,6.64 -2.4,8.64 1.146,4.642 9.039,4.461 6.72,11.04 1.452,0.309 2.77,0.75 2.88,2.399 -0.34,3.021 -4.25,2.471 -5.76,4.32 1.328,0.592 2.57,1.271 4.32,1.44 -0.448,2.688 1.604,2.876 2.88,3.84 0.026,2.214 -0.213,4.692 0.48,6.239 2.365,-0.813 4.437,-0.039 6.72,0.48 3.244,-1.193 3.875,-7.471 3.36,-8.64 -1.816,-0.057 -0.714,2.807 -2.4,2.88 -4.107,-0.372 -7.118,-1.843 -6.72,-6.721 4.716,-0.716 5.531,2.47 8.64,3.36 0.739,-1.021 1.732,-1.787 2.4,-2.88 -0.833,-0.768 -1.04,-2.16 -0.96,-3.84 1.336,-0.147 3.595,-2.125 4.32,0 -1.117,1.763 -0.644,5.116 -1.92,6.72 3.194,-2.396 8.183,0.3 6.24,4.32 1.222,0.059 1.861,0.698 1.92,1.92 -1.222,-0.248 -1.862,-0.818 -1.92,0.96 0.306,0.974 2.244,0.316 2.4,1.439 -0.606,7.531 9.288,6.951 12.48,3.36 -1,0.956 -0.016,2.05 0.96,2.4 0.117,-3.411 2.818,-6.772 2.88,-8.641 -1.177,0.9 -2.174,1.99 -3.84,2.4 z m 87.84,-175.2 c -0.887,-1.513 -1.182,-3.618 -3.36,-3.84 -1.52,2.247 1.06,5.322 3.36,3.84 z m -10.56,0.48 c 0.123,-1.883 -1.736,-1.784 -1.44,-3.84 h -1.92 c 0.2,2.309 1.05,5.052 3.36,3.84 z m 0.96,-2.88 v 1.44 c 1.833,0.393 1.858,-1.021 2.4,-1.92 -1.11,-0.153 -1.84,0.077 -2.4,0.48 z m 25.44,6.72 c 0,-2.24 -0.582,-3.898 -2.88,-3.84 -1.27,1.868 0.32,4.286 2.88,3.84 z m 51.36,4.8 c 2.344,-1.336 4.39,-2.971 4.8,-6.24 -0.372,-0.107 -0.946,-0.013 -0.96,-0.479 -2.508,0.052 -2.788,2.332 -5.279,2.4 v 2.4 c 1.272,0.007 2.826,-0.267 2.88,0.96 -0.83,-0.027 -1.23,0.369 -1.44,0.959 z m -72,-1.92 c 0.069,-1.693 -2.626,-3.102 -3.36,-2.4 1.27,0.648 1.31,2.53 3.36,2.4 z m 89.28,2.88 h 1.92 c 0.095,-1.375 0.06,-2.62 -1.439,-2.4 -0.4,0.557 -0.63,1.287 -0.48,2.4 z m -90.72,2.4 c -0.196,-1.156 0.877,-1.043 0.48,-2.4 -1.405,0.125 -1.475,-1.085 -2.88,-0.96 0.43,1.492 0.49,3.346 2.4,3.36 z m 11.04,-0.96 c 1.602,0.495 4.997,1.701 4.32,2.88 -2.02,-0.077 -2.301,-2.177 -4.32,-0.96 -0.665,-0.294 -0.072,-1.848 -0.96,-1.92 -0.373,2.066 -1.752,1.267 -2.4,0 -1.009,1.392 -2.932,1.869 -3.36,3.84 4.35,2.95 9.713,1.29 12.48,-0.48 0.011,-1.13 -0.827,-1.413 -0.48,-2.88 -2.96,0.874 -3.8,-2.68 -5.28,-0.48 z m 7.2,2.88 c 0.479,-0.642 1.297,-0.943 1.44,-1.92 -0.565,-0.075 -1.362,0.083 -1.44,-0.48 -0.027,-0.292 -0.072,-0.568 -0.48,-0.48 -0.34,1.198 -0.47,1.973 0.48,2.88 z m 40.8,5.28 c 0.619,1.942 2.221,2.898 3.36,4.32 0.17,-2.572 -1.01,-5.81 -3.36,-4.32 z m 33.6,1.44 c -0.114,1.875 1.783,1.737 2.88,2.4 -0.011,-1.13 0.827,-1.413 0.48,-2.88 -1.28,0.005 -2.74,-0.181 -3.36,0.48 z M 41.28,77.28 c 1.883,4.597 3.837,-1.806 6.72,-1.92 -3.108,-3.208 -3.655,2.142 -6.72,1.92 z m 17.76,-1.44 c 0.334,3.374 -2.406,3.674 -2.4,6.72 2.934,-1.226 4.93,-3.39 5.28,-7.2 -1.468,-0.348 -1.412,0.828 -2.88,0.48 z m 165.12,4.32 c 0.374,0.106 0.559,0.402 0.48,0.96 1.229,-0.051 2.288,-0.272 2.88,-0.96 -1.13,-0.47 -0.43,-2.77 -1.44,-3.36 -0.37,1.394 -2.28,1.245 -1.92,3.36 z m 53.76,6.24 c 2.12,3.365 3.03,-1.488 0,0 z m -7.68,2.4 c 1.265,0.145 1.575,-0.665 1.44,-1.92 -1.26,-0.145 -1.58,0.665 -1.44,1.92 z M 31.68,101.28 c 2.531,-2.941 2.056,-5.771 3.36,-8.16 -1.64,0.36 -0.61,-1.95 -2.4,-1.44 0.938,4.147 -2.747,6.202 -0.96,9.6 z m 10.56,-3.36 c 1.06,0.06 0.204,2.036 0.48,2.88 -2.602,1.238 -4.874,2.807 -6.24,5.28 -0.034,1.794 0.771,2.749 1.92,3.36 0.896,-4.65 4.631,-8.664 8.64,-8.64 0.725,-2.475 3.011,-3.389 4.8,-4.8 v -1.44 c -4.59,-0.27 -5.638,3.002 -9.6,3.36 z m -6.24,4.8 c 1.157,-0.197 1.043,0.876 2.4,0.48 0.114,-0.886 1.556,-4.34 -0.48,-4.32 -0.62,1.3 -2.133,1.71 -1.92,3.84 z m 244.8,-0.96 c 0.206,-0.753 1.51,-0.41 0.96,-1.92 h -1.44 c 0.08,0.72 -0.17,1.77 0.48,1.92 z m -20.64,13.44 c 0.547,-1.053 1.239,-1.961 0.96,-3.84 3.595,-0.291 6.611,-3.932 4.801,-6.72 -3.562,-0.536 -2.937,4.635 -6.24,2.88 0.153,1.127 0.758,1.802 0.479,3.36 -1.188,0.731 -2.854,0.985 -3.359,2.4 0.989,0.291 3.334,-0.774 2.88,0.96 -0.131,1.683 -2.126,-0.867 -1.92,0.48 0.56,0.4 1.29,0.63 2.4,0.48 z m 45.12,-1.44 c 0.908,0.108 1.06,-0.541 1.92,-0.48 -0.598,-1.482 -0.395,-3.765 -2.399,-3.84 -0.33,1.93 0.46,2.74 0.48,4.32 z m -35.52,7.68 c 1.373,-1.706 2.641,-2.528 2.399,-4.8 -1.553,-0.593 -0.366,1.553 -1.92,0.96 -0.698,-1.862 -2.295,-2.825 -4.319,-3.36 0.77,2.91 1.89,5.47 3.84,7.2 z m -244.8,23.04 c 1.588,-0.492 2.831,-1.33 2.88,-3.36 -0.557,-0.403 -1.287,-0.633 -2.4,-0.48 0.009,1.51 -1.585,2.68 -0.48,3.84 z m 269.76,1.44 c 0.188,-1.949 -0.176,-3.344 -1.92,-3.36 -0.33,2.09 0.86,2.66 1.92,3.36 z m 4.8,0 c 1.536,-0.063 2.111,-1.088 1.92,-2.88 h -1.92 z M 26.4,150.24 c 1.518,0.708 2.308,-2.758 0.48,-2.4 0.397,1.36 -0.676,1.24 -0.48,2.4 z m 277.44,-0.48 v -1.92 h -1.44 c -0.14,1.26 0.18,2.06 1.44,1.92 z m -13.44,2.88 c 1.032,-0.408 1.113,-1.767 0.96,-3.36 -2.4,-0.91 -2.55,3.17 -0.96,3.36 z M 42.72,153.6 c 0.107,-1.708 -0.324,-2.876 -1.44,-3.36 0.138,1.46 -0.076,3.28 1.44,3.36 z m 259.68,2.88 c 0.393,-0.348 1.287,-3.322 -0.479,-2.88 -0.66,0.62 -0.84,2.87 0.48,2.88 z m 1.44,4.8 c 1.306,-1.414 2.198,-3.241 2.88,-5.28 h -0.96 c -0.04,2.05 -3.08,3.62 -1.92,5.28 z M 21.6,162.24 c 2.963,0.954 3.643,-4.097 1.92,-4.8 -0.591,1.65 -2.491,1.99 -1.92,4.8 z m 276,6.72 c 0.229,-1.532 0.945,-2.574 2.4,-2.88 -0.791,-2.41 -0.717,-5.684 -1.44,-8.16 -1.5,1.06 -4.602,0.518 -5.76,1.92 1.132,1.175 0.893,-0.717 2.399,-0.48 -0.151,3.352 2.072,4.328 1.92,7.68 -0.613,0.026 -0.664,0.615 -1.439,0.48 -3.48,-2.89 -0.36,0.96 1.92,1.44 z m -24.48,-6.72 c -0.513,-1.793 1.192,-1.368 0.96,-2.88 h -2.399 c 0.01,1.43 -0.04,2.92 1.44,2.88 z m 35.52,3.84 c -0.235,-2.156 0.243,-3.597 0.479,-5.28 h -1.92 c 0.46,1.78 -0.07,4.55 1.44,5.28 z M 26.88,162.72 c -0.153,1.113 0.077,1.843 0.48,2.4 2.48,0.561 2.5,-1.34 2.88,-2.88 -1.275,0 -2.741,-0.18 -3.36,0.48 z m 266.4,3.36 c -0.09,-1.83 -0.682,-3.158 -2.399,-3.36 h -0.96 c 0.13,1.99 1.73,4.4 3.36,3.36 z M 2.4,169.92 c -0.291,-0.989 0.775,-3.334 -0.96,-2.88 0.29,0.99 -0.774,3.34 0.96,2.88 z M 21.12,180 c 5.252,-1.325 0.507,-10.652 -0.96,-12.96 -0.327,5.88 4.038,8.22 0.96,12.96 z m 20.64,-8.64 c 1.357,-0.396 1.244,0.677 2.4,0.48 0.663,-1.466 0.824,-4.008 -0.96,-4.32 -0.317,1.44 -1.845,1.68 -1.44,3.84 z m 247.68,5.76 c 4.793,0.953 3.02,-4.66 3.36,-8.16 -1.354,-0.727 -3.001,-1.16 -5.28,-0.96 0.02,2.05 1.93,5.52 1.92,9.12 z m 18.72,-0.48 c -0.134,-2.054 1.467,-2.374 0.96,-4.8 -0.685,-0.115 -0.81,-0.79 -1.439,-0.96 -0.61,1.1 -2.27,5.67 0.48,5.76 z m -7.2,-1.92 c -0.291,-0.99 0.774,-3.335 -0.96,-2.88 -0.98,0.98 -0.46,2.89 0.96,2.88 z m -271.68,12 c 2.388,0.468 1.9,-1.94 3.36,-2.4 1.172,0.268 1.022,1.857 2.88,1.44 0.218,-2.298 -0.521,-3.639 -1.92,-4.32 -0.116,0.844 -0.826,1.094 -1.92,0.96 1.859,-2.19 0.784,-6.729 -2.88,-6.24 0.486,2.59 -0.161,7.13 0.48,10.56 z m 265.92,-6.24 c -0.206,-1.553 0.632,-4.151 -0.96,-4.32 -0.3,1.11 -0.46,3.65 0.96,4.32 z m -24,4.8 c 1.433,0.008 1.632,1.248 2.88,1.44 0.09,-2.661 -0.058,-7.606 -1.92,-6.72 1.31,0.19 -1.2,3.15 -0.96,5.28 z m 29.76,4.32 c 0.74,-2.522 5.443,-4.893 2.88,-7.68 0.01,3.22 -4.49,4.46 -2.88,7.68 z M 21.12,209.28 c -0.157,-1.763 -0.55,-3.291 -1.44,-4.32 -1.478,-0.357 -0.923,1.317 -2.4,0.96 -1.165,-1.123 -1.974,-3.343 -0.96,-5.28 -3.561,2.87 0.432,9.07 4.8,8.64 z M 11.04,191.04 c -0.222,5.022 0.254,9.346 3.84,10.56 0.316,-5.12 -1.546,-8.05 -3.84,-10.56 z m 280.8,13.44 h 3.84 c -0.079,-1.52 1.275,-1.604 0.96,-3.36 -1.131,-0.011 -1.413,0.827 -2.88,0.479 -0.304,-1.616 -1.379,-2.461 -0.96,-4.8 -0.702,-1.058 -3.802,0.282 -3.84,-1.44 -0.581,-1.478 2.095,-3.397 0,-3.36 -2.79,4.6 0.42,10.09 2.88,12.48 z m -18.24,-9.12 h 2.88 c 0.612,-2.372 -1.209,-2.312 -2.4,-2.88 -0.55,0.57 -0.54,1.7 -0.48,2.88 z m 4.32,2.88 c -0.287,4.446 5.122,3.197 8.159,4.319 0.479,-2.718 -1.438,-3.041 -0.96,-5.76 -2.71,0.63 -2.257,-1.903 -4.319,-1.92 0.24,2.31 -2.77,1.39 -2.88,3.36 z m -247.68,6.72 c 0.235,-3.755 -1.319,-5.722 -3.36,-7.2 -0.15,3.67 1.197,5.84 3.36,7.2 z m 242.4,-3.36 h 1.92 c 0.38,-1.85 -2.3,-1.85 -1.92,0 z m -236.16,6.72 c 1.651,-1.254 0.908,-5.201 -1.44,-5.28 -0.469,1.48 0.137,4.19 1.44,5.28 z m -6.24,11.04 c 1.628,-3.842 -2.937,-4.853 -2.88,-8.641 0.086,-1.354 2.282,-0.599 1.92,-2.399 -7.767,-8.9 -1.78,9.27 0.96,11.04 z m 0.96,4.8 c 0.429,-2.189 -1.579,-1.941 -2.88,-2.4 -0.24,2 1.216,2.3 2.88,2.4 z m 35.04,9.6 c -0.204,-2.196 -0.811,-3.989 -2.88,-4.319 -1.029,1.54 1.37,5.32 2.88,4.32 z M 84,231.84 c 0.886,0.114 4.34,1.556 4.32,-0.479 -0.958,-1.17 -3.532,-0.93 -4.32,0.48 z m -23.52,5.76 c 0.435,-0.846 1.767,-0.793 1.92,-1.92 -0.983,0.02 -3.578,0.84 -1.92,1.92 z m 6.72,13.44 c 1.192,0.624 1.992,-1.408 2.4,0 -1.53,5.428 4.309,9.553 9.12,8.64 0.19,1.15 -2.187,-0.266 -1.44,1.44 2.696,-0.185 2.424,-3.336 5.28,-3.36 -0.063,1.184 -0.073,2.313 0.48,2.88 2.262,0.161 4.691,-4.923 6.24,-0.96 -0.836,-0.036 -1.493,0.107 -1.92,0.48 0.288,2.432 1.594,3.846 1.44,6.72 4.163,1.442 4.879,4.837 5.76,8.64 5.235,-0.204 8.599,-2.28 11.04,-5.279 -1.211,-0.869 -2.514,-1.646 -4.8,-1.44 -0.665,0.295 -0.072,1.848 -0.96,1.92 -0.325,-1.115 -1.595,-1.284 -1.92,-2.399 0.724,-0.876 0.509,-2.691 1.44,-3.36 1.676,0.11 5.551,2.572 5.28,-0.96 h -4.8 c -0.692,-1.067 -1.205,-2.314 -0.96,-4.32 -1.512,0.232 -1.086,-1.473 -2.88,-0.96 -1.667,2.115 2.068,1.996 0.48,3.84 -2.616,-1.703 -4.362,-4.277 -6.24,-6.72 1.991,-1.657 4.31,-8.435 -0.96,-8.16 1.849,2.405 -0.57,5.217 -1.92,7.2 -2.167,-0.713 -5.118,-0.642 -6.72,-1.92 1.544,-0.938 3.396,-1.357 4.8,0 1.139,-1.66 2.449,-5.552 0,-6.72 1.796,-0.924 0.359,-5.081 1.44,-6.721 -3.328,0.662 -9.778,1.169 -10.56,4.801 -5.178,-0.583 -7.73,-3.79 -11.04,-6.24 1.344,3.62 -0.832,10.75 1.92,12.96 z M 50.88,242.4 c 1.427,0.571 2.062,-2.023 0.96,-2.4 -0.205,0.92 -1.371,0.87 -0.96,2.4 z m 68.64,4.8 c 1.75,-1.05 3.186,0.397 3.36,-2.4 -2.03,-0.11 -2.84,1 -3.36,2.4 z m 1.92,3.36 c -2.732,0.813 -1.875,-1.964 -2.88,-2.88 0.253,3.688 3.432,4.68 2.88,9.12 -3.723,-0.043 -4.667,2.693 -7.68,3.36 0.536,5.391 7.452,5.546 11.04,2.88 v -2.4 c -0.568,-1.182 -1.813,0.983 -2.4,-0.479 0.254,-3.746 1.585,-6.415 1.44,-10.561 -3.091,1.075 -2.054,-1.975 -2.4,-2.399 -0.66,1.03 -1.59,2.7 0,3.36 z m -60.96,14.88 c 0.487,-2.073 0.73,-4.391 1.44,-6.24 -1.814,-0.105 -2.331,-1.509 -3.84,-1.92 -0.158,3.68 0.074,6.97 2.4,8.16 z m 49.92,-2.4 c 0.006,-1.728 1.302,-3.617 0,-4.32 0.17,1.32 -1.38,3.37 0,4.32 z m -24,4.32 h 1.92 c 0.378,-1.85 -2.298,-1.85 -1.92,0 z m 24.48,4.32 c -0.105,0.061 -1.428,-0.075 -1.44,0 -0.672,4.162 2.407,10.033 -6.24,8.16 -0.662,0.619 -0.475,2.085 -0.48,3.36 -2.439,-0.359 -3.682,0.479 -4.32,1.92 6.264,-0.119 11.419,-5.567 15.36,-2.4 1.066,-1.792 -2.591,-2.35 -1.92,-5.279 0.239,-1.682 2.677,-1.164 3.36,-2.4 -1.099,-1.941 -2.028,-4.053 -2.88,-6.24 h -2.4 c -0.38,1.66 0.53,2.03 0.96,2.88 z m 8.64,1.92 c -0.234,3.274 1.64,4.44 2.4,6.721 2.334,-0.706 3.436,-2.645 5.28,-3.84 -0.502,-1.099 -0.305,-2.896 -0.96,-3.841 -2.78,-0.22 -4.32,0.8 -6.72,0.96 z m 71.52,7.68 c 0.385,1.665 -0.715,1.845 -0.48,3.359 2.676,0.548 5.341,3.024 7.2,0.48 -0.98,-1.281 -0.873,-1.407 -2.88,-0.96 -0.24,-2.75 -1.13,-3.59 -3.84,-2.88 z m -68.16,3.36 c 0.499,0.507 3.428,0.991 3.84,0 -1.04,-0.36 -3.38,-1.89 -3.84,0 z m 84,6.24 c 1.813,0.212 2.253,-0.946 3.36,-1.439 -0.032,-1.408 -1.097,-1.783 -1.92,-2.4 -0.61,1.15 -1.75,1.77 -1.44,3.84 z m -12,-1.44 c -0.98,-1.025 -1.899,0.135 -2.88,0.479 0.107,-0.907 -0.541,-1.059 -0.48,-1.92 h -2.4 c -0.56,2.69 4.79,3.32 5.76,1.44 z m 13.92,2.4 c 0.675,0.125 0.547,1.053 0.96,1.44 2.574,0.174 4.722,-0.078 5.76,-1.44 -2.55,0.54 -5.17,-2.57 -6.72,0 z m -30.24,0.48 v 3.359 c -2.284,-0.523 -1.959,1.562 -1.92,3.36 -1.055,1.025 -3.781,0.379 -4.32,1.92 2.773,0.747 2.264,4.776 6.24,4.32 1.152,-0.607 -0.265,-3.785 0.96,-4.32 0.973,0.627 0.659,2.541 1.92,2.88 1.563,-0.677 2.973,-1.508 2.4,-4.32 2.46,0.061 2.362,-2.438 4.8,-2.399 0.172,-3.053 -2.347,-3.413 -3.36,-5.28 -1.31,-0.35 -0.966,0.954 -1.92,0.96 0.37,-2.85 -4.14,-1.08 -4.8,-0.48 z m -19.68,4.32 c 2.713,0.313 4.359,-0.44 5.28,-1.92 -1.184,0.063 -2.313,0.073 -2.88,-0.479 0.46,2.06 -2.36,0.84 -2.4,2.4 z m 58.56,3.36 h -2.88 c -0.11,1.82 2.99,1.82 2.88,0 z m -57.12,3.84 c 0.834,1.264 3.333,0.172 3.36,-0.96 -1.09,0.35 -3.74,-0.86 -3.36,0.96 z m -11.52,4.8 c 1.284,0.477 2.531,0.989 4.32,0.96 -0.232,-1.512 1.473,-1.086 0.96,-2.88 -1.91,0.49 -4.58,0.22 -5.28,1.92 z m -7.2,6.72 c 1.846,-0.394 4.105,-0.375 4.32,-2.4 -2.13,0.11 -4.13,0.35 -4.32,2.4 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19503"
@@ -3717,7 +3720,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19511"
-           d="m 97.44,162.72 c 1.247,-0.54 4.68,1.313 6.24,-0.48 0.649,2.55 3.312,3.088 5.28,4.32 l 0,3.84 c -1.965,-1.235 -2.46,-3.939 -3.84,-5.76 -1.197,-0.342 -1.973,2.113 -2.88,0.48 -1.511,0.088 -0.614,2.585 -2.4,2.4 -1.051,-0.999 0.421,-1.551 -0.48,-2.4 -0.821,-0.021 -1.243,0.356 -1.44,0.96 -1.763,-0.59 1.163,-2.89 -0.48,-3.36 z"
+           d="m 97.44,162.72 c 1.247,-0.54 4.68,1.313 6.24,-0.48 0.649,2.55 3.312,3.088 5.28,4.32 v 3.84 c -1.965,-1.235 -2.46,-3.939 -3.84,-5.76 -1.197,-0.342 -1.973,2.113 -2.88,0.48 -1.511,0.088 -0.614,2.585 -2.4,2.4 -1.051,-0.999 0.421,-1.551 -0.48,-2.4 -0.821,-0.021 -1.243,0.356 -1.44,0.96 -1.763,-0.59 1.163,-2.89 -0.48,-3.36 z"
            inkscape:connector-curvature="0" />
         <path
            id="path19513"
@@ -3729,7 +3732,7 @@
            inkscape:connector-curvature="0" />
         <path
            id="path19517"
-           d="m 105.6,61.44 c 1.457,0.943 3.646,1.154 6.24,0.96 -0.698,5.411 -1.078,15.221 -4.32,19.68 1.553,0.593 0.367,-1.553 1.92,-0.96 0.213,0.427 0.421,0.858 0.96,0.96 -0.101,3.259 -4.599,2.121 -5.28,4.8 -1.926,-0.313 -0.526,-3.954 -3.36,-3.36 -0.146,-1.266 1.002,-1.238 1.92,-1.44 -1.958,-1.722 -2.119,-5.242 -5.76,-5.28 0.106,-3.094 2.016,-4.384 2.88,-6.72 0.591,0.209 0.986,0.614 0.96,1.44 0.691,-0.269 1.171,-0.749 1.44,-1.44 -0.31,-2.582 -3.681,-3.532 -6.24,-2.4 l 0,-3.36 c 3.55,-0.288 7.61,-0.07 8.64,-2.88 z"
+           d="m 105.6,61.44 c 1.457,0.943 3.646,1.154 6.24,0.96 -0.698,5.411 -1.078,15.221 -4.32,19.68 1.553,0.593 0.367,-1.553 1.92,-0.96 0.213,0.427 0.421,0.858 0.96,0.96 -0.101,3.259 -4.599,2.121 -5.28,4.8 -1.926,-0.313 -0.526,-3.954 -3.36,-3.36 -0.146,-1.266 1.002,-1.238 1.92,-1.44 -1.958,-1.722 -2.119,-5.242 -5.76,-5.28 0.106,-3.094 2.016,-4.384 2.88,-6.72 0.591,0.209 0.986,0.614 0.96,1.44 0.691,-0.269 1.171,-0.749 1.44,-1.44 -0.31,-2.582 -3.681,-3.532 -6.24,-2.4 v -3.36 c 3.55,-0.288 7.61,-0.07 8.64,-2.88 z"
            inkscape:connector-curvature="0" />
       </g>
     </g>

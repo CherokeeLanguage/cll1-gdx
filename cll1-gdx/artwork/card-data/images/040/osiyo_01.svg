@@ -11,11 +11,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="osiyo_01.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
@@ -26,16 +26,17 @@
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lend"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path39499"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <linearGradient
        id="linearGradient3845">
@@ -104,7 +105,7 @@
     </linearGradient>
     <inkscape:perspective
        id="perspective2993"
-       inkscape:persp3d-origin="55.612728 : 36.528159 : 1"
+       inkscape:persp3d-origin="55.612729 : 36.528159 : 1"
        inkscape:vp_z="108.89234 : 40.780423 : 1"
        inkscape:vp_y="0 : 199.32489 : 0"
        inkscape:vp_x="2.3331212 : 40.780423 : 1"
@@ -253,12 +254,12 @@
          id="stop7558" />
     </linearGradient>
     <linearGradient
-       y2="755.74"
-       x2="429.83"
-       gradientTransform="matrix(.36255 -.36255 .36255 .36255 -66.756 397.74)"
-       y1="755.74"
+       y2="755.73999"
+       x2="429.82999"
+       gradientTransform="matrix(0.36255,-0.36255,0.36255,0.36255,-66.756,397.74)"
+       y1="755.73999"
        gradientUnits="userSpaceOnUse"
-       x1="290.83"
+       x1="290.82999"
        id="linearGradient4530">
       <stop
          offset="0"
@@ -271,12 +272,12 @@
          id="stop5699" />
     </linearGradient>
     <linearGradient
-       y2="648.26"
-       x2="406.71"
+       y2="648.26001"
+       x2="406.70999"
        gradientTransform="matrix(0.36255,-0.36255,0.36255,0.36255,-19.586,428.5)"
-       y1="648.26"
+       y1="648.26001"
        gradientUnits="userSpaceOnUse"
-       x1="268.71"
+       x1="268.70999"
        id="linearGradient4533">
       <stop
          offset="0"
@@ -288,13 +289,13 @@
          id="stop5657" />
     </linearGradient>
     <radialGradient
-       r="266.68"
+       r="266.67999"
        gradientTransform="matrix(0.20092,-0.20712,0.064453,0.062536,243.82,725.94)"
-       cx="524.96"
-       cy="838.21"
+       cx="524.96002"
+       cy="838.21002"
        gradientUnits="userSpaceOnUse"
-       fy="620.53"
-       fx="525.34"
+       fy="620.53003"
+       fx="525.34003"
        id="radialGradient4544">
       <stop
          offset="0"
@@ -314,12 +315,12 @@
          id="stop3850" />
     </radialGradient>
     <radialGradient
-       r="50.609"
+       r="50.609001"
        gradientTransform="matrix(-0.62812,0.59341,-3.7081,-3.9249,1982.5,1755.9)"
        cx="297.34"
-       cy="462.68"
+       cy="462.67999"
        gradientUnits="userSpaceOnUse"
-       fy="460.45"
+       fy="460.45001"
        fx="331.03"
        id="radialGradient4553">
       <stop
@@ -334,10 +335,10 @@
          id="stop3892" />
     </radialGradient>
     <radialGradient
-       r="67.141"
+       r="67.140999"
        gradientTransform="matrix(-0.40383,-0.36863,0.13444,-0.14727,563.98,619.3)"
-       cx="409.92"
-       cy="-9.2813"
+       cx="409.92001"
+       cy="-9.2812996"
        gradientUnits="userSpaceOnUse"
        id="radialGradient4645">
       <stop
@@ -373,42 +374,43 @@
          id="imagebot_103" />
     </linearGradient>
     <filter
-       color-interpolation-filters="sRGB"
-       id="imagebot_50">
+       id="imagebot_50"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="imagebot_50">
       <feGaussianBlur
          stdDeviation="2.08236"
          id="imagebot_84" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
-       id="imagebot_77">
+       id="imagebot_77"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          stdDeviation="2.68359"
          id="imagebot_83" />
     </filter>
     <linearGradient
-       x1="746.17556"
-       x2="719.02793"
-       y1="706.61178"
+       x1="746.17554"
+       x2="719.02795"
+       y1="706.61176"
        xlink:href="#imagebot_82"
-       y2="610.96385"
+       y2="610.96387"
        id="imagebot_75"
        gradientTransform="scale(0.93314657,1.071643)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       x1="716.39903"
-       x2="732.20632"
-       y1="619.24016"
+       x1="716.39905"
+       x2="732.2063"
+       y1="619.24017"
        xlink:href="#imagebot_82"
-       y2="692.02572"
+       y2="692.0257"
        id="imagebot_68"
        gradientTransform="scale(0.93313895,1.0716518)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       y2="623.91586"
-       x1="726.47682"
+       y2="623.91583"
+       x1="726.47681"
        y1="615.75739"
-       x2="737.16982"
+       x2="737.1698"
        id="imagebot_48"
        gradientTransform="scale(0.93594535,1.0684385)"
        gradientUnits="userSpaceOnUse">
@@ -442,10 +444,10 @@
          id="imagebot_85" />
     </linearGradient>
     <linearGradient
-       y2="708.58134"
-       x1="648.2462"
-       y1="707.64765"
-       x2="649.9041"
+       y2="708.58136"
+       x1="648.24622"
+       y1="707.64764"
+       x2="649.90411"
        id="imagebot_46"
        gradientTransform="scale(0.95014084,1.0524755)"
        gradientUnits="userSpaceOnUse">
@@ -463,10 +465,10 @@
          id="imagebot_92" />
     </linearGradient>
     <linearGradient
-       y2="748.42962"
-       x1="614.02773"
+       y2="748.42963"
+       x1="614.02771"
        y1="745.21991"
-       x2="617.53384"
+       x2="617.53381"
        id="imagebot_44"
        gradientTransform="scale(1.0082381,0.99182919)"
        gradientUnits="userSpaceOnUse">
@@ -484,10 +486,10 @@
          id="imagebot_95" />
     </linearGradient>
     <linearGradient
-       y2="671.43373"
-       x1="684.67244"
-       y1="679.81013"
-       x2="673.2575"
+       y2="671.43372"
+       x1="684.67242"
+       y1="679.81012"
+       x2="673.25751"
        id="imagebot_42"
        gradientTransform="scale(0.92919642,1.0761987)"
        gradientUnits="userSpaceOnUse">
@@ -626,7 +628,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect3257"
        effect="skeletal" />
@@ -644,7 +646,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M -13.571428,-3.0079046e-8 C -13.571428,-2.76 -11.331428,-5 -8.5714284,-5 -5.8114285,-5 -3.5714285,-2.76 -3.5714285,-3.0079046e-8 -3.5714285,2.76 -5.8114285,5 -8.5714284,5 -11.331428,5 -13.571428,2.76 -13.571428,-3.0079046e-8 z"
+       pattern="M -13.571428,-3.0079046e-8 C -13.571428,-2.76 -11.331428,-5 -8.5714284,-5 -5.8114285,-5 -3.5714285,-2.76 -3.5714285,-3.0079046e-8 -3.5714285,2.76 -5.8114285,5 -8.5714284,5 -11.331428,5 -13.571428,2.76 -13.571428,-3.0079046e-8 Z"
        is_visible="true"
        id="path-effect3251"
        effect="skeletal" />
@@ -680,7 +682,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect3217"
        effect="skeletal" />
@@ -698,7 +700,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="m 1,-1 c 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 C 11,1.76 8.76,4 6,4 3.24,4 1,1.76 1,-1 z"
+       pattern="m 1,-1 c 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 C 11,1.76 8.76,4 6,4 3.24,4 1,1.76 1,-1 Z"
        is_visible="true"
        id="path-effect3109"
        effect="skeletal" />
@@ -716,7 +718,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,7 C 0,4.24 2.24,2 5,2 7.76,2 10,4.24 10,7 10,9.76 7.76,12 5,12 2.24,12 0,9.76 0,7 z"
+       pattern="M 0,7 C 0,4.24 2.24,2 5,2 7.76,2 10,4.24 10,7 10,9.76 7.76,12 5,12 2.24,12 0,9.76 0,7 Z"
        is_visible="true"
        id="path-effect3097"
        effect="skeletal" />
@@ -782,7 +784,7 @@
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath1">
       <path
-         d="m 13.7531,2.50057 585.1339,0 0,135.03043 -585.1339,0 z"
+         d="M 13.7531,2.50057 H 598.887 V 137.531 H 13.7531 Z"
          id="path3341"
          inkscape:connector-curvature="0" />
     </clipPath>
@@ -797,7 +799,7 @@
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath1-4">
       <path
-         d="m 13.7531,1.25029 585.1339,0 0,135.03071 -585.1339,0 z"
+         d="M 13.7531,1.25029 H 598.887 V 136.281 H 13.7531 Z"
          id="path3459"
          inkscape:connector-curvature="0" />
     </clipPath>
@@ -1288,7 +1290,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4213"
        effect="skeletal" />
@@ -1306,7 +1308,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4207"
        effect="skeletal" />
@@ -1324,7 +1326,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4201"
        effect="skeletal" />
@@ -1342,7 +1344,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4195"
        effect="skeletal" />
@@ -1360,7 +1362,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4189"
        effect="skeletal" />
@@ -1378,7 +1380,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4183"
        effect="skeletal" />
@@ -1392,7 +1394,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4179"
        effect="skeletal" />
@@ -1406,7 +1408,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4175"
        effect="skeletal" />
@@ -1420,7 +1422,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4171"
        effect="skeletal" />
@@ -1434,7 +1436,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4167"
        effect="skeletal" />
@@ -1448,7 +1450,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4163"
        effect="skeletal" />
@@ -1462,7 +1464,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4159"
        effect="skeletal" />
@@ -1476,7 +1478,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 z"
+       pattern="M 0,5 C 0,2.24 2.24,0 5,0 7.76,0 10,2.24 10,5 10,7.76 7.76,10 5,10 2.24,10 0,7.76 0,5 Z"
        is_visible="true"
        id="path-effect4155"
        effect="skeletal" />
@@ -1490,7 +1492,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,5 10,10 10,0 z"
+       pattern="m 0,5 10,5 V 0 Z"
        is_visible="true"
        id="path-effect4151"
        effect="skeletal" />
@@ -1504,7 +1506,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4147"
        effect="skeletal" />
@@ -1518,7 +1520,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4143"
        effect="skeletal" />
@@ -1532,7 +1534,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect4137"
        effect="skeletal" />
@@ -1546,7 +1548,7 @@
        scale_y_rel="false"
        prop_scale="1"
        copytype="single_stretched"
-       pattern="M 0,0 0,10 10,5 z"
+       pattern="M 0,0 V 10 L 10,5 Z"
        is_visible="true"
        id="path-effect3365"
        effect="skeletal" />
@@ -1733,31 +1735,14 @@
        xlink:href="#linearGradient4985"
        inkscape:collect="always" />
     <filter
-       color-interpolation-filters="sRGB"
        inkscape:collect="always"
-       id="filter4767">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.59301602"
-         id="feGaussianBlur4769" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter4771">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.59301602"
-         id="feGaussianBlur4773" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       color-interpolation-filters="sRGB"
        height="1.2642"
-       x="-.10993"
-       y="-.13210"
+       x="-0.10993"
+       y="-0.1321"
        width="1.2199"
-       id="filter3721">
+       id="filter3721"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="filter3721">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="1.5830058"
@@ -1772,8 +1757,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:cx="310.08773"
+     inkscape:cy="222.46724"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1811,7 +1796,7 @@
     <rect
        id="rect3252-71-0-6-0-2-7-2-9-8-9"
        style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:4.85134029;stroke-linecap:round;stroke-linejoin:round"
-       transform="matrix(0.89929842,-0.43733551,0.43733551,0.89929842,0,0)"
+       transform="rotate(-25.933999)"
        rx="18.522764"
        ry="54.246719"
        height="121.72155"
@@ -1837,7 +1822,7 @@
        id="path3932-5-3-8-0-8-6-6-0-8-2-2-7"
        style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:5.71381426;stroke-linecap:round;stroke-linejoin:round"
        inkscape:connector-curvature="0"
-       d="m 260.49264,780.94788 c -0.30772,0 -0.61627,0.0279 -0.9234,0.0279 -0.1746,0 -0.3492,0 -0.52371,-0.0279 l -0.81309,0 0,0.0666 c -20.60342,1.1197 -39.69054,13.39807 -52.48215,28.89908 -27.41653,33.00372 -37.87333,76.47416 -38.79586,118.18621 0.72029,10.69858 -1.38432,23.54158 3.15611,32.81798 16.49815,10.04971 45.59102,11.73163 65.42235,14.08037 5.26308,0.2328 13.62252,0.29843 22.69862,0.3488 l 0,0.0279 c 0.95234,0 1.85847,0 2.79768,-0.0279 0.0926,-5.6e-4 0.18327,5.6e-4 0.27552,0 9.07611,-0.0498 17.43554,-0.1164 22.69862,-0.3488 19.83195,-2.34889 48.92513,-4.03066 65.42235,-14.08037 4.54053,-9.27702 2.43576,-22.12002 3.15611,-32.81798 -0.92296,-41.71205 -11.37902,-85.18249 -38.79586,-118.18621 -12.79099,-15.5007 -31.87687,-27.77904 -52.48214,-28.89877 l 0,-0.0941 c -0.26964,-2.5e-4 -0.54393,0 -0.8131,0 z" />
+       d="m 260.49264,780.94788 c -0.30772,0 -0.61627,0.0279 -0.9234,0.0279 -0.1746,0 -0.3492,0 -0.52371,-0.0279 h -0.81309 v 0.0666 c -20.60342,1.1197 -39.69054,13.39807 -52.48215,28.89908 -27.41653,33.00372 -37.87333,76.47416 -38.79586,118.18621 0.72029,10.69858 -1.38432,23.54158 3.15611,32.81798 16.49815,10.04971 45.59102,11.73163 65.42235,14.08037 5.26308,0.2328 13.62252,0.29843 22.69862,0.3488 v 0.0279 c 0.95234,0 1.85847,0 2.79768,-0.0279 0.0926,-5.6e-4 0.18327,5.6e-4 0.27552,0 9.07611,-0.0498 17.43554,-0.1164 22.69862,-0.3488 19.83195,-2.34889 48.92513,-4.03066 65.42235,-14.08037 4.54053,-9.27702 2.43576,-22.12002 3.15611,-32.81798 -0.92296,-41.71205 -11.37902,-85.18249 -38.79586,-118.18621 -12.79099,-15.5007 -31.87687,-27.77904 -52.48214,-28.89877 v -0.0941 c -0.26964,-2.5e-4 -0.54393,0 -0.8131,0 z" />
     <path
        id="path17510-1-7-1-8"
        style="fill:#635140;fill-rule:evenodd;stroke:#000000;stroke-width:2.86354709;stroke-linecap:round;stroke-linejoin:round"
@@ -1915,7 +1900,7 @@
        inkscape:connector-curvature="0" />
     <g
        id="g8516-4-0-4-3"
-       style="stroke:#c55a58;stroke-linecap:round;stroke-linejoin:bevel;filter:url(#filter4767)"
+       style="stroke:#c55a58;stroke-linecap:round;stroke-linejoin:bevel"
        transform="matrix(1.144868,0,0,0.87036837,820.88418,-1322.0218)">
       <g
          id="g8472-0-5-1-9"
@@ -1996,7 +1981,7 @@
     </g>
     <g
        id="g8516-4-0-2-6-7"
-       style="stroke:#c55a58;stroke-linecap:round;stroke-linejoin:bevel;filter:url(#filter4771)"
+       style="stroke:#c55a58;stroke-linecap:round;stroke-linejoin:bevel"
        transform="matrix(1.144868,0,0,0.87036837,819.18152,-1282.3963)">
       <g
          id="g8472-0-5-5-3-5"
@@ -2079,7 +2064,7 @@
        id="rect4240-4-5-4-7-7-1-2-5-5"
        style="fill:#635140;fill-rule:evenodd"
        inkscape:connector-curvature="0"
-       d="m 256.00381,665.13611 c -43.3528,0 -79.56681,25.40893 -89.87254,60.076 21.34423,-21.9383 54.60892,-37.78665 97.80693,-37.92286 55.55312,-0.17677 77.77747,25.88042 92.00241,44.88828 -7.29512,-38.12718 -45.43933,-67.04142 -91.61544,-67.04142 l -8.31981,0 z" />
+       d="m 256.00381,665.13611 c -43.3528,0 -79.56681,25.40893 -89.87254,60.076 21.34423,-21.9383 54.60892,-37.78665 97.80693,-37.92286 55.55312,-0.17677 77.77747,25.88042 92.00241,44.88828 -7.29512,-38.12718 -45.43933,-67.04142 -91.61544,-67.04142 h -8.31981 z" />
     <g
        id="g588-0-6-2-8-2-5-6-1-5-3-7-8-2-0-6"
        style="fill:#b66b6f;stroke:#000000;stroke-width:2.32189989;stroke-linecap:round;stroke-linejoin:round"

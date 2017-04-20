@@ -11,12 +11,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="osda_03.svg"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="vv_01.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
    inkscape:export-xdpi="45"
@@ -90,7 +90,7 @@
     </linearGradient>
     <inkscape:perspective
        id="perspective2993"
-       inkscape:persp3d-origin="55.612728 : 36.528159 : 1"
+       inkscape:persp3d-origin="55.612729 : 36.528159 : 1"
        inkscape:vp_z="108.89234 : 40.780423 : 1"
        inkscape:vp_y="0 : 199.32489 : 0"
        inkscape:vp_x="2.3331212 : 40.780423 : 1"
@@ -239,12 +239,12 @@
          id="stop7558" />
     </linearGradient>
     <linearGradient
-       y2="755.74"
-       x2="429.83"
-       gradientTransform="matrix(.36255 -.36255 .36255 .36255 -66.756 397.74)"
-       y1="755.74"
+       y2="755.73999"
+       x2="429.82999"
+       gradientTransform="matrix(0.36255,-0.36255,0.36255,0.36255,-66.756,397.74)"
+       y1="755.73999"
        gradientUnits="userSpaceOnUse"
-       x1="290.83"
+       x1="290.82999"
        id="linearGradient4530">
       <stop
          offset="0"
@@ -257,12 +257,12 @@
          id="stop5699" />
     </linearGradient>
     <linearGradient
-       y2="648.26"
-       x2="406.71"
+       y2="648.26001"
+       x2="406.70999"
        gradientTransform="matrix(0.36255,-0.36255,0.36255,0.36255,-19.586,428.5)"
-       y1="648.26"
+       y1="648.26001"
        gradientUnits="userSpaceOnUse"
-       x1="268.71"
+       x1="268.70999"
        id="linearGradient4533">
       <stop
          offset="0"
@@ -274,13 +274,13 @@
          id="stop5657" />
     </linearGradient>
     <radialGradient
-       r="266.68"
+       r="266.67999"
        gradientTransform="matrix(0.20092,-0.20712,0.064453,0.062536,243.82,725.94)"
-       cx="524.96"
-       cy="838.21"
+       cx="524.96002"
+       cy="838.21002"
        gradientUnits="userSpaceOnUse"
-       fy="620.53"
-       fx="525.34"
+       fy="620.53003"
+       fx="525.34003"
        id="radialGradient4544">
       <stop
          offset="0"
@@ -300,12 +300,12 @@
          id="stop3850" />
     </radialGradient>
     <radialGradient
-       r="50.609"
+       r="50.609001"
        gradientTransform="matrix(-0.62812,0.59341,-3.7081,-3.9249,1982.5,1755.9)"
        cx="297.34"
-       cy="462.68"
+       cy="462.67999"
        gradientUnits="userSpaceOnUse"
-       fy="460.45"
+       fy="460.45001"
        fx="331.03"
        id="radialGradient4553">
       <stop
@@ -320,10 +320,10 @@
          id="stop3892" />
     </radialGradient>
     <radialGradient
-       r="67.141"
+       r="67.140999"
        gradientTransform="matrix(-0.40383,-0.36863,0.13444,-0.14727,563.98,619.3)"
-       cx="409.92"
-       cy="-9.2813"
+       cx="409.92001"
+       cy="-9.2812996"
        gradientUnits="userSpaceOnUse"
        id="radialGradient4645">
       <stop
@@ -359,42 +359,42 @@
          id="imagebot_103" />
     </linearGradient>
     <filter
-       color-interpolation-filters="sRGB"
-       id="imagebot_50">
+       id="imagebot_50"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          stdDeviation="2.08236"
          id="imagebot_84" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
-       id="imagebot_77">
+       id="imagebot_77"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          stdDeviation="2.68359"
          id="imagebot_83" />
     </filter>
     <linearGradient
-       x1="746.17556"
-       x2="719.02793"
-       y1="706.61178"
+       x1="746.17554"
+       x2="719.02795"
+       y1="706.61176"
        xlink:href="#imagebot_82"
-       y2="610.96385"
+       y2="610.96387"
        id="imagebot_75"
        gradientTransform="scale(0.93314657,1.071643)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       x1="716.39903"
-       x2="732.20632"
-       y1="619.24016"
+       x1="716.39905"
+       x2="732.2063"
+       y1="619.24017"
        xlink:href="#imagebot_82"
-       y2="692.02572"
+       y2="692.0257"
        id="imagebot_68"
        gradientTransform="scale(0.93313895,1.0716518)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       y2="623.91586"
-       x1="726.47682"
+       y2="623.91583"
+       x1="726.47681"
        y1="615.75739"
-       x2="737.16982"
+       x2="737.1698"
        id="imagebot_48"
        gradientTransform="scale(0.93594535,1.0684385)"
        gradientUnits="userSpaceOnUse">
@@ -428,10 +428,10 @@
          id="imagebot_85" />
     </linearGradient>
     <linearGradient
-       y2="708.58134"
-       x1="648.2462"
-       y1="707.64765"
-       x2="649.9041"
+       y2="708.58136"
+       x1="648.24622"
+       y1="707.64764"
+       x2="649.90411"
        id="imagebot_46"
        gradientTransform="scale(0.95014084,1.0524755)"
        gradientUnits="userSpaceOnUse">
@@ -449,10 +449,10 @@
          id="imagebot_92" />
     </linearGradient>
     <linearGradient
-       y2="748.42962"
-       x1="614.02773"
+       y2="748.42963"
+       x1="614.02771"
        y1="745.21991"
-       x2="617.53384"
+       x2="617.53381"
        id="imagebot_44"
        gradientTransform="scale(1.0082381,0.99182919)"
        gradientUnits="userSpaceOnUse">
@@ -470,10 +470,10 @@
          id="imagebot_95" />
     </linearGradient>
     <linearGradient
-       y2="671.43373"
-       x1="684.67244"
-       y1="679.81013"
-       x2="673.2575"
+       y2="671.43372"
+       x1="684.67242"
+       y1="679.81012"
+       x2="673.25751"
        id="imagebot_42"
        gradientTransform="scale(0.92919642,1.0761987)"
        gradientUnits="userSpaceOnUse">
@@ -526,7 +526,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

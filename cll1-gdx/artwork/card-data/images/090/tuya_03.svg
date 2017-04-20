@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="450"
+   width="640"
+   height="480"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="tuya_03.svg"
    viewBox="0 0 600 450"
    inkscape:export-filename="overlay-border.png"
@@ -24,87 +24,93 @@
      id="defs4">
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker8886"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path8888" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path8888"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker11709"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path11711" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path11711"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker11529"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path11531" />
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path11531"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker9853"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path9855"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker8843"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path8845"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker10739"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path10741"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <linearGradient
        id="linearGradient4302">
@@ -479,7 +485,7 @@
        id="clipPath20">
       <path
          id="path22"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -491,8 +497,8 @@
            clip-path="url(#clipPath20)">
           <path
              id="path30"
-             style="fill:#000000;fill-opacity:.14840"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.14839998"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -501,21 +507,21 @@
        id="clipPath36">
       <path
          id="path38"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath40">
       <path
          id="path42"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath64">
       <path
          id="path66"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -527,8 +533,8 @@
            clip-path="url(#clipPath64)">
           <path
              id="path74"
-             style="fill:#000000;fill-opacity:.19140"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.19140003"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -537,21 +543,21 @@
        id="clipPath80">
       <path
          id="path82"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath84">
       <path
          id="path86"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath108">
       <path
          id="path110"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -563,8 +569,8 @@
            clip-path="url(#clipPath108)">
           <path
              id="path118"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m2 7.44h4v4h-4v-4z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 2,7.44 h 4 v 4 H 2 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -573,21 +579,21 @@
        id="clipPath124">
       <path
          id="path126"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath128">
       <path
          id="path130"
-         d="m2 8h4v4h-4v-4z"
+         d="m 2,8 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath152">
       <path
          id="path154"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -599,8 +605,8 @@
            clip-path="url(#clipPath152)">
           <path
              id="path162"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m6 6.44h7v5h-7v-5z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 6,6.44 h 7 v 5 H 6 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -609,21 +615,21 @@
        id="clipPath168">
       <path
          id="path170"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath172">
       <path
          id="path174"
-         d="m6 7h7v5h-7v-5z"
+         d="m 6,7 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath20-1">
       <path
          id="path22-2"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -635,8 +641,8 @@
            clip-path="url(#clipPath20-1)">
           <path
              id="path30-3"
-             style="fill:#000000;fill-opacity:.14840"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.14839998"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -645,21 +651,21 @@
        id="clipPath36-6">
       <path
          id="path38-0"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath40-6">
       <path
          id="path42-2"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath64-6">
       <path
          id="path66-1"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -671,8 +677,8 @@
            clip-path="url(#clipPath64-6)">
           <path
              id="path74-2"
-             style="fill:#000000;fill-opacity:.19140"
-             d="m1 3.44h15v9h-15v-9z"
+             style="fill:#000000;fill-opacity:0.19140003"
+             d="m 1,3.44 h 15 v 9 H 1 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -681,21 +687,21 @@
        id="clipPath80-0">
       <path
          id="path82-2"
-         d="m1 3.44h15v9h-15v-9z"
+         d="m 1,3.44 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath84-3">
       <path
          id="path86-7"
-         d="m1 4h15v9h-15v-9z"
+         d="m 1,4 h 15 v 9 H 1 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath108-5">
       <path
          id="path110-9"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -707,8 +713,8 @@
            clip-path="url(#clipPath108-5)">
           <path
              id="path118-9"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m2 7.44h4v4h-4v-4z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 2,7.44 h 4 v 4 H 2 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -717,21 +723,21 @@
        id="clipPath124-7">
       <path
          id="path126-3"
-         d="m2 7.44h4v4h-4v-4z"
+         d="m 2,7.44 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath128-6">
       <path
          id="path130-1"
-         d="m2 8h4v4h-4v-4z"
+         d="m 2,8 h 4 v 4 H 2 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath152-2">
       <path
          id="path154-9"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <mask
@@ -743,8 +749,8 @@
            clip-path="url(#clipPath152-2)">
           <path
              id="path162-4"
-             style="fill:#000000;fill-opacity:.19920"
-             d="m6 6.44h7v5h-7v-5z"
+             style="fill:#000000;fill-opacity:0.19920002"
+             d="m 6,6.44 h 7 v 5 H 6 Z"
              inkscape:connector-curvature="0" />
         </g>
       </g>
@@ -753,21 +759,21 @@
        id="clipPath168-7">
       <path
          id="path170-8"
-         d="m6 6.44h7v5h-7v-5z"
+         d="m 6,6.44 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath172-4">
       <path
          id="path174-5"
-         d="m6 7h7v5h-7v-5z"
+         d="m 6,7 h 7 v 5 H 6 Z"
          inkscape:connector-curvature="0" />
     </clipPath>
     <linearGradient
        x1="10.747"
        y1="-14.75"
        gradientTransform="matrix(0.18888,-0.61152,-0.61152,-0.18888,0.0392,15.382)"
-       x2="28.199"
+       x2="28.198999"
        gradientUnits="userSpaceOnUse"
        y2="-14.75"
        id="linearGradient24">
@@ -781,12 +787,12 @@
          id="stop28" />
     </linearGradient>
     <linearGradient
-       x1="7.8071"
-       y1="-17.502"
+       x1="7.8070998"
+       y1="-17.502001"
        gradientTransform="matrix(0.18872,-0.61152,-0.61152,-0.18872,0.0392,15.382)"
        x2="12.386"
        gradientUnits="userSpaceOnUse"
-       y2="-17.502"
+       y2="-17.502001"
        id="linearGradient42">
       <stop
          offset="0"
@@ -801,7 +807,7 @@
        id="clipPath54">
       <path
          inkscape:connector-curvature="0"
-         d="m1-0.63606h24v16h-24v-16z"
+         d="m 1,-0.63606 h 24 v 16 H 1 Z"
          id="path56" />
     </clipPath>
     <mask
@@ -813,8 +819,8 @@
            id="g62">
           <path
              inkscape:connector-curvature="0"
-             d="m1-0.63606h24v16h-24v-16z"
-             style="fill:#000000;fill-opacity:.12110"
+             d="m 1,-0.63606 h 24 v 16 H 1 Z"
+             style="fill:#000000;fill-opacity:0.12110003"
              id="path64" />
         </g>
       </g>
@@ -823,21 +829,21 @@
        id="clipPath70">
       <path
          inkscape:connector-curvature="0"
-         d="m1-0.63606h24v16h-24v-16z"
+         d="m 1,-0.63606 h 24 v 16 H 1 Z"
          id="path72" />
     </clipPath>
     <clipPath
        id="clipPath74">
       <path
          inkscape:connector-curvature="0"
-         d="m1 0h24v16h-24v-16z"
+         d="M 1,0 H 25 V 16 H 1 Z"
          id="path76" />
     </clipPath>
     <clipPath
        id="clipPath98">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v4h-5v-4z"
+         d="m 12,11.364 h 5 v 4 h -5 z"
          id="path100" />
     </clipPath>
     <mask
@@ -849,8 +855,8 @@
            id="g106">
           <path
              inkscape:connector-curvature="0"
-             d="m12 11.364h5v4h-5v-4z"
-             style="fill:#000000;fill-opacity:0.0703"
+             d="m 12,11.364 h 5 v 4 h -5 z"
+             style="fill:#000000;fill-opacity:0.07029999"
              id="path108" />
         </g>
       </g>
@@ -859,21 +865,21 @@
        id="clipPath114">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v4h-5v-4z"
+         d="m 12,11.364 h 5 v 4 h -5 z"
          id="path116" />
     </clipPath>
     <clipPath
        id="clipPath118">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12h5v4h-5v-4z"
+         d="m 12,12 h 5 v 4 h -5 z"
          id="path120" />
     </clipPath>
     <clipPath
        id="clipPath142">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v3h-5v-3z"
+         d="m 12,11.364 h 5 v 3 h -5 z"
          id="path144" />
     </clipPath>
     <mask
@@ -885,8 +891,8 @@
            id="g150">
           <path
              inkscape:connector-curvature="0"
-             d="m12 11.364h5v3h-5v-3z"
-             style="fill:#000000;fill-opacity:.10160"
+             d="m 12,11.364 h 5 v 3 h -5 z"
+             style="fill:#000000;fill-opacity:0.10160002"
              id="path152" />
         </g>
       </g>
@@ -895,21 +901,21 @@
        id="clipPath158">
       <path
          inkscape:connector-curvature="0"
-         d="m12 11.364h5v3h-5v-3z"
+         d="m 12,11.364 h 5 v 3 h -5 z"
          id="path160" />
     </clipPath>
     <clipPath
        id="clipPath162">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12h5v3h-5v-3z"
+         d="m 12,12 h 5 v 3 h -5 z"
          id="path164" />
     </clipPath>
     <clipPath
        id="clipPath186">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12.364h4v1h-4v-1z"
+         d="m 12,12.364 h 4 v 1 h -4 z"
          id="path188" />
     </clipPath>
     <mask
@@ -921,8 +927,8 @@
            id="g194">
           <path
              inkscape:connector-curvature="0"
-             d="m12 12.364h4v1h-4v-1z"
-             style="fill:#000000;fill-opacity:.30080"
+             d="m 12,12.364 h 4 v 1 h -4 z"
+             style="fill:#000000;fill-opacity:0.30080004"
              id="path196" />
         </g>
       </g>
@@ -931,21 +937,21 @@
        id="clipPath202">
       <path
          inkscape:connector-curvature="0"
-         d="m12 12.364h4v1h-4v-1z"
+         d="m 12,12.364 h 4 v 1 h -4 z"
          id="path204" />
     </clipPath>
     <clipPath
        id="clipPath206">
       <path
          inkscape:connector-curvature="0"
-         d="m12 13h4v1h-4v-1z"
+         d="m 12,13 h 4 v 1 h -4 z"
          id="path208" />
     </clipPath>
     <clipPath
        id="clipPath230">
       <path
          inkscape:connector-curvature="0"
-         d="m2-0.63606h23v14h-23v-14z"
+         d="m 2,-0.63606 h 23 v 14 H 2 Z"
          id="path232" />
     </clipPath>
     <mask
@@ -957,8 +963,8 @@
            id="g238">
           <path
              inkscape:connector-curvature="0"
-             d="m2-0.63606h23v14h-23v-14z"
-             style="fill:#000000;fill-opacity:.19140"
+             d="m 2,-0.63606 h 23 v 14 H 2 Z"
+             style="fill:#000000;fill-opacity:0.19140003"
              id="path240" />
         </g>
       </g>
@@ -967,21 +973,21 @@
        id="clipPath246">
       <path
          inkscape:connector-curvature="0"
-         d="m2-0.63606h23v14h-23v-14z"
+         d="m 2,-0.63606 h 23 v 14 H 2 Z"
          id="path248" />
     </clipPath>
     <clipPath
        id="clipPath250">
       <path
          inkscape:connector-curvature="0"
-         d="m2 0h23v14h-23v-14z"
+         d="M 2,0 H 25 V 14 H 2 Z"
          id="path252" />
     </clipPath>
     <linearGradient
-       x1="16.828"
+       x1="16.827999"
        y1="-10.054"
        gradientTransform="matrix(0.18672,-0.61216,-0.61216,-0.18672,0.0392,15.382)"
-       x2="18.37"
+       x2="18.370001"
        gradientUnits="userSpaceOnUse"
        y2="-10.054"
        id="linearGradient280">
@@ -999,7 +1005,7 @@
          id="stop286" />
     </linearGradient>
     <linearGradient
-       x1="9.5825"
+       x1="9.5825005"
        y1="-7.3936"
        gradientTransform="matrix(0.17584,-0.61536,-0.61536,-0.17584,0.0392,15.382)"
        x2="10.128"
@@ -1042,11 +1048,11 @@
     </linearGradient>
     <linearGradient
        x1="20.671"
-       y1="-.73050"
+       y1="-0.73049998"
        gradientTransform="matrix(0.18968,-0.6112,-0.6112,-0.18968,0.0392,15.382)"
        x2="21.43"
        gradientUnits="userSpaceOnUse"
-       y2="-.73050"
+       y2="-0.73049998"
        id="linearGradient340">
       <stop
          offset="0"
@@ -1084,11 +1090,11 @@
     </linearGradient>
     <linearGradient
        x1="12.678"
-       y1="-21.669"
+       y1="-21.669001"
        gradientTransform="matrix(0.1792,-0.6144,-0.6144,-0.1792,0.0384,15.382)"
        x2="13.303"
        gradientUnits="userSpaceOnUse"
-       y2="-21.669"
+       y2="-21.669001"
        id="linearGradient380">
       <stop
          offset="0"
@@ -1104,7 +1110,7 @@
          id="stop386" />
     </linearGradient>
     <linearGradient
-       x1="17.092"
+       x1="17.091999"
        y1="-24.666"
        gradientTransform="matrix(0.19704,-0.60888,-0.60888,-0.19704,0.0384,15.382)"
        x2="17.986"
@@ -1147,11 +1153,11 @@
     </linearGradient>
     <linearGradient
        x1="20.586"
-       y1="-23.537"
+       y1="-23.537001"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
        x2="21.108"
        gradientUnits="userSpaceOnUse"
-       y2="-23.537"
+       y2="-23.537001"
        id="linearGradient440">
       <stop
          offset="0"
@@ -1168,11 +1174,11 @@
     </linearGradient>
     <linearGradient
        x1="11.342"
-       y1="-28.876"
+       y1="-28.875999"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
        x2="12.125"
        gradientUnits="userSpaceOnUse"
-       y2="-28.876"
+       y2="-28.875999"
        id="linearGradient460">
       <stop
          offset="0"
@@ -1210,11 +1216,11 @@
     </linearGradient>
     <linearGradient
        x1="16.174"
-       y1="-29.13"
+       y1="-29.129999"
        gradientTransform="matrix(0.18392,-0.61296,-0.61296,-0.18392,0.0392,15.382)"
-       x2="16.957"
+       x2="16.957001"
        gradientUnits="userSpaceOnUse"
-       y2="-29.13"
+       y2="-29.129999"
        id="linearGradient500">
       <stop
          offset="0"
@@ -1231,11 +1237,11 @@
     </linearGradient>
     <linearGradient
        x1="10.781"
-       y1="-31.505"
+       y1="-31.504999"
        gradientTransform="matrix(0.1784,-0.61464,-0.61464,-0.1784,0.0392,15.382)"
        x2="11.588"
        gradientUnits="userSpaceOnUse"
-       y2="-31.505"
+       y2="-31.504999"
        id="linearGradient520">
       <stop
          offset="0"
@@ -1251,12 +1257,12 @@
          id="stop526" />
     </linearGradient>
     <linearGradient
-       x1="9.7842"
-       y1="-24.206"
+       x1="9.7841997"
+       y1="-24.205999"
        gradientTransform="matrix(0.19408,-0.60984,-0.60984,-0.19408,0.0392,15.382)"
        x2="10.361"
        gradientUnits="userSpaceOnUse"
-       y2="-24.206"
+       y2="-24.205999"
        id="linearGradient540">
       <stop
          offset="0"
@@ -1272,12 +1278,12 @@
          id="stop546" />
     </linearGradient>
     <linearGradient
-       x1="17.88"
-       y1="2.7178"
+       x1="17.879999"
+       y1="2.7177999"
        gradientTransform="matrix(0.18968,-0.6112,-0.6112,-0.18968,0.0392,15.382)"
-       x2="18.64"
+       x2="18.639999"
        gradientUnits="userSpaceOnUse"
-       y2="2.7178"
+       y2="2.7177999"
        id="linearGradient560">
       <stop
          offset="0"
@@ -1293,10 +1299,10 @@
          id="stop566" />
     </linearGradient>
     <linearGradient
-       x1="23.119"
+       x1="23.118999"
        y1="-6.25"
        gradientTransform="matrix(0.1784,-0.61464,-0.61464,-0.1784,0.0392,15.382)"
-       x2="23.926"
+       x2="23.926001"
        gradientUnits="userSpaceOnUse"
        y2="-6.25"
        id="linearGradient580">
@@ -1317,7 +1323,7 @@
        id="clipPath594">
       <path
          inkscape:connector-curvature="0"
-         d="m0 1.3639h12v12h-12v-12z"
+         d="m 0,1.3639 h 12 v 12 H 0 Z"
          id="path596" />
     </clipPath>
     <mask
@@ -1329,8 +1335,8 @@
            id="g602">
           <path
              inkscape:connector-curvature="0"
-             d="m0 1.3639h12v12h-12v-12z"
-             style="fill:#000000;fill-opacity:0.0703"
+             d="m 0,1.3639 h 12 v 12 H 0 Z"
+             style="fill:#000000;fill-opacity:0.07029999"
              id="path604" />
         </g>
       </g>
@@ -1339,21 +1345,21 @@
        id="clipPath610">
       <path
          inkscape:connector-curvature="0"
-         d="m0 1.3639h12v12h-12v-12z"
+         d="m 0,1.3639 h 12 v 12 H 0 Z"
          id="path612" />
     </clipPath>
     <clipPath
        id="clipPath614">
       <path
          inkscape:connector-curvature="0"
-         d="m0 2h12v12h-12v-12z"
+         d="M 0,2 H 12 V 14 H 0 Z"
          id="path616" />
     </clipPath>
     <clipPath
        id="clipPath638">
       <path
          inkscape:connector-curvature="0"
-         d="m0 4.3639h8v8h-8v-8z"
+         d="m 0,4.3639 h 8 v 8 H 0 Z"
          id="path640" />
     </clipPath>
     <mask
@@ -1365,8 +1371,8 @@
            id="g646">
           <path
              inkscape:connector-curvature="0"
-             d="m0 4.3639h8v8h-8v-8z"
-             style="fill:#000000;fill-opacity:.10160"
+             d="m 0,4.3639 h 8 v 8 H 0 Z"
+             style="fill:#000000;fill-opacity:0.10160002"
              id="path648" />
         </g>
       </g>
@@ -1375,21 +1381,21 @@
        id="clipPath654">
       <path
          inkscape:connector-curvature="0"
-         d="m0 4.3639h8v8h-8v-8z"
+         d="m 0,4.3639 h 8 v 8 H 0 Z"
          id="path656" />
     </clipPath>
     <clipPath
        id="clipPath658">
       <path
          inkscape:connector-curvature="0"
-         d="m0 5h8v8h-8v-8z"
+         d="m 0,5 h 8 v 8 H 0 Z"
          id="path660" />
     </clipPath>
     <clipPath
        id="clipPath682">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.3639h3v4h-3v-4z"
+         d="m 2,7.3639 h 3 v 4 H 2 Z"
          id="path684" />
     </clipPath>
     <mask
@@ -1401,8 +1407,8 @@
            id="g690">
           <path
              inkscape:connector-curvature="0"
-             d="m2 7.3639h3v4h-3v-4z"
-             style="fill:#000000;fill-opacity:.30080"
+             d="m 2,7.3639 h 3 v 4 H 2 Z"
+             style="fill:#000000;fill-opacity:0.30080004"
              id="path692" />
         </g>
       </g>
@@ -1411,21 +1417,21 @@
        id="clipPath698">
       <path
          inkscape:connector-curvature="0"
-         d="m2 7.3639h3v4h-3v-4z"
+         d="m 2,7.3639 h 3 v 4 H 2 Z"
          id="path700" />
     </clipPath>
     <clipPath
        id="clipPath702">
       <path
          inkscape:connector-curvature="0"
-         d="m2 8h3v4h-3v-4z"
+         d="m 2,8 h 3 v 4 H 2 Z"
          id="path704" />
     </clipPath>
     <clipPath
        id="clipPath18">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path20" />
     </clipPath>
     <mask
@@ -1437,8 +1443,8 @@
            id="g26-06">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.93359h175v42h-175v-42z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="m 0,-0.93359 h 175 v 42 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28" />
         </g>
       </g>
@@ -1447,32 +1453,32 @@
        id="clipPath34">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path36" />
     </clipPath>
     <clipPath
        id="clipPath38">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h175v42h-175v-42z"
+         d="M 0,0 H 175 V 42 H 0 Z"
          id="path40" />
     </clipPath>
     <clipPath
        id="clipPath42">
       <path
          inkscape:connector-curvature="0"
-         d="m174.04 21.375c0-5.656-8.492-10.48-25.48-14.48-16.99-3.973-37.5-5.961-61.56-5.961-24.027 0-44.535 1.988-61.52 5.961-16.988 4-25.48 8.824-25.48 14.48 0 5.652 8.492 10.465 25.48 14.437 16.985 4 37.493 6 61.52 6s44.547-2 61.559-6c16.988-3.972 25.48-8.785 25.48-14.437z"
+         d="m 174.04,21.375 c 0,-5.656 -8.492,-10.48 -25.48,-14.48 C 131.57,2.922 111.06,0.934 87,0.934 62.973,0.934 42.465,2.922 25.48,6.895 8.492,10.895 0,15.719 0,21.375 c 0,5.652 8.492,10.465 25.48,14.437 16.985,4 37.493,6 61.52,6 24.027,0 44.547,-2 61.559,-6 16.988,-3.972 25.48,-8.785 25.48,-14.437 z"
          id="path44" />
     </clipPath>
     <clipPath
        id="clipPath46">
       <path
          inkscape:connector-curvature="0"
-         d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+         d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
          id="path48-8" />
     </clipPath>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1495,14 +1501,14 @@
            id="g60-9">
           <path
              inkscape:connector-curvature="0"
-             d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+             d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
              style="fill:url(#radialGradient50)"
              id="path62" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1520,7 +1526,7 @@
        id="clipPath100">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path102" />
     </clipPath>
     <mask
@@ -1532,8 +1538,8 @@
            id="g108">
           <path
              inkscape:connector-curvature="0"
-             d="m14 9.0664h138v23h-138v-23z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 14,9.0664 h 138 v 23 H 14 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-6" />
         </g>
       </g>
@@ -1542,21 +1548,21 @@
        id="clipPath116">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path118-6" />
     </clipPath>
     <clipPath
        id="clipPath120">
       <path
          inkscape:connector-curvature="0"
-         d="m14 10h138v23h-138v-23z"
+         d="M 14,10 H 152 V 33 H 14 Z"
          id="path122" />
     </clipPath>
     <radialGradient
-       r="83.328"
-       gradientTransform="matrix(-.0064 .8 .8 .0064 365.98 -12945)"
+       r="83.328003"
+       gradientTransform="matrix(-0.0064,0.8,0.8,0.0064,365.98,-12945)"
        cx="16199"
-       cy="-226.49"
+       cy="-226.49001"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150">
       <stop
@@ -1592,7 +1598,7 @@
        id="clipPath188">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path190" />
     </clipPath>
     <mask
@@ -1604,8 +1610,8 @@
            id="g196">
           <path
              inkscape:connector-curvature="0"
-             d="m93 12.066h52v52h-52v-52z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 93,12.066 h 52 v 52 H 93 Z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path198" />
         </g>
       </g>
@@ -1614,21 +1620,21 @@
        id="clipPath204">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path206" />
     </clipPath>
     <clipPath
        id="clipPath208">
       <path
          inkscape:connector-curvature="0"
-         d="m93 13h52v52h-52v-52z"
+         d="m 93,13 h 52 V 65 H 93 Z"
          id="path210" />
     </clipPath>
     <clipPath
        id="clipPath18-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path20-7" />
     </clipPath>
     <mask
@@ -1640,8 +1646,8 @@
            id="g26-5">
           <path
              inkscape:connector-curvature="0"
-             d="m0 0h164v36h-164v-36z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="M 0,0 H 164 V 36 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-9" />
         </g>
       </g>
@@ -1650,34 +1656,34 @@
        id="clipPath34-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path36-7" />
     </clipPath>
     <clipPath
        id="clipPath38-6">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path40-7" />
     </clipPath>
     <clipPath
        id="clipPath42-3">
       <path
          inkscape:connector-curvature="0"
-         d="m164 17.602c0-4.883-8-9.043-24-12.481-16-3.414-35.33-5.121-58-5.121-22.668 0-41.988 1.707-57.961 5.121-16.027 3.438-24.039 7.598-24.039 12.481 0 4.851 8.012 9 24.039 12.437 16 3.441 35.32 5.16 57.961 5.16s41.973-1.719 58-5.16c16-3.437 24-7.586 24-12.437z"
+         d="M 164,17.602 C 164,12.719 156,8.559 140,5.121 124,1.707 104.67,0 82,0 59.332,0 40.012,1.707 24.039,5.121 8.012,8.559 0,12.719 0,17.602 c 0,4.851 8.012,9 24.039,12.437 16,3.441 35.32,5.16 57.961,5.16 22.641,0 41.973,-1.719 58,-5.16 16,-3.437 24,-7.586 24,-12.437 z"
          id="path44-6" />
     </clipPath>
     <clipPath
        id="clipPath46-5">
       <path
          inkscape:connector-curvature="0"
-         d="m0-133.83h205v215.41h-205v-215.41z"
+         d="M 0,-133.83 H 205 V 81.58 H 0 Z"
          id="path48-6" />
     </clipPath>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-3">
       <stop
@@ -1698,16 +1704,16 @@
            id="g60-2">
           <path
              inkscape:connector-curvature="0"
-             d="m0-133.83h205v215.41h-205v-215.41z"
+             d="M 0,-133.83 H 205 V 81.58 H 0 Z"
              style="fill:url(#radialGradient50-3)"
              id="path62-9" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-3">
       <stop
@@ -1723,7 +1729,7 @@
        id="clipPath100-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path102-8" />
     </clipPath>
     <mask
@@ -1735,8 +1741,8 @@
            id="g108-9">
           <path
              inkscape:connector-curvature="0"
-             d="m12 4h136v28h-136v-28z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="M 12,4 H 148 V 32 H 12 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-63" />
         </g>
       </g>
@@ -1745,18 +1751,18 @@
        id="clipPath116-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path118-5" />
     </clipPath>
     <clipPath
        id="clipPath120-6">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path122-1" />
     </clipPath>
     <linearGradient
-       x1="-396.71"
+       x1="-396.70999"
        y1="-15762"
        gradientTransform="matrix(0.0392,-0.79904,0.79904,0.0392,12666,332.28)"
        x2="-391.16"
@@ -1773,10 +1779,10 @@
          id="stop216" />
     </linearGradient>
     <linearGradient
-       x1="-400.79"
+       x1="-400.79001"
        y1="-15760"
        gradientTransform="matrix(0.03848,-0.79904,0.79904,0.03848,12672,326.98)"
-       x2="-395.61"
+       x2="-395.60999"
        gradientUnits="userSpaceOnUse"
        y2="-15760"
        id="linearGradient230">
@@ -1807,10 +1813,10 @@
          id="stop252" />
     </linearGradient>
     <linearGradient
-       x1="565.33"
+       x1="565.33002"
        y1="-16681"
        gradientTransform="matrix(-0.05472,-0.79816,0.79816,-0.05472,13419,-440.54)"
-       x2="569.99"
+       x2="569.98999"
        gradientUnits="userSpaceOnUse"
        y2="-16681"
        id="linearGradient266">
@@ -1827,7 +1833,7 @@
        x1="-407"
        y1="-15726"
        gradientTransform="matrix(0.03992,-0.79904,0.79904,0.03992,12660,338.33)"
-       x2="-401.11"
+       x2="-401.10999"
        gradientUnits="userSpaceOnUse"
        y2="-15726"
        id="linearGradient284">
@@ -1861,7 +1867,7 @@
        x1="-742.19"
        y1="-15405"
        gradientTransform="matrix(0.07424,-0.79656,0.79656,0.07424,12362,598.07)"
-       x2="-737.42"
+       x2="-737.41998"
        gradientUnits="userSpaceOnUse"
        y2="-15405"
        id="linearGradient320-8">
@@ -1929,7 +1935,7 @@
        id="clipPath18-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path20-6" />
     </clipPath>
     <mask
@@ -1941,8 +1947,8 @@
            id="g26-1">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.93359h175v42h-175v-42z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="m 0,-0.93359 h 175 v 42 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-8" />
         </g>
       </g>
@@ -1951,32 +1957,32 @@
        id="clipPath34-79">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.93359h175v42h-175v-42z"
+         d="m 0,-0.93359 h 175 v 42 H 0 Z"
          id="path36-2" />
     </clipPath>
     <clipPath
        id="clipPath38-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h175v42h-175v-42z"
+         d="M 0,0 H 175 V 42 H 0 Z"
          id="path40-2" />
     </clipPath>
     <clipPath
        id="clipPath42-37">
       <path
          inkscape:connector-curvature="0"
-         d="m174.04 21.375c0-5.656-8.492-10.48-25.48-14.48-16.99-3.973-37.5-5.961-61.56-5.961-24.027 0-44.535 1.988-61.52 5.961-16.988 4-25.48 8.824-25.48 14.48 0 5.652 8.492 10.465 25.48 14.437 16.985 4 37.493 6 61.52 6s44.547-2 61.559-6c16.988-3.972 25.48-8.785 25.48-14.437z"
+         d="m 174.04,21.375 c 0,-5.656 -8.492,-10.48 -25.48,-14.48 C 131.57,2.922 111.06,0.934 87,0.934 62.973,0.934 42.465,2.922 25.48,6.895 8.492,10.895 0,15.719 0,21.375 c 0,5.652 8.492,10.465 25.48,14.437 16.985,4 37.493,6 61.52,6 24.027,0 44.547,-2 61.559,-6 16.988,-3.972 25.48,-8.785 25.48,-14.437 z"
          id="path44-5" />
     </clipPath>
     <clipPath
        id="clipPath46-9">
       <path
          inkscape:connector-curvature="0"
-         d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+         d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
          id="path48-2" />
     </clipPath>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -1999,14 +2005,14 @@
            id="g60-6">
           <path
              inkscape:connector-curvature="0"
-             d="m0-139.9h218.75v229.56h-218.75v-229.56z"
+             d="M 0,-139.9 H 218.75 V 89.66 H 0 Z"
              style="fill:url(#radialGradient50-2)"
              id="path62-1" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="93.738"
+       r="93.737999"
        cx="108.4"
        cy="-25.85"
        gradientUnits="userSpaceOnUse"
@@ -2024,7 +2030,7 @@
        id="clipPath100-9">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path102-4" />
     </clipPath>
     <mask
@@ -2036,8 +2042,8 @@
            id="g108-4">
           <path
              inkscape:connector-curvature="0"
-             d="m14 9.0664h138v23h-138v-23z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 14,9.0664 h 138 v 23 H 14 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-5" />
         </g>
       </g>
@@ -2046,21 +2052,21 @@
        id="clipPath116-0">
       <path
          inkscape:connector-curvature="0"
-         d="m14 9.0664h138v23h-138v-23z"
+         d="m 14,9.0664 h 138 v 23 H 14 Z"
          id="path118-3" />
     </clipPath>
     <clipPath
        id="clipPath120-61">
       <path
          inkscape:connector-curvature="0"
-         d="m14 10h138v23h-138v-23z"
+         d="M 14,10 H 152 V 33 H 14 Z"
          id="path122-0" />
     </clipPath>
     <radialGradient
-       r="83.328"
+       r="83.328003"
        gradientTransform="matrix(-0.0064,0.8,0.8,0.0064,365.98,-12945)"
        cx="16199"
-       cy="-226.49"
+       cy="-226.49001"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150-6">
       <stop
@@ -2096,7 +2102,7 @@
        id="clipPath188-4">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path190-7" />
     </clipPath>
     <mask
@@ -2108,8 +2114,8 @@
            id="g196-6">
           <path
              inkscape:connector-curvature="0"
-             d="m93 12.066h52v52h-52v-52z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 93,12.066 h 52 v 52 H 93 Z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path198-9" />
         </g>
       </g>
@@ -2118,21 +2124,21 @@
        id="clipPath204-3">
       <path
          inkscape:connector-curvature="0"
-         d="m93 12.066h52v52h-52v-52z"
+         d="m 93,12.066 h 52 v 52 H 93 Z"
          id="path206-7" />
     </clipPath>
     <clipPath
        id="clipPath208-4">
       <path
          inkscape:connector-curvature="0"
-         d="m93 13h52v52h-52v-52z"
+         d="m 93,13 h 52 V 65 H 93 Z"
          id="path210-5" />
     </clipPath>
     <clipPath
        id="clipPath18-6">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path20-1" />
     </clipPath>
     <mask
@@ -2144,8 +2150,8 @@
            id="g26-4">
           <path
              inkscape:connector-curvature="0"
-             d="m0 0h164v36h-164v-36z"
-             style="fill:#000000;fill-opacity:.62890"
+             d="M 0,0 H 164 V 36 H 0 Z"
+             style="fill:#000000;fill-opacity:0.62889997"
              id="path28-90" />
         </g>
       </g>
@@ -2154,34 +2160,34 @@
        id="clipPath34-9">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path36-1" />
     </clipPath>
     <clipPath
        id="clipPath38-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h164v36h-164v-36z"
+         d="M 0,0 H 164 V 36 H 0 Z"
          id="path40-71" />
     </clipPath>
     <clipPath
        id="clipPath42-1">
       <path
          inkscape:connector-curvature="0"
-         d="m164 17.602c0-4.883-8-9.043-24-12.481-16-3.414-35.33-5.121-58-5.121-22.668 0-41.988 1.707-57.961 5.121-16.027 3.438-24.039 7.598-24.039 12.481 0 4.851 8.012 9 24.039 12.437 16 3.441 35.32 5.16 57.961 5.16s41.973-1.719 58-5.16c16-3.437 24-7.586 24-12.437z"
+         d="M 164,17.602 C 164,12.719 156,8.559 140,5.121 124,1.707 104.67,0 82,0 59.332,0 40.012,1.707 24.039,5.121 8.012,8.559 0,12.719 0,17.602 c 0,4.851 8.012,9 24.039,12.437 16,3.441 35.32,5.16 57.961,5.16 22.641,0 41.973,-1.719 58,-5.16 16,-3.437 24,-7.586 24,-12.437 z"
          id="path44-59" />
     </clipPath>
     <clipPath
        id="clipPath46-7">
       <path
          inkscape:connector-curvature="0"
-         d="m0-133.83h205v215.41h-205v-215.41z"
+         d="M 0,-133.83 H 205 V 81.58 H 0 Z"
          id="path48-7" />
     </clipPath>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-6">
       <stop
@@ -2202,16 +2208,16 @@
            id="g60-63">
           <path
              inkscape:connector-curvature="0"
-             d="m0-133.83h205v215.41h-205v-215.41z"
+             d="M 0,-133.83 H 205 V 81.58 H 0 Z"
              style="fill:url(#radialGradient50-6)"
              id="path62-94" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="88.325"
+       r="88.324997"
        cx="102.2"
-       cy="-22.3"
+       cy="-22.299999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-8">
       <stop
@@ -2227,7 +2233,7 @@
        id="clipPath100-93">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path102-9" />
     </clipPath>
     <mask
@@ -2239,8 +2245,8 @@
            id="g108-5">
           <path
              inkscape:connector-curvature="0"
-             d="m12 4h136v28h-136v-28z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="M 12,4 H 148 V 32 H 12 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-0" />
         </g>
       </g>
@@ -2249,18 +2255,18 @@
        id="clipPath116-9">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path118-63" />
     </clipPath>
     <clipPath
        id="clipPath120-8">
       <path
          inkscape:connector-curvature="0"
-         d="m12 4h136v28h-136v-28z"
+         d="M 12,4 H 148 V 32 H 12 Z"
          id="path122-5" />
     </clipPath>
     <linearGradient
-       x1="-396.71"
+       x1="-396.70999"
        y1="-15762"
        gradientTransform="matrix(0.0392,-0.79904,0.79904,0.0392,12666,332.28)"
        x2="-391.16"
@@ -2277,10 +2283,10 @@
          id="stop216-1" />
     </linearGradient>
     <linearGradient
-       x1="-400.79"
+       x1="-400.79001"
        y1="-15760"
        gradientTransform="matrix(0.03848,-0.79904,0.79904,0.03848,12672,326.98)"
-       x2="-395.61"
+       x2="-395.60999"
        gradientUnits="userSpaceOnUse"
        y2="-15760"
        id="linearGradient230-5">
@@ -2311,10 +2317,10 @@
          id="stop252-1" />
     </linearGradient>
     <linearGradient
-       x1="565.33"
+       x1="565.33002"
        y1="-16681"
        gradientTransform="matrix(-0.05472,-0.79816,0.79816,-0.05472,13419,-440.54)"
-       x2="569.99"
+       x2="569.98999"
        gradientUnits="userSpaceOnUse"
        y2="-16681"
        id="linearGradient266-0">
@@ -2331,7 +2337,7 @@
        x1="-407"
        y1="-15726"
        gradientTransform="matrix(0.03992,-0.79904,0.79904,0.03992,12660,338.33)"
-       x2="-401.11"
+       x2="-401.10999"
        gradientUnits="userSpaceOnUse"
        y2="-15726"
        id="linearGradient284-4">
@@ -2365,7 +2371,7 @@
        x1="-742.19"
        y1="-15405"
        gradientTransform="matrix(0.07424,-0.79656,0.79656,0.07424,12362,598.07)"
-       x2="-737.42"
+       x2="-737.41998"
        gradientUnits="userSpaceOnUse"
        y2="-15405"
        id="linearGradient320-3">
@@ -2433,7 +2439,7 @@
        id="clipPath18-8">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.41264h154v33h-154v-33z"
+         d="m 0,-0.41264 h 154 v 33 H 0 Z"
          id="path20-72" />
     </clipPath>
     <mask
@@ -2445,8 +2451,8 @@
            id="g26-9">
           <path
              inkscape:connector-curvature="0"
-             d="m0-0.41264h154v33h-154v-33z"
-             style="fill:#000000;fill-opacity:.75"
+             d="m 0,-0.41264 h 154 v 33 H 0 Z"
+             style="fill:#000000;fill-opacity:0.75"
              id="path28-96" />
         </g>
       </g>
@@ -2455,34 +2461,34 @@
        id="clipPath34-0">
       <path
          inkscape:connector-curvature="0"
-         d="m0-0.41264h154v33h-154v-33z"
+         d="m 0,-0.41264 h 154 v 33 H 0 Z"
          id="path36-27" />
     </clipPath>
     <clipPath
        id="clipPath38-61">
       <path
          inkscape:connector-curvature="0"
-         d="m0 0h154v33h-154v-33z"
+         d="M 0,0 H 154 V 33 H 0 Z"
          id="path40-3" />
     </clipPath>
     <clipPath
        id="clipPath42-2">
       <path
          inkscape:connector-curvature="0"
-         d="m145.28 26.371c5.465-2.504 8.199-5.183 8.199-8.039 0-4.934-7.492-9.16-22.48-12.68-14.99-3.492-33.066-5.238-54.238-5.238-21.203 0-39.297 1.746-54.282 5.238-14.988 3.52-22.48 7.746-22.48 12.68 0 1.895 1.238 3.719 3.719 5.48 2.375 1.735 5.801 3.333 10.281 4.801 0.641-0.242 1.32-0.32 2.039-0.242 3.359 0.32 6.199 0.734 8.52 1.242-0.051-0.828 0.175-1.547 0.679-2.16 0.563-0.668 1.403-1.121 2.524-1.359 1.543-0.293 3.703-0.922 6.476-1.883 2.856-0.957 5-1.598 6.442-1.918 1.441-0.293 3.922-0.547 7.441-0.762 3.145-0.16 5.598-0.504 7.359-1.039 5.653-1.68 9.735-2.664 12.239-2.961 4.215-0.48 8.386 0 12.519 1.442 1.442 0.507 2.84 1.281 4.203 2.32 0.907 0.746 2.039 1.812 3.399 3.199 1.68 0.426 3.172 1.082 4.48 1.961 1.602 1.039 2.68 2.426 3.239 4.16 0.32 0.133 0.828 0.305 1.519 0.52 0.481 0.133 1.43-0.055 2.844-0.559 0.773-0.269 1.719-0.613 2.84-1.043 1.945-0.531 4.05-0.531 6.316 0 1.254 0.297 2.762 1.028 4.524 2.203l1.558 1.039c0.215 0.133 0.32 0.172 0.32 0.122 0.051-0.297 0.282-0.641 0.68-1.043 0.746-0.747 1.801-1.106 3.16-1.079 1.282 0.055 2.332 0.415 3.16 1.079l0.879 0.679c9.336-1.652 16.641-3.703 21.922-6.16z"
+         d="m 145.28,26.371 c 5.465,-2.504 8.199,-5.183 8.199,-8.039 0,-4.934 -7.492,-9.16 -22.48,-12.68 C 116.009,2.16 97.933,0.414 76.761,0.414 c -21.203,0 -39.297,1.746 -54.282,5.238 -14.988,3.52 -22.48,7.746 -22.48,12.68 0,1.895 1.238,3.719 3.719,5.48 2.375,1.735 5.801,3.333 10.281,4.801 0.641,-0.242 1.32,-0.32 2.039,-0.242 3.359,0.32 6.199,0.734 8.52,1.242 -0.051,-0.828 0.175,-1.547 0.679,-2.16 0.563,-0.668 1.403,-1.121 2.524,-1.359 1.543,-0.293 3.703,-0.922 6.476,-1.883 2.856,-0.957 5,-1.598 6.442,-1.918 1.441,-0.293 3.922,-0.547 7.441,-0.762 3.145,-0.16 5.598,-0.504 7.359,-1.039 5.653,-1.68 9.735,-2.664 12.239,-2.961 4.215,-0.48 8.386,0 12.519,1.442 1.442,0.507 2.84,1.281 4.203,2.32 0.907,0.746 2.039,1.812 3.399,3.199 1.68,0.426 3.172,1.082 4.48,1.961 1.602,1.039 2.68,2.426 3.239,4.16 0.32,0.133 0.828,0.305 1.519,0.52 0.481,0.133 1.43,-0.055 2.844,-0.559 0.773,-0.269 1.719,-0.613 2.84,-1.043 1.945,-0.531 4.05,-0.531 6.316,0 1.254,0.297 2.762,1.028 4.524,2.203 l 1.558,1.039 c 0.215,0.133 0.32,0.172 0.32,0.122 0.051,-0.297 0.282,-0.641 0.68,-1.043 0.746,-0.747 1.801,-1.106 3.16,-1.079 1.282,0.055 2.332,0.415 3.16,1.079 l 0.879,0.679 c 9.336,-1.652 16.641,-3.703 21.922,-6.16 z"
          id="path44-1" />
     </clipPath>
     <clipPath
        id="clipPath46-59">
       <path
          inkscape:connector-curvature="0"
-         d="m0.0000014677-100.42h192.5v181.72h-192.5v-181.72z"
+         d="M 1.4677e-6,-100.42 H 192.5 V 81.3 H 1.4677e-6 Z"
          id="path48-9" />
     </clipPath>
     <radialGradient
-       r="82.65"
-       cx="95.65"
-       cy="-18.55"
+       r="82.650002"
+       cx="95.650002"
+       cy="-18.549999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient50-1">
       <stop
@@ -2503,16 +2509,16 @@
            id="g60-5">
           <path
              inkscape:connector-curvature="0"
-             d="m0.0000014677-100.42h192.5v181.72h-192.5v-181.72z"
+             d="M 1.4677e-6,-100.42 H 192.5 V 81.3 H 1.4677e-6 Z"
              style="fill:url(#radialGradient50-1)"
              id="path62-8" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="82.65"
-       cx="95.65"
-       cy="-18.55"
+       r="82.650002"
+       cx="95.650002"
+       cy="-18.549999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient64-7">
       <stop
@@ -2528,7 +2534,7 @@
        id="clipPath100-80">
       <path
          inkscape:connector-curvature="0"
-         d="m8 2.5874h135v30h-135v-30z"
+         d="m 8,2.5874 h 135 v 30 H 8 Z"
          id="path102-42" />
     </clipPath>
     <mask
@@ -2540,8 +2546,8 @@
            id="g108-1">
           <path
              inkscape:connector-curvature="0"
-             d="m8 2.5874h135v30h-135v-30z"
-             style="fill:#000000;fill-opacity:.14060"
+             d="m 8,2.5874 h 135 v 30 H 8 Z"
+             style="fill:#000000;fill-opacity:0.14059999"
              id="path110-04" />
         </g>
       </g>
@@ -2550,21 +2556,21 @@
        id="clipPath116-2">
       <path
          inkscape:connector-curvature="0"
-         d="m8 2.5874h135v30h-135v-30z"
+         d="m 8,2.5874 h 135 v 30 H 8 Z"
          id="path118-2" />
     </clipPath>
     <clipPath
        id="clipPath120-2">
       <path
          inkscape:connector-curvature="0"
-         d="m8 3h135v30h-135v-30z"
+         d="M 8,3 H 143 V 33 H 8 Z"
          id="path122-05" />
     </clipPath>
     <radialGradient
        r="72.5"
        gradientTransform="matrix(0.8,0,0,-0.57272,-1.1742e-6,23.733)"
-       cx="83.6"
-       cy="-35.6"
+       cx="83.599998"
+       cy="-35.599998"
        gradientUnits="userSpaceOnUse"
        id="radialGradient150-5">
       <stop
@@ -2580,7 +2586,7 @@
        id="clipPath1100">
       <path
          inkscape:connector-curvature="0"
-         d="m12 28.587h33v44h-33v-44z"
+         d="m 12,28.587 h 33 v 44 H 12 Z"
          id="path1102" />
     </clipPath>
     <mask
@@ -2592,8 +2598,8 @@
            id="g1108">
           <path
              inkscape:connector-curvature="0"
-             d="m12 28.587h33v44h-33v-44z"
-             style="fill:#000000;fill-opacity:.69140"
+             d="m 12,28.587 h 33 v 44 H 12 Z"
+             style="fill:#000000;fill-opacity:0.69139997"
              id="path1110" />
         </g>
       </g>
@@ -2602,32 +2608,32 @@
        id="clipPath1116">
       <path
          inkscape:connector-curvature="0"
-         d="m12 28.587h33v44h-33v-44z"
+         d="m 12,28.587 h 33 v 44 H 12 Z"
          id="path1118" />
     </clipPath>
     <clipPath
        id="clipPath1120">
       <path
          inkscape:connector-curvature="0"
-         d="m12 29h33v44h-33v-44z"
+         d="M 12,29 H 45 V 73 H 12 Z"
          id="path1122" />
     </clipPath>
     <clipPath
        id="clipPath1124">
       <path
          inkscape:connector-curvature="0"
-         d="m43.961 48.172c-1.149-5.973-3.629-10.801-7.441-14.481-3.813-3.652-7.852-5.066-12.122-4.238-4.265 0.801-7.492 3.598-9.679 8.399-2.211 4.828-2.746 10.226-1.598 16.199 1.145 5.976 3.625 10.789 7.438 14.441 3.816 3.68 7.855 5.106 12.121 4.281 4.265-0.8 7.492-3.601 9.679-8.402 2.215-4.824 2.746-10.226 1.602-16.199z"
+         d="M 43.961,48.172 C 42.812,42.199 40.332,37.371 36.52,33.691 32.707,30.039 28.668,28.625 24.398,29.453 c -4.265,0.801 -7.492,3.598 -9.679,8.399 -2.211,4.828 -2.746,10.226 -1.598,16.199 1.145,5.976 3.625,10.789 7.438,14.441 3.816,3.68 7.855,5.106 12.121,4.281 4.265,-0.8 7.492,-3.601 9.679,-8.402 2.215,-4.824 2.746,-10.226 1.602,-16.199 z"
          id="path1126" />
     </clipPath>
     <clipPath
        id="clipPath1128">
       <path
          inkscape:connector-curvature="0"
-         d="m-1387-1711.7h50.85v43.971h-50.85v-43.971z"
+         d="m -1387,-1711.7 h 50.85 v 43.971 H -1387 Z"
          id="path1130" />
     </clipPath>
     <radialGradient
-       r="19.619"
+       r="19.618999"
        cx="-1361.6"
        cy="-1689.8"
        gradientUnits="userSpaceOnUse"
@@ -2650,14 +2656,14 @@
            id="g1142">
           <path
              inkscape:connector-curvature="0"
-             d="m-1387-1711.7h50.85v43.971h-50.85v-43.971z"
+             d="m -1387,-1711.7 h 50.85 v 43.971 H -1387 Z"
              style="fill:url(#radialGradient1132)"
              id="path1144" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="19.619"
+       r="19.618999"
        cx="-1361.6"
        cy="-1689.8"
        gradientUnits="userSpaceOnUse"
@@ -2675,7 +2681,7 @@
        id="clipPath1182">
       <path
          inkscape:connector-curvature="0"
-         d="m57 28.587h43v42h-43v-42z"
+         d="m 57,28.587 h 43 v 42 H 57 Z"
          id="path1184" />
     </clipPath>
     <mask
@@ -2687,8 +2693,8 @@
            id="g1190">
           <path
              inkscape:connector-curvature="0"
-             d="m57 28.587h43v42h-43v-42z"
-             style="fill:#000000;fill-opacity:.69140"
+             d="m 57,28.587 h 43 v 42 H 57 Z"
+             style="fill:#000000;fill-opacity:0.69139997"
              id="path1192" />
         </g>
       </g>
@@ -2697,28 +2703,28 @@
        id="clipPath1198">
       <path
          inkscape:connector-curvature="0"
-         d="m57 28.587h43v42h-43v-42z"
+         d="m 57,28.587 h 43 v 42 H 57 Z"
          id="path1200" />
     </clipPath>
     <clipPath
        id="clipPath1202">
       <path
          inkscape:connector-curvature="0"
-         d="m57 29h43v42h-43v-42z"
+         d="m 57,29 h 43 V 71 H 57 Z"
          id="path1204" />
     </clipPath>
     <clipPath
        id="clipPath1206">
       <path
          inkscape:connector-curvature="0"
-         d="m98.68 46.094c-1.067-5.656-3.973-10.094-8.719-13.321-4.746-3.226-9.934-4.293-15.563-3.199-5.625 1.067-10.039 3.973-13.238 8.719s-4.265 9.945-3.199 15.598c1.094 5.656 4 10.093 8.719 13.32 4.746 3.227 9.933 4.309 15.558 3.242 5.629-1.094 10.043-4.015 13.242-8.762 3.227-4.746 4.293-9.945 3.2-15.597z"
+         d="M 98.68,46.094 C 97.613,40.438 94.707,36 89.961,32.773 85.215,29.547 80.027,28.48 74.398,29.574 c -5.625,1.067 -10.039,3.973 -13.238,8.719 -3.199,4.746 -4.265,9.945 -3.199,15.598 1.094,5.656 4,10.093 8.719,13.32 4.746,3.227 9.933,4.309 15.558,3.242 5.629,-1.094 10.043,-4.015 13.242,-8.762 3.227,-4.746 4.293,-9.945 3.2,-15.597 z"
          id="path1208" />
     </clipPath>
     <clipPath
        id="clipPath1210">
       <path
          inkscape:connector-curvature="0"
-         d="m-1386.1-1716.7h62.652v61.417h-62.652v-61.417z"
+         d="m -1386.1,-1716.7 h 62.652 v 61.417 h -62.652 z"
          id="path1212" />
     </clipPath>
     <radialGradient
@@ -2745,7 +2751,7 @@
            id="g1224">
           <path
              inkscape:connector-curvature="0"
-             d="m-1386.1-1716.7h62.652v61.417h-62.652v-61.417z"
+             d="m -1386.1,-1716.7 h 62.652 v 61.417 h -62.652 z"
              style="fill:url(#radialGradient1214)"
              id="path1226" />
         </g>
@@ -2770,7 +2776,7 @@
        id="clipPath1264">
       <path
          inkscape:connector-curvature="0"
-         d="m100 21.587h36v44h-36v-44z"
+         d="m 100,21.587 h 36 v 44 h -36 z"
          id="path1266" />
     </clipPath>
     <mask
@@ -2782,8 +2788,8 @@
            id="g1272">
           <path
              inkscape:connector-curvature="0"
-             d="m100 21.587h36v44h-36v-44z"
-             style="fill:#000000;fill-opacity:.42970"
+             d="m 100,21.587 h 36 v 44 h -36 z"
+             style="fill:#000000;fill-opacity:0.42970001"
              id="path1274" />
         </g>
       </g>
@@ -2792,33 +2798,33 @@
        id="clipPath1280">
       <path
          inkscape:connector-curvature="0"
-         d="m100 21.587h36v44h-36v-44z"
+         d="m 100,21.587 h 36 v 44 h -36 z"
          id="path1282" />
     </clipPath>
     <clipPath
        id="clipPath1284">
       <path
          inkscape:connector-curvature="0"
-         d="m100 22h36v44h-36v-44z"
+         d="m 100,22 h 36 v 44 h -36 z"
          id="path1286" />
     </clipPath>
     <clipPath
        id="clipPath1288">
       <path
          inkscape:connector-curvature="0"
-         d="m134.28 33.051c-2.027-5.094-5.347-8.332-9.961-9.719-4.613-1.387-9.172-0.531-13.679 2.559-4.508 3.093-7.641 7.535-9.403 13.32-1.73 5.789-1.586 11.215 0.442 16.281 2.027 5.067 5.347 8.309 9.961 9.719 4.613 1.387 9.171 0.535 13.679-2.559 4.508-3.093 7.641-7.535 9.399-13.32 1.734-5.785 1.586-11.215-0.438-16.281z"
+         d="m 134.28,33.051 c -2.027,-5.094 -5.347,-8.332 -9.961,-9.719 -4.613,-1.387 -9.172,-0.531 -13.679,2.559 -4.508,3.093 -7.641,7.535 -9.403,13.32 -1.73,5.789 -1.586,11.215 0.442,16.281 2.027,5.067 5.347,8.309 9.961,9.719 4.613,1.387 9.171,0.535 13.679,-2.559 4.508,-3.093 7.641,-7.535 9.399,-13.32 1.734,-5.785 1.586,-11.215 -0.438,-16.281 z"
          id="path1290" />
     </clipPath>
     <clipPath
        id="clipPath1292">
       <path
          inkscape:connector-curvature="0"
-         d="m2695.7 1940.9h59.023v52.505h-59.023v-52.505z"
+         d="m 2695.7,1940.9 h 59.023 v 52.505 H 2695.7 Z"
          id="path1294" />
     </clipPath>
     <radialGradient
-       r="21.856"
-       cx="2725.4"
+       r="21.856001"
+       cx="2725.3999"
        cy="1966.8"
        gradientUnits="userSpaceOnUse"
        id="radialGradient1296">
@@ -2840,15 +2846,15 @@
            id="g1306">
           <path
              inkscape:connector-curvature="0"
-             d="m2695.7 1940.9h59.023v52.505h-59.023v-52.505z"
+             d="m 2695.7,1940.9 h 59.023 v 52.505 H 2695.7 Z"
              style="fill:url(#radialGradient1296)"
              id="path1308" />
         </g>
       </g>
     </mask>
     <radialGradient
-       r="21.856"
-       cx="2725.4"
+       r="21.856001"
+       cx="2725.3999"
        cy="1966.8"
        gradientUnits="userSpaceOnUse"
        id="radialGradient1310">
@@ -2877,7 +2883,6 @@
          operator="in"
          id="feComposite4105" />
       <feGaussianBlur
-         in="composite"
          stdDeviation="9"
          result="blur"
          id="feGaussianBlur4107" />
@@ -2894,12 +2899,12 @@
          id="feComposite4111" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
-       x="-.25"
-       y="-.25"
+       x="-0.25"
+       y="-0.25"
        width="1.5"
        height="1.5"
-       id="filter3274">
+       id="filter3274"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          in="SourceAlpha"
          stdDeviation="0.5"
@@ -2930,22 +2935,19 @@
        clipPathUnits="userSpaceOnUse"
        id="clipPath3296">
       <rect
-         fill="#fdfdfd"
-         x="-4.4"
-         y="-4.9493"
-         stroke="#000"
-         width="777.6"
+         x="-4.4000001"
+         y="-4.9492998"
+         width="777.59998"
          height="962"
          ry="0"
-         style="color:#000000"
-         opacity=".5"
+         style="color:#000000;opacity:0.5;fill:#fdfdfd;stroke:#000000"
          id="rect3298" />
     </clipPath>
     <linearGradient
-       x1="17.626561"
-       y1="37.537635"
+       x1="17.62656"
+       y1="37.537636"
        x2="26.274548"
-       y2="57.811851"
+       y2="57.811852"
        id="imagebot_15"
        gradientTransform="scale(0.83699484,1.1947505)"
        gradientUnits="userSpaceOnUse">
@@ -2961,9 +2963,9 @@
          id="imagebot_6" />
     </linearGradient>
     <linearGradient
-       x1="298.69094"
+       x1="298.69095"
        y1="127.60687"
-       x2="306.49834"
+       x2="306.49835"
        y2="145.91042"
        id="imagebot_16"
        gradientTransform="scale(0.81274044,1.2304051)"
@@ -2980,8 +2982,8 @@
          id="imagebot_12" />
     </linearGradient>
     <linearGradient
-       x1="193.98469"
-       y1="58.286325"
+       x1="193.9847"
+       y1="58.286324"
        x2="201.33905"
        y2="75.527786"
        id="imagebot_17"
@@ -3023,7 +3025,7 @@
     <filter
        id="filter4588"
        inkscape:label="Cross Blur"
-       style="color-interpolation-filters:sRGB;">
+       style="color-interpolation-filters:sRGB">
       <feColorMatrix
          id="feColorMatrix4590"
          result="colormatrix"
@@ -3037,7 +3039,8 @@
          k2="1"
          operator="arithmetic"
          in2="colormatrix"
-         in="SourceGraphic" />
+         in="SourceGraphic"
+         k1="0" />
       <feGaussianBlur
          id="feGaussianBlur4594"
          result="blur1"
@@ -3055,27 +3058,27 @@
          in="blur2" />
     </filter>
     <linearGradient
-       y2="545.11"
+       y2="545.10999"
        x2="129.75"
        gradientTransform="matrix(0.070374,0,0,0.092845,25.171,126.6)"
-       y1="514.43"
+       y1="514.42999"
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient4560"
-       x1="62.182"
+       x1="62.181999"
        id="linearGradient11388" />
     <filter
-       color-interpolation-filters="sRGB"
        inkscape:collect="always"
-       id="filter3938">
+       id="filter3938"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.34379051"
          id="feGaussianBlur3940" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
        inkscape:collect="always"
-       id="filter3893">
+       id="filter3893"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="1.2592606"
@@ -3083,21 +3086,21 @@
     </filter>
     <filter
        inkscape:collect="always"
-       x="-.0057523"
-       y="-.12801"
-       color-interpolation-filters="sRGB"
+       x="-0.0057522999"
+       y="-0.12801"
        width="1.0115"
        height="1.256"
-       id="filter3808">
+       id="filter3808"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.79778779"
          id="feGaussianBlur3810" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
        inkscape:collect="always"
-       id="filter3802">
+       id="filter3802"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="2.160246"
@@ -3105,13 +3108,13 @@
     </filter>
     <radialGradient
        inkscape:collect="always"
-       r="169.04"
+       r="169.03999"
        gradientTransform="matrix(1,0,0,0.37281,0,183.71)"
        cx="304.37"
        cy="284.78"
        gradientUnits="userSpaceOnUse"
-       fy="408.07"
-       fx="252.85"
+       fy="408.07001"
+       fx="252.85001"
        id="radialGradient6770">
       <stop
          offset="0"
@@ -3124,10 +3127,10 @@
     </radialGradient>
     <radialGradient
        inkscape:collect="always"
-       r="169.29"
+       r="169.28999"
        gradientTransform="matrix(1,0,0,0.36287,0,162.15)"
-       cx="294.52"
-       cy="296.26"
+       cx="294.51999"
+       cy="296.26001"
        gradientUnits="userSpaceOnUse"
        id="radialGradient6772">
       <stop
@@ -3146,8 +3149,8 @@
        cx="443.59"
        cy="391.13"
        gradientUnits="userSpaceOnUse"
-       fy="319.6"
-       fx="375.4"
+       fy="319.60001"
+       fx="375.39999"
        id="radialGradient6783">
       <stop
          offset="0"
@@ -3165,10 +3168,10 @@
     <linearGradient
        inkscape:collect="always"
        x1="171.75"
-       y1="326.79"
+       y1="326.79001"
        x2="172.75"
        gradientUnits="userSpaceOnUse"
-       y2="303.05"
+       y2="303.04999"
        id="linearGradient6785">
       <stop
          offset="0"
@@ -3182,10 +3185,10 @@
     <linearGradient
        inkscape:collect="always"
        x1="172.75"
-       y1="303.05"
+       y1="303.04999"
        x2="171.75"
        gradientUnits="userSpaceOnUse"
-       y2="326.79"
+       y2="326.79001"
        id="linearGradient6787">
       <stop
          offset="0"
@@ -3200,8 +3203,8 @@
        inkscape:collect="always"
        r="158.14"
        gradientTransform="matrix(1,0,0,0.5664,0,111.28)"
-       cx="548.93"
-       cy="274.3"
+       cx="548.92999"
+       cy="274.29999"
        gradientUnits="userSpaceOnUse"
        id="radialGradient6789">
       <stop
@@ -3216,8 +3219,8 @@
     <linearGradient
        inkscape:collect="always"
        x1="546.81"
-       y1="281.8"
-       x2="551.45"
+       y1="281.79999"
+       x2="551.45001"
        gradientUnits="userSpaceOnUse"
        y2="247.55"
        id="linearGradient6791">
@@ -3231,9 +3234,9 @@
          id="stop3914" />
     </linearGradient>
     <filter
-       color-interpolation-filters="sRGB"
        inkscape:collect="always"
-       id="filter3854">
+       id="filter3854"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="2.1101044"
@@ -3241,12 +3244,12 @@
     </filter>
     <filter
        inkscape:collect="always"
-       x="-.0086115"
-       y="-.10033"
-       color-interpolation-filters="sRGB"
+       x="-0.0086115003"
+       y="-0.10033"
        width="1.0172"
        height="1.2007"
-       id="filter3884">
+       id="filter3884"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="2.8559918"
@@ -3254,12 +3257,12 @@
     </filter>
     <radialGradient
        inkscape:collect="always"
-       r="57.321"
+       r="57.320999"
        gradientTransform="matrix(1.4299,0.039225,-0.013961,0.41167,-174.25,15.895)"
-       cx="401.51"
+       cx="401.51001"
        cy="28.826"
        gradientUnits="userSpaceOnUse"
-       fy="69.826"
+       fy="69.825996"
        fx="424.88"
        id="radialGradient3892">
       <stop
@@ -3274,7 +3277,7 @@
     <linearGradient
        inkscape:collect="always"
        x1="1410.7"
-       y1="-484.57"
+       y1="-484.57001"
        x2="1409.4"
        gradientUnits="userSpaceOnUse"
        y2="-423.47"
@@ -3292,11 +3295,11 @@
        inkscape:collect="always"
        r="240"
        gradientTransform="matrix(1.09,-0.14061,0.043557,0.29673,-58.959,319.45)"
-       cx="401.32"
-       cy="397.96"
+       cx="401.32001"
+       cy="397.95999"
        gradientUnits="userSpaceOnUse"
-       fy="572.24"
-       fx="362.33"
+       fy="572.23999"
+       fx="362.32999"
        id="radialGradient3869">
       <stop
          offset="0"
@@ -3336,7 +3339,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
