@@ -13811,11 +13811,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.43555556"
-     inkscape:cx="764.91908"
-     inkscape:cy="135.80574"
+     inkscape:zoom="1.5895833"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4047"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
@@ -14681,7 +14681,6 @@
          d="m 340,302.36 c 0,11.046 -8.9543,20 -20,20 -11.0457,0 -20,-8.9543 -20,-20 0,-11.0457 8.9543,-20 20,-20 11.0457,0 20,8.9543 20,20 z"
          transform="translate(197,162)" />
       <g
-         style="filter:url(#filter3975)"
          id="g4027"
          transform="translate(80.5,199)">
         <path

@@ -4857,9 +4857,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:zoom="1.5895833"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -6560,7 +6560,7 @@
     </g>
     <g
        id="g4211"
-       transform="matrix(-0.6754126,0,0,0.6754126,379.45539,349.49066)">
+       transform="matrix(-0.88717368,0,0,0.88717368,438.90617,128.60149)">
       <path
          d="m 153.53447,813.51696 c 0,0 26.99861,37.15562 15.69712,79.63121 -5.41339,20.3477 -50.94413,25.38877 -50.94413,25.38877 l 3.90444,-93.21943"
          id="path4745-4-5-3"
@@ -7160,7 +7160,7 @@
     </g>
     <g
        id="g9494"
-       transform="matrix(1.2400387,0,0,1.2400387,-1593.2602,223.72311)">
+       transform="matrix(1.6288261,0,0,1.6288261,-2105.1298,-30.11022)">
       <path
          d="m 1385.7172,581.22374 c -1.3007,2.7247 -4.6682,4.35654 -7.5214,3.64482 -2.8532,-0.71172 -4.1118,-3.49748 -2.8111,-6.22218 1.3007,-2.72471 4.6681,-4.35655 7.5214,-3.64483 2.8532,0.71173 4.1118,3.49749 2.8111,6.22219 z"
          id="path3954-8-5-3-0-1-4-1-0-3-6"
@@ -11527,7 +11527,7 @@
          cx="-1038.5" />
     </g>
     <g
-       transform="matrix(0.70818869,0,0,-0.70818869,427.92995,813.30883)"
+       transform="matrix(0.70818869,0,0,-0.70818869,480.09768,813.94106)"
        id="g10-0">
       <g
          id="g12-3">
@@ -15432,12 +15432,12 @@
        d="m 276.83932,1298.8925 192.63981,-8.4522"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8747)" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8843)"
-       d="M 126.41823,859.26377 404.47974,805.89199"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.09087324;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8.36349284, 8.36349284;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8843)"
+       d="M 156.12743,820.7491 466.88695,794.90331"
        id="path8841"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-138.47262"
-       inkscape:transform-center-y="-25.116541" />
+       inkscape:transform-center-x="-154.59919"
+       inkscape:transform-center-y="-11.428012" />
     <g
        transform="matrix(2.7355479,0,0,-2.7355479,-638.24129,678.78627)"
        id="g10">
@@ -17021,7 +17021,7 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.86521006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:7.46084005, 7.46084005;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker8886)" />
     <g
        id="g9568"
-       transform="matrix(-1,0,0,1,405.81363,-18.482671)">
+       transform="matrix(-1.3135285,0,0,1.3135285,520.71065,-348.25441)">
       <g
          transform="matrix(-0.32579928,0,0,0.32579928,352.67784,614.70221)"
          id="g21180">

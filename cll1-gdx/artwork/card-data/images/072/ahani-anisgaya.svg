@@ -4460,9 +4460,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7422222"
-     inkscape:cx="300"
-     inkscape:cy="225"
+     inkscape:zoom="1.5895833"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -5029,7 +5029,7 @@
     </g>
     <g
        id="g4982"
-       transform="matrix(-1.0941281,0,0,1.0941281,141.7354,-1393.6692)">
+       transform="matrix(-1.3842145,0,0,1.3842145,152.26226,-2030.7632)">
       <path
          style="fill:#cfc0a1;fill-rule:evenodd;stroke:#000000;stroke-width:42.64099884;stroke-linecap:round;stroke-linejoin:round"
          inkscape:connector-curvature="0"
@@ -15349,12 +15349,12 @@
        inkscape:transform-center-x="-90.797225"
        inkscape:transform-center-y="-28.426197" />
     <path
-       inkscape:transform-center-y="1.6541352"
-       inkscape:transform-center-x="-53.368983"
+       inkscape:transform-center-y="2.0926957"
+       inkscape:transform-center-x="-67.518709"
        inkscape:connector-curvature="0"
        id="path9851"
-       d="m 120.48204,897.65729 106.55154,0.77323"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker10043)" />
+       d="m 125.374,868.06298 134.80156,0.97824"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.53026032;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:10.1210413, 10.1210413;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker10043)" />
     <path
        inkscape:transform-center-y="-14.415042"
        inkscape:transform-center-x="-94.044625"
@@ -15821,7 +15821,7 @@
          d="m 286.79,688.79 -0.36,-11.93 6.43,5.5 z" />
     </g>
     <g
-       transform="matrix(1.2246523,0,0,1.2246523,-1317.4607,-273.84901)"
+       transform="matrix(1.5493446,0,0,1.5493446,-1693.8107,-614.04497)"
        id="g21132">
       <path
          style="fill:#ab926c;fill-rule:evenodd;stroke:#000000;stroke-width:1.79010785;stroke-linecap:round;stroke-linejoin:round"
@@ -15950,7 +15950,7 @@
     </g>
     <g
        id="g21180"
-       transform="matrix(0.32579928,0,0,0.32579928,47.158254,588.61536)">
+       transform="matrix(0.4121785,0,0,0.4121785,32.609869,477.08472)">
       <g
          transform="matrix(2.5826693,0,0,2.5826693,-441.43973,-447.53268)"
          inkscape:label="Calque 1"
@@ -16112,7 +16112,7 @@
     </g>
     <g
        id="g4265"
-       transform="matrix(1.1209012,0,0,1.1209012,-1193.6126,676.64013)">
+       transform="matrix(1.4180859,0,0,1.4180859,-1537.1268,588.44751)">
       <path
          style="fill:#3f432a;stroke:#000000;stroke-width:1.34670734"
          inkscape:connector-curvature="0"

@@ -12,8 +12,8 @@
    viewBox="0 0 801 699"
    version="1.1"
    id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="Acorn3Lores.svg">
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="gule-Acorn3Lores.svg">
   <metadata
      id="metadata308">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,16 +76,16 @@
      inkscape:window-height="837"
      id="namedview304"
      showgrid="false"
-     inkscape:zoom="0.76680973"
-     inkscape:cx="500.625"
-     inkscape:cy="436.875"
+     inkscape:zoom="0.81866953"
+     inkscape:cx="534"
+     inkscape:cy="466"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <g
      id="g4436"
-     style="filter:url(#filter4588)">
+     style="">
     <path
        id="path4"
        d=" M 768.30 18.28 C 768.15 7.05 786.35 6.95 778.64 18.27 C 783.41 16.78 790.88 16.58 793.08 22.15 C 792.13 28.64 780.81 24.18 779.19 29.91 C 785.03 38.69 774.69 46.11 769.66 52.11 C 762.28 54.60 759.32 43.95 753.27 41.66 C 748.82 40.43 744.20 37.10 744.35 32.00 C 755.56 35.65 756.65 16.24 768.30 18.28 Z"

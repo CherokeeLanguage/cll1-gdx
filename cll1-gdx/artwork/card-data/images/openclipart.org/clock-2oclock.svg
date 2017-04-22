@@ -25,30 +25,6 @@
   <defs
      id="defs4">
     <filter
-       id="filter3957"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3959"
-         stdDeviation="5.2571429"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       id="filter3239"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3241"
-         stdDeviation="5.2985541"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       id="filter3249"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3251"
-         stdDeviation="5.2571429"
-         inkscape:collect="always" />
-    </filter>
-    <filter
        id="filter3371"
        inkscape:collect="always">
       <feGaussianBlur
@@ -193,13 +169,13 @@
      guidetolerance="10"
      pagecolor="#ffffff"
      gridtolerance="10000"
-     inkscape:zoom="8.2429102"
+     inkscape:zoom="1.9075"
      objecttolerance="10"
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="218.88645"
-     inkscape:cy="256.40125"
+     inkscape:cx="200"
+     inkscape:cy="200"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:pageopacity="0.0"
@@ -225,16 +201,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      transform="translate(-278.34 -412.89)">
-    <path
+    <circle
        id="path3243"
-       sodipodi:rx="262.85715"
-       sodipodi:ry="262.85715"
-       style="fill:#000000;fill-rule:evenodd;filter:url(#filter3249)"
-       sodipodi:type="arc"
-       d="M -222.85715,332.36218 A 262.85715,262.85715 0 0 1 -485.71429,595.21933 262.85715,262.85715 0 0 1 -748.57144,332.36218 262.85715,262.85715 0 0 1 -485.71429,69.505035 262.85715,262.85715 0 0 1 -222.85715,332.36218 Z"
+       style="fill:#000000;fill-rule:evenodd"
        transform="matrix(0.72853774,0,0,0.72853774,832.21483,373.78788)"
-       sodipodi:cy="332.36218"
-       sodipodi:cx="-485.71429" />
+       cx="-485.71429"
+       cy="332.36218"
+       r="262.85715" />
     <path
        id="path3951"
        sodipodi:rx="262.85715"
@@ -245,26 +218,20 @@
        transform="matrix(0.72853774,0,0,0.72853774,832.21483,367.75228)"
        sodipodi:cy="332.36218"
        sodipodi:cx="-485.71429" />
-    <path
+    <circle
        id="path3949"
-       sodipodi:rx="262.85715"
-       sodipodi:ry="262.85715"
-       style="fill:#000000;fill-rule:evenodd;filter:url(#filter3957)"
-       sodipodi:type="arc"
-       d="M -222.85715,332.36218 A 262.85715,262.85715 0 0 1 -485.71429,595.21933 262.85715,262.85715 0 0 1 -748.57144,332.36218 262.85715,262.85715 0 0 1 -485.71429,69.505035 262.85715,262.85715 0 0 1 -222.85715,332.36218 Z"
+       style="fill:#000000;fill-rule:evenodd"
        transform="matrix(0.67662102,0,0,0.67662102,807.00267,384.27424)"
-       sodipodi:cy="332.36218"
-       sodipodi:cx="-485.71429" />
-    <path
+       cx="-485.71429"
+       cy="332.36218"
+       r="262.85715" />
+    <circle
        id="path2451"
-       sodipodi:rx="262.85715"
-       sodipodi:ry="262.85715"
-       style="fill:none;stroke:url(#linearGradient3216);stroke-width:4.14109993;stroke-linecap:round;filter:url(#filter3239)"
-       sodipodi:type="arc"
-       d="M -222.85715,332.36218 A 262.85715,262.85715 0 0 1 -485.71429,595.21933 262.85715,262.85715 0 0 1 -748.57144,332.36218 262.85715,262.85715 0 0 1 -485.71429,69.505035 262.85715,262.85715 0 0 1 -222.85715,332.36218 Z"
+       style="fill:none;stroke:url(#linearGradient3216);stroke-width:4.14109993;stroke-linecap:round"
        transform="matrix(0.65490872,0,0,0.65490872,796.45028,391.49847)"
-       sodipodi:cy="332.36218"
-       sodipodi:cx="-485.71429" />
+       cx="-485.71429"
+       cy="332.36218"
+       r="262.85715" />
     <path
        id="path2383"
        sodipodi:rx="262.85715"

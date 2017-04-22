@@ -24,38 +24,6 @@
    height="100%">
   <defs
      id="defs4">
-    <filter
-       id="filter3957"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3959"
-         stdDeviation="5.2571429"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       id="filter3239"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3241"
-         stdDeviation="5.2985541"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       id="filter3249"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3251"
-         stdDeviation="5.2571429"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       id="filter3371"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3373"
-         stdDeviation="1.0463822"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        id="linearGradient2640"
        y2="332.36"
@@ -193,13 +161,13 @@
      guidetolerance="10"
      pagecolor="#ffffff"
      gridtolerance="10000"
-     inkscape:zoom="8.2429102"
+     inkscape:zoom="1.9075"
      objecttolerance="10"
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="218.88645"
-     inkscape:cy="226.74524"
+     inkscape:cx="200"
+     inkscape:cy="200"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:pageopacity="0.0"

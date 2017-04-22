@@ -4836,9 +4836,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.84"
-     inkscape:cx="342.02677"
-     inkscape:cy="297.64146"
+     inkscape:zoom="1.5895833"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -16423,7 +16423,7 @@
          d="m 286.79,688.79 -0.36,-11.93 6.43,5.5 z" />
     </g>
     <g
-       transform="matrix(1.2246523,0,0,1.2246523,-1231.2106,-272.33197)"
+       transform="matrix(1.4790265,0,0,1.4790265,-1491.5662,-538.63842)"
        id="g21132">
       <path
          style="fill:#ab926c;fill-rule:evenodd;stroke:#000000;stroke-width:1.79010785;stroke-linecap:round;stroke-linejoin:round"
@@ -16552,7 +16552,7 @@
     </g>
     <g
        id="g21180"
-       transform="matrix(-0.32579928,0,0,0.32579928,209.5729,583.55584)">
+       transform="matrix(-0.39347149,0,0,0.39347149,248.48442,495.02701)">
       <g
          transform="matrix(2.5826693,0,0,2.5826693,-441.43973,-447.53268)"
          inkscape:label="Calque 1"
@@ -16584,12 +16584,12 @@
            style="font-size:176.48799133px;line-height:1">. . .</tspan></text>
     </g>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker7440)"
-       d="M 200.81636,892.76241 364.37992,807.45903"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.60859764;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.43439065, 6.43439065;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker7440)"
+       d="M 242.68002,871.24206 377.50557,804.29748"
        id="path6578"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-83.017673"
-       inkscape:transform-center-y="-40.769408" />
+       inkscape:transform-center-x="-68.431526"
+       inkscape:transform-center-y="-31.995112" />
     <g
        id="g7632"
        transform="matrix(2.7355479,0,0,-2.7355479,-583.47939,684.73865)">

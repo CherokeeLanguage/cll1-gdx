@@ -3183,9 +3183,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.34197916"
-     inkscape:cx="627.31172"
-     inkscape:cy="524.07652"
+     inkscape:zoom="1.5895833"
+     inkscape:cx="320"
+     inkscape:cy="240"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -5122,7 +5122,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       style="filter:url(#filter4588)"
+       style=""
        id="g4436"
        transform="matrix(0.48627085,0,0,0.48627085,104.70659,655.02324)">
       <path
