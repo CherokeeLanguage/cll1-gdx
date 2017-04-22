@@ -1,4 +1,4 @@
-1.65 -
+1.65 - Vocabulary fixes for ᎤᏩᎧᎭ forms.
 1.64 - Fix incorrect English gloss for ᎯᏴᏫ.
 1.63 - Fix incorrect ᏱᏗᏣᎭ. (Ꮥ vs Ꮧ after Ᏹ).
 1.62 - Add missing "maybe" forms for Chapter 20. Now have 681 challenges.
