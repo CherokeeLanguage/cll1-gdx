@@ -1,161 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:ns1="http://sozi.baierouge.fr"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="svg2"
-    sodipodi:docname="Machovka_Axe_ok.svg"
-    inkscape:export-filename="/media/KINGSTON/inkscape/9.c/Matza/sekyra.png"
-    viewBox="0 0 567.32 452.51"
-    sodipodi:version="0.32"
-    inkscape:export-xdpi="90"
-    version="1.0"
-    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-    inkscape:export-ydpi="90"
-    inkscape:version="0.46"
-    sodipodi:docbase="/media/KINGSTON/inkscape/9.c/Matza"
-  >
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="axe-Machovka-Axe.svg"
+   inkscape:export-filename="/media/KINGSTON/inkscape/9.c/Matza/sekyra.png"
+   viewBox="0 0 567.32 452.51"
+   sodipodi:version="0.32"
+   inkscape:export-xdpi="90"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-ydpi="90"
+   inkscape:version="0.92.1 r15371"
+   width="605.14136"
+   height="482.67734">
+  <defs
+     id="defs10" />
   <sodipodi:namedview
-      id="base"
-      bordercolor="#666666"
-      inkscape:pageshadow="2"
-      guidetolerance="10.0"
-      pagecolor="#ffffff"
-      gridtolerance="10.0"
-      inkscape:zoom="0.46093946"
-      objecttolerance="10.0"
-      borderopacity="1.0"
-      inkscape:current-layer="svg2"
-      inkscape:cx="630.80474"
-      inkscape:cy="488.20769"
-      inkscape:window-y="54"
-      inkscape:window-x="66"
-      inkscape:window-width="1024"
-      showgrid="false"
-      inkscape:pageopacity="0.0"
-      inkscape:window-height="712"
-  />
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     guidetolerance="10.0"
+     pagecolor="#ffffff"
+     gridtolerance="10.0"
+     inkscape:zoom="0.46093946"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     inkscape:current-layer="svg2"
+     inkscape:cx="630.80474"
+     inkscape:cy="488.20769"
+     inkscape:window-y="54"
+     inkscape:window-x="66"
+     inkscape:window-width="1024"
+     showgrid="false"
+     inkscape:pageopacity="0.0"
+     inkscape:window-height="712" />
   <path
-      id="path1307"
-      sodipodi:nodetypes="cccscccccc"
-      style="fill-rule:evenodd;fill:#7c7c79"
-      d="m173.92 173.53l-99.518-69.04-74.402 122.73s43.721 38.35 74.402 56.76c30.678 18.41 66.728 39.88 66.728 39.88l6.14-61.36 3.83-45.25 7.67-30.69 8.44-13.03h6.71z"
-  />
+     id="path1307"
+     sodipodi:nodetypes="cccscccccc"
+     style="fill:#7c7c79;fill-rule:evenodd"
+     d="M 173.92,173.53 74.402,104.49 0,227.22 c 0,0 43.721,38.35 74.402,56.76 30.678,18.41 66.728,39.88 66.728,39.88 l 6.14,-61.36 3.83,-45.25 7.67,-30.69 8.44,-13.03 z"
+     inkscape:connector-curvature="0" />
   <path
-      id="path2038"
-      style="fill-rule:evenodd;fill:#1e1f24"
-      d="m70.567 102.96s38.353 36.05 72.863 54.46c34.52 18.41 35.29 19.94 35.29 19.94l10.74-3.07 19.17 7.67 163.38 136.53 39.88-63.66-172.58-144.97-23.78-26.844-6.13-13.039-76.7-64.431-62.133 97.414z"
-  />
+     id="path2038"
+     style="fill:#1e1f24;fill-rule:evenodd"
+     d="m 70.567,102.96 c 0,0 38.353,36.05 72.863,54.46 34.52,18.41 35.29,19.94 35.29,19.94 l 10.74,-3.07 19.17,7.67 163.38,136.53 39.88,-63.66 L 239.31,109.86 215.53,83.016 209.4,69.977 132.7,5.546 Z"
+     inkscape:connector-curvature="0" />
   <path
-      id="path2766"
-      sodipodi:nodetypes="czzzcc"
-      style="fill-rule:evenodd;fill:#7c7c79"
-      d="m202.88 64.991s4.89-12.081 0-16.683c-4.99-4.693-29.63-28.62-45.45-40.077-15.82-11.458-15.15-8.4374-17.83-5.7528-2.69 2.6846-3.84 6.5198-3.84 6.5198l67.12 55.993z"
-  />
+     id="path2766"
+     sodipodi:nodetypes="czzzcc"
+     style="fill:#7c7c79;fill-rule:evenodd"
+     d="m 202.88,64.991 c 0,0 4.89,-12.081 0,-16.683 C 197.89,43.615 173.25,19.688 157.43,8.231 141.61,-3.227 142.28,-0.2064 139.6,2.4782 136.91,5.1628 135.76,8.998 135.76,8.998 Z"
+     inkscape:connector-curvature="0" />
   <path
-      id="path3494"
-      sodipodi:nodetypes="ccczzzcczzzcc"
-      style="fill-rule:evenodd;fill:#e58732"
-      d="m372.33 318l39.32-62.92 155.12 133.43s2.98 1.08-4.88 10.84c-7.87 9.77-12.75 16.55-29.29 28.21s-20.34 12.2-36.88 18.44c-16.55 6.24-26.58 6.51-26.58 6.51l-7.59-2.17s1.08 0-2.17-11.93c-3.26-11.94-2.44-17.9-10.85-35.8s-7.59-17.9-22.78-35.8-37.97-35.79-37.97-35.79l-15.45-13.02z"
-  />
+     id="path3494"
+     sodipodi:nodetypes="ccczzzcczzzcc"
+     style="fill:#e58732;fill-rule:evenodd"
+     d="m 372.33,318 39.32,-62.92 155.12,133.43 c 0,0 2.98,1.08 -4.88,10.84 -7.87,9.77 -12.75,16.55 -29.29,28.21 -16.54,11.66 -20.34,12.2 -36.88,18.44 -16.55,6.24 -26.58,6.51 -26.58,6.51 l -7.59,-2.17 c 0,0 1.08,0 -2.17,-11.93 -3.26,-11.94 -2.44,-17.9 -10.85,-35.8 -8.41,-17.9 -7.59,-17.9 -22.78,-35.8 -15.19,-17.9 -37.97,-35.79 -37.97,-35.79 z"
+     inkscape:connector-curvature="0" />
   <metadata
-    >
-    <rdf:RDF
-      >
-      <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
           <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >Axe</dc:title
-        >
-        <dc:date
-          >2006-12-31T03:13:57</dc:date
-        >
-        <dc:description
-        />
-        <dc:source
-          >https://openclipart.org/detail/2591/axe-by-machovka</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >Machovka</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >axe</rdf:li
-            >
-            <rdf:li
-              >hatchet</rdf:li
-            >
-            <rdf:li
-              >tool</rdf:li
-            >
-            <rdf:li
-              >wood</rdf:li
-            >
-            <rdf:li
-              >work</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Axe</dc:title>
+        <dc:date>2006-12-31T03:13:57</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/2591/axe-by-machovka</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Machovka</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>axe</rdf:li>
+            <rdf:li>hatchet</rdf:li>
+            <rdf:li>tool</rdf:li>
+            <rdf:li>wood</rdf:li>
+            <rdf:li>work</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
       <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

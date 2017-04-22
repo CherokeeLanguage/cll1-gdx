@@ -9,22 +9,22 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="500"
-   height="500"
+   width="533.33331"
+   height="533.33331"
    viewBox="0 0 500.00001 500.00001"
    id="svg4297"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="tomato.svg">
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="tamahli-1454168849.svg">
   <defs
      id="defs4299">
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter4885"
-       x="-0.037860095"
+       x="-0.037860096"
        width="1.0757202"
-       y="-0.047156436"
+       y="-0.047156435"
        height="1.0943129">
       <feGaussianBlur
          inkscape:collect="always"
@@ -48,10 +48,10 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter4917"
-       x="-0.092590544"
+       x="-0.092590541"
        width="1.1851811"
-       y="-0.14043153"
-       height="1.2808631">
+       y="-0.14043152"
+       height="1.280863">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="3.8220487"
@@ -85,7 +85,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

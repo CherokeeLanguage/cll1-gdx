@@ -13,7 +13,9 @@
    sodipodi:docname="halo+cloud.svg"
    viewBox="0 0 195.57 172.59"
    version="1.1"
-   inkscape:version="0.91 r13725">
+   inkscape:version="0.92.1 r15371"
+   width="208.608"
+   height="184.09599">
   <defs
      id="defs6154">
     <linearGradient
@@ -29,11 +31,11 @@
     </linearGradient>
     <filter
        id="filter3485-5"
-       color-interpolation-filters="sRGB"
        width="1.2315"
-       y="-.12456"
-       x="-.11576"
-       height="1.2491">
+       y="-0.12456"
+       x="-0.11576"
+       height="1.2491"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur3487-7"
          stdDeviation="6.0922004"
@@ -43,10 +45,10 @@
        id="filter5309"
        height="1.7816"
        width="1.2628"
-       color-interpolation-filters="sRGB"
-       y="-.39082"
-       x="-.13138"
-       inkscape:collect="always">
+       y="-0.39082"
+       x="-0.13138001"
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur5311"
          stdDeviation="3.0125679"
@@ -54,11 +56,11 @@
     </filter>
     <filter
        id="filter3485-5-0"
-       color-interpolation-filters="sRGB"
        width="1.2315"
-       y="-.12456"
-       x="-.11576"
-       height="1.2491">
+       y="-0.12456"
+       x="-0.11576"
+       height="1.2491"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur3487-7-4"
          stdDeviation="6.0922004"
@@ -66,10 +68,10 @@
     </filter>
     <linearGradient
        id="linearGradient6713"
-       y2="778.71"
+       y2="778.71002"
        gradientUnits="userSpaceOnUse"
-       x2="318.52"
-       y1="838.29"
+       x2="318.51999"
+       y1="838.28998"
        x1="317.16"
        inkscape:collect="always">
       <stop
@@ -83,10 +85,10 @@
     </linearGradient>
     <linearGradient
        id="linearGradient6783"
-       y2="762.6"
+       y2="762.59998"
        gradientUnits="userSpaceOnUse"
-       x2="320.32"
-       y1="799.96"
+       x2="320.32001"
+       y1="799.96002"
        x1="316.03"
        inkscape:collect="always">
       <stop
@@ -127,19 +129,19 @@
      id="layer1"
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     transform="translate(-232.88 -591.81)">
+     transform="translate(-232.88,-591.81)">
     <g
        id="g5313"
        transform="matrix(2.5874374,0,0,2.5874374,-517.88262,-945.52608)">
       <path
          id="path5281-7"
          d="m 329.41,604.66 c -7.1203,0 -13.56,0.79778 -18.406,2.125 -2.423,0.66361 -4.4617,1.4322 -6.0625,2.4688 -1.6008,1.0366 -3.0625,2.5457 -3.0625,4.6562 0,2.1105 1.4617,3.6197 3.0625,4.6562 1.6008,1.0366 3.6396,1.8051 6.0625,2.4688 4.8459,1.3272 11.286,2.125 18.406,2.125 7.1203,0 13.56,-0.79778 18.406,-2.125 2.423,-0.66361 4.4305,-1.4322 6.0312,-2.4688 1.6008,-1.0366 3.0625,-2.5457 3.0625,-4.6562 0,-2.1105 -1.4617,-3.6197 -3.0625,-4.6562 -1.6008,-1.0366 -3.6083,-1.8051 -6.0312,-2.4688 -4.8459,-1.3272 -11.286,-2.125 -18.406,-2.125 z m 0,4.7188 c 6.7725,0 12.898,0.77117 17.156,1.9375 2.1292,0.58317 3.7737,1.263 4.7188,1.875 0.94506,0.61196 0.90625,0.92677 0.90625,0.71875 0,-0.20802 0.0388,0.10679 -0.90625,0.71875 -0.94506,0.61196 -2.5895,1.2918 -4.7188,1.875 -4.2585,1.1663 -10.384,1.9375 -17.156,1.9375 -6.7725,0 -12.929,-0.77117 -17.188,-1.9375 -2.1292,-0.58317 -3.7737,-1.263 -4.7188,-1.875 -0.94506,-0.61196 -0.90625,-0.92677 -0.90625,-0.71875 0,0.20802 -0.0388,-0.10679 0.90625,-0.71875 0.94506,-0.61196 2.5895,-1.2918 4.7188,-1.875 4.2585,-1.1663 10.415,-1.9375 17.188,-1.9375 z"
-         style="color:#000000;text-indent:0;text-transform:none;block-progression:tb;fill:#f2e883;filter:url(#filter5309)"
+         style="color:#000000;text-indent:0;text-transform:none;fill:#f2e883;filter:url(#filter5309)"
          inkscape:connector-curvature="0" />
       <path
          id="path5281"
          d="m 328.77,605.22 c -7.1203,0 -13.56,0.79778 -18.406,2.125 -2.423,0.66361 -4.4617,1.4322 -6.0625,2.4688 -1.6008,1.0366 -3.0625,2.5457 -3.0625,4.6562 0,2.1105 1.4617,3.6197 3.0625,4.6562 1.6008,1.0366 3.6396,1.8051 6.0625,2.4688 4.8459,1.3272 11.286,2.125 18.406,2.125 7.1203,0 13.56,-0.79778 18.406,-2.125 2.423,-0.66361 4.4305,-1.4322 6.0312,-2.4688 1.6008,-1.0366 3.0625,-2.5457 3.0625,-4.6562 0,-2.1105 -1.4617,-3.6197 -3.0625,-4.6562 -1.6008,-1.0366 -3.6083,-1.8051 -6.0312,-2.4688 -4.8459,-1.3272 -11.286,-2.125 -18.406,-2.125 z m 0,4.7188 c 6.7725,0 12.898,0.77117 17.156,1.9375 2.1292,0.58317 3.7737,1.263 4.7188,1.875 0.94506,0.61196 0.90625,0.92677 0.90625,0.71875 0,-0.20802 0.0388,0.10679 -0.90625,0.71875 -0.94506,0.61196 -2.5895,1.2918 -4.7188,1.875 -4.2585,1.1663 -10.384,1.9375 -17.156,1.9375 -6.7725,0 -12.929,-0.77117 -17.188,-1.9375 -2.1292,-0.58317 -3.7737,-1.263 -4.7188,-1.875 -0.94506,-0.61196 -0.90625,-0.92677 -0.90625,-0.71875 0,0.20802 -0.0388,-0.10679 0.90625,-0.71875 0.94506,-0.61196 2.5895,-1.2918 4.7188,-1.875 4.2585,-1.1663 10.415,-1.9375 17.188,-1.9375 z"
-         style="color:#000000;text-indent:0;text-transform:none;block-progression:tb;fill:#ebdb3d;stroke:#6d661a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+         style="color:#000000;text-indent:0;text-transform:none;fill:#ebdb3d;stroke:#6d661a;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
          inkscape:connector-curvature="0" />
     </g>
     <g
@@ -225,7 +227,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2013-02-11T10:31:29</dc:date>
         <dc:description>All penguins go to heaven, of course ;-)</dc:description>
         <dc:source>https://openclipart.org/detail/175017/penguin-in-heaven-by-moini-175017</dc:source>

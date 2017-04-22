@@ -10,8 +10,10 @@
    id="svg2932"
    viewBox="0 0 64 64"
    version="1.1"
-   inkscape:version="0.91+devel r"
-   sodipodi:docname="book-pack.svg">
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="digohweli-1415799000.svg"
+   width="68.26667"
+   height="68.26667">
   <defs
      id="defs18" />
   <sodipodi:namedview
@@ -43,28 +45,28 @@
       <path
          style="fill:#505050"
          inkscape:connector-curvature="0"
-         d="m 18,54 31,0 0,-43 -31,0 0,43 z"
+         d="M 18,54 H 49 V 11 H 18 Z"
          id="path2948" />
       <path
          style="fill:#008a00"
          inkscape:connector-curvature="0"
-         d="m 14,6 0,43 c 0,3 3,5 5,5 L 54,54 54,1 19,1 c -3,0 -5,2 -5,5 z"
+         d="m 14,6 v 43 c 0,3 3,5 5,5 H 54 V 1 H 19 c -3,0 -5,2 -5,5 z"
          id="path3978" />
       <path
          style="fill:#dddddd"
          inkscape:connector-curvature="0"
-         d="m 16,48 c 0,2 1,4 4,4 l 32,0 0,-8 -32,0 c -3,0 -4,2 -4,4 z"
+         d="m 16,48 c 0,2 1,4 4,4 H 52 V 44 H 20 c -3,0 -4,2 -4,4 z"
          id="path3980" />
       <path
          style="fill:#60a917"
          inkscape:connector-curvature="0"
-         d="M 23,44 54,44 54,1 23,1 23,44 Z"
+         d="M 23,44 H 54 V 1 H 23 Z"
          id="path3982" />
     </g>
     <path
        inkscape:connector-curvature="0"
        id="path3989"
-       d="m 11.363333,8.5698526 c -2.3274671,0 -4.2578808,0.6861125 -5.8452918,1.7526874 l 0,12.669299 c 1.6640647,-1.716542 3.6342947,-2.902396 5.8452918,-2.902396 l 40.318565,0 0,-11.5195904 -40.318565,0 z"
+       d="m 11.363333,8.5698526 c -2.3274671,0 -4.2578808,0.6861125 -5.8452918,1.7526874 V 22.991839 C 7.1821059,21.275297 9.1523359,20.089443 11.363333,20.089443 H 51.681898 V 8.5698526 Z"
        style="fill:#7a3b3f" />
   </g>
   <metadata

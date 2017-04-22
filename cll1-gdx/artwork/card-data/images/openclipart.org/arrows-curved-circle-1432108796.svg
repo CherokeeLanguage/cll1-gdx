@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="16"
-   height="16"
+   width="17.066668"
+   height="17.066668"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r"
+   inkscape:version="0.92.1 r15371"
    viewBox="0 0 16 16"
-   sodipodi:docname="cycle.svg">
+   sodipodi:docname="arrows-curved-circle-1432108796.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -43,8 +43,10 @@
     <inkscape:grid
        type="xygrid"
        id="grid8584"
-       spacingx="2px"
-       spacingy="2px" />
+       spacingx="1.9999999"
+       spacingy="1.9999999"
+       originx="0"
+       originy="0" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -54,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,9 +67,10 @@
      transform="translate(0,-1036.3622)">
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 8.0878906 2 A 6 6 0 0 0 3.7578125 3.7578125 A 6 6 0 0 0 3.7578125 12.242188 L 3.171875 12.828125 L 6 12.828125 L 6 10 L 5.28125 10.71875 A 3.84375 3.84375 0 0 1 5.28125 5.28125 A 3.84375 3.84375 0 0 1 9.8222656 4.6171875 L 9.8222656 3.171875 A 0.17817269 0.17817269 0 0 1 9.9824219 2.9941406 A 0.17817269 0.17817269 0 0 1 10 2.9941406 L 11.304688 2.9941406 A 6 6 0 0 0 8.0878906 2 z "
+       d="m 8.0878906,2 a 6,6 0 0 0 -4.3300781,1.7578125 6,6 0 0 0 0,8.4843755 L 3.171875,12.828125 H 6 V 10 l -0.71875,0.71875 a 3.84375,3.84375 0 0 1 0,-5.4375 3.84375,3.84375 0 0 1 4.5410156,-0.6640625 V 3.171875 a 0.17817269,0.17817269 0 0 1 0.1601563,-0.1777344 0.17817269,0.17817269 0 0 1 0.017578,0 h 1.304688 A 6,6 0 0 0 8.0878906,2 Z"
        transform="translate(0,1036.3622)"
-       id="path8586" />
+       id="path8586"
+       inkscape:connector-curvature="0" />
     <use
        x="0"
        y="0"
@@ -77,6 +80,6 @@
        inkscape:transform-center-y="0.58552377"
        width="100%"
        height="100%"
-       transform="matrix(-1,0,0,-1,15.99039,2088.723)" />
+       transform="rotate(180,7.995195,1044.3615)" />
   </g>
 </svg>

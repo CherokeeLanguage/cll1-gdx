@@ -1,283 +1,220 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:ns1="http://sozi.baierouge.fr"
-    id="svg2"
-    sodipodi:docname="eco_systemedic_four_leaves.svg"
-    viewBox="0 0 610 610"
-    version="1.1"
-    inkscape:version="0.47 r22583"
-  >
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="leaves-eco-systemedic-four-leaves.svg"
+   viewBox="0 0 610 610"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   width="650.66669"
+   height="650.66669">
+  <defs
+     id="defs31" />
   <sodipodi:namedview
-      id="base"
-      inkscape:zoom="0.70000002"
-      borderopacity="1.0"
-      inkscape:current-layer="layer4"
-      inkscape:cx="-256.71188"
-      guidetolerance="10"
-      inkscape:window-maximized="0"
-      showgrid="true"
-      inkscape:guide-bbox="true"
-      showguides="true"
-      bordercolor="#666666"
-      inkscape:window-x="0"
-      inkscape:window-y="0"
-      objecttolerance="1"
-      inkscape:window-width="1680"
-      inkscape:pageopacity="0.0"
-      inkscape:pageshadow="2"
-      pagecolor="#ffffff"
-      gridtolerance="3"
-      inkscape:cy="307.96481"
-      inkscape:document-units="px"
-      inkscape:window-height="1025"
-    >
+     id="base"
+     inkscape:zoom="0.70000002"
+     borderopacity="1.0"
+     inkscape:current-layer="layer4"
+     inkscape:cx="-256.71188"
+     guidetolerance="10"
+     inkscape:window-maximized="0"
+     showgrid="true"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     bordercolor="#666666"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     objecttolerance="1"
+     inkscape:window-width="1680"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     pagecolor="#ffffff"
+     gridtolerance="3"
+     inkscape:cy="307.96481"
+     inkscape:document-units="px"
+     inkscape:window-height="1025">
     <sodipodi:guide
-        id="guide4755"
-        position="5,715"
-        orientation="1,0"
-    />
+       id="guide4755"
+       position="0.0081967211,1.1721311"
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide4757"
-        position="605,835"
-        orientation="1,0"
-    />
+       id="guide4757"
+       position="0.99180325,1.3688524"
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide4761"
-        position="889.89361,890.40123"
-        orientation="0,1"
-    />
+       id="guide4761"
+       position="1.4588419,1.4596741"
+       orientation="0,1"
+       inkscape:locked="false" />
     <inkscape:grid
-        id="grid5833"
-        enabled="true"
-        visible="true"
-        snapvisiblegridlinesonly="true"
-        type="xygrid"
-        empspacing="50"
-    />
+       id="grid5833"
+       enabled="true"
+       visible="true"
+       snapvisiblegridlinesonly="true"
+       type="xygrid"
+       empspacing="50"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1" />
     <sodipodi:guide
-        id="guide5835"
-        position="300,708.57141"
-        orientation="1,0"
-    />
+       id="guide5835"
+       position="0.49180326,1.1615924"
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5842"
-        position="405.71427,300"
-        orientation="0,1"
-    />
+       id="guide5842"
+       position="0.66510534,0.49180326"
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5844"
-        position="505,605"
-        orientation="0,1"
-    />
+       id="guide5844"
+       position="0.82786883,0.99180325"
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5846"
-        position="405,5"
-        orientation="0,1"
-    />
+       id="guide5846"
+       position="0.66393441,0.0081967211"
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5848"
-        position="50,200"
-        orientation="1,0"
-    />
+       id="guide5848"
+       position="0.081967211,0.32786884"
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5850"
-        position="400,550"
-        orientation="0,1"
-    />
+       id="guide5850"
+       position="0.65573768,0.90163932"
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5852"
-        position="550,250"
-        orientation="1,0"
-    />
+       id="guide5852"
+       position="0.90163932,0.40983605"
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
-        id="guide5854"
-        position="450,50"
-        orientation="0,1"
-    />
-  </sodipodi:namedview
-  >
+       id="guide5854"
+       position="0.73770489,0.081967211"
+       orientation="0,1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <g
-      id="layer4"
-      inkscape:label="square"
-      inkscape:groupmode="layer"
-      transform="translate(5 -397.36)"
-    >
+     id="layer4"
+     inkscape:label="square"
+     inkscape:groupmode="layer"
+     transform="translate(5,-397.36)">
     <g
-        id="g3929"
-      >
+       id="g3929">
       <g
-          id="g3173"
-        >
+         id="g3173">
         <rect
-            id="rect5840"
-            style="stroke-linejoin:round;stroke:#44aa00;stroke-width:10;fill:none"
-            ry="1.5381"
-            height="600"
-            width="600"
-            y="402.36"
-            x="0"
-        />
+           id="rect5840"
+           style="fill:none;stroke:#44aa00;stroke-width:10;stroke-linejoin:round"
+           ry="1.5381"
+           height="600"
+           width="600"
+           y="402.35999"
+           x="0" />
         <g
-            id="g4794"
-            transform="matrix(2.6157 0 0 2.4769 -2305.5 -870.33)"
-          >
+           id="g4794"
+           transform="matrix(2.6157,0,0,2.4769,-2305.5,-870.33)">
           <g
-              id="g5462"
-              transform="matrix(2.0123 0 0 2.0123 263.43 135.88)"
-            >
+             id="g5462"
+             transform="matrix(2.0123,0,0,2.0123,263.43,135.88)">
             <path
-                id="path5464"
-                sodipodi:nodetypes="cscc"
-                style="fill:#44aa00"
-                d="m364.54 244.44s-7.4761-17.297 23.214-28.571c17.5-6.4286 17.143-16.429 17.143-16.429s3.5714 45-26.429 49.286c0 0-8.1318 1.8054-12.362-1.0988 0 0-4.23 8.6494-3.6618 12.816l-3.9143 0.1894s6.566-17.236 9.5964-19.256l-3.5871 3.0634z"
-            />
-          </g
-          >
+               id="path5464"
+               sodipodi:nodetypes="cscc"
+               style="fill:#44aa00"
+               d="m 364.54,244.44 c 0,0 -7.4761,-17.297 23.214,-28.571 17.5,-6.4286 17.143,-16.429 17.143,-16.429 0,0 3.5714,45 -26.429,49.286 0,0 -8.1318,1.8054 -12.362,-1.0988 0,0 -4.23,8.6494 -3.6618,12.816 l -3.9143,0.1894 c 0,0 6.566,-17.236 9.5964,-19.256 l -3.5871,3.0634 z"
+               inkscape:connector-curvature="0" />
+          </g>
           <g
-              id="g5468"
-              transform="matrix(1.4247 0 0 1.4247 474.13 363.35)"
-            >
+             id="g5468"
+             transform="matrix(1.4247,0,0,1.4247,474.13,363.35)">
             <path
-                id="path5470"
-                sodipodi:nodetypes="cscc"
-                style="fill:#44aa00"
-                d="m364.54 244.44s-7.4761-17.297 23.214-28.571c17.5-6.4286 17.143-16.429 17.143-16.429s3.5714 45-26.429 49.286c0 0-8.1318 1.8054-12.362-1.0988 0 0-4.23 8.6494-3.6618 12.816l-3.9143 0.1894s6.566-17.236 9.5964-19.256l-3.5871 3.0634z"
-            />
-          </g
-          >
+               id="path5470"
+               sodipodi:nodetypes="cscc"
+               style="fill:#44aa00"
+               d="m 364.54,244.44 c 0,0 -7.4761,-17.297 23.214,-28.571 17.5,-6.4286 17.143,-16.429 17.143,-16.429 0,0 3.5714,45 -26.429,49.286 0,0 -8.1318,1.8054 -12.362,-1.0988 0,0 -4.23,8.6494 -3.6618,12.816 l -3.9143,0.1894 c 0,0 6.566,-17.236 9.5964,-19.256 l -3.5871,3.0634 z"
+               inkscape:connector-curvature="0" />
+          </g>
           <g
-              id="g5474"
-              transform="matrix(1.1153 0 0 1.1153 510.72 425.04)"
-            >
+             id="g5474"
+             transform="matrix(1.1153,0,0,1.1153,510.72,425.04)">
             <path
-                id="path5476"
-                sodipodi:nodetypes="cscc"
-                style="fill:#44aa00"
-                d="m364.54 244.44s-7.4761-17.297 23.214-28.571c17.5-6.4286 17.143-16.429 17.143-16.429s3.5714 45-26.429 49.286c0 0-8.1318 1.8054-12.362-1.0988 0 0-4.23 8.6494-3.6618 12.816l-3.9143 0.1894s6.566-17.236 9.5964-19.256l-3.5871 3.0634z"
-            />
-          </g
-          >
+               id="path5476"
+               sodipodi:nodetypes="cscc"
+               style="fill:#44aa00"
+               d="m 364.54,244.44 c 0,0 -7.4761,-17.297 23.214,-28.571 17.5,-6.4286 17.143,-16.429 17.143,-16.429 0,0 3.5714,45 -26.429,49.286 0,0 -8.1318,1.8054 -12.362,-1.0988 0,0 -4.23,8.6494 -3.6618,12.816 l -3.9143,0.1894 c 0,0 6.566,-17.236 9.5964,-19.256 l -3.5871,3.0634 z"
+               inkscape:connector-curvature="0" />
+          </g>
           <g
-              id="g5480"
-              transform="matrix(1.6638 0 0 1.6638 309.28 224.56)"
-            >
+             id="g5480"
+             transform="matrix(1.6638,0,0,1.6638,309.28,224.56)">
             <path
-                id="path5482"
-                sodipodi:nodetypes="cscc"
-                style="fill:#44aa00"
-                d="m364.54 244.44s-7.4761-17.297 23.214-28.571c17.5-6.4286 17.143-16.429 17.143-16.429s3.5714 45-26.429 49.286c0 0-8.1318 1.8054-12.362-1.0988 0 0-4.23 8.6494-3.6618 12.816l-3.9143 0.1894s6.566-17.236 9.5964-19.256l-3.5871 3.0634z"
-            />
-          </g
-          >
-        </g
-        >
-      </g
-      >
-    </g
-    >
-  </g
-  >
+               id="path5482"
+               sodipodi:nodetypes="cscc"
+               style="fill:#44aa00"
+               d="m 364.54,244.44 c 0,0 -7.4761,-17.297 23.214,-28.571 17.5,-6.4286 17.143,-16.429 17.143,-16.429 0,0 3.5714,45 -26.429,49.286 0,0 -8.1318,1.8054 -12.362,-1.0988 0,0 -4.23,8.6494 -3.6618,12.816 l -3.9143,0.1894 c 0,0 6.566,-17.236 9.5964,-19.256 l -3.5871,3.0634 z"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
   <metadata
-    >
-    <rdf:RDF
-      >
-      <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
           <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >eco green leaves icon</dc:title
-        >
-        <dc:date
-          >2012-05-21T16:57:58</dc:date
-        >
-        <dc:description
-        />
-        <dc:source
-          >https://openclipart.org/detail/170143/eco-leaves-icon-by-cybergedeon</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >dominiquechappard</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >ecology</rdf:li
-            >
-            <rdf:li
-              >green</rdf:li
-            >
-            <rdf:li
-              >icon</rdf:li
-            >
-            <rdf:li
-              >leaf</rdf:li
-            >
-            <rdf:li
-              >leaves</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>eco green leaves icon</dc:title>
+        <dc:date>2012-05-21T16:57:58</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/170143/eco-leaves-icon-by-cybergedeon</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>dominiquechappard</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>ecology</rdf:li>
+            <rdf:li>green</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>leaf</rdf:li>
+            <rdf:li>leaves</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
       <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

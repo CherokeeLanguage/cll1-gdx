@@ -10,8 +10,10 @@
    id="svg6591"
    viewBox="0 0 389.13 312.25"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="mix-and-match-characters-expressions-B.svg">
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="mix-and-match-characters-expressions-B.svg"
+   width="415.07199"
+   height="333.06668">
   <defs
      id="defs126" />
   <sodipodi:namedview
@@ -79,12 +81,12 @@
   <path
      style="fill:#ffffff;stroke:#000000;stroke-width:1.56877506;stroke-linecap:round;stroke-linejoin:round"
      inkscape:connector-curvature="0"
-     d="m 28.738229,111.83509 c 0,2.11335 -2.177062,3.82652 -4.862368,3.82652 -2.685531,0 -4.862369,-1.71321 -4.862369,-3.82652 l 0,0"
+     d="m 28.738229,111.83509 c 0,2.11335 -2.177062,3.82652 -4.862368,3.82652 -2.685531,0 -4.862369,-1.71321 -4.862369,-3.82652 v 0"
      id="path3864-0-2-3-9-8" />
   <path
      style="fill:#ffffff;stroke:#000000;stroke-width:1.64216423;stroke-linecap:round;stroke-linejoin:round"
      inkscape:connector-curvature="0"
-     d="m 54.187748,111.04581 c 0,2.28329 -2.207967,4.13422 -4.931393,4.13422 -2.723653,0 -4.931393,-1.85098 -4.931393,-4.13422 l 0,0"
+     d="m 54.187748,111.04581 c 0,2.28329 -2.207967,4.13422 -4.931393,4.13422 -2.723653,0 -4.931393,-1.85098 -4.931393,-4.13422 v 0"
      id="path3864-0-0-1-4-7-4" />
   <path
      style="fill:#ffffff;stroke:#000000;stroke-width:1.94340003;stroke-linecap:round;stroke-linejoin:round"
@@ -173,7 +175,7 @@
     <path
        style="fill:#b66b6f;stroke:#000000;stroke-width:2.32189989;stroke-linecap:round;stroke-linejoin:bevel"
        inkscape:connector-curvature="0"
-       d="M 0,0 C 0,0 -7.141,-24.844 -26.332,-24.844 -45.523,-24.844 -53.557,0 -53.557,0 L 0,0 Z"
+       d="M 0,0 C 0,0 -7.141,-24.844 -26.332,-24.844 -45.523,-24.844 -53.557,0 -53.557,0 Z"
        id="path590-4-2" />
   </g>
   <g
@@ -213,7 +215,7 @@
       <path
          style="fill:#b66b6f;stroke:#000000;stroke-width:2.32189989;stroke-linecap:round;stroke-linejoin:bevel"
          inkscape:connector-curvature="0"
-         d="M 0,0 C 0,0 -7.141,-24.844 -26.332,-24.844 -45.523,-24.844 -53.557,0 -53.557,0 L 0,0 Z"
+         d="M 0,0 C 0,0 -7.141,-24.844 -26.332,-24.844 -45.523,-24.844 -53.557,0 -53.557,0 Z"
          id="path590-4-2-7" />
     </g>
     <g
@@ -251,7 +253,7 @@
      rx="33.5"
      id="rect4240-5-1-0-4-9-3-9" />
   <g
-     style="stroke:#000000;stroke-width:1.37479997;fill:#b66b6f;fill-opacity:1"
+     style="fill:#b66b6f;fill-opacity:1;stroke:#000000;stroke-width:1.37479997"
      transform="matrix(1.1165,0,0,0.4367,-375.704,-250.42)"
      id="g5299-9-1-0">
     <g
@@ -259,7 +261,7 @@
        id="g460-96-3-5"
        style="fill:#b66b6f;fill-opacity:1">
       <path
-         style="fill:#b66b6f;stroke:#000000;stroke-width:1.37479997;fill-opacity:1"
+         style="fill:#b66b6f;fill-opacity:1;stroke:#000000;stroke-width:1.37479997"
          inkscape:connector-curvature="0"
          d="m 0,0 c 0,-2.464 -1.999,-4.461 -4.463,-4.461 -2.463,0 -4.461,1.997 -4.461,4.461 0,2.464 1.998,4.462 4.461,4.462 C -1.999,4.462 0,2.464 0,0"
          id="path462-9-3-5" />
@@ -269,7 +271,7 @@
        id="g464-2-8-0"
        style="fill:#b66b6f;fill-opacity:1">
       <path
-         style="fill:#b66b6f;stroke:#000000;stroke-width:1.37479997;fill-opacity:1"
+         style="fill:#b66b6f;fill-opacity:1;stroke:#000000;stroke-width:1.37479997"
          inkscape:connector-curvature="0"
          d="m 0,0 c 0,-2.464 -1.999,-4.461 -4.463,-4.461 -2.463,0 -4.461,1.997 -4.461,4.461 0,2.464 1.998,4.462 4.461,4.462 C -1.999,4.462 0,2.464 0,0 Z"
          id="path466-0-7-2" />
@@ -302,7 +304,7 @@
      id="rect4240-5-1-0-4-9-3-9-8" />
   <g
      id="g4464"
-     transform="matrix(0.98415997,-0.17728272,0.17728272,0.98415997,-1.0230448,65.43341)">
+     transform="rotate(-10.211526,365.65601,38.441688)">
     <g
        id="g5299-9-1-0-2"
        transform="matrix(1.1165,0,0,0.4367,-266.824,-251.52)"
@@ -384,7 +386,7 @@
   <path
      style="fill:none;stroke:#000000;stroke-width:1.72860003;stroke-linecap:round;stroke-linejoin:round"
      inkscape:connector-curvature="0"
-     d="m 251.036,127.24 6.506,0"
+     d="m 251.036,127.24 h 6.506"
      id="path3831-18" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
@@ -468,7 +470,7 @@
   <path
      style="fill:none;stroke:#000000;stroke-width:1.68570006;stroke-linecap:round;stroke-linejoin:round"
      inkscape:connector-curvature="0"
-     d="m 357.166,127.83 6.1713,0"
+     d="m 357.166,127.83 h 6.1713"
      id="path3831-18-3" />
   <path
      style="fill:none;stroke:#000000;stroke-width:1.95039999;stroke-linecap:round;stroke-linejoin:round"
@@ -617,7 +619,7 @@
   <path
      style="fill:#ffffff;stroke:#000000;stroke-width:1.72860003;stroke-linecap:round;stroke-linejoin:round"
      inkscape:connector-curvature="0"
-     d="m 32.5,49.99 6.506,0"
+     d="m 32.5,49.99 h 6.506"
      id="path3831-2-0-3-22-6-5-6" />
   <g
      transform="matrix(0.65353,0,0,-0.65353,25.585,37.83)"
@@ -688,7 +690,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2013-10-06T11:55:18</dc:date>
         <dc:description>character set - expressions</dc:description>
         <dc:source>https://openclipart.org/detail/184599/mix-and-match-facial-expressions-by-anarres-184599</dc:source>

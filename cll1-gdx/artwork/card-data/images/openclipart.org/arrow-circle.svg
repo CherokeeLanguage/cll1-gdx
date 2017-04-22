@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="277.99997"
-   height="278"
+   width="296.53329"
+   height="296.53333"
    viewBox="0 0 277.99999 277.99999"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="arrow-circle.svg"
    inkscape:export-filename="/home/algot/Documents/runeman.org/clipart/arrow-circle.png"
    inkscape:export-xdpi="48.561157"
@@ -50,7 +50,9 @@
        type="xygrid"
        id="grid3341"
        originx="-10.125685"
-       originy="-423.00087" />
+       originy="-423.00087"
+       spacingx="1"
+       spacingy="1" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
