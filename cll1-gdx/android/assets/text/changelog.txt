@@ -1,3 +1,4 @@
+1.66 - Fix app name and app icon.
 1.65 - Vocabulary fixes for ᎤᏩᎧᎭ forms.
 1.64 - Fix incorrect English gloss for ᎯᏴᏫ.
 1.63 - Fix incorrect ᏱᏗᏣᎭ. (Ꮥ vs Ꮧ after Ᏹ).
