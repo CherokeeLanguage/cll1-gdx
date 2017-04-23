@@ -18,7 +18,7 @@ public class DesktopLauncher {
 		config.foregroundFPS = 30;
 		config.initialBackgroundColor = Color.BLACK;
 		config.resizable = true;
-		config.title = "CLL2EV1 - Cherokee Language Lessons 2nd Edition Volume 1";
+		config.title = "CLL1 - Cherokee Language Lessons 1";
 		config.useHDPI = true;
 		config.vSyncEnabled = false;
 		config.x = -1;
