@@ -253,7 +253,11 @@ public class LearningSession extends AbstractScreen implements Screen {
 		Table tblText = new Table(skin);
 		tblText.defaults().expand().fill();
 		Label text = new Label(activeCardData.text, skin);
-		text.setFontScale(1.5f);
+		if (activeCardData.text.length()<12) {
+			text.setFontScale(1.5f); 
+		} else {
+			text.setFontScale(1f);
+		}
 		text.setWrap(true);
 		text.setAlignment(Align.center);
 		tblText.add(text);
@@ -796,7 +800,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	protected boolean onBack() {
 		userPause();
 		pausedStage.getRoot().clearChildren();
-		Dialog cancelSession = new Dialog("CANCEL SESSION?", skin) {
+		Dialog cancelSession = new Dialog("[PAUSED] CANCEL SESSION?", skin) {
 			@Override
 			protected void result(Object object) {
 				if ("YES".equals(object)) {

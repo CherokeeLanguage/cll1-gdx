@@ -19,7 +19,13 @@ public class CardData implements ICardData {
 	private List<String> randomAudioFiles = new ArrayList<String>();
 	private List<String> randomImageFiles = new ArrayList<String>();
 	private List<String> randomWrongImageFiles = new ArrayList<String>();
+	/**
+	 * Syllabary Text
+	 */
 	public String text;
+	/**
+	 * English Gloss
+	 */
 	protected String englishGloss;
 
 	public String getEnglishGloss() {
