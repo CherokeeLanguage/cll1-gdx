@@ -129,7 +129,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	}
 
 	private Action actionUpdateTimeLeft() {
-		return Actions.sequence(Actions.delay(.1f), Actions.run(new Runnable() {
+		return Actions.sequence(Actions.delay(.15f), Actions.run(new Runnable() {
 			@Override
 			public void run() {
 				stage.addAction(actionUpdateTimeLeft());
@@ -352,6 +352,14 @@ public class LearningSession extends AbstractScreen implements Screen {
 		txt.append("Proficiency: ");
 		txt.append(stats.proficiency);
 		txt.append("%");
+		
+		int chapter = 0;
+		for (ICard<CardData> card: activeDeck.getCards()) {
+			chapter=Math.max(chapter, card.getData().chapter);
+		}
+		txt.append("\n");
+		txt.append("Book Chapter: ");
+		txt.append(chapter/10);
 
 		Table contentTable = finalStats.getContentTable();
 		contentTable.row();

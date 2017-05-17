@@ -41,7 +41,9 @@ public class LoadCards implements Runnable {
 		String[] tmpLines = tmpCards.split("\n");
 		log.info("Loaded " + tmpLines.length + " records.");
 		int activeChapter = 0;
+		int recno=0;
 		for (String tmpLine : tmpLines) {
+			recno++;
 			String[] tmpCard = tmpLine.split("\t", -1);
 			if (tmpCard.length < 6) {
 				continue;
@@ -59,6 +61,7 @@ public class LoadCards implements Runnable {
 				continue;
 			}
 			CardData data = new CardData();
+			data.recno=recno;
 			data.chapter = activeChapter;
 			data.text = tmpCard[SYLLABARY].trim();
 			data.audio = tmpCard[AUDIO].trim();
