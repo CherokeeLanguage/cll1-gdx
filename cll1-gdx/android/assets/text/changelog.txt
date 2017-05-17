@@ -1,4 +1,4 @@
-1.67 -
+1.67 - Chapter Indicator, Card Id, Reduce font size for Syllabary (has issue with certain layouts)
 1.66 - Fix app name and app icon.
 1.65 - Vocabulary fixes for ᎤᏩᎧᎭ forms.
 1.64 - Fix incorrect English gloss for ᎯᏴᏫ.
