@@ -7,8 +7,8 @@ gwt {
     minHeapSize="1G"
 
     src = files(file("src/")) // Needs to be in front of "modules" below.
-    modules 'com.cherokeelessons.cll2ev1.GdxDefinition'
-    devModules 'com.cherokeelessons.cll2ev1.GdxDefinitionSuperdev'
+    modules 'com.cherokeelessons.cll1.GdxDefinition'
+    devModules 'com.cherokeelessons.cll1.GdxDefinitionSuperdev'
     project.webAppDirName = 'webapp'
 
     compiler {

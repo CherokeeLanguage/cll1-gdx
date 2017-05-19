@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/GdxTheme" >
         <activity
-            android:name="com.cherokeelessons.cll2ev1.AndroidLauncher"
+            android:name="com.cherokeelessons.cll1.AndroidLauncher"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
