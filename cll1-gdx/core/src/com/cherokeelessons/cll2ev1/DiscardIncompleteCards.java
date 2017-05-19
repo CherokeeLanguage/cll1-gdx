@@ -7,13 +7,13 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
 
 public class DiscardIncompleteCards implements Runnable {
 	private boolean debug = true;
-	private CLL2EV1 game;
+	private CLL1 game;
 
 	private void log(String message) {
 		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
-	public DiscardIncompleteCards(CLL2EV1 game) {
+	public DiscardIncompleteCards(CLL1 game) {
 		this.game = game;
 	}
 

@@ -26,18 +26,18 @@ public class LoadCards implements Runnable {
      */
     public static final Charset UTF_8 = Charset.forName("UTF-8");
 	
-	private CLL2EV1 game;
+	private CLL1 game;
 
 	private Logger log = new Logger(this.getClass().getSimpleName(), Logger.INFO);
 
-	public LoadCards(CLL2EV1 game) {
+	public LoadCards(CLL1 game) {
 		this.game = game;
 	}
 
 	@Override
 	public void run() {
-		log.info("Loading cards from " + CLL2EV1.CARDS_CSV);
-		String tmpCards = Gdx.files.internal(CLL2EV1.CARDS_CSV).readString(UTF_8.name());
+		log.info("Loading cards from " + CLL1.CARDS_CSV);
+		String tmpCards = Gdx.files.internal(CLL1.CARDS_CSV).readString(UTF_8.name());
 		String[] tmpLines = tmpCards.split("\n");
 		log.info("Loaded " + tmpLines.length + " records.");
 		int activeChapter = 0;

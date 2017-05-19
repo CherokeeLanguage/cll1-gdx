@@ -35,7 +35,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Scaling;
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 import com.cherokeelessons.cll2ev1.models.CardData;
 import com.cherokeelessons.deck.CardStats;
 import com.cherokeelessons.deck.CardUtils;
@@ -71,8 +71,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 		this.session = session;
 		this.masterDeck = masterDeck;
 		this.activeDeck = activeDeck;
-		setBackdrop(CLL2EV1.BACKDROP);
-		setSkin(CLL2EV1.SKIN);
+		setBackdrop(CLL1.BACKDROP);
+		setSkin(CLL1.SKIN);
 
 		log("Session: " + session);
 		log("Master Deck Size: " + masterDeck.size());
@@ -324,7 +324,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("SHOWING FINAL STATS");
 		userPause();
 		pausedStage.getRoot().clearChildren();
-		Dialog finalStats = new Dialog("FINAL STATS", skin) {
+		Dialog finalStats = new Dialog(CLL1.APP_NAME+" FINAL STATS", skin) {
 			@Override
 			protected void result(Object object) {
 				userResume();
@@ -457,8 +457,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 		FileHandle slot = SlotFolder.getSlotFolder(session);
 		slot.mkdirs();
 
-		FileHandle fh_activeCards_tmp = slot.child(CLL2EV1.ACTIVE_CARDS + ".tmp");
-		FileHandle fh_activeCards = slot.child(CLL2EV1.ACTIVE_CARDS);
+		FileHandle fh_activeCards_tmp = slot.child(CLL1.ACTIVE_CARDS + ".tmp");
+		FileHandle fh_activeCards = slot.child(CLL1.ACTIVE_CARDS);
 		activeDeck.shuffleThenSortByNextSession();
 		StringBuilder sbActiveCards = new StringBuilder();
 		for (ICard<CardData> card : activeDeck.getCards()) {
@@ -470,8 +470,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, UTF_8.name());
 		fh_activeCards_tmp.moveTo(fh_activeCards);
 
-		FileHandle fh_deckstats_tmp = slot.child(CLL2EV1.DECKSTATS + ".tmp");
-		FileHandle fh_deckstats = slot.child(CLL2EV1.DECKSTATS);
+		FileHandle fh_deckstats_tmp = slot.child(CLL1.DECKSTATS + ".tmp");
+		FileHandle fh_deckstats = slot.child(CLL1.DECKSTATS);
 		DeckStats deckStats = DeckStats.calculateStats(activeDeck);
 		deckStats.lastrun = System.currentTimeMillis();
 		if (masterDeck.size() > 0) {
@@ -991,7 +991,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 	protected final Label lblCountdown;
 
 	private void initUi() {
-		TextButton btnQuit = new TextButton(CLL2EV1.QUIT, skin);
+		TextButton btnQuit = new TextButton(CLL1.QUIT, skin);
 		btnQuit.getLabel().setFontScale(.7f);
 		btnQuit.addListener(onBack);
 

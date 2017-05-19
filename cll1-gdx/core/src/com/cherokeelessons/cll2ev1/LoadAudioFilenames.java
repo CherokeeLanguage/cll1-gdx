@@ -31,7 +31,7 @@ public class LoadAudioFilenames implements Runnable {
 
 	private List<GameCard> cards;
 
-	public LoadAudioFilenames(CLL2EV1 game) {
+	public LoadAudioFilenames(CLL1 game) {
 		cards = game.cards;
 	}
 

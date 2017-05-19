@@ -4,7 +4,7 @@ import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.badlogic.gdx.graphics.Color;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 
 public class DesktopLauncher {
 	public static void main(String[] arg) {
@@ -32,6 +32,6 @@ public class DesktopLauncher {
 		config.addIcon("icons/icon-64.png", FileType.Internal);
 		config.addIcon("icons/icon-32.png", FileType.Internal);
 		config.addIcon("icons/icon-16.png", FileType.Internal);
-		new LwjglApplication(new CLL2EV1(), config);
+		new LwjglApplication(new CLL1(), config);
 	}
 }

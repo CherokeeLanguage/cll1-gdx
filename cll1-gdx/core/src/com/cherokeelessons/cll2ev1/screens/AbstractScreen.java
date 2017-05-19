@@ -25,7 +25,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 
 public abstract class AbstractScreen implements Screen, InputProcessor {
 	protected final String TAG = this.getClass().getSimpleName();
@@ -95,10 +95,10 @@ public abstract class AbstractScreen implements Screen, InputProcessor {
 		};
 		this.assets.setLoader(Texture.class, textureLoader);
 
-		backStage = new Stage(new FillViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
-		stage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
-		frontStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
-		pausedStage = new Stage(new FitViewport(CLL2EV1.WORLDSIZE.x, CLL2EV1.WORLDSIZE.y));
+		backStage = new Stage(new FillViewport(CLL1.WORLDSIZE.x, CLL1.WORLDSIZE.y));
+		stage = new Stage(new FitViewport(CLL1.WORLDSIZE.x, CLL1.WORLDSIZE.y));
+		frontStage = new Stage(new FitViewport(CLL1.WORLDSIZE.x, CLL1.WORLDSIZE.y));
+		pausedStage = new Stage(new FitViewport(CLL1.WORLDSIZE.x, CLL1.WORLDSIZE.y));
 		inputMultiplexer = new InputMultiplexer(this, frontStage, stage, backStage);
 	}
 

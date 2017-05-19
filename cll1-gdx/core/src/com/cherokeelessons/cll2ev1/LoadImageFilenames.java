@@ -24,7 +24,7 @@ public class LoadImageFilenames implements Runnable {
 
 	private List<GameCard> cards;
 
-	public LoadImageFilenames(CLL2EV1 game) {
+	public LoadImageFilenames(CLL1 game) {
 		cards = game.cards;
 	}
 

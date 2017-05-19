@@ -8,7 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 
 public class About extends AbstractScreen {
 
@@ -18,8 +18,8 @@ public class About extends AbstractScreen {
 
 	public About(AbstractGame game) {
 		super(game);
-		setSkin(CLL2EV1.SKIN);
-		setBackdrop(CLL2EV1.BACKDROP);
+		setSkin(CLL1.SKIN);
+		setBackdrop(CLL1.BACKDROP);
 		Gdx.app.postRunnable(init);
 	}
 

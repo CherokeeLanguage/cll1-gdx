@@ -18,7 +18,7 @@ import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.Logger;
 import com.badlogic.gdx.utils.Scaling;
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 import com.cherokeelessons.cll2ev1.StartSession;
 import com.cherokeelessons.deck.DeckStats;
 import com.cherokeelessons.deck.SkillLevel;
@@ -43,8 +43,8 @@ public class SelectSession extends AbstractScreen {
 
 	public SelectSession(AbstractGame game) {
 		super(game);
-		setBackdrop(CLL2EV1.BACKDROP);
-		setSkin(CLL2EV1.SKIN);
+		setBackdrop(CLL1.BACKDROP);
+		setSkin(CLL1.SKIN);
 		json.setUsePrototypes(false);
 		Gdx.app.postRunnable(init);
 	}
@@ -65,7 +65,7 @@ public class SelectSession extends AbstractScreen {
 			menu.row();
 			menu.add(titleLabel);
 			for (int ix = 0; ix < 4; ix++) {
-				FileHandle fh = SlotFolder.getSlotFolder(ix).child(CLL2EV1.DECKSTATS);
+				FileHandle fh = SlotFolder.getSlotFolder(ix).child(CLL1.DECKSTATS);
 				DeckStats di;
 				try {
 					String strJson;
@@ -83,7 +83,7 @@ public class SelectSession extends AbstractScreen {
 				if (t == 0) {
 					text = EMPTY_SLOT;
 				}
-				int masterDeckSize = ((CLL2EV1)game).cards.size();
+				int masterDeckSize = ((CLL1)game).cards.size();
 				int percentInUse = 100*t/masterDeckSize;
 				text += "\n" + nextSessionIndicationText(di.nextrun, percentInUse);
 				
@@ -103,7 +103,7 @@ public class SelectSession extends AbstractScreen {
 					btnDeleteSession.setColor(Color.LIGHT_GRAY);
 				}
 			}
-			TextButton btnBack = new TextButton(CLL2EV1.BACKTEXT, skin);
+			TextButton btnBack = new TextButton(CLL1.BACKTEXT, skin);
 			btnBack.getLabel().setFontScale(.7f);
 			btnBack.pack();
 			btnBack.addListener(onBack);

@@ -29,7 +29,7 @@ public class StartSession implements Runnable {
 
 	private final Logger log = new Logger(this.getClass().getSimpleName());
 
-	private static final String ACTIVE_CARDS = CLL2EV1.ACTIVE_CARDS;
+	private static final String ACTIVE_CARDS = CLL1.ACTIVE_CARDS;
 	private final AbstractGame game;
 	private final int session;
 	private final Json json = new Json();
@@ -61,7 +61,7 @@ public class StartSession implements Runnable {
 		 * "never shown/correct".
 		 */
 		Deck<CardData> masterDeck = new Deck<CardData>();
-		for (GameCard card : ((CLL2EV1) game).cards) {
+		for (GameCard card : ((CLL1) game).cards) {
 			ICard<CardData> copy = card.copy();
 			copy.resetStats();
 			copy.resetTriesRemaining(CardData.MAX_TRIES);

@@ -9,7 +9,7 @@ import com.cherokeelessons.cll2ev1.models.GameCard;
 import com.cherokeelessons.cll2ev1.screens.MainMenu;
 import com.cherokeelessons.cll2ev1.screens.ScreenPoweredBy;
 
-public class CLL2EV1 extends AbstractGame {
+public class CLL1 extends AbstractGame {
 	public final List<GameCard> cards = new ArrayList<GameCard>();
 	public static final Vector2 WORLDSIZE = new Vector2(1280, 720);
 	public static final String BACKDROP = "textures/parchment-seemless.png";
@@ -19,10 +19,11 @@ public class CLL2EV1 extends AbstractGame {
 	public static final String BACKTEXT = "[BACK]";
 	public static final String DECKSTATS = "DeckStats.json";
 	public static final String QUIT = "[QUIT]";
+	public static final String APP_NAME = "CLL1";
 	private ScreenPoweredBy poweredBy = null;
 	private Runnable onPoweredByDone = new Runnable() {
 		public void run() {
-			setScreen(new MainMenu(CLL2EV1.this));
+			setScreen(new MainMenu(CLL1.this));
 		}
 	};
 	public boolean deckReady = false;
@@ -30,7 +31,7 @@ public class CLL2EV1 extends AbstractGame {
 	@Override
 	public void create() {
 		super.create();
-		poweredBy = new ScreenPoweredBy(CLL2EV1.this, onPoweredByDone);
+		poweredBy = new ScreenPoweredBy(CLL1.this, onPoweredByDone);
 		addScreen(poweredBy);
 		Gdx.input.setCatchBackKey(true);
 		Gdx.input.setCatchMenuKey(true);

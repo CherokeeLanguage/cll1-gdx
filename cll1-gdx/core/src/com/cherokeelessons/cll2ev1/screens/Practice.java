@@ -1,13 +1,13 @@
 package com.cherokeelessons.cll2ev1.screens;
 
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 
 public class Practice extends AbstractScreen {
 	public Practice(AbstractGame game) {
 		super(game);
-		setBackdrop(CLL2EV1.BACKDROP);
-		setSkin(CLL2EV1.SKIN);
+		setBackdrop(CLL1.BACKDROP);
+		setSkin(CLL1.SKIN);
 	}
 
 	@Override

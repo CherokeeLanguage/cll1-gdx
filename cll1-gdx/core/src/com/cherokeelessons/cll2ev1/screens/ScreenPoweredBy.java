@@ -14,12 +14,12 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.cherokeelessons.cll2ev1.AbstractGame;
-import com.cherokeelessons.cll2ev1.CLL2EV1;
+import com.cherokeelessons.cll2ev1.CLL1;
 import com.cherokeelessons.cll2ev1.actions.MusicVolumeAction;
 
 public class ScreenPoweredBy extends AbstractScreen {
 
-	private static final Vector2 WORLDSIZE = CLL2EV1.WORLDSIZE;
+	private static final Vector2 WORLDSIZE = CLL1.WORLDSIZE;
 	private final Array<Image> logo = new Array<Image>();
 	private final Array<Texture> textures = new Array<Texture>();
 
