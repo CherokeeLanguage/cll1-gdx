@@ -1,4 +1,4 @@
-1.69 - 
+1.69 - Fix FUBAR with almost losing user progress!
 1.68 - "The TommyLee Release" - Added chapter/recno indicator on "new card challenge" dialog so that errors can be reported easier. This dialog can be access during game play by tapping on "[?]". Adjusted new user instructions to include the new option of [?]. Have 677 cards.
 1.67 - Chapter Indicator, Auto reduce font size for Syllabary (has issue with certain tablet sizes)
 1.66 - Fix app name and app icon.

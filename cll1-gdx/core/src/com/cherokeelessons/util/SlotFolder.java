@@ -5,7 +5,7 @@ import com.badlogic.gdx.files.FileHandle;
 
 public class SlotFolder {
 
-	public static final String base = "CLL1";
+	public static final String base = "CLL2EV1";
 
 	public static FileHandle getSlotFolder(int slot) {
 		return getFolder("/slots/" + slot);
