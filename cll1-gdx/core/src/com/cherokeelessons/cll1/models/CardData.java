@@ -63,6 +63,7 @@ public class CardData implements ICardData {
 		copy.randomImageFiles = new ArrayList<String>(randomImageFiles);
 		copy.randomWrongImageFiles = new ArrayList<String>(randomWrongImageFiles);
 		copy.text = text;
+		copy.recno= recno;
 		copy.setEnglishGloss(getEnglishGloss());
 		return copy;
 	}

@@ -308,6 +308,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		contentTable.row();
 		contentTable.add(scroller).fill().expand();
 
+		
 		// Ꮎ buttons
 
 		TextButton howa = new TextButton("ᎰᏩ", skin);
@@ -315,6 +316,14 @@ public class LearningSession extends AbstractScreen implements Screen {
 
 		TextButton audio = new TextButton("[AUDIO]", skin);
 		newCardDialog.button(audio, "[AUDIO]");
+		
+		// recno
+		Label recno = new Label("("+activeCardData.chapter+"-"+activeCardData.recno+")", skin);
+		recno.setAlignment(Align.right);
+		recno.setFontScale(0.6f);
+		Table buttonTable = newCardDialog.getButtonTable();
+		buttonTable.getParent().addActor(recno);
+		recno.setPosition(0, buttonTable.getY()+10);
 
 		newCardDialog.pack();
 		newCardDialog.show(pausedStage);
@@ -863,7 +872,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		contentTable.add(noticeTable).expand().fill();
 		String txt = Gdx.files.internal("text/how-this-works.txt").readString(UTF_8.name());
 		Label message = new Label(txt, skin);
-		message.setFontScale(.85f);
+		message.setFontScale(.8f);
 		message.setWrap(true);
 		noticeTable.add(message);
 		firstTimeNotice.show(pausedStage);
