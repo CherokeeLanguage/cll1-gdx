@@ -1,4 +1,4 @@
-# cll2ev1-gdx
+# cll1-gdx
 Cherokee Language Lessons 1 - Core Exercises (libGDX)
 
 You can install the testing version for Android/Kingle Fire from here: https://tsfr.io/JN44WT
