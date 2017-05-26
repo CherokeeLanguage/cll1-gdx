@@ -7,7 +7,7 @@ You can install a recent desktop version for Microsoft/Apple/Linux from here: ht
 
 ## About
 
-This app is designed to help you acquire the Cherokee language though the use of pictures representing actions, states of being, and so forth. The app closely follows the material in the book "Cherokee Language Lessons 1". The book is not required to get use out of this app. (Amazon link: http://amzn.to/2qkZ4Ze / Also available from LULU.)
+This app is designed to help you acquire the Cherokee language though the use of pictures representing actions, states of being, and so forth. The app closely follows the material in the book "Cherokee Language Lessons 1". (Amazon link: http://amzn.to/2qkZ4Ze / Also available from LULU.)
 
 This app assumes you know the Syllabary. If you don't know the Syllabary it is strongly recommended to search for the "Cherokee Syllabary Dictation Exercises" videos and do them before using this app. The dictation and writing exercise combination provides the fastest path to learning the Syllabary, and learning it well!
 
