@@ -28,13 +28,13 @@ Tap [?] to reveal the answer. Tap [AUDIO] to repeat the audio. Tap [QUIT] to pau
 
 ### BOOKS - EITHER AUTHORED or TYPESET/EDITED
 
-- The Tale of Peter Rabbit - Na Kanoheda Kwiti Jisdu (Translator: Lawrence Panther)
+- The Tale of Peter Rabbit (Translator: Lawrence Panther)
 - Na Usdi Agigage Jitaga Agisi - The Little Red Hen
 - Na Anijoi Sigwa - The Three Pigs
 - Na Anijoi Yona - The Three Bears
 - Na Anijoi Wesa Anida ale Jitaga Usdi - The Three Kittens and Chicken Little
 - The Three Kittens and Chicken Little / Cherokee-English Dictionary
-- ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ ᏗᏕᎶᏆᏍᏗ / Cherokee Language Lessons
+- Cherokee Language Lessons 1 (http://amzn.to/2qkZ4Ze)
 - ᎪᎸᏅᏱ ᏣᎳᎩ-ᏲᏁᎦ ᏗᏕᎶᏆᏍᏙᏗ / Raven Rock Cherokee-English Dictionary
 - ᎹᎦᎵ ᎤᏤᎵ ᏣᎳᎩ ᎠᎪᎵᏰᏗ / Michael's Cherokee Reader
 - Pilgrim's Progress Cherokee Only Junelodi Dunigisvsvi Jalagiha
