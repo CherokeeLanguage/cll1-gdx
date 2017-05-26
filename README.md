@@ -46,8 +46,8 @@ Tap [?] to reveal the answer. Tap [AUDIO] to repeat the audio. Tap [QUIT] to pau
 - Michael's Cherokee Funny Papers
 - Buster Bear - Rollo Raccoon and the Swim
 - Buster Bear - Charles Chipmunk and the Photographer
-- Juhli Wagani - Jalagi-Yonega - Digohweli Sagwu / Foxy Fagan - Cherokee-English
-- Juhli Wagani - Jalagiha - Digohweli Sagwu / Foxy Fagan - Cherokee Only
+- Juhli Wagani - Jalagi-Yonega - Digohweli Sagwu / Foxy Fagan - Cherokee-English (Translator: Lawrence Panther)
+- Juhli Wagani - Jalagiha - Digohweli Sagwu / Foxy Fagan - Cherokee Only (Translator: Lawrence Panther)
 
 ### APPS
 
