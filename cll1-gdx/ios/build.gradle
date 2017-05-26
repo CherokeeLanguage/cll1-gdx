@@ -16,4 +16,5 @@ createIPA.dependsOn build
 eclipse.project {
     name = appName + "-ios"
     natures 'org.robovm.eclipse.RoboVMNature'
+    linkedResource name: 'assets', type: '2', location: 'PARENT-1-PROJECT_LOC/android/assets'
 }
