@@ -94,5 +94,9 @@ public class LoadCards implements Runnable {
 		for (int session =0; session<DeckStats.FULLY_LEARNED_BOX; session++) {
 			log.info("LEITNER BOX "+session+" IS "+CardUtils.getNextSessionIntervalDays(session)+" DAYS DELAY.");
 		}
+		for (GameCard card: game.cards) {
+			CardData data = card.getData();
+			log.info(data.chapter+"-"+data.recno+": "+data.text+" = "+data.getEnglishGloss());
+		}
 	}
 }
