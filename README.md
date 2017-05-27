@@ -11,8 +11,9 @@ This app is designed to help you acquire the Cherokee language though the use of
 
 This app assumes you know the Syllabary. If you don't know the Syllabary it is strongly recommended to search for the "Cherokee Syllabary Dictation Exercises" videos and do them before using this app. The dictation and writing exercise combination provides the fastest path to learning the Syllabary, and learning it well!
 
-The theory, based on TPR materials, is that you acquire a language by listening and association, not by translations or reciting. Listen and correctly associate enough material and you will begin speaking the language automatically.
-Game uses some of the concepts for "interval learning", in particular, Pimsleur for same training sessions timings and Leitner Boxing for selecting which challenge should be displayed during which session. 
+The theory, based on TPR materials, is that you acquire a language by listening and association, not by translations or reciting. Listen to and correctly associate enough material and you will begin speaking the language automatically.
+
+The app uses some of the concepts for "interval learning", in particular, Pimsleur for same training sessions timings and Leitner Boxing for selecting which challenge should be displayed during which session. 
 
 - Author: Michael Joyner
 - Font: FreeSerif [https://www.gnu.org/software/freefont/]
