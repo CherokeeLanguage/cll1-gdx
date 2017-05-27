@@ -20,7 +20,7 @@ public class MainMenu extends AbstractScreen {
 	private static final String OPTIONS = "Options - ᎠᏑᏰᏍᏗᎢ";
 	// private static final String HIGH_SCORES = "High Scores - ᏬᏍᏓ ᏗᏎᏍᏗ";
 	private static final String PRACTICE = "Practice - ᏣᎪᏅᏗ";
-	private static final String TITLE = "Cherokee Language Lessons Vol. 1";
+	private static final String TITLE = "Cherokee Language Lessons 1";
 
 	private ClickListener onNewGame = new ClickListener() {
 		@Override
