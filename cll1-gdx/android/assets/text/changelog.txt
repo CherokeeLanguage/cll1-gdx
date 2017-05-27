@@ -1,3 +1,4 @@
+1.71 - 
 1.70 - About text fixes. Log card list for simplified review of reported vocabulary errors.
 1.69 - Fix FUBAR with almost losing user progress!
 1.68 - "The TommyLee Release" - Added chapter/recno indicator on "new card challenge" dialog so that errors can be reported easier. This dialog can be access during game play by tapping on "[?]". Adjusted new user instructions to include the new option of [?]. Have 677 cards.
