@@ -19,6 +19,7 @@ gm convert -filter ${FILTER} icon.png -resize 72x72 apkcons/ic_launcher-hdpi.png
 gm convert -filter ${FILTER} icon.png -resize 96x96 apkcons/ic_launcher-xhdpi.png
 gm convert -filter ${FILTER} icon.png -resize 144x144 apkcons/ic_launcher-xxhdpi.png
 gm convert -filter ${FILTER} icon.png -resize 192x192 apkcons/ic_launcher-xxxhdpi.png
+gm convert -filter ${FILTER} icon.png -resize 512x512 hi-res-icon-google-play.png
 
 for size in mdpi hdpi xhdpi xxhdpi xxxhdpi; do
 	mkdir ../../android/res/drawable-"${size}" 2> /dev/null || true
