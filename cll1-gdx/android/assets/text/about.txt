@@ -1,4 +1,4 @@
-This app is designed to help you acquire the Cherokee language though the use of pictures representing actions, states of being, and so forth. The app closely follows the material in the book "Cherokee Language Lessons 1". The book is not required to get use out of this app.
+This app is designed to help you acquire the Cherokee language though the use of pictures representing actions, states of being, and so forth. The app closely follows the material in the book "Cherokee Language Lessons 1". The book is recommended to get the most use out of this app.
 
 This app assumes you know the Syllabary. If you don't know the Syllabary it is strongly recommended to search for "Cherokee Syllabary Dictation Exercises" and do them before using this app. The dictation and writing exercise combination provides the fastest path to learning the Syllabary, and learning it well!
 
@@ -9,6 +9,5 @@ The app uses some of the concepts for "interval learning", in particular, Pimsle
 Author: Michael Joyner
 Font: FreeSerif [https://www.gnu.org/software/freefont/]
 Toolkit: libGDX
-Voice: Michael Joyner (Until someone better volunteers)
+Voice: Michael Joyner
 Artwork: https://www.openclipart.org/
-Artwork: Michael Joyner
