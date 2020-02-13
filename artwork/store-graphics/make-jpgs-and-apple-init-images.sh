@@ -3,13 +3,14 @@
 export FILTER=Lanczos
 export SVG=promo-graphic.svg
 export SRC=promo-graphic.png
-export D="derived"
+export D="output"
 
 set -e
 
 cd "$(dirname "$0")"
 
-mkdir "${D}" 2> /dev/null || true
+if [ -d "${D}" ]; then rm -rf "${D}"; fi
+mkdir "${D}"
 
 function process() {
 	SIZE="$1"
@@ -34,10 +35,13 @@ function process_white() {
 }
 
 rm "${SRC}" 2> /dev/null || true
-inkscape -z -d 300 -C --export-background=white --export-background-opacity=1 -e="${SRC}" "${SVG}"
+inkscape -z -d 300 -C -e="${SRC}" "${SVG}"
 
-process_white 1024x500 feature-graphic-flat.jpg
-process_white 180x120 promo-graphic-flat.jpg
+process 1024x500 feature-graphic-1024x500.png
+process 180x120 promo-graphic-180x120.png
+
+process_white 1024x500 feature-graphic-flat-1024x500.jpg
+process_white 180x120 promo-graphic-flat-180x120.jpg
 
 process 750x1334 Default-375w-667h@2x.png -rotate 90
 process 1242x2208 Default-414w-736h@3x.png -rotate 90

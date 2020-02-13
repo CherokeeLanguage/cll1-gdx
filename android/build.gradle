@@ -19,6 +19,13 @@ android {
         minSdkVersion 8
         targetSdkVersion 23
     }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace(".apk", "-${variant.versionName}.apk"))
+        }
+    }
     signingConfigs {
         release {
         		if (new File(RELEASE_STORE_FILEA).isDirectory()) {
