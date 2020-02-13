@@ -7,8 +7,8 @@ trap "echo ERROR; read a" ERR
 
 cd "$(dirname "$0")"
 
-export PNG_ICON="$(pwd)/icon-4096.png"
-export PNG_LOADING="$(pwd)/loading-2212x1080.png"
+export PNG_ICON="$(pwd)/icon.png"
+export PNG_LOADING="$(pwd)/promo-graphic.png"
 
 export FILTER=Lanczos
 
