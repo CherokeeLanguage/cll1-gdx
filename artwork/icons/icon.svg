@@ -13,9 +13,12 @@
    height="1092.2667"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="icon.svg"
-   viewBox="0 0 1024 1024">
+   viewBox="0 0 1024 1024"
+   inkscape:export-filename="icon-1024.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +28,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69854733"
+     inkscape:zoom="0.74615475"
      inkscape:cx="546.13336"
      inkscape:cy="546.13336"
      inkscape:document-units="px"
