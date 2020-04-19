@@ -14,7 +14,14 @@ vb="$(echo "$va + .01" | bc -l)"
 vc="$(echo "$vb * 100" | bc -l | cut -f 1 -d '.')"
 
 perl -i -p -e "s/^VERSION=.*\n/VERSION=$vb\n/g" gradle.properties
-perl -i -p -e "s/^app.version=.*\n/app.version==$vb\n/g" ios/robovm.properties
+
+#VERSION_NAME=1.73
+perl -i -p -e "s/^VERSION_NAME=.*\n/VERSION_NAME=$vb\n/g" gradle.properties
+
+#VERSION_CODE=173
+perl -i -p -e "s/^VERSION_CODE=.*\n/VERSION_CODE=$vc\n/g" gradle.properties
+
+perl -i -p -e "s/^app.version=.*\n/app.version=$vb\n/g" ios/robovm.properties
 
 perl -i -p -e "s/android:versionCode=\".*?\"/android:versionCode=\"$vc\"/g" android/AndroidManifest.xml
 perl -i -p -e "s/android:versionName=\".*?\"/android:versionName=\"$vb\"/g" android/AndroidManifest.xml
