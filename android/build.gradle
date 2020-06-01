@@ -22,18 +22,12 @@ android {
     }
     defaultConfig {
         applicationId "com.cherokeelessons.cll2ev1"
-        minSdkVersion 8
+        minSdkVersion 14
         targetSdkVersion 29
-        //versionCode VERSION_CODE
-        versionName VERSION_NAME
+        versionCode Integer.valueOf(version.replace(".","")) // 304
+        versionName version
+        setProperty("archivesBaseName", appName+"-"+version)
     }
-    /*applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.outputFile = new File(
-                    output.outputFile.parent,
-                    output.outputFile.name.replace(".apk", "-${variant.versionName}.apk"))
-        }
-    }*/
     signingConfigs {
         release {
         		if (new File(RELEASE_STORE_FILEA).isDirectory()) {
