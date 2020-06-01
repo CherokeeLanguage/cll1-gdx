@@ -27,6 +27,15 @@ sed -i "s/versionCode=\".*\"/versionCode=\"$version\"/g" android/AndroidManifest
 sed -i "s/versionName=\".*\"/versionName=\"$xversion\"/g" android/AndroidManifest.xml
 sed -i "s/app.version=.*$/app.version=$xversion/g" ios/robovm.properties
 
+if [ -f "gradle.properties" ]; then
+	#VERSION=1.75
+	sed -i "s/VERSION=.*'/VERSION=$xversion/g" gradle.properties
+	#VERSION_CODE=175
+	sed -i "s/VERSION_CODE=.*'/VERSION_CODE=$version/g" gradle.properties
+	#VERSION_NAME=1.75
+	sed -i "s/VERSION_NAME=.*'/VERSION_NAME=$xversion/g" gradle.properties
+fi
+
 echo "$version" > version
 
 git add .
