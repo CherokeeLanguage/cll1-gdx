@@ -10,7 +10,6 @@ import java.util.Random;
 import java.util.Set;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Music.OnCompletionListener;
 import com.badlogic.gdx.audio.Sound;
@@ -44,7 +43,7 @@ import com.cherokeelessons.deck.DeckStats;
 import com.cherokeelessons.deck.ICard;
 import com.cherokeelessons.util.SlotFolder;
 
-public class LearningSession extends AbstractScreen implements Screen {
+public class LearningSession extends AbstractScreen {
 
 	private static final long DAY_ms = 24l * 60l * 60l * 1000l;
 
@@ -126,8 +125,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 			if (challengeAudio != null && challengeAudio.isPlaying()) {
 				challengeAudio.setOnCompletionListener(new OnCompletionListener() {
 					@Override
-					public void onCompletion(final Music music) {
-						music.setOnCompletionListener(null);
+					public void onCompletion(final Music finished) {
+						finished.setOnCompletionListener(null);
 						stage.addAction(actionLoadNextChallengeQuick());
 					}
 				});
@@ -149,7 +148,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		@Override
 		public void clicked(final InputEvent event, final float x, final float y) {
 			onBack();
-		};
+		}
 	};
 
 	private final RefCounts refCounts = new RefCounts();
@@ -206,7 +205,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 				buzz();
 			}
 			return true;
-		};
+		}
 	};
 
 	private final ClickListener maybe2 = new ClickListener() {
@@ -231,7 +230,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 				buzz();
 			}
 			return true;
-		};
+		}
 	};
 
 	private Sound ding;
@@ -472,11 +471,9 @@ public class LearningSession extends AbstractScreen implements Screen {
 		if (assets.isLoaded(IMAGES_OVERLAY) && refCounts.get(IMAGES_OVERLAY) < 1) {
 			assets.unload(IMAGES_OVERLAY);
 		}
-		if (imageFile != null) {
-			refCounts.dec(imageFile);
-			if (assets.isLoaded(imageFile) && refCounts.get(imageFile) < 1) {
-				assets.unload(imageFile);
-			}
+		refCounts.dec(imageFile);
+		if (assets.isLoaded(imageFile) && refCounts.get(imageFile) < 1) {
+			assets.unload(imageFile);
 		}
 	}
 
@@ -1020,8 +1017,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 					if (challengeAudio.isPlaying()) {
 						challengeAudio.setOnCompletionListener(new OnCompletionListener() {
 							@Override
-							public void onCompletion(final Music music) {
-								music.setOnCompletionListener(null);
+							public void onCompletion(final Music finishedMusic) {
+								finishedMusic.setOnCompletionListener(null);
 								Gdx.app.postRunnable(replayAudio);
 							}
 						});

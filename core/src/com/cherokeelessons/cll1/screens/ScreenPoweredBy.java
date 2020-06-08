@@ -67,12 +67,12 @@ public class ScreenPoweredBy extends AbstractScreen {
 		return sa;
 	}
 
-	private Action getVolumeAction(final Music music) {
+	private Action getVolumeAction(final Music _music) {
 		final SequenceAction sa = Actions.sequence();
 		sa.addAction(Actions.delay(1f));
-		sa.addAction(new MusicVolumeAction(music, .7f, 4f));
+		sa.addAction(new MusicVolumeAction(_music, .7f, 4f));
 		sa.addAction(Actions.delay(4f));
-		sa.addAction(new MusicVolumeAction(music, 0f, 2f));
+		sa.addAction(new MusicVolumeAction(_music, 0f, 2f));
 		sa.addAction(Actions.delay(1f));
 		if (onDone != null) {
 			sa.addAction(Actions.run(onDone));
@@ -110,7 +110,9 @@ public class ScreenPoweredBy extends AbstractScreen {
 				img.setPosition(width, height);
 				height += img.getHeight();
 			}
-			width += img.getWidth();
+			if (img != null) {
+				width += img.getWidth();
+			}
 		}
 
 		logoBox = new Rectangle(0, 0, width, height);
