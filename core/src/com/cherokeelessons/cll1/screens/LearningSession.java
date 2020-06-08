@@ -66,7 +66,180 @@ public class LearningSession extends AbstractScreen implements Screen {
 	private final Deck<CardData> discardsDeck = new Deck<CardData>();
 	private final Deck<CardData> completedDeck = new Deck<CardData>();
 
-	public LearningSession(AbstractGame game, int session, Deck<CardData> masterDeck, Deck<CardData> activeDeck) {
+	private final float maxTime_secs = 5.0f * 60f;
+
+	private final Texture checkmark;
+
+	private final Texture xmark;
+
+	private final Image imgCheckmark;
+
+	private final Image imgXmark;
+	private Table uiTable;
+
+	private Table gameTable;
+	private Table challengeTable;
+
+	private Table answersTable;
+	private Music challengeAudio;
+	private final Label challengeText;
+	private final Stack choice1;
+
+	private final Stack choice2;
+
+	protected Runnable init1 = new Runnable() {
+		@Override
+		public void run() {
+			prepDecks();
+		}
+	};
+	protected Runnable init2 = new Runnable() {
+		@Override
+		public void run() {
+			initUi();
+		}
+	};
+	protected Runnable firstPlay = new Runnable() {
+		@Override
+		public void run() {
+			if (activeDeck.size() == 0 && completedDeck.size() == 0 && discardsDeck.size() == 0) {
+				stage.addAction(actionFirstTime());
+			} else {
+				stage.addAction(actionLoadNextChallengeQuick());
+			}
+		}
+	};
+	// private float sinceLastDeckShuffle_elapsed = 0f;
+	private String previousCardId = null;
+	private String activeAudioFile;
+
+	private String activeImageFile1;
+
+	private String activeImageFile2;
+	private int correct = 1;
+	// private ICard<CardData> activeCard;
+	private CardData activeCardData;
+	private CardStats activeCardStats;
+	private final Runnable runLoadNextChallenge = new Runnable() {
+		@Override
+		public void run() {
+			if (challengeAudio != null && challengeAudio.isPlaying()) {
+				challengeAudio.setOnCompletionListener(new OnCompletionListener() {
+					@Override
+					public void onCompletion(final Music music) {
+						music.setOnCompletionListener(null);
+						stage.addAction(actionLoadNextChallengeQuick());
+					}
+				});
+				return;
+			}
+			// 5-minute check
+			if (totalElapsed > maxTime_secs) {
+				log("=== SESSION TIME UP!");
+				pausedStage.addAction(actionShowCompletedDialog());
+				userPause();
+				return;
+			}
+			loadNextChallenge();
+		}
+
+	};
+	private final Random coinTosser = new Random();
+	private final ClickListener onBack = new ClickListener() {
+		@Override
+		public void clicked(final InputEvent event, final float x, final float y) {
+			onBack();
+		};
+	};
+
+	private final RefCounts refCounts = new RefCounts();
+
+	private final Runnable replayAudio = new Runnable() {
+		@Override
+		public void run() {
+			if (challengeAudio != null && !challengeAudio.isPlaying()) {
+				challengeAudio.play();
+			}
+		}
+	};
+
+	private final ClickListener playAudioChallenge = new ClickListener() {
+		@Override
+		public void clicked(final InputEvent event, final float x, final float y) {
+			Gdx.app.postRunnable(replayAudio);
+		}
+	};
+
+	private final ClickListener showEnglish = new ClickListener() {
+		@Override
+		public void clicked(final InputEvent event, final float x, final float y) {
+			activeCardStats.setCorrect(false);
+			showNewCardWithAudio();
+		}
+	};
+
+	protected TextButton btnHelp;
+
+	protected TextButton btnAudio;
+
+	protected final Label lblCountdown;
+
+	private final ClickListener maybe1 = new ClickListener() {
+		@Override
+		public boolean touchDown(final InputEvent event, final float x, final float y, final int pointer,
+				final int button) {
+			stage.addAction(actionLoadNextChallengeDelayed());
+			choice1.setTouchable(Touchable.disabled);
+			choice2.setTouchable(Touchable.disabled);
+			// update card with total time it has been on display
+			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
+			if (correct == 1) {
+				choice1.addActor(imgCheckmark);
+				ding();
+			} else {
+				choice1.addActor(imgXmark);
+				if (activeCardStats.isCorrect()) {
+					activeCardStats.pimsleurSlotDec();
+					activeCardStats.triesRemainingInc();
+					activeCardStats.setCorrect(false);
+				}
+				buzz();
+			}
+			return true;
+		};
+	};
+
+	private final ClickListener maybe2 = new ClickListener() {
+		@Override
+		public boolean touchDown(final InputEvent event, final float x, final float y, final int pointer,
+				final int button) {
+			stage.addAction(actionLoadNextChallengeDelayed());
+			choice1.setTouchable(Touchable.disabled);
+			choice2.setTouchable(Touchable.disabled);
+			// update card with total time it has been on display
+			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
+			if (correct == 2) {
+				choice2.addActor(imgCheckmark);
+				ding();
+			} else {
+				choice2.addActor(imgXmark);
+				if (activeCardStats.isCorrect()) {
+					activeCardStats.pimsleurSlotDec();
+					activeCardStats.triesRemainingInc();
+					activeCardStats.setCorrect(false);
+				}
+				buzz();
+			}
+			return true;
+		};
+	};
+
+	private Sound ding;
+
+	private Sound buzz;
+
+	public LearningSession(final AbstractGame game, final int session, final Deck<CardData> masterDeck,
+			final Deck<CardData> activeDeck) {
 		super(game);
 		this.session = session;
 		this.masterDeck = masterDeck;
@@ -114,18 +287,46 @@ public class LearningSession extends AbstractScreen implements Screen {
 		assets.load(DING, Sound.class);
 	}
 
-	private float maxTime_secs = 5.0f * 60f;
+	@Override
+	protected void act(final float delta) {
+		// sinceLastDeckShuffle_elapsed += delta;
+	}
 
-	private void updateTimeleft() {
-		float timeleft_secs = maxTime_secs - totalElapsed;
-		if (timeleft_secs < 0f) {
-			timeleft_secs = 0f;
-		}
-		int minutes = (int) (timeleft_secs / 60f);
-		int seconds = ((int) (timeleft_secs)) - 60 * minutes;
-		String tmp = minutes + ":" + ((seconds < 10) ? "0" : "") + seconds;
-		lblCountdown.setText(tmp);
-		lblCountdown.pack();
+	private Action actionFirstTime() {
+		return Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				firstTime();
+			}
+		});
+	}
+
+	private Action actionLoadNextChallengeDelayed() {
+		return Actions.sequence(Actions.delay(1.5f), Actions.run(runLoadNextChallenge));
+	}
+
+	private Action actionLoadNextChallengeQuick() {
+		return Actions.sequence(Actions.delay(.1f), Actions.run(runLoadNextChallenge));
+	}
+
+	private Action actionSaveActiveDeck(final Button howa) {
+		return Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				saveActiveDeck();
+				howa.setDisabled(false);
+			}
+		});
+	}
+
+	private Action actionShowCompletedDialog() {
+		return Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				endSessionCleanup();
+				showFinalStats();
+			}
+		});
 	}
 
 	private Action actionUpdateTimeLeft() {
@@ -138,251 +339,157 @@ public class LearningSession extends AbstractScreen implements Screen {
 		}));
 	}
 
-	private Texture checkmark;
-	private Texture xmark;
-
-	private Image imgCheckmark;
-	private Image imgXmark;
-
-	private Table uiTable;
-	private Table gameTable;
-	private Table challengeTable;
-	private Table answersTable;
-
-	private Music challengeAudio;
-
-	private final Label challengeText;
-	private final Stack choice1;
-	private final Stack choice2;
-	protected Runnable init1 = new Runnable() {
-		@Override
-		public void run() {
-			prepDecks();
+	private void addCardFromMasterDeck() {
+		/**
+		 * We don't have any active cards, add one from the master deck. Being sure to
+		 * set all stats to "never shown/correct".
+		 */
+		log("Getting new card from master deck ...");
+		masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
+		if (masterDeck.size() != 0) {
+			final ICard<CardData> topCard = masterDeck.topCard();
+			topCard.resetStats();
+			topCard.resetTriesRemaining(CardData.MAX_TRIES);
+			topCard.getCardStats().setPimsleurSlot(0);
+			topCard.getCardStats().setNewCard(true);
+			activeDeck.add(topCard);
 		}
-	};
-	protected Runnable init2 = new Runnable() {
-		@Override
-		public void run() {
-			initUi();
-		}
-	};
+	}
 
-	protected Runnable firstPlay = new Runnable() {
-		@Override
-		public void run() {
-			if (activeDeck.size() == 0 && completedDeck.size() == 0 && discardsDeck.size() == 0) {
-				stage.addAction(actionFirstTime());
+	private void addCardsFromCompletedDeck() {
+		/**
+		 * We still don't have any active cards, grab some from the completed deck.
+		 * Being sure to set all stats to "never shown/correct". This is like an
+		 * emergency don't crash me measure.
+		 */
+		log("Retrieving old cards from completed deck ignoring next session time...");
+		completedDeck.shuffleThenSortByNextSession();
+		for (int count = 0; count < 3; count++) {
+			if (completedDeck.size() != 0) {
+				final ICard<CardData> topCard = completedDeck.topCard();
+				topCard.resetStats();
+				topCard.resetTriesRemaining(CardData.MAX_TRIES);
+				topCard.getCardStats().setPimsleurSlot(0);
+				activeDeck.add(topCard);
+			}
+		}
+	}
+
+	private void addFromDiscards(int maxCount) {
+		// put all discards into the active deck w/o looking at show next times
+		log("Moving ALL discards into active deck ...");
+		discardsDeck.shuffleThenSortByShowAgainDelay();
+		while (discardsDeck.hasCards() && --maxCount > 0) {
+			activeDeck.add(discardsDeck.topCard());
+		}
+	}
+
+	private void addThisSessionCardsFromCompletedDeck() {
+		/**
+		 * We still don't have any active cards, grab some from the completed deck.
+		 * Being sure to set all stats to "never shown/correct". This is like an
+		 * emergency don't crash me measure.
+		 */
+		log("Retrieving cards from completed deck that should be shown this session...");
+		completedDeck.shuffleThenSortByNextSession();
+		for (int count = 0; count < 3; count++) {
+			if (completedDeck.size() != 0) {
+				final ICard<CardData> topCard = completedDeck.topCard();
+				if (topCard.getCardStats().getNextSessionShow() > 0) {
+					// no cards ready for showing
+					break;
+				}
+				topCard.resetStats();
+				topCard.resetTriesRemaining(CardData.MAX_TRIES);
+				topCard.getCardStats().setPimsleurSlot(0);
+				activeDeck.add(topCard);
+			}
+		}
+	}
+
+	private void buzz() {
+		if (buzz == null) {
+			if (!assets.isLoaded(BUZZER)) {
+				assets.load(BUZZER, Sound.class);
+				assets.finishLoadingAsset(BUZZER);
+			}
+			buzz = assets.get(BUZZER, Sound.class);
+		}
+		buzz.play(.6f);
+	}
+
+	/**
+	 * Move to "completed" any cards that don't have tries left taking care to
+	 * update Leitner boxes as needed.
+	 */
+	private void completedCardsCheck() {
+		log("Scanning discards for newly completed cards... ");
+		final ListIterator<ICard<CardData>> iDiscards = discardsDeck.cardsIterator();
+		while (iDiscards.hasNext()) {
+			final ICard<CardData> card = iDiscards.next();
+			final CardStats cardStats = card.getCardStats();
+			if (cardStats.getTriesRemaining() > 0) {
+				continue;
+			}
+			log("=== Completed card: " + card.id());
+			if (cardStats.isCorrect()) {
+				// if correct, the card should get moved to the next
+				// leitner box
+				cardStats.leitnerBoxInc();
 			} else {
-				stage.addAction(actionLoadNextChallengeQuick());
+				// if wrong, it should get moved to the previous
+				// leitner box
+				cardStats.leitnerBoxDec();
 			}
-		}
-	};
-
-	// private float sinceLastDeckShuffle_elapsed = 0f;
-	private String previousCardId = null;
-	private String activeAudioFile;
-	private String activeImageFile1;
-	private String activeImageFile2;
-	private int correct = 1;
-	// private ICard<CardData> activeCard;
-	private CardData activeCardData;
-	private CardStats activeCardStats;
-
-	@Override
-	protected void act(float delta) {
-		// sinceLastDeckShuffle_elapsed += delta;
-	}
-
-	private void loadNextChallenge() {
-		ICard<CardData> card;
-		card = getNextCard();
-		// activeCard = card;
-		activeCardData = card.getData();
-		activeCardStats = card.getCardStats();
-		loadNewChallengeImages(activeCardData);
-		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
-		// reset for each card being displayed
-		currentElapsed = 0f;
-		if (activeCardStats.isNewCard()) {
-			activeCardStats.setNewCard(false);
-			showNewCardWithAudio();
+			cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
+			iDiscards.remove(); // remove then add
+			completedDeck.add(card);
+			log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
+			log("- Sessions to show again: " + cardStats.getNextSessionShow());
 		}
 	}
 
-	private void showNewCardWithAudio() {
-		log("SHOWING NEW CARD");
-		userPause();
-		pausedStage.getRoot().clearChildren();
-		final List<String> newCardImageFiles = new ArrayList<String>(activeCardData.getImageFiles());
-		Collections.shuffle(newCardImageFiles);
-		Dialog newCardDialog = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
-			@Override
-			protected void result(Object object) {
-				if ("[AUDIO]".equals(object)) {
-					Gdx.app.postRunnable(replayAudio);
-					cancel();
-					return;
-				}
-				if (challengeAudio != null) {
-					if (challengeAudio.isPlaying()) {
-						challengeAudio.setOnCompletionListener(new OnCompletionListener() {
-							@Override
-							public void onCompletion(Music music) {
-								music.setOnCompletionListener(null);
-								Gdx.app.postRunnable(replayAudio);
-							}
-						});
-					} else {
-						Gdx.app.postRunnable(replayAudio);
-					}
-				}
-				for (String newCardImageFile : newCardImageFiles) {
-					discardImageFor(newCardImageFile);
-				}
-				userResume();
+	private void ding() {
+		if (ding == null) {
+			if (!assets.isLoaded(DING)) {
+				assets.load(DING, Sound.class);
+				assets.finishLoadingAsset(DING);
 			}
-		};
-		newCardDialog.setModal(true);
-		newCardDialog.setFillParent(true);
-		newCardDialog.setKeepWithinStage(true);
-		newCardDialog.getTitleLabel().setAlignment(Align.center);
-
-		Table contentTable = newCardDialog.getContentTable();
-
-		// TEXT above pix
-		Table tblText = new Table(skin);
-		tblText.defaults().expand().fill();
-		Label text = new Label(activeCardData.text, skin);
-		if (activeCardData.text.length()<12) {
-			text.setFontScale(1.5f); 
-		} else {
-			text.setFontScale(1f);
+			ding = assets.get(DING, Sound.class);
 		}
-		text.setWrap(true);
-		text.setAlignment(Align.center);
-		tblText.add(text);
-		contentTable.row();
-		contentTable.add(tblText).expandX().fill().center();
-
-		// English gloss below Syllabary.
-		if (!activeCardData.getEnglishGloss().isEmpty()) {
-			Table tblGloss = new Table(skin);
-			tblGloss.defaults().expand().fill();
-			Label gloss = new Label(activeCardData.getEnglishGloss(), skin);
-			gloss.setFontScale(.85f);
-			gloss.setColor(Color.FIREBRICK);
-			gloss.setWrap(true);
-			gloss.setAlignment(Align.center);
-			tblGloss.add(gloss);
-			contentTable.row();
-			contentTable.add(tblGloss).expandX().fill().center();
-		}
-
-		// PIX below text
-		Table tblPix = new Table(skin);
-		tblPix.defaults().space(4).fill().expand().uniform();
-
-		float picMaxWidth = pausedStage.getWidth() * PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT;
-
-		Stack[] pictures = new Stack[newCardImageFiles.size()];
-		for (int i = 0; i < newCardImageFiles.size(); i++) {
-			pictures[i] = new Stack();
-			for (Image img : getImageFor(newCardImageFiles.get(i))) {
-				pictures[i].add(img);
-			}
-			Cell<Stack> cell = tblPix.add(pictures[i]);
-			cell.width(picMaxWidth);
-		}
-
-		final ScrollPane scroller = new ScrollPane(tblPix, skin);
-		scroller.setFadeScrollBars(false);
-		scroller.setForceScroll(false, false);
-		scroller.setOverscroll(true, false);
-		scroller.addAction(Actions.sequence(Actions.delay(.25f), Actions.run(new Runnable() {
-			@Override
-			public void run() {
-				scroller.setScrollPercentX(.5f);
-			}
-		})));
-
-		contentTable.row();
-		contentTable.add(scroller).fill().expand();
-
-		
-		// Ꮎ buttons
-
-		TextButton howa = new TextButton("ᎰᏩ", skin);
-		newCardDialog.button(howa, "ᎰᏩ");
-
-		TextButton audio = new TextButton("[AUDIO]", skin);
-		newCardDialog.button(audio, "[AUDIO]");
-		
-		// recno
-		Label recno = new Label("("+activeCardData.chapter+"-"+activeCardData.recno+")", skin);
-		recno.setAlignment(Align.right);
-		recno.setFontScale(0.6f);
-		Table buttonTable = newCardDialog.getButtonTable();
-		buttonTable.getParent().addActor(recno);
-		recno.setPosition(0, buttonTable.getY()+10);
-
-		newCardDialog.pack();
-		newCardDialog.show(pausedStage);
+		ding.play(.4f);
 	}
 
-	private void showFinalStats() {
-		log("SHOWING FINAL STATS");
-		userPause();
-		pausedStage.getRoot().clearChildren();
-		Dialog finalStats = new Dialog(CLL1.APP_NAME+" FINAL STATS", skin) {
-			@Override
-			protected void result(Object object) {
-				userResume();
-				game.previousScreen();
-			}
-		};
-		finalStats.setModal(true);
-		finalStats.setFillParent(true);
-		finalStats.getTitleLabel().setAlignment(Align.center);
-		TextButton howa = new TextButton("ᎰᏩ", skin);
-		howa.setDisabled(true);
-		finalStats.button(howa);
-
-		DeckStats stats = DeckStats.calculateStats(activeDeck);
-		StringBuilder txt = new StringBuilder();
-		txt.append("LEVEL: ");
-		txt.append(stats.level.getEnglish());
-		txt.append("\n");
-		txt.append("Active cards: ");
-		txt.append(stats.activeCards);
-		txt.append("\n");
-		txt.append("Score: ");
-		txt.append(stats.lastScore);
-		txt.append("\n");
-		txt.append("Proficiency: ");
-		txt.append(stats.proficiency);
-		txt.append("%");
-		
-		int chapter = 0;
-		for (ICard<CardData> card: activeDeck.getCards()) {
-			chapter=Math.max(chapter, card.getData().chapter);
+	protected void discardImageFor(final String imageFile) {
+		if (imageFile == null) {
+			return;
 		}
-		txt.append("\n");
-		txt.append("Book Chapter: ");
-		txt.append(chapter/10);
+		refCounts.dec(IMAGES_BACKDROP);
+		if (assets.isLoaded(IMAGES_BACKDROP) && refCounts.get(IMAGES_BACKDROP) < 1) {
+			assets.unload(IMAGES_BACKDROP);
+		}
+		refCounts.dec(IMAGES_OVERLAY);
+		if (assets.isLoaded(IMAGES_OVERLAY) && refCounts.get(IMAGES_OVERLAY) < 1) {
+			assets.unload(IMAGES_OVERLAY);
+		}
+		if (imageFile != null) {
+			refCounts.dec(imageFile);
+			if (assets.isLoaded(imageFile) && refCounts.get(imageFile) < 1) {
+				assets.unload(imageFile);
+			}
+		}
+	}
 
-		Table contentTable = finalStats.getContentTable();
-		contentTable.row();
-		Table noticeTable = new Table(skin);
-		noticeTable.defaults().expand().fill();
-		contentTable.add(noticeTable).expand().fill();
-		Label message = new Label(txt.toString(), skin);
-		message.setAlignment(Align.center);
-		message.setWrap(true);
-		message.setFontScale(1.2f);
-		noticeTable.add(message);
-		finalStats.show(pausedStage);
-
-		pausedStage.addAction(actionSaveActiveDeck(howa));
+	private void discardsReadyForShowCheck() {
+		/**
+		 * Go ahead and recycle all of the close to next show time discards.
+		 */
+		log("Scanning discards for cards to put back into immediate play... ");
+		discardsDeck.shuffleThenSortByShowAgainDelay();
+		log("Next show time for discards is: " + discardsDeck.getNextShowTime());
+		while (discardsDeck.hasCards() && discardsDeck.getNextShowTime() < 5000l) {
+			activeDeck.add(discardsDeck.topCard());
+		}
 	}
 
 	private void endSessionCleanup() {
@@ -391,13 +498,13 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("- Discards Deck: " + discardsDeck.size());
 		log("- Completed Deck: " + completedDeck.size());
 		/*
-		 * Check and see how many discards can be marked as "completed". <br>
-		 * Those that can be marked are those with shown >= triesRemaining
+		 * Check and see how many discards can be marked as "completed". <br> Those that
+		 * can be marked are those with shown >= triesRemaining
 		 */
-		ListIterator<ICard<CardData>> idiscard = discardsDeck.cardsIterator();
+		final ListIterator<ICard<CardData>> idiscard = discardsDeck.cardsIterator();
 		while (idiscard.hasNext()) {
-			ICard<CardData> card = idiscard.next();
-			CardStats cardStats = card.getCardStats();
+			final ICard<CardData> card = idiscard.next();
+			final CardStats cardStats = card.getCardStats();
 			if (cardStats.getShown() < cardStats.getTriesRemaining()) {
 				continue;
 			}
@@ -418,8 +525,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 			log("- Sessions to show again: " + cardStats.getNextSessionShow());
 		}
 		/*
-		 * Combine discards and active together. These were in play at session
-		 * end.
+		 * Combine discards and active together. These were in play at session end.
 		 */
 		log("  combining discards and active deck");
 		while (discardsDeck.hasCards()) {
@@ -440,170 +546,59 @@ public class LearningSession extends AbstractScreen implements Screen {
 		log("- Completed Deck: " + completedDeck.size());
 	}
 
-	private Action actionShowCompletedDialog() {
-		return Actions.run(new Runnable() {
+	protected void firstTime() {
+		log("SHOWING FIRST TIME DIALOG");
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		final Dialog firstTimeNotice = new Dialog("HOW THIS WORKS", skin) {
 			@Override
-			public void run() {
-				endSessionCleanup();
-				showFinalStats();
+			protected void result(final Object object) {
+				userResume();
+				stage.addAction(actionLoadNextChallengeQuick());
 			}
-		});
+		};
+		firstTimeNotice.setModal(true);
+		firstTimeNotice.setFillParent(true);
+		firstTimeNotice.getTitleLabel().setAlignment(Align.center);
+		firstTimeNotice.button("ᎰᏩ");
+
+		final Table contentTable = firstTimeNotice.getContentTable();
+		contentTable.row();
+		final Table noticeTable = new Table(skin);
+		noticeTable.defaults().expand().fill();
+		contentTable.add(noticeTable).expand().fill();
+		final String txt = Gdx.files.internal("text/how-this-works.txt").readString(UTF_8.name());
+		final Label message = new Label(txt, skin);
+		message.setFontScale(.8f);
+		message.setWrap(true);
+		noticeTable.add(message);
+		firstTimeNotice.show(pausedStage);
 	}
 
-	private Action actionSaveActiveDeck(final Button howa) {
-		return Actions.run(new Runnable() {
-			@Override
-			public void run() {
-				saveActiveDeck();
-				howa.setDisabled(false);
-			}
-		});
-	}
-
-	private void saveActiveDeck() {
-		Json json = new Json();
-		json.setUsePrototypes(false);
-		FileHandle slot = SlotFolder.getSlotFolder(session);
-		slot.mkdirs();
-
-		FileHandle fh_activeCards_tmp = slot.child(CLL1.ACTIVE_CARDS + ".tmp");
-		FileHandle fh_activeCards = slot.child(CLL1.ACTIVE_CARDS);
-		activeDeck.shuffleThenSortByNextSession();
-		StringBuilder sbActiveCards = new StringBuilder();
-		for (ICard<CardData> card : activeDeck.getCards()) {
-			sbActiveCards.append(card.id());
-			sbActiveCards.append("\t");
-			sbActiveCards.append(json.toJson(card.getCardStats()));
-			sbActiveCards.append("\n");
+	protected Image[] getImageFor(final String imageFile) {
+		if (!assets.isLoaded(IMAGES_BACKDROP)) {
+			assets.load(IMAGES_BACKDROP, Texture.class);
+			assets.finishLoadingAsset(IMAGES_BACKDROP);
 		}
-		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, UTF_8.name());
-		fh_activeCards_tmp.moveTo(fh_activeCards);
-
-		FileHandle fh_deckstats_tmp = slot.child(CLL1.DECKSTATS + ".tmp");
-		FileHandle fh_deckstats = slot.child(CLL1.DECKSTATS);
-		DeckStats deckStats = DeckStats.calculateStats(activeDeck);
-		deckStats.lastrun = System.currentTimeMillis();
-		if (masterDeck.size() > 0) {
-			deckStats.nextrun = System.currentTimeMillis() + DAY_ms/4;
-		} else {
-			int nextSession = 365; // no more than a year out
-			for (ICard<CardData> card : activeDeck.getCards()) {
-				nextSession = Math.min(card.getCardStats().getNextSessionShow(), nextSession);
-			}
-			deckStats.nextrun = System.currentTimeMillis() + DAY_ms * nextSession;
+		if (!assets.isLoaded(IMAGES_OVERLAY)) {
+			assets.load(IMAGES_OVERLAY, Texture.class);
+			assets.finishLoadingAsset(IMAGES_OVERLAY);
 		}
-		json.toJson(deckStats, fh_deckstats_tmp);
-		fh_deckstats_tmp.moveTo(fh_deckstats);
-	}
-
-	private final Runnable runLoadNextChallenge = new Runnable() {
-		public void run() {
-			if (challengeAudio != null && challengeAudio.isPlaying()) {
-				challengeAudio.setOnCompletionListener(new OnCompletionListener() {
-					@Override
-					public void onCompletion(Music music) {
-						music.setOnCompletionListener(null);
-						stage.addAction(actionLoadNextChallengeQuick());
-					}
-				});
-				return;
-			}
-			// 5-minute check
-			if (totalElapsed > maxTime_secs) {
-				log("=== SESSION TIME UP!");
-				pausedStage.addAction(actionShowCompletedDialog());
-				userPause();
-				return;
-			}
-			loadNextChallenge();
+		if (!assets.isLoaded(imageFile)) {
+			assets.load(imageFile, Texture.class);
+			assets.finishLoadingAsset(imageFile);
 		}
-
-	};
-
-	private Action actionLoadNextChallengeQuick() {
-		return Actions.sequence(Actions.delay(.1f), Actions.run(runLoadNextChallenge));
-	}
-
-	private Action actionLoadNextChallengeDelayed() {
-		return Actions.sequence(Actions.delay(1.5f), Actions.run(runLoadNextChallenge));
-	}
-
-	private void loadNewChallengeImages(final CardData cdata) {
-		Gdx.app.postRunnable(new Runnable() {
-			@Override
-			public void run() {
-				challengeText.setText(cdata.text);
-
-				choice1.clear();
-				choice2.clear();
-				discardImageFor(activeImageFile1);
-				discardImageFor(activeImageFile2);
-
-				Set<String> previousImages = new HashSet<String>();
-				previousImages.add(activeImageFile1);
-				previousImages.add(activeImageFile2);
-				if (isHeads()) {
-					correct = 1;
-					activeImageFile1 = cdata.nextRandomImageFile();
-					if (previousImages.contains(activeImageFile1)) {
-						activeImageFile1 = cdata.nextRandomImageFile();
-					}
-					activeImageFile2 = cdata.nextRandomWrongImageFile();
-					if (previousImages.contains(activeImageFile2)) {
-						activeImageFile2 = cdata.nextRandomWrongImageFile();
-					}
-				} else {
-					correct = 2;
-					activeImageFile1 = cdata.nextRandomWrongImageFile();
-					if (previousImages.contains(activeImageFile1)) {
-						activeImageFile1 = cdata.nextRandomWrongImageFile();
-					}
-					activeImageFile2 = cdata.nextRandomImageFile();
-					if (previousImages.contains(activeImageFile2)) {
-						activeImageFile2 = cdata.nextRandomImageFile();
-					}
-				}
-
-				choice1.clear();
-				choice2.clear();
-				choice1.setTouchable(Touchable.childrenOnly);
-				choice2.setTouchable(Touchable.childrenOnly);
-				for (Image img : getImageFor(activeImageFile1)) {
-					choice1.add(img);
-					img.addListener(maybe1);
-				}
-				for (Image img : getImageFor(activeImageFile2)) {
-					choice2.add(img);
-					img.addListener(maybe2);
-				}
-			}
-		});
-	}
-
-	private void loadNewChallengeAudio(final String newActiveAudioFile) {
-		Gdx.app.postRunnable(new Runnable() {
-			public void run() {
-				if (challengeAudio != null) {
-					challengeAudio.stop();
-				}
-				if (activeAudioFile != null) {
-					if (assets.isLoaded(activeAudioFile)) {
-						assets.unload(activeAudioFile);
-					}
-				}
-				assets.load(newActiveAudioFile, Music.class);
-				assets.finishLoadingAsset(newActiveAudioFile);
-				challengeAudio = assets.get(newActiveAudioFile, Music.class);
-				challengeAudio.play();
-				activeAudioFile = newActiveAudioFile;
-			}
-		});
-	}
-
-	private Random coinTosser = new Random();
-
-	private boolean isHeads() {
-		return coinTosser.nextBoolean();
+		assets.finishLoading();
+		final Image backdrop = new Image(assets.get(IMAGES_BACKDROP, Texture.class));
+		refCounts.inc(IMAGES_BACKDROP);
+		final Image image = new Image(assets.get(imageFile, Texture.class));
+		refCounts.inc(imageFile);
+		final Image overlay = new Image(assets.get(IMAGES_OVERLAY, Texture.class));
+		refCounts.inc(IMAGES_OVERLAY);
+		backdrop.setScaling(Scaling.fit);
+		image.setScaling(Scaling.fit);
+		overlay.setScaling(Scaling.fit);
+		return new Image[] { backdrop, image, overlay };// choice1;
 	}
 
 	protected ICard<CardData> getNextCard() {
@@ -619,8 +614,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 			// always re-shuffle deck each play
 			activeDeck.shuffleThenSortByShowAgainDelay();
 
-			ICard<CardData> card = activeDeck.topCard();
-			CardStats cs = card.getCardStats();
+			final ICard<CardData> card = activeDeck.topCard();
+			final CardStats cs = card.getCardStats();
 			// check to try and avoid repeating same card sequentially
 			if (card.id().equals(previousCardId)) {
 				log("Maybe not repeating same card twice in a row...");
@@ -690,317 +685,8 @@ public class LearningSession extends AbstractScreen implements Screen {
 		return null;
 	}
 
-	private void addFromDiscards(int maxCount) {
-		// put all discards into the active deck w/o looking at show next times
-		log("Moving ALL discards into active deck ...");
-		discardsDeck.shuffleThenSortByShowAgainDelay();
-		while (discardsDeck.hasCards() && --maxCount > 0) {
-			activeDeck.add(discardsDeck.topCard());
-		}
-	}
-
-	private void addCardsFromCompletedDeck() {
-		/**
-		 * We still don't have any active cards, grab some from the completed
-		 * deck. Being sure to set all stats to "never shown/correct". This is
-		 * like an emergency don't crash me measure.
-		 */
-		log("Retrieving old cards from completed deck ignoring next session time...");
-		completedDeck.shuffleThenSortByNextSession();
-		for (int count = 0; count < 3; count++) {
-			if (completedDeck.size() != 0) {
-				ICard<CardData> topCard = completedDeck.topCard();
-				topCard.resetStats();
-				topCard.resetTriesRemaining(CardData.MAX_TRIES);
-				topCard.getCardStats().setPimsleurSlot(0);
-				activeDeck.add(topCard);
-			}
-		}
-	}
-
-	private void addThisSessionCardsFromCompletedDeck() {
-		/**
-		 * We still don't have any active cards, grab some from the completed
-		 * deck. Being sure to set all stats to "never shown/correct". This is
-		 * like an emergency don't crash me measure.
-		 */
-		log("Retrieving cards from completed deck that should be shown this session...");
-		completedDeck.shuffleThenSortByNextSession();
-		for (int count = 0; count < 3; count++) {
-			if (completedDeck.size() != 0) {
-				ICard<CardData> topCard = completedDeck.topCard();
-				if (topCard.getCardStats().getNextSessionShow() > 0) {
-					// no cards ready for showing
-					break;
-				}
-				topCard.resetStats();
-				topCard.resetTriesRemaining(CardData.MAX_TRIES);
-				topCard.getCardStats().setPimsleurSlot(0);
-				activeDeck.add(topCard);
-			}
-		}
-	}
-
-	private void addCardFromMasterDeck() {
-		/**
-		 * We don't have any active cards, add one from the master deck. Being
-		 * sure to set all stats to "never shown/correct".
-		 */
-		log("Getting new card from master deck ...");
-		masterDeck.shuffleThenSortIntoPrefixedGroups(CardData.SORT_KEY_LENGTH);
-		if (masterDeck.size() != 0) {
-			ICard<CardData> topCard = masterDeck.topCard();
-			topCard.resetStats();
-			topCard.resetTriesRemaining(CardData.MAX_TRIES);
-			topCard.getCardStats().setPimsleurSlot(0);
-			topCard.getCardStats().setNewCard(true);
-			activeDeck.add(topCard);
-		}
-	}
-
-	private void discardsReadyForShowCheck() {
-		/**
-		 * Go ahead and recycle all of the close to next show time discards.
-		 */
-		log("Scanning discards for cards to put back into immediate play... ");
-		discardsDeck.shuffleThenSortByShowAgainDelay();
-		log("Next show time for discards is: " + discardsDeck.getNextShowTime());
-		while (discardsDeck.hasCards() && discardsDeck.getNextShowTime() < 5000l) {
-			activeDeck.add(discardsDeck.topCard());
-		}
-	}
-
-	/**
-	 * Move to "completed" any cards that don't have tries left taking care to
-	 * update Leitner boxes as needed.
-	 */
-	private void completedCardsCheck() {
-		log("Scanning discards for newly completed cards... ");
-		ListIterator<ICard<CardData>> iDiscards = discardsDeck.cardsIterator();
-		while (iDiscards.hasNext()) {
-			ICard<CardData> card = iDiscards.next();
-			CardStats cardStats = card.getCardStats();
-			if (cardStats.getTriesRemaining() > 0) {
-				continue;
-			}
-			log("=== Completed card: " + card.id());
-			if (cardStats.isCorrect()) {
-				// if correct, the card should get moved to the next
-				// leitner box
-				cardStats.leitnerBoxInc();
-			} else {
-				// if wrong, it should get moved to the previous
-				// leitner box
-				cardStats.leitnerBoxDec();
-			}
-			cardStats.setNextSessionShow(CardUtils.getNextSessionIntervalDays(cardStats.getLeitnerBox()));
-			iDiscards.remove(); // remove then add
-			completedDeck.add(card);
-			log("- Moved to Leitner box: " + cardStats.getLeitnerBox());
-			log("- Sessions to show again: " + cardStats.getNextSessionShow());
-		}
-	}
-
-	@Override
-	public void render(float delta) {
-		super.render(delta);
-	}
-
-	private ClickListener onBack = new ClickListener() {
-		@Override
-		public void clicked(InputEvent event, float x, float y) {
-			onBack();
-		};
-	};
-
-	@Override
-	protected boolean onBack() {
-		userPause();
-		pausedStage.getRoot().clearChildren();
-		Dialog cancelSession = new Dialog("[PAUSED] CANCEL SESSION?", skin) {
-			@Override
-			protected void result(Object object) {
-				if ("YES".equals(object)) {
-					game.previousScreen();
-				}
-				userResume();
-			}
-		};
-		cancelSession.setModal(true);
-		cancelSession.getTitleLabel().setAlignment(Align.center);
-		cancelSession.button("ᎥᎥ - YES", "YES");
-		cancelSession.button("ᎥᏝ - NO", "NO");
-		cancelSession.getContentTable().row();
-		cancelSession.text("Are you sure you want to cancel?");
-		cancelSession.getContentTable().row();
-		cancelSession.text("You will lose all of your");
-		cancelSession.getContentTable().row();
-		cancelSession.text("progress if you choose ᎥᎥ!");
-		cancelSession.show(pausedStage);
-		return true;
-	}
-
-	private Action actionFirstTime() {
-		return Actions.run(new Runnable() {
-			@Override
-			public void run() {
-				firstTime();
-			}
-		});
-	}
-
-	protected void firstTime() {
-		log("SHOWING FIRST TIME DIALOG");
-		userPause();
-		pausedStage.getRoot().clearChildren();
-		Dialog firstTimeNotice = new Dialog("HOW THIS WORKS", skin) {
-			@Override
-			protected void result(Object object) {
-				userResume();
-				stage.addAction(actionLoadNextChallengeQuick());
-			}
-		};
-		firstTimeNotice.setModal(true);
-		firstTimeNotice.setFillParent(true);
-		firstTimeNotice.getTitleLabel().setAlignment(Align.center);
-		firstTimeNotice.button("ᎰᏩ");
-
-		Table contentTable = firstTimeNotice.getContentTable();
-		contentTable.row();
-		Table noticeTable = new Table(skin);
-		noticeTable.defaults().expand().fill();
-		contentTable.add(noticeTable).expand().fill();
-		String txt = Gdx.files.internal("text/how-this-works.txt").readString(UTF_8.name());
-		Label message = new Label(txt, skin);
-		message.setFontScale(.8f);
-		message.setWrap(true);
-		noticeTable.add(message);
-		firstTimeNotice.show(pausedStage);
-	}
-
-	@Override
-	protected boolean onMenu() {
-		return false;
-	}
-
-	protected void discardImageFor(String imageFile) {
-		if (imageFile == null) {
-			return;
-		}
-		refCounts.dec(IMAGES_BACKDROP);
-		if (assets.isLoaded(IMAGES_BACKDROP) && refCounts.get(IMAGES_BACKDROP) < 1) {
-			assets.unload(IMAGES_BACKDROP);
-		}
-		refCounts.dec(IMAGES_OVERLAY);
-		if (assets.isLoaded(IMAGES_OVERLAY) && refCounts.get(IMAGES_OVERLAY) < 1) {
-			assets.unload(IMAGES_OVERLAY);
-		}
-		if (imageFile != null) {
-			refCounts.dec(imageFile);
-			if (assets.isLoaded(imageFile) && refCounts.get(imageFile) < 1) {
-				assets.unload(imageFile);
-			}
-		}
-	}
-
-	private RefCounts refCounts = new RefCounts();
-
-	protected Image[] getImageFor(String imageFile) {
-		if (!assets.isLoaded(IMAGES_BACKDROP)) {
-			assets.load(IMAGES_BACKDROP, Texture.class);
-			assets.finishLoadingAsset(IMAGES_BACKDROP);
-		}
-		if (!assets.isLoaded(IMAGES_OVERLAY)) {
-			assets.load(IMAGES_OVERLAY, Texture.class);
-			assets.finishLoadingAsset(IMAGES_OVERLAY);
-		}
-		if (!assets.isLoaded(imageFile)) {
-			assets.load(imageFile, Texture.class);
-			assets.finishLoadingAsset(imageFile);
-		}
-		assets.finishLoading();
-		Image backdrop = new Image(assets.get(IMAGES_BACKDROP, Texture.class));
-		refCounts.inc(IMAGES_BACKDROP);
-		Image image = new Image(assets.get(imageFile, Texture.class));
-		refCounts.inc(imageFile);
-		Image overlay = new Image(assets.get(IMAGES_OVERLAY, Texture.class));
-		refCounts.inc(IMAGES_OVERLAY);
-		backdrop.setScaling(Scaling.fit);
-		image.setScaling(Scaling.fit);
-		overlay.setScaling(Scaling.fit);
-		return new Image[] { backdrop, image, overlay };// choice1;
-	}
-
-	private void prepDecks() {
-		// ensure no previously in-play shows up as new
-		for (ICard<CardData> card : activeDeck.getCards()) {
-			card.getCardStats().setNewCard(false);
-		}
-		// clamp leitner box values
-		for (ICard<CardData> card : activeDeck.getCards()) {
-			CardStats cardStats = card.getCardStats();
-			cardStats.setLeitnerBox(Math.max(cardStats.getLeitnerBox(), 0));
-		}
-		// reset basic statistics and scoring and tries remaining
-		for (ICard<CardData> card : activeDeck.getCards()) {
-			// CardStats cardStats = card.getCardStats();
-			card.resetStats();
-			card.resetTriesRemaining(CardData.MAX_TRIES);
-			card.getCardStats().setPimsleurSlot(0);
-		}
-		// dec next session counter for active cards
-		for (ICard<CardData> card : activeDeck.getCards()) {
-			CardStats cardStats = card.getCardStats();
-			cardStats.setNextSessionShow(Math.max(cardStats.getNextSessionShow() - 1, 0));
-		}
-		// go ahead and move to the completed deck any cards in the active
-		// deck that are scheduled for later sessions
-		ListIterator<ICard<CardData>> li = activeDeck.cardsIterator();
-		while (li.hasNext()) {
-			ICard<CardData> card = li.next();
-			CardStats cardStats = card.getCardStats();
-			if (cardStats.getNextSessionShow() > 0) {
-				li.remove(); // remove before add!
-				completedDeck.add(card);
-				continue;
-			}
-		}
-		// shuffle the remaining active cards
-		activeDeck.shuffleThenSortByShowAgainDelay();
-		// move more than three starting cards into the completed deck to
-		// prevent overload
-		while (activeDeck.size() > 3) {
-			completedDeck.add(activeDeck.getCards().get(activeDeck.size() - 1));
-		}
-	}
-
-	private final Runnable replayAudio = new Runnable() {
-		@Override
-		public void run() {
-			if (challengeAudio != null && !challengeAudio.isPlaying()) {
-				challengeAudio.play();
-			}
-		}
-	};
-	private ClickListener playAudioChallenge = new ClickListener() {
-		public void clicked(InputEvent event, float x, float y) {
-			Gdx.app.postRunnable(replayAudio);
-		}
-	};
-
-	private ClickListener showEnglish = new ClickListener() {
-		public void clicked(InputEvent event, float x, float y) {
-			activeCardStats.setCorrect(false);
-			showNewCardWithAudio();
-		}
-	};
-
-	protected TextButton btnHelp;
-	protected TextButton btnAudio;
-	protected final Label lblCountdown;
-
 	private void initUi() {
-		TextButton btnQuit = new TextButton(CLL1.QUIT, skin);
+		final TextButton btnQuit = new TextButton(CLL1.QUIT, skin);
 		btnQuit.getLabel().setFontScale(.7f);
 		btnQuit.addListener(onBack);
 
@@ -1012,7 +698,7 @@ public class LearningSession extends AbstractScreen implements Screen {
 		btnAudio.getLabel().setFontScale(.7f);
 		btnAudio.addListener(playAudioChallenge);
 
-		Table uiRight = new Table(skin);
+		final Table uiRight = new Table(skin);
 		uiRight.add(btnAudio);
 		uiRight.add(btnHelp);
 
@@ -1051,75 +737,400 @@ public class LearningSession extends AbstractScreen implements Screen {
 		stage.addActor(gameTable);
 	}
 
-	private ClickListener maybe1 = new ClickListener() {
-		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			stage.addAction(actionLoadNextChallengeDelayed());
-			choice1.setTouchable(Touchable.disabled);
-			choice2.setTouchable(Touchable.disabled);
-			// update card with total time it has been on display
-			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
-			if (correct == 1) {
-				choice1.addActor(imgCheckmark);
-				ding();
-			} else {
-				choice1.addActor(imgXmark);
-				if (activeCardStats.isCorrect()) {
-					activeCardStats.pimsleurSlotDec();
-					activeCardStats.triesRemainingInc();
-					activeCardStats.setCorrect(false);
-				}
-				buzz();
-			}
-			return true;
-		};
-	};
-	private ClickListener maybe2 = new ClickListener() {
-		public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-			stage.addAction(actionLoadNextChallengeDelayed());
-			choice1.setTouchable(Touchable.disabled);
-			choice2.setTouchable(Touchable.disabled);
-			// update card with total time it has been on display
-			activeCardStats.setTotalShownTime(activeCardStats.getTotalShownTime() + currentElapsed);
-			if (correct == 2) {
-				choice2.addActor(imgCheckmark);
-				ding();
-			} else {
-				choice2.addActor(imgXmark);
-				if (activeCardStats.isCorrect()) {
-					activeCardStats.pimsleurSlotDec();
-					activeCardStats.triesRemainingInc();
-					activeCardStats.setCorrect(false);
-				}
-				buzz();
-			}
-			return true;
-		};
-	};
-
-	private Sound ding;
-
-	private void ding() {
-		if (ding == null) {
-			if (!assets.isLoaded(DING)) {
-				assets.load(DING, Sound.class);
-				assets.finishLoadingAsset(DING);
-			}
-			ding = assets.get(DING, Sound.class);
-		}
-		ding.play(.4f);
+	private boolean isHeads() {
+		return coinTosser.nextBoolean();
 	}
 
-	private Sound buzz;
-
-	private void buzz() {
-		if (buzz == null) {
-			if (!assets.isLoaded(BUZZER)) {
-				assets.load(BUZZER, Sound.class);
-				assets.finishLoadingAsset(BUZZER);
+	private void loadNewChallengeAudio(final String newActiveAudioFile) {
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				if (challengeAudio != null) {
+					challengeAudio.stop();
+				}
+				if (activeAudioFile != null) {
+					if (assets.isLoaded(activeAudioFile)) {
+						assets.unload(activeAudioFile);
+					}
+				}
+				assets.load(newActiveAudioFile, Music.class);
+				assets.finishLoadingAsset(newActiveAudioFile);
+				challengeAudio = assets.get(newActiveAudioFile, Music.class);
+				challengeAudio.play();
+				activeAudioFile = newActiveAudioFile;
 			}
-			buzz = assets.get(BUZZER, Sound.class);
+		});
+	}
+
+	private void loadNewChallengeImages(final CardData cdata) {
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				challengeText.setText(cdata.text);
+
+				choice1.clear();
+				choice2.clear();
+				discardImageFor(activeImageFile1);
+				discardImageFor(activeImageFile2);
+
+				final Set<String> previousImages = new HashSet<String>();
+				previousImages.add(activeImageFile1);
+				previousImages.add(activeImageFile2);
+				if (isHeads()) {
+					correct = 1;
+					activeImageFile1 = cdata.nextRandomImageFile();
+					if (previousImages.contains(activeImageFile1)) {
+						activeImageFile1 = cdata.nextRandomImageFile();
+					}
+					activeImageFile2 = cdata.nextRandomWrongImageFile();
+					if (previousImages.contains(activeImageFile2)) {
+						activeImageFile2 = cdata.nextRandomWrongImageFile();
+					}
+				} else {
+					correct = 2;
+					activeImageFile1 = cdata.nextRandomWrongImageFile();
+					if (previousImages.contains(activeImageFile1)) {
+						activeImageFile1 = cdata.nextRandomWrongImageFile();
+					}
+					activeImageFile2 = cdata.nextRandomImageFile();
+					if (previousImages.contains(activeImageFile2)) {
+						activeImageFile2 = cdata.nextRandomImageFile();
+					}
+				}
+
+				choice1.clear();
+				choice2.clear();
+				choice1.setTouchable(Touchable.childrenOnly);
+				choice2.setTouchable(Touchable.childrenOnly);
+				for (final Image img : getImageFor(activeImageFile1)) {
+					choice1.add(img);
+					img.addListener(maybe1);
+				}
+				for (final Image img : getImageFor(activeImageFile2)) {
+					choice2.add(img);
+					img.addListener(maybe2);
+				}
+			}
+		});
+	}
+
+	private void loadNextChallenge() {
+		ICard<CardData> card;
+		card = getNextCard();
+		// activeCard = card;
+		activeCardData = card.getData();
+		activeCardStats = card.getCardStats();
+		loadNewChallengeImages(activeCardData);
+		loadNewChallengeAudio(activeCardData.nextRandomAudioFile());
+		// reset for each card being displayed
+		currentElapsed = 0f;
+		if (activeCardStats.isNewCard()) {
+			activeCardStats.setNewCard(false);
+			showNewCardWithAudio();
 		}
-		buzz.play(.6f);
+	}
+
+	@Override
+	protected boolean onBack() {
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		final Dialog cancelSession = new Dialog("[PAUSED] CANCEL SESSION?", skin) {
+			@Override
+			protected void result(final Object object) {
+				if ("YES".equals(object)) {
+					game.previousScreen();
+				}
+				userResume();
+			}
+		};
+		cancelSession.setModal(true);
+		cancelSession.getTitleLabel().setAlignment(Align.center);
+		cancelSession.button("ᎥᎥ - YES", "YES");
+		cancelSession.button("ᎥᏝ - NO", "NO");
+		cancelSession.getContentTable().row();
+		cancelSession.text("Are you sure you want to cancel?");
+		cancelSession.getContentTable().row();
+		cancelSession.text("You will lose all of your");
+		cancelSession.getContentTable().row();
+		cancelSession.text("progress if you choose ᎥᎥ!");
+		cancelSession.show(pausedStage);
+		return true;
+	}
+
+	@Override
+	protected boolean onMenu() {
+		return false;
+	}
+
+	private void prepDecks() {
+		// ensure no previously in-play shows up as new
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			card.getCardStats().setNewCard(false);
+		}
+		// clamp leitner box values
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			final CardStats cardStats = card.getCardStats();
+			cardStats.setLeitnerBox(Math.max(cardStats.getLeitnerBox(), 0));
+		}
+		// reset basic statistics and scoring and tries remaining
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			// CardStats cardStats = card.getCardStats();
+			card.resetStats();
+			card.resetTriesRemaining(CardData.MAX_TRIES);
+			card.getCardStats().setPimsleurSlot(0);
+		}
+		// dec next session counter for active cards
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			final CardStats cardStats = card.getCardStats();
+			cardStats.setNextSessionShow(Math.max(cardStats.getNextSessionShow() - 1, 0));
+		}
+		// go ahead and move to the completed deck any cards in the active
+		// deck that are scheduled for later sessions
+		final ListIterator<ICard<CardData>> li = activeDeck.cardsIterator();
+		while (li.hasNext()) {
+			final ICard<CardData> card = li.next();
+			final CardStats cardStats = card.getCardStats();
+			if (cardStats.getNextSessionShow() > 0) {
+				li.remove(); // remove before add!
+				completedDeck.add(card);
+				continue;
+			}
+		}
+		// shuffle the remaining active cards
+		activeDeck.shuffleThenSortByShowAgainDelay();
+		// move more than three starting cards into the completed deck to
+		// prevent overload
+		while (activeDeck.size() > 3) {
+			completedDeck.add(activeDeck.getCards().get(activeDeck.size() - 1));
+		}
+	}
+
+	@Override
+	public void render(final float delta) {
+		super.render(delta);
+	}
+
+	private void saveActiveDeck() {
+		final Json json = new Json();
+		json.setUsePrototypes(false);
+		final FileHandle slot = SlotFolder.getSlotFolder(session);
+		slot.mkdirs();
+
+		final FileHandle fh_activeCards_tmp = slot.child(CLL1.ACTIVE_CARDS + ".tmp");
+		final FileHandle fh_activeCards = slot.child(CLL1.ACTIVE_CARDS);
+		activeDeck.shuffleThenSortByNextSession();
+		final StringBuilder sbActiveCards = new StringBuilder();
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			sbActiveCards.append(card.id());
+			sbActiveCards.append("\t");
+			sbActiveCards.append(json.toJson(card.getCardStats()));
+			sbActiveCards.append("\n");
+		}
+		fh_activeCards_tmp.writeString(sbActiveCards.toString(), false, UTF_8.name());
+		fh_activeCards_tmp.moveTo(fh_activeCards);
+
+		final FileHandle fh_deckstats_tmp = slot.child(CLL1.DECKSTATS + ".tmp");
+		final FileHandle fh_deckstats = slot.child(CLL1.DECKSTATS);
+		final DeckStats deckStats = DeckStats.calculateStats(activeDeck);
+		deckStats.lastrun = System.currentTimeMillis();
+		if (masterDeck.size() > 0) {
+			deckStats.nextrun = System.currentTimeMillis() + DAY_ms / 4;
+		} else {
+			int nextSession = 365; // no more than a year out
+			for (final ICard<CardData> card : activeDeck.getCards()) {
+				nextSession = Math.min(card.getCardStats().getNextSessionShow(), nextSession);
+			}
+			deckStats.nextrun = System.currentTimeMillis() + DAY_ms * nextSession;
+		}
+		json.toJson(deckStats, fh_deckstats_tmp);
+		fh_deckstats_tmp.moveTo(fh_deckstats);
+	}
+
+	private void showFinalStats() {
+		log("SHOWING FINAL STATS");
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		final Dialog finalStats = new Dialog(CLL1.APP_NAME + " FINAL STATS", skin) {
+			@Override
+			protected void result(final Object object) {
+				userResume();
+				game.previousScreen();
+			}
+		};
+		finalStats.setModal(true);
+		finalStats.setFillParent(true);
+		finalStats.getTitleLabel().setAlignment(Align.center);
+		final TextButton howa = new TextButton("ᎰᏩ", skin);
+		howa.setDisabled(true);
+		finalStats.button(howa);
+
+		final DeckStats stats = DeckStats.calculateStats(activeDeck);
+		final StringBuilder txt = new StringBuilder();
+		txt.append("LEVEL: ");
+		txt.append(stats.level.getEnglish());
+		txt.append("\n");
+		txt.append("Active cards: ");
+		txt.append(stats.activeCards);
+		txt.append("\n");
+		txt.append("Score: ");
+		txt.append(stats.lastScore);
+		txt.append("\n");
+		txt.append("Proficiency: ");
+		txt.append(stats.proficiency);
+		txt.append("%");
+
+		int chapter = 0;
+		for (final ICard<CardData> card : activeDeck.getCards()) {
+			chapter = Math.max(chapter, card.getData().chapter);
+		}
+		txt.append("\n");
+		txt.append("Book Chapter: ");
+		txt.append(chapter / 10);
+
+		final Table contentTable = finalStats.getContentTable();
+		contentTable.row();
+		final Table noticeTable = new Table(skin);
+		noticeTable.defaults().expand().fill();
+		contentTable.add(noticeTable).expand().fill();
+		final Label message = new Label(txt.toString(), skin);
+		message.setAlignment(Align.center);
+		message.setWrap(true);
+		message.setFontScale(1.2f);
+		noticeTable.add(message);
+		finalStats.show(pausedStage);
+
+		pausedStage.addAction(actionSaveActiveDeck(howa));
+	}
+
+	private void showNewCardWithAudio() {
+		log("SHOWING NEW CARD");
+		userPause();
+		pausedStage.getRoot().clearChildren();
+		final List<String> newCardImageFiles = new ArrayList<String>(activeCardData.getImageFiles());
+		Collections.shuffle(newCardImageFiles);
+		final Dialog newCardDialog = new Dialog("ᎢᏤ ᎠᏘᏗ", skin) {
+			@Override
+			protected void result(final Object object) {
+				if ("[AUDIO]".equals(object)) {
+					Gdx.app.postRunnable(replayAudio);
+					cancel();
+					return;
+				}
+				if (challengeAudio != null) {
+					if (challengeAudio.isPlaying()) {
+						challengeAudio.setOnCompletionListener(new OnCompletionListener() {
+							@Override
+							public void onCompletion(final Music music) {
+								music.setOnCompletionListener(null);
+								Gdx.app.postRunnable(replayAudio);
+							}
+						});
+					} else {
+						Gdx.app.postRunnable(replayAudio);
+					}
+				}
+				for (final String newCardImageFile : newCardImageFiles) {
+					discardImageFor(newCardImageFile);
+				}
+				userResume();
+			}
+		};
+		newCardDialog.setModal(true);
+		newCardDialog.setFillParent(true);
+		newCardDialog.setKeepWithinStage(true);
+		newCardDialog.getTitleLabel().setAlignment(Align.center);
+
+		final Table contentTable = newCardDialog.getContentTable();
+
+		// TEXT above pix
+		final Table tblText = new Table(skin);
+		tblText.defaults().expand().fill();
+		final Label text = new Label(activeCardData.text, skin);
+		if (activeCardData.text.length() < 12) {
+			text.setFontScale(1.5f);
+		} else {
+			text.setFontScale(1f);
+		}
+		text.setWrap(true);
+		text.setAlignment(Align.center);
+		tblText.add(text);
+		contentTable.row();
+		contentTable.add(tblText).expandX().fill().center();
+
+		// English gloss below Syllabary.
+		if (!activeCardData.getEnglishGloss().isEmpty()) {
+			final Table tblGloss = new Table(skin);
+			tblGloss.defaults().expand().fill();
+			final Label gloss = new Label(activeCardData.getEnglishGloss(), skin);
+			gloss.setFontScale(.85f);
+			gloss.setColor(Color.FIREBRICK);
+			gloss.setWrap(true);
+			gloss.setAlignment(Align.center);
+			tblGloss.add(gloss);
+			contentTable.row();
+			contentTable.add(tblGloss).expandX().fill().center();
+		}
+
+		// PIX below text
+		final Table tblPix = new Table(skin);
+		tblPix.defaults().space(4).fill().expand().uniform();
+
+		final float picMaxWidth = pausedStage.getWidth() * PIX_MAGIC_WIDTH_NEW_CARDS_PERCENT;
+
+		final Stack[] pictures = new Stack[newCardImageFiles.size()];
+		for (int i = 0; i < newCardImageFiles.size(); i++) {
+			pictures[i] = new Stack();
+			for (final Image img : getImageFor(newCardImageFiles.get(i))) {
+				pictures[i].add(img);
+			}
+			final Cell<Stack> cell = tblPix.add(pictures[i]);
+			cell.width(picMaxWidth);
+		}
+
+		final ScrollPane scroller = new ScrollPane(tblPix, skin);
+		scroller.setFadeScrollBars(false);
+		scroller.setForceScroll(false, false);
+		scroller.setOverscroll(true, false);
+		scroller.addAction(Actions.sequence(Actions.delay(.25f), Actions.run(new Runnable() {
+			@Override
+			public void run() {
+				scroller.setScrollPercentX(.5f);
+			}
+		})));
+
+		contentTable.row();
+		contentTable.add(scroller).fill().expand();
+
+		// Ꮎ buttons
+
+		final TextButton howa = new TextButton("ᎰᏩ", skin);
+		newCardDialog.button(howa, "ᎰᏩ");
+
+		final TextButton audio = new TextButton("[AUDIO]", skin);
+		newCardDialog.button(audio, "[AUDIO]");
+
+		// recno
+		final Label recno = new Label("(" + activeCardData.chapter + "-" + activeCardData.recno + ")", skin);
+		recno.setAlignment(Align.right);
+		recno.setFontScale(0.6f);
+		final Table buttonTable = newCardDialog.getButtonTable();
+		buttonTable.getParent().addActor(recno);
+		recno.setPosition(0, buttonTable.getY() + 10);
+
+		newCardDialog.pack();
+		newCardDialog.show(pausedStage);
+	}
+
+	private void updateTimeleft() {
+		float timeleft_secs = maxTime_secs - totalElapsed;
+		if (timeleft_secs < 0f) {
+			timeleft_secs = 0f;
+		}
+		final int minutes = (int) (timeleft_secs / 60f);
+		final int seconds = (int) timeleft_secs - 60 * minutes;
+		final String tmp = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+		lblCountdown.setText(tmp);
+		lblCountdown.pack();
 	}
 
 }

@@ -22,29 +22,29 @@ public class LoadCards implements Runnable {
 	private static final int NOTES = 6;
 
 	/**
-     * Eight-bit UCS Transformation Format
-     */
-    public static final Charset UTF_8 = Charset.forName("UTF-8");
-	
-	private CLL1 game;
+	 * Eight-bit UCS Transformation Format
+	 */
+	public static final Charset UTF_8 = Charset.forName("UTF-8");
 
-	private Logger log = new Logger(this.getClass().getSimpleName(), Logger.INFO);
+	private final CLL1 game;
 
-	public LoadCards(CLL1 game) {
+	private final Logger log = new Logger(this.getClass().getSimpleName(), Logger.INFO);
+
+	public LoadCards(final CLL1 game) {
 		this.game = game;
 	}
 
 	@Override
 	public void run() {
 		log.info("Loading cards from " + CLL1.CARDS_CSV);
-		String tmpCards = Gdx.files.internal(CLL1.CARDS_CSV).readString(UTF_8.name());
-		String[] tmpLines = tmpCards.split("\n");
+		final String tmpCards = Gdx.files.internal(CLL1.CARDS_CSV).readString(UTF_8.name());
+		final String[] tmpLines = tmpCards.split("\n");
 		log.info("Loaded " + tmpLines.length + " records.");
 		int activeChapter = 0;
-		int recno=0;
-		for (String tmpLine : tmpLines) {
+		int recno = 0;
+		for (final String tmpLine : tmpLines) {
 			recno++;
-			String[] tmpCard = tmpLine.split("\t", -1);
+			final String[] tmpCard = tmpLine.split("\t", -1);
 			if (tmpCard.length < 6) {
 				continue;
 			}
@@ -54,14 +54,14 @@ public class LoadCards implements Runnable {
 			if (!tmpCard[CHAPTER].trim().isEmpty()) {
 				try {
 					activeChapter = Integer.valueOf(tmpCard[CHAPTER]);
-				} catch (NumberFormatException e) {
+				} catch (final NumberFormatException e) {
 				}
 			}
 			if (tmpCard[SYLLABARY].trim().isEmpty()) {
 				continue;
 			}
-			CardData data = new CardData();
-			data.recno=recno;
+			final CardData data = new CardData();
+			data.recno = recno;
 			data.chapter = activeChapter;
 			data.text = tmpCard[SYLLABARY].trim();
 			data.audio = tmpCard[AUDIO].trim();
@@ -71,7 +71,7 @@ public class LoadCards implements Runnable {
 			}
 			data.blacklistPic = tmpCard[EXCLUDE_PICS].trim();
 			data.setEnglishGloss(tmpCard[ENGLISH_GLOSS].trim());
-			GameCard card = new GameCard();
+			final GameCard card = new GameCard();
 			card.setData(data);
 			game.cards.add(card);
 		}
@@ -79,24 +79,25 @@ public class LoadCards implements Runnable {
 		/**
 		 * Scan for and report duplicate ids.
 		 */
-		Set<String> already = new HashSet<String>();
-		for (GameCard card: game.cards) {
-			if (already.contains(card.id())){
-				log.error("DUPLICATE CARD ID: '"+card.id()+"' (Removing from deck...)");
+		final Set<String> already = new HashSet<String>();
+		for (final GameCard card : game.cards) {
+			if (already.contains(card.id())) {
+				log.error("DUPLICATE CARD ID: '" + card.id() + "' (Removing from deck...)");
 				card.getMyDeck().remove(card);
 			}
 		}
 		game.deckReady = true;
-		
+
 		/**
 		 * debug dumps
 		 */
-		for (int session =0; session<DeckStats.FULLY_LEARNED_BOX; session++) {
-			log.info("LEITNER BOX "+session+" IS "+CardUtils.getNextSessionIntervalDays(session)+" DAYS DELAY.");
+		for (int session = 0; session < DeckStats.FULLY_LEARNED_BOX; session++) {
+			log.info(
+					"LEITNER BOX " + session + " IS " + CardUtils.getNextSessionIntervalDays(session) + " DAYS DELAY.");
 		}
-		for (GameCard card: game.cards) {
-			CardData data = card.getData();
-			log.info(data.chapter+"-"+data.recno+": "+data.text+" = "+data.getEnglishGloss());
+		for (final GameCard card : game.cards) {
+			final CardData data = card.getData();
+			log.info(data.chapter + "-" + data.recno + ": " + data.text + " = " + data.getEnglishGloss());
 		}
 	}
 }

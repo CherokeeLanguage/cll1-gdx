@@ -22,37 +22,25 @@ public class MainMenu extends AbstractScreen {
 	private static final String PRACTICE = "Practice - ᏣᎪᏅᏗ";
 	private static final String TITLE = "Cherokee Language Lessons 1";
 
-	private ClickListener onNewGame = new ClickListener() {
+	private final ClickListener onNewGame = new ClickListener() {
 		@Override
-		public void clicked(InputEvent event, float x, float y) {
+		public void clicked(final InputEvent event, final float x, final float y) {
 			game.addScreen(new SelectSession(game));
 		};
 	};
-	private ClickListener onOptions = new ClickListener();
-	private ClickListener onAbout = new ClickListener() {
+	private final ClickListener onOptions = new ClickListener();
+	private final ClickListener onAbout = new ClickListener() {
 		@Override
-		public void clicked(InputEvent event, float x, float y) {
+		public void clicked(final InputEvent event, final float x, final float y) {
 			game.addScreen(new About(game));
 		}
 	};
-	private ClickListener onQuit = new ClickListener() {
+	private final ClickListener onQuit = new ClickListener() {
 		@Override
-		public void clicked(InputEvent event, float x, float y) {
+		public void clicked(final InputEvent event, final float x, final float y) {
 			game.setScreen(new Quit(game));
 		};
 	};
-
-	public MainMenu(CLL1 game) {
-		super(game);
-		setSkin(SKIN);
-		setBackdrop(CLL1.BACKDROP);
-		Gdx.app.postRunnable(new LoadCards(game));
-		Gdx.app.postRunnable(new LoadAudioFilenames(game));
-		Gdx.app.postRunnable(new LoadImageFilenames(game));
-		Gdx.app.postRunnable(new DiscardIncompleteCards(game));
-		Gdx.app.postRunnable(init);
-		Gdx.app.postRunnable(howa);
-	}
 
 	protected Runnable howa = new Runnable() {
 		@Override
@@ -62,22 +50,23 @@ public class MainMenu extends AbstractScreen {
 			assets.get("audio/howa.mp3", Sound.class).play(1f);
 		}
 	};
+
 	protected Runnable init = new Runnable() {
 		@Override
 		public void run() {
 			log("init");
-			Label titleLabel = new Label(TITLE, skin);
-			TextButton btnNewGame = new TextButton(PRACTICE, skin);
-			TextButton btnOptions = new TextButton(OPTIONS, skin);
-			TextButton btnAbout = new TextButton(ABOUT, skin);
-			TextButton btnQuit = new TextButton(QUIT, skin);
+			final Label titleLabel = new Label(TITLE, skin);
+			final TextButton btnNewGame = new TextButton(PRACTICE, skin);
+			final TextButton btnOptions = new TextButton(OPTIONS, skin);
+			final TextButton btnAbout = new TextButton(ABOUT, skin);
+			final TextButton btnQuit = new TextButton(QUIT, skin);
 
 			btnNewGame.addListener(onNewGame);
 			btnOptions.addListener(onOptions);
 			btnAbout.addListener(onAbout);
 			btnQuit.addListener(onQuit);
 
-			Table menu = new Table(skin);
+			final Table menu = new Table(skin);
 			menu.setFillParent(true);
 			menu.defaults().expand();
 			menu.row();
@@ -96,6 +85,22 @@ public class MainMenu extends AbstractScreen {
 		}
 	};
 
+	public MainMenu(final CLL1 game) {
+		super(game);
+		setSkin(SKIN);
+		setBackdrop(CLL1.BACKDROP);
+		Gdx.app.postRunnable(new LoadCards(game));
+		Gdx.app.postRunnable(new LoadAudioFilenames(game));
+		Gdx.app.postRunnable(new LoadImageFilenames(game));
+		Gdx.app.postRunnable(new DiscardIncompleteCards(game));
+		Gdx.app.postRunnable(init);
+		Gdx.app.postRunnable(howa);
+	}
+
+	@Override
+	protected void act(final float delta) {
+	}
+
 	@Override
 	protected boolean onBack() {
 		return false;
@@ -104,9 +109,5 @@ public class MainMenu extends AbstractScreen {
 	@Override
 	protected boolean onMenu() {
 		return false;
-	}
-
-	@Override
-	protected void act(float delta) {
 	}
 }

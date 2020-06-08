@@ -12,22 +12,22 @@ public class RefCounts extends HashMap<String, Integer> {
 		log.setLevel(Logger.NONE);
 	}
 
-	public void inc(String key) {
-		synchronized (this) {
-			if (!containsKey(key)) {
-				put(key, 0);
-			}
-			put(key, get(key) + 1);
-			log.info(key + ": " + get(key));
-		}
-	}
-
-	public void dec(String key) {
+	public void dec(final String key) {
 		synchronized (this) {
 			if (!containsKey(key)) {
 				put(key, 0);
 			}
 			put(key, Math.max(0, get(key) - 1));
+			log.info(key + ": " + get(key));
+		}
+	}
+
+	public void inc(final String key) {
+		synchronized (this) {
+			if (!containsKey(key)) {
+				put(key, 0);
+			}
+			put(key, get(key) + 1);
 			log.info(key + ": " + get(key));
 		}
 	}

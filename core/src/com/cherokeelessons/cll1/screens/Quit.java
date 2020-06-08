@@ -5,19 +5,15 @@ import com.cherokeelessons.cll1.AbstractGame;
 import com.cherokeelessons.cll1.CLL1;
 
 public class Quit extends AbstractScreen {
-	public Quit(AbstractGame game) {
+	public Quit(final AbstractGame game) {
 		super(game);
 		setBackdrop(CLL1.BACKDROP);
 	}
 
 	@Override
-	public void show() {
-		super.show();
-		Gdx.app.postRunnable(new Runnable() {
-			public void run() {
-				Gdx.app.exit();
-			}
-		});
+	protected void act(final float delta) {
+		// TODO Auto-generated method stub
+
 	}
 
 	@Override
@@ -31,9 +27,14 @@ public class Quit extends AbstractScreen {
 	}
 
 	@Override
-	protected void act(float delta) {
-		// TODO Auto-generated method stub
-
+	public void show() {
+		super.show();
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				Gdx.app.exit();
+			}
+		});
 	}
 
 }

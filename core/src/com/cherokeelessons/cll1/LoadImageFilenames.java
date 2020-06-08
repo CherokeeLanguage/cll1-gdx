@@ -9,35 +9,35 @@ import com.cherokeelessons.cll1.models.CardData;
 import com.cherokeelessons.cll1.models.GameCard;
 
 public class LoadImageFilenames implements Runnable {
-	
+
 	/**
-     * Eight-bit UCS Transformation Format
-     */
-    public static final Charset UTF_8 = Charset.forName("UTF-8");
+	 * Eight-bit UCS Transformation Format
+	 */
+	public static final Charset UTF_8 = Charset.forName("UTF-8");
 
-	private boolean debug = false;
-	private FileHandle cardImageDir = Gdx.files.internal("card-data/images/");
+	private final boolean debug = false;
+	private final FileHandle cardImageDir = Gdx.files.internal("card-data/images/");
 
-	private void log(String message) {
-		Gdx.app.log(this.getClass().getSimpleName(), message);
+	private final List<GameCard> cards;
+
+	public LoadImageFilenames(final CLL1 game) {
+		cards = game.cards;
 	}
 
-	private List<GameCard> cards;
-
-	public LoadImageFilenames(CLL1 game) {
-		cards = game.cards;
+	private void log(final String message) {
+		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
 	@Override
 	public void run() {
 		// each top level directory is a two-digit number that is the chapter
 		// number in the csv file
-		String[] dirs = cardImageDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
-		for (String dir : dirs) {
-			FileHandle subDir = cardImageDir.child(dir);
-			String[] imageFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
-			for (GameCard card : cards) {
-				CardData cd = card.getData();
+		final String[] dirs = cardImageDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
+		for (final String dir : dirs) {
+			final FileHandle subDir = cardImageDir.child(dir);
+			final String[] imageFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
+			for (final GameCard card : cards) {
+				final CardData cd = card.getData();
 				if (cd == null || cd.images == null) {
 					continue;
 				}
@@ -51,10 +51,10 @@ public class LoadImageFilenames implements Runnable {
 				if (!c.equals(dir)) {
 					continue;
 				}
-				String[] imagePrefixes = cd.images.split(";\\s*");
-				String[] imageBlacklistSubstrings = cd.blacklistPic.split(";\\s*");
-				for (String imagePrefix : imagePrefixes) {
-					nextImage: for (String imageFile : imageFiles) {
+				final String[] imagePrefixes = cd.images.split(";\\s*");
+				final String[] imageBlacklistSubstrings = cd.blacklistPic.split(";\\s*");
+				for (final String imagePrefix : imagePrefixes) {
+					nextImage: for (final String imageFile : imageFiles) {
 						// skip not recogized image files
 						if (!imageFile.endsWith(".png") && !imageFile.endsWith(".jpg")
 								&& !imageFile.endsWith(".jpeg")) {
@@ -73,7 +73,7 @@ public class LoadImageFilenames implements Runnable {
 							continue nextImage;
 						}
 						// see if it is ok to add to the wrong pics list
-						for (String substring : imageBlacklistSubstrings) {
+						for (final String substring : imageBlacklistSubstrings) {
 							if (substring == null || substring.trim().isEmpty()) {
 								break;
 							}
@@ -88,8 +88,8 @@ public class LoadImageFilenames implements Runnable {
 		}
 		if (debug) {
 			log("=== DEBUG - CARD DATA IMAGE FILE ASSIGNMENTS:");
-			for (GameCard card : cards) {
-				CardData data = card.getData();
+			for (final GameCard card : cards) {
+				final CardData data = card.getData();
 				if (data.hasImageFiles() && data.hasWrongImageFiles()) {
 					log("");
 					log("CARD [c]: " + data.chapter + " - " + data.nextRandomImageFile() + " - "

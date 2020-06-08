@@ -7,7 +7,7 @@ public class Settings {
 	public Settings() {
 	}
 
-	public Settings(Settings settings) {
+	public Settings(final Settings settings) {
 		this.muted = settings.muted;
 		this.name = settings.name;
 	}

@@ -7,9 +7,9 @@ import java.util.List;
 import com.cherokeelessons.deck.ICardData;
 
 public class CardData implements ICardData {
-	public int recno = 0;
 	public static final int MAX_TRIES = 5;
 	public static final int SORT_KEY_LENGTH = 7;
+	public int recno = 0;
 	public String audio;
 	private List<String> audioFiles = new ArrayList<String>();
 	public String blacklistPic;
@@ -29,29 +29,21 @@ public class CardData implements ICardData {
 	 */
 	protected String englishGloss;
 
-	public String getEnglishGloss() {
-		return englishGloss;
-	}
-
-	public void setEnglishGloss(String englishGloss) {
-		this.englishGloss = englishGloss;
-	}
-
-	public void addAudioFile(String file) {
+	public void addAudioFile(final String file) {
 		audioFiles.add(file);
 	}
 
-	public void addImageFile(String file) {
+	public void addImageFile(final String file) {
 		imageFiles.add(file);
 	}
 
-	public void addWrongImageFile(String file) {
+	public void addWrongImageFile(final String file) {
 		wrongImageFiles.add(file);
 	}
 
 	@Override
 	public CardData copy() {
-		CardData copy = new CardData();
+		final CardData copy = new CardData();
 		copy.audio = audio;
 		copy.audioFiles = new ArrayList<String>(audioFiles);
 		copy.blacklistPic = blacklistPic;
@@ -63,13 +55,89 @@ public class CardData implements ICardData {
 		copy.randomImageFiles = new ArrayList<String>(randomImageFiles);
 		copy.randomWrongImageFiles = new ArrayList<String>(randomWrongImageFiles);
 		copy.text = text;
-		copy.recno= recno;
+		copy.recno = recno;
 		copy.setEnglishGloss(getEnglishGloss());
 		return copy;
 	}
 
+	/**
+	 * Only uses {@link #chapter}, {@link #text}, and {@link #audio} for comparison.
+	 * <br>
+	 * {@inheritDoc}
+	 */
+	@Override
+	public boolean equals(final Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof CardData)) {
+			return false;
+		}
+		final CardData other = (CardData) obj;
+		if (audio == null) {
+			if (other.audio != null) {
+				return false;
+			}
+		} else if (!audio.equals(other.audio)) {
+			return false;
+		}
+		if (chapter != other.chapter) {
+			return false;
+		}
+		if (text == null) {
+			if (other.text != null) {
+				return false;
+			}
+		} else if (!text.equals(other.text)) {
+			return false;
+		}
+		return true;
+	}
+
+	public String getEnglishGloss() {
+		return englishGloss;
+	}
+
+	public List<String> getImageFiles() {
+		return imageFiles;
+	}
+
+	public List<String> getRandomAudioFiles() {
+		return randomAudioFiles;
+	}
+
+	public List<String> getRandomImageFiles() {
+		return randomImageFiles;
+	}
+
+	public List<String> getRandomWrongImageFiles() {
+		return randomWrongImageFiles;
+	}
+
+	public List<String> getWrongImageFiles() {
+		return wrongImageFiles;
+	}
+
 	public boolean hasAudioFiles() {
 		return audioFiles.size() != 0;
+	}
+
+	/**
+	 * Only uses {@link #chapter}, {@link #text}, and {@link #audio} for hashCode
+	 * generation. <br>
+	 * {@inheritDoc}
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (audio == null ? 0 : audio.hashCode());
+		result = prime * result + chapter;
+		result = prime * result + (text == null ? 0 : text.hashCode());
+		return result;
 	}
 
 	public boolean hasImageFiles() {
@@ -82,13 +150,13 @@ public class CardData implements ICardData {
 
 	/**
 	 * {@inheritDoc} <br>
-	 * This implementation uses the pattern: 'NNN-TEXT-AUDIO'. Where the first
-	 * NNN is the chapter number. The TEXT is the challenge text. And AUDIO is
-	 * the audio filename prefix.<br>
+	 * This implementation uses the pattern: 'NNN-TEXT-AUDIO'. Where the first NNN
+	 * is the chapter number. The TEXT is the challenge text. And AUDIO is the audio
+	 * filename prefix.<br>
 	 */
 	@Override
 	public String id() {
-		StringBuilder sb = new StringBuilder();
+		final StringBuilder sb = new StringBuilder();
 		if (chapter < 100) {
 			sb.append("0");
 		}
@@ -125,26 +193,6 @@ public class CardData implements ICardData {
 		return randomImageFiles.remove(0);
 	}
 
-	public List<String> getWrongImageFiles() {
-		return wrongImageFiles;
-	}
-
-	public List<String> getImageFiles() {
-		return imageFiles;
-	}
-
-	public List<String> getRandomAudioFiles() {
-		return randomAudioFiles;
-	}
-
-	public List<String> getRandomImageFiles() {
-		return randomImageFiles;
-	}
-
-	public List<String> getRandomWrongImageFiles() {
-		return randomWrongImageFiles;
-	}
-
 	public String nextRandomWrongImageFile() {
 		if (!hasWrongImageFiles()) {
 			return null;
@@ -156,17 +204,20 @@ public class CardData implements ICardData {
 		return randomWrongImageFiles.remove(0);
 	}
 
+	public void setEnglishGloss(final String englishGloss) {
+		this.englishGloss = englishGloss;
+	}
+
 	/**
 	 * {@inheritDoc} <br>
-	 * This implementation uses the pattern: 'NNN-NNN-TEXT-AUDIO'. Where the
-	 * first NNN is the chapter number. The second NNN is the length of the
-	 * challenge text. The TEXT is the challenge text. And AUDIO is the audio
-	 * filename prefix. The recommended sort key length is either 7 or 9 for
-	 * sorted shuffling.
+	 * This implementation uses the pattern: 'NNN-NNN-TEXT-AUDIO'. Where the first
+	 * NNN is the chapter number. The second NNN is the length of the challenge
+	 * text. The TEXT is the challenge text. And AUDIO is the audio filename prefix.
+	 * The recommended sort key length is either 7 or 9 for sorted shuffling.
 	 */
 	@Override
 	public String sortKey() {
-		StringBuilder sb = new StringBuilder();
+		final StringBuilder sb = new StringBuilder();
 		if (chapter < 100) {
 			sb.append("0");
 		}
@@ -175,7 +226,7 @@ public class CardData implements ICardData {
 		}
 		sb.append(chapter);
 		sb.append("-");
-		int len = text.replaceAll("[^Ꭰ-Ᏼ]", "").length();
+		final int len = text.replaceAll("[^Ꭰ-Ᏼ]", "").length();
 		if (len < 100) {
 			sb.append("0");
 		}
@@ -188,58 +239,6 @@ public class CardData implements ICardData {
 		sb.append("-");
 		sb.append(audio == null ? "" : audio.replaceAll(";.*", "").trim());
 		return sb.toString();
-	}
-
-	/**
-	 * Only uses {@link #chapter}, {@link #text}, and {@link #audio} for
-	 * hashCode generation. <br>
-	 * {@inheritDoc}
-	 */
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((audio == null) ? 0 : audio.hashCode());
-		result = prime * result + chapter;
-		result = prime * result + ((text == null) ? 0 : text.hashCode());
-		return result;
-	}
-
-	/**
-	 * Only uses {@link #chapter}, {@link #text}, and {@link #audio} for
-	 * comparison. <br>
-	 * {@inheritDoc}
-	 */
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null) {
-			return false;
-		}
-		if (!(obj instanceof CardData)) {
-			return false;
-		}
-		CardData other = (CardData) obj;
-		if (audio == null) {
-			if (other.audio != null) {
-				return false;
-			}
-		} else if (!audio.equals(other.audio)) {
-			return false;
-		}
-		if (chapter != other.chapter) {
-			return false;
-		}
-		if (text == null) {
-			if (other.text != null) {
-				return false;
-			}
-		} else if (!text.equals(other.text)) {
-			return false;
-		}
-		return true;
 	}
 
 }

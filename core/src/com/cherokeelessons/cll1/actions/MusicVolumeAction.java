@@ -7,25 +7,19 @@ import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
 public class MusicVolumeAction extends TemporalAction {
 	private Music music;
 
-	public MusicVolumeAction(Music music, float endVolume, float duration) {
+	float startVolume = 0;
+
+	float endVolume = 1f;
+
+	public MusicVolumeAction(final Music music, final float endVolume, final float duration) {
 		this(music, endVolume, duration, Interpolation.linear);
 	}
 
-	public MusicVolumeAction(Music music, float endVolume, float duration, Interpolation interpolation) {
+	public MusicVolumeAction(final Music music, final float endVolume, final float duration,
+			final Interpolation interpolation) {
 		super(duration, interpolation);
 		this.music = music;
 		this.endVolume = endVolume;
-	}
-
-	float startVolume = 0;
-	float endVolume = 1f;
-
-	@Override
-	public void reset() {
-		super.reset();
-		startVolume = 0f;
-		endVolume = 0f;
-		music = null;
 	}
 
 	@Override
@@ -44,7 +38,15 @@ public class MusicVolumeAction extends TemporalAction {
 	}
 
 	@Override
-	protected void update(float percent) {
+	public void reset() {
+		super.reset();
+		startVolume = 0f;
+		endVolume = 0f;
+		music = null;
+	}
+
+	@Override
+	protected void update(final float percent) {
 		if (this.music != null) {
 			this.music.setVolume(percent * (endVolume - startVolume) + startVolume);
 		}

@@ -6,23 +6,23 @@ import com.badlogic.gdx.Gdx;
 import com.cherokeelessons.cll1.models.GameCard;
 
 public class DiscardIncompleteCards implements Runnable {
-	private boolean debug = true;
-	private CLL1 game;
+	private final boolean debug = true;
+	private final CLL1 game;
 
-	private void log(String message) {
-		Gdx.app.log(this.getClass().getSimpleName(), message);
+	public DiscardIncompleteCards(final CLL1 game) {
+		this.game = game;
 	}
 
-	public DiscardIncompleteCards(CLL1 game) {
-		this.game = game;
+	private void log(final String message) {
+		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
 	@Override
 	public void run() {
-		int beforeSize = this.game.cards.size();
-		Iterator<GameCard> icards = this.game.cards.iterator();
+		final int beforeSize = this.game.cards.size();
+		final Iterator<GameCard> icards = this.game.cards.iterator();
 		while (icards.hasNext()) {
-			GameCard card = icards.next();
+			final GameCard card = icards.next();
 			if (!card.getData().hasAudioFiles()) {
 				icards.remove();
 				if (debug) {

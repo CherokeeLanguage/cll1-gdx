@@ -18,33 +18,9 @@ public abstract class AbstractGame extends Game {
 	};
 	protected final String TAG = this.getClass().getSimpleName();
 
-	protected void log(String message) {
-		Gdx.app.log(TAG, message);
-	}
-
 	protected List<Screen> screens = new ArrayList<Screen>();
 
-	/**
-	 * Replaces the top of the "deck" of screens with this screen.<br/>
-	 * Current screen (if any) {@link Screen#hide()} is called.<br/>
-	 * New screen {@link Screen#show()} is called.<br/>
-	 * Previous screen (if any) {@link Screen#dispose()} is called.
-	 */
-	@Override
-	public void setScreen(Screen screen) {
-		int activeScreen = screens.size() - 1;
-		screens.add(screen);
-		super.setScreen(screen);
-		if (activeScreen > -1) {
-			final Screen forDisposal = screens.remove(activeScreen);
-			Gdx.app.postRunnable(new Runnable() {
-				@Override
-				public void run() {
-					forDisposal.dispose();
-				}
-			});
-		}
-	}
+	protected Preferences prefs;
 
 	/**
 	 * Adds this screen to the top of the "deck" of screens.<br/>
@@ -52,19 +28,9 @@ public abstract class AbstractGame extends Game {
 	 * Current screen (if any) {@link Screen#hide()} is called.<br/>
 	 * New screen {@link Screen#show()} is called.<br/>
 	 */
-	public void addScreen(Screen screen) {
+	public void addScreen(final Screen screen) {
 		screens.add(screen);
 		super.setScreen(screen);
-	}
-
-	protected Preferences prefs;
-
-	public Preferences getPrefs() {
-		return prefs;
-	}
-
-	public void setPrefs(Preferences prefs) {
-		this.prefs = prefs;
 	}
 
 	@Override
@@ -76,9 +42,17 @@ public abstract class AbstractGame extends Game {
 	public void dispose() {
 		log("Dispose");
 		super.dispose();
-		for (Screen screen : screens) {
+		for (final Screen screen : screens) {
 			screen.dispose();
 		}
+	}
+
+	public Preferences getPrefs() {
+		return prefs;
+	}
+
+	protected void log(final String message) {
+		Gdx.app.log(TAG, message);
 	}
 
 	/**
@@ -102,5 +76,31 @@ public abstract class AbstractGame extends Game {
 				forRemoval.dispose();
 			}
 		});
+	}
+
+	public void setPrefs(final Preferences prefs) {
+		this.prefs = prefs;
+	}
+
+	/**
+	 * Replaces the top of the "deck" of screens with this screen.<br/>
+	 * Current screen (if any) {@link Screen#hide()} is called.<br/>
+	 * New screen {@link Screen#show()} is called.<br/>
+	 * Previous screen (if any) {@link Screen#dispose()} is called.
+	 */
+	@Override
+	public void setScreen(final Screen screen) {
+		final int activeScreen = screens.size() - 1;
+		screens.add(screen);
+		super.setScreen(screen);
+		if (activeScreen > -1) {
+			final Screen forDisposal = screens.remove(activeScreen);
+			Gdx.app.postRunnable(new Runnable() {
+				@Override
+				public void run() {
+					forDisposal.dispose();
+				}
+			});
+		}
 	}
 }

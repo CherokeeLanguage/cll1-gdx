@@ -10,7 +10,6 @@ import com.cherokeelessons.cll1.screens.MainMenu;
 import com.cherokeelessons.cll1.screens.ScreenPoweredBy;
 
 public class CLL1 extends AbstractGame {
-	public final List<GameCard> cards = new ArrayList<GameCard>();
 	public static final Vector2 WORLDSIZE = new Vector2(1280, 720);
 	public static final String BACKDROP = "textures/parchment-seemless.png";
 	public static final String SKIN = "skin/serif-68/gdx-holo-freeserif-68.json";
@@ -20,8 +19,10 @@ public class CLL1 extends AbstractGame {
 	public static final String DECKSTATS = "DeckStats.json";
 	public static final String QUIT = "[QUIT]";
 	public static final String APP_NAME = "CLL1";
+	public final List<GameCard> cards = new ArrayList<GameCard>();
 	private ScreenPoweredBy poweredBy = null;
-	private Runnable onPoweredByDone = new Runnable() {
+	private final Runnable onPoweredByDone = new Runnable() {
+		@Override
 		public void run() {
 			setScreen(new MainMenu(CLL1.this));
 		}

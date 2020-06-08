@@ -16,22 +16,15 @@ public class About extends AbstractScreen {
 	private static final String ABOUT_TXT = "text/about.txt";
 	protected static final String ALSO_TXT = "text/also.txt";
 
-	public About(AbstractGame game) {
-		super(game);
-		setSkin(CLL1.SKIN);
-		setBackdrop(CLL1.BACKDROP);
-		Gdx.app.postRunnable(init);
-	}
-
 	protected Runnable init = new Runnable() {
 		@Override
 		public void run() {
-			Table container = new Table(skin);
+			final Table container = new Table(skin);
 			container.setFillParent(true);
 			container.defaults().expand();
 
-			Table scrollTable = new Table(skin);
-			ScrollPane scroller = new ScrollPane(scrollTable, skin);
+			final Table scrollTable = new Table(skin);
+			final ScrollPane scroller = new ScrollPane(scrollTable, skin);
 			scroller.setFadeScrollBars(false);
 
 			String text = "";
@@ -57,7 +50,7 @@ public class About extends AbstractScreen {
 
 			text += Gdx.files.internal(ALSO_TXT).readString("UTF-8");
 
-			Label label = new Label(text, skin);
+			final Label label = new Label(text, skin);
 			label.setWrap(true);
 			label.setFontScale(0.65f);
 
@@ -68,13 +61,13 @@ public class About extends AbstractScreen {
 			container.add(scroller).expand().fill();
 
 			container.row();
-			TextButton btnBack = new TextButton("[BACK]", skin);
+			final TextButton btnBack = new TextButton("[BACK]", skin);
 			btnBack.getLabel().setFontScale(.65f);
 			btnBack.pack();
 			container.add(btnBack).left().fill(false).expand(false, false);
 			btnBack.addListener(new ClickListener() {
 				@Override
-				public void clicked(InputEvent event, float x, float y) {
+				public void clicked(final InputEvent event, final float x, final float y) {
 					onBack();
 				}
 			});
@@ -85,6 +78,19 @@ public class About extends AbstractScreen {
 		}
 	};
 
+	public About(final AbstractGame game) {
+		super(game);
+		setSkin(CLL1.SKIN);
+		setBackdrop(CLL1.BACKDROP);
+		Gdx.app.postRunnable(init);
+	}
+
+	@Override
+	protected void act(final float delta) {
+		// TODO Auto-generated method stub
+
+	}
+
 	@Override
 	protected boolean onBack() {
 		game.previousScreen();
@@ -94,12 +100,6 @@ public class About extends AbstractScreen {
 	@Override
 	protected boolean onMenu() {
 		return false;
-	}
-
-	@Override
-	protected void act(float delta) {
-		// TODO Auto-generated method stub
-
 	}
 
 }

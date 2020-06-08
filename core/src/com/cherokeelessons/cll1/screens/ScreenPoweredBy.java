@@ -25,7 +25,14 @@ public class ScreenPoweredBy extends AbstractScreen {
 
 	private final Runnable onDone;
 
-	public ScreenPoweredBy(AbstractGame game, Runnable onDone) {
+	private final float tvSafePercent = .05f;
+
+	private final Rectangle tvSafe = new Rectangle(WORLDSIZE.x * tvSafePercent, WORLDSIZE.y * tvSafePercent,
+			WORLDSIZE.x * (1f - 2f * tvSafePercent), WORLDSIZE.y * (1f - 2f * tvSafePercent));
+
+	private Rectangle logoBox;
+
+	public ScreenPoweredBy(final AbstractGame game, final Runnable onDone) {
 		super(game);
 		this.onDone = onDone;
 		init();
@@ -33,12 +40,44 @@ public class ScreenPoweredBy extends AbstractScreen {
 	}
 
 	@Override
+	protected void act(final float delta) {
+		if (Gdx.input.justTouched()) {
+			if (onDone != null) {
+				Gdx.app.postRunnable(onDone);
+			}
+		}
+	}
+
+	@Override
 	public void dispose() {
 		music.dispose();
-		for (Texture texture : textures) {
+		for (final Texture texture : textures) {
 			texture.dispose();
 		}
 		super.dispose();
+	}
+
+	private Action getAlphaAction() {
+		final SequenceAction sa = Actions.sequence();
+		sa.addAction(Actions.delay(1f));
+		sa.addAction(Actions.alpha(1f, 4f));
+		sa.addAction(Actions.delay(4f));
+		sa.addAction(Actions.alpha(0f, 2f));
+		sa.addAction(Actions.delay(1f));
+		return sa;
+	}
+
+	private Action getVolumeAction(final Music music) {
+		final SequenceAction sa = Actions.sequence();
+		sa.addAction(Actions.delay(1f));
+		sa.addAction(new MusicVolumeAction(music, .7f, 4f));
+		sa.addAction(Actions.delay(4f));
+		sa.addAction(new MusicVolumeAction(music, 0f, 2f));
+		sa.addAction(Actions.delay(1f));
+		if (onDone != null) {
+			sa.addAction(Actions.run(onDone));
+		}
+		return sa;
 	}
 
 	@Override
@@ -46,19 +85,14 @@ public class ScreenPoweredBy extends AbstractScreen {
 		super.hide();
 	}
 
-	private final float tvSafePercent = .05f;
-	private final Rectangle tvSafe = new Rectangle((WORLDSIZE.x * tvSafePercent), (WORLDSIZE.y * tvSafePercent),
-			(WORLDSIZE.x * (1f - 2f * tvSafePercent)), (WORLDSIZE.y * (1f - 2f * tvSafePercent)));
-	private Rectangle logoBox;
-
 	private void init() {
 		music = Gdx.audio.newMusic(Gdx.files.internal("libgdx/atmoseerie03.mp3"));
 		music.setVolume(0f);
 		for (int i = 0; i < 25; i++) {
-			Texture texture = new Texture(Gdx.files.internal("libgdx/1080p_" + i + ".png"));
+			final Texture texture = new Texture(Gdx.files.internal("libgdx/1080p_" + i + ".png"));
 			texture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			textures.add(texture);
-			Image image = new Image(texture);
+			final Image image = new Image(texture);
 			image.pack();
 			logo.add(image);
 		}
@@ -69,8 +103,8 @@ public class ScreenPoweredBy extends AbstractScreen {
 			height = 0;
 			Image img = null;
 			for (int y = 0; y < 5; y++) {
-				int z = 4 - y;
-				int p = z * 5 + x;
+				final int z = 4 - y;
+				final int p = z * 5 + x;
 				img = logo.get(p);
 				img.setOrigin(0, 0);
 				img.setPosition(width, height);
@@ -82,11 +116,12 @@ public class ScreenPoweredBy extends AbstractScreen {
 		logoBox = new Rectangle(0, 0, width, height);
 		logoBox.fitInside(tvSafe);
 		float scaleXY = logoBox.height / height;
-		if (scaleXY > logoBox.width / width)
+		if (scaleXY > logoBox.width / width) {
 			scaleXY = logoBox.width / width;
+		}
 
-		Group logoGroup = new Group();
-		for (Image img : logo) {
+		final Group logoGroup = new Group();
+		for (final Image img : logo) {
 			logoGroup.addActor(img);
 		}
 
@@ -100,29 +135,6 @@ public class ScreenPoweredBy extends AbstractScreen {
 		logoGroup.addAction(Actions.parallel(getAlphaAction(), getVolumeAction(music)));
 
 		stage.addActor(logoGroup);
-	}
-
-	private Action getAlphaAction() {
-		SequenceAction sa = Actions.sequence();
-		sa.addAction(Actions.delay(1f));
-		sa.addAction(Actions.alpha(1f, 4f));
-		sa.addAction(Actions.delay(4f));
-		sa.addAction(Actions.alpha(0f, 2f));
-		sa.addAction(Actions.delay(1f));
-		return sa;
-	}
-
-	private Action getVolumeAction(Music music) {
-		SequenceAction sa = Actions.sequence();
-		sa.addAction(Actions.delay(1f));
-		sa.addAction(new MusicVolumeAction(music, .7f, 4f));
-		sa.addAction(Actions.delay(4f));
-		sa.addAction(new MusicVolumeAction(music, 0f, 2f));
-		sa.addAction(Actions.delay(1f));
-		if (onDone != null) {
-			sa.addAction(Actions.run(onDone));
-		}
-		return sa;
 	}
 
 	@Override
@@ -139,14 +151,5 @@ public class ScreenPoweredBy extends AbstractScreen {
 			Gdx.app.postRunnable(onDone);
 		}
 		return true;
-	}
-
-	@Override
-	protected void act(float delta) {
-		if (Gdx.input.justTouched()) {
-			if (onDone != null) {
-				Gdx.app.postRunnable(onDone);
-			}
-		}
 	}
 }

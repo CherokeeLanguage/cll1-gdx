@@ -16,35 +16,35 @@ import com.cherokeelessons.cll1.models.GameCard;
  */
 
 public class LoadAudioFilenames implements Runnable {
-	
-	/**
-     * Eight-bit UCS Transformation Format
-     */
-    public static final Charset UTF_8 = Charset.forName("UTF-8");
-	
-	private boolean debug = false;
-	private FileHandle cardAudioDir = Gdx.files.internal("card-data/audio/");
 
-	private void log(String message) {
-		Gdx.app.log(this.getClass().getSimpleName(), message);
+	/**
+	 * Eight-bit UCS Transformation Format
+	 */
+	public static final Charset UTF_8 = Charset.forName("UTF-8");
+
+	private final boolean debug = false;
+	private final FileHandle cardAudioDir = Gdx.files.internal("card-data/audio/");
+
+	private final List<GameCard> cards;
+
+	public LoadAudioFilenames(final CLL1 game) {
+		cards = game.cards;
 	}
 
-	private List<GameCard> cards;
-
-	public LoadAudioFilenames(CLL1 game) {
-		cards = game.cards;
+	private void log(final String message) {
+		Gdx.app.log(this.getClass().getSimpleName(), message);
 	}
 
 	@Override
 	public void run() {
 		// each top level directory is a two-digit number that is the chapter
 		// number in the csv file
-		String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
-		for (String dir : dirs) {
-			FileHandle subDir = cardAudioDir.child(dir);
-			String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
-			for (GameCard card : cards) {
-				CardData cd = card.getData();
+		final String[] dirs = cardAudioDir.child("0_dirs.txt").readString(UTF_8.name()).split("\n");
+		for (final String dir : dirs) {
+			final FileHandle subDir = cardAudioDir.child(dir);
+			final String[] audioFiles = subDir.child("0_files.txt").readString(UTF_8.name()).split("\n");
+			for (final GameCard card : cards) {
+				final CardData cd = card.getData();
 				if (cd == null || cd.audio == null) {
 					continue;
 				}
@@ -58,9 +58,9 @@ public class LoadAudioFilenames implements Runnable {
 				if (!c.equals(dir)) {
 					continue;
 				}
-				String[] audioPrefixes = cd.audio.split(";\\s*");
-				for (String audioPrefix : audioPrefixes) {
-					for (String audioFile : audioFiles) {
+				final String[] audioPrefixes = cd.audio.split(";\\s*");
+				for (final String audioPrefix : audioPrefixes) {
+					for (final String audioFile : audioFiles) {
 						if (!audioFile.endsWith(".mp3")) {
 							continue;
 						}
@@ -78,8 +78,8 @@ public class LoadAudioFilenames implements Runnable {
 		}
 		if (debug) {
 			log("=== DEBUG - CARD DATA AUDIO FILE ASSIGNMENTS:");
-			for (GameCard card : cards) {
-				CardData data = card.getData();
+			for (final GameCard card : cards) {
+				final CardData data = card.getData();
 				if (data.hasAudioFiles()) {
 					log("CARD: " + data.chapter + " - " + data.audio + " - " + data.nextRandomAudioFile());
 				}

@@ -7,13 +7,13 @@ public class SlotFolder {
 
 	public static final String base = "CLL2EV1";
 
-	public static FileHandle getSlotFolder(int slot) {
-		return getFolder("/slots/" + slot);
+	public static FileHandle getDeckSlot() {
+		return getFolder("deck");
 	}
 
-	public static FileHandle getFolder(String child) {
+	public static FileHandle getFolder(final String child) {
 		final FileHandle p0;
-		String path0 = base;
+		final String path0 = base;
 		switch (Gdx.app.getType()) {
 		case Android:
 			p0 = Gdx.files.local(path0);
@@ -40,7 +40,7 @@ public class SlotFolder {
 		return p0.child(child);
 	}
 
-	public static FileHandle getDeckSlot() {
-		return getFolder("deck");
+	public static FileHandle getSlotFolder(final int slot) {
+		return getFolder("/slots/" + slot);
 	}
 }
