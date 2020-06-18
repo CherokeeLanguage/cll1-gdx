@@ -1,3 +1,4 @@
+1.80 - Fix two incorrect card assignments.
 1.79 - Icon fix. 
 1.72 - Fix audio for ᎠᏴᏫ. Actually use adjusted pictures!
 1.71 - Multiple picture adjustments.
