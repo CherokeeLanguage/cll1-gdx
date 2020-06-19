@@ -27,8 +27,8 @@
 	ᏑᏓᎵ.	sudali			Six.	
 	ᎦᎵᏉᎩ.	galgwogi			Seven.	
 	ᎢᎬᏱᎢ.	igvyii			First. The front-most place.	
-	ᏔᎵᏁᎢ.	talinei			Second (inanimate).	
-	ᏦᎢᏁᎢ.	joinei			Third (inanimate).	
+	ᏔᎵᏁᎢ.	talinei			Second.	
+	ᏦᎢᏁᎢ.	joinei			Third.	
 	ᏅᎩᏁᎢ.	nvginei			Fourth.	
 	ᎯᏍᎩᏁᎢ.	hisginei			Fifth.	
 	ᏑᏓᎵᏁᎢ.	sudalinei			Sixth.	
@@ -83,7 +83,7 @@
 	ᏪᏌ ᎠᎴ ᎩᏟ.	wesa-ale-gihli		wesa	A cat or cats and a dog or dogs.	
 	ᏪᏌ ᎠᎴ ᏅᏯ.	wesa-ale-nvya		wesa	A cat or cats and a rock or rocks.	
 	ᏪᏌ ᏃᎴ ᎩᏟ.	wesa-nole-gihli	wesa-ale-gihli	wesa	A cat or cats and a dog or dogs.	
-	ᏪᏌ ᏃᎴ ᏅᏯ.	wesa-nole-nvya	wesa-ale-nvya	wesa	A cat or cats and a rock or rocks.	
+	ᏪᏌ ᏃᎴ ᏅᏯ.				A cat or cats and a rock or rocks.	Redundant.
 						
 61	ᎠᎪᏩᏘᎭ.	agowhtiha		agowhtiha	He, she sees him, it.	
 	ᎠᏂᎪᏩᏘᎭ.	anigowhtiha		anigowhtiha	They see him, it.	
@@ -107,16 +107,16 @@
 	ᏪᏌ ᏓᏂᎪᏩᏘᎭ.	wesa-danigowhtiha		danigowhtiha	Cats, they see them.	
 						
 62	ᎠᎨᏯ ᎠᎴ ᏪᏌ ᏅᏯ ᎠᏂᏩᏘᎭ.	agehya-ale-wesa			A woman and a cat, a rock, they see it.	
-	ᎠᎨᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	agehya-anigehya			A woman, the women and a potato or potatoes, she sees them.	
+	ᎠᎨᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.				A woman, the women and a potato or potatoes, she sees them.	Too long.
 	ᎠᎨᏯ ᏅᏯ ᎠᎪᏩᏘᎭ.	agehya-nvya			A woman, a rock, she sees it.	
-	ᎠᏂᎨᏯ ᎠᎨᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anigehya-agehya			The women, a woman and a potato or potatoes, they see them.	
+	ᎠᏂᎨᏯ ᎠᎨᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.				The women, a woman and a potato or potatoes, they see them.	Too long.
 	ᎠᏂᎨᏯ ᏄᎾ ᎠᏂᎪᏩᏘᎭ.	anigehya-nuna			The woman, a rock, they see it.	
-	ᎠᏂᏍᎦᏯ ᎠᎨᏯ ᎠᎴ ᏅᏯ ᏓᏂᎪᏩᏘᎭ.	anisgaya-agehya			The men, a woman and a rock or rocks, they see them.	
-	ᎠᏂᏍᎦᏯ ᎠᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.	anisgaya-asgaya			The men, a man and a potato or potatoes, they see them.	
+	ᎠᏂᏍᎦᏯ ᎠᎨᏯ ᎠᎴ ᏅᏯ ᏓᏂᎪᏩᏘᎭ.				The men, a woman and a rock or rocks, they see them.	Too long.
+	ᎠᏂᏍᎦᏯ ᎠᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᏂᎪᏩᏘᎭ.				The men, a man and a potato or potatoes, they see them.	Too long.
 	ᎠᏂᏍᎦᏯ ᏅᏯ ᎠᏂᎪᏩᏘᎭ.	anisgaya-nvya			The men, a rock, they see it.	
-	ᎠᏍᎦᏯ ᎠᎴ ᎩᏟ ᏅᏯ ᎠᏂᏩᏘᎭ.	asgaya-ale-gihli			A man and a dog or dogs, a rock, they see it.	
-	ᎠᏍᎦᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anigehya			A man, the women and a potato or potatoes, he sees them.	
-	ᎠᏍᎦᏯ ᎠᏂᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.	asgaya-anisgaya			A man, the men and a potato or potatoes, he sees them.	
+	ᎠᏍᎦᏯ ᎠᎴ ᎩᏟ ᏅᏯ ᎠᏂᏩᏘᎭ.				A man and a dog or dogs, a rock, they see it.	Too long.
+	ᎠᏍᎦᏯ ᎠᏂᎨᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.				A man, the women and a potato or potatoes, he sees them.	Too long.
+	ᎠᏍᎦᏯ ᎠᏂᏍᎦᏯ ᎠᎴ ᏄᎾ ᏓᎪᏩᏘᎭ.				A man, the men and a potato or potatoes, he sees them.	Too long.
 	ᎠᏍᎦᏯ ᎩᏟ ᎠᎪᏩᏘᎭ.	asgaya-gihli			A man, a dog, he sees it.	
 						
 70	ᎠᏂ.	ahni	ahni		Here.	
@@ -145,15 +145,15 @@
 	ᎠᎭᏂ ᎩᏟ ᏥᎪᏩᏘᎭ.	ahani-gihli			Here a dog, it I see.	
 	ᎠᎭᏂ ᏄᎾ Ꮵ̣ᎪᏩᏘᎭ.	ahani-nuna			Here a potato, it I see.	
 	ᎠᎭᏂ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	ahani-wesa			Here cats, them I see.	
-	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-agehya-nvya			There a woman, her I see and a rock, it I see.	
+	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.				There a woman, her I see and a rock, it I see.	Too long.
 	ᎤᎿ ᎠᎨᏯ ᏥᎪᏩᏘᎭ.	uhna-agehya			There a woman, her I see.	
-	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anigehya-nuna			There women, them I see and potatoes, them I see.	
+	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.				There women, them I see and potatoes, them I see.	Too long.
 	ᎤᎿ ᎠᏂᎨᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anigehya			There women, them I see.	
-	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-anisgaya-nuna			There men, them I see and potatoes, them I see.	
+	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏄᎾ ᏕᏥ̣ᎪᏩᏘᎭ.				There men, them I see and potatoes, them I see.	Too long.
 	ᎤᎿ ᎠᏂᏍᎦᏯ ᎦᏥᎪᏩᏘᎭ.	uhna-anisgaya			There men, them I see.	
 	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-asgaya-nvya			There a man, him I see and a rock, it I see.	
 	ᎤᎿ ᎠᏍᎦᏯ ᏥᎪᏩᏘᎭ.	uhna-asgaya			There a man, him I see.	
-	ᎤᎿ ᎩᏟ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-gihli-nvya			There dogs, them I see and rocks, them I see.	
+	ᎤᎿ ᎩᏟ ᎦᏥᎪᏩᏘᎭ ᎠᎴ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.				There dogs, them I see and rocks, them I see.	Too long.
 	ᎤᎿ ᏅᏯ ᏕᏥ̣ᎪᏩᏘᎭ.	uhna-nvya-dejigowhtiha			There rocks, them I see.	
 	ᎤᎿ ᏅᏯ Ꮵ̣ᎪᏩᏘᎭ.	uhna-nvya-jigowhtiha			There a rock, it I see.	
 	ᎤᎿ ᏪᏌ ᎦᏥᎪᏩᏘᎭ.	uhna-wesa-gajigowhtiha			There cats, them I see.	
@@ -186,10 +186,10 @@
 	ᎯᎠ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	hia-nav-jigowhtiha		hia-nav-jiigowhtiha	This near, it I see.	
 						
 	ᏪᏌ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-hlgv-nav-gajiigowhtiha			Cats, a tree near, them I see.	
-	ᎩᏟ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-hlgv-nav-gajiigowhtiha			Dogs, a tree near, them I see.	
+	ᎩᏟ ᏡᎬ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.				Dogs, a tree near, them I see.	Too much repitition.
 	ᏪᏌ ᎠᎨᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	wesa-agehya-nav-gajiigowhtiha			Cats, a woman near, them I see.	
 	ᎩᏟ ᏅᏯ ᎾᎥ ᎦᏥᎪᏩᏘᎭ.	gihli-nvya-nav-gajiigowhtiha			Dogs, a rock near, them I see.	
-	ᏄᎾ ᏅᏯ ᎾᎥ ᏕᏥ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-dejigowhtiha			Potatoes, a rock or rocks near, them I see.	
+	ᏄᎾ ᏅᏯ ᎾᎥ ᏕᏥ̣ᎪᏩᏘᎭ.				Potatoes, a rock or rocks near, them I see.	Too much repitition.
 	ᏄᎾ ᏅᏯ ᎾᎥ Ꮵ̣ᎪᏩᏘᎭ.	nuna-nvya-nav-jigowhtiha			A potato, a rock near, it I see.	
 						
 	ᎥᏍᎩ ᎢᎾ ᎯᎪᏩᏘᎭ.	vsgi-ina-hiigowhtiha			That far, he or she you see.	
