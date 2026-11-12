@@ -68,4 +68,8 @@ build/
 ## OS Specific
 .DS_Store
 Thumbs.db
+
+## Agent workspace (vendored tooling, issue store — never tracked)
 /.opencode/
+/.issues/
+/.tools/
