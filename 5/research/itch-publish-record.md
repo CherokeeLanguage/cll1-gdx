@@ -46,10 +46,14 @@
 | SC-4 | pass | both push transcripts name target `cherokee-language/cherokee-language-lessons-1` with `--userversion 1.82` (`research/butler-push-jar-1.82.log`, `research/butler-push-apk-1.82.log`) |
 | SC-5 | pass | page HTML server-renders `CLL1-1.82.jar` and `cll1-gdx-1.82-release.apk` (count 1 each) |
 | SC-6 | pass | provenance set complete: HEAD `0f70a8d` (spec's `68d05fb` superseded — modernization committed since probe; recorded above), clean diff, both build logs, toolchain versions, this folder references the issue |
-| SC-7 | pass | `og:image` present; `game_iframe|html_embed` = 0; description = corrected copy of record (deviation documented above; convergence spec CherokeeLessons#35) |
+| SC-7 | **FAIL** (independent review) | `og:image` present (resolves 200); `game_iframe\|html_embed` = 0 — but the live page carries **no description body**: zero occurrences of the documented copy; calibration against the animals page shows descriptions do server-render on this account's Downloadable pages. Remediation: dashboard entry of the documented HTML description (developer-involved), then SC-7 re-review |
 | SC-8 | pass | zero tracked-state changes from the build+publish (clean tree before and after; no `build-release.sh` use) |
 
 Sweep is implementor-recorded; independent verification per the verify card precedes any completion claim.
+
+### Independent verification (2026-11-12, fresh-context reviewer)
+
+Verdict: **FAIL — 7/8 SC PASS; SC-7 FAIL** (description body absent from the live page; grounds above; finding is dashboard-remediable, no repo or pipeline impact). SC-1/2/3/4/5/6/8 all PASS on the reviewer's own instrument execution. Remediation: developer enters the documented HTML description in the itch dashboard (Edit page → Description), then a fresh SC-7 re-review runs on the same criteria set.
 
 ### Tree state at publish (SC-6 / SC-8)
 
