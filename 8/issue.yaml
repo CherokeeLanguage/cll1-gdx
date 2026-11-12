@@ -3,6 +3,148 @@ title: 'Spec: migrate README + AGENTS.md distribution links to the itch-only pol
 status: open
 labels:
 - needs-approval
-body: ''
+body: '# Spec — migrate README + AGENTS.md to the itch-only distribution policy (cll1-gdx#1''s
+  pending references)
+
+
+  ## Problem
+
+
+  The README still distributes the app through Google Play, the Apple App Store, Amazon,
+  and a cherokeelessons.com-hosted desktop jar — every one dead or retired by the
+  itch-only policy (probe matrix recorded 2026-11-11; issue cll1-gdx#1 recorded the
+  pending references). The itch.io channel is now LIVE (cll1-gdx#5 delivered and verified:
+  https://cherokee-language.itch.io/cherokee-language-lessons-1 carrying the 1.82
+  desktop jar and Android APK), so the README points users at dead stores while a
+  live channel exists. AGENTS.md''s distribution section likewise predates the live
+  channel: it still says "The README still links Google Play / App Store / Amazon
+  / Smashwords" and records no butler/itch operational facts for future sessions.
+
+
+  ## Provenance
+
+
+  - **Developer directives (2026-11-12):** "approved for pr"; "the README needs to
+  be updated and possibly AGENTS also, is that not correct?" — this README/AGENTS.md
+  migration is the work those tokens carry to the PR boundary.
+
+  - **Policy of record:** issue cll1-gdx#1 (2026-11-11 directive): app distribution
+  = itch.io only; ebook = cherokeelessons.org only; paper explicitly not addressed
+  (paper links stand untouched).
+
+  - **Live channel (delivered by cll1-gdx#5, verified 2026-11-12):** https://cherokee-language.itch.io/cherokee-language-lessons-1
+  — desktop jar on channel `win-linux-mac-stable`, Android APK on channel `android`,
+  both `--userversion 1.82`; butler v15.32.0 vendored at `.tools/butler` (gitignored);
+  credentials at `~/.config/itch/butler_creds`.
+
+  - **Copy convergence:** the itch publication''s description carries the corrected
+  copy ("through", Pimsleur sentence) per developer directive; this spec converges
+  the README''s copy to the same wording of record (CherokeeLessons#35 does the same
+  for the site page, other repo).
+
+
+  ## Scope
+
+
+  `README.md` and `AGENTS.md` — this repository''s only files. Nothing else.
+
+
+  ## Requirements
+
+
+  - **R-1 — App distribution via itch.** The README SHALL reference `https://cherokee-language.itch.io/cherokee-language-lessons-1`
+  as the app''s distribution target (desktop and Android via itch), replacing the
+  Google Play, Apple App Store, Amazon App Store, and cherokeelessons.com desktop
+  links. iOS has no itch distribution (per cll1-gdx#5''s out-of-scope) — the iOS line
+  is removed, not replaced.
+
+  - **R-2 — Ebook via cherokeelessons.org.** The README''s Kindle and Smashwords links
+  SHALL be replaced by a cherokeelessons.org reference (the site''s books index).
+  The paper links (Lulu, Amazon paper) SHALL remain untouched — the policy does not
+  address paper.
+
+  - **R-3 — Copy convergence.** The README''s app-description copy SHALL match the
+  publication copy of record: "through the use of pictures" (fixing "though") and
+  the corrected Pimsleur sentence.
+
+  - **R-4 — AGENTS.md currency.** The AGENTS.md distribution section SHALL reflect
+  the live channel: the itch project URL, the butler tooling location and credential
+  path, the channel names and `--userversion` convention, and the README''s updated
+  state — replacing the "still links Google Play" sentence.
+
+
+  ## Success criteria
+
+
+  | ID | Criterion | Class | Instrument |
+
+  |---|---|---|---|
+
+  | SC-1 | README''s app distribution = itch only | structural | `grep -c "cherokee-language.itch.io/cherokee-language-lessons-1"
+  README.md` ≥ 1; `grep -c "play.google.com" README.md` = 0; `grep -c "apps.apple.com"
+  README.md` = 0; `grep -c "amazon.com/gp/product" README.md` = 0; `grep -c "cherokeelessons.com"
+  README.md` = 0 |
+
+  | SC-2 | Ebook via cherokeelessons.org; paper untouched | structural | `grep -c
+  "smashwords.com" README.md` = 0; `grep -c "amazon.com/dp/B0849JM2R2" README.md`
+  = 0; `grep -c "cherokeelessons.org" README.md` ≥ 1; `grep -c "lulu.com" README.md`
+  = 1; `grep -c "dp/1365928802" README.md` = 1 |
+
+  | SC-3 | Copy converged | structural | `grep -c "though the use of pictures" README.md`
+  = 0; `grep -c "through the use of pictures" README.md` ≥ 1; `grep -c "Pimsleur timings
+  for each training session" README.md` = 1 |
+
+  | SC-4 | AGENTS.md current | structural | `grep -c "still links Google Play" AGENTS.md`
+  = 0; `grep -c "cherokee-language.itch.io" AGENTS.md` ≥ 1; `grep -c "\.tools/butler"
+  AGENTS.md` ≥ 1 |
+
+  | SC-5 | Linked targets resolve | behavioral | `curl -s -o /dev/null -w %{http_code}
+  https://cherokee-language.itch.io/cherokee-language-lessons-1` = 200; `curl -s -o
+  /dev/null -w %{http_code} https://cherokeelessons.org/books/` = 200 |
+
+  | SC-6 | Scope containment | structural | `git diff --name-only` against the base
+  tip names README.md and AGENTS.md only |
+
+
+  ## Interdependencies
+
+
+  - Delivers part of: **cll1-gdx#1**''s pending-references survey (the README and
+  AGENTS items; the `artwork/icons/00_make-icons.sh` Amazon-block item remains open
+  there).
+
+  - Depends on: **cll1-gdx#5** (closed — the live channel these links point at).
+
+  - Same-copy convergence: **CherokeeLessons#35** (site page; other repo, its agent).
+
+
+  ## Out of scope
+
+
+  - Paper links (Lulu, Amazon paper) — the policy does not address paper.
+
+  - `artwork/icons/00_make-icons.sh` Amazon-store icon block — recorded in #1''s survey;
+  a separate decision (build tooling, not a link).
+
+  - The CherokeeLessons site page — CherokeeLessons#35/#32 (other repo).
+
+  - iOS distribution — no itch channel exists (cll1-gdx#5 out-of-scope).
+
+
+  ## Approach
+
+
+  Two in-place documentation edits on a feature branch: README link swap + copy fixes;
+  AGENTS.md distribution-section refresh. Verified by the grep instruments plus live-URL
+  checks. Alternatives weighed: leaving the README links until the site migration
+  completes — rejected (users hit dead stores today while a live channel exists);
+  folding the icon-script change in — rejected (build tooling, separate decision,
+  stays recorded in #1).
+
+
+  🤖 Co-authored with AI: OpenCode (huggingface/zai-org/GLM-5.3-Flash)
+
+  '
 created_at: '2026-11-12T04:30:56+00:00'
-updated_at: '2026-11-12T04:30:56+00:00'
+updated_at: '2026-11-12T04:30:58+00:00'
+github_url: https://github.com/CherokeeLanguage/cll1-gdx/issues/8
