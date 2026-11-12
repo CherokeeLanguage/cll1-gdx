@@ -64,4 +64,8 @@ Verdict: **FAIL — 7/8 SC PASS; SC-7 FAIL** (description body absent from the l
 
 - The 2026-11-11 22:32 jar build predates this session; its build log was not captured. A logged `desktop:dist` rebuild from the identical tree state executed 2026-11-12: **BUILD SUCCESSFUL, exit 0, `:desktop:dist UP-TO-DATE`** — Gradle affirms the pushed jar is the current-tree artifact. Pre-state at `research/provenance-prestate.txt` (HEAD sha, dirty diff, JDK 17 toolchain), build log at `research/desktop-dist-rebuild.log`, both stored in this record folder — SC-6's evidence set (sha, diff, log, toolchain, issue reference via this folder) is complete.
 
+### Re-review (2026-11-12, fresh-context, post-remediation)
+
+Verdict: **PASS — 8/8 SC PASS, zero findings.** SC-7's remediated prong verified on the live page by the reviewer's own instrument execution: `formatted_description` marker present, corrected copy server-rendered inside `div.formatted_description.user_formatted` ("This app is designed" ×1, "Pimsleur timings for each training session" ×1, uncorrected "though the use of pictures" ×0); `og:image` URL fetched → HTTP 200; `game_iframe|html_embed` = 0. All other SCs re-verified unchanged (SC-4 corroborated live via butler status — both channels VERSION 1.82, IDs matching the record). This verdict is the evidence-backed closure ground for the ticket.
+
 🤖 Co-authored with AI: OpenCode (huggingface/zai-org/GLM-5.3-Flash)
