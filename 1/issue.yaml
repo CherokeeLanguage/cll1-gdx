@@ -3,6 +3,67 @@ status: open
 labels:
 - needs-approval
 - note
-body: ''
+body: 'Recorded from the developer''s session directive, 2026-11-11:
+
+
+  > only itch.io is the platform for distribution going forwards. the ebook is now
+  only available via cherokeelessons.org.
+
+
+  ## Policy stated
+
+
+  - App distribution: itch.io only, going forwards.
+
+  - Ebook availability: cherokeelessons.org only.
+
+  - Paper (print) availability: not addressed by this directive.
+
+
+  ## References still pointing elsewhere (read-only survey, 2026-11-11)
+
+
+  App distribution channels:
+
+
+  - `README.md:5` — Google Play link (Android app)
+
+  - `README.md:7` — Apple App Store link (iOS app)
+
+  - `README.md:9` — Amazon App Store link
+
+  - `README.md:11` — desktop Java version hosted at `cherokeelessons.com` (directive
+  names `cherokeelessons.org`)
+
+  - `artwork/icons/00_make-icons.sh:15-19` — Amazon-store icon generation block
+
+
+  Ebook channels:
+
+
+  - `README.md:21` — Kindle (Amazon)
+
+  - `README.md:22` — ePub (Smashwords)
+
+
+  Unaddressed by the directive (paper):
+
+
+  - `README.md:19` — Lulu paper
+
+  - `README.md:20` — Amazon paper
+
+
+  No `itch.io` or `cherokeelessons.org` references exist anywhere in the repo yet.
+
+
+  ## Status
+
+
+  Directive recorded 2026-11-11. No repository content modified — updating the references
+  above awaits the developer''s authorization. Local-store record only; no remote-tracker
+  twin filed (remote API contact is authorization-gated in this session).
+
+  '
 created_at: '2026-11-12T03:27:47+00:00'
-updated_at: '2026-11-12T03:27:47+00:00'
+updated_at: '2026-11-12T03:27:54+00:00'
