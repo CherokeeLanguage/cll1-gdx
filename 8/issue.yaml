@@ -1,6 +1,6 @@
 title: 'Spec: migrate README + AGENTS.md distribution links to the itch-only policy
   (cll1-gdx#1''s pending references)'
-status: open
+status: closed
 labels:
 - needs-approval
 body: '# Spec — migrate README + AGENTS.md to the itch-only distribution policy (cll1-gdx#1''s
@@ -146,5 +146,7 @@ body: '# Spec — migrate README + AGENTS.md to the itch-only distribution polic
 
   '
 created_at: '2026-11-12T04:30:56+00:00'
-updated_at: '2026-11-12T04:30:58+00:00'
+updated_at: '2026-11-12T04:44:28+00:00'
 github_url: https://github.com/CherokeeLanguage/cll1-gdx/issues/8
+closed_at: '2026-11-12T04:44:28+00:00'
+close_reason: completed
