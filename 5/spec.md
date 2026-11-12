@@ -1,0 +1,128 @@
+# Spec — publish CLL-1 release 1.82 to the itch.io channel (desktop jar + Android APK)
+
+Filed by the CherokeeLessons agent per the developer's cross-repo filing rule ("all specs must be filed in the correct repos and not have work which crosses repo boundaries. proper interdependencies must be declared between specs"). This repo's agent performs additional triage as needed before creating a plan or implementation (developer direction, 2026-11-11).
+
+## Problem
+
+Cherokee Language Lessons 1 (this repo) has no live distribution: its Google Play, Apple App Store, and Amazon links are dead (probe matrix recorded 2026-11-11 in the consuming repo's store — Play 404, Apple 404, Amazon 503), and the site's self-hosted desktop jar link is being removed by the itch-only distribution migration (CherokeeLanguage/CherokeeLessons#30). The developer has directed itch-only publishing ("only itch-io is the new release platform") and that the latest version be published "with the cll1-gdx repo". No itch.io project exists for CLL-1 (slug probe 404, 2026-11-11). This spec produces the 1.82 release artifacts from this repo's latest state and publishes them to the itch.io channel; the site-side page link is CherokeeLanguage/CherokeeLessons#32 (depends on this spec's deliverable).
+
+## Provenance
+
+- **Developer directives (2026-11-11):** "the cll1 app needs an itch-io page setup"; "only itch-io is the new release platform"; "pre-existing store links are all dead"; "file a spec to go ahead and migrate to itch-io and to publish the latest version with the cll1-gdx repo"; "all specs must be filed in the correct repos and not have work which crosses repo boundaries. proper interdependencies must be declared between specs"; "the agent for the cll1-gdx repo is a separate agent and that agent will do additional triage as needed before creating a plan or implementation".
+- **Version of record (probed 2026-11-11):** 38 tags spanning 1.08–1.82 (the release run relevant here: 1.72–1.82); `version` = 182; `gradle.properties` VERSION=1.82 / VERSION_CODE=182 / VERSION_NAME=1.82. HEAD `68d05fb` (2020-09-10) is 3 commits past the `1.82` tag (`e3f4c2c`) — "Fix readme", "Create codeql-analysis.yml", merge — no exercise-content change. Latest version = 1.82 at HEAD.
+- **Why 1.82 and not the formerly-served 1.72:** the site shipped `CLL1-1.72.jar` (2020-03); 1.72..HEAD spans 35 commits including exercise-content work ("Remove redundant and excessively long cards", "reduce card fatigue"). Developer directive: publish the latest version.
+- **Working-tree state (probed 2026-11-11):** 7 dirty entries — 6 modified files (in-flight build modernization: Gradle wrapper 6.1→7.3.3, `jcenter()`→`google()`, AGP 3.4.1→7.2.1 across build.gradle/android/core/desktop/ios) + untracked root `Assets/` (verified: a single 50,272-byte `Assets/card-data/cards.csv` (verified), referenced by no build file — the build actually packages `android/assets/card-data`, 1,708 tracked files; the only ignored content under `android/assets` is the build-regenerated `0_files.txt`/`0_dirs.txt` and four gitignored icon PNGs — so fresh-clone reproducibility of the release build is affected by the uncommitted modernization and the ignored icons, not by root `Assets/`; its disposition is a triage item).
+- **Toolchain facts (probed 2026-11-11):** installed JVMs are 21 and 25 (`/usr/lib/jvm`) — none compatible with the modernized wrapper (Gradle 7.3.3 runs on JVMs up to 17, per the Gradle compatibility matrix): the JDK strategy is a triage decision (install a 17 vs bump the wrapper). Android SDK present: ANDROID_HOME=/home/muksihs/android-sdks (cmdline-tools + platform-tools; sdkmanager/adb on PATH; apksigner ships with build-tools). keytool present. butler absent (install op).
+- **Signing state (probed 2026-11-11):** `android/build.gradle` declares `signingConfigs.release` with `storeFile file(RELEASE_STORE_FILEA/B)` and `keyAlias RELEASE_KEY_ALIAS` — the keystore properties' availability is unverified (triage item). The published APK must be signed and installable regardless of the key path chosen; the removed Play channel makes signature continuity moot.
+- **Release-script hazard (read 2026-11-11):** `build-release.sh` commits, sed-bumps versions, tags, and pushes as side effects — any use is a deliberate, reviewed decision of this repo's agent, not a convenience default.
+- **itch.io channel (verified 2026-11-11):** `cherokee-language.itch.io` hosts 4 projects (cherokee-numbers-maze, cherokee-syllabary, cherokee-language-animals, cherokee-bound-pronouns), each downloadable; the animals page server-renders its download file names in the page HTML (`Animals-5.12.jar`, `Animals-5.12-release.apk` — verified live, establishing SC-5's instrument capability); target slug `cherokee-language-lessons-1` = 404 (absent).
+
+<details><summary>Probe transcript (executed 2026-11-11)</summary>
+
+```
+# cll1-gdx probe — executed live 2026-11-11, spec-filing evidence for the CLL-1 itch publish
+=== tag vs HEAD ===
+HEAD: 68d05fb801fdb6672fcaab201edf9accca32bd9b (2020-09-10)
+1.82: e3f4c2caf2cc8976068416cc8fecad48a05d6e7d
+commits 1.82..HEAD: 3
+dirty lines (status --porcelain): 7
+ M android/build.gradle
+ M build.gradle
+ M core/build.gradle
+ M desktop/build.gradle
+ M gradle/wrapper/gradle-wrapper.properties
+ M ios/build.gradle
+?? Assets/
+tags total: 38 (last: 1.82)
+version file: 182 | VERSION=1.82 VERSION_CODE=182 VERSION_NAME=1.82
+=== build/ gitignored? ===
+9:robovm-build/
+55:build/
+56:nbbuild/
+66:build/
+=== android signing config ===
+32:    signingConfigs {
+35:        			storeFile file(RELEASE_STORE_FILEA)
+37:        			storeFile file(RELEASE_STORE_FILEB)
+41:            keyAlias RELEASE_KEY_ALIAS
+47:            signingConfig signingConfigs.release
+=== desktop mainClassName ===
+desktop/build.gradle:9:project.ext.mainClassName = "com.cherokeelessons.cll1.desktop.DesktopLauncher"
+=== JVMs available ===
+default-java
+java-1.21.0-openjdk-amd64
+java-1.25.0-openjdk-amd64
+java-21-openjdk-amd64
+java-25-openjdk-amd64
+openjdk-21
+openjdk-25
+=== android sdk ===
+ANDROID_HOME=/home/muksihs/android-sdks ANDROID_SDK_ROOT=unset
+/home/muksihs/android-sdks/cmdline-tools/bin/sdkmanager
+/home/muksihs/android-sdks/platform-tools/adb
+/usr/bin/keytool
+=== butler ===
+butler: absent
+=== target slug status (expect 404 = project absent) ===
+404
+```
+
+ itch /download and / page render checks (2026-11-11): the animals project page HTML server-renders `Animals-5.12.jar` and `Animals-5.12-release.apk`.
+
+</details>
+
+## Scope
+
+This repo's release engineering plus the itch.io publish — no other repository's files. Repo files: none are required by this spec (build outputs are gitignored — `build/` rules present in `.gitignore`; provenance is recorded in scratch space and in this issue). The in-flight working-tree modernization and any triage-driven changes are this repo's agent's decisions, made through this repo's own pipeline.
+
+## Requirements
+
+- **R-1 — Release artifacts (latest version).** The latest version — 1.82, built from HEAD `68d05fb` plus the working tree's modernization state of record — SHALL be produced as (a) the desktop fat jar (`desktop:dist`; manifest `Main-Class: com.cherokeelessons.cll1.desktop.DesktopLauncher`, matching the shipped 1.72 jar) and (b) the Android release APK (`android:assembleRelease`). Build provenance (HEAD sha, dirty-state diff, build log, toolchain versions) SHALL be recorded.
+- **R-2 — Installable Android artifact.** The published APK SHALL be signed and installable (`apksigner verify` exit 0). The keystore path is this repo's triage decision: the declared `RELEASE_STORE_FILEA/B` properties' availability is unverified, and generating a dedicated distribution keystore is acceptable (the removed Play channel makes signature continuity moot).
+- **R-3 — itch.io publish.** The itch.io project page for CLL-1 SHALL exist at slug `cherokee-language-lessons-1` (create if absent — probed absent): title "Cherokee Language Lessons 1", classification Downloadable, cover from existing artwork (`artwork/`, or the site's `static/images/cll1-gdx.png`), description derived from the app's existing copy; and both artifacts SHALL be pushed via butler with `--userversion 1.82` (desktop jar and Android APK as separate files). `butler login` and any dashboard steps involve the developer's itch.io account — flagged developer-involved ops.
+- **R-4 — Repo-state integrity.** The build/publish SHALL NOT silently mutate this repo's tracked state: any commit, tag, version bump, or push this work triggers is a deliberate, reviewed decision recorded through triage (the `build-release.sh` hazard above).
+
+## Success criteria
+
+| ID | Criterion | Class | Instrument |
+|---|---|---|---|
+| SC-1 | The 1.82 desktop jar is produced from the repo's latest state | behavioral | recorded build: `./gradlew desktop:dist` exit 0; `unzip -p <jar> META-INF/MANIFEST.MF` shows `Main-Class: com.cherokeelessons.cll1.desktop.DesktopLauncher`; `unzip -l <jar>` lists `DesktopLauncher.class` |
+| SC-2 | The Android APK is a signed, installable artifact | behavioral | recorded build: `./gradlew android:assembleRelease` exit 0; `apksigner verify --print-certs <apk>` exit 0 |
+| SC-3 | The itch project page is live at the slug of record | behavioral | `curl -s -o /dev/null -w %{http_code} https://cherokee-language.itch.io/cherokee-language-lessons-1` = 200; the page body contains "Cherokee Language Lessons 1" |
+| SC-4 | Both artifacts are published at the version of record | structural | the recorded butler push transcripts name target `cherokee-language/cherokee-language-lessons-1` and `--userversion 1.82` for both files |
+| SC-5 | The published downloads are visible on the project page | structural | the page HTML server-renders each file name recorded in the SC-4 transcripts (capability verified against the live animals page rendering `Animals-5.12.jar`/`Animals-5.12-release.apk`) |
+| SC-6 | Build provenance is recorded | structural | the provenance record exists with HEAD sha (`68d05fb…`), the dirty-state diff, the build log, and toolchain versions, and references this issue |
+| SC-7 | The project page carries the required metadata | structural | page HTML: `og:image` present with a non-empty content URL (cover); `grep -cE "game_iframe|html_embed"` = 0 (no browser-play embed — the Downloadable-classification discriminator, verified against live controls: the animals page 0, the play-in-browser numbers-maze page 2); the recorded page-creation step shows the description text matching the app's existing copy (the site page's summary sentence) |
+| SC-8 | No silent tracked-state mutation | structural | after the build+publish, `git log -1`, the tag list, `gradle.properties` VERSION_NAME, and `git status --porcelain` are compared against the provenance record's pre-state; the pass condition is zero differences, or every difference named in the triage record with its decision (the `build-release.sh` side-effect check) |
+
+## Interdependencies
+
+- Depends on: none.
+- Dependents: CherokeeLanguage/CherokeeLessons#32 (adds the site's CLL-1 page itch link once this spec's SC-3/SC-5 hold). Consuming-repo sequencing: CherokeeLessons#30 → #31 → #32, with #32 gated on this deliverable.
+- Unaffected: CherokeeLessons#30 (removes the site's store links unconditionally; it does not depend on this deliverable).
+
+## Triage note
+
+Per the developer's direction, this repo's agent performs additional triage before plan/implementation. Recorded open items for that triage: the JDK strategy (install 17 vs wrapper bump); the APK signing-key disposition (`RELEASE_STORE_FILEA/B` availability; a new distribution keystore is acceptable); the untracked root `Assets/` directory (one 50,272-byte Assets/card-data/cards.csv referenced by no build file — disposition item; the reproducibility concerns proper are the uncommitted modernization and the gitignored icon PNGs under `android/assets`); installed SDK components (build-tools/apksigner, platform, API level) versus what AGP 7.2.1 requires; and any build fixes the in-flight modernization needs.
+
+## Out of scope
+
+- Everything in CherokeeLanguage/CherokeeLessons (site pages, its jar copies, its build) — that repo's work lives in CherokeeLessons#30, #31, and #32.
+- iOS/robovm (itch.io has no iOS distribution for standard devices).
+- Hangman1 (separate app; source unresolved; disposition undecided).
+
+## Approach
+
+Build via explicit Gradle tasks from the working tree (the modernization is required — `jcenter()` is dead and no installed JVM runs the old wrapper), then butler for the upload (itch.io's documented CLI) and the dashboard/API for the project page. Alternatives weighed: re-hosting the old 1.72 jar — rejected (developer directive: publish the latest version; 1.82 carries exercise-content fixes); shipping an unsigned APK — rejected (not installable); folding this work into a CherokeeLessons spec — rejected (it crosses the repo boundary; separated per the developer's filing rule).
+
+## Impact
+
+Consumers: CLL-1 players (a live distribution channel returns, with the exercise-content fixes of the 7 tagged releases after 1.72 (1.76–1.82 — the version line skipped 1.73–1.75)); the itch channel (5th project); CherokeeLessons#32 (unblocked once SC-3/SC-5 hold). Risks: the in-flight modernization is unproven until built (triage plus the executed build answers it); keystore availability unknown (triage); butler login requires developer involvement. Rollback: the itch project and its uploads are dashboard-reversible; built artifacts are scratch; no tracked repo-state changes are required by this spec.
+
+🤖 Co-authored with AI: OpenCode (huggingface/zai-org/GLM-5.3-Flash)
+
+
+
+> Full spec and plan artifacts: https://github.com/CherokeeLanguage/cll1-gdx/tree/issues-data/5/
+>
+> Local artifacts: `.issues/5/`
