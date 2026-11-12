@@ -1,0 +1,9 @@
+• Scanning launch targets...
+• For channel `android`: pushing first build
+• Pushing 46.45 MiB (1 files, 0 dirs, 0 symlinks)
+✓ Added 46.45 MiB fresh data
+✓ 43.76 MiB patch (5.81% savings)
+• Build is now processing, should be up in a bit.
+
+Use the `butler status cherokee-language/cherokee-language-lessons-1:android` for more information.
+

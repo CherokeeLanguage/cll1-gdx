@@ -30,11 +30,26 @@
 - Credentials: `~/.config/itch/butler_creds` (2026-11-05) validated via `butler login` → "Your local credentials are valid!" (no `whoami` command exists in current butler — research finding; `login` with existing creds is the validation path).
 - `BUTLER_API_KEY` env var remains supported for future CI (research-verified).
 
-### Android APK (R-1b / R-2 / SC-2) — pending
+### Android APK (R-1b / R-2 / SC-2) — done
 
-- Existing artifact `android/build/outputs/apk/release/cll1-gdx-1.82-release.apk` is dated 2022-08-01 — stale; rebuild required through the sanctioned toolchain (`JAVA_HOME="$PWD/.tools/jdk-17" ./gradlew android:assembleRelease`).
-- Signing (triage resolved 2026-11-12): `android/build.gradle`'s `release` config selects `RELEASE_STORE_FILEA` **if it is a directory**, else `RELEASE_STORE_FILEB`. FILEA's value is a dead macOS path (`/Users/mconrad`, absent on this box) → the config auto-falls to FILEB = `/home/muksihs/Keystore` — an existing 1713-byte keystore file (2020-06-22). Passwords/alias come from the same user-level properties; validity is proven only by the R-2 instrument (`apksigner verify --print-certs` exit 0). No new keystore generation unless build/verify fails.
-- Android channel plan: `android` (itch platform inference).
+- Rebuild executed 2026-11-12: `JAVA_HOME="$PWD/.tools/jdk-17" ./gradlew android:assembleRelease` — **BUILD SUCCESSFUL, exit 0** (log: `research/android-assembleRelease.log`); `validateSigningRelease` passed; fresh APK 48,710,293 bytes — byte-count identical to the 2022 artifact, the 1.82 content stream unchanged (consistent with the spec's version findings).
+- R-2 instrument: apksigner (build-tools 33.0.0) `verify --print-certs` → **exit 0** (log: `research/apksigner-verify.log`); Signer #1 DN: CN=Michael Joyner, OU=Self, O=CherokeeLessons.com, C=US; SHA-256 `49ce070f…c9d2eba`. SC-2 PASS.
+- Push executed 2026-11-12: `butler push android/build/outputs/apk/release/cll1-gdx-1.82-release.apk cherokee-language/cherokee-language-lessons-1:android --userversion 1.82` — first build on the channel, 46.45 MiB (transcript: `research/butler-push-apk-1.82.log`). `butler status`: channel `android`, upload #20457619, build #2362579 ✓, VERSION 1.82.
+
+### SC sweep (2026-11-12, post-publish)
+
+| SC | Verdict | Grounds |
+|---|---|---|
+| SC-1 | pass | manifest `Main-Class: com.cherokeelessons.cll1.desktop.DesktopLauncher` + `DesktopLauncher.class` present; `:desktop:dist UP-TO-DATE` at HEAD `0f70a8d` (clean tree) |
+| SC-2 | pass | `apksigner verify --print-certs` exit 0 (`research/apksigner-verify.log`) |
+| SC-3 | pass | anonymous GET 200; body contains "Cherokee Language Lessons 1" (×2) |
+| SC-4 | pass | both push transcripts name target `cherokee-language/cherokee-language-lessons-1` with `--userversion 1.82` (`research/butler-push-jar-1.82.log`, `research/butler-push-apk-1.82.log`) |
+| SC-5 | pass | page HTML server-renders `CLL1-1.82.jar` and `cll1-gdx-1.82-release.apk` (count 1 each) |
+| SC-6 | pass | provenance set complete: HEAD `0f70a8d` (spec's `68d05fb` superseded — modernization committed since probe; recorded above), clean diff, both build logs, toolchain versions, this folder references the issue |
+| SC-7 | pass | `og:image` present; `game_iframe|html_embed` = 0; description = corrected copy of record (deviation documented above; convergence spec CherokeeLessons#35) |
+| SC-8 | pass | zero tracked-state changes from the build+publish (clean tree before and after; no `build-release.sh` use) |
+
+Sweep is implementor-recorded; independent verification per the verify card precedes any completion claim.
 
 ### Tree state at publish (SC-6 / SC-8)
 

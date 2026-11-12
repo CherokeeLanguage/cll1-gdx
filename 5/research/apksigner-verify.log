@@ -1,0 +1,10 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/home/muksihs/android-sdks/build-tools/33.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Signer #1 certificate DN: CN=Michael Joyner, OU=Self, O=CherokeeLessons.com, C=US
+Signer #1 certificate SHA-256 digest: 49ce070f8a2066c03ea182e9fd1271385f6bde13661706b36c1a8115fc9d2eba
+Signer #1 certificate SHA-1 digest: 444a0a3fccf4074472d776e15797863aa5864b61
+Signer #1 certificate MD5 digest: 184cfe82d1fbf9a18e47cbd945e510b5
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
