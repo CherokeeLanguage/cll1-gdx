@@ -1,6 +1,6 @@
 title: 'Spec: publish CLL-1 release 1.82 to the itch.io channel (desktop jar + Android
   APK)'
-status: open
+status: closed
 labels:
 - needs-approval
 body: "# Spec — publish CLL-1 release 1.82 to the itch.io channel (desktop jar + Android\
@@ -169,5 +169,7 @@ body: "# Spec — publish CLL-1 release 1.82 to the itch.io channel (desktop jar
   \ no tracked repo-state changes are required by this spec.\n\n\U0001F916 Co-authored\
   \ with AI: OpenCode (huggingface/zai-org/GLM-5.3-Flash)\n\n\n"
 created_at: '2026-11-12T04:00:04+00:00'
-updated_at: '2026-11-12T04:00:18+00:00'
+updated_at: '2026-11-12T04:19:34+00:00'
 github_url: https://github.com/CherokeeLanguage/cll1-gdx/issues/5
+closed_at: '2026-11-12T04:19:34+00:00'
+close_reason: completed
