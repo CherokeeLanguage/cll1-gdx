@@ -1,7 +1,9 @@
 sourceSets.main.java.srcDirs = [ "src/" ]
 
-sourceCompatibility = '1.7'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+compileJava.options.release = 8
+compileTestJava.options.release = 8
 
 ext {
 	mainClassName = "com.cherokeelessons.cll1.IOSLauncher"
