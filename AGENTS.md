@@ -31,4 +31,6 @@ Cherokee Language Lessons 1 — libGDX (Java) picture-card drill app. Trunk bran
 
 ## Distribution (policy, 2026-11)
 
-- App distribution: itch.io only. Ebook: cherokeelessons.org only. The README still links Google Play / App Store / Amazon / Smashwords — check local issue `cll1-gdx#1` before touching distribution or store links.
+- App distribution: itch.io only — live at `https://cherokee-language.itch.io/cherokee-language-lessons-1` (desktop jar on channel `win-linux-mac-stable`, Android APK on channel `android`; pushes carry `--userversion` matching the `version` file). The README links itch.io for the app and cherokeelessons.org for the ebook — issue `cll1-gdx#1`'s README/AGENTS references are delivered; paper links stand (the policy does not address paper).
+- Ebook: cherokeelessons.org only.
+- Uploader: butler v15.32.0 vendored untracked at `.tools/butler/` (official automation source: `https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default`); credentials at `~/.config/itch/butler_creds` — there is no `whoami` command; `butler login` validates existing credentials. `BUTLER_API_KEY` (from the itch API-keys page) is the CI path.
