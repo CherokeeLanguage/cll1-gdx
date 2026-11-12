@@ -1,5 +1,5 @@
 title: 'Spec: remove accidentally-committed private desktop capture from the repo'
-status: open
+status: closed
 labels:
 - needs-approval
 body: '# Spec — remove the accidentally-committed private desktop capture
@@ -106,5 +106,7 @@ body: '# Spec — remove the accidentally-committed private desktop capture
 
   '
 created_at: '2026-11-12T04:46:37+00:00'
-updated_at: '2026-11-12T04:46:38+00:00'
+updated_at: '2026-11-12T04:48:55+00:00'
 github_url: https://github.com/CherokeeLanguage/cll1-gdx/issues/10
+closed_at: '2026-11-12T04:48:55+00:00'
+close_reason: completed
