@@ -112,18 +112,22 @@ rendering_facts:
   - zero Cherokee-specific rendering bugs found in godotengine/godot issue search
 
 top_recommendations:
-  - "1. koyomivanp/moji-othello — MIT, Godot 4.6, DIRECT (audit-verified): 5-choice hand + mouse
-     tile placement, zero keyboard; syllabary adaptation = swap 2 kana pool consts + 1 Unicode
-     range check + font + word list"
-  - "2. oktaycosar/harf-yilani — MIT, Godot 4.7, DIRECT (audit-verified): movement-based spelling
-     drill (snake steers over letter tiles in order); alphabet constant feeds only decoys; word
-     lengths already per-difficulty-tier; adaptation = swap constant + word list + font"
-  - "3. TheDuckCow/who-knows-the-news — MIT, Godot 3.x, direct-by-construction (NOT code-audited):
-     unscramble tiles derive from the target word itself, alphabet-size independent; older engine"
-  - "pattern note: langle-godot (GPL-3.0 — pattern only, not code) shows the strongest
-     symbol-set-externalization architecture (manifest valid_letters → auto-generated keyboard);
-     Azerdle and Koo-Word-Jigsaw are the MIT moderate-rework options if the wordle or
-     drag-path-jigsaw format is wanted"
+  - "1. Tobyjcode/wordle — MIT, Godot 4.6, DIRECT (wordle-family audit): least-work syllabary
+     wordle base. Parameterized RefCounted core (_word_length/_max_attempts as instance vars),
+     runtime word list self-filtered by length, duplicate-CORRECT two-pass feedback (critical for
+     repeated syllables), GUT test suite with ≥70% coverage gate, keyboard code-generated from a
+     3-string layout array. Work: make generated keys clickable (~20-line change — today they are
+     feedback-only ColorRects), replace QWERTY layout strings with syllabary rows, set word length
+     from data, drop the a-z physical-key filter, swap font + word list"
+  - "2. Awfyboy/Azerdle — MIT, Godot 4.3, moderate: most-starred licensed wordle (19★);
+     symbol-agnostic state machine but 26 hand-placed QWERTY scene keys + alphabet_list physical
+     filter + 5×6 scene constants to regenerate/parameterize"
+  - "3. composite pattern: borrow langle-godot's mod-manifest symbol-set externalization (GPL —
+     pattern only) and Brawmario's clickable-Button keyboard UX MINUS its ASCII byte-encoding
+     plumbing; The-Wizard-Coder/Wordle-Puzzle (MIT) is the alternative only if a from-scratch
+     minimal shell is wanted — it has NO input layer and a naive duplicate-feedback bug;
+     raf-aye/wordle-godot is dominated on every axis. moji-othello (MIT, direct) and
+     harf-yilani (MIT, direct) remain the best non-wordle mechanic options if the style changes"
 
 gaps:
   - itch.io made-with-godot word tags are single-page listings (exhaustively walked, ~215 pages);
@@ -134,6 +138,58 @@ gaps:
   - GitLab/Codeberg/Gitea/Sourcehut coverage minimal (2 probes)
   - Animals' actual answer-presentation code does not exist on master to inspect (design-note
     evidence only); gdx_legacy branch not fetched
+
+wordle_family_audit:
+  note: follow-up audit after developer steer that wordle-like/similar style is the preferred
+    STARTING POINT; all six primary scripts + key scenes read directly, 2026-11-11
+  direct:
+    - repo: https://github.com/Tobyjcode/wordle
+      license: MIT
+      godot: "4.6"
+      evidence: core is a UI-free RefCounted class with `var _word_length` parameter +
+        self-filtering runtime word list (FileAccess → filter by length); feedback is
+        duplicate-correct two-pass green/yellow/gray with occurrence counting; GUT suite includes
+        test_feedback_duplicates regression + ≥70% coverage gate; keyboard code-generated from
+        `var keyboard_rows := ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"]` (3-string layout array)
+      work_items: generated keys are non-interactive ColorRects → convert to clickable Buttons
+        (~20 lines); 30 board tiles hand-placed in scene (fine if grid stays fixed); drop a-z
+        physical-key filter; swap word list + font
+  moderate:
+    - repo: https://github.com/The-Wizard-Coder/Wordle-Puzzle
+      license: MIT
+      godot: "4.2"
+      why_not_base: no input layer exists at all (physical-keyboard only, 25 hand-placed scene
+        buttons); naive duplicate feedback (excess duplicates color 'present' incorrectly —
+        misleads on Cherokee words with repeated syllables); smallest codebase
+    - repo: https://github.com/raf-aye/wordle-godot
+      license: MIT
+      godot: "4.2"
+      why_not_base: display-only keyboard, keycode+as_text_keycode Latin coupling, fragile
+        node-name-addressed rows, 5-attempt variant, naive duplicate feedback — dominated by
+        Tobyjcode on every axis
+    - repo: https://github.com/Brawmario/godot-wordle
+      license: GPL-3.0-or-later  # derivative must be GPL
+      godot: "4.3"
+      why_context: most polished vanilla wordle (clickable Button keyboard, daily word,
+        dual-list validation, duplicate-correct feedback) but 26 hand-placed keys encode key
+        text as single ASCII bytes (structurally breaks for multi-byte syllabary symbols) and
+        both word lists are script constants. Steal the keyboard-UX pattern, not the plumbing
+    - repo: https://github.com/AmoghKhaparde/Wordle
+      license: GPL-3.0
+      godot: "4.3"
+      why_context: duplicate-correct logic exists but interleaved with UI; inline ~1300-word
+        literal array; ASCII-range physical-only input; per-frame keyboard-dict rebuild —
+        rewrite-in-place, not parameterization
+    - repo: https://github.com/jonas-popp/word-quiz
+      license: GPL-3.0
+      godot: 3.x (needs 3→4 migration)
+      why_context: best keyboard-architecture IDEA (per-language layout strings as data,
+        already exercises >26 keys with umlauts) but implemented by re-parenting a fixed scene
+        node pool — 85 syllabary keys need a pool rebuild; brittle 6-byte-stride wordlist format
+  shared_observation: all six keep the green/yellow/gray state machine symbol-agnostic and none
+    weights word selection by letter frequency — the wordle genre transfers to an 85-symbol
+    syllabary with constants parameterized; the differentiator is WHERE the small-alphabet
+    assumptions sit (keyboard construction, word-list storage, length-as-parameter-or-literal)
 
 key_sources:
   - https://www.unicode.org/Public/UCD/latest/ucd/Blocks.txt
