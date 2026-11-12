@@ -1,0 +1,110 @@
+Configuration on demand is an incubating feature.
+
+> Task :files_txt
+Start up
+... /home/muksihs/git/cll1-gdx/android/assets
+... /home/muksihs/git/cll1-gdx/android/assets/audio
+... /home/muksihs/git/cll1-gdx/android/assets/card-data
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/040
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/050
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/060
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/061
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/062
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/070
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/071
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/072
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/080
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/081
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/090
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/091
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/092
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/100
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/101
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/102
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/110
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/111
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/112
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/113
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/114
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/115
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/120
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/121
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/122
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/130
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/140
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/141
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/150
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/160
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/170
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/171
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/180
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/190
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/200
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/201
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/210
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/audio/220
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/040
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/050
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/060
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/061
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/062
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/070
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/071
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/072
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/080
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/081
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/090
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/091
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/092
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/100
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/101
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/102
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/110
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/111
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/112
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/113
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/114
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/115
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/120
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/121
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/122
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/130
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/140
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/141
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/150
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/160
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/170
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/171
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/180
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/190
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/200
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/201
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/210
+... /home/muksihs/git/cll1-gdx/android/assets/card-data/images/220
+... /home/muksihs/git/cll1-gdx/android/assets/icons
+... /home/muksihs/git/cll1-gdx/android/assets/images
+... /home/muksihs/git/cll1-gdx/android/assets/libgdx
+... /home/muksihs/git/cll1-gdx/android/assets/skin
+... /home/muksihs/git/cll1-gdx/android/assets/skin/serif-68
+... /home/muksihs/git/cll1-gdx/android/assets/text
+... /home/muksihs/git/cll1-gdx/android/assets/textures
+
+> Task :core:compileJava UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :desktop:compileJava UP-TO-DATE
+> Task :desktop:processResources UP-TO-DATE
+> Task :desktop:classes UP-TO-DATE
+> Task :desktop:dist UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.3.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 6s
+6 actionable tasks: 1 executed, 5 up-to-date

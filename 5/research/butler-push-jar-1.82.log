@@ -1,0 +1,9 @@
+• Scanning launch targets...
+• For channel `win-linux-mac-stable`: pushing first build
+• Pushing 48.57 MiB (1 files, 0 dirs, 0 symlinks)
+✓ Added 48.57 MiB fresh data
+✓ 48.05 MiB patch (1.07% savings)
+• Build is now processing, should be up in a bit.
+
+Use the `butler status cherokee-language/cherokee-language-lessons-1:win-linux-mac-stable` for more information.
+

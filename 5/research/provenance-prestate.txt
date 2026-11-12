@@ -1,0 +1,4 @@
+HEAD: 0f70a8ddf1f0570255891b5bd1b6886f72e9e90c
+--- dirty state ---
+--- toolchain ---
+openjdk version "17.0.21" 2026-10-20
