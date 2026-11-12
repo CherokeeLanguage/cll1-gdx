@@ -14,6 +14,8 @@ developer_constraints:
   - Godot is Unicode — Latin vs non-Latin rendering is not the differentiator; the risk is
     alphabet-size premises in game logic (85+ symbols vs 26-letter assumptions)
   - fixed letter grids / word lengths are parameterization, not blockers
+  - the org's own games (CherokeeLanguage/*) are NOT valid references — developer direction
+    2026-11-11; recommendations rank external repos only
 
 license_landscape:
   friendly: [MIT, BSD-2-Clause, BSD-3-Clause, Apache-2.0, zlib, MPL-2.0, CC0]
@@ -81,7 +83,9 @@ verdicts:
     one-line constant or a hand-built Latin keyboard scene
 
 org_prior_art:
-  - NumbersMaze.godot + Animals (above) — same org, syllabary-native
+  excluded_as_references: "developer direction 2026-11-11 — CherokeeLanguage/* repos are not
+    valid references for this research; retained below only as internal pattern documentation"
+  - NumbersMaze.godot + Animals — org-internal, syllabary-native
   - CherokeeLanguage/Syllabary — libGDX syllabary drill, NO license; notable design: deliberate
     multi-typeface glyph variation (Aboriginal Serif, CherokeeHandone, Digohweli…) for
     recognition robustness
@@ -108,13 +112,18 @@ rendering_facts:
   - zero Cherokee-specific rendering bugs found in godotengine/godot issue search
 
 top_recommendations:
-  - "1. CherokeeLanguage/NumbersMaze.godot — same-org Apache-2.0 base/pattern: syllabary font
-     wiring, gamepad multiple-choice input model, itch-only release flow, all proven"
-  - "2. koyomivanp/moji-othello — MIT, modern Godot 4.6, the best external mechanic template:
-     swap 2 pool arrays + 1 range check for a syllabary tile/word-formation game"
-  - "3. CherokeeLanguage/Animals — MIT data-pipeline + template scaffold (finish-the-port
-     opportunity); adopt langle-godot's manifest-driven keyboard-generation PATTERN (not its
-     GPL code) for any syllabary-selection UI"
+  - "1. koyomivanp/moji-othello — MIT, Godot 4.6, DIRECT (audit-verified): 5-choice hand + mouse
+     tile placement, zero keyboard; syllabary adaptation = swap 2 kana pool consts + 1 Unicode
+     range check + font + word list"
+  - "2. oktaycosar/harf-yilani — MIT, Godot 4.7, DIRECT (audit-verified): movement-based spelling
+     drill (snake steers over letter tiles in order); alphabet constant feeds only decoys; word
+     lengths already per-difficulty-tier; adaptation = swap constant + word list + font"
+  - "3. TheDuckCow/who-knows-the-news — MIT, Godot 3.x, direct-by-construction (NOT code-audited):
+     unscramble tiles derive from the target word itself, alphabet-size independent; older engine"
+  - "pattern note: langle-godot (GPL-3.0 — pattern only, not code) shows the strongest
+     symbol-set-externalization architecture (manifest valid_letters → auto-generated keyboard);
+     Azerdle and Koo-Word-Jigsaw are the MIT moderate-rework options if the wordle or
+     drag-path-jigsaw format is wanted"
 
 gaps:
   - itch.io made-with-godot word tags are single-page listings (exhaustively walked, ~215 pages);
