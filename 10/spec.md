@@ -1,0 +1,45 @@
+# Spec — remove the accidentally-committed private desktop capture
+
+## Problem
+
+`artwork/screen-shots/Screenshot at 2017-09-20 21-48-22.png` is not an app screenshot: it is an accidental desktop capture showing a Gmail inbox — the developer's personal address (`muksihs@gmail.com`), a Facebook Ads enforcement email, and the personal bookmark bar — committed in 2017 (commit `7268f3a` "reparent") and live in this public GitHub repository's trunk tree today. It exposes personal information publicly and carries no app content. Discovered 2026-11-12 by the dispatched screenshot classifier during the itch-page work; the developer directed this spec per the session's recommendation (removal in a quick chore PR).
+
+## Provenance
+
+- **Developer directives (2026-11-12):** "create specs per your recommendations. screen shots were added." — the screenshots item is resolved (added to the itch page by the developer); the remaining session recommendation is this removal, whose recorded form was "a quick chore PR" (the authorization chain: developer-approved recommendation names the chore-PR delivery).
+- **Facts (verified live 2026-11-12):** the file is tracked on `origin/master` (`git cat-file -e origin/master:<path>` passes); it entered at `7268f3a`; `artwork/screen-shots/` tracks 11 PNGs, 10 of which remain after this removal.
+
+## Scope
+
+One file — removed from tracking and the working tree. Nothing else: the other ten screenshots stay byte-identical and tracked; `artwork/screen-shots/for-apple/` is untouched.
+
+## Requirements
+
+- **R-1 — Remove the private capture.** The file `artwork/screen-shots/Screenshot at 2017-09-20 21-48-22.png` SHALL be removed from tracking (`git rm`) and the working tree in one commit on a feature branch, landed as a chore PR.
+
+## Success criteria
+
+| ID | Criterion | Class | Instrument |
+|---|---|---|---|
+| SC-1 | The private capture is untracked on the branch and absent from the working tree | structural | `git ls-files -- "artwork/screen-shots/Screenshot at 2017-09-20 21-48-22.png"` = 0; the working-tree path does not exist; post-merge: `git cat-file -e "master:<path>"` fails |
+| SC-2 | The other ten screenshots are untouched | structural | `git diff --name-only origin/master..HEAD` names only the removed file; `git ls-files 'artwork/screen-shots/*.png' \| wc -l` = 10 |
+
+## Interdependencies
+
+- Consumes: the screenshot-classifier finding (session record, 2026-11-12).
+- Unrelated: the itch-page screenshot set added by the developer 2026-11-12 (dashboard-side; unaffected).
+
+## Out of scope
+
+- **Git history rewrite.** The file remains reachable in history from `7268f3a` onward; rewriting a public repository's history (filter-repo/BFG, force-push, clone/fork coordination, GitHub cached-view purge via support) is a separate operation requiring its own explicit developer direction — this spec neither performs nor presumes it.
+- The other screenshots and the `for-apple/` device-frame comps (unfinished WIP; disposition undecided).
+
+## Approach
+
+One `git rm` on a feature branch, verified by the instruments, landed as a chore PR. Alternatives weighed: history rewrite in the same pass — rejected (blast radius: public force-push and cache coordination; needs its own direction); leaving the file — rejected (active personal-data exposure on a public trunk).
+
+🤖 Co-authored with AI: OpenCode (huggingface/zai-org/GLM-5.3-Flash)
+
+> Full spec and plan artifacts: https://github.com/CherokeeLanguage/cll1-gdx/tree/issues-data/10/
+>
+> Local artifacts: `.issues/10/`
